@@ -1,3 +1,11 @@
+---
+title: What is Kendo UI
+tags: 101, Getting Started
+publish: true
+relatedDocs: getting-started-with-kendo, downloading-kendo
+slug: what-is-kendo-ui
+---
+
 # Downloading Kendo UI
 
 You can download Kendo UI [here](http://www.kendoui.com/download)
