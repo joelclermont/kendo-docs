@@ -1,10 +1,10 @@
----
-title: What is Kendo UI
-tags: 101, Getting Started
-publish: true
-relatedDocs: getting-started-with-kendo, downloading-kendo
-slug: what-is-kendo-ui
----
+Title: What is Kendo UI
+Tags: 101, Getting Started
+Date: 5/15/2012
+Publish: true
+Related: getting-started-with-kendo, downloading-kendo
+Slug: what-is-kendo-ui
+
 
 # Using Kendo UI Widgets
 
