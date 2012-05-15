@@ -47,7 +47,7 @@ To additionally configure the widgets you should provide JSON-formatted settings
 
 ## Getting widget client object
 
-The widget client object is preserved in the [data store](http://docs.jquery.com/core/data) for the corresponding element. The following code snippet shows how to get the client object of the grid widget. 
+The widget client object is preserved in the [data store] for the corresponding element. The following code snippet shows how to get the client object of the grid widget. 
 
   //the name of the data key is built by adding "kendo" prefix to the widget's name
   var grid = $("#grid").data("kendoGrid");
@@ -153,3 +153,5 @@ For widgets that have template configuration options, the data attribute value w
     <script id="foo" type="script/x-kendo-template">
       <span>#:data.Name</span>
     </script>
+
+[data store]: http://docs.jquery.com/core/data
