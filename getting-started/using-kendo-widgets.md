@@ -3,6 +3,8 @@ title:	What is Kendo UI
 tags:	101, Getting Started
 Publish:	true
 related:	getting-started-with-kendo, downloading-kendo
+deprecated: true
+redirect: kendo-for-dummies
 ---
 
 # Using Kendo UI Widgets
