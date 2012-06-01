@@ -1,6 +1,6 @@
 ---
-title:	What is Kendo UI
-tags:	101, Getting Started
+title:	Using Kendo Widgets
+tags:	101, Getting Started, widgets
 Publish:	true
 related:	getting-started-with-kendo, downloading-kendo
 deprecated: true
