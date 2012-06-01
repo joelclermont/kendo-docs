@@ -1,8 +1,8 @@
 ---
-title: What is Kendo UI
+title: Downloading Kendo UI
 tags: 101, Getting Started
 publish: true
-relatedDocs: getting-started-with-kendo, downloading-kendo
+relatedDocs: getting-started-with-kendo, your-first-application
 slug: what-is-kendo-ui
 ---
 
