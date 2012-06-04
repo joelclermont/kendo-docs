@@ -2,7 +2,7 @@
 title: How Kendo Works
 tags: 101, Getting Started, internals
 publish: true
-relatedDocs: getting-started-with-kendo, downloading-kendo, your-first-application
+relatedDocs: using-kendo-widgets, downloading-kendo, your-first-application
 ---
 
 # How Kendo UI Works
