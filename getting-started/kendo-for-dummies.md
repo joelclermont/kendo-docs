@@ -3,6 +3,8 @@ title:	Using Kendo Widgets
 tags:	101, Getting Started, widgets
 Publish:	true
 related:	getting-started-with-kendo, downloading-kendo
+deprecated: true
+redirect: using-kendo-widgets
 ---
 
 # Using Kendo UI Widgets
