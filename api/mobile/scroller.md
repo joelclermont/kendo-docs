@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Kendo Mobile Scroller widget enables touch friendly kinetic scrolling for the contents of a given DOM element.  
 
 ### Getting Started
@@ -35,7 +37,9 @@ For the scroller to work, its element should have fixed dimensions (width and/or
      function getScroller(e) {
         var scroller = e.view.scroller;
      }
-    </script>The mobile Scroller widget exposes the following fields:
+    </script>
+
+The mobile Scroller widget exposes the following fields:
 
 *   **scrollTop** - the number of pixels that are hidden from view above the scrollable area.
 *   **scrollLeft** - the number of pixels that are hidden from view to the left of the scrollable area.

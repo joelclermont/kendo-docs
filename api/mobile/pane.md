@@ -2,14 +2,20 @@
 
 ## Description
 
+
+
 ### Mobile Pane
 
 The mobile Pane widget groups one or more **mobile views** within the main view application. The mobile
 SplitView widget allows a side by-side display of several panes. The mobile PopOver automatically instantiates a mobile Pane widget for its
-contents.The mobile Pane widget acts like an embedded mobile application, with most of the application
+contents.
+
+The mobile Pane widget acts like an embedded mobile application, with most of the application
 features available: support for local/remote views, default layout and transition, lading, etc. with one
 exception being the browser history support. Navigating within the pane will not update the history state, so
-deep linking to a pane state is not supported.### Navigating across panes
+deep linking to a pane state is not supported.
+
+### Navigating across panes
 
 By default, navigational widgets will change views in the containing pane. To target another pane, use
 `target` data attribute set to the **id** of the pane. To change views in the mobile

@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 #### DragAxis
 
 The DragAxis is used internally by the kendo.Drag component to store and calculate event data.
@@ -15,7 +17,9 @@ The two DragAxis instances are available in each Drag event parameter.
          console.log(x); // Horizontal axis
          console.log(y); // Vertical axis
      }
-    });Each axis instance contains the following fields:
+    });
+
+Each axis instance contains the following fields:
 
 
 *   **location** - the offset of the mouse/touch relative to the entire document (pageX/Y);

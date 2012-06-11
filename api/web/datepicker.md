@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **DatePicker** allows the end user to select a date from a
  calendar or by direct input. It supports custom templates for "month"
  view, configurable options for min and max date, start view and the
@@ -18,7 +20,9 @@
 
     $(document).ready(function(){
      $("#datePicker").kendoDatePicker();
-    }); When a **DatePicker** is initialized, it will be displayed at the
+    });
+
+ When a **DatePicker** is initialized, it will be displayed at the
  location of the target HTML element.
 
 
@@ -44,8 +48,12 @@ minimum and maximum date
       min: new Date(1950, 0, 1),
       max: new Date(2049, 11, 31)
      })
-    }); DatePicker will set the value only if the entered date is valid and
- within the defined range.### Defining a Start View and Navigation Depth
+    });
+
+ DatePicker will set the value only if the entered date is valid and
+ within the defined range.
+
+### Defining a Start View and Navigation Depth
 
 
  The first rendered view can be defined with "start" option.
@@ -63,7 +71,9 @@ minimum and maximum date
     $("#datePicker").kendoDatePicker({
      start: "year",
      depth: "year"
-    });### Accessing an Existing DatePicker
+    });
+
+### Accessing an Existing DatePicker
 
 
  You can reference an existing **DatePicker** instance via

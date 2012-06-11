@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
    The NumericTextBox widget can convert an INPUT element into a numeric, percentage or currency textbox.
    The type is defined depending on the specified format. The widget renders spin buttons and with their help you can
    increment/decrement the value with a predefined step. The NumericTextBox widget accepts only numeric entries.
@@ -19,7 +21,9 @@
 
     $(document).ready(function(){
      $("#textBox").kendoNumericTextBox();
-    }); When a **NumericTextBox** is initialized, it will automatically
+    });
+
+ When a **NumericTextBox** is initialized, it will automatically
  wraps the input element with span element and will render spin
  buttons.
 
@@ -54,18 +58,24 @@
          decimals: 3
      });
 
+
+
 #### Create Currency NumericTextBox widget
 
      $("#textbox").kendoNumericTextBox({
          format: "c2" //Define currency type and 2 digits precision
      });
 
+
+
 #### Create Percentage NumericTextBox widget
 
      $("#textbox").kendoNumericTextBox({
          format: "p",
          value: 0.15 // 15 %
-     });### Accessing an Existing NumericTextBox
+     });
+
+### Accessing an Existing NumericTextBox
 
 
  You can reference an existing **NumericTextBox** instance via

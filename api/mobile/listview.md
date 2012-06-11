@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Kendo Mobile ListView widget is used to display flat or grouped list of items.
 It can be either used in unbound mode by enhancing an HTML `ul` element, or bound to a DataSource instance.
 
@@ -29,7 +31,9 @@ The mobile ListView element may contain one or more `li` elements.
     function initListView(e) {
      e.view.element.find("#listView").kendoMobileListView();
     }
-    </script>### Inset Mobile ListView
+    </script>
+
+### Inset Mobile ListView
 
 In iOS, the mobile ListView appearance can be changed to **inset**, to achieve an effect similar to iOS grouped table views,
 where the list items are padded from the container, and have rounded corners.
@@ -41,7 +45,9 @@ To do so, set the `style` data attribute to `inset`.
     <ul data-role="listview" data-style="inset">
       <li>Foo</li>
       <li>Bar</li>
-    </ul>### Grouped mobile ListView
+    </ul>
+
+### Grouped mobile ListView
 
 The mobile ListView can display items in groups, with optional headers. This can be achieved by nesting unordered lists in items,
 and setting the widget's element `type` data attribute to `group`.
@@ -63,7 +69,9 @@ and setting the widget's element `type` data attribute to `group`.
                 <li>Qux</li>
             </ul>
         </li>
-    </ul>### Binding to Data
+    </ul>
+
+### Binding to Data
 
 
 The mobile ListView can be bound to both local JavaScript arrays and remote data via the
@@ -76,7 +84,9 @@ options, while remote data binding is better for larger data sets.
         e.view.element.find("#listview").kendoMobileListView({
             dataSource: kendo.data.DataSource.create(["foo", "bar", "baz"])
          });
-    });### Customizing Item Templates
+    });
+
+### Customizing Item Templates
 
 The mobile ListView leverages Kendo UI high-performance Templates to provide complete control
 over item rendering. For a complete overview of Kendo UI Template capabilities and syntax,
@@ -93,7 +103,9 @@ please review the [Kendo UI Templates](http://www.kendoui.com/documentation/fram
                 dataSource: kendo.data.DataSource.create([{foo: "bar"}, {foo: "baz"}])
             });
         });
-    </script>### Link Items
+    </script>
+
+### Link Items
 
 The mobile ListView will automatically style items with a single link element inside, adding a details indicator. 
 
@@ -102,7 +114,9 @@ The mobile ListView will automatically style items with a single link element in
     <ul data-role="listview">
       <li><a href="#foo">Foo</a></li>
       <li><a href="#bar">Bar</a></li>
-    </ul>### Detail Buttons
+    </ul>
+
+### Detail Buttons
 
 Mobile ListView integrates with nested DetailButton widgets. These buttons are best suited when the user should be able to execute more than one action on a given row.
 Detail buttons support 4 default data-styles: **contactadd**, **detaildisclose**, **rowinsert** and **rowdelete**, along custom icons
@@ -133,7 +147,9 @@ through the data-icon attribute. One row can contain both regular links and deta
                 <li><a>Battery Level</a><a data-role="detailbutton" data-icon="battery"></a></li>
             </ul>
         </li>
-    </ul>### Item Icons
+    </ul>
+
+### Item Icons
 
 An icon can be set in two ways - either by adding an `img` element inside the `li` element, or by setting an `icon` data attribute to the `li` element.
 if data attribute is used then an `a` element should be put in the `li` element. The icon class will be applied to the `a` element.

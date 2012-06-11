@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Kendo Mobile ScrollView widget is used to scroll content wider than the device screen.
 
 ### Getting Started
@@ -27,7 +29,9 @@ Alternatively, it can be initialized using jQuery plugin syntax in the containin
     function initScrollView(e) {
       e.view.element.find("#scrollView").kendoMobileScrollView();
     }
-    </script>### Pages
+    </script>
+
+### Pages
 
 Content pages may be defined in order to display exactly one item per page. Pages are automatically resized
 when the device is rotated. To define a page, wrap the content in a div with `data-role="page"` attribute set.

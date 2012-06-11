@@ -2,13 +2,17 @@
 
 ## Description
 
+
+
 The Kendo mobile View widget represents a screen in the kendo mobile Application. The
 Application automatically instantiates a mobile View for each element with a `role` data attribute set
 to **view**.
 
 #### Hello World mobile View
 
-    <div data-role="view">Hello world!</div>### Headers and Footers
+    <div data-role="view">Hello world!</div>
+
+### Headers and Footers
 
 By default, the mobile View contents stretch to fit the application element.
 In addition to that, The mobile View may also have a header and a footer.
@@ -21,12 +25,16 @@ In order to mark header and footer elements, add block elements (`div`, `header`
       <div data-role="header">Header</div>
       Hello world!
       <div data-role="footer">Footer</div>
-    </div>**Important:**
+    </div>
+
+**Important:**
 
 
 Because of the OS UI design conventions, the header and the footer switch positions when an Android device is detected.
 Usually the footer hosts a mobile Tabstrip widget, which is located at the bottom of the screen on iOS,
-and at the top of the screen in Android applications.  ### View Parameters
+and at the top of the screen in Android applications.  
+
+### View Parameters
 
 Navigational widgets can pass additional URL parameters when navigating to Views. The parameters will be accessible in the  view `show` event handlers.
 
@@ -40,7 +48,9 @@ Navigational widgets can pass additional URL parameters when navigating to Views
     function fooShow(e) {
          e.view.params // {bar: "baz"}
     }
-    </script>### View DOM elements
+    </script>
+
+### View DOM elements
 
 Each mobile View instance exposes the following fields:
 

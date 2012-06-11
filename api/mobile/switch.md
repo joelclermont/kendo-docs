@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The mobile Switch widget is used to display two exclusive choices.
 
 When initialized, it shows the currently selected value. User slides the control to reveal the second value.
@@ -22,7 +24,9 @@ Alternatively, it can be initialized using jQuery plugin syntax in the containin
     <input type="checkbox" id="switch" />
     <script>
     var switchWidget = $("#switch").kendoMobileSwitch();
-    </script>### Checking/Unchecking the Mobile Switch
+    </script>
+
+### Checking/Unchecking the Mobile Switch
 
 The checked state of the mobile Switch depends on the `checked` property of the widget's constructor options
 or the `checked` attribute of the widget's element.
@@ -39,7 +43,9 @@ or the `checked` attribute of the widget's element.
     <input type="checkbox" id="switch" />
     <script>
     var switchWidget = $("#switch").kendoMobileSwitch({ checked: true });
-    </script>### Specifying the Text of the Labels
+    </script>
+
+### Specifying the Text of the Labels
 
 #### Customize Kendo mobile Switch on/off labels
 

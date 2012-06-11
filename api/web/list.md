@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 Common class for ComboBox, DropDownList and AutoComplete widgets.
 
 ## Configuration

@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **PanelBar** displays hierarchical data as a multi-level, expandable widget that is useful for
  constrained areas of a page. Its structure may be defined in HTML or configured dynamically through its API. The
  content for items can also be loaded via AJAX by specifying a content URL.
@@ -24,14 +26,18 @@
                 </ul>
         <li>
         <li>Item 2</li>
-    </ul> Initialization of a **PanelBar** should occur after the DOM is fully loaded. It is recommended
+    </ul>
+
+ Initialization of a **PanelBar** should occur after the DOM is fully loaded. It is recommended
  that initialization the **PanelBar** occur within a handler is provided to $(document).ready().
 
 #### Initialize the PanelBar via an ID selector
 
     $(document).ready(function() {
         $("#panelBar").kendoPanelBar();
-    }); **PanelBar** items may contain nested content (including markup) within a **div**
+    });
+
+ **PanelBar** items may contain nested content (including markup) within a **div**
  element. Text content located outside nested content will be used as the title of the item.
 
 #### Create a list of items in HTML with nested content
@@ -41,7 +47,9 @@
         <li>Item with content
             <div>This is nested content of a PanelBar item.</div>
         </li>
-    </ul>A **PanelBar** will preserve the content defined within an item.
+    </ul>
+
+A **PanelBar** will preserve the content defined within an item.
 
 #### Initialize the PanelBar via an ID selector
 
@@ -81,7 +89,9 @@
                 spriteCssClass: "imageClass3"
             }
         ]
-    });### Loading Content with AJAX
+    });
+
+### Loading Content with AJAX
 
 
  While any valid technique for loading AJAX content can be used, the **PanelBar** provides built-in
@@ -112,7 +122,9 @@
             null,
             "html-content-snippet.html"
         ]
-    }); When the **PanelBar** loads remote content via AJAX, the server response is cached in-memory so
+    });
+
+ When the **PanelBar** loads remote content via AJAX, the server response is cached in-memory so
  that subsequent expand/collapse actions do not trigger subsequent AJAX requests.
 
 
@@ -130,7 +142,9 @@
             open : { effects: "fadeIn" }
         },
         expandMode: "single"
-    });### Dynamically Configuring PanelBar Items
+    });
+
+### Dynamically Configuring PanelBar Items
 
 
  The **PanelBar** API provides several methods for dynamically adding or removing Items. To add
@@ -152,7 +166,9 @@ Removing an item only requires a reference to the target element that should be 
     panelBar.insertAfter(
          { text: "New PanelBar Item" },
          panelBar.element.children("li:last")
-    );### Accessing an Existing PanelBar
+    );
+
+### Accessing an Existing PanelBar
 
 
  You can reference an existing **PanelBar** instance via

@@ -2,9 +2,13 @@
 
 ## Description
 
+
+
 Globalization is the process of designing and developing an
 application that works in multiple cultures. The culture defines specific information
-for the number formats, week and month names, date and time formats and etc.Kendo exposes **_culture(cultureName)_** method which allows to select the culture
+for the number formats, week and month names, date and time formats and etc.
+
+Kendo exposes **_culture(cultureName)_** method which allows to select the culture
 script corresponding to the "culture name". kendo.culture() method uses the passed culture name
 to select a culture from the culture scripts that you have included and then sets the current culture. If there is no
 corresponding culture then the method will try to find culture which is equal to the country part of the culture name.
@@ -40,7 +44,9 @@ If no culture is found the default one is used.
 
     var cultureInfo = kendo.culture();
     
-    <h3>Find culture object</h3>Kendo also exposes **_findCulture(cultureName)_** method which returns a culture object which corresponds to
+    <h3>Find culture object</h3>
+
+Kendo also exposes **_findCulture(cultureName)_** method which returns a culture object which corresponds to
 the passed culture name. If there is no such culture in the registered culture scripts, the method will try to find a culture object
 which corresponds to the country part of the culture name. If no culture is found, the result will be **null**.
 
@@ -53,10 +59,14 @@ which corresponds to the country part of the culture name. If no culture is foun
     <script type="text/javascript">
        //finds the "fr-FR" culture object.
        var culture = kendo.findCulture("fr-FR");
-    </script>### Format number or date object
+    </script>
+
+### Format number or date object
 
 
-Kendo exposes methods which can format number or date object using specific format string and the current specified culture:#### `kendo.toString(object, format)` - returns a string representation of the current object using specific format.
+Kendo exposes methods which can format number or date object using specific format string and the current specified culture:
+
+#### `kendo.toString(object, format)` - returns a string representation of the current object using specific format.
 
 #### Formats number and date objects
 
@@ -71,12 +81,16 @@ Kendo exposes methods which can format number or date object using specific form
     //format date
     kendo.toString(new Date(2010, 9, 5), "yyyy/MM/dd" ); // "2010/10/05"
     kendo.toString(new Date(2010, 9, 5), "dddd MMMM d, yyyy" ); // "Tuesday October 5, 2010"
-    kendo.toString(new Date(2010, 10, 10, 22, 12), "hh:mm tt" ); // "10:12 PM"#### kendo.format - replaces each format item in a specified string with the text equivalent of a corresponding object's value.
+    kendo.toString(new Date(2010, 10, 10, 22, 12), "hh:mm tt" ); // "10:12 PM"
+
+#### kendo.format - replaces each format item in a specified string with the text equivalent of a corresponding object's value.
 
 #### String format
 
      kendo.format("{0} - {1}", 12, 24); //12 - 24
-     kendo.format("{0:c} - {1:c}", 12, 24); //$12.00 - $24.00### Parsing a string
+     kendo.format("{0:c} - {1:c}", 12, 24); //$12.00 - $24.00
+
+### Parsing a string
 
 
 Kendo exposes methods which converts the specified string to date or number object:
@@ -116,7 +130,9 @@ Kendo exposes methods which converts the specified string to date or number obje
            kendo.parseDate("12/22/2000"); //Fri Dec 22 2000
            kendo.parseDate("2000/12/22", "yyyy/MM/dd"); //Fri Dec 22 2000
        </li>
-    </ol>### Number formatting
+    </ol>
+
+### Number formatting
 
 The purpose of number formatting is to convert Number object to a human readable string using culture's specific settings. `kendo.format` and `kendo.toString`
 methods support standard and custom numeric formats:
@@ -132,7 +148,9 @@ methods support standard and custom numeric formats:
           kendo.toString(1234.567, "n"); //1,234.57
     
           kendo.culture("de-DE");
-          kendo.toString(1234.567, "n3"); //1.234,567**c** for currency
+          kendo.toString(1234.567, "n3"); //1.234,567
+
+**c** for currency
 
 #### Formatting using "c" format
 
@@ -140,7 +158,9 @@ methods support standard and custom numeric formats:
           kendo.toString(1234.567, "c"); //$1,234.57
     
           kendo.culture("de-DE");
-          kendo.toString(1234.567, "c3"); //1.234,567 €**p** for percentage (number is multiplied by 100)
+          kendo.toString(1234.567, "c3"); //1.234,567 €
+
+**p** for percentage (number is multiplied by 100)
 
 #### Formatting using "p" format
 
@@ -148,12 +168,16 @@ methods support standard and custom numeric formats:
           kendo.toString(0.222, "p"); //22.20 %
     
           kendo.culture("de-DE");
-          kendo.toString(0.22, "p3"); //22.000 %**e** for exponential
+          kendo.toString(0.22, "p3"); //22.000 %
+
+**e** for exponential
 
 #### Formatting using "e" format
 
           kendo.toString(0.122, "e"); //1.22e-1
-          kendo.toString(0.122, "e4"); //1.2200e-1#### Custom numeric formats
+          kendo.toString(0.122, "e4"); //1.2200e-1
+
+#### Custom numeric formats
 
 You can create custom numeric format string using one or more custom numeric specifiers. Custom numeric format string is any tha is not a standard numeric format.
 <div class="details-list">
@@ -195,7 +219,9 @@ You can create custom numeric format string using one or more custom numeric spe
     </dt>
     <dd>Indicates that the enclosed characters should be copied to the result string</dd>
   </dl>
-</div>### Date formatting
+</div>
+
+### Date formatting
 
 The purpose of date formatting is to convert Date object to a human readable string using culture's specific settings. `kendo.format` and `kendo.toString`
 methods support standard and custom date formats:
@@ -242,7 +268,9 @@ methods support standard and custom date formats:
     </dt>
     <dd>`kendo.toString(new Date(2000, 10, 6), "y") -> November, 2000`</dd>
   </dl>
-</div>#### Custom date formats
+</div>
+
+#### Custom date formats
 
 <div class="details-list">
   
@@ -331,7 +359,9 @@ methods support standard and custom date formats:
     </dt>
     <dd>The AM/PM designator</dd>
   </dl>
-</div>### Widgets that depend on current culture are:
+</div>
+
+### Widgets that depend on current culture are:
 
 *   Calendar*   DatePicker*   TimePicker*   NumericTextBox
 

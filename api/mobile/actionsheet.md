@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The mobile ActionSheet widget displays a set of choices related to a task the user initiates.
 
 ### Getting Started
@@ -16,7 +18,9 @@ The actionsheet element should contain one or more `li` elements, each with an `
     <ul data-role="actionsheet">
       <li><a data-action="foo">Foo</a></li>
       <li><a data-action="bar">Bar</a></li>
-    </ul>In iOS, the ActionSheet slides in from the bottom of the screen; It also acts like a modal dialog - tapping the background does not close it. 
+    </ul>
+
+In iOS, the ActionSheet slides in from the bottom of the screen; It also acts like a modal dialog - tapping the background does not close it. 
 
 In Android and Blackberry, the available actions are centered in the middle of the screen, and tapping the background closes it.
 
@@ -37,7 +41,9 @@ To do so, set `data-rel="actionsheet"` attribute and a `href` attribute equal to
       <li><a data-action="foo">Reply</a></li>
       <li><a data-action="foo">Reply to All</a></li>
       <li><a data-action="bar">Forward</a></li>
-    </ul>### Executing Actions
+    </ul>
+
+### Executing Actions
 
 Each link in the ActionSheet should have a `data-action` attribute set, specifying the callback method to be executed when the user taps it.
 The callback can be either a function, or a method of a JavaScript object in the global scope.

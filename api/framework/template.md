@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  Templates offer way of creating HTML chunks. Options such as HTML encoding and compilation for optimal
  performance are available.
 

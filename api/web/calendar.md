@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **Calendar** renders a graphical calendar that supports
  navigation and selection. It supports custom templates for its
  "month" view, configurable options for a minimum and maximum date,
@@ -18,7 +20,9 @@
 
     $(document).ready(function(){
      $("#calendar").kendoCalendar();
-    }); When a **Calendar** is initialized, it will automatically be
+    });
+
+ When a **Calendar** is initialized, it will automatically be
  displayed near the location of the used HTML element.
 
 
@@ -45,9 +49,13 @@ and maximum date
      value: new Date(),
      min: new Date(1950, 0, 1),
      max: new Date(2049, 11, 31)
-    }); The **Calendar** will not navigate before than the minimum
+    });
+
+ The **Calendar** will not navigate before than the minimum
  date specified. It will also not navigate ahead the maximum date
- specified.### Define start view and navigation depth
+ specified.
+
+### Define start view and navigation depth
 
 
  The first rendered view can be defined with "start" option.
@@ -65,7 +73,9 @@ and maximum date
     $("#calendar").kendoCalendar({
      start: "year",
      depth: "year"
-    });### Customize day template
+    });
+
+### Customize day template
 
 
  The **Calendar** allows to customize content of the rendered day
@@ -77,7 +87,9 @@ and maximum date
      month: {
       content: '<div class="custom"><#=data.value#></div>'
      }
-    }); This templates wraps the "value" in a div HTML element. Here is an
+    });
+
+ This templates wraps the "value" in a div HTML element. Here is an
  example of the object passed to the template function:
 
 #### Structure of the data object passed to the template
@@ -87,7 +99,9 @@ and maximum date
      title: kendo.toString(date, "D"),
      value: date.getDate(),
      dateString: "2011/0/1" // formatted date using yyyy/MM/dd format and month is zero-based
-    };### Accessing an Existing Calendar
+    };
+
+### Accessing an Existing Calendar
 
 
  You can reference an existing **Calendar** instance via

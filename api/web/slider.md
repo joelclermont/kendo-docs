@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **Slider** provides a rich input for selecting values or ranges of values. Unlike the HTML5
  range input, the **Slider** presents a consistent experience across browsers and features a rich
  API and event model.
@@ -19,28 +21,36 @@ There are two types of **Slider**:
 
 #### Create an input element
 
-    <input id="slider" /> Initialization of a **Slider** should occur after the DOM is fully loaded. It is recommended that
+    <input id="slider" />
+
+ Initialization of a **Slider** should occur after the DOM is fully loaded. It is recommended that
  initialization the **Slider** occur within a handler is provided to $(document).ready().
 
 #### Initialize a Slider using a selector within $(document).ready()
 
     $(document).ready(function() {
         $("#slider").kendoSlider();
-    });#### RangeSlider
+    });
+
+#### RangeSlider
 
 #### Create two HTML input elements in a div
 
     <div id="rangeSlider">
         <input />
         <input />
-    </div> Initialization of a **RangeSlider** should occur after the DOM is fully loaded. It is recommended
+    </div>
+
+ Initialization of a **RangeSlider** should occur after the DOM is fully loaded. It is recommended
  that initialization the **RangeSlider** occur within a handler is provided to $(document).ready().
 
 #### Initialize a RangeSlider using a selector within $(document).ready()
 
     $(document).ready(function() {
         $("#rangeSlider").kendoRangeSlider();
-    }); The **RangeSlider** requires two inputs to capture both ends of the value range. This benefits
+    });
+
+ The **RangeSlider** requires two inputs to capture both ends of the value range. This benefits
  scenarios where JavaScript is disabled, in which case users will be presented with two inputs, still allowing
  them to input a valid range.
 
@@ -65,7 +75,9 @@ There are two types of **Slider**:
         orientation: "vertical",
         smallStep: 1,
         largeStep: 10
-    });### Accessing an Existing Slider
+    });
+
+### Accessing an Existing Slider
 
 
  You can reference an existing **Slider** instance via

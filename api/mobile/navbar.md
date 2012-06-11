@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Kendo mobile NavBar widget is used inside a mobile View or Layout Header element to display an application navigation bar.
 The mobile NavBar may display the current view title in the center, and optionally some additional left and right aligned widgets (a back button, settings button, etc.).
 
@@ -16,7 +18,9 @@ Alternatively, it can be initialized using jQuery plugin syntax in the containin
 
 #### Initialize Kendo mobile NavBar using jQuery plugin syntax
 
-    var navbar = $("#navbar").kendoMobileNavBar();### Aligning Widgets Inside the NavBar
+    var navbar = $("#navbar").kendoMobileNavBar();
+
+### Aligning Widgets Inside the NavBar
 
 After initialization, the mobile NavBar positions its child elements based on the specified `align` data attribute (either `left` or `right`).
 By default, elements without any align are centered.
@@ -27,7 +31,9 @@ By default, elements without any align are centered.
       <a data-role="backbutton" data-align="left">Back</a>
       My View Title
       <a data-role="button" data-align="right">About</a>
-    </div>### Automatically Update NavBar Title Based on Current View's Title
+    </div>
+
+### Automatically Update NavBar Title Based on Current View's Title
 
 If an element with `role` data attribute set to `view-title` is present inside the mobile NavBar,
 the Kendo mobile Application instance will update its text to the current View's title when changing views.
@@ -46,7 +52,9 @@ This feature is particularly useful if the mobile NavBar is inside a layout.
     </div>
     
     <div data-role="view" data-layout="foo" data-title="bar"> ... </div>
-    <div data-role="view" data-layout="foo" data-title="baz"> ... </div>### Customizing Mobile NavBar Appearance
+    <div data-role="view" data-layout="foo" data-title="baz"> ... </div>
+
+### Customizing Mobile NavBar Appearance
 
 The mobile NavBar background color can be customized by setting its background-color CSS property either inline or using a CSS selector with specificity of 20+.
 Different platforms can be styled separately with their respective root classes. 

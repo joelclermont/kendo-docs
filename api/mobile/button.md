@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The mobile Button widget navigates to mobile View or executes a custom callback when tapped.
 
 ### Getting Started
@@ -16,7 +18,9 @@ The button element may be either `A` or `BUTTON`.
 
 #### Initialize Kendo mobile Button using jQuery
 
-    var button = $("#button").kendoMobileButton();### Customizing Mobile Button Appearance
+    var button = $("#button").kendoMobileButton();
+
+### Customizing Mobile Button Appearance
 
 The Kendo mobile Button color can be customized by setting its `background-color` CSS property inline or by using a CSS selector with specificity of 20+.
 You can target platforms separately using their respective root CSS classes.
@@ -25,6 +29,8 @@ You can target platforms separately using their respective root CSS classes.
 
     <a href="#foo" data-role="button" style="background-color: green">Foo</a>
 
+
+
 #### Green Kendo mobile Button in iOS and a red one in Android
 
     <style>
@@ -32,7 +38,9 @@ You can target platforms separately using their respective root CSS classes.
         .km-android .checkout { background-color: red; }
     </style>
     
-    <a href="#foo" data-role="button" class="checkout">Foo</a>### Button icons
+    <a href="#foo" data-role="button" class="checkout">Foo</a>
+
+### Button icons
 
 A Button icon can be set in two ways - either by adding an `img` element inside the Button element,
 or by setting an `icon` data attribute to the Button element.

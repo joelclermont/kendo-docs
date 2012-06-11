@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
       The ListView is designed to give your the freedom to specify custom type of layout
       for the items displayed in the control. It can be bound to local JSON data or to
       remote data using the Kendo DataSource component.
@@ -30,7 +32,9 @@
                   }]
               }
           });
-      });### Configuring ListView Behavior
+      });
+
+### Configuring ListView Behavior
 
  Kendo ListView supports paging, selection, navigation, editing. Configuring any of
  these ListView behaviors is done using simple boolean configuration options. For
@@ -47,7 +51,9 @@
              template: "<li>${FirstName}</li>",
              editTemplate: '<li><input type="text" data-bind="value:FirstName" name="FirstName" required="required"/></li>'
           });
-      });By default, paging, selection, navigation and editing are **disabled**.
+      });
+
+By default, paging, selection, navigation and editing are **disabled**.
 
 ## Configuration
 

@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Chart widget uses modern browser technologies to render high-quality data visualizations.
 All graphics are rendered on the client using SVG with a fallback to VML for legacy browsers.
 
@@ -32,16 +34,24 @@ To create a chart, add an empty div in the HTML and give it an ID.
 
 #### Example
 
-    <div id="chart"></div>Optionally, set the width and height of the desired chart inline or with CSS.
+    <div id="chart"></div>
+
+Optionally, set the width and height of the desired chart inline or with CSS.
 
 #### Example
 
-    <div id="chart" style="width: 400px; height: 600px"></div>The chart is rendered by selecting the div with a jQuery selector and calling the kendoChart() function.
+    <div id="chart" style="width: 400px; height: 600px"></div>
+
+The chart is rendered by selecting the div with a jQuery selector and calling the kendoChart() function.
 
 #### Example
 
-    $("#chart").kendoChart();This will render the chart shown below:
-![Empty Chart](http://www.kendoui.com/Libraries/Documentation/chart-empty.sflb.ashx)</img>The chart can then be given a title by specifying the "text" property of the "title" object in the Kendo Chart.
+    $("#chart").kendoChart();
+
+This will render the chart shown below:
+![Empty Chart](http://www.kendoui.com/Libraries/Documentation/chart-empty.sflb.ashx)</img>
+
+The chart can then be given a title by specifying the "text" property of the "title" object in the Kendo Chart.
 
 #### Example
 
@@ -49,7 +59,9 @@ To create a chart, add an empty div in the HTML and give it an ID.
         title: {
              text: "Kendo Chart Example"
         }
-    });### 
+    });
+
+### 
 Data Binding
 
 
@@ -68,8 +80,12 @@ Start by creating a series that displays inline data.
         series: [
              { name: "Example Series", data: [200, 450, 300, 125] }
         ]
-    });This will render a column chart by default.
-![Column Chart without categories](http://www.kendoui.com/Libraries/Documentation/chart-column-no-categories.sflb.ashx)</img>You will notice that the columns have no label across the category axis.
+    });
+
+This will render a column chart by default.
+![Column Chart without categories](http://www.kendoui.com/Libraries/Documentation/chart-column-no-categories.sflb.ashx)</img>
+
+You will notice that the columns have no label across the category axis.
 You specify the labeling for the series in the categoryAxis property.
 
 #### Example
@@ -84,7 +100,11 @@ You specify the labeling for the series in the categoryAxis property.
         categoryAxis:{
              categories: [ 2000, 2001, 2002, 2003 ]
         }
-    });![Column Chart with categories](http://www.kendoui.com/Libraries/Documentation/chart-column-categories.sflb.ashx)</img>### 
+    });
+
+![Column Chart with categories](http://www.kendoui.com/Libraries/Documentation/chart-column-categories.sflb.ashx)</img>
+
+### 
 Next Steps
 
 

@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
     Validator offers an easy way to do client-side form validation.
     Built around the HTML5 form validation attributes it supports variety of built-in validation rules, but also provides a convenient way for setting custom rules handling.
  
@@ -23,7 +25,9 @@
              }
           });
       });
-      </script>#### Validation Rules
+      </script>
+
+#### Validation Rules
 
 #### **required**- element should have a value
 
@@ -47,7 +51,9 @@
 
 #### **email**- constrain the value to being a valid email
 
-     <input type="email" name="email" />Beside the built-in validation rules, KendoUI Validator also provides a convenient way for setting custom rules through its rules configuration option. 
+     <input type="email" name="email" />
+
+Beside the built-in validation rules, KendoUI Validator also provides a convenient way for setting custom rules through its rules configuration option. 
 
 #### 
 
@@ -58,7 +64,9 @@
              return input.is("[name=firstname]") && input.val() === "Tom";
            }
          }
-    });#### Validation Messages
+    });
+
+#### Validation Messages
 
 There are several ways to control the messages which appears if validation fails:
 
@@ -84,13 +92,17 @@ There are several ways to control the messages which appears if validation fails
 
 #### Use the title and validationMessage attributes to set per input element messages
 
-        <input type="tel" pattern="\d{10}" validationMessage="Plase enter a ten digit phone number" />#### Triggering validation
+        <input type="tel" pattern="\d{10}" validationMessage="Plase enter a ten digit phone number" />
+
+#### Triggering validation
 
 In order to trigger the element(s) validation, **validate** method should be used. It will return either _true_ if validation succeeded or _false_ in case of a failure. 
 
 
  Note that if a HTML form element is set as validation container, the form submits will be automatically prevented if validation fails.
- #### Initialize Kendo Validator with specific tooltip position
+ 
+
+#### Initialize Kendo Validator with specific tooltip position
 
 
      Ideally Kendo Validator places its tooltips besides the validated input. However, if the input is later enhanced to a ComboBox, AutoComplete or other Kendo Widget, placing the

@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
      The Grid widget displays tabular data and offers rich support interacting with data,
      including paging, sorting, grouping, and selection. Grid is a powerful widget with
      many configuration options. It can be bound to local JSON data or to remote data
@@ -76,7 +78,9 @@
                   }]
               }
           });
-      });### Configuring Grid Behavior
+      });
+
+### Configuring Grid Behavior
 
  Kendo Grid supports paging, sorting, grouping, and scrolling. Configuring any of
  these Grid behaviors is done using simple boolean configuration options. For
@@ -91,7 +95,9 @@
              sortable: true,
              pageable: true
           });
-      });By default, paging, grouping, and sorting are **disabled**. Scrolling is enabled by default.
+      });
+
+By default, paging, grouping, and sorting are **disabled**. Scrolling is enabled by default.
 
  
 
@@ -109,7 +115,9 @@
                  virtual: true
              }
           });
-      });### Accessing an Existing Grid
+      });
+
+### Accessing an Existing Grid
 
 
  You can reference an existing **Grid** instance via

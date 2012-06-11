@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The mobile swipe component handles user horizontal swiping events.
 
 ### Getting Started
@@ -19,7 +21,9 @@ To register a swipe event for a given jQuery selector, use the `kendoMobileSwipe
      $("p").kendoMobileSwipe(function(e) {
          console.log("You swiped" + e.target.text() );
      });
-    </script>The event handler accepts a parameter with the following fields:
+    </script>
+
+The event handler accepts a parameter with the following fields:
 
 <table>
  <tr>

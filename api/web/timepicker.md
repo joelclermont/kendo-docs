@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **TimePicker** allows the end user to select a time value from a list of predefined values or
  to type a new value. It supports configurable options for the format, minimum and maximum time, and the
  interval between predefined values in the list.
@@ -17,7 +19,9 @@
 
     $(document).ready(function(){
         $("#timePicker").kendoTimePicker();
-    }); When a **TimePicker** is initialized, it will automatically be displayed near the location of the
+    });
+
+ When a **TimePicker** is initialized, it will automatically be displayed near the location of the
  used HTML element.
 
 
@@ -39,7 +43,9 @@
         value: new Date(2000, 10, 10, 10, 0, 0),
         min: new Date(1950, 0, 1, 8, 0, 0),
         max: new Date(2049, 11, 31, 18, 0, 0)
-    }); A **TimePicker** will set the value only if the entered time is valid and if it is in the defined
+    });
+
+ A **TimePicker** will set the value only if the entered time is valid and if it is in the defined
  range.
 
 #### Define time format
@@ -52,7 +58,9 @@
 
     $("#timePicker").kendoTimePicker({
         interval: 15
-    });### Accessing an Existing TimePicker
+    });
+
+### Accessing an Existing TimePicker
 
 
  You can reference an existing **TimePicker** instance via

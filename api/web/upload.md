@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  An **Upload** uses progressive enhancement to deliver the best possible uploading experience to
  users without requiring extra developer effort. Features highlights:
 
@@ -33,7 +35,9 @@ An **Upload** is a standards-based widget; no plug-ins required.
 
     $(document).ready(function() {
         $("#photos").kendoUpload();
-    }); Note the array syntax in the input name; it is used to hint the upload handler to treat photos as an array.
+    });
+
+ Note the array syntax in the input name; it is used to hint the upload handler to treat photos as an array.
 
 
 

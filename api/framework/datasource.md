@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
      The DataSource component is an abstraction for using local (arrays of JavaScript objects) or
      remote (XML, JSON, JSONP) data. It fully supports CRUD (Create, Read, Update, Destroy) data
      operations and provides both local and server-side support for Sorting, Paging, Filtering, Grouping, and Aggregates.
@@ -50,7 +52,9 @@
             // the data which the data source will be bound to is in the "results" field
             data: "results"
         }
-    });### Binding UI widgets to DataSource
+    });
+
+### Binding UI widgets to DataSource
 
 
      Many Kendo UI widgets support data binding, and the Kendo UI DataSource is an ideal

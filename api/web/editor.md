@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
       The Editor allows users to create rich text content by means of a WYSIWYG interfance. The generated widget value is an XHTML markup.
  
 
@@ -15,7 +17,9 @@
 
       $(document).ready(function(){
           $("#editor").kendoEditor();
-      });### Configuring the Editor
+      });
+
+### Configuring the Editor
 
  If no specific tools are defined, the Editor will create its default set of tools for text formatting.
 
@@ -30,7 +34,9 @@
                  "foreColor"
              ]
           });
-      });### Specifying custom tools
+      });
+
+### Specifying custom tools
 
 
  The Editor functionality can be extended through custom tools, defined in the `tools` array.
@@ -49,7 +55,9 @@
                    }
                }
            ]
-       });The custom buttons get a **k-toolName** CSS class to allow styling. (where `toolName` is the name specified in the custom tool configuration)
+       });
+
+The custom buttons get a **k-toolName** CSS class to allow styling. (where `toolName` is the name specified in the custom tool configuration)
 
 ## Configuration
 

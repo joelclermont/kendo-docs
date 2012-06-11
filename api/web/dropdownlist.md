@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  A **DropDownList** displays a list of values and allows the selection of a single value from the
  list.Custom values may not be entered via keyboard input.If you wish permit keyboard input - that is, custom
  values are allowed - use the **ComboBox**.
@@ -21,7 +23,9 @@ There are two ways to create a **DropDownList**:
 
 #### Creating a DropDownList from existing &lt;input&gt; element
 
-    <input id="dropDownList" /> Initialization of a **DropDownList** should occur after the DOM is fully loaded. It is recommended
+    <input id="dropDownList" />
+
+ Initialization of a **DropDownList** should occur after the DOM is fully loaded. It is recommended
  that initialization the **DropDownList** occur within a handler is provided to
  $(document).ready().
 
@@ -50,7 +54,9 @@ There are two ways to create a **DropDownList**:
         $(document).ready(function(){
             $("#dropDownList").kendoDropDownList();
         });
-    </script>### Binding to Local or Remote Data
+    </script>
+
+### Binding to Local or Remote Data
 
 
  The **DropDownList** can be bound to both local arrays and remote data via the
@@ -72,7 +78,11 @@ There are two ways to create a **DropDownList**:
                 }
             }
         });
-    });### Customizing Item Templates
+    });
+
+
+
+### Customizing Item Templates
 
 
  The **DropDownList** uses Kendo UI templates to enable you to control how items are rendered. For
@@ -111,7 +121,9 @@ There are two ways to create a **DropDownList**:
                 }
             });
         });
-    </script>### Accessing an Existing DropDownList
+    </script>
+
+### Accessing an Existing DropDownList
 
 
  You can reference an existing **DropDownList** instance via

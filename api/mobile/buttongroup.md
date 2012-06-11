@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Kendo mobile ButtonGroup widget presents a linear set of grouped buttons.
 
 ### Getting Started
@@ -18,7 +20,9 @@ present in the views/layouts markup. Alternatively, it can be initialized using 
 
 #### Initialize Kendo mobile ButtonGroup using jQuery plugin syntax
 
-    var buttongroup = $("#buttongroup").kendoMobileButtonGroup();### Customizing Mobile ButtonGroup Appearance
+    var buttongroup = $("#buttongroup").kendoMobileButtonGroup();
+
+### Customizing Mobile ButtonGroup Appearance
 
 
 Every Kendo Mobile ButtonGroup color can be customized by setting the respective `background-color` CSS property inline or with a CSS selector.
@@ -28,7 +32,9 @@ Every Kendo Mobile ButtonGroup color can be customized by setting the respective
     <ul id="buttongroup" data-role="buttongroup">
       <li style="background-color: green">Option1</li>
       <li style="beckground-color: red">Option2</li>
-    </ul>### Button Icons
+    </ul>
+
+### Button Icons
 
 A Button icon can be set in two ways - either by adding an `img` element inside the Button `a` element,
 or by setting an `icon` data attribute to the Button `a` element.

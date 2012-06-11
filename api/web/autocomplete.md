@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **AutoComplete** provides suggestions depending on the typed
  text. It also allows multiple value entries. The suggestions shown by
  the **AutoComplete** can come from a local Array or from a remote
@@ -18,7 +20,9 @@
 
     $(document).ready(function() {
      $("#autoComplete").kendoAutoComplete(["Item1", "Item2"]);
-    });### AutoComplete Suggestions
+    });
+
+### AutoComplete Suggestions
 
 
  There are two primary ways to provide the **AutoComplete**
@@ -53,7 +57,9 @@
     var data = ["Item1", "Item2", "Item3"];
     $("#autoComplete").kendoAutoComplete({
        dataSource: data
-    });### Remote Suggestions
+    });
+
+### Remote Suggestions
 
 
  The easiest way to bind an **AutoComplete** to remote
@@ -112,7 +118,9 @@ suggestions
        this.dataSource.read();
       }
      })
-    });### Accessing an Existing AutoComplete
+    });
+
+### Accessing an Existing AutoComplete
 
 
  You can reference an existing **AutoComplete** instance via

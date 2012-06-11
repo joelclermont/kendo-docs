@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The mobile SplitView is a tablet-specific view that consists of two or more **mobile Pane widgets**. The
 Mobile Application automatically instantiates a mobile SplitView for each element with a `role` data attribute set
 to **splitview**. 
@@ -38,7 +40,9 @@ in a view, but should be put as an immediate child of the mobile application ele
         </div>
       </div>
     
-    </div>### Customizing appearance
+    </div>
+
+### Customizing appearance
 
 By default Kendo UI Mobile is configured to show a horizontal SplitView with smaller left and bigger right pane in 1:2 proportion.
 In order to resize one of the panes, use CSS to set its width or adjust the flexibility of the flex boxes (if the width is set, the other pane flexibility should be set to a high numer, like 1000).
@@ -69,7 +73,9 @@ In order to resize one of the panes, use CSS to set its width or adjust the flex
     or
     <style>
         #main-pane { -webkit-box-flex: 3; }
-    </style>Additionally you can split your view to more panes by adding them directly. You can also make them stack vertically
+    </style>
+
+Additionally you can split your view to more panes by adding them directly. You can also make them stack vertically
 by setting data-style="vertical" on your SplitView.
 
 #### Make SplitView to stack vertically.

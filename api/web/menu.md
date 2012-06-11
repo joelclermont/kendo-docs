@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **Menu** displays hierarchical data as a multi-level menu. It provides rich styling for unordered lists
  of items, and can be used for both navigation and executing JavaScript commands. Items can be defined and
  initialized from HTML, or the API can be used to add and remove items.
@@ -19,7 +21,9 @@
             </ul>
         </li>
         <li>Item 2</li>
-    </ul> Initialization of a **Menu** should occur after the DOM is fully loaded. It is recommended that
+    </ul>
+
+ Initialization of a **Menu** should occur after the DOM is fully loaded. It is recommended that
  initialization the **Menu** occur within a handler is provided to $(document).ready().
 
 #### Initialize a Menu using a selector within $(document).ready()
@@ -57,7 +61,9 @@
             spriteCssClass: "imageClass3"                // Item image sprite CSS class, optional.
         }]
      })
-    });### Customizing Menu Animations
+    });
+
+### Customizing Menu Animations
 
 
  By default, the **Menu** uses a slide animation to expand and
@@ -74,7 +80,9 @@
       hoverDelay: 500
      },
      openOnClick: true
-    });### Dynamically configuring Menu items
+    });
+
+### Dynamically configuring Menu items
 
 
  The **Menu** API provides several methods for dynamically adding
@@ -97,7 +105,9 @@
     menu.insertAfter(
      { text: "New Menu Item" },
      menu.element.children("li:last")
-    );### Accessing an Existing Menu
+    );
+
+### Accessing an Existing Menu
 
 
  You can reference an existing **Menu** instance via

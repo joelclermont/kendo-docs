@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 #### Drag
  The kendo Drag component provides a cross-browser, touch-friendly way to handle mouse and touch drag events.
 

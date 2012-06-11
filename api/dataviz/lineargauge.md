@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Linear Gauge widget is used to let users quickly understand where a value lies in a certain range.
 All graphics are rendered on the client using SVG with a fallback to VML for legacy browsers.
 
@@ -31,6 +33,8 @@ Getting Started
                 vertical: false
             }
         });
+
+
 
 ## Configuration
 

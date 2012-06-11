@@ -2,13 +2,17 @@
 
 ## Description
 
+
+
 #### Draggable
 
 Enable draggable functionality on any DOM element.
 
 #### **Draggable** initialization
 
-    var draggable = $("#draggable").kendoDraggable();#### DropTarget
+    var draggable = $("#draggable").kendoDraggable();
+
+#### DropTarget
 
 Enable any DOM element to be a target for draggable elements.
 

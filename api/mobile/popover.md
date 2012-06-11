@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The mobile PopOver widget represents a transient view which is displayed when the user taps on a navigational widget
 or area on the screen. It can contain one or more mobile views which can be navigated to, if needed.
 The Mobile Application automatically instantiates a mobile PopOver for each div element with a `role`
@@ -22,7 +24,9 @@ To do so, add `data-rel="popover"` attribute and a `href` attribute equal to the
              Hello world!
          </div>
      </div>
-    </div>The Mobile PopOver widget implicitly instantiates a pane widget for its contents, which allows the containing views to navigate to each
+    </div>
+
+The Mobile PopOver widget implicitly instantiates a pane widget for its contents, which allows the containing views to navigate to each
 other. The pane widget behavior (including default transition, layout, etc.) may be configured from the `pane` configuration option.
 
 The popover dimensions and direction can be configured from the `popup` configuration option.

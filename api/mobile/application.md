@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Kendo mobile **Application** provides the necessary tools for building native-looking web based mobile applications.
 
 ### Getting Started
@@ -20,11 +22,15 @@ The simplest mobile **Application** consists of a single mobile **View**.
        <script>
        var app = new kendo.mobile.Application(); //document.body is used by default
        </script>
-    </body>### Mobile Views
+    </body>
+
+### Mobile Views
 
 
 <p>The mobile **Application** consists of a single HTML page with one or more mobile Views, linked with navigational widgets (Buttons, TabStrip, etc.).
-Each child of the application element (`&lt;body&gt;` by default) with `data-role="view"` is considered a mobile view.### Navigation
+Each child of the application element (`&lt;body&gt;` by default) with `data-role="view"` is considered a mobile view.
+
+### Navigation
 
 When initialized, the mobile **Application** modifies the kendo mobile widgets' (listview link items, buttons, tabs, etc.) behavior so that they navigate between the mobile views when the user taps them.
 When targeting local views, The navigation **Widget**'s `href` attribute specifies the **View** id to navigate to, prefixed with `#`, like an anchor.
@@ -32,13 +38,17 @@ When targeting local views, The navigation **Widget**'s `href` attribute specifi
 #### Views linked with mobile Buttons
 
     <div data-role="view" id="foo">Foo <a href="#bar" data-role="button">Go to Bar</a></div>
-    <div data-role="view" id="bar">Bar <a href="#foo" data-role="button">Go to Foo</a></div>### Linking to External Pages
+    <div data-role="view" id="bar">Bar <a href="#foo" data-role="button">Go to Foo</a></div>
+
+### Linking to External Pages
 
 By default, all navigational widgets try to navigate to loacal views when tapped. This behavior can be overridden by setting `data-rel="external"` attribute to the link element. 
 
 #### External links
 
-    <a href="http://kendoui.com/" data-rel="external">Visit KendoUI</a>### View Transitions
+    <a href="http://kendoui.com/" data-rel="external">Visit KendoUI</a>
+
+### View Transitions
 
 **View** transitions are defined by setting a `data-transition` attribute to the **View** DOM element or to the navigational widget `A` DOM element.
 If both are present, the navigational widget transition takes precedence.
@@ -72,16 +82,22 @@ Supported directions are `down`, `left`, `up` and `right`. By default, the direc
 #### Views with Transitions
 
     <div data-role="view" id="foo" data-transition="slide">Foo <a href="#bar" data-role="button">Go to Bar</a></div>
-    <div data-role="view" id="bar" data-transition="overlay:up">Bar <a href="#foo" data-role="button">Go to Foo</a></div>Each transition may be played in **reverse**. To do so, add `" reverse"` after the transition definition. For
+    <div data-role="view" id="bar" data-transition="overlay:up">Bar <a href="#foo" data-role="button">Go to Foo</a></div>
+
+Each transition may be played in **reverse**. To do so, add `" reverse"` after the transition definition. For
 instance, to simulate returning to previous view using slide transition, use `"slide:left reverse"`
 
 #### Reverse transition
 
     <div data-role="view" id="foo">Foo <a href="#bar" data-role="button">Go to Bar</a></div>
-    <div data-role="view" id="bar">Bar <a href="#foo" data-role="button" data-transition="slide:left reverse">Go to Foo</a></div>When a **View** transitions to the **View** displayed before it (foo → bar → foo), this is considered a **back** navigation.
+    <div data-role="view" id="bar">Bar <a href="#foo" data-role="button" data-transition="slide:left reverse">Go to Foo</a></div>
+
+When a **View** transitions to the **View** displayed before it (foo → bar → foo), this is considered a **back** navigation.
 In this case, the animation of the current **View** is applied in reverse.
 For instance, navigating with slide transition from `foo` to `bar`, then back to `foo`
-would cause the `foo` **View** to slide from the right side of the screen. ### Remote Views
+would cause the `foo` **View** to slide from the right side of the screen. 
+
+### Remote Views
 
 The Kendo mobile **Application** can load **Views** remotely, using AJAX. If the navigational widget href attribute value does not start with a hash (#),
 the application considers the View to be remote, and issues an AJAX request to the provided URL.
@@ -95,7 +111,9 @@ Once the remote **View** is fetched, no additional round trips to the server occ
     <div data-role="view">Foo <a href="bar.html" data-role="button">Go to Bar</a></div>
     
     <!-- bar.html -->
-    <div data-role="view">Bar</div>The remote view request will also append (but not initialize) any **additional views** found in the AJAX
+    <div data-role="view">Bar</div>
+
+The remote view request will also append (but not initialize) any **additional views** found in the AJAX
 response. **Inline style** elements, **inline script** elements, and **mobile layout** definitions will also be evaluated and appended to the
 application. The elements must be available in the root of the response, or nested inside the **body** element. 
 
@@ -119,7 +137,9 @@ If the remote view needs an **additional scripting (widget initialization/bindin
       function initBar(e) {
           e.view.element.find("#link").kendoMobileButton();
       }
-    </script>###  Initial View
+    </script>
+
+###  Initial View
 
 
 <p> The **Application** provides a way to specify the initial view to show. The initial view can be set by
@@ -131,7 +151,9 @@ passing the view id in the options parameter of the Application's constructor:
          new kendo.mobile.Application($(document.body), {
              initial: "ViewID"
          });
-    </script>### Web Clip Icons
+    </script>
+
+### Web Clip Icons
 
 The mobile devices can create a bookmark with a custom icon, placed on the Home screen. Users can use the shortcut to open that web page later.
 
@@ -141,7 +163,9 @@ The mobile devices can create a bookmark with a custom icon, placed on the Home 
          new kendo.mobile.Application($(document.body), {
              icon: "URL to a web clip icon"
          });
-    </script>Multiple icons for different sizes can be defined. Please refer to Apple [Web Clip Icons help topic](https://developer.apple.com/library/ios/#documentation/userexperience/conceptual/mobilehig/IconsImages/IconsImages.html#//apple_ref/doc/uid/TP40006556-CH14-SW11)
+    </script>
+
+Multiple icons for different sizes can be defined. Please refer to Apple [Web Clip Icons help topic](https://developer.apple.com/library/ios/#documentation/userexperience/conceptual/mobilehig/IconsImages/IconsImages.html#//apple_ref/doc/uid/TP40006556-CH14-SW11)
 for more information.
 
 #### Define multiple web clip icons
@@ -153,7 +177,9 @@ for more information.
                "114x114" : "URL to a 114 x 114 pixels web clip icon"
              }
          });
-    </script>### Force Platform Styles
+    </script>
+
+### Force Platform Styles
 
 
 <p> The **Application** provides a way to force a specific platform look on your application upon init by
@@ -165,7 +191,9 @@ passing the OS name in the options parameter of the Application's constructor:
          new kendo.mobile.Application($(document.body), {
              platform: "ios"
          });
-    </script>Additionally, the OS version can be specified by by passing kendo.support.mobileOS object that is expected by Kendo UI Mobile.
+    </script>
+
+Additionally, the OS version can be specified by by passing kendo.support.mobileOS object that is expected by Kendo UI Mobile.
 This is more complex, but allows fine grained tuning of the application look and behavior. A sample object initialization is like this:
 
 #### Force iOS 5 look

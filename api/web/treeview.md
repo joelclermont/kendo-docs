@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **TreeView** displays hierarchical data in a traditional tree structure. It supports user
  interaction through the mouse or touch to perform re-ordering operations via drag-and-drop.
 
@@ -36,14 +38,18 @@ A **TreeView** can be created in two ways:
             </ul>
         </li>
         <li>Item 2</li>
-    </ul> Initialization of a **TreeView** should occur after the DOM is fully loaded. It is recommended
+    </ul>
+
+ Initialization of a **TreeView** should occur after the DOM is fully loaded. It is recommended
  that initialization the **TreeView** occur within a handler is provided to $(document).ready().
 
 #### Initialize a TreeView using a selector within $(document).ready()
 
     $(document).ready(function() {
         $("#treeView").kendoTreeView();
-    });### Creating a TreeView with Data Binding to a Local Data Source
+    });
+
+### Creating a TreeView with Data Binding to a Local Data Source
 
 #### Create a hierarchical HTML list
 
@@ -64,7 +70,9 @@ A **TreeView** can be created in two ways:
                 { text: "Item 2" }
             ]
         })
-    });Currently, the **TreeView** does not support binding to a remote data source.
+    });
+
+Currently, the **TreeView** does not support binding to a remote data source.
 
 #### TreeView item JSON structure
 
@@ -84,7 +92,9 @@ A **TreeView** can be created in two ways:
         items: [
             // child items
         ]
-    }### Configuring TreeView Behavior
+    }
+
+### Configuring TreeView Behavior
 
 
  A number of **TreeView** behaviors can be easily controlled by simple configuration properties,
@@ -94,7 +104,9 @@ A **TreeView** can be created in two ways:
 
     $("#treeView").kendoTreeView({
         dragAndDrop: true
-    }); When drag-and-drop is enabled, the nodes of a **TreeView** can be dragged and dropped between all
+    });
+
+ When drag-and-drop is enabled, the nodes of a **TreeView** can be dragged and dropped between all
  levels, with useful tooltips helping indicate where the node will be dropped.
 
 

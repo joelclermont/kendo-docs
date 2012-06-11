@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The mobile TabStrip widget is used inside a mobile view or layout footer element to display an application-wide group of navigation buttons.
 The look of the mobile TabStrip changes depending on the user mobile device and operating system.
 
@@ -19,7 +21,9 @@ The tabs of the TabStrip navigate to the mobile application's views. When the mo
     <div data-role="tabstrip">
       <a href="#index">Home</a>
       <a href="#featured">Featured</a>
-    </div>### Tab icons
+    </div>
+
+### Tab icons
 
  A tab icon can be set in two ways - either by adding an `img` element inside the `a` element, or by setting an `icon` data attribute to the `a` element.
 Kendo mobile TabStrip ships with several ready to use icons:

@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The **ComboBox** displays a list of values and allows the selection of a single value from this
 list. Custom values may also be entered via keyboard input. If you do not wish permit keyboard input - that is,
 custom values are not permitted - use the
@@ -26,7 +28,9 @@ There are two ways to create a **ComboBox**:
 
 #### Creating a ComboBox from an existing &lt;input&gt; element
 
-    <input id="comboBox" /> Initialization of a **ComboBox** should occur after the DOM is fully loaded. It is recommended
+    <input id="comboBox" />
+
+ Initialization of a **ComboBox** should occur after the DOM is fully loaded. It is recommended
  that initialization the **ComboBox** occur within a handler is provided to
  $(document).ready().
 
@@ -55,7 +59,9 @@ There are two ways to create a **ComboBox**:
         $(document).ready(function(){
             $("#comboBox").kendoComboBox();
         });
-    </script>### Binding to Local or Remote Data
+    </script>
+
+### Binding to Local or Remote Data
 
 
  The **ComboBox** can be bound to both local arrays and remote data via the
@@ -81,7 +87,9 @@ There are two ways to create a **ComboBox**:
                 }
             }
         });
-    });### Customizing Item Templates
+    });
+
+### Customizing Item Templates
 
 
  The **ComboBox** uses Kendo UI templates to enable you to control how items are rendered. For a
@@ -121,7 +129,9 @@ There are two ways to create a **ComboBox**:
                 }
             });
         });
-    </script>### Accessing an Existing ComboBox
+    </script>
+
+### Accessing an Existing ComboBox
 
 
  You can reference an existing **ComboBox** instance via

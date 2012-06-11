@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Radial Gauge widget is used to let users quickly understand where a value lies in a certain range.
 All graphics are rendered on the client using SVG with a fallback to VML for legacy browsers.
 
@@ -18,7 +20,9 @@ Getting Started
        $(document).ready(function() {
            $("#radial-gauge").kendoRadialGauge();
        });
-    </p>### Creating half- and quarter-circle gauges
+    </p>
+
+### Creating half- and quarter-circle gauges
 
 The `startAngle` and `endAngle` configuration options enable you to create
 gauges that align with your design goals.
@@ -28,7 +32,9 @@ gauges that align with your design goals.
         $("#radial-gauge").kendoRadialGauge({
             startAngle: 90,
             endAngle: 180
-        });For a real-world example for this functionality, see the car dashboard demo.
+        });
+
+For a real-world example for this functionality, see the car dashboard demo.
 
 ## Configuration
 

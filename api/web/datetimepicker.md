@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **DateTimePicker** allows the end user to select a value from a
  calendar or a time drop-down list. Direct input is also allowed.
  It supports configurable options for minimum and maximum value, the format,
@@ -19,7 +21,9 @@
 
     $(document).ready(function(){
      $("#dateTimePicker").kendoDateTimePicker();
-    }); When a **DateTimePicker** is initialized, it will be displayed at the
+    });
+
+ When a **DateTimePicker** is initialized, it will be displayed at the
  location of the target HTML element.
 
 
@@ -46,7 +50,9 @@ minimum and maximum datetime
         min: new Date(1950, 0, 1, 8, 0, 0),
         max: new Date(2049, 11, 31, 18, 0, 0)
      })
-    }); DateTimePicker will set the value only if the entered datetime is valid and
+    });
+
+ DateTimePicker will set the value only if the entered datetime is valid and
  within the defined range.
 
 #### Define the format
@@ -59,7 +65,9 @@ minimum and maximum datetime
 
     $("#dateTimePicker").kendoDateTimePicker({
         timeFormat: "hh:mm:ss tt" //this format will be used to format the predefined values in the time list.
-    });### Defining a Start View and Navigation Depth
+    });
+
+### Defining a Start View and Navigation Depth
 
 
  The first rendered view can be defined with "start" option.
@@ -83,7 +91,9 @@ minimum and maximum datetime
 
     $("#dateTimePicker").kendoDateTimePicker({
         interval: 15
-    })### Accessing an Existing DateTimePicker
+    })
+
+### Accessing an Existing DateTimePicker
 
 
  You can reference an existing **DateTimePicker** instance via

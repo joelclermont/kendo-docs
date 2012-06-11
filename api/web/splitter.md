@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
  The **Splitter** provides a dynamic layout of resizable and collapsible panes. It converts the
  children of an HTML element in to the interactive layout, adding resize and collapse handles based on
  configuration. A **Splitter** can be mixed in a vertical or horizontal orientation to build
@@ -18,14 +20,18 @@
     <div id="splitter">
         <div>Area 1</div>
         <div>Area 2</div>
-    </div> Initialization of a **Splitter** should occur after the DOM is fully loaded. It is recommended
+    </div>
+
+ Initialization of a **Splitter** should occur after the DOM is fully loaded. It is recommended
  that initialization the **Splitter** occur within a handler is provided to $(document).ready().
 
 #### Initialize the Splitter using a selector within $(document).ready()
 
     $(document).ready(function() {
         $("#splitter").kendoSplitter();
-    }); When the **Splitter** is initialized, a vertical split bar will be placed between the two div
+    });
+
+ When the **Splitter** is initialized, a vertical split bar will be placed between the two div
  elements. This bar can be moved by a user left and right to adjust the size on the panes.
 
 
@@ -53,7 +59,9 @@
             { collapsible: true }
         ],
         orientation: "vertical"
-    });### Nested Splitter Layouts
+    });
+
+### Nested Splitter Layouts
 
 To achieve complex layouts, the **Splitter** supports nested layouts.
 
@@ -72,7 +80,9 @@ To achieve complex layouts, the **Splitter** supports nested layouts.
 #### Initialize two Splitters with differing orientations
 
     $("horizontalSplitter").kendoSplitter();
-    $("verticalSplitter").kendoSplitter({ orientation: "vertical" });### Loading Content with AJAX
+    $("verticalSplitter").kendoSplitter({ orientation: "vertical" });
+
+### Loading Content with AJAX
 
 
  While any valid technique for loading content via AJAX may be used, **Splitter** provides built-in
@@ -98,7 +108,9 @@ To achieve complex layouts, the **Splitter** supports nested layouts.
                 { contentUrl: "http://kendoui.com/" }
             ]
         });
-    });### Accessing an Existing Splitter
+    });
+
+### Accessing an Existing Splitter
 
 
  You can reference an existing **Splitter** instance via

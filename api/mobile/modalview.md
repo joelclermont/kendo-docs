@@ -2,6 +2,8 @@
 
 ## Description
 
+
+
 The Kendo ModalView is used to present self-contained functionality in the context of the current task.  
 
 ### Getting Started
@@ -30,7 +32,9 @@ Alternatively, it can be initialized using jQuery plugin syntax. The ModalView e
           </div>
        </div>
      </div>
-    </div>### Opening a ModalView
+    </div>
+
+### Opening a ModalView
 
 The widget can be open when any mobile navigational widget (listview, button, tabstrip, etc.) is tapped.
 To do so, the navigational widget should have `data-rel="modalview"` and `href` attribute pointing to the ModalView's element `id` set (prefixed with `#`, like an anchor).
