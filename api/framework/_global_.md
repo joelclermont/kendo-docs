@@ -1,48 +1,42 @@
-
-
-------------------------------------------
+# _global_
 
 ## Configuration
 
-
-
-------------------------------------------
-
 ## Methods
 
-### `clickHandler`(e)
+### clickHandler
 
 
 
-#### Parameters 
+#### Parameters
 
 ##### e ``
 
 
 
-### `handler`()
+### handler
 
 
 
-### `parent`()
+### parent
 
 
 
-### `rotate`(point)
+### rotate
 
 
 
-#### Parameters 
+#### Parameters
 
 ##### point ``
 
 
 
-### `translate`(x, y)
+### translate
 
 
 
-#### Parameters 
+#### Parameters
 
 ##### x ``
 
@@ -52,13 +46,8 @@
 
 
 
-### `triggerResize`()
+### triggerResize
 
 
-
-
-
-------------------------------------------
 
 ## Events
-
