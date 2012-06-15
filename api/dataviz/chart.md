@@ -590,7 +590,7 @@ grid lines is not set to **true**.
 
  The visibility of the lines.
 
-### `categoryAxis.minorGridLines.width` : **Number** *(default: 1> The width of the lines. <p)*
+### `categoryAxis.minorGridLines.width` : **Number** *(default: 1> The width of the lines.)*
 
  The width of the lines. 
 
