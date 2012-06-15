@@ -25,8 +25,7 @@ Kendo UI DataViz includes the following chart types:
 Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for additional information about new Chart types and features.
 
 
-### 
-Creating a Chart
+### Creating a Chart
 
 
 To create a chart, add an empty div in the HTML and give it an ID.
