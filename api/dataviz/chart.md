@@ -194,7 +194,7 @@ Configures the axis labels.
                 // rotate the labels just slightly for visual effect
                 rotation: 10,
                 // format the labels for currency
-                format: "{0:C}"
+                format: "C"
             }
         },
         ...
@@ -315,7 +315,7 @@ The format of the labels.
         categoryAxis: {
            labels: {
                // set the format to currency
-               format: "{0:C}"
+               format: "C"
            }
         },
         ...
@@ -893,6 +893,104 @@ The text of the title.
         ...
     });
 
+### `categoryAxis.type` : **String** *(default: "Category")*
+
+ The axis type.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"Category"`
+        </dt>
+        <dd>
+             Discrete category axis.
+        </dd>
+        <dt>
+             `"Date"`
+        </dt>
+        <dd>
+             Specialized axis for displaying chronological data.
+        </dd>
+   </dl>
+</div>
+
+### `categoryAxis.type: "Date"`  
+
+Properties specific to the date-time value axis.
+
+
+Note: The Chart will automatically switch to a date category axis if the categories
+are of type Date. Specify type explicitly when such behavior is undesired.
+
+### `categoryAxis.type: "Date".baseUnit` : **String** 
+
+The base time interval for the axis.
+The default baseUnit is determined automatically from the minimum difference
+between subsequent categories. Available options:
+
+
+*   hours
+*   days
+*   months
+*   years
+Series data is aggregated for the specified base unit by using the
+**series.aggregate** function.
+
+### `categoryAxis.type: "Date".labels` : **Object** 
+
+Label settings specific to the date axis.
+
+### `categoryAxis.type: "Date".labels.culture` : **String** *(default: global culture)*
+
+Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
+
+### `categoryAxis.type: "Date".labels.dateFormats` : **Object** 
+
+Date format strings
+<div class="details-list">
+   <dl>
+        <dt>
+             `"hours"`
+        </dt>
+        <dd>
+             "HH:mm"
+        </dd>
+        <dt>
+             `"days"`
+        </dt>
+        <dd>
+             "M/d"
+        </dd>
+        <dt>
+             `"months"`
+        </dt>
+        <dd>
+             "MMM 'yy"
+        </dd>
+        <dt>
+             `"years"`
+        </dt>
+        <dd>
+             "yyyy"
+        </dd>
+   </dl>
+</div>
+The Chart will choose the appropriate format for the current `baseUnit`.
+Setting the labels **format** option will override these defaults.
+
+### `categoryAxis.type: "Date".max` : **Number** 
+
+The last date displayed on the axis.
+By default, the minimum date is the same as the last category.
+This is often used in combination with the **min** configuration option to
+set up a fixed date range.
+
+### `categoryAxis.type: "Date".min` : **Number** 
+
+The first date displayed on the axis.
+By default, the minimum date is the same as the first category.
+This is often used in combination with the **max** configuration option to
+set up a fixed date range.
+
 ### `categoryAxis.visible` : **Boolean** *(default: true)*
 
  The visibility of the axis.
@@ -1431,6 +1529,52 @@ The series name visible in the legend.
 
 Available options for area series:
 
+### `series.type="area".aggregate` : **String** *(default: "max")*
+
+ Aggregate function for date series.
+This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
+<div class="details-list">
+   <dl>
+        <dt>
+             `"max"`
+        </dt>
+        <dd>
+             The highest value for the date period.
+        </dd>
+        <dt>
+             `"min"`
+        </dt>
+        <dd>
+             The lowest value for the date period.
+        </dd>
+        <dt>
+             `"sum"`
+        </dt>
+        <dd>
+             The sum of all values for the date period.
+        </dd>
+        <dt>
+             `"count"`
+        </dt>
+        <dd>
+             The number of values for the date period.
+        </dd>
+        <dt>
+             `"avg"`
+        </dt>
+        <dd>
+             The average of all values for the date period.
+        </dd>
+        <dt>
+             `function (values, series)`
+        </dt>
+        <dd>
+             User-defined aggregate function.
+        </dd>
+   </dl>
+</div>
+
 ### `series.type="area".color` : **String** 
 
 The series base color.
@@ -1520,7 +1664,7 @@ The format of the labels.
 #### Example
 
     //sets format of the labels
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="area".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
 
@@ -1763,7 +1907,7 @@ The tooltip format.
 #### Example
 
     //sets format of the tooltip
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="area".tooltip.padding` : **Number|Object** 
 
@@ -1819,6 +1963,52 @@ Template variables:
 ### `series.type="bar"`  
 
 Available options for bar series:
+
+### `series.type="bar".aggregate` : **String** *(default: "max")*
+
+ Aggregate function for date series.
+This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
+<div class="details-list">
+   <dl>
+        <dt>
+             `"max"`
+        </dt>
+        <dd>
+             The highest value for the date period.
+        </dd>
+        <dt>
+             `"min"`
+        </dt>
+        <dd>
+             The lowest value for the date period.
+        </dd>
+        <dt>
+             `"sum"`
+        </dt>
+        <dd>
+             The sum of all values for the date period.
+        </dd>
+        <dt>
+             `"count"`
+        </dt>
+        <dd>
+             The number of values for the date period.
+        </dd>
+        <dt>
+             `"avg"`
+        </dt>
+        <dd>
+             The average of all values for the date period.
+        </dd>
+        <dt>
+             `function (values, series)`
+        </dt>
+        <dd>
+             User-defined aggregate function.
+        </dd>
+   </dl>
+</div>
 
 ### `series.type="bar".axis` : **String** *(default: primary)*
 
@@ -1979,7 +2169,7 @@ The format of the labels.
 #### Example
 
     //sets format of the labels
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="bar".labels.margin` : **Number|Object** *(default: 2)*
 
@@ -2159,7 +2349,7 @@ The tooltip format.
 #### Example
 
     //sets format of the tooltip
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="bar".tooltip.padding` : **Number|Object** 
 
@@ -2217,9 +2407,532 @@ Template variables:
 Column series accepts the same parameters as bar series.
 The difference is that column series are rendered on a horizontal category axis.
 
+### `series.type="donut"`  
+
+Available options for donut series:
+
+### `series.type="donut".border` : **Object** 
+
+The border of the series.
+
+### `series.type="donut".border.color` : **String** *(default: the color of the curren series)*
+
+The color of the border.
+
+### `series.type="donut".border.dashType` : **String** *(default: solid)*
+
+ The dash type of the border.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"solid"`
+        </dt>
+        <dd>
+             Specifies a solid line.
+        </dd>
+        <dt>
+             `"dot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dots.
+        </dd>
+        <dt>
+             `"dash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dashes.
+        </dd>
+        <dt>
+             `"longDash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash.
+        </dd>
+        <dt>
+             `"dashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of dash-dot.
+        </dd>
+        <dt>
+             `"longDashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot.
+        </dd>
+        <dt>
+             `"longDashDotDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+        </dd>
+   </dl>
+</div>
+
+### `series.type="donut".border.width` : **Number** *(default: 1)*
+
+ The width of the border.
+
+### `series.type="donut".categoryField` : **String** 
+
+The data field containing the sector category name.
+
+### `series.type="donut".colorField` : **String** 
+
+The data field containing the sector color.
+
+### `series.type="donut".connectors` : **Object** 
+
+The label connectors options.
+
+### `series.type="donut".connectors.color` : **String** 
+
+The color of the connector line.
+
+### `series.type="donut".connectors.padding` : **Number** *(default: 4)*
+
+The padding between the connector line and the label, and connector line and donut chart.
+
+### `series.type="donut".connectors.width` : **Number** *(default: 1)*
+
+ The width of the connector line.
+
+### `series.type="donut".data` : **Array** 
+
+Array of data items (optional).
+The donut chart can be bound to an array of numbers or an array of objects
+with the following fields:
+<div class="details-list">
+   <dl>
+        <dt>
+             `"value"`
+        </dt>
+        <dd>
+             The sector value.
+        </dd>
+        <dt>
+             `"category"`
+        </dt>
+        <dd>
+             The sector category that is shown in the legend.
+        </dd>
+        <dt>
+             `"color"`
+        </dt>
+        <dd>
+             The sector color.
+        </dd>
+        <dt>
+             `"explode"`
+        </dt>
+        <dd>
+             A boolean value indicating whether to explode the sector(available only for the last level of the series).
+        </dd>
+        <dt>
+             `"visibleInLegend"`
+        </dt>
+        <dd>
+             A boolean value indicating whether to show the sector in the legend.
+        </dd>
+   </dl>
+</div>
+ 
+
+#### Example
+
+    // ...
+     series:[{
+         type: "donut",
+         data:[{
+             value: 40,
+             category: "Apples"
+         }, {
+             value: 60,
+             category: "Oranges",
+             color: "#ff6103"
+         }],
+         name: "Sales in Percent"
+     }]
+     // ...
+
+### `series.type="donut".explodeField` : **String** 
+
+The data field containing a boolean value that indicates if the sector is exploded
+(available only for the last level of the series).
+
+### `series.type="donut".holeSize` : **Number** 
+
+The the size of the donut hole.
+
+### `series.type="donut".labels` : **Object** 
+
+Configures the series data labels.
+
+### `series.type="donut".labels.align` : **String** *(default: "circle")*
+
+Defines the alignment of the donut labels.
+<div class="details-list">
+   <dl>
+        <dt>
+            `"circle"`
+        </dt>
+        <dd>
+             The labels are positioned in circle around the donut chart.
+        </dd>
+        <dt>
+            `"column"`
+        </dt>
+        <dd>
+             The labels are positioned in columns to the left and right of the donut chart.
+        </dd>
+   </dl>
+</div>
+
+### `series.type="donut".labels.background` : **String** 
+
+The background color of the labels.
+
+### `series.type="donut".labels.border` : **Object** 
+
+The border of the labels.
+
+### `series.type="donut".labels.border.color` : **String** *(default: "black")*
+
+ The color of the border.
+
+### `series.type="donut".labels.border.dashType` : **String** *(default: "solid")*
+
+ The dash type of the border.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"solid"`
+        </dt>
+        <dd>
+             Specifies a solid line.
+        </dd>
+        <dt>
+             `"dot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dots.
+        </dd>
+        <dt>
+             `"dash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dashes.
+        </dd>
+        <dt>
+             `"longDash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash.
+        </dd>
+        <dt>
+             `"dashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of dash-dot.
+        </dd>
+        <dt>
+             `"longDashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot.
+        </dd>
+        <dt>
+             `"longDashDotDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+        </dd>
+   </dl>
+</div>
+
+### `series.type="donut".labels.border.width` : **Number** *(default: 0)*
+
+ The width of the border.
+
+### `series.type="donut".labels.color` : **String** 
+
+The text color of the labels.
+
+### `series.type="donut".labels.distance` : **Number** *(default: 35)*
+
+ The distance of the labels.
+
+### `series.type="donut".labels.font` : **String** *(default: "12px Arial, sans-serif")*
+
+The font style of the labels.
+
+### `series.type="donut".labels.format` : **String** 
+
+The format of the labels.
+
+#### Example
+
+    //sets format of the labels
+    format: "C"
+
+### `series.type="donut".labels.margin` : **Number|Object** *(default: 0.5)*
+
+ The margin of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+    
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 2px (by default)
+    margin: { top: 1, left: 1 }
+
+### `series.type="donut".labels.padding` : **Number|Object** *(default: 0)*
+
+ The padding of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+    
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 2px (by default)
+    padding: { top: 1, left: 1 }
+
+### `series.type="donut".labels.position` : **String** *(default: "outsideEnd")*
+
+Defines the position of the donut labels.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"center"`
+        </dt>
+        <dd>
+             The labels are positioned at the center of the donut segments.
+        </dd>
+        <dt>
+             `"insideEnd"`
+        </dt>
+        <dd>
+             The labels are positioned inside, near the end of the donut segments.
+        </dd>
+        <dt>
+             `"outsideEnd"`
+        </dt>
+        <dd>
+             The labels are positioned outside, near the end of the donut segments.
+             The labels and the donut segments are connected with connector line.
+        </dd>
+   </dl>
+</div>
+
+### `series.type="donut".labels.template` : **String/Function** 
+
+The label template.
+Template variables:
+
+
+*   **value** - the point value
+*   **percentage** - the point value represented as a percentage value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    // chart intialization
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [{
+             type: "donut",
+             data: [
+                 { value: 200, category: 2000 },
+                 { value: 450, category: 2001 },
+                 { value: 300, category: 2002 },
+                 { value: 125, category: 2003 }
+             ],
+             labels: {
+                 // label template
+                 template: "#= value #%",
+                 visible: true
+             }
+         }]
+    });
+
+### `series.type="donut".labels.visible` : **Boolean** *(default: false)*
+
+ The visibility of the labels.
+
+### `series.type="donut".margin` : **Number** *(default: 1)*
+
+ The margin around each series
+(not available for the last level of the series).
+
+### `series.type="donut".opacity` : **Number** *(default: 1)*
+
+ The series opacity.
+
+### `series.type="donut".overlay` : **Object** 
+
+The effects overlay.
+
+### `series.type="donut".overlay.gradient` : **String** *(default: "roundedBevel")*
+
+ The gradient name.
+Available options are "none" and "roundedCircle".
+
+### `series.type="donut".padding` : **Number** 
+
+The padding around the donut chart (equal on all sides).
+
+### `series.type="donut".size` : **Number** 
+
+The size of the series.
+
+### `series.type="donut".startAngle` : **number** *(default: 90)*
+
+ The start angle of the first donut segment.
+
+### `series.type="donut".tooltip` : **Object** 
+
+The data point tooltip configuration options.
+
+### `series.type="donut".tooltip.background` : **String** 
+
+The background color of the tooltip. The default is determined from the series color.
+
+### `series.type="donut".tooltip.border` : **Object** 
+
+The border configuration options.
+
+### `series.type="donut".tooltip.border.color` : **String** *(default: "black")*
+
+ The color of the border.
+
+### `series.type="donut".tooltip.border.width` : **Number** *(default: 0)*
+
+ The width of the border.
+
+### `series.type="donut".tooltip.color` : **String** 
+
+The text color of the tooltip. The default is the same as the series labels color.
+
+### `series.type="donut".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+
+ The tooltip font.
+
+### `series.type="donut".tooltip.format` : **String** 
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "C"
+
+### `series.type="donut".tooltip.padding` : **Number|Object** 
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+    
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### `series.type="donut".tooltip.template` : **String|Function** 
+
+The tooltip template.
+Template variables:
+
+
+*   **value** - the point value
+*   **percentage** - the point value represented as a percentage value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "donut",
+                 name: "Series 1",
+                 data: [200, 450, 300, 125],
+                 tooltip: {
+                     visible: true,
+                     template: "#= category # - #= value #"
+                 }
+             }
+         ]
+    });
+
+### `series.type="donut".tooltip.visible` : **Boolean** *(default: false)*
+
+ A value indicating if the tooltip should be displayed.
+
 ### `series.type="line"`  
 
 Available options for line series:
+
+### `series.type="line".aggregate` : **String** *(default: "max")*
+
+ Aggregate function for date series.
+This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
+<div class="details-list">
+   <dl>
+        <dt>
+             `"max"`
+        </dt>
+        <dd>
+             The highest value for the date period.
+        </dd>
+        <dt>
+             `"min"`
+        </dt>
+        <dd>
+             The lowest value for the date period.
+        </dd>
+        <dt>
+             `"sum"`
+        </dt>
+        <dd>
+             The sum of all values for the date period.
+        </dd>
+        <dt>
+             `"count"`
+        </dt>
+        <dd>
+             The number of values for the date period.
+        </dd>
+        <dt>
+             `"avg"`
+        </dt>
+        <dd>
+             The average of all values for the date period.
+        </dd>
+        <dt>
+             `function (values, series)`
+        </dt>
+        <dd>
+             User-defined aggregate function.
+        </dd>
+   </dl>
+</div>
 
 ### `series.type="line".axis` : **String** *(default: primary)*
 
@@ -2364,7 +3077,7 @@ The format of the labels.
 #### Example
 
     //sets format of the labels
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="line".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
 
@@ -2591,7 +3304,7 @@ The tooltip format.
 #### Example
 
     //sets format of the tooltip
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="line".tooltip.padding` : **Number|Object** 
 
@@ -2910,7 +3623,7 @@ The format of the labels.
 #### Example
 
     //sets format of the labels
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="pie".labels.margin` : **Number|Object** *(default: 0.5)*
 
@@ -3001,10 +3714,7 @@ Template variables:
                      visible: true
                  }
              }
-         ],
-         categoryAxis: {
-             categories: [2000, 2001, 2002, 2003]
-         }
+         ]
     });
 
 ### `series.type="pie".labels.visible` : **Boolean** *(default: false)*
@@ -3067,7 +3777,7 @@ The tooltip format.
 #### Example
 
     //sets format of the tooltip
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="pie".tooltip.padding` : **Number|Object** 
 
@@ -3227,7 +3937,7 @@ The format of the labels.
 #### Example
 
     //sets format of the labels
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="scatter".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
 
@@ -3421,7 +4131,7 @@ The tooltip format.
 #### Example
 
     //sets format of the tooltip
-    format: "{0:C}--{0:C}"
+    format: "{0:C}--{1:C}"
 
 ### `series.type="scatter".tooltip.padding` : **Number|Object** 
 
@@ -3638,7 +4348,7 @@ The format of the labels.
 #### Example
 
     //sets format of the labels
-    format: "{0:C}--{0:C}"
+    format: "{0:C}--{1:C}"
 
 ### `series.type="scatterLine".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
 
@@ -3858,7 +4568,7 @@ The tooltip format.
 #### Example
 
     //sets format of the tooltip
-    format: "{0:C}"
+    format: "C"
 
 ### `series.type="scatterLine".tooltip.padding` : **Number|Object** 
 
@@ -3928,7 +4638,6 @@ The category axis is rendered vertically instead of horizontally.
 ### `series.type="verticalLine"`  
 
 Vertical line series accepts the same parameters as line series.
-
 The line and the category axis are now vertical instead of horizontal.
 
 ### `series.visibleInLegend` : **Boolean** *(default: true)*
@@ -4019,6 +4728,11 @@ The border of the series.
 The column configuration options.
 The default options for all column series. For more details see the series options.
 
+### `seriesDefaults.donut` : **Object** 
+
+The donut configuration options.
+The default options for all donut series. For more details see the series options.
+
 ### `seriesDefaults.gap` : **Number** *(default: 1.5)*
 
  The distance between category clusters.
@@ -4036,7 +4750,7 @@ Configures the series data labels.
                 // set the margin on all sides to 1
                 margin: 1,
                 // format the labels as currency
-                format: "{0:C}"
+                format: "C"
             }
         },
         ...
@@ -4139,7 +4853,7 @@ The format of the labels.
 #### Example
 
     //sets format of the labels
-    format: "{0:C}"
+    format: "C"
 
 ### `seriesDefaults.labels.margin` : **Number|Object** *(default: 0)*
 
@@ -4297,7 +5011,7 @@ The tooltip format.
 #### Example
 
     //sets format of the tooltip
-    format: "{0:C}"
+    format: "C"
 
 ### `seriesDefaults.tooltip.padding` : **Number|Object** 
 
@@ -4601,7 +5315,7 @@ The tooltip format.
 #### Example
 
     //sets format of the tooltip
-    format: "{0:C}"
+    format: "C"
 
 ### `tooltip.padding` : **Number|Object** 
 
@@ -4687,7 +5401,7 @@ Configures the axis labels.
                 // rotate the labels just slightly for visual effect
                 rotation: 10,
                 // format the labels for currency
-                format: "{0:C}"
+                format: "C"
             }
         },
         ...
@@ -4797,7 +5511,7 @@ The format of the labels.
         valueAxis: {
            labels: {
                // set the format to currency
-               format: "{0:C}"
+               format: "C"
            }
         },
         ...
@@ -5040,58 +5754,17 @@ on the chart.
 
 ### `valueAxis.majorUnit` : **Number** 
 
-The interval between major divisions. For instance, on a column chart, its the step size while going up the
-vertical axis.You can additionally have minor steps and ticks in between the major ones by adjusting the **minorUnit**, **minorTicks.size**.
-
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            // show ticks in steps of 100.
-            majorUnit: 100,
-            // by default, the size is 4. increase it to 5 pixels.
-            majorTicks.size: 5,
-            // only the number will appear.
-            majorTicks.visible: false
-        },
-        ...
-    });
+The interval between major divisions.
 
 ### `valueAxis.max` : **Number** *(default: 1)*
 
  The maximum value of the axis.
-This is often used in combination with the **min** configuration method
-to adjust the size of the chart relative to the charting area.
-
-#### Example
-
-    $("#chart").kendoChart({
-        // assuming the data set lowest value is 20 and the highest is 100,
-        // we can make the chart bigger in the chart area by adjusting the min/max values
-        valueAxis: {
-            min: 10,
-            max: 100
-        },
-        ...
-    });
+This is often used in combination with the **min** configuration option.
 
 ### `valueAxis.min` : **Number** *(default: 0)*
 
  The minimum value of the axis.
-This is often used in combination with the **max** configuration method
-to adjust the size of the chart relative to the charting area.
-
-#### Example
-
-    $("#chart").kendoChart({
-        // assuming the data set lowest value is 20 and the highest is 100,
-        // we can make the chart bigger in the chart area by adjusting the min/max values
-        valueAxis: {
-            min: 10,
-            max: 100
-        },
-        ...
-    });
+This is often used in combination with the **max** configuration option.
 
 ### `valueAxis.minorGridLines` : **Object** 
 
@@ -5160,6 +5833,11 @@ on the chart.
 ### `valueAxis.minorTicks.visible` : **Boolean** *(default: false)*
 
  The visibility of the minor ticks.
+
+### `valueAxis.minorUnit` : **Number** 
+
+The interval between minor divisions.
+It defaults to 1/5th of the majorUnit.
 
 ### `valueAxis.name` : **Object** *(default: primary)*
 
@@ -5470,13 +6148,122 @@ The text of the title.
 ### `xAxis` : **Object** 
 
 Scatter charts X-axis configuration options.
-Includes all valueAxis options in addition to:
+Includes **all valueAxis options** in addition to:
 
-### `xAxis.axisCrossingValue` : **Number** *(default: 0)*
+### `xAxis.type` : **String** *(default: "Numeric")*
+
+ The axis type.
+
+
+Note: The Chart will automatically switch to a date axis if the series X value
+is of type Date. Specify type explicitly when such behavior is undesired.
+
+<div class="details-list">
+    <dl>
+        <dt>
+             `"Numeric"`
+        </dt>
+        <dd>
+             Generic axis with automatic range.
+        </dd>
+        <dt>
+             `"Date"`
+        </dt>
+        <dd>
+             Suitable for displaying chronological data.
+        </dd>
+   </dl>
+</div>
+
+### `xAxis.type: "Date"`  
+
+Properties specific to the date-time value axis
+
+### `xAxis.type: "Date".axisCrossingValue` : **Date** 
+
+Date at which the Y axis crosses this axis.
+
+### `xAxis.type: "Date".baseUnit` : **String** 
+
+The base time interval for the axis labels.
+The default baseUnit is determined automatically from the value range. Available options:
+
+
+*   hours
+*   days
+*   months
+*   years
+
+### `xAxis.type: "Date".labels` : **Object** 
+
+Label settings specific to the date axis.
+
+### `xAxis.type: "Date".labels.culture` : **String** *(default: global culture)*
+
+Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
+
+### `xAxis.type: "Date".labels.dateFormats` : **Object** 
+
+Date format strings
+<div class="details-list">
+   <dl>
+        <dt>
+             `"hours"`
+        </dt>
+        <dd>
+             "HH:mm"
+        </dd>
+        <dt>
+             `"days"`
+        </dt>
+        <dd>
+             "M/d"
+        </dd>
+        <dt>
+             `"months"`
+        </dt>
+        <dd>
+             "MMM 'yy"
+        </dd>
+        <dt>
+             `"years"`
+        </dt>
+        <dd>
+             "yyyy"
+        </dd>
+   </dl>
+</div>
+The Chart will choose the appropriate format for the current `baseUnit`.
+Setting the labels **format** option will override these defaults.
+
+### `xAxis.type: "Date".majorUnit` : **Number** 
+
+The interval between major divisions in base units.
+
+### `xAxis.type: "Date".max` : **Date** 
+
+The end date of the axis.
+This is often used in combination with the **min** configuration option.
+
+### `xAxis.type: "Date".min` : **Date** 
+
+The start date of the axis.
+This is often used in combination with the **max** configuration option.
+
+### `xAxis.type: "Date".minorUnit` : **Number** 
+
+The interval between minor divisions in base units.
+It defaults to 1/5th of the majorUnit.
+
+### `xAxis.type: "Numeric"` : **Number** 
+
+Options specific to the numeric axis.
+
+### `xAxis.type: "Numeric".axisCrossingValue`  *(default: 0)*
 
 Value at which the first Y axis crosses this axis.
 
-### `xAxis.axisCrossingValue` : **Array** *(default: [0])*
+### `xAxis.type: "Numeric".axisCrossingValue` : **Array** *(default: [0])*
 
 Values at which the Y axes cross this X axis.
 <p>
@@ -5498,30 +6285,7 @@ axis maximum value to denote the far end of the axis.
 ### `yAxis` : **Object** 
 
 The scatter charts Y-axis configuration options.
-Includes all valueAxis options in addition to:
-
-### `yAxis.axisCrossingValue` : **Number** *(default: 0)*
-
-Value at which the first X axis crosses this axis.
-
-### `yAxis.axisCrossingValue` : **Array** *(default: [0])*
-
-Values at which the X axes cross this Y axis.
-<p>
-**Note:&nbsp;** Specify a value greater than or equal to the
-axis maximum value to denote the far end of the axis.
-
-#### Example
-
-    $("#chart").kendoChart({
-         ...,
-         yAxis: {
-             axisCrossingValue: [0, 1000]
-         },
-         xAxis: [{ }, { name: "secondary" }],
-         ...
-    });
-    </p>
+See **xAxis** for list of available options.
 
 ## Methods
 

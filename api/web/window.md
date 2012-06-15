@@ -272,7 +272,7 @@ Destroys the window and its modal overlay, if necessary. Useful for removing mod
 
 ### maximize
 
-Maximizes a Window to the entire viewing area of the user agent.
+Maximizes a Window to the entire viewing area of the user agent. Triggers the resize event.
 
 #### Maximize a Window
 
@@ -357,7 +357,7 @@ A template to be used for displaying the requested data.
 
 ### restore
 
-Restores a maximized or minimized Window to its previous state.
+Restores a maximized or minimized Window to its previous state. Triggers the resize event.
 
 #### Restore the state of a Window; utilize chaining (if necessary)
 
@@ -407,7 +407,7 @@ Brings forward a Window to the top of the z-index.
 
 ### toggleMaximization
 
-Toggles a Window between a maximized and restored state.
+Toggles a Window between a maximized and restored state. Triggers the resize event.
 
 #### Toggle the state of a Window; utilize chaining (if necessary)
 

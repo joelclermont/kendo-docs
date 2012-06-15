@@ -25,9 +25,9 @@ Abstracts problem with android triggering event before the dimensions have chang
 
 #### Parameters
 
-##### The `Function`
+##### callback `Function`
 
-callback to be executed
+The callback to be executed
 
 ### preventDefault
 

@@ -256,7 +256,7 @@ The format of the labels.
         scale: {
            labels: {
                // set the format to currency
-               format: "{0:C}"
+               format: "C"
            }
         }
     });
