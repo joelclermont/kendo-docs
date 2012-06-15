@@ -22,8 +22,7 @@ Kendo UI DataViz includes the following chart types:
 
 
 
-Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for additional information about
-new Chart types and features.
+Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for additional information about new Chart types and features.
 
 
 ### 
