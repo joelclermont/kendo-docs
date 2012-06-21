@@ -476,6 +476,56 @@ Configures the axis line. This will also effect major and minor ticks, but not g
 
 **Note:** This will also effect the major and minor ticks, but not the grid lines.
 
+### `categoryAxis.line.dashType` : **String** *(default: "solid")*
+
+ The dash type of the line.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"solid"`
+        </dt>
+        <dd>
+             Specifies a solid line.
+        </dd>
+        <dt>
+             `"dot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dots.
+        </dd>
+        <dt>
+             `"dash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dashes.
+        </dd>
+        <dt>
+             `"longDash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash.
+        </dd>
+        <dt>
+             `"dashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of dash-dot.
+        </dd>
+        <dt>
+             `"longDashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot.
+        </dd>
+        <dt>
+             `"longDashDotDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+        </dd>
+   </dl>
+</div>
+
 ### `categoryAxis.line.visible` : **Boolean** *(default: true)*
 
  The visibility of the lines.
@@ -494,7 +544,7 @@ Configures the axis line. This will also effect major and minor ticks, but not g
 
 ### `categoryAxis.line.width` : **Number** *(default: 1)*
 
- The width of the line.  This will also effect the major and minor ticks, but
+ The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 ### `categoryAxis.majorGridLines` : **Object** 
@@ -519,6 +569,56 @@ body of the chart.
 ### `categoryAxis.majorGridLines.color` : **String** *(default: "black")*
 
  The color of the lines. Any valid CSS color string will work here, including hex and rgb.
+
+### `categoryAxis.majorGridLines.dashType` : **String** *(default: "solid")*
+
+ The dash type of the grid lines.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"solid"`
+        </dt>
+        <dd>
+             Specifies a solid line.
+        </dd>
+        <dt>
+             `"dot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dots.
+        </dd>
+        <dt>
+             `"dash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dashes.
+        </dd>
+        <dt>
+             `"longDash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash.
+        </dd>
+        <dt>
+             `"dashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of dash-dot.
+        </dd>
+        <dt>
+             `"longDashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot.
+        </dd>
+        <dt>
+             `"longDashDotDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+        </dd>
+   </dl>
+</div>
 
 ### `categoryAxis.majorGridLines.visible` : **Boolean** *(default: false)*
 
@@ -585,6 +685,56 @@ rgb.
 
 Note that this setting has no effect if the visibility of the minor
 grid lines is not set to **true**.
+
+### `categoryAxis.minorGridLines.dashType` : **String** *(default: "solid")*
+
+ The dash type of the grid lines.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"solid"`
+        </dt>
+        <dd>
+             Specifies a solid line.
+        </dd>
+        <dt>
+             `"dot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dots.
+        </dd>
+        <dt>
+             `"dash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dashes.
+        </dd>
+        <dt>
+             `"longDash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash.
+        </dd>
+        <dt>
+             `"dashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of dash-dot.
+        </dd>
+        <dt>
+             `"longDashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot.
+        </dd>
+        <dt>
+             `"longDashDotDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+        </dd>
+   </dl>
+</div>
 
 ### `categoryAxis.minorGridLines.visible` : **Boolean** *(default: false)*
 
@@ -2400,6 +2550,373 @@ Template variables:
 
  A value indicating if the tooltip should be displayed.
 
+### `series.type="bubble"`  
+
+Available options for bubble series:
+
+### `series.type="bubble".border` : **Object** 
+
+The border of the bubble.
+
+### `series.type="bubble".border.color` : **String** *(default: "black")*
+
+ The color of the border.
+
+### `series.type="bubble".border.width` : **Number** *(default: 0)*
+
+ The width of the border.
+
+### `series.type="bubble".categoryField` : **String** 
+
+The data field containing the bubble category name.
+
+### `series.type="bubble".color` : **String** 
+
+The series base color.
+
+### `series.type="bubble".colorField` : **String** 
+
+The data field containing the bubble color.
+
+### `series.type="bubble".data` : **Array** 
+
+Array of data items (optional).
+The bubble chart can be bound to an array of arrays with three numbers (X, Y and Size).
+ 
+
+#### Example
+
+    // ...
+     series:[{
+         type: "bubble",
+         data:[[1, 1, 1], [1, 2, 2]],
+         name: "Points"
+     }]
+     // ...
+
+### `series.type="bubble".labels` : **Object** 
+
+Configures the series data labels.
+
+### `series.type="bubble".labels.background` : **String** 
+
+The background color of the labels.
+
+### `series.type="bubble".labels.border` : **Object** 
+
+The border of the labels.
+
+### `series.type="bubble".labels.border.color` : **String** *(default: "black")*
+
+ The color of the border.
+
+### `series.type="bubble".labels.border.dashType` : **String** *(default: "solid")*
+
+ The dash type of the border.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"solid"`
+        </dt>
+        <dd>
+             Specifies a solid line.
+        </dd>
+        <dt>
+             `"dot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dots.
+        </dd>
+        <dt>
+             `"dash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dashes.
+        </dd>
+        <dt>
+             `"longDash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash.
+        </dd>
+        <dt>
+             `"dashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of dash-dot.
+        </dd>
+        <dt>
+             `"longDashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot.
+        </dd>
+        <dt>
+             `"longDashDotDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+        </dd>
+   </dl>
+</div>
+
+### `series.type="bubble".labels.border.width` : **Number** *(default: 0)*
+
+ The width of the border.
+
+### `series.type="bubble".labels.color` : **String** 
+
+The text color of the labels.
+
+### `series.type="bubble".labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the labels.
+
+### `series.type="bubble".labels.format` : **String** 
+
+The format of the labels.
+
+#### Example
+
+    //sets format of the labels
+    format: "C"
+
+### `series.type="bubble".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
+
+The margin of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+    
+    // sets the top and bottom margin to 1px
+    // margin left and right are with 5px (by default)
+    margin: { top: 1, bottom: 1 }
+
+### `series.type="bubble".labels.padding` : **Number|Object** *(default: 0)*
+
+ The padding of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+    
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
+
+### `series.type="bubble".labels.position` : **String** *(default: "above")*
+
+Defines the position of the bubble labels.
+<div class="details-list">
+   <dl>
+        <dt>
+             `"above"`
+        </dt>
+        <dd>
+             The label is positioned at the top of the bubble chart marker.
+        </dd>
+        <dt>
+             `"right"`
+        </dt>
+        <dd>
+             The label is positioned at the right of the bubble chart marker.
+        </dd>
+        <dt>
+             `"below"`
+        </dt>
+        <dd>
+             The label is positioned at the bottom of the bubble chart marker.
+        </dd>
+        <dt>
+             `"left"`
+        </dt>
+        <dd>
+             The label is positioned at the left of the bubble chart marker.
+        </dd>
+   </dl>
+</div>
+
+### `series.type="bubble".labels.template` : **String/Function** 
+
+The label template.
+Template variables:
+
+
+*   **value.x** - the x value
+*   **value.y** - the y value
+*   **value.size** - the size value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    // chart intialization
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "bubble",
+                 name: "Series 1",
+                 data: [[1, 1, 1], [1, 2, 2], [1, 3, 3]],
+                 labels: {
+                     // label template
+                     template: "#= value.x # - #= value.y # - #= value.size #",
+                     visible: true
+                 }
+             }
+         ]
+    });
+
+### `series.type="bubble".labels.visible` : **Boolean** *(default: false)*
+
+ The visibility of the labels.
+
+### `series.type="bubble".maxSize` : **Number** *(default: 100)*
+
+ The max size of the bubble.
+
+### `series.type="bubble".minSize` : **Number** *(default: 5)*
+
+ The min size of the bubble.
+
+### `series.type="bubble".name` : **String** 
+
+The series name.
+
+### `series.type="bubble".negativeValues` : **Object** 
+
+The series negative values.
+
+### `series.type="bubble".negativeValues.color` : **String** 
+
+The color of the negative values.
+
+### `series.type="bubble".negativeValues.visible` : **Boolean** 
+
+The visibility of the negative values.
+
+### `series.type="bubble".opacity` : **Number** *(default: 1)*
+
+ The series opacity.
+
+### `series.type="bubble".sizeField` : **String** 
+
+The data field containing the bubble size value.
+
+### `series.type="bubble".tooltip` : **Object** 
+
+The data point tooltip configuration options.
+
+### `series.type="bubble".tooltip.background` : **String** 
+
+The background color of the tooltip. The default is determined from the series color.
+
+### `series.type="bubble".tooltip.border` : **Object** 
+
+The border configuration options.
+
+### `series.type="bubble".tooltip.border.color` : **String** *(default: "black")*
+
+ The color of the border.
+
+### `series.type="bubble".tooltip.border.width` : **Number** *(default: 0)*
+
+ The width of the border.
+
+### `series.type="bubble".tooltip.color` : **String** 
+
+The text color of the tooltip. The default is the same as the series labels color.
+
+### `series.type="bubble".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+
+ The tooltip font.
+
+### `series.type="bubble".tooltip.format` : **String** 
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "{0:C}--{1:C}"
+
+### `series.type="bubble".tooltip.padding` : **Number|Object** 
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+    
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### `series.type="bubble".tooltip.template` : **String|Function** 
+
+The tooltip template.
+Template variables:
+
+
+*   **value.x** - the x value
+*   **value.y** - the y value
+*   **value.size** - the size value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "bubble",
+                 name: "Series 1",
+                 data: [[1, 1, 1], [1, 2, 2], [1, 3, 3]],
+                 tooltip: {
+                     visible: true,
+                     template: "#= category # - #= value.x # - #= value.y # - #= value.size #"
+                 }
+             }
+         ]
+    });
+
+### `series.type="bubble".tooltip.visible` : **Boolean** *(default: false)*
+
+ A value indicating if the tooltip should be displayed.
+
+### `series.type="bubble".visibleInLegendField` : **String** 
+
+A boolean value indicating whether to show the bubble category name in the legend.
+
+### `series.type="bubble".xAxis` : **String** *(default: primary)*
+
+ The name of the X axis to use.
+
+### `series.type="bubble".xField` : **String** 
+
+The data field containing the bubble x value.
+
+### `series.type="bubble".yAxis` : **String** *(default: primary)*
+
+ The name of the Y axis to use.
+
+### `series.type="bubble".yField` : **String** 
+
+The data field containing the bubble y value.
+
 ### `series.type="column"`  
 
 Column series accepts the same parameters as bar series.
@@ -2699,7 +3216,7 @@ The format of the labels.
     // padding right and bottom are with 2px (by default)
     padding: { top: 1, left: 1 }
 
-### `series.type="donut".labels.position` : **String** *(default: "outsideEnd")*
+### `series.type="donut".labels.position` : **String** *(default: "center")*
 
 Defines the position of the donut labels.
 <div class="details-list">
@@ -2865,8 +3382,7 @@ Template variables:
          title: {
              text: "My Chart Title"
          },
-         series: [
-             {
+         series: [{
                  type: "donut",
                  name: "Series 1",
                  data: [200, 450, 300, 125],
@@ -2874,8 +3390,7 @@ Template variables:
                      visible: true,
                      template: "#= category # - #= value #"
                  }
-             }
-         ]
+         }]
     });
 
 ### `series.type="donut".tooltip.visible` : **Boolean** *(default: false)*
@@ -3826,6 +4341,14 @@ Template variables:
 
  A value indicating if the tooltip should be displayed.
 
+### `series.type="pie".visibleInLegendField` : **Number** 
+
+A boolean value indicating whether to show the sector in the legend.
+
+### `series.type="pie".visibleInLegendField` : **Number** 
+
+A boolean value indicating whether to show the sector in the legend.
+
 ### `series.type="scatter"`  
 
 Available options for scatter series:
@@ -4720,6 +5243,11 @@ The border of the series.
 ### `seriesDefaults.border.width` : **Number** *(default: 0)*
 
  The width of the border.
+
+### `seriesDefaults.bubble` : **Object** 
+
+The bubble configuration options.
+The default options for all bubble series. For more details see the series options.
 
 ### `seriesDefaults.column` : **Object** 
 
@@ -5651,7 +6179,7 @@ Template variables:
 
 ### `valueAxis.line` : **Object** 
 
-Configures the axis line.  This will also affect the major and minor ticks, but not the grid lines.
+Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
 
 #### Example
 
@@ -5669,12 +6197,62 @@ Configures the axis line.  This will also affect the major and minor ticks, but 
 
 ### `valueAxis.line.color` : **String** *(default: "black")*
 
- The color of the lines. This will also affect the major and minor ticks, but not the
-grid lines.
+ The color of the line. This will also effect the major and minor ticks, but
+not the grid lines.
+
+### `valueAxis.line.dashType` : **String** *(default: "solid")*
+
+ The dash type of the line.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"solid"`
+        </dt>
+        <dd>
+             Specifies a solid line.
+        </dd>
+        <dt>
+             `"dot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dots.
+        </dd>
+        <dt>
+             `"dash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dashes.
+        </dd>
+        <dt>
+             `"longDash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash.
+        </dd>
+        <dt>
+             `"dashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of dash-dot.
+        </dd>
+        <dt>
+             `"longDashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot.
+        </dd>
+        <dt>
+             `"longDashDotDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+        </dd>
+   </dl>
+</div>
 
 ### `valueAxis.line.visible` : **Boolean** *(default: true)*
 
- The visibility of the lines.
+ The visibility of the line.
 
 #### Example
 
@@ -5690,7 +6268,8 @@ grid lines.
 
 ### `valueAxis.line.width` : **Number** *(default: 1)*
 
- The width of the lines.
+ The width of the line. This will also effect the major and minor ticks, but
+not the grid lines.
 
 ### `valueAxis.majorGridLines` : **Object** 
 
@@ -5707,7 +6286,9 @@ body of the chart.
                 // set width to 2 pixels
                 width: 2,
                 // set the color to a dark blue
-                color: "#336699"
+                color: "#336699",
+                // set the dashType to dot
+                dashType: "dot"
             }
         },
         ...
@@ -5767,6 +6348,63 @@ This is often used in combination with the **max** configuration option.
 ### `valueAxis.minorGridLines` : **Object** 
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through the
+
+### `valueAxis.minorGridLines.color` : **String** *(default: "black")*
+
+ The color of the lines.
+
+
+Note that this has no effect if the visibility of the minor grid lines is not set to **true**.
+
+### `valueAxis.minorGridLines.dashType` : **String** *(default: "solid")*
+
+ The dash type of the minor grid lines.
+<div class="details-list">
+    <dl>
+        <dt>
+             `"solid"`
+        </dt>
+        <dd>
+             Specifies a solid line.
+        </dd>
+        <dt>
+             `"dot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dots.
+        </dd>
+        <dt>
+             `"dash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of dashes.
+        </dd>
+        <dt>
+             `"longDash"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash.
+        </dd>
+        <dt>
+             `"dashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of dash-dot.
+        </dd>
+        <dt>
+             `"longDashDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot.
+        </dd>
+        <dt>
+             `"longDashDotDot"`
+        </dt>
+        <dd>
+             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+        </dd>
+   </dl>
+</div>
 body of the chart.  
 
 Note that minor grid lines are not visible by default, therefore none of these settings will take effect without the minor grid
@@ -5783,18 +6421,13 @@ lines visibility being set to **true**
                 // set width to 2 pixels
                 width: 2,
                 // set the color to a dark blue
-                color: "#336699"
+                color: "#336699",
+                // set the dashType to dot
+                dashType: "dot"
             }
         },
         ...
     });
-
-### `valueAxis.minorGridLines.color` : **String** *(default: "black")*
-
- The color of the lines.
-
-
-Note that this has no effect if the visibility of the minor grid lines is not set to **true**.
 
 ### `valueAxis.minorGridLines.visible` : **Boolean** *(default: false)*
 

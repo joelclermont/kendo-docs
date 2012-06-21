@@ -71,7 +71,7 @@ actions with the name "Custom", but any name can be used. Click events can be ca
       $("#window").kendoWindow({
           actions: ["Custom", "Minimize", "Maximize", "Close"],
           title: "Window Title"
-      }).data("kendoWindow").wrapper.find(".k-custom").click(function(e) {
+      }).data("kendoWindow").wrapper.find(".k-i-custom").click(function(e) {
           alert("Custom action button clicked");
           e.preventDefault();
       });

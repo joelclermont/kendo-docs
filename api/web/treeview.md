@@ -89,16 +89,9 @@ Currently, the **TreeView** does not support binding to a remote data source.
         // useful when rendering node-specific HTML
         encoded: false,
     
-        items: [
-            // child items
-        ]
-    }
-
-### Configuring TreeView Behavior
-
-
- A number of **TreeView** behaviors can be easily controlled by simple configuration properties,
- such as animation behaviors and drag-and-drop behaviors.
+     A number of <strong>TreeView</strong> behaviors can be easily controlled by simple configuration properties,
+     such as animation behaviors and drag-and-drop behaviors.
+    </p>
 
 #### Enabling drag-and-drop for TreeView nodes
 
@@ -232,14 +225,85 @@ Template for rendering of the treeview checkboxes.
         )
     });
 
+### `dataImageUrlField` : **String** *(default: null)*
+
+ Sets the field of the data item that provides
+the image URL of the treeview nodes.
+
+#### Example
+
+    var items = [
+        { id: 1, text: "Tea", image: "tea.png" },
+        { id: 2, text: "Coffee", image: "coffee.png" }
+    ];
+    
+    $("#treeview").kendoTreeView({
+        dataSource: items,
+        dataImageUrlField: "image"
+    });
+
 ### `dataSource` : **Array** 
 
 The data that the **TreeView** will be bound to.
+
+### `dataSpriteCssClassField` : **String** *(default: null)*
+
+ Sets the field of the data item that provides
+the sprite CSS class of the treeview nodes.
+
+#### Example
+
+    var items = [
+        { id: 1, text: "Tea", sprite: "icon-tea" },
+        { id: 2, text: "Coffee", sprite: "icon-coffee" }
+    ];
+    
+    $("#treeview").kendoTreeView({
+        dataSource: items,
+        dataSpriteCssClassField: "sprite"
+    });
+
+### `dataTextField` : **String** *(default: null)*
+
+ Sets the field of the data item that provides
+the text content of the treeview nodes.
+
+#### Example
+
+    var items = [ { id: 1, ProductName: "Tea" }, { id: 2, ProductName: "Coffee"} ];
+    $("#treeview").kendoTreeView({
+        dataSource: items,
+        dataTextField: "ProductName"
+    });
+
+### `dataUrlField` : **String** *(default: null)*
+
+ Sets the field of the data item that provides
+the link URL of the treeview nodes.
+
+#### Example
+
+    var items = [
+        { id: 1, text: "Tea", LinksTo: "http://tea.example.com" },
+        { id: 2, text: "Coffee", LinksTo: "http://coffee.example.com" }
+    ];
+    
+    $("#treeview").kendoTreeView({
+        dataSource: items,
+        dataUrlField: "LinksTo"
+    });
 
 ### `dragAndDrop` : **Boolean** *(default: false)*
 
 Disables (**false**) or enables (**true**) drag-and-drop on the nodes of a
 **TreeView**.
+
+### `loadOnDemand` : **Boolean** *(default: true)*
+
+ Indicates whether the child datasources should be fetched
+lazily, when parent groups get expanded. Setting this to false causes all child dataSources to
+be loaded at initialization time. Note: when initializing a TreeView from array (rather than from a
+HierarchicalDataSource instance), the default value of this option is false.
 
 ### `template` : **String|Function** 
 
@@ -258,10 +322,10 @@ Template for rendering of the nodes of the treeview.
 Appends a node to a group of a TreeView. This method may also be used to reorder the nodes of a
 TreeView.
 
-#### Append a new node with the text, "Meanwhile, in HTML5..." to the node with ID, firstItem
+#### Append a new node with the text, "HTML5" to the node with ID, firstItem
 
     var treeView = $("#treeView").data("kendoTreeView");
-    treeView.append({ text: "Meanwhile, in HTML5..." }, $("#firstItem"));
+    treeView.append({ text: "HTML5" }, $("#firstItem"));
 
 #### Moves the node with ID, secondNode as a last child of the node with ID, firstItem
 
@@ -300,6 +364,16 @@ Collapses nodes.
 ##### nodes `Selector`
 
 The nodes that are to be collapsed.
+
+### dataItem
+
+Returns the dataItem that corresponds to a TreeView node
+
+#### Parameters
+
+##### node ``
+
+
 
 ### detach
 
@@ -388,15 +462,35 @@ The text that is being searched for.
 
 `jQuery` All nodes that have the text.
 
+### findByUid
+
+Searches a TreeView for a node with the given unique identifier.
+Applicable when the widget is bound to a HierarchicalDataSource.
+
+#### Search a TreeView for the item that has the text, "CSS3 is da bomb!"
+
+    var treeView = $("#treeView").data("kendoTreeView");
+    var foundNode = treeView.findByText("CSS3 is da bomb!");
+
+#### Parameters
+
+##### text `String`
+
+The text that is being searched for.
+
+#### Returns
+
+`jQueryObject` All nodes that have the text.
+
 ### insertAfter
 
 Inserts a node after a specified node in a TreeView. This method may also be used to reorder the nodes of a
 TreeView.
 
-#### Insert a node with the text, "Y U NO insert node?" after the node with ID, firstItem
+#### Insert a node with the text, "JavaScript" after the node with ID, firstItem
 
     var treeView = $("#treeView").data("kendoTreeView");
-    treeView.insertAfter({ text: "Y U NO insert node?" }, $("#firstItem"));
+    treeView.insertAfter({ text: "JavaScript" }, $("#firstItem"));
 
 #### Moves a node with ID, secondNode after a node with ID, firstItem
 
@@ -418,10 +512,10 @@ The node that will be preceed the newly-appended node.
 Inserts a node before another node. This method may also be used to reorder the nodes of a
 TreeView.
 
-#### Inserts a new node with the text, "It's over 9000!" before the node with ID, firstItem
+#### Inserts a new node with the text, "CSS3" before the node with ID, firstItem
 
     var treeView = $("#treeView").data("kendoTreeView");
-    treeView.insertBefore({ text: "It's over 9000!" }, $("#firstItem"));
+    treeView.insertBefore({ text: "CSS3" }, $("#firstItem"));
 
 #### Moves the node with ID, secondNode before the node with ID, firstItem
 

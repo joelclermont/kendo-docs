@@ -157,6 +157,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 The value of the gauge.
 
+### `rangeSize` : **Number** 
+
+The width of the range indicators.
+
 ### `scale` : **Object** 
 
 Configures the scale.

@@ -300,14 +300,25 @@ Instance of DataSource or the data that the DropDownList will be bound to.
         index: 1 // selects the second item in the dropdown list
     });
 
-### `optionLabel` : **String** 
+### `optionLabel` : **String | Object** *(default: "")*
 
-Define the text of the default empty item.
+ Define the text of the default empty item. If the value is an object, then the widget will use it directly.
 
 #### Example
 
     $("#dropdownlist").kendoDropDownList({
         optionLabel: "Select An Option"
+    });
+
+#### Example
+
+    $("#dropdownlist").kendoDropDownList({
+        dataTextField: "text",
+        dataValueField: "value",
+        optionLabel: {
+           text: "Select An Option",
+           value: ""
+        }
     });
 
 ### `template` : **String** 

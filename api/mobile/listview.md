@@ -228,6 +228,10 @@ only few graphic editors, so **better stick with PNG24**). The image color is no
 
  Used in combination with pullToRefresh. If set to true, newly loaded data will be appended on top when refershing.
 
+### `autoBind` : **Boolean** *(default: true)*
+
+ Indicates whether the listview will call read on the DataSource initially.
+
 ### `dataSource` : **kendo.data.DataSource | Object** 
 
 Instance of DataSource or the data that the mobile ListView will be bound to.

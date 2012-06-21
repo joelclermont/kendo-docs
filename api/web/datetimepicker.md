@@ -603,6 +603,12 @@ Fires when the calendar or the time drop-down list is closed
         // handle event
     });
 
+#### Event Data
+
+##### e.view `String`
+
+The view which is closed. Possible values are "date" and "time".
+
 ### open
 
 Fires when the calendar or the time drop-down list is opened
@@ -623,3 +629,9 @@ Fires when the calendar or the time drop-down list is opened
     dateTimePicker.bind("open", function(e) {
         // handle event
     });
+
+#### Event Data
+
+##### e.view `String`
+
+The view which is opened. Possible values are "date" and "time".
