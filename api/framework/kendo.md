@@ -6,8 +6,6 @@ publish: true
 
 # kendo
 
-## Configuration
-
 ## Methods
 
 ### htmlEncode
