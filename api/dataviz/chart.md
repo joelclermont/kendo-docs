@@ -1,3 +1,7 @@
+---title: kendo.dataviz.ui.Chart
+tags: api,dataviz
+publish: true
+---
 # kendo.dataviz.ui.Chart
 
 ## Description
@@ -22,10 +26,12 @@ Kendo UI DataViz includes the following chart types:
 
 
 
-Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for additional information about new Chart types and features.
+Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for additional information about
+new Chart types and features.
 
 
-### Creating a Chart
+### 
+Creating a Chart
 
 
 To create a chart, add an empty div in the HTML and give it an ID.
@@ -740,7 +746,7 @@ grid lines is not set to **true**.
 
  The visibility of the lines.
 
-### `categoryAxis.minorGridLines.width` : **Number** *(default: 1> The width of the lines.)*
+### `categoryAxis.minorGridLines.width` : **Number** *(default: 1> The width of the lines. <p)*
 
  The width of the lines. 
 
@@ -2792,17 +2798,17 @@ The series name.
 
 ### `series.type="bubble".negativeValues` : **Object** 
 
-The series negative values.
+The settings for negative values.
 
-### `series.type="bubble".negativeValues.color` : **String** 
+### `series.type="bubble".negativeValues.color` : **String** *(default: "#ffffff")*
 
-The color of the negative values.
+ The color of the negative values.
 
-### `series.type="bubble".negativeValues.visible` : **Boolean** 
+### `series.type="bubble".negativeValues.visible` : **Boolean** *(default: false)*
 
-The visibility of the negative values.
+ The visibility of the negative values.
 
-### `series.type="bubble".opacity` : **Number** *(default: 1)*
+### `series.type="bubble".opacity` : **Number** *(default: 0.6)*
 
  The series opacity.
 
@@ -2841,6 +2847,13 @@ The text color of the tooltip. The default is the same as the series labels colo
 ### `series.type="bubble".tooltip.format` : **String** 
 
 The tooltip format.
+Format variables:
+
+
+*   **0** - the x value
+*   **1** - the y value
+*   **2** - the size value
+*   **3** - the category name
 
 #### Example
 

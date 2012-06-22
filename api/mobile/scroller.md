@@ -1,3 +1,7 @@
+---title: kendo.mobile.ui.Scroller
+tags: api,mobile
+publish: true
+---
 # kendo.mobile.ui.Scroller
 
 ## Description

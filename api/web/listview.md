@@ -1,3 +1,7 @@
+---title: kendo.ui.ListView
+tags: api,web
+publish: true
+---
 # kendo.ui.ListView
 
 ## Description

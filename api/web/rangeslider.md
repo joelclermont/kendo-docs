@@ -1,3 +1,7 @@
+---title: kendo.ui.RangeSlider
+tags: api,web
+publish: true
+---
 # kendo.ui.RangeSlider
 
 ## Configuration

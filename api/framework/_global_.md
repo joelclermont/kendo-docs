@@ -1,3 +1,7 @@
+---title: _global_
+tags: api,framework
+publish: true
+---
 # _global_
 
 ## Configuration

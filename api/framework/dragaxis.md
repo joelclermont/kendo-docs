@@ -1,3 +1,7 @@
+---title: kendo.DragAxis
+tags: api,framework
+publish: true
+---
 # kendo.DragAxis
 
 ## Description

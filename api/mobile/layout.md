@@ -1,3 +1,7 @@
+---title: kendo.mobile.ui.Layout
+tags: api,mobile
+publish: true
+---
 # kendo.mobile.ui.Layout
 
 ## Description

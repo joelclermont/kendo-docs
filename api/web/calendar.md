@@ -1,3 +1,7 @@
+---title: kendo.ui.Calendar
+tags: api,web
+publish: true
+---
 # kendo.ui.Calendar
 
 ## Description

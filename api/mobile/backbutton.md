@@ -1,3 +1,7 @@
+---title: kendo.mobile.ui.BackButton
+tags: api,mobile
+publish: true
+---
 # kendo.mobile.ui.BackButton
 
 ## Description

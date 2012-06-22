@@ -1,3 +1,7 @@
+---title: kendo.ui.Validator
+tags: api,web
+publish: true
+---
 # kendo.ui.Validator
 
 ## Description

@@ -1,3 +1,7 @@
+---title: kendo.mobile.Application
+tags: api,mobile
+publish: true
+---
 # kendo.mobile.Application
 
 ## Description

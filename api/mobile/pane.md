@@ -1,3 +1,7 @@
+---title: kendo.mobile.ui.Pane
+tags: api,mobile
+publish: true
+---
 # kendo.mobile.ui.Pane
 
 ## Description

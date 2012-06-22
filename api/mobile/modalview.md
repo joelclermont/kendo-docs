@@ -1,3 +1,7 @@
+---title: kendo.mobile.ui.ModalView
+tags: api,mobile
+publish: true
+---
 # kendo.mobile.ui.ModalView
 
 ## Description

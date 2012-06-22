@@ -1,3 +1,7 @@
+---title: kendo.mobile.ui.Switch
+tags: api,mobile
+publish: true
+---
 # kendo.mobile.ui.Switch
 
 ## Description

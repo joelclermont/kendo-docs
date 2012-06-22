@@ -1,3 +1,7 @@
+---title: kendo.ui.PanelBar
+tags: api,web
+publish: true
+---
 # kendo.ui.PanelBar
 
 ## Description

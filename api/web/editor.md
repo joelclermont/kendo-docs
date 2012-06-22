@@ -1,3 +1,7 @@
+---title: kendo.ui.Editor
+tags: api,web
+publish: true
+---
 # kendo.ui.Editor
 
 ## Description
@@ -99,6 +103,8 @@ as a collection of required properties, while the insertHtml  tool requires a co
          "strikethrough",
          "fontName",
          "fontSize",
+         "foreColor",
+         "backColor",
          "justifyLeft",
          "justifyCenter",
          "justifyRight",

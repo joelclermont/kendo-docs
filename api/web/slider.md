@@ -1,3 +1,7 @@
+---title: kendo.ui.Slider
+tags: api,web
+publish: true
+---
 # kendo.ui.Slider
 
 ## Description

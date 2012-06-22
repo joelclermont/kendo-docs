@@ -1,3 +1,7 @@
+---title: kendo.mobile.ui.ScrollView
+tags: api,mobile
+publish: true
+---
 # kendo.mobile.ui.ScrollView
 
 ## Description

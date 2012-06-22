@@ -1,3 +1,7 @@
+---title: kendo.ui.List
+tags: api,web
+publish: true
+---
 # kendo.ui.List
 
 ## Description

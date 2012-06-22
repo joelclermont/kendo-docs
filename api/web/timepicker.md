@@ -1,3 +1,7 @@
+---title: kendo.ui.TimePicker
+tags: api,web
+publish: true
+---
 # kendo.ui.TimePicker
 
 ## Description

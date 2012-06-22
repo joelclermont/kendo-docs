@@ -1,3 +1,7 @@
+---title: kendo.ui.Globalization
+tags: api,web
+publish: true
+---
 # kendo.ui.Globalization
 
 ## Description

@@ -1,3 +1,7 @@
+---title: kendo.mobile.ui.Button
+tags: api,mobile
+publish: true
+---
 # kendo.mobile.ui.Button
 
 ## Description
