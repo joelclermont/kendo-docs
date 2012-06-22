@@ -1,7 +1,9 @@
----title: kendo.ui.MVVM
+---
+title: kendo.ui.MVVM
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.MVVM
 
 ## Description

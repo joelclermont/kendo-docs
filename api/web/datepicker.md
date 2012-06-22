@@ -1,7 +1,9 @@
----title: kendo.ui.DatePicker
+---
+title: kendo.ui.DatePicker
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.DatePicker
 
 ## Description

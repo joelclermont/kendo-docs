@@ -1,7 +1,9 @@
----title: kendo.data.DataSource
+---
+title: kendo.data.DataSource
 tags: api,framework
 publish: true
 ---
+
 # kendo.data.DataSource
 
 ## Description

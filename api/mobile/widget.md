@@ -1,7 +1,9 @@
----title: kendo.mobile.ui.Widget
+---
+title: kendo.mobile.ui.Widget
 tags: api,mobile
 publish: true
 ---
+
 # kendo.mobile.ui.Widget
 
 ## Configuration

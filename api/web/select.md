@@ -1,7 +1,9 @@
----title: kendo.ui.Select
+---
+title: kendo.ui.Select
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.Select
 
 ## Description

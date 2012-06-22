@@ -1,7 +1,9 @@
----title: kendo.ui
+---
+title: kendo.ui
 tags: api,web
 publish: true
 ---
+
 # kendo.ui
 
 ## Configuration

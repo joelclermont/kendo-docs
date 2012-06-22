@@ -1,7 +1,9 @@
----title: kendo.ui.Menu
+---
+title: kendo.ui.Menu
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.Menu
 
 ## Description

@@ -1,7 +1,9 @@
----title: kendo.ui.TabStrip
+---
+title: kendo.ui.TabStrip
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.TabStrip
 
 ## Description

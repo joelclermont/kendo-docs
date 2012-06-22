@@ -1,7 +1,9 @@
----title: kendo.ui.Upload
+---
+title: kendo.ui.Upload
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.Upload
 
 ## Description

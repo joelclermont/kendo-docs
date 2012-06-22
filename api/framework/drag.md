@@ -1,7 +1,9 @@
----title: kendo.Drag
+---
+title: kendo.Drag
 tags: api,framework
 publish: true
 ---
+
 # kendo.Drag
 
 ## Description

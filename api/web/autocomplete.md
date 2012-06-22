@@ -1,7 +1,9 @@
----title: kendo.ui.AutoComplete
+---
+title: kendo.ui.AutoComplete
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.AutoComplete
 
 ## Description

@@ -1,7 +1,9 @@
----title: kendo.ui.Splitter
+---
+title: kendo.ui.Splitter
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.Splitter
 
 ## Description

@@ -1,7 +1,9 @@
----title: kendo.mobile.ui.ButtonGroup
+---
+title: kendo.mobile.ui.ButtonGroup
 tags: api,mobile
 publish: true
 ---
+
 # kendo.mobile.ui.ButtonGroup
 
 ## Description

@@ -1,7 +1,9 @@
----title: kendo.mobile.ui.ListView
+---
+title: kendo.mobile.ui.ListView
 tags: api,mobile
 publish: true
 ---
+
 # kendo.mobile.ui.ListView
 
 ## Description

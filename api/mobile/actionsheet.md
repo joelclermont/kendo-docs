@@ -1,7 +1,9 @@
----title: kendo.mobile.ui.ActionSheet
+---
+title: kendo.mobile.ui.ActionSheet
 tags: api,mobile
 publish: true
 ---
+
 # kendo.mobile.ui.ActionSheet
 
 ## Description

@@ -1,7 +1,9 @@
----title: kendo.mobile.ui.Loader
+---
+title: kendo.mobile.ui.Loader
 tags: api,mobile
 publish: true
 ---
+
 # kendo.mobile.ui.Loader
 
 ## Description

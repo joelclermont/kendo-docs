@@ -1,7 +1,9 @@
----title: kendo.mobile.ui.View
+---
+title: kendo.mobile.ui.View
 tags: api,mobile
 publish: true
 ---
+
 # kendo.mobile.ui.View
 
 ## Description

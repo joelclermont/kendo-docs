@@ -1,7 +1,9 @@
----title: kendo.ui.DropDownList
+---
+title: kendo.ui.DropDownList
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.DropDownList
 
 ## Description

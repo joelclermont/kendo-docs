@@ -1,7 +1,9 @@
----title: kendo.ui.Editor
+---
+title: kendo.ui.Editor
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.Editor
 
 ## Description

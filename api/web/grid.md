@@ -1,7 +1,9 @@
----title: kendo.ui.Grid
+---
+title: kendo.ui.Grid
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.Grid
 
 ## Description

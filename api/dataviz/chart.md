@@ -1,7 +1,9 @@
----title: kendo.dataviz.ui.Chart
+---
+title: kendo.dataviz.ui.Chart
 tags: api,dataviz
 publish: true
 ---
+
 # kendo.dataviz.ui.Chart
 
 ## Description
@@ -30,8 +32,7 @@ Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for add
 new Chart types and features.
 
 
-### 
-Creating a Chart
+### Creating a Chart
 
 
 To create a chart, add an empty div in the HTML and give it an ID.

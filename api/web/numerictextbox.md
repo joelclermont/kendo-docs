@@ -1,7 +1,9 @@
----title: kendo.ui.NumericTextBox
+---
+title: kendo.ui.NumericTextBox
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.NumericTextBox
 
 ## Description

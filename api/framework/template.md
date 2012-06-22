@@ -1,7 +1,9 @@
----title: kendo.Template
+---
+title: kendo.Template
 tags: api,framework
 publish: true
 ---
+
 # kendo.Template
 
 ## Description

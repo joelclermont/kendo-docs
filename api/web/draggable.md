@@ -1,7 +1,9 @@
----title: kendo.ui.Draggable
+---
+title: kendo.ui.Draggable
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.Draggable
 
 ## Description

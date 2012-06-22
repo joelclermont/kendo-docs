@@ -1,7 +1,9 @@
----title: kendo.ui.DropTarget
+---
+title: kendo.ui.DropTarget
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.DropTarget
 
 ## Configuration

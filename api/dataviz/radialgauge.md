@@ -1,7 +1,9 @@
----title: kendo.dataviz.ui.RadialGauge
+---
+title: kendo.dataviz.ui.RadialGauge
 tags: api,dataviz
 publish: true
 ---
+
 # kendo.dataviz.ui.RadialGauge
 
 ## Description

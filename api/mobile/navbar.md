@@ -1,7 +1,9 @@
----title: kendo.mobile.ui.NavBar
+---
+title: kendo.mobile.ui.NavBar
 tags: api,mobile
 publish: true
 ---
+
 # kendo.mobile.ui.NavBar
 
 ## Description

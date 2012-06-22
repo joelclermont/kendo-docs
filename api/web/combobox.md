@@ -1,7 +1,9 @@
----title: kendo.ui.ComboBox
+---
+title: kendo.ui.ComboBox
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.ComboBox
 
 ## Description

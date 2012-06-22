@@ -1,7 +1,9 @@
----title: kendo.ui.Window
+---
+title: kendo.ui.Window
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.Window
 
 ## Description

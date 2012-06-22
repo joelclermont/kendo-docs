@@ -1,7 +1,9 @@
----title: kendo.mobile
+---
+title: kendo.mobile
 tags: api,mobile
 publish: true
 ---
+
 # kendo.mobile
 
 ## Configuration

@@ -1,7 +1,9 @@
----title: kendo.ui.TreeView
+---
+title: kendo.ui.TreeView
 tags: api,web
 publish: true
 ---
+
 # kendo.ui.TreeView
 
 ## Description

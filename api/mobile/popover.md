@@ -1,7 +1,9 @@
----title: kendo.mobile.ui.PopOver
+---
+title: kendo.mobile.ui.PopOver
 tags: api,mobile
 publish: true
 ---
+
 # kendo.mobile.ui.PopOver
 
 ## Description
