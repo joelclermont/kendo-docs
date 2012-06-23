@@ -146,76 +146,76 @@ actions with the name "Custom", but any name can be used. Click events can be ca
 
 ## Configuration
 
-### `actions` : **Array** *(default: ["Close"])*
+### actions `Array`*(default: ["Close"])*
 
 The buttons for interacting with the window. Predefined array values are "Close", "Refresh", "Minimize",
 and "Maximize".
 
-### `animation` : **Object** 
+### animation `Object`
 
 A collection of {Animation} objects, used to change default animations. A value of **false**
 will disable all animations in the widget.
 
-### `animation.close` : **Animation** 
+### animation.close `Animation`
 
 The animation that will be used when a Window closes.
 
-### `animation.open` : **Animation** 
+### animation.open `Animation`
 
 The animation that will be used when a Window opens.
 
-### `appendTo` : **Object** *(default: document.body)*
+### appendTo `Object`*(default: document.body)*
 
 The element that the Window will be appended to.
 
-### `content` : **Object|String** 
+### content `Object|String`
 
 Specifies a URL or request options that the window should load its content from. For remote URLs, a
 container iframe element is automatically created.
 
-### `content.template` : **String** 
+### content.template `String`
 
 Template for the content of a **Window**.
 
-### `draggable` : **Boolean** *(default: true)*
+### draggable `Boolean`*(default: true)*
 
 Enables (**true**) or disables (**false**) the ability for users to move/drag a
 **Window**.
 
-### `iframe` : **Boolean** 
+### iframe `Boolean`
 
 Explicitly states whether content iframe should be created.
 
-### `maxHeight` : **Number** *(default: Infinity)*
+### maxHeight `Number`*(default: Infinity)*
 
 The maximum height (in pixels) that may be achieved by resizing the window.
 
-### `maxWidth` : **Number** *(default: Infinity)*
+### maxWidth `Number`*(default: Infinity)*
 
 The maximum width (in pixels) that may be achieved by resizing the window.
 
-### `minHeight` : **Number** *(default: 50)*
+### minHeight `Number`*(default: 50)*
 
 The minimum height (in pixels) that may be achieved by resizing the window.
 
-### `minWidth` : **Number** *(default: 50)*
+### minWidth `Number`*(default: 50)*
 
 The minimum width (in pixels) that may be achieved by resizing the window.
 
-### `modal` : **Boolean** *(default: false)*
+### modal `Boolean`*(default: false)*
 
 Specifies whether the window should show a modal overlay over the page.
 
-### `resizable` : **Boolean** *(default: true)*
+### resizable `Boolean`*(default: true)*
 
 Enables (**true**) or disables (**false**) the ability for users to resize a
 **Window**.
 
-### `title` : **String** 
+### title `String`
 
 The text in the window title bar.
 
-### `visible` : **Boolean** *(default: true)*
+### visible `Boolean`*(default: true)*
 
 Specifies whether the window will be initially visible.
 
@@ -531,7 +531,6 @@ Triggered when a Window has been moved by a user.
     var onDragEnd = function(e) {
         // ...
     };
-    
     // attach dragEnd event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         dragend: onDragEnd
@@ -681,6 +680,5 @@ Triggered when a Window has been resized by a user.
     
     // attach resize event handler via bind()
     $("#window").data("kendoWindow").bind("resize", onResize);
-    
     // detach resize event handler via unbind()
     $("#window").data("kendoWindow").unbind("resize", onResize);

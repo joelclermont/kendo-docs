@@ -39,40 +39,40 @@ The popover dimensions and direction can be configured from the `popup` configur
 
 ## Configuration
 
-### `pane` : **Object** 
+### pane `Object`
 
 The pane configuration options.
 
-### `pane.initial` : **String** 
+### pane.initial `String`
 
  The id of the initial mobile View to display.
 
-### `pane.layout` : **String** 
+### pane.layout `String`
 
  The id of the default Pane Layout.
 
-### `pane.loading` : **String** *(default: Loading...)*
+### pane.loading `String`*(default: Loading...)*
 
  The text displayed in the loading popup. Setting this value to false will disable the loading popup.
 
-### `pane.transition` : **String** 
+### pane.transition `String`
 
  The default View transition.
 
-### `popup` : **Object** 
+### popup `Object`
 
 The popup configuration options.
 
-### `popup.direction` : **Number | String** *(default: down)*
+### popup.direction `Number | String`*(default: down)*
 
  The direction to which the popup will expand, relative to the target that opened it.
 Supported directions are up, right, down, and left.
 
-### `popup.height` : **Number | String** *(default: 320)*
+### popup.height `Number | String`*(default: 320)*
 
  The height of the popup in pixels.
 
-### `popup.width` : **Number | String** *(default: 240)*
+### popup.width `Number | String`*(default: 240)*
 
  The width of the popup in pixels.
 

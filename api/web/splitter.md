@@ -129,7 +129,7 @@ To achieve complex layouts, the **Splitter** supports nested layouts.
 
 ## Configuration
 
-### `orientation` : **String** *(default: horizontal)*
+### orientation `String`*(default: horizontal)*
 
 Specifies the orientation of the **Splitter**.
 <div class="details-list">
@@ -141,7 +141,7 @@ Specifies the orientation of the **Splitter**.
  </dl>
 </div>
 
-### `panes` : **Array** 
+### panes `Array`
 
 An array of pane definitions.
 
@@ -155,37 +155,37 @@ An array of pane definitions.
         ]
     });
 
-### `panes.collapsed` : **Boolean** *(default: false)*
+### panes.collapsed `Boolean`*(default: false)*
 
 Specifies whether a pane is initially collapsed (**true**) or expanded (**true**).
 
-### `panes.collapsible` : **Boolean** *(default: false)*
+### panes.collapsible `Boolean`*(default: false)*
 
 Specifies whether a pane is collapsible (**true**) or not collapsible (**false**).
 
-### `panes.contentUrl` : **Boolean** *(default: true)*
+### panes.contentUrl `Boolean`*(default: true)*
 
 Specifies the URL from which to load the content of a pane.
 
-### `panes.max` : **String** 
+### panes.max `String`
 
 Specifies the maximum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The
 size of a resized pane cannot exceed the defined maximum size.
 
-### `panes.min` : **String** 
+### panes.min `String`
 
 Specifies the minimum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The
 size of a resized pane cannot be less than the defined minimum size.
 
-### `panes.resizable` : **Boolean** *(default: true)*
+### panes.resizable `Boolean`*(default: true)*
 
 Specifies whether a pane is resizable (**true**) or not resizable (**false**).
 
-### `panes.scrollable` : **Boolean** *(default: true)*
+### panes.scrollable `Boolean`*(default: true)*
 
 Specifies whether a pane is scrollable (**true**) or not scrollable (**false**).
 
-### `panes.size` : **String** 
+### panes.size `String`
 
 Specifies the size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). Note: This
 value must not exceed **panes.max** or be less then **panes.min**.

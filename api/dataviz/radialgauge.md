@@ -44,25 +44,25 @@ For a real-world example for this functionality, see the car dashboard demo.
 
 ## Configuration
 
-### `gaugeArea` : **Object** 
+### gaugeArea `Object`
 
 The gauge area configuration options.
 This is the entire visible area of the gauge.
 
-### `gaugeArea.background` : **Object** *(default: "white")*
+### gaugeArea.background `Object`*(default: "white")*
 
  The background of the gauge area.
 Any valid CSS color string will work here, including hex and rgb.
 
-### `gaugeArea.border` : **Object** 
+### gaugeArea.border `Object`
 
 The border of the gauge area.
 
-### `gaugeArea.border.color` : **String** *(default: "black")*
+### gaugeArea.border.color `String`*(default: "black")*
 
 The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
-### `gaugeArea.border.dashType` : **String** *(default: "solid")*
+### gaugeArea.border.dashType `String`*(default: "solid")*
 
 The dash type of the border.
 <div class="details-list">
@@ -112,15 +112,15 @@ The dash type of the border.
    </dl>
 </div>
 
-### `gaugeArea.border.width` : **Number** *(default: 0)*
+### gaugeArea.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `gaugeArea.height` : **Number** *(default: vertical gauge is 200px; horizontal gauge is 60px)*
+### gaugeArea.height `Number`*(default: vertical gauge is 200px; horizontal gauge is 60px)*
 
 The height of the gauge area.
 
-### `gaugeArea.margin` : **Number|Object** *(default: 5)*
+### gaugeArea.margin `Number|Object`*(default: 5)*
 
  The margin of the gauge area.
 
@@ -133,67 +133,67 @@ The height of the gauge area.
     // margin right and bottom are with 5px (by default)
     margin: { top: 1, left: 1 }
 
-### `gaugeArea.width` : **Number** *(default: vertical gauge is 60px; horizontal gauge is 200px)*
+### gaugeArea.width `Number`*(default: vertical gauge is 60px; horizontal gauge is 200px)*
 
 The width of the gauge area.
 
-### `pointer` : **Object** 
+### pointer `Object`
 
 The pointer configuration options.
 
-### `pointer.cap` : **Object** 
+### pointer.cap `Object`
 
 The cap configuration options.
 
-### `pointer.cap.color` : **String** 
+### pointer.cap.color `String`
 
 The color of the cap.
 Any valid CSS color string will work here, including hex and rgb.
 
-### `pointer.cap.size` : **Number** 
+### pointer.cap.size `Number`
 
 The size of the cap in percents. (from 0 to 1)
 
-### `pointer.color` : **String** 
+### pointer.color `String`
 
 The color of the pointer.
 Any valid CSS color string will work here, including hex and rgb.
 
-### `pointer.value` : **Number** 
+### pointer.value `Number`
 
 The value of the gauge.
 
-### `rangeSize` : **Number** 
+### rangeSize `Number`
 
 The width of the range indicators.
 
-### `scale` : **Object** 
+### scale `Object`
 
 Configures the scale.
 
-### `scale.endAngle` : **number** *(default: 210)*
+### scale.endAngle `number`*(default: 210)*
 
  The end angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
 
-### `scale.labels` : **Object** 
+### scale.labels `Object`
 
 Configures the scale labels.
 
-### `scale.labels.background` : **String** 
+### scale.labels.background `String`
 
 The background color of the labels.
 Any valid CSS color string will work here, including hex and rgb
 
-### `scale.labels.border` : **Object** 
+### scale.labels.border `Object`
 
 The border of the labels.
 
-### `scale.labels.border.color` : **String** *(default: "black")*
+### scale.labels.border.color `String`*(default: "black")*
 
 The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
-### `scale.labels.border.dashType` : **String** *(default: "solid")*
+### scale.labels.border.dashType `String`*(default: "solid")*
 
 The dash type of the border.
 <div class="details-list">
@@ -243,20 +243,20 @@ The dash type of the border.
    </dl>
 </div>
 
-### `scale.labels.border.width` : **Number** *(default: 0)*
+### scale.labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `scale.labels.color` : **String** 
+### scale.labels.color `String`
 
 The text color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
 
-### `scale.labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### scale.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
-### `scale.labels.format` : **String** 
+### scale.labels.format `String`
 
 The format of the labels.
 
@@ -271,15 +271,15 @@ The format of the labels.
         }
     });
 
-### `scale.labels.margin` : **Number|Object** *(default: 0)*
+### scale.labels.margin `Number|Object`*(default: 0)*
 
  The margin of the labels.
 
-### `scale.labels.padding` : **Number | Object** *(default: 0)*
+### scale.labels.padding `Number | Object`*(default: 0)*
 
  The padding of the labels.
 
-### `scale.labels.position` : **String** *(default: "inside")*
+### scale.labels.position `String`*(default: "inside")*
 
 The labels positions.
 <div class="details-list">
@@ -299,7 +299,7 @@ The labels positions.
    </dl>
 </div>
 
-### `scale.labels.template` : **String/Function** 
+### scale.labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -319,71 +319,71 @@ Template variables:
          }
     });
 
-### `scale.labels.visible` : **Boolean** *(default: true)*
+### scale.labels.visible `Boolean`*(default: true)*
 
  The visibility of the labels.
 
-### `scale.majorTicks` : **Object** 
+### scale.majorTicks `Object`
 
 Configures the scale major ticks.
 
-### `scale.majorTicks.color` : **String** 
+### scale.majorTicks.color `String`
 
 The color of the major ticks.
 
-### `scale.majorTicks.size` : **Number** 
+### scale.majorTicks.size `Number`
 
 The major tick size.
 This is the length of the line in pixels that is drawn to indicate the tick on the scale.
 
-### `scale.majorTicks.visible` : **Boolean** *(default: true)*
+### scale.majorTicks.visible `Boolean`*(default: true)*
 
  The visibility of the major ticks.
 Any valid CSS color string will work here, including hex and rgb.
 
-### `scale.majorTicks.width` : **Number** *(default: 0.5)*
+### scale.majorTicks.width `Number`*(default: 0.5)*
 
  The width of the major ticks.
 
-### `scale.majorUnit` : **Number** 
+### scale.majorUnit `Number`
 
 The interval between major divisions.
 
-### `scale.max` : **Number** *(default: 100)*
+### scale.max `Number`*(default: 100)*
 
  The maximum value of the scale.
 
-### `scale.min` : **Number** *(default: 0)*
+### scale.min `Number`*(default: 0)*
 
  The minimum value of the scale.
 
-### `scale.minorTicks` : **Object** 
+### scale.minorTicks `Object`
 
 Configures the scale minor ticks.
 
-### `scale.minorTicks.color` : **String** 
+### scale.minorTicks.color `String`
 
 The color of the minor ticks.
 Any valid CSS color string will work here, including hex and rgb.
 
-### `scale.minorTicks.size` : **Number** 
+### scale.minorTicks.size `Number`
 
 The minor tick size.
 This is the length of the line in pixels that is drawn to indicate the tick on the scale.
 
-### `scale.minorTicks.visible` : **Boolean** *(default: true)*
+### scale.minorTicks.visible `Boolean`*(default: true)*
 
  The visibility of the minor ticks.
 
-### `scale.minorTicks.width` : **Number** *(default: 0.5)*
+### scale.minorTicks.width `Number`*(default: 0.5)*
 
  The width of the minor ticks.
 
-### `scale.minorUnit` : **Number** 
+### scale.minorUnit `Number`
 
 The interval between minor divisions.
 
-### `scale.ranges` : **Array** 
+### scale.ranges `Array`
 
 The ranges of the scale.
 The range fields:
@@ -423,16 +423,16 @@ Any valid CSS color string will work here, including hex and rgb.
         }
      });
 
-### `scale.reverse` : **Boolean** *(default: false)*
+### scale.reverse `Boolean`*(default: false)*
 
 Reverses the scale direction - values are increase anticlockwise.
 
-### `scale.startAngle` : **number** *(default: -30)*
+### scale.startAngle `number`*(default: -30)*
 
  The start angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
 
-### `transitions` : **Boolean** *(default: true)*
+### transitions `Boolean`*(default: true)*
 
 A value indicating if transition animations should be played.
 

@@ -94,7 +94,7 @@ only few graphic editors, so **better stick with PNG24**). The image color is no
 
 ## Configuration
 
-### `selectedIndex` : **Number** *(default: 0)*
+### selectedIndex `Number`*(default: 0)*
 
  The index of the initially selected tab.
 

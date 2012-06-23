@@ -175,7 +175,7 @@ Both approaches produce the same result.
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
 A collection of visual animations used when **TabStrip** tab are selected through
 user interactions. Setting this option to **false** will disable all animations.
@@ -197,7 +197,7 @@ user interactions. Setting this option to **false** will disable all animations.
        }
     });
 
-### `animation.close` : **Object** 
+### animation.close `Object`
 
 The visual animation(s) that will be used when the current tab is closed.
 
@@ -212,7 +212,7 @@ The visual animation(s) that will be used when the current tab is closed.
         }
     });
 
-### `animation.close.duration` : **Number** *(default: 200)*
+### animation.close.duration `Number`*(default: 200)*
 
 The number of milliseconds used for the visual animation when the current tab is closed.
 
@@ -228,7 +228,7 @@ The number of milliseconds used for the visual animation when the current tab is
       }
     });
 
-### `animation.close.effects` : **String** 
+### animation.close.effects `String`
 
 A whitespace-delimited string of animation effects that are utilized when the current tab
 is closed. By default not specified - uses the opening animation with reverse.
@@ -244,7 +244,7 @@ is closed. By default not specified - uses the opening animation with reverse.
         }
     });
 
-### `animation.open` : **Object** 
+### animation.open `Object`
 
 The visual animation(s) that will be used when the new tab is shown.
 
@@ -259,7 +259,7 @@ The visual animation(s) that will be used when the new tab is shown.
         }
     });
 
-### `animation.open.duration` : **Number** *(default: 200)*
+### animation.open.duration `Number`*(default: 200)*
 
 The number of milliseconds used for the visual animation when a new tab is shown.
 
@@ -273,16 +273,16 @@ The number of milliseconds used for the visual animation when a new tab is shown
        }
     });
 
-### `animation.open.effects` : **String** *(default: "expand:vertical fadeIn")*
+### animation.open.effects `String`*(default: "expand:vertical fadeIn")*
 
 A whitespace-separated string of animation effects that are used when a new tab is shown. Options include
 **"expand:vertical"** and **"fadeIn"**.
 
-### `animation.open.show` : **Boolean** *(default: true)*
+### animation.open.show `Boolean`*(default: true)*
 
 
 
-### `collapsible` : **Boolean** *(default: false)*
+### collapsible `Boolean`*(default: false)*
 
 Specifies whether the TabStrip should be able to collapse completely when clicking an expanded tab.
 
@@ -292,7 +292,7 @@ Specifies whether the TabStrip should be able to collapse completely when clicki
         collapsible: true
     });
 
-### `dataContentField` : **String** *(default: "")*
+### dataContentField `String`*(default: "")*
 
  Sets the field of the data item that provides the text content of
 the tab content element.
@@ -305,7 +305,7 @@ the tab content element.
         dataSource: data
     });
 
-### `dataContentUrlField` : **String** *(default: "")*
+### dataContentUrlField `String`*(default: "")*
 
  Sets the field of the data item that provides the URL for
 the ajax loaded tab content.
@@ -318,7 +318,7 @@ the ajax loaded tab content.
         dataSource: data
     });
 
-### `dataImageUrlField` : **String** *(default: "")*
+### dataImageUrlField `String`*(default: "")*
 
  Sets the field of the data item that provides the image URL of
 the tab.
@@ -331,7 +331,7 @@ the tab.
         dataSource: data
     });
 
-### `dataSpriteCssClass` : **String** *(default: "")*
+### dataSpriteCssClass `String`*(default: "")*
 
  Sets the field of the data item that provides the CSS class of
 the tab.
@@ -344,7 +344,7 @@ the tab.
         dataSource: data
     });
 
-### `dataTextField` : **String** *(default: "")*
+### dataTextField `String`*(default: "")*
 
  Sets the field of the data item that provides the text name of the tab.
 
@@ -355,7 +355,7 @@ the tab.
         dataSource: data
     });
 
-### `dataUrlField` : **String** *(default: "")*
+### dataUrlField `String`*(default: "")*
 
  Sets the field of the data item that provides the link URL for the
 tab.

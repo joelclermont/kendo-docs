@@ -106,7 +106,7 @@ only few graphic editors, so **better stick with PNG24**). The image color is no
 
 ## Configuration
 
-### `index` : **Number** 
+### index `Number`
 
 Defines the initially selected Button.
 

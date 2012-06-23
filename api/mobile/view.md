@@ -68,7 +68,7 @@ Each mobile View instance exposes the following fields:
 
 ## Configuration
 
-### `model` : **String | ObservableObject** *(default: null)*
+### model `String | ObservableObject`*(default: null)*
 
  The MVVM model to bind to. If a string is passed, The view
 will try to resolve a reference to the view model variable in the global scope.
@@ -83,12 +83,12 @@ will try to resolve a reference to the view model variable in the global scope.
        <span data-bind="text:bar"></span>
     </div>
 
-### `stretch` : **Boolean** *(default: false)*
+### stretch `Boolean`*(default: false)*
 
  If set to true, the view will stretch its child contents to occupy the entire view, while disabling kinetic scrolling.
 Useful if the view contains an image or a map.
 
-### `title` : **String** 
+### title `String`
 
  The text to display in the navbar title (if present) and the browser title.
 

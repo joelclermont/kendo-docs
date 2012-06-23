@@ -67,91 +67,91 @@ An **Upload** is a standards-based widget; no plug-ins required.
 
 ## Configuration
 
-### `async` : **Object** 
+### async `Object`
 
 Configures the ability to upload a file(s) in an asynchronous manner. Please refer to the
 [async mode help topic](http://www.kendoui.com/documentation/ui-widgets/upload/modes.aspx#async)
 for more details.
 
-### `async.autoUpload` : **Boolean** *(default: true)*
+### async.autoUpload `Boolean`*(default: true)*
 
 The selected files will be uploaded immediately by default. You can change this behavior by setting
 autoUpload to false.
 
-### `async.removeField` : **String** *(default: "fileNames")*
+### async.removeField `String`*(default: "fileNames")*
 
 The name of the form field submitted to the Remove URL.
 
-### `async.removeUrl` : **String** 
+### async.removeUrl `String`
 
 The URL of the handler responsible for removing uploaded files (if any). The handler must accept POST
 requests containing one or more "fileNames" fields specifying the files to be deleted.
 
-### `async.removeVerb` : **String** *(default: "DELETE")*
+### async.removeVerb `String`*(default: "DELETE")*
 
 The HTTP verb to be used by the remove action.
 
-### `async.saveField` : **String** 
+### async.saveField `String`
 
 The name of the form field submitted to the save URL. The default value is the input name.
 
-### `async.saveUrl` : **String** 
+### async.saveUrl `String`
 
 The URL of the handler that will receive the submitted files. The handler must accept POST requests
 containing one or more fields with the same name as the original input name.
 
-### `enabled` : **Boolean** *(default: true)*
+### enabled `Boolean`*(default: true)*
 
 Enables (**true**) or disables (**false**) an **Upload**. A disabled
 **Upload** may be re-enabled via enable().
 
-### `localization` : **Object** 
+### localization `Object`
 
 Sets the strings rendered by the Upload.
 
-### `localization.cancel` : **String** 
+### localization.cancel `String`
 
 Sets the text of the cancel button text.
 
-### `localization.dropFilesHere` : **String** *(default: "drop files here to upload")*
+### localization.dropFilesHere `String`*(default: "drop files here to upload")*
 
 Sets the drop zone hint.
 
-### `localization.remove` : **String** 
+### localization.remove `String`
 
 Sets the text of the remove button text.
 
-### `localization.retry` : **String** 
+### localization.retry `String`
 
 Sets the text of the retry button text.
 
-### `localization.select` : **String** 
+### localization.select `String`
 
 Sets the "Select..." button text.
 
-### `localization.statusFailed` : **String** 
+### localization.statusFailed `String`
 
 Sets the status message for failed uploads.
 
-### `localization.statusUploaded` : **String** 
+### localization.statusUploaded `String`
 
 Sets the status message for uploaded files.
 
-### `localization.statusUploading` : **String** 
+### localization.statusUploading `String`
 
 Sets the status message for files that are being uploaded.
 
-### `localization.uploadSelectedFiles` : **String** 
+### localization.uploadSelectedFiles `String`
 
 Sets the text of the "Upload files" button.
 
-### `multiple` : **Boolean** *(default: true)*
+### multiple `Boolean`*(default: true)*
 
 Enables (**true**) or disables (**false**) the ability to select multiple files.
 If **false**, users will be able to select only one file at a time. Note: This option does not
 limit the total number of uploaded files in an asynchronous configuration.
 
-### `showFileList` : **Boolean** *(default: true)*
+### showFileList `Boolean`*(default: true)*
 
 Enables (**true**) or disables (**false**) the ability to display a file listing
 for uploading a file(s). Disabling a file listing may be useful you wish to customize the UI; use the

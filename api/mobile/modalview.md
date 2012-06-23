@@ -79,15 +79,15 @@ To do so, the navigational widget should have `data-rel="modalview"` and `href` 
 
 ## Configuration
 
-### `height` : **Number** 
+### height `Number`
 
 The height of the ModalView container in pixels. If not set, the element style is used.
 
-### `modal` : **Boolean** *(default: true)*
+### modal `Boolean`*(default: true)*
 
  When set to false, the ModalView will close when the user taps outside of its element.
 
-### `width` : **Number** 
+### width `Number`
 
 The width of the ModalView container in pixels. If not set, the element style is used.
 

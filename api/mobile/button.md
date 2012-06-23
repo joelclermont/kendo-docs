@@ -114,7 +114,7 @@ only few graphic editors, so **better stick with PNG24**). The image color is no
 
 ## Configuration
 
-### `icon` : **String** 
+### icon `String`
 
  The icon of the button. It can be either one of the built-in icons, or a custom one.
 

@@ -79,11 +79,11 @@ publish: true
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
 Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
 
-### `animation.close` : **Object** 
+### animation.close `Object`
 
 Animation to be used for closing of the popup.
 
@@ -100,7 +100,7 @@ Animation to be used for closing of the popup.
         }
     });
 
-### `animation.open` : **Object** 
+### animation.open `Object`
 
 Animation to be used for opening of the popup.
 
@@ -116,7 +116,7 @@ Animation to be used for opening of the popup.
         }
     });
 
-### `culture` : **String** *(default: en-US)*
+### culture `String`*(default: en-US)*
 
  Specifies the culture info used by the widget.
 
@@ -127,7 +127,7 @@ Animation to be used for opening of the popup.
         culture: "de-DE"
     });
 
-### `dates` : **Array** 
+### dates `Array`
 
  Specifies a list of dates, which are shown in the time drop-down list. If not set, the DateTimePicker will auto-generate the available times.
  
@@ -138,23 +138,23 @@ Animation to be used for opening of the popup.
         dates: [new Date(2000, 10, 10, 10, 0, 0), new Date(2000, 10, 10, 30, 0)] //the drop-down list will consist only two entries - "10:00 AM" and "10:30 AM"
     });
 
-### `format` : **String** *(default: h:mm tt)*
+### format `String`*(default: h:mm tt)*
 
  Specifies the format, which is used to format the value of the TimePicker displayed in the input.
 
-### `interval` : **Number** *(default: 30)*
+### interval `Number`*(default: 30)*
 
 Specifies the interval, between values in the popup list, in minutes.
 
-### `max` : **Date** *(default: 00:00)*
+### max `Date`*(default: 00:00)*
 
 Specifies the end value in the popup list.
 
-### `min` : **Date** *(default: 00:00)*
+### min `Date`*(default: 00:00)*
 
 Specifies the start value in the popup list.
 
-### `parseFormats` : **Array** 
+### parseFormats `Array`
 
  Specifies the formats, which are used to parse the value set with the value method or by direct input. If not set the value of the options.format will be used.
 
@@ -165,7 +165,7 @@ Specifies the start value in the popup list.
         parseFormats: ["HH:mm"] //format also will be added to parseFormats
     });
 
-### `value` : **Date** *(default: null)*
+### value `Date`*(default: null)*
 
 Specifies the selected time.
 

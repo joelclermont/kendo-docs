@@ -221,14 +221,14 @@ This is more complex, but allows fine grained tuning of the application look and
 
 ## Configuration
 
-### `hideAddressBar` : **Boolean** *(default: true)*
+### hideAddressBar `Boolean`*(default: true)*
 
  Whether to hide the browser address bar.
 <script>
      new kendo.mobile.Application($(document.body), { layout: "foo" });
 </script>
 
-### `initial` : **String** 
+### initial `String`
 
  The id of the initial mobilie View to display.
 
@@ -240,7 +240,7 @@ This is more complex, but allows fine grained tuning of the application look and
          });
     </script>
 
-### `layout` : **String** 
+### layout `String`
 
  The id of the default Application Layout.
 
@@ -252,11 +252,11 @@ This is more complex, but allows fine grained tuning of the application look and
       <div data-role="header">Header</div>
     </div>
 
-### `loading` : **String** *(default: Loading...)*
+### loading `String`*(default: Loading...)*
 
  The text displayed in the loading popup. Setting this value to false will disable the loading popup.
 
-### `platform` : **String** 
+### platform `String`
 
  Which platform look to force on the application. Can be one of "ios", "android", "blackberry".
 
@@ -268,7 +268,7 @@ This is more complex, but allows fine grained tuning of the application look and
          });
     </script>
 
-### `transition` : **String** 
+### transition `String`
 
  The default View transition.
 

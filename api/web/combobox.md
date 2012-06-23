@@ -150,7 +150,7 @@ There are two ways to create a **ComboBox**:
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
  Animations to be used for opening/closing the popup. Setting to false will turn off the animation.
 
@@ -160,7 +160,7 @@ There are two ways to create a **ComboBox**:
         animation: false
     });
 
-### `animation.close` : **Object** 
+### animation.close `Object`
 
  Animation to be used for closing of the popup.
 
@@ -181,7 +181,7 @@ There are two ways to create a **ComboBox**:
          });
      </script>
 
-### `animation.open` : **Object** 
+### animation.open `Object`
 
  Animation to be used for opening of the popup.
 
@@ -202,7 +202,7 @@ There are two ways to create a **ComboBox**:
          });
      </script>
 
-### `autoBind` : **Boolean** *(default: true)*
+### autoBind `Boolean`*(default: true)*
 
  Controls whether to bind the widget to the DataSource on initialization.
 
@@ -212,7 +212,7 @@ There are two ways to create a **ComboBox**:
         autoBind: false
     });
 
-### `dataSource` : **Object | kendo.data.DataSource** 
+### dataSource `Object | kendo.data.DataSource`
 
 A local JavaScript object or instance of DataSource or the data that the ComboBox will be bound to.
 
@@ -237,7 +237,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         });
     });
 
-### `dataTextField` : **String** *(default: "")*
+### dataTextField `String`*(default: "")*
 
  Sets the field of the data item that provides the text content of the list items.
 
@@ -248,7 +248,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         dataValueField: "ID"
     });
 
-### `dataValueField` : **String** *(default: "")*
+### dataValueField `String`*(default: "")*
 
  Sets the field of the data item that provides the value content of the list items.
 
@@ -259,7 +259,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         dataValueField: "ID"
     });
 
-### `delay` : **Number** *(default: 200)*
+### delay `Number`*(default: 200)*
 
  Specifies the delay in ms after which the ComboBox will start filtering dataSource.
 
@@ -269,7 +269,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         delay: 500
     });
 
-### `enable` : **Boolean** *(default: true)*
+### enable `Boolean`*(default: true)*
 
  Controls whether the ComboBox should be initially enabled.
 
@@ -285,7 +285,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
     var comboBox = $("#comboBox").data("kendoComboBox");
     comboBox.enable(false);
 
-### `filter` : **String** *(default: "none")*
+### filter `String`*(default: "none")*
 
  Defines the type of filtration. If "none" the ComboBox will not filter the items.
 
@@ -295,7 +295,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         filter: "startswith"
     });
 
-### `height` : **Number** *(default: 200)*
+### height `Number`*(default: 200)*
 
  Define the height of the drop-down list in pixels.
 
@@ -305,7 +305,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         height: 500
     });
 
-### `highlightFirst` : **Boolean** *(default: true)*
+### highlightFirst `Boolean`*(default: true)*
 
  Controls whether the first item will be automatically highlighted.
 
@@ -315,7 +315,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         highLightFirst: true
     });
 
-### `ignoreCase` : **String** *(default: true)*
+### ignoreCase `String`*(default: true)*
 
  Defines whether the filtration should be case sensitive.
 
@@ -326,7 +326,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         ignoreCase: false //now filtration will be case sensitive
     });
 
-### `index` : **Number** *(default: -1)*
+### index `Number`*(default: -1)*
 
  Defines the initial selected item.
 
@@ -338,7 +338,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         index: 1 // 0 based from the start of the collection of objects. this selects "Item 2".
     });
 
-### `minLength` : **Number** *(default: 1)*
+### minLength `Number`*(default: 1)*
 
  Specifies the minimum characters that should be typed before the ComboBox activates
 
@@ -348,7 +348,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         minLength: 3
     });
 
-### `placeholder` : **String** *(default: "")*
+### placeholder `String`*(default: "")*
 
  A string that appears in the textbox when the combobox has no value.
  
@@ -374,7 +374,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
          });
      </script>
 
-### `suggest` : **Boolean** *(default: false)*
+### suggest `Boolean`*(default: false)*
 
  Controls whether the ComboBox should automatically auto-type the rest of text.
 
@@ -384,7 +384,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         suggest: false
     });
 
-### `template` : **string** 
+### template `string`
 
 Template to be used for rendering the items in the list.
 
@@ -409,7 +409,7 @@ Template to be used for rendering the items in the list.
          });
      </script>
 
-### `text` : **String** *(default: "")*
+### text `String`*(default: "")*
 
  Define the text of the widget, when the autoBind is set to false.
 
@@ -420,7 +420,7 @@ Template to be used for rendering the items in the list.
          text: "Chai"
     });
 
-### `value` : **String** *(default: "")*
+### value `String`*(default: "")*
 
  Define the value of the widget
 

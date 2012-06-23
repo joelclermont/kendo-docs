@@ -8,7 +8,7 @@ publish: true
 
 ## Configuration
 
-### `group` : **String** *(default: "default")*
+### group `String`*(default: "default")*
 
  Used to group sets of draggable and drop targets. A draggable with the same group value as a drop target will be accepted by the drop target.
 

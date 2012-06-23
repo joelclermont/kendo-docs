@@ -66,7 +66,7 @@ The chart can then be given a title by specifying the "text" property of the "ti
         }
     });
 
-### 
+###
 Data Binding
 
 
@@ -109,7 +109,7 @@ You specify the labeling for the series in the categoryAxis property.
 
 ![Column Chart with categories](http://www.kendoui.com/Libraries/Documentation/chart-column-categories.sflb.ashx)</img>
 
-### 
+###
 Next Steps
 
 
@@ -119,19 +119,19 @@ Detailed reference is available in the Configuration, Methods and Events tabs.
 
 ## Configuration
 
-### `axisDefaults` : **Object** 
+### axisDefaults `Object`
 
 Default options for all chart axes.
 
-### `categoryAxis` : **Object** 
+### categoryAxis `Object`
 
 The category axis configuration options.
 
-### `categoryAxis.axisCrossingValue` : **Number** *(default: 0)*
+### categoryAxis.axisCrossingValue `Number`*(default: 0)*
 
 Category index at which the first value axis crosses this axis.
 
-### `categoryAxis.axisCrossingValue` : **Array** *(default: [0])*
+### categoryAxis.axisCrossingValue `Array`*(default: [0])*
 
 Category indicies at which the value axes cross the category axis.
 <p>
@@ -150,7 +150,7 @@ of categories to denote the far end of the axis.
     })'
     </p>
 
-### `categoryAxis.categories` : **Array** 
+### categoryAxis.categories `Array`
 
 Array of category names.
 
@@ -163,12 +163,12 @@ Array of category names.
         ...
     });
 
-### `categoryAxis.color` : **String** 
+### categoryAxis.color `String`
 
 Color to apply to all axis elements. Any valid CSS color string will work here, including hex and rgb.
 Individual color settings for line and labels take priority.
 
-### `categoryAxis.field` : **String** 
+### categoryAxis.field `String`
 
 The data field containing the category name.
 
@@ -185,7 +185,7 @@ The data field containing the category name.
         ...
     });
 
-### `categoryAxis.labels` : **Object** 
+### categoryAxis.labels `Object`
 
 Configures the axis labels.
 
@@ -205,12 +205,12 @@ Configures the axis labels.
         ...
     });
 
-### `categoryAxis.labels.background` : **String** 
+### categoryAxis.labels.background `String`
 
 The background color of the labels. Any valid CSS color string will work here, including hex
 and rgb.
 
-### `categoryAxis.labels.border` : **Object** 
+### categoryAxis.labels.border `Object`
 
 The border of the labels.
 
@@ -232,11 +232,11 @@ The border of the labels.
         ...
     });
 
-### `categoryAxis.labels.border.color` : **String** *(default: "black")*
+### categoryAxis.labels.border.color `String`*(default: "black")*
 
  The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
-### `categoryAxis.labels.border.dashType` : **String** *(default: "solid")*
+### categoryAxis.labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -286,15 +286,15 @@ The border of the labels.
    </dl>
 </div>
 
-### `categoryAxis.labels.border.width` : **Number** *(default: 0)*
+### categoryAxis.labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `categoryAxis.labels.color` : **String** 
+### categoryAxis.labels.color `String`
 
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
-### `categoryAxis.labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### categoryAxis.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
@@ -310,7 +310,7 @@ The font style of the labels.
         ...
     });
 
-### `categoryAxis.labels.format` : **String** 
+### categoryAxis.labels.format `String`
 
 The format of the labels.
 
@@ -326,7 +326,7 @@ The format of the labels.
         ...
     });
 
-### `categoryAxis.labels.margin` : **Number | Object** *(default: 0)*
+### categoryAxis.labels.margin `Number | Object`*(default: 0)*
 
  The margin of the labels.
 
@@ -353,7 +353,7 @@ The format of the labels.
         ...
     });
 
-### `categoryAxis.labels.mirror` : **Boolean** 
+### categoryAxis.labels.mirror `Boolean`
 
 Mirrors the axis labels and ticks.
 If the labels are normally on the left side of the axis,
@@ -371,7 +371,7 @@ mirroring the axis will render them to the right.
         ...
     });
 
-### `categoryAxis.labels.padding` : **Number | Object** *(default: 0)*
+### categoryAxis.labels.padding `Number | Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -398,21 +398,21 @@ mirroring the axis will render them to the right.
         ...
     });
 
-### `categoryAxis.labels.rotation` : **Number** *(default: 0)*
+### categoryAxis.labels.rotation `Number`*(default: 0)*
 
  The rotation angle of the labels.
 
-### `categoryAxis.labels.skip` : **Number** *(default: 1)*
+### categoryAxis.labels.skip `Number`*(default: 1)*
 
  Number of labels to skip.
 Skips rendering the first n labels.
 
-### `categoryAxis.labels.step` : **Number** *(default: 1)*
+### categoryAxis.labels.step `Number`*(default: 1)*
 
  Label rendering step.
 Every n-th label is rendered where n is the step
 
-### `categoryAxis.labels.template` : **String/Function** 
+### categoryAxis.labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -442,7 +442,7 @@ Template variables:
          }
     });
 
-### `categoryAxis.labels.visible` : **Boolean** *(default: true)*
+### categoryAxis.labels.visible `Boolean`*(default: true)*
 
  The visibility of the labels.
 
@@ -458,7 +458,7 @@ Template variables:
         ...
     });
 
-### `categoryAxis.line` : **Object** 
+### categoryAxis.line `Object`
 
 Configures the axis line. This will also effect major and minor ticks, but not gridlines.
 
@@ -476,14 +476,14 @@ Configures the axis line. This will also effect major and minor ticks, but not g
         ...
     });
 
-### `categoryAxis.line.color` : **String** *(default: "black")*
+### categoryAxis.line.color `String`*(default: "black")*
 
  The color of the lines. Any valid CSS color string will work here, including hex and rgb.
 
 
 **Note:** This will also effect the major and minor ticks, but not the grid lines.
 
-### `categoryAxis.line.dashType` : **String** *(default: "solid")*
+### categoryAxis.line.dashType `String`*(default: "solid")*
 
  The dash type of the line.
 <div class="details-list">
@@ -533,7 +533,7 @@ Configures the axis line. This will also effect major and minor ticks, but not g
    </dl>
 </div>
 
-### `categoryAxis.line.visible` : **Boolean** *(default: true)*
+### categoryAxis.line.visible `Boolean`*(default: true)*
 
  The visibility of the lines.
 
@@ -549,12 +549,12 @@ Configures the axis line. This will also effect major and minor ticks, but not g
         ...
     });
 
-### `categoryAxis.line.width` : **Number** *(default: 1)*
+### categoryAxis.line.width `Number`*(default: 1)*
 
  The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
-### `categoryAxis.majorGridLines` : **Object** 
+### categoryAxis.majorGridLines `Object`
 
 Configures the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
@@ -573,11 +573,11 @@ body of the chart.
         ...
     });
 
-### `categoryAxis.majorGridLines.color` : **String** *(default: "black")*
+### categoryAxis.majorGridLines.color `String`*(default: "black")*
 
  The color of the lines. Any valid CSS color string will work here, including hex and rgb.
 
-### `categoryAxis.majorGridLines.dashType` : **String** *(default: "solid")*
+### categoryAxis.majorGridLines.dashType `String`*(default: "solid")*
 
  The dash type of the grid lines.
 <div class="details-list">
@@ -627,7 +627,7 @@ body of the chart.
    </dl>
 </div>
 
-### `categoryAxis.majorGridLines.visible` : **Boolean** *(default: false)*
+### categoryAxis.majorGridLines.visible `Boolean`*(default: false)*
 
  The visibility of the lines.
 
@@ -643,27 +643,27 @@ body of the chart.
         ...
     });
 
-### `categoryAxis.majorGridLines.width` : **Number** *(default: 1)*
+### categoryAxis.majorGridLines.width `Number`*(default: 1)*
 
  The width of the lines.
 
-### `categoryAxis.majorTicks` : **Object** 
+### categoryAxis.majorTicks `Object`
 
 The major ticks of the axis.
 
-### `categoryAxis.majorTicks.size` : **Number** *(default: 4)*
+### categoryAxis.majorTicks.size `Number`*(default: 4)*
 
  The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick
 on the chart.
 
-### `categoryAxis.majorTicks.visible` : **Boolean** *(default: true)*
+### categoryAxis.majorTicks.visible `Boolean`*(default: true)*
 
  The visibility of the major ticks.
 
-### `categoryAxis.minorGridLines` : **Object** 
+### categoryAxis.minorGridLines `Object`
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
-the body of the chart. 
+the body of the chart.
 
 Note that minor grid lines are not visible by default, therefore none of these settings will take effect with the minor grid
 lines visibility being set to **true**
@@ -685,15 +685,15 @@ lines visibility being set to **true**
         ...
     });
 
-### `categoryAxis.minorGridLines.color` : **String** *(default: "black")*
+### categoryAxis.minorGridLines.color `String`*(default: "black")*
 
  The color of the lines. Any valid CSS color string will work here, including hex and
-rgb. 
+rgb.
 
 Note that this setting has no effect if the visibility of the minor
 grid lines is not set to **true**.
 
-### `categoryAxis.minorGridLines.dashType` : **String** *(default: "solid")*
+### categoryAxis.minorGridLines.dashType `String`*(default: "solid")*
 
  The dash type of the grid lines.
 <div class="details-list">
@@ -743,35 +743,35 @@ grid lines is not set to **true**.
    </dl>
 </div>
 
-### `categoryAxis.minorGridLines.visible` : **Boolean** *(default: false)*
+### categoryAxis.minorGridLines.visible `Boolean`*(default: false)*
 
  The visibility of the lines.
 
-### `categoryAxis.minorGridLines.width` : **Number** *(default: 1> The width of the lines.)*
+### categoryAxis.minorGridLines.width `Number`*(default: 1> The width of the lines. )*
 
- The width of the lines. 
+ The width of the lines.
 
 Note that this setting has no effect if the visibility of the minor
 grid lines is not set to **true**.
 
-### `categoryAxis.minorTicks` : **Object** 
+### categoryAxis.minorTicks `Object`
 
 The minor ticks of the axis.
 
-### `categoryAxis.minorTicks.size` : **Number** *(default: 3)*
+### categoryAxis.minorTicks.size `Number`*(default: 3)*
 
  The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick
 on the chart.
 
-### `categoryAxis.minorTicks.visible` : **Boolean** *(default: false)*
+### categoryAxis.minorTicks.visible `Boolean`*(default: false)*
 
  The visibility of the minor ticks.
 
-### `categoryAxis.name` : **Object** *(default: primary)*
+### categoryAxis.name `Object`*(default: primary)*
 
  The unique axis name.
 
-### `categoryAxis.plotBands` : **Array** 
+### categoryAxis.plotBands `Array`
 
 The plot bands of category axis.
 The plot band fields:
@@ -811,12 +811,12 @@ The plot band fields:
         },
      });
 
-### `categoryAxis.reverse` : **Boolean** *(default: false)*
+### categoryAxis.reverse `Boolean`*(default: false)*
 
  Reverses the axis direction -
 categories are listed from right to left and from top to bottom.
 
-### `categoryAxis.title` : **Object** 
+### categoryAxis.title `Object`
 
 The title of the category axis.
 
@@ -836,12 +836,12 @@ The title of the category axis.
         ...
     });
 
-### `categoryAxis.title.background` : **String** 
+### categoryAxis.title.background `String`
 
 The background color of the title. Any valid CSS color string will work here, including
 hex and rgb.
 
-### `categoryAxis.title.border` : **Object** 
+### categoryAxis.title.border `Object`
 
 The border of the title.
 
@@ -864,12 +864,12 @@ The border of the title.
         ...
     });
 
-### `categoryAxis.title.border.color` : **String** *(default: "black")*
+### categoryAxis.title.border.color `String`*(default: "black")*
 
  The color of the border. Any valid CSS color string will work here, including
 hex and rgb.
 
-### `categoryAxis.title.border.dashType` : **String** *(default: "solid")*
+### categoryAxis.title.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -921,17 +921,17 @@ hex and rgb.
 
 #### Example
 
-    
 
-### `categoryAxis.title.border.width` : **Number** *(default: 0)*
+
+### categoryAxis.title.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `categoryAxis.title.color` : **String** 
+### categoryAxis.title.color `String`
 
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
 
-### `categoryAxis.title.font` : **String** *(default: "16px Arial,Helvetica,sans-serif")*
+### categoryAxis.title.font `String`*(default: "16px Arial,Helvetica,sans-serif")*
 
 The font style of the title.
 
@@ -947,7 +947,7 @@ The font style of the title.
         ...
     });
 
-### `categoryAxis.title.margin` : **Number|Object** *(default: 5)*
+### categoryAxis.title.margin `Number|Object`*(default: 5)*
 
  The margin of the title.
 
@@ -974,7 +974,7 @@ The font style of the title.
         ...
     });
 
-### `categoryAxis.title.position` : **String** *(default: "center")*
+### categoryAxis.title.position `String`*(default: "center")*
 
  The position of the title.
 <div class="details-list">
@@ -1012,7 +1012,7 @@ The font style of the title.
    </dl>
 </div>
 
-### `categoryAxis.title.rotation` : **Number** *(default: 0)*
+### categoryAxis.title.rotation `Number`*(default: 0)*
 
  The rotation angle of the title.
 
@@ -1028,11 +1028,11 @@ The font style of the title.
         ...
     });
 
-### `categoryAxis.title.text` : **String** 
+### categoryAxis.title.text `String`
 
 The text of the title.
 
-### `categoryAxis.title.visible` : **Boolean** *(default: true)*
+### categoryAxis.title.visible `Boolean`*(default: true)*
 
  The visibility of the title.
 
@@ -1048,7 +1048,7 @@ The text of the title.
         ...
     });
 
-### `categoryAxis.type` : **String** *(default: "Category")*
+### categoryAxis.type `String`*(default: "Category")*
 
  The axis type.
 <div class="details-list">
@@ -1068,7 +1068,7 @@ The text of the title.
    </dl>
 </div>
 
-### `categoryAxis.type: "Date"`  
+### categoryAxis.type: "Date"
 
 Properties specific to the date-time value axis.
 
@@ -1076,7 +1076,7 @@ Properties specific to the date-time value axis.
 Note: The Chart will automatically switch to a date category axis if the categories
 are of type Date. Specify type explicitly when such behavior is undesired.
 
-### `categoryAxis.type: "Date".baseUnit` : **String** 
+### categoryAxis.type: "Date".baseUnit `String`
 
 The base time interval for the axis.
 The default baseUnit is determined automatically from the minimum difference
@@ -1090,15 +1090,15 @@ between subsequent categories. Available options:
 Series data is aggregated for the specified base unit by using the
 **series.aggregate** function.
 
-### `categoryAxis.type: "Date".labels` : **Object** 
+### categoryAxis.type: "Date".labels `Object`
 
 Label settings specific to the date axis.
 
-### `categoryAxis.type: "Date".labels.culture` : **String** *(default: global culture)*
+### categoryAxis.type: "Date".labels.culture `String`*(default: global culture)*
 
 Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
 
-### `categoryAxis.type: "Date".labels.dateFormats` : **Object** 
+### categoryAxis.type: "Date".labels.dateFormats `Object`
 
 Date format strings
 <div class="details-list">
@@ -1132,42 +1132,42 @@ Date format strings
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 
-### `categoryAxis.type: "Date".max` : **Number** 
+### categoryAxis.type: "Date".max `Number`
 
 The last date displayed on the axis.
 By default, the minimum date is the same as the last category.
 This is often used in combination with the **min** configuration option to
 set up a fixed date range.
 
-### `categoryAxis.type: "Date".min` : **Number** 
+### categoryAxis.type: "Date".min `Number`
 
 The first date displayed on the axis.
 By default, the minimum date is the same as the first category.
 This is often used in combination with the **max** configuration option to
 set up a fixed date range.
 
-### `categoryAxis.visible` : **Boolean** *(default: true)*
+### categoryAxis.visible `Boolean`*(default: true)*
 
  The visibility of the axis.
 
-### `chartArea` : **Object** 
+### chartArea `Object`
 
 The chart area configuration options.
 This is the entire visible area of the chart.
 
-### `chartArea.background` : **String** *(default: "white")*
+### chartArea.background `String`*(default: "white")*
 
  The background color of the chart area.
 
-### `chartArea.border` : **Object** 
+### chartArea.border `Object`
 
 The border of the chart area.
 
-### `chartArea.border.color` : **String** *(default: "black")*
+### chartArea.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `chartArea.border.dashType` : **String** *(default: "solid")*
+### chartArea.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -1217,15 +1217,15 @@ The border of the chart area.
    </dl>
 </div>
 
-### `chartArea.border.width` : **Number** *(default: 0)*
+### chartArea.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `chartArea.height` : **Number** *(default: 400)*
+### chartArea.height `Number`*(default: 400)*
 
  The height of the chart area.
 
-### `chartArea.margin` : **Number|Object** *(default: 5)*
+### chartArea.margin `Number|Object`*(default: 5)*
 
  The margin of the chart area.
 
@@ -1233,16 +1233,16 @@ The border of the chart area.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 5px (by default)
     margin: { top: 1, left: 1 }
 
-### `chartArea.width` : **Number** *(default: 600)*
+### chartArea.width `Number`*(default: 600)*
 
  The width of the chart area.
 
-### `dataSource` : **Object** 
+### dataSource `Object`
 
 DataSource configuration or instance.
 
@@ -1261,14 +1261,14 @@ DataSource configuration or instance.
             field: "year"
         }
     });
-    
+
     // Alternative configuration
     var dataSource = new kendo.data.DataSource({
         transport: {
              read: "spain-electricity.json"
         }
     });
-    
+
     $("#chart").kendoChart({
         dataSource: dataSource,
         series: [{
@@ -1279,7 +1279,7 @@ DataSource configuration or instance.
         }
     });
 
-### `legend` : **Object** 
+### legend `Object`
 
 The chart legend configuration options.
 
@@ -1304,11 +1304,11 @@ The chart legend configuration options.
         }
     });
 
-### `legend.background` : **String** *(default: "white")*
+### legend.background `String`*(default: "white")*
 
  The background color of the legend. Any valid CSS color string will work here, including hex and rgb.
 
-### `legend.border` : **Object** 
+### legend.border `Object`
 
 The border of the legend.
 
@@ -1328,11 +1328,11 @@ The border of the legend.
         ...
     });
 
-### `legend.border.color` : **String** *(default: "black")*
+### legend.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `legend.border.dashType` : **String** *(default: "solid")*
+### legend.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -1384,26 +1384,26 @@ The border of the legend.
 
 #### Example
 
-    
 
-### `legend.border.width` : **Number** *(default: 0)*
+
+### legend.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `legend.labels` : **Object** 
+### legend.labels `Object`
 
 Configures the legend labels.
 
-### `legend.labels.color` : **String** *(default: "black")*
+### legend.labels.color `String`*(default: "black")*
 
  The color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
 
-### `legend.labels.font` : **String** *(default: 12px Arial,Helvetica,sans-serif)*
+### legend.labels.font `String`*(default: 12px Arial,Helvetica,sans-serif)*
 
  The font style of the labels.
 
-### `legend.margin` : **Number | Object** *(default: 10)*
+### legend.margin `Number | Object`*(default: 10)*
 
  The margin of the legend.
 
@@ -1426,7 +1426,7 @@ Any valid CSS color string will work here, including hex and rgb.
         ...
     });
 
-### `legend.offsetX` : **Number** *(default: 0)*
+### legend.offsetX `Number`*(default: 0)*
 
  The X offset from its position.  The offset is relative to the current position of the legend.
 For instance, a value of 20 will move the legend 20 pixels to the right of it's initial position.  A negative value will move the legend
@@ -1442,7 +1442,7 @@ to the left of the current position.
         ...
     });
 
-### `legend.offsetY` : **Number** *(default: 0)*
+### legend.offsetY `Number`*(default: 0)*
 
  The Y offset from its position.  The offset is relative to the current position of the legend.
 For instance, a value of 20 will move the legend 20 pixels down from it's initial position.  A negative value will move the legend
@@ -1458,7 +1458,7 @@ upwards from the current position.
         ...
     });
 
-### `legend.padding` : **Number | Object** *(default: 5)*
+### legend.padding `Number | Object`*(default: 5)*
 
  The padding of the legend.
 
@@ -1482,7 +1482,7 @@ upwards from the current position.
         ...
     });
 
-### `legend.position` : **String** *(default: right)*
+### legend.position `String`*(default: right)*
 
  The positions of the legend.
 <div class="details-list">
@@ -1520,7 +1520,7 @@ upwards from the current position.
    </dl>
 </div>
 
-### `legend.visible` : **Boolean** *(default: true)*
+### legend.visible `Boolean`*(default: true)*
 
  The visibility of the legend.
 
@@ -1534,23 +1534,23 @@ upwards from the current position.
         ...
     });
 
-### `plotArea` : **Object** 
+### plotArea `Object`
 
 The plot area configuration options. This is the area containing the plotted series.
 
-### `plotArea.background` : **String** *(default: "white")*
+### plotArea.background `String`*(default: "white")*
 
  The background color of the plot area.
 
-### `plotArea.border` : **Object** 
+### plotArea.border `Object`
 
 The border of the plot area.
 
-### `plotArea.border.color` : **String** *(default: "black")*
+### plotArea.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `plotArea.border.dashType` : **String** *(default: "solid")*
+### plotArea.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -1600,11 +1600,11 @@ The border of the plot area.
    </dl>
 </div>
 
-### `plotArea.border.width` : **Number** *(default: 0)*
+### plotArea.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `plotArea.margin` : **Number|Object** *(default: 5)*
+### plotArea.margin `Number|Object`*(default: 5)*
 
  The margin of the plot area.
 
@@ -1612,12 +1612,12 @@ The border of the plot area.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 5px (by default)
     margin: { top: 1, left: 1 }
 
-### `series` : **Array** 
+### series `Array`
 
 Array of series definitions.
 
@@ -1630,15 +1630,15 @@ If a type value is missing, the type is assumed to be the one specified in serie
 
 Each series type has a different set of options.
 
-### `series.data` : **Array** 
+### series.data `Array`
 
 Array of data points.
 
-### `series.field` : **String** 
+### series.field `String`
 
 The data field containing the series value.
 
-### `series.groupNameTemplate` : **String** 
+### series.groupNameTemplate `String`
 
 Name template for auto-generated
 series when binding to grouped data.
@@ -1676,15 +1676,15 @@ Template variables:
          ]
     });
 
-### `series.name` : **String** 
+### series.name `String`
 
 The series name visible in the legend.
 
-### `series.type="area"`  
+### series.type="area"
 
 Available options for area series:
 
-### `series.type="area".aggregate` : **String** *(default: "max")*
+### series.type="area".aggregate `String`*(default: "max")*
 
  Aggregate function for date series.
 This function is used when a category (an year, month, etc.) contains two or more points.
@@ -1730,27 +1730,27 @@ The function return value is displayed instead of the individual points.
    </dl>
 </div>
 
-### `series.type="area".color` : **String** 
+### series.type="area".color `String`
 
 The series base color.
 
-### `series.type="area".labels` : **Object** 
+### series.type="area".labels `Object`
 
 Configures the series data labels.
 
-### `series.type="area".labels.background` : **String** 
+### series.type="area".labels.background `String`
 
 The background color of the labels.
 
-### `series.type="area".labels.border` : **Object** 
+### series.type="area".labels.border `Object`
 
 The border of the labels.
 
-### `series.type="area".labels.border.color` : **String** *(default: "black")*
+### series.type="area".labels.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="area".labels.border.dashType` : **String** *(default: "solid")*
+### series.type="area".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -1800,19 +1800,19 @@ The border of the labels.
    </dl>
 </div>
 
-### `series.type="area".labels.border.width` : **Number** *(default: 0)*
+### series.type="area".labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="area".labels.color` : **String** 
+### series.type="area".labels.color `String`
 
 The text color of the labels.
 
-### `series.type="area".labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="area".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
-### `series.type="area".labels.format` : **String** 
+### series.type="area".labels.format `String`
 
 The format of the labels.
 
@@ -1821,7 +1821,7 @@ The format of the labels.
     //sets format of the labels
     format: "C"
 
-### `series.type="area".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
+### series.type="area".labels.margin `Number|Object`*(default: { left: 5, right: 5})*
 
 The margin of the labels.
 
@@ -1829,12 +1829,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
 
-### `series.type="area".labels.padding` : **Number|Object** *(default: 0)*
+### series.type="area".labels.padding `Number|Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -1842,12 +1842,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
 
-### `series.type="area".labels.position` : **String** *(default: "above")*
+### series.type="area".labels.position `String`*(default: "above")*
 
 Defines the position of the area labels.
 <div class="details-list">
@@ -1879,7 +1879,7 @@ Defines the position of the area labels.
    </dl>
 </div>
 
-### `series.type="area".labels.template` : **String/Function** 
+### series.type="area".labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -1915,51 +1915,51 @@ Template variables:
          }
     });
 
-### `series.type="area".labels.visible` : **Boolean** *(default: false)*
+### series.type="area".labels.visible `Boolean`*(default: false)*
 
  The visibility of the labels.
 
-### `series.type="area".line` : **String** 
+### series.type="area".line `String`
 
 The line of the area chart.
 
-### `series.type="area".line.color` : **String** 
+### series.type="area".line.color `String`
 
 The line color of the area chart.
 
-### `series.type="area".line.opacity` : **Number** *(default: 1)*
+### series.type="area".line.opacity `Number`*(default: 1)*
 
  The line opacity of the area chart.
 
-### `series.type="area".line.width` : **String** *(default: 4)*
+### series.type="area".line.width `String`*(default: 4)*
 
  The line width of the area chart.
 
-### `series.type="area".markers` : **Object** 
+### series.type="area".markers `Object`
 
 Configures the area markers.
 
-### `series.type="area".markers.background` : **String** 
+### series.type="area".markers.background `String`
 
 The background color of the current series markers.
 
-### `series.type="area".markers.border` : **Object** 
+### series.type="area".markers.border `Object`
 
 The border of the markers.
 
-### `series.type="area".markers.border.color` : **String** *(default: "black")*
+### series.type="area".markers.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="area".markers.border.width` : **Number** *(default: 0)*
+### series.type="area".markers.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="area".markers.size` : **Number** *(default: 6)*
+### series.type="area".markers.size `Number`*(default: 6)*
 
  The marker size.
 
-### `series.type="area".markers.type` : **String** *(default: "circle")*
+### series.type="area".markers.type `String`*(default: "circle")*
 
 Configures the markers shape type.
 <div class="details-list">
@@ -1985,11 +1985,11 @@ Configures the markers shape type.
    </dl>
 </div>
 
-### `series.type="area".markers.visible` : **Boolean** *(default: false)*
+### series.type="area".markers.visible `Boolean`*(default: false)*
 
  The markers visibility.
 
-### `series.type="area".missingValues` : **String** *(default: "gap")*
+### series.type="area".missingValues `String`*(default: "gap")*
 
 Configures the behavior for handling missing values in area series.
 <div class="details-list">
@@ -2015,47 +2015,47 @@ Configures the behavior for handling missing values in area series.
    </dl>
 </div>
 
-### `series.type="area".name` : **String** 
+### series.type="area".name `String`
 
 The series name.
 
-### `series.type="area".opacity` : **Number** *(default: 0.4)*
+### series.type="area".opacity `Number`*(default: 0.4)*
 
  The series opacity.
 
-### `series.type="area".stack` : **Boolean** *(default: false)*
+### series.type="area".stack `Boolean`*(default: false)*
 
 A value indicating if the series should be stacked.
 
-### `series.type="area".tooltip` : **Object** 
+### series.type="area".tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `series.type="area".tooltip.background` : **String** 
+### series.type="area".tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `series.type="area".tooltip.border` : **Object** 
+### series.type="area".tooltip.border `Object`
 
 The border configuration options.
 
-### `series.type="area".tooltip.border.color` : **String** *(default: "black")*
+### series.type="area".tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="area".tooltip.border.width` : **Number** *(default: 0)*
+### series.type="area".tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="area".tooltip.color` : **String** 
+### series.type="area".tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `series.type="area".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="area".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `series.type="area".tooltip.format` : **String** 
+### series.type="area".tooltip.format `String`
 
 The tooltip format.
 
@@ -2064,7 +2064,7 @@ The tooltip format.
     //sets format of the tooltip
     format: "C"
 
-### `series.type="area".tooltip.padding` : **Number|Object** 
+### series.type="area".tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -2072,12 +2072,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `series.type="area".tooltip.template` : **String|Function** 
+### series.type="area".tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -2111,15 +2111,15 @@ Template variables:
          }
     });
 
-### `series.type="area".tooltip.visible` : **Boolean** *(default: false)*
+### series.type="area".tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `series.type="bar"`  
+### series.type="bar"
 
 Available options for bar series:
 
-### `series.type="bar".aggregate` : **String** *(default: "max")*
+### series.type="bar".aggregate `String`*(default: "max")*
 
  Aggregate function for date series.
 This function is used when a category (an year, month, etc.) contains two or more points.
@@ -2165,19 +2165,19 @@ The function return value is displayed instead of the individual points.
    </dl>
 </div>
 
-### `series.type="bar".axis` : **String** *(default: primary)*
+### series.type="bar".axis `String`*(default: primary)*
 
  The name of the value axis to use.
 
-### `series.type="bar".border` : **Object** 
+### series.type="bar".border `Object`
 
 The border of the series.
 
-### `series.type="bar".border.color` : **String** *(default: the color of the curren series)*
+### series.type="bar".border.color `String`*(default: the color of the curren series)*
 
 The color of the border.
 
-### `series.type="bar".border.dashType` : **String** *(default: "solid")*
+### series.type="bar".border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -2227,35 +2227,35 @@ The color of the border.
    </dl>
 </div>
 
-### `series.type="bar".border.width` : **Number** *(default: 1)*
+### series.type="bar".border.width `Number`*(default: 1)*
 
  The width of the border.
 
-### `series.type="bar".color` : **String** 
+### series.type="bar".color `String`
 
 The series base color.
 
-### `series.type="bar".gap` : **Number** *(default: 1.5)*
+### series.type="bar".gap `Number`*(default: 1.5)*
 
  The distance between category clusters.
 
-### `series.type="bar".labels` : **Object** 
+### series.type="bar".labels `Object`
 
 Configures the series data labels.
 
-### `series.type="bar".labels.background` : **String** 
+### series.type="bar".labels.background `String`
 
 The background color of the labels.
 
-### `series.type="bar".labels.border` : **Object** 
+### series.type="bar".labels.border `Object`
 
 The border of the labels.
 
-### `series.type="bar".labels.border.color` : **String** *(default: "black")*
+### series.type="bar".labels.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="bar".labels.border.dashType` : **String** *(default: "solid")*
+### series.type="bar".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -2305,19 +2305,19 @@ The border of the labels.
    </dl>
 </div>
 
-### `series.type="bar".labels.border.width` : **Number** *(default: 0)*
+### series.type="bar".labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="bar".labels.color` : **String** 
+### series.type="bar".labels.color `String`
 
 The text color of the labels.
 
-### `series.type="bar".labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="bar".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
-### `series.type="bar".labels.format` : **String** 
+### series.type="bar".labels.format `String`
 
 The format of the labels.
 
@@ -2326,7 +2326,7 @@ The format of the labels.
     //sets format of the labels
     format: "C"
 
-### `series.type="bar".labels.margin` : **Number|Object** *(default: 2)*
+### series.type="bar".labels.margin `Number|Object`*(default: 2)*
 
  The margin of the labels.
 
@@ -2334,12 +2334,12 @@ The format of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 2px (by default)
     margin: { top: 1, left: 1 }
 
-### `series.type="bar".labels.padding` : **Number|Object** *(default: 2)*
+### series.type="bar".labels.padding `Number|Object`*(default: 2)*
 
  The padding of the labels.
 
@@ -2347,12 +2347,12 @@ The format of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 2px (by default)
     padding: { top: 1, left: 1 }
 
-### `series.type="bar".labels.position` : **String** *(default: "outsideEnd")*
+### series.type="bar".labels.position `String`*(default: "outsideEnd")*
 
 Defines the position of the bar labels.
 <div class="details-list">
@@ -2385,7 +2385,7 @@ Defines the position of the bar labels.
    </dl>
 </div>
 
-### `series.type="bar".labels.template` : **String/Function** 
+### series.type="bar".labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -2421,23 +2421,23 @@ Template variables:
          }
     });
 
-### `series.type="bar".labels.visible` : **Boolean** *(default: false)*
+### series.type="bar".labels.visible `Boolean`*(default: false)*
 
  The visibility of the labels.
 
-### `series.type="bar".name` : **String** 
+### series.type="bar".name `String`
 
 The series name.
 
-### `series.type="bar".opacity` : **Number** *(default: 1)*
+### series.type="bar".opacity `Number`*(default: 1)*
 
  The series opacity.
 
-### `series.type="bar".overlay` : **Object** 
+### series.type="bar".overlay `Object`
 
 The effects overlay.
 
-### `series.type="bar".overlay.gradient` : **String** *(default: "glass")*
+### series.type="bar".overlay.gradient `String`*(default: "glass")*
 
  The gradient name.
 <div class="details-list">
@@ -2457,47 +2457,47 @@ The effects overlay.
    </dl>
 </div>
 
-### `series.type="bar".spacing` : **Number** *(default: 0.4)*
+### series.type="bar".spacing `Number`*(default: 0.4)*
 
  Space between bars.
 
-### `series.type="bar".stack` : **String** 
+### series.type="bar".stack `String`
 
 Indicates that the series should be stacked in a group with the specified name.
 
-### `series.type="bar".stack` : **Boolean** *(default: false)*
+### series.type="bar".stack `Boolean`*(default: false)*
 
 A value indicating if the series should be stacked.
 
-### `series.type="bar".tooltip` : **Object** 
+### series.type="bar".tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `series.type="bar".tooltip.background` : **String** 
+### series.type="bar".tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `series.type="bar".tooltip.border` : **Object** 
+### series.type="bar".tooltip.border `Object`
 
 The border configuration options.
 
-### `series.type="bar".tooltip.border.color` : **String** *(default: "black")*
+### series.type="bar".tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="bar".tooltip.border.width` : **Number** *(default: 0)*
+### series.type="bar".tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="bar".tooltip.color` : **String** 
+### series.type="bar".tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `series.type="bar".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="bar".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `series.type="bar".tooltip.format` : **String** 
+### series.type="bar".tooltip.format `String`
 
 The tooltip format.
 
@@ -2506,7 +2506,7 @@ The tooltip format.
     //sets format of the tooltip
     format: "C"
 
-### `series.type="bar".tooltip.padding` : **Number|Object** 
+### series.type="bar".tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -2514,12 +2514,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `series.type="bar".tooltip.template` : **String|Function** 
+### series.type="bar".tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -2553,43 +2553,43 @@ Template variables:
          }
     });
 
-### `series.type="bar".tooltip.visible` : **Boolean** *(default: false)*
+### series.type="bar".tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `series.type="bubble"`  
+### series.type="bubble"
 
 Available options for bubble series:
 
-### `series.type="bubble".border` : **Object** 
+### series.type="bubble".border `Object`
 
 The border of the bubble.
 
-### `series.type="bubble".border.color` : **String** *(default: "black")*
+### series.type="bubble".border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="bubble".border.width` : **Number** *(default: 0)*
+### series.type="bubble".border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="bubble".categoryField` : **String** 
+### series.type="bubble".categoryField `String`
 
 The data field containing the bubble category name.
 
-### `series.type="bubble".color` : **String** 
+### series.type="bubble".color `String`
 
 The series base color.
 
-### `series.type="bubble".colorField` : **String** 
+### series.type="bubble".colorField `String`
 
 The data field containing the bubble color.
 
-### `series.type="bubble".data` : **Array** 
+### series.type="bubble".data `Array`
 
 Array of data items (optional).
 The bubble chart can be bound to an array of arrays with three numbers (X, Y and Size).
- 
+
 
 #### Example
 
@@ -2601,23 +2601,23 @@ The bubble chart can be bound to an array of arrays with three numbers (X, Y and
      }]
      // ...
 
-### `series.type="bubble".labels` : **Object** 
+### series.type="bubble".labels `Object`
 
 Configures the series data labels.
 
-### `series.type="bubble".labels.background` : **String** 
+### series.type="bubble".labels.background `String`
 
 The background color of the labels.
 
-### `series.type="bubble".labels.border` : **Object** 
+### series.type="bubble".labels.border `Object`
 
 The border of the labels.
 
-### `series.type="bubble".labels.border.color` : **String** *(default: "black")*
+### series.type="bubble".labels.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="bubble".labels.border.dashType` : **String** *(default: "solid")*
+### series.type="bubble".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -2667,19 +2667,19 @@ The border of the labels.
    </dl>
 </div>
 
-### `series.type="bubble".labels.border.width` : **Number** *(default: 0)*
+### series.type="bubble".labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="bubble".labels.color` : **String** 
+### series.type="bubble".labels.color `String`
 
 The text color of the labels.
 
-### `series.type="bubble".labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="bubble".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
-### `series.type="bubble".labels.format` : **String** 
+### series.type="bubble".labels.format `String`
 
 The format of the labels.
 
@@ -2688,7 +2688,7 @@ The format of the labels.
     //sets format of the labels
     format: "C"
 
-### `series.type="bubble".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
+### series.type="bubble".labels.margin `Number|Object`*(default: { left: 5, right: 5})*
 
 The margin of the labels.
 
@@ -2696,12 +2696,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
 
-### `series.type="bubble".labels.padding` : **Number|Object** *(default: 0)*
+### series.type="bubble".labels.padding `Number|Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -2709,12 +2709,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
 
-### `series.type="bubble".labels.position` : **String** *(default: "above")*
+### series.type="bubble".labels.position `String`*(default: "above")*
 
 Defines the position of the bubble labels.
 <div class="details-list">
@@ -2746,7 +2746,7 @@ Defines the position of the bubble labels.
    </dl>
 </div>
 
-### `series.type="bubble".labels.template` : **String/Function** 
+### series.type="bubble".labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -2781,71 +2781,71 @@ Template variables:
          ]
     });
 
-### `series.type="bubble".labels.visible` : **Boolean** *(default: false)*
+### series.type="bubble".labels.visible `Boolean`*(default: false)*
 
  The visibility of the labels.
 
-### `series.type="bubble".maxSize` : **Number** *(default: 100)*
+### series.type="bubble".maxSize `Number`*(default: 100)*
 
  The max size of the bubble.
 
-### `series.type="bubble".minSize` : **Number** *(default: 5)*
+### series.type="bubble".minSize `Number`*(default: 5)*
 
  The min size of the bubble.
 
-### `series.type="bubble".name` : **String** 
+### series.type="bubble".name `String`
 
 The series name.
 
-### `series.type="bubble".negativeValues` : **Object** 
+### series.type="bubble".negativeValues `Object`
 
 The settings for negative values.
 
-### `series.type="bubble".negativeValues.color` : **String** *(default: "#ffffff")*
+### series.type="bubble".negativeValues.color `String`*(default: "#ffffff")*
 
  The color of the negative values.
 
-### `series.type="bubble".negativeValues.visible` : **Boolean** *(default: false)*
+### series.type="bubble".negativeValues.visible `Boolean`*(default: false)*
 
  The visibility of the negative values.
 
-### `series.type="bubble".opacity` : **Number** *(default: 0.6)*
+### series.type="bubble".opacity `Number`*(default: 0.6)*
 
  The series opacity.
 
-### `series.type="bubble".sizeField` : **String** 
+### series.type="bubble".sizeField `String`
 
 The data field containing the bubble size value.
 
-### `series.type="bubble".tooltip` : **Object** 
+### series.type="bubble".tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `series.type="bubble".tooltip.background` : **String** 
+### series.type="bubble".tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `series.type="bubble".tooltip.border` : **Object** 
+### series.type="bubble".tooltip.border `Object`
 
 The border configuration options.
 
-### `series.type="bubble".tooltip.border.color` : **String** *(default: "black")*
+### series.type="bubble".tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="bubble".tooltip.border.width` : **Number** *(default: 0)*
+### series.type="bubble".tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="bubble".tooltip.color` : **String** 
+### series.type="bubble".tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `series.type="bubble".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="bubble".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `series.type="bubble".tooltip.format` : **String** 
+### series.type="bubble".tooltip.format `String`
 
 The tooltip format.
 Format variables:
@@ -2861,7 +2861,7 @@ Format variables:
     //sets format of the tooltip
     format: "{0:C}--{1:C}"
 
-### `series.type="bubble".tooltip.padding` : **Number|Object** 
+### series.type="bubble".tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -2869,12 +2869,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `series.type="bubble".tooltip.template` : **String|Function** 
+### series.type="bubble".tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -2907,48 +2907,48 @@ Template variables:
          ]
     });
 
-### `series.type="bubble".tooltip.visible` : **Boolean** *(default: false)*
+### series.type="bubble".tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `series.type="bubble".visibleInLegendField` : **String** 
+### series.type="bubble".visibleInLegendField `String`
 
 A boolean value indicating whether to show the bubble category name in the legend.
 
-### `series.type="bubble".xAxis` : **String** *(default: primary)*
+### series.type="bubble".xAxis `String`*(default: primary)*
 
  The name of the X axis to use.
 
-### `series.type="bubble".xField` : **String** 
+### series.type="bubble".xField `String`
 
 The data field containing the bubble x value.
 
-### `series.type="bubble".yAxis` : **String** *(default: primary)*
+### series.type="bubble".yAxis `String`*(default: primary)*
 
  The name of the Y axis to use.
 
-### `series.type="bubble".yField` : **String** 
+### series.type="bubble".yField `String`
 
 The data field containing the bubble y value.
 
-### `series.type="column"`  
+### series.type="column"
 
 Column series accepts the same parameters as bar series.
 The difference is that column series are rendered on a horizontal category axis.
 
-### `series.type="donut"`  
+### series.type="donut"
 
 Available options for donut series:
 
-### `series.type="donut".border` : **Object** 
+### series.type="donut".border `Object`
 
 The border of the series.
 
-### `series.type="donut".border.color` : **String** *(default: the color of the curren series)*
+### series.type="donut".border.color `String`*(default: the color of the curren series)*
 
 The color of the border.
 
-### `series.type="donut".border.dashType` : **String** *(default: solid)*
+### series.type="donut".border.dashType `String`*(default: solid)*
 
  The dash type of the border.
 <div class="details-list">
@@ -2998,35 +2998,35 @@ The color of the border.
    </dl>
 </div>
 
-### `series.type="donut".border.width` : **Number** *(default: 1)*
+### series.type="donut".border.width `Number`*(default: 1)*
 
  The width of the border.
 
-### `series.type="donut".categoryField` : **String** 
+### series.type="donut".categoryField `String`
 
 The data field containing the sector category name.
 
-### `series.type="donut".colorField` : **String** 
+### series.type="donut".colorField `String`
 
 The data field containing the sector color.
 
-### `series.type="donut".connectors` : **Object** 
+### series.type="donut".connectors `Object`
 
 The label connectors options.
 
-### `series.type="donut".connectors.color` : **String** 
+### series.type="donut".connectors.color `String`
 
 The color of the connector line.
 
-### `series.type="donut".connectors.padding` : **Number** *(default: 4)*
+### series.type="donut".connectors.padding `Number`*(default: 4)*
 
 The padding between the connector line and the label, and connector line and donut chart.
 
-### `series.type="donut".connectors.width` : **Number** *(default: 1)*
+### series.type="donut".connectors.width `Number`*(default: 1)*
 
  The width of the connector line.
 
-### `series.type="donut".data` : **Array** 
+### series.type="donut".data `Array`
 
 Array of data items (optional).
 The donut chart can be bound to an array of numbers or an array of objects
@@ -3065,7 +3065,7 @@ with the following fields:
         </dd>
    </dl>
 </div>
- 
+
 
 #### Example
 
@@ -3084,20 +3084,20 @@ with the following fields:
      }]
      // ...
 
-### `series.type="donut".explodeField` : **String** 
+### series.type="donut".explodeField `String`
 
 The data field containing a boolean value that indicates if the sector is exploded
 (available only for the last level of the series).
 
-### `series.type="donut".holeSize` : **Number** 
+### series.type="donut".holeSize `Number`
 
 The the size of the donut hole.
 
-### `series.type="donut".labels` : **Object** 
+### series.type="donut".labels `Object`
 
 Configures the series data labels.
 
-### `series.type="donut".labels.align` : **String** *(default: "circle")*
+### series.type="donut".labels.align `String`*(default: "circle")*
 
 Defines the alignment of the donut labels.
 <div class="details-list">
@@ -3117,19 +3117,19 @@ Defines the alignment of the donut labels.
    </dl>
 </div>
 
-### `series.type="donut".labels.background` : **String** 
+### series.type="donut".labels.background `String`
 
 The background color of the labels.
 
-### `series.type="donut".labels.border` : **Object** 
+### series.type="donut".labels.border `Object`
 
 The border of the labels.
 
-### `series.type="donut".labels.border.color` : **String** *(default: "black")*
+### series.type="donut".labels.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="donut".labels.border.dashType` : **String** *(default: "solid")*
+### series.type="donut".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -3179,23 +3179,23 @@ The border of the labels.
    </dl>
 </div>
 
-### `series.type="donut".labels.border.width` : **Number** *(default: 0)*
+### series.type="donut".labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="donut".labels.color` : **String** 
+### series.type="donut".labels.color `String`
 
 The text color of the labels.
 
-### `series.type="donut".labels.distance` : **Number** *(default: 35)*
+### series.type="donut".labels.distance `Number`*(default: 35)*
 
  The distance of the labels.
 
-### `series.type="donut".labels.font` : **String** *(default: "12px Arial, sans-serif")*
+### series.type="donut".labels.font `String`*(default: "12px Arial, sans-serif")*
 
 The font style of the labels.
 
-### `series.type="donut".labels.format` : **String** 
+### series.type="donut".labels.format `String`
 
 The format of the labels.
 
@@ -3204,7 +3204,7 @@ The format of the labels.
     //sets format of the labels
     format: "C"
 
-### `series.type="donut".labels.margin` : **Number|Object** *(default: 0.5)*
+### series.type="donut".labels.margin `Number|Object`*(default: 0.5)*
 
  The margin of the labels.
 
@@ -3212,12 +3212,12 @@ The format of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 2px (by default)
     margin: { top: 1, left: 1 }
 
-### `series.type="donut".labels.padding` : **Number|Object** *(default: 0)*
+### series.type="donut".labels.padding `Number|Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -3225,12 +3225,12 @@ The format of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 2px (by default)
     padding: { top: 1, left: 1 }
 
-### `series.type="donut".labels.position` : **String** *(default: "center")*
+### series.type="donut".labels.position `String`*(default: "center")*
 
 Defines the position of the donut labels.
 <div class="details-list">
@@ -3257,7 +3257,7 @@ Defines the position of the donut labels.
    </dl>
 </div>
 
-### `series.type="donut".labels.template` : **String/Function** 
+### series.type="donut".labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -3293,69 +3293,69 @@ Template variables:
          }]
     });
 
-### `series.type="donut".labels.visible` : **Boolean** *(default: false)*
+### series.type="donut".labels.visible `Boolean`*(default: false)*
 
  The visibility of the labels.
 
-### `series.type="donut".margin` : **Number** *(default: 1)*
+### series.type="donut".margin `Number`*(default: 1)*
 
  The margin around each series
 (not available for the last level of the series).
 
-### `series.type="donut".opacity` : **Number** *(default: 1)*
+### series.type="donut".opacity `Number`*(default: 1)*
 
  The series opacity.
 
-### `series.type="donut".overlay` : **Object** 
+### series.type="donut".overlay `Object`
 
 The effects overlay.
 
-### `series.type="donut".overlay.gradient` : **String** *(default: "roundedBevel")*
+### series.type="donut".overlay.gradient `String`*(default: "roundedBevel")*
 
  The gradient name.
 Available options are "none" and "roundedCircle".
 
-### `series.type="donut".padding` : **Number** 
+### series.type="donut".padding `Number`
 
 The padding around the donut chart (equal on all sides).
 
-### `series.type="donut".size` : **Number** 
+### series.type="donut".size `Number`
 
 The size of the series.
 
-### `series.type="donut".startAngle` : **number** *(default: 90)*
+### series.type="donut".startAngle `number`*(default: 90)*
 
  The start angle of the first donut segment.
 
-### `series.type="donut".tooltip` : **Object** 
+### series.type="donut".tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `series.type="donut".tooltip.background` : **String** 
+### series.type="donut".tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `series.type="donut".tooltip.border` : **Object** 
+### series.type="donut".tooltip.border `Object`
 
 The border configuration options.
 
-### `series.type="donut".tooltip.border.color` : **String** *(default: "black")*
+### series.type="donut".tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="donut".tooltip.border.width` : **Number** *(default: 0)*
+### series.type="donut".tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="donut".tooltip.color` : **String** 
+### series.type="donut".tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `series.type="donut".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="donut".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `series.type="donut".tooltip.format` : **String** 
+### series.type="donut".tooltip.format `String`
 
 The tooltip format.
 
@@ -3364,7 +3364,7 @@ The tooltip format.
     //sets format of the tooltip
     format: "C"
 
-### `series.type="donut".tooltip.padding` : **Number|Object** 
+### series.type="donut".tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -3372,12 +3372,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `series.type="donut".tooltip.template` : **String|Function** 
+### series.type="donut".tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -3407,15 +3407,15 @@ Template variables:
          }]
     });
 
-### `series.type="donut".tooltip.visible` : **Boolean** *(default: false)*
+### series.type="donut".tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `series.type="line"`  
+### series.type="line"
 
 Available options for line series:
 
-### `series.type="line".aggregate` : **String** *(default: "max")*
+### series.type="line".aggregate `String`*(default: "max")*
 
  Aggregate function for date series.
 This function is used when a category (an year, month, etc.) contains two or more points.
@@ -3461,15 +3461,15 @@ The function return value is displayed instead of the individual points.
    </dl>
 </div>
 
-### `series.type="line".axis` : **String** *(default: primary)*
+### series.type="line".axis `String`*(default: primary)*
 
  The name of the value axis to use.
 
-### `series.type="line".color` : **String** 
+### series.type="line".color `String`
 
 The series base color.
 
-### `series.type="line".dashType` : **String** *(default: "solid")*
+### series.type="line".dashType `String`*(default: "solid")*
 
  The dash type of the line.
 <div class="details-list">
@@ -3519,23 +3519,23 @@ The series base color.
    </dl>
 </div>
 
-### `series.type="line".labels` : **Object** 
+### series.type="line".labels `Object`
 
 Configures the series data labels.
 
-### `series.type="line".labels.background` : **String** 
+### series.type="line".labels.background `String`
 
 The background color of the labels.
 
-### `series.type="line".labels.border` : **Object** 
+### series.type="line".labels.border `Object`
 
 The border of the labels.
 
-### `series.type="line".labels.border.color` : **String** *(default: "black")*
+### series.type="line".labels.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="line".labels.border.dashType` : **String** *(default: "solid")*
+### series.type="line".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -3585,19 +3585,19 @@ The border of the labels.
    </dl>
 </div>
 
-### `series.type="line".labels.border.width` : **Number** *(default: 0)*
+### series.type="line".labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="line".labels.color` : **String** 
+### series.type="line".labels.color `String`
 
 The text color of the labels.
 
-### `series.type="line".labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="line".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
-### `series.type="line".labels.format` : **String** 
+### series.type="line".labels.format `String`
 
 The format of the labels.
 
@@ -3606,7 +3606,7 @@ The format of the labels.
     //sets format of the labels
     format: "C"
 
-### `series.type="line".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
+### series.type="line".labels.margin `Number|Object`*(default: { left: 5, right: 5})*
 
 The margin of the labels.
 
@@ -3614,12 +3614,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
 
-### `series.type="line".labels.padding` : **Number|Object** *(default: 0)*
+### series.type="line".labels.padding `Number|Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -3627,12 +3627,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
 
-### `series.type="line".labels.position` : **String** *(default: "above")*
+### series.type="line".labels.position `String`*(default: "above")*
 
 Defines the position of the line labels.
 <div class="details-list">
@@ -3664,7 +3664,7 @@ Defines the position of the line labels.
    </dl>
 </div>
 
-### `series.type="line".labels.template` : **String/Function** 
+### series.type="line".labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -3700,35 +3700,35 @@ Template variables:
          }
     });
 
-### `series.type="line".labels.visible` : **Boolean** *(default: false)*
+### series.type="line".labels.visible `Boolean`*(default: false)*
 
  The visibility of the labels.
 
-### `series.type="line".markers` : **Object** 
+### series.type="line".markers `Object`
 
 Configures the line markers.
 
-### `series.type="line".markers.background` : **String** 
+### series.type="line".markers.background `String`
 
 The background color of the current series markers.
 
-### `series.type="line".markers.border` : **Object** 
+### series.type="line".markers.border `Object`
 
 The border of the markers.
 
-### `series.type="line".markers.border.color` : **String** *(default: "black")*
+### series.type="line".markers.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="line".markers.border.width` : **Number** *(default: 0)*
+### series.type="line".markers.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="line".markers.size` : **Number** *(default: 6)*
+### series.type="line".markers.size `Number`*(default: 6)*
 
  The marker size.
 
-### `series.type="line".markers.type` : **String** *(default: "circle")*
+### series.type="line".markers.type `String`*(default: "circle")*
 
 Configures the markers shape type.
 <div class="details-list">
@@ -3754,11 +3754,11 @@ Configures the markers shape type.
    </dl>
 </div>
 
-### `series.type="line".markers.visible` : **Boolean** *(default: true)*
+### series.type="line".markers.visible `Boolean`*(default: true)*
 
  The markers visibility.
 
-### `series.type="line".missingValues` : **String** *(default: "gap")*
+### series.type="line".missingValues `String`*(default: "gap")*
 
 Configures the behavior for handling missing values in line series.
 <div class="details-list">
@@ -3784,47 +3784,47 @@ Configures the behavior for handling missing values in line series.
    </dl>
 </div>
 
-### `series.type="line".name` : **String** 
+### series.type="line".name `String`
 
 The series name.
 
-### `series.type="line".opacity` : **Number** *(default: 1)*
+### series.type="line".opacity `Number`*(default: 1)*
 
  The series opacity.
 
-### `series.type="line".stack` : **Boolean** *(default: false)*
+### series.type="line".stack `Boolean`*(default: false)*
 
 A value indicating if the series should be stacked.
 
-### `series.type="line".tooltip` : **Object** 
+### series.type="line".tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `series.type="line".tooltip.background` : **String** 
+### series.type="line".tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `series.type="line".tooltip.border` : **Object** 
+### series.type="line".tooltip.border `Object`
 
 The border configuration options.
 
-### `series.type="line".tooltip.border.color` : **String** *(default: "black")*
+### series.type="line".tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="line".tooltip.border.width` : **Number** *(default: 0)*
+### series.type="line".tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="line".tooltip.color` : **String** 
+### series.type="line".tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `series.type="line".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="line".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `series.type="line".tooltip.format` : **String** 
+### series.type="line".tooltip.format `String`
 
 The tooltip format.
 
@@ -3833,7 +3833,7 @@ The tooltip format.
     //sets format of the tooltip
     format: "C"
 
-### `series.type="line".tooltip.padding` : **Number|Object** 
+### series.type="line".tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -3841,12 +3841,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `series.type="line".tooltip.template` : **String|Function** 
+### series.type="line".tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -3880,27 +3880,27 @@ Template variables:
          }
     });
 
-### `series.type="line".tooltip.visible` : **Boolean** *(default: false)*
+### series.type="line".tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `series.type="line".width` : **String** *(default: 4)*
+### series.type="line".width `String`*(default: 4)*
 
  The line width of the line chart.
 
-### `series.type="pie"`  
+### series.type="pie"
 
 Available options for pie series:
 
-### `series.type="pie".border` : **Object** 
+### series.type="pie".border `Object`
 
 The border of the series.
 
-### `series.type="pie".border.color` : **String** *(default: the color of the curren series)*
+### series.type="pie".border.color `String`*(default: the color of the curren series)*
 
 The color of the border.
 
-### `series.type="pie".border.dashType` : **String** *(default: solid)*
+### series.type="pie".border.dashType `String`*(default: solid)*
 
  The dash type of the border.
 <div class="details-list">
@@ -3950,35 +3950,35 @@ The color of the border.
    </dl>
 </div>
 
-### `series.type="pie".border.width` : **Number** *(default: 1)*
+### series.type="pie".border.width `Number`*(default: 1)*
 
  The width of the border.
 
-### `series.type="pie".categoryField` : **String** 
+### series.type="pie".categoryField `String`
 
 The data field containing the sector category name.
 
-### `series.type="pie".colorField` : **String** 
+### series.type="pie".colorField `String`
 
 The data field containing the sector color.
 
-### `series.type="pie".connectors` : **Object** 
+### series.type="pie".connectors `Object`
 
 The label connectors options.
 
-### `series.type="pie".connectors.color` : **String** 
+### series.type="pie".connectors.color `String`
 
 The color of the connector line.
 
-### `series.type="pie".connectors.padding` : **Number** *(default: 4)*
+### series.type="pie".connectors.padding `Number`*(default: 4)*
 
 The padding between the connector line and the label, and connector line and pie chart.
 
-### `series.type="pie".connectors.width` : **Number** *(default: 1)*
+### series.type="pie".connectors.width `Number`*(default: 1)*
 
  The width of the connector line.
 
-### `series.type="pie".data` : **Array** 
+### series.type="pie".data `Array`
 
 Array of data items (optional).
 The pie chart can be bound to an array of numbers or an array of objects
@@ -4017,7 +4017,7 @@ with the following fields:
         </dd>
    </dl>
 </div>
- 
+
 
 #### Example
 
@@ -4037,15 +4037,15 @@ with the following fields:
      }]
      // ...
 
-### `series.type="pie".explodeField` : **String** 
+### series.type="pie".explodeField `String`
 
 The data field containing a boolean value that indicates if the sector is exploded.
 
-### `series.type="pie".labels` : **Object** 
+### series.type="pie".labels `Object`
 
 Configures the series data labels.
 
-### `series.type="pie".labels.align` : **String** *(default: "circle")*
+### series.type="pie".labels.align `String`*(default: "circle")*
 
 Defines the alignment of the pie labels.
 <div class="details-list">
@@ -4065,19 +4065,19 @@ Defines the alignment of the pie labels.
    </dl>
 </div>
 
-### `series.type="pie".labels.background` : **String** 
+### series.type="pie".labels.background `String`
 
 The background color of the labels.
 
-### `series.type="pie".labels.border` : **Object** 
+### series.type="pie".labels.border `Object`
 
 The border of the labels.
 
-### `series.type="pie".labels.border.color` : **String** *(default: "black")*
+### series.type="pie".labels.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="pie".labels.border.dashType` : **String** *(default: "solid")*
+### series.type="pie".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -4127,23 +4127,23 @@ The border of the labels.
    </dl>
 </div>
 
-### `series.type="pie".labels.border.width` : **Number** *(default: 0)*
+### series.type="pie".labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="pie".labels.color` : **String** 
+### series.type="pie".labels.color `String`
 
 The text color of the labels.
 
-### `series.type="pie".labels.distance` : **Number** *(default: 35)*
+### series.type="pie".labels.distance `Number`*(default: 35)*
 
  The distance of the labels.
 
-### `series.type="pie".labels.font` : **String** *(default: "12px Arial, sans-serif")*
+### series.type="pie".labels.font `String`*(default: "12px Arial, sans-serif")*
 
 The font style of the labels.
 
-### `series.type="pie".labels.format` : **String** 
+### series.type="pie".labels.format `String`
 
 The format of the labels.
 
@@ -4152,7 +4152,7 @@ The format of the labels.
     //sets format of the labels
     format: "C"
 
-### `series.type="pie".labels.margin` : **Number|Object** *(default: 0.5)*
+### series.type="pie".labels.margin `Number|Object`*(default: 0.5)*
 
  The margin of the labels.
 
@@ -4160,12 +4160,12 @@ The format of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 2px (by default)
     margin: { top: 1, left: 1 }
 
-### `series.type="pie".labels.padding` : **Number|Object** *(default: 0)*
+### series.type="pie".labels.padding `Number|Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -4173,12 +4173,12 @@ The format of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 2px (by default)
     padding: { top: 1, left: 1 }
 
-### `series.type="pie".labels.position` : **String** *(default: "outsideEnd")*
+### series.type="pie".labels.position `String`*(default: "outsideEnd")*
 
 Defines the position of the pie labels.
 <div class="details-list">
@@ -4205,7 +4205,7 @@ Defines the position of the pie labels.
    </dl>
 </div>
 
-### `series.type="pie".labels.template` : **String/Function** 
+### series.type="pie".labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -4244,60 +4244,60 @@ Template variables:
          ]
     });
 
-### `series.type="pie".labels.visible` : **Boolean** *(default: false)*
+### series.type="pie".labels.visible `Boolean`*(default: false)*
 
  The visibility of the labels.
 
-### `series.type="pie".opacity` : **Number** *(default: 1)*
+### series.type="pie".opacity `Number`*(default: 1)*
 
  The series opacity.
 
-### `series.type="pie".overlay` : **Object** 
+### series.type="pie".overlay `Object`
 
 The effects overlay.
 
-### `series.type="pie".overlay.gradient` : **String** *(default: "roundedBevel")*
+### series.type="pie".overlay.gradient `String`*(default: "roundedBevel")*
 
  The gradient name.
 Available options are "none", "sharpBevel" and "roundedBevel".
 
-### `series.type="pie".padding` : **Number** 
+### series.type="pie".padding `Number`
 
 The padding around the pie chart (equal on all sides).
 
-### `series.type="pie".startAngle` : **number** *(default: 90)*
+### series.type="pie".startAngle `number`*(default: 90)*
 
  The start angle of the first pie segment.
 
-### `series.type="pie".tooltip` : **Object** 
+### series.type="pie".tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `series.type="pie".tooltip.background` : **String** 
+### series.type="pie".tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `series.type="pie".tooltip.border` : **Object** 
+### series.type="pie".tooltip.border `Object`
 
 The border configuration options.
 
-### `series.type="pie".tooltip.border.color` : **String** *(default: "black")*
+### series.type="pie".tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="pie".tooltip.border.width` : **Number** *(default: 0)*
+### series.type="pie".tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="pie".tooltip.color` : **String** 
+### series.type="pie".tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `series.type="pie".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="pie".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `series.type="pie".tooltip.format` : **String** 
+### series.type="pie".tooltip.format `String`
 
 The tooltip format.
 
@@ -4306,7 +4306,7 @@ The tooltip format.
     //sets format of the tooltip
     format: "C"
 
-### `series.type="pie".tooltip.padding` : **Number|Object** 
+### series.type="pie".tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -4314,12 +4314,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `series.type="pie".tooltip.template` : **String|Function** 
+### series.type="pie".tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -4351,31 +4351,31 @@ Template variables:
          ]
     });
 
-### `series.type="pie".tooltip.visible` : **Boolean** *(default: false)*
+### series.type="pie".tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `series.type="pie".visibleInLegendField` : **Number** 
+### series.type="pie".visibleInLegendField `Number`
 
 A boolean value indicating whether to show the sector in the legend.
 
-### `series.type="pie".visibleInLegendField` : **Number** 
+### series.type="pie".visibleInLegendField `Number`
 
 A boolean value indicating whether to show the sector in the legend.
 
-### `series.type="scatter"`  
+### series.type="scatter"
 
 Available options for scatter series:
 
-### `series.type="scatter".color` : **String** 
+### series.type="scatter".color `String`
 
 The series base color.
 
-### `series.type="scatter".data` : **Array** 
+### series.type="scatter".data `Array`
 
 Array of data items (optional).
 The scatter chart can be bound to an array of arrays with two numbers (X and Y).
- 
+
 
 #### Example
 
@@ -4387,23 +4387,23 @@ The scatter chart can be bound to an array of arrays with two numbers (X and Y).
      }]
      // ...
 
-### `series.type="scatter".labels` : **Object** 
+### series.type="scatter".labels `Object`
 
 Configures the series data labels.
 
-### `series.type="scatter".labels.background` : **String** 
+### series.type="scatter".labels.background `String`
 
 The background color of the labels.
 
-### `series.type="scatter".labels.border` : **Object** 
+### series.type="scatter".labels.border `Object`
 
 The border of the labels.
 
-### `series.type="scatter".labels.border.color` : **String** *(default: "black")*
+### series.type="scatter".labels.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="scatter".labels.border.dashType` : **String** *(default: "solid")*
+### series.type="scatter".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -4453,19 +4453,19 @@ The border of the labels.
    </dl>
 </div>
 
-### `series.type="scatter".labels.border.width` : **Number** *(default: 0)*
+### series.type="scatter".labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="scatter".labels.color` : **String** 
+### series.type="scatter".labels.color `String`
 
 The text color of the labels.
 
-### `series.type="scatter".labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="scatter".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
-### `series.type="scatter".labels.format` : **String** 
+### series.type="scatter".labels.format `String`
 
 The format of the labels.
 
@@ -4474,7 +4474,7 @@ The format of the labels.
     //sets format of the labels
     format: "C"
 
-### `series.type="scatter".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
+### series.type="scatter".labels.margin `Number|Object`*(default: { left: 5, right: 5})*
 
 The margin of the labels.
 
@@ -4482,12 +4482,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
 
-### `series.type="scatter".labels.padding` : **Number|Object** *(default: 0)*
+### series.type="scatter".labels.padding `Number|Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -4495,12 +4495,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
 
-### `series.type="scatter".labels.position` : **String** *(default: "above")*
+### series.type="scatter".labels.position `String`*(default: "above")*
 
 Defines the position of the scatter labels.
 <div class="details-list">
@@ -4532,7 +4532,7 @@ Defines the position of the scatter labels.
    </dl>
 </div>
 
-### `series.type="scatter".labels.template` : **String/Function** 
+### series.type="scatter".labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -4565,35 +4565,35 @@ Template variables:
          ]
     });
 
-### `series.type="scatter".labels.visible` : **Boolean** *(default: false)*
+### series.type="scatter".labels.visible `Boolean`*(default: false)*
 
  The visibility of the labels.
 
-### `series.type="scatter".markers` : **Object** 
+### series.type="scatter".markers `Object`
 
 Configures the scatter markers.
 
-### `series.type="scatter".markers.background` : **String** 
+### series.type="scatter".markers.background `String`
 
 The background color of the current series markers.
 
-### `series.type="scatter".markers.border` : **Object** 
+### series.type="scatter".markers.border `Object`
 
 The border of the markers.
 
-### `series.type="scatter".markers.border.color` : **String** *(default: "black")*
+### series.type="scatter".markers.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="scatter".markers.border.width` : **Number** *(default: 0)*
+### series.type="scatter".markers.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="scatter".markers.size` : **Number** *(default: 6)*
+### series.type="scatter".markers.size `Number`*(default: 6)*
 
  The marker size.
 
-### `series.type="scatter".markers.type` : **String** *(default: "circle")*
+### series.type="scatter".markers.type `String`*(default: "circle")*
 
 Configures the markers shape type.
 <div class="details-list">
@@ -4619,47 +4619,47 @@ Configures the markers shape type.
    </dl>
 </div>
 
-### `series.type="scatter".markers.visible` : **Boolean** *(default: true)*
+### series.type="scatter".markers.visible `Boolean`*(default: true)*
 
  The markers visibility.
 
-### `series.type="scatter".name` : **String** 
+### series.type="scatter".name `String`
 
 The series name.
 
-### `series.type="scatter".opacity` : **Number** *(default: 1)*
+### series.type="scatter".opacity `Number`*(default: 1)*
 
  The series opacity.
 
-### `series.type="scatter".tooltip` : **Object** 
+### series.type="scatter".tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `series.type="scatter".tooltip.background` : **String** 
+### series.type="scatter".tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `series.type="scatter".tooltip.border` : **Object** 
+### series.type="scatter".tooltip.border `Object`
 
 The border configuration options.
 
-### `series.type="scatter".tooltip.border.color` : **String** *(default: "black")*
+### series.type="scatter".tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="scatter".tooltip.border.width` : **Number** *(default: 0)*
+### series.type="scatter".tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="scatter".tooltip.color` : **String** 
+### series.type="scatter".tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `series.type="scatter".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="scatter".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `series.type="scatter".tooltip.format` : **String** 
+### series.type="scatter".tooltip.format `String`
 
 The tooltip format.
 
@@ -4668,7 +4668,7 @@ The tooltip format.
     //sets format of the tooltip
     format: "{0:C}--{1:C}"
 
-### `series.type="scatter".tooltip.padding` : **Number|Object** 
+### series.type="scatter".tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -4676,12 +4676,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `series.type="scatter".tooltip.template` : **String|Function** 
+### series.type="scatter".tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -4712,27 +4712,27 @@ Template variables:
          ]
     });
 
-### `series.type="scatter".tooltip.visible` : **Boolean** *(default: false)*
+### series.type="scatter".tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `series.type="scatter".xAxis` : **String** *(default: primary)*
+### series.type="scatter".xAxis `String`*(default: primary)*
 
  The name of the X axis to use.
 
-### `series.type="scatter".yAxis` : **String** *(default: primary)*
+### series.type="scatter".yAxis `String`*(default: primary)*
 
  The name of the Y axis to use.
 
-### `series.type="scatterLine"`  
+### series.type="scatterLine"
 
 Available options for scatter line series:
 
-### `series.type="scatterLine".color` : **String** 
+### series.type="scatterLine".color `String`
 
 The series base color.
 
-### `series.type="scatterLine".dashType` : **String** *(default: "solid")*
+### series.type="scatterLine".dashType `String`*(default: "solid")*
 
  The dash type of the line.
 <div class="details-list">
@@ -4782,11 +4782,11 @@ The series base color.
    </dl>
 </div>
 
-### `series.type="scatterLine".data` : **Array** 
+### series.type="scatterLine".data `Array`
 
 Array of data items (optional).
 The scatter chart can be bound to an array of arrays with two numbers (X and Y).
- 
+
 
 #### Example
 
@@ -4798,23 +4798,23 @@ The scatter chart can be bound to an array of arrays with two numbers (X and Y).
      }]
      // ...
 
-### `series.type="scatterLine".labels` : **Object** 
+### series.type="scatterLine".labels `Object`
 
 Configures the series data labels.
 
-### `series.type="scatterLine".labels.background` : **String** 
+### series.type="scatterLine".labels.background `String`
 
 The background color of the labels.
 
-### `series.type="scatterLine".labels.border` : **Object** 
+### series.type="scatterLine".labels.border `Object`
 
 The border of the labels.
 
-### `series.type="scatterLine".labels.border.color` : **String** *(default: "black")*
+### series.type="scatterLine".labels.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="scatterLine".labels.border.dashType` : **String** *(default: "solid")*
+### series.type="scatterLine".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -4864,19 +4864,19 @@ The border of the labels.
    </dl>
 </div>
 
-### `series.type="scatterLine".labels.border.width` : **Number** *(default: 0)*
+### series.type="scatterLine".labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="scatterLine".labels.color` : **String** 
+### series.type="scatterLine".labels.color `String`
 
 The text color of the labels.
 
-### `series.type="scatterLine".labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="scatterLine".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
-### `series.type="scatterLine".labels.format` : **String** 
+### series.type="scatterLine".labels.format `String`
 
 The format of the labels.
 
@@ -4885,7 +4885,7 @@ The format of the labels.
     //sets format of the labels
     format: "{0:C}--{1:C}"
 
-### `series.type="scatterLine".labels.margin` : **Number|Object** *(default: { left: 5, right: 5})*
+### series.type="scatterLine".labels.margin `Number|Object`*(default: { left: 5, right: 5})*
 
 The margin of the labels.
 
@@ -4893,12 +4893,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
 
-### `series.type="scatterLine".labels.padding` : **Number|Object** *(default: 0)*
+### series.type="scatterLine".labels.padding `Number|Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -4906,12 +4906,12 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
 
-### `series.type="scatterLine".labels.position` : **String** *(default: "above")*
+### series.type="scatterLine".labels.position `String`*(default: "above")*
 
 Defines the position of the scatter labels.
 <div class="details-list">
@@ -4943,7 +4943,7 @@ Defines the position of the scatter labels.
    </dl>
 </div>
 
-### `series.type="scatterLine".labels.template` : **String/Function** 
+### series.type="scatterLine".labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -4976,35 +4976,35 @@ Template variables:
          ]
     });
 
-### `series.type="scatterLine".labels.visible` : **Boolean** *(default: false)*
+### series.type="scatterLine".labels.visible `Boolean`*(default: false)*
 
  The visibility of the labels.
 
-### `series.type="scatterLine".markers` : **Object** 
+### series.type="scatterLine".markers `Object`
 
 Configures the scatter markers.
 
-### `series.type="scatterLine".markers.background` : **String** 
+### series.type="scatterLine".markers.background `String`
 
 The background color of the current series markers.
 
-### `series.type="scatterLine".markers.border` : **Object** 
+### series.type="scatterLine".markers.border `Object`
 
 The border of the markers.
 
-### `series.type="scatterLine".markers.border.color` : **String** *(default: "black")*
+### series.type="scatterLine".markers.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="scatterLine".markers.border.width` : **Number** *(default: 0)*
+### series.type="scatterLine".markers.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="scatterLine".markers.size` : **Number** *(default: 6)*
+### series.type="scatterLine".markers.size `Number`*(default: 6)*
 
  The marker size.
 
-### `series.type="scatterLine".markers.type` : **String** *(default: "circle")*
+### series.type="scatterLine".markers.type `String`*(default: "circle")*
 
 Configures the markers shape type.
 <div class="details-list">
@@ -5030,11 +5030,11 @@ Configures the markers shape type.
    </dl>
 </div>
 
-### `series.type="scatterLine".markers.visible` : **Boolean** *(default: true)*
+### series.type="scatterLine".markers.visible `Boolean`*(default: true)*
 
  The markers visibility.
 
-### `series.type="scatterLine".missingValues` : **String** *(default: "gap")*
+### series.type="scatterLine".missingValues `String`*(default: "gap")*
 
 Configures the behavior for handling missing values in scatter series.
 <div class="details-list">
@@ -5060,43 +5060,43 @@ Configures the behavior for handling missing values in scatter series.
    </dl>
 </div>
 
-### `series.type="scatterLine".name` : **String** 
+### series.type="scatterLine".name `String`
 
 The series name.
 
-### `series.type="scatterLine".opacity` : **Number** *(default: 1)*
+### series.type="scatterLine".opacity `Number`*(default: 1)*
 
  The series opacity.
 
-### `series.type="scatterLine".tooltip` : **Object** 
+### series.type="scatterLine".tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `series.type="scatterLine".tooltip.background` : **String** 
+### series.type="scatterLine".tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `series.type="scatterLine".tooltip.border` : **Object** 
+### series.type="scatterLine".tooltip.border `Object`
 
 The border configuration options.
 
-### `series.type="scatterLine".tooltip.border.color` : **String** *(default: "black")*
+### series.type="scatterLine".tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `series.type="scatterLine".tooltip.border.width` : **Number** *(default: 0)*
+### series.type="scatterLine".tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `series.type="scatterLine".tooltip.color` : **String** 
+### series.type="scatterLine".tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `series.type="scatterLine".tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### series.type="scatterLine".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `series.type="scatterLine".tooltip.format` : **String** 
+### series.type="scatterLine".tooltip.format `String`
 
 The tooltip format.
 
@@ -5105,7 +5105,7 @@ The tooltip format.
     //sets format of the tooltip
     format: "C"
 
-### `series.type="scatterLine".tooltip.padding` : **Number|Object** 
+### series.type="scatterLine".tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -5113,12 +5113,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `series.type="scatterLine".tooltip.template` : **String|Function** 
+### series.type="scatterLine".tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -5149,62 +5149,62 @@ Template variables:
          ]
     });
 
-### `series.type="scatterLine".tooltip.visible` : **Boolean** *(default: false)*
+### series.type="scatterLine".tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `series.type="scatterLine".width` : **Number** *(default: 1)*
+### series.type="scatterLine".width `Number`*(default: 1)*
 
  The line width of the scatter line chart.
 
-### `series.type="scatterLine".xAxis` : **String** *(default: primary)*
+### series.type="scatterLine".xAxis `String`*(default: primary)*
 
  The name of the X axis to use.
 
-### `series.type="scatterLine".yAxis` : **String** *(default: primary)*
+### series.type="scatterLine".yAxis `String`*(default: primary)*
 
  The name of the Y axis to use.
 
-### `series.type="verticalArea"`  
+### series.type="verticalArea"
 
 Vertical area series use the same options as area series.
 The category axis is rendered vertically instead of horizontally.
 
-### `series.type="verticalLine"`  
+### series.type="verticalLine"
 
 Vertical line series accepts the same parameters as line series.
 The line and the category axis are now vertical instead of horizontal.
 
-### `series.visibleInLegend` : **Boolean** *(default: true)*
+### series.visibleInLegend `Boolean`*(default: true)*
 
  A value indicating whether to show the series in the legend.
 
-### `seriesColors` : **Array** 
+### seriesColors `Array`
 
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.
 
-### `seriesDefaults` : **Object** 
+### seriesDefaults `Object`
 
 Default values for each series.
 
-### `seriesDefaults.area` : **Object** 
+### seriesDefaults.area `Object`
 
 The area configuration options.
 The default options for all area series. For more details see the series options.
 
-### `seriesDefaults.bar` : **Object** 
+### seriesDefaults.bar `Object`
 
 The default options for all bar series. For more details see the series options.
 
-### `seriesDefaults.border` : **Object** 
+### seriesDefaults.border `Object`
 
 The border of the series.
 
-### `seriesDefaults.border.color` : **String** *(default: "black")*
+### seriesDefaults.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `seriesDefaults.border.dashType` : **String** *(default: "solid")*
+### seriesDefaults.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -5254,30 +5254,30 @@ The border of the series.
    </dl>
 </div>
 
-### `seriesDefaults.border.width` : **Number** *(default: 0)*
+### seriesDefaults.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `seriesDefaults.bubble` : **Object** 
+### seriesDefaults.bubble `Object`
 
 The bubble configuration options.
 The default options for all bubble series. For more details see the series options.
 
-### `seriesDefaults.column` : **Object** 
+### seriesDefaults.column `Object`
 
 The column configuration options.
 The default options for all column series. For more details see the series options.
 
-### `seriesDefaults.donut` : **Object** 
+### seriesDefaults.donut `Object`
 
 The donut configuration options.
 The default options for all donut series. For more details see the series options.
 
-### `seriesDefaults.gap` : **Number** *(default: 1.5)*
+### seriesDefaults.gap `Number`*(default: 1.5)*
 
  The distance between category clusters.
 
-### `seriesDefaults.labels` : **Object** 
+### seriesDefaults.labels `Object`
 
 Configures the series data labels.
 
@@ -5296,20 +5296,20 @@ Configures the series data labels.
         ...
     });
 
-### `seriesDefaults.labels.background` : **String** 
+### seriesDefaults.labels.background `String`
 
 The background color of the labels. Any valid CSS color string will work here,
 including hex and rgb.
 
-### `seriesDefaults.labels.border` : **Object** 
+### seriesDefaults.labels.border `Object`
 
 The border of the labels.
 
-### `seriesDefaults.labels.border.color` : **String** *(default: "black")*
+### seriesDefaults.labels.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `seriesDefaults.labels.border.dashType` : **String** *(default: "solid")*
+### seriesDefaults.labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -5359,19 +5359,19 @@ The border of the labels.
    </dl>
 </div>
 
-### `seriesDefaults.labels.border.width` : **Number** *(default: 0)*
+### seriesDefaults.labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `seriesDefaults.labels.color` : **String** 
+### seriesDefaults.labels.color `String`
 
 The text color of the labels. Any valid CSS color string will work here, inlcuding hex
 and rgb.
 
-### `seriesDefaults.labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### seriesDefaults.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
-labels 
+labels
 
 #### Example
 
@@ -5386,7 +5386,7 @@ labels
         ...
     });
 
-### `seriesDefaults.labels.format` : **String** 
+### seriesDefaults.labels.format `String`
 
 The format of the labels.
 
@@ -5395,7 +5395,7 @@ The format of the labels.
     //sets format of the labels
     format: "C"
 
-### `seriesDefaults.labels.margin` : **Number|Object** *(default: 0)*
+### seriesDefaults.labels.margin `Number|Object`*(default: 0)*
 
  The margin of the labels.
 
@@ -5418,7 +5418,7 @@ The format of the labels.
          ...
     });
 
-### `seriesDefaults.labels.padding` : **Number|Object** *(default: 0)*
+### seriesDefaults.labels.padding `Number|Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -5426,12 +5426,12 @@ The format of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
 
-### `seriesDefaults.labels.template` : **String/Function** 
+### seriesDefaults.labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -5468,7 +5468,7 @@ Template variables:
          }
     });
 
-### `seriesDefaults.labels.visible` : **Boolean** *(default: false)*
+### seriesDefaults.labels.visible `Boolean`*(default: false)*
 
  The visibility of the labels.
 
@@ -5484,67 +5484,67 @@ Template variables:
         }
     });
 
-### `seriesDefaults.line` : **Object** 
+### seriesDefaults.line `Object`
 
 The line configuration options.
 The default options for all line series. For more details see the series options.
 
-### `seriesDefaults.overlay` : **Object** 
+### seriesDefaults.overlay `Object`
 
 The effects overlay.
 
-### `seriesDefaults.pie` : **Object** 
+### seriesDefaults.pie `Object`
 
 The pie configuration options.
 The default options for all pie series. For more details see the series options.
 
-### `seriesDefaults.scatter` : **Object** 
+### seriesDefaults.scatter `Object`
 
 The scatter configuration options.
 The default options for all scatter series. For more details see the series options.
 
-### `seriesDefaults.scatterLine` : **Object** 
+### seriesDefaults.scatterLine `Object`
 
 The scatterLine configuration options.
 The default options for all scatterLine series. For more details see the series options.
 
-### `seriesDefaults.spacing` : **Number** *(default: 0.4)*
+### seriesDefaults.spacing `Number`*(default: 0.4)*
 
  Space between bars.
 
-### `seriesDefaults.stack` : **Boolean** *(default: false)*
+### seriesDefaults.stack `Boolean`*(default: false)*
 
 A value indicating if the series should be stacked.
 
-### `seriesDefaults.tooltip` : **Object** 
+### seriesDefaults.tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `seriesDefaults.tooltip.background` : **String** 
+### seriesDefaults.tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `seriesDefaults.tooltip.border` : **Object** 
+### seriesDefaults.tooltip.border `Object`
 
 The border configuration options.
 
-### `seriesDefaults.tooltip.border.color` : **String** *(default: "black")*
+### seriesDefaults.tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `seriesDefaults.tooltip.border.width` : **Number** *(default: 0)*
+### seriesDefaults.tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `seriesDefaults.tooltip.color` : **String** 
+### seriesDefaults.tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `seriesDefaults.tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### seriesDefaults.tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `seriesDefaults.tooltip.format` : **String** 
+### seriesDefaults.tooltip.format `String`
 
 The tooltip format.
 
@@ -5553,7 +5553,7 @@ The tooltip format.
     //sets format of the tooltip
     format: "C"
 
-### `seriesDefaults.tooltip.padding` : **Number|Object** 
+### seriesDefaults.tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -5561,12 +5561,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `seriesDefaults.tooltip.template` : **String|Function** 
+### seriesDefaults.tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -5601,29 +5601,29 @@ Template variables:
          }
     });
 
-### `seriesDefaults.tooltip.visible` : **Boolean** *(default: false)*
+### seriesDefaults.tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `seriesDefaults.verticalArea` : **Object** 
+### seriesDefaults.verticalArea `Object`
 
 The vertical area configuration options.
 The default options for all vertical area series. For more details see the series options.
 
-### `seriesDefaults.verticalLine` : **Object** 
+### seriesDefaults.verticalLine `Object`
 
 The vertical line configuration options.
 The default options for all vertical line series. For more details see the series options.
 
-### `theme` : **String** 
+### theme `String`
 
 Sets Chart theme. Available themes: default, blueOpal, black.
 
-### `title` : **Object** 
+### title `Object`
 
 The chart title configuration options.
 
-### `title.align` : **String** *(default: "center")*
+### title.align `String`*(default: "center")*
 
  The alignment of the title.
 <div class="details-list">
@@ -5649,11 +5649,11 @@ The chart title configuration options.
    </dl>
 </div>
 
-### `title.background` : **String** *(default: "white")*
+### title.background `String`*(default: "white")*
 
  The background color of the title.
 
-### `title.border` : **Object** 
+### title.border `Object`
 
 The border of the title.
 
@@ -5674,11 +5674,11 @@ The border of the title.
         ...
     });
 
-### `title.border.color` : **String** *(default: "black")*
+### title.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `title.border.dashType` : **String** *(default: "solid")*
+### title.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -5728,15 +5728,15 @@ The border of the title.
    </dl>
 </div>
 
-### `title.border.width` : **Number** *(default: 0)*
+### title.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `title.font` : **String** *(default: "16px Arial,Helvetica,sans-serif")*
+### title.font `String`*(default: "16px Arial,Helvetica,sans-serif")*
 
  The font of the title.
 
-### `title.margin` : **Number | Object** *(default: 5)*
+### title.margin `Number | Object`*(default: 5)*
 
  The margin of the title.
 
@@ -5759,7 +5759,7 @@ The border of the title.
         ...
     });
 
-### `title.padding` : **Number | Object** *(default: 5)*
+### title.padding `Number | Object`*(default: 5)*
 
  The padding of the title.
 
@@ -5782,7 +5782,7 @@ The border of the title.
         ...
     });
 
-### `title.position` : **String** *(default: "top")*
+### title.position `String`*(default: "top")*
 
  The position of the title.
 <div class="details-list">
@@ -5802,11 +5802,11 @@ The border of the title.
    </dl>
 </div>
 
-### `title.text` : **String** 
+### title.text `String`
 
 The title of the chart.
 
-### `title.visible` : **Boolean** *(default: false)*
+### title.visible `Boolean`*(default: false)*
 
  The visibility of the title.
 
@@ -5820,35 +5820,35 @@ The title of the chart.
         ...
     });
 
-### `tooltip` : **Object** 
+### tooltip `Object`
 
 The data point tooltip configuration options.
 
-### `tooltip.background` : **String** 
+### tooltip.background `String`
 
 The background color of the tooltip. The default is determined from the series color.
 
-### `tooltip.border` : **Object** 
+### tooltip.border `Object`
 
 The border configuration options.
 
-### `tooltip.border.color` : **String** *(default: "black")*
+### tooltip.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `tooltip.border.width` : **Number** *(default: 0)*
+### tooltip.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `tooltip.color` : **String** 
+### tooltip.color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
-### `tooltip.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
  The tooltip font.
 
-### `tooltip.format` : **String** 
+### tooltip.format `String`
 
 The tooltip format.
 
@@ -5857,7 +5857,7 @@ The tooltip format.
     //sets format of the tooltip
     format: "C"
 
-### `tooltip.padding` : **Number|Object** 
+### tooltip.padding `Number|Object`
 
 The padding of the tooltip.
 
@@ -5865,12 +5865,12 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
 
-### `tooltip.template` : **String|Function** 
+### tooltip.template `String|Function`
 
 The tooltip template.
 Template variables:
@@ -5903,28 +5903,28 @@ Template variables:
          }
     });
 
-### `tooltip.visible` : **Boolean** *(default: false)*
+### tooltip.visible `Boolean`*(default: false)*
 
  A value indicating if the tooltip should be displayed.
 
-### `transitions` : **Boolean** *(default: true)*
+### transitions `Boolean`*(default: true)*
 
 A value indicating if transition animations should be played.
 
-### `valueAxis` : **Object** 
+### valueAxis `Object`
 
 The value axis configuration options.
 
-### `valueAxis.axisCrossingValue` : **Number** *(default: 0)*
+### valueAxis.axisCrossingValue `Number`*(default: 0)*
 
  Value at which the category axis crosses this axis.
 
-### `valueAxis.color` : **String** 
+### valueAxis.color `String`
 
 Color to apply to all axis elements.
 Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
 
-### `valueAxis.labels` : **Object** 
+### valueAxis.labels `Object`
 
 Configures the axis labels.
 
@@ -5947,12 +5947,12 @@ Configures the axis labels.
         ...
     });
 
-### `valueAxis.labels.background` : **String** 
+### valueAxis.labels.background `String`
 
 The background color of the labels. Any valid CSS color string will work here, including
 hex and rgb
 
-### `valueAxis.labels.border` : **Object** 
+### valueAxis.labels.border `Object`
 
 The border of the labels.
 
@@ -5974,12 +5974,12 @@ The border of the labels.
         ...
     });
 
-### `valueAxis.labels.border.color` : **String** *(default: "black")*
+### valueAxis.labels.border.color `String`*(default: "black")*
 
  The color of the border. Any valid CSS color string will work here, including
 hex and rgb.
 
-### `valueAxis.labels.border.dashType` : **String** *(default: "solid")*
+### valueAxis.labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -6029,19 +6029,19 @@ hex and rgb.
    </dl>
 </div>
 
-### `valueAxis.labels.border.width` : **Number** *(default: 0)*
+### valueAxis.labels.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `valueAxis.labels.color` : **String** 
+### valueAxis.labels.color `String`
 
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
-### `valueAxis.labels.font` : **String** *(default: "12px Arial,Helvetica,sans-serif")*
+### valueAxis.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
-### `valueAxis.labels.format` : **String** 
+### valueAxis.labels.format `String`
 
 The format of the labels.
 
@@ -6057,7 +6057,7 @@ The format of the labels.
         ...
     });
 
-### `valueAxis.labels.margin` : **Number|Object** *(default: 0)*
+### valueAxis.labels.margin `Number|Object`*(default: 0)*
 
  The margin of the labels.
 
@@ -6084,7 +6084,7 @@ The format of the labels.
         ...
     });
 
-### `valueAxis.labels.mirror` : **Boolean** 
+### valueAxis.labels.mirror `Boolean`
 
 Mirrors the axis labels and ticks.
 If the labels are normally on the left side of the axis,
@@ -6102,7 +6102,7 @@ mirroring the axis will render them to the right.
         ...
     });
 
-### `valueAxis.labels.padding` : **Number | Object** *(default: 0)*
+### valueAxis.labels.padding `Number | Object`*(default: 0)*
 
  The padding of the labels.
 
@@ -6129,21 +6129,21 @@ mirroring the axis will render them to the right.
         ...
     });
 
-### `valueAxis.labels.rotation` : **Number** *(default: 0)*
+### valueAxis.labels.rotation `Number`*(default: 0)*
 
  The rotation angle of the labels.
 
-### `valueAxis.labels.skip` : **Number** *(default: 1)*
+### valueAxis.labels.skip `Number`*(default: 1)*
 
  Number of labels to skip.
 Skips rendering the first n labels.
 
-### `valueAxis.labels.step` : **Number** *(default: 1)*
+### valueAxis.labels.step `Number`*(default: 1)*
 
  Label rendering step.
 Every n-th label is rendered where n is the step
 
-### `valueAxis.labels.template` : **String/Function** 
+### valueAxis.labels.template `String/Function`
 
 The label template.
 Template variables:
@@ -6175,7 +6175,7 @@ Template variables:
          }
     });
 
-### `valueAxis.labels.visible` : **Boolean** *(default: true)*
+### valueAxis.labels.visible `Boolean`*(default: true)*
 
  The visibility of the labels.
 
@@ -6191,7 +6191,7 @@ Template variables:
        ...
     });
 
-### `valueAxis.line` : **Object** 
+### valueAxis.line `Object`
 
 Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
 
@@ -6209,12 +6209,12 @@ Configures the axis line. This will also affect the major and minor ticks, but n
         ...
     });
 
-### `valueAxis.line.color` : **String** *(default: "black")*
+### valueAxis.line.color `String`*(default: "black")*
 
  The color of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
-### `valueAxis.line.dashType` : **String** *(default: "solid")*
+### valueAxis.line.dashType `String`*(default: "solid")*
 
  The dash type of the line.
 <div class="details-list">
@@ -6264,7 +6264,7 @@ not the grid lines.
    </dl>
 </div>
 
-### `valueAxis.line.visible` : **Boolean** *(default: true)*
+### valueAxis.line.visible `Boolean`*(default: true)*
 
  The visibility of the line.
 
@@ -6280,12 +6280,12 @@ not the grid lines.
         ...
     });
 
-### `valueAxis.line.width` : **Number** *(default: 1)*
+### valueAxis.line.width `Number`*(default: 1)*
 
  The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
-### `valueAxis.majorGridLines` : **Object** 
+### valueAxis.majorGridLines `Object`
 
 Configures the major grid lines.  These are the lines that are an extension of the major ticks through the
 body of the chart.
@@ -6308,11 +6308,11 @@ body of the chart.
         ...
     });
 
-### `valueAxis.majorGridLines.color` : **String** *(default: "black")*
+### valueAxis.majorGridLines.color `String`*(default: "black")*
 
  The color of the lines.
 
-### `valueAxis.majorGridLines.visible` : **Boolean** *(default: true)*
+### valueAxis.majorGridLines.visible `Boolean`*(default: true)*
 
  The visibility of the lines.
 
@@ -6328,49 +6328,49 @@ body of the chart.
         ...
     });
 
-### `valueAxis.majorGridLines.width` : **Number** *(default: 1)*
+### valueAxis.majorGridLines.width `Number`*(default: 1)*
 
  The width of the lines.
 
-### `valueAxis.majorTicks` : **Object** 
+### valueAxis.majorTicks `Object`
 
 The major ticks of the axis.
 
-### `valueAxis.majorTicks.size` : **Number** *(default: 4)*
+### valueAxis.majorTicks.size `Number`*(default: 4)*
 
  The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick
 on the chart.
 
-### `valueAxis.majorTicks.visible` : **Boolean** *(default: true)*
+### valueAxis.majorTicks.visible `Boolean`*(default: true)*
 
  The visibility of the major ticks.
 
-### `valueAxis.majorUnit` : **Number** 
+### valueAxis.majorUnit `Number`
 
 The interval between major divisions.
 
-### `valueAxis.max` : **Number** *(default: 1)*
+### valueAxis.max `Number`*(default: 1)*
 
  The maximum value of the axis.
 This is often used in combination with the **min** configuration option.
 
-### `valueAxis.min` : **Number** *(default: 0)*
+### valueAxis.min `Number`*(default: 0)*
 
  The minimum value of the axis.
 This is often used in combination with the **max** configuration option.
 
-### `valueAxis.minorGridLines` : **Object** 
+### valueAxis.minorGridLines `Object`
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through the
 
-### `valueAxis.minorGridLines.color` : **String** *(default: "black")*
+### valueAxis.minorGridLines.color `String`*(default: "black")*
 
  The color of the lines.
 
 
 Note that this has no effect if the visibility of the minor grid lines is not set to **true**.
 
-### `valueAxis.minorGridLines.dashType` : **String** *(default: "solid")*
+### valueAxis.minorGridLines.dashType `String`*(default: "solid")*
 
  The dash type of the minor grid lines.
 <div class="details-list">
@@ -6419,7 +6419,7 @@ Note that this has no effect if the visibility of the minor grid lines is not se
         </dd>
    </dl>
 </div>
-body of the chart.  
+body of the chart.
 
 Note that minor grid lines are not visible by default, therefore none of these settings will take effect without the minor grid
 lines visibility being set to **true**
@@ -6443,7 +6443,7 @@ lines visibility being set to **true**
         ...
     });
 
-### `valueAxis.minorGridLines.visible` : **Boolean** *(default: false)*
+### valueAxis.minorGridLines.visible `Boolean`*(default: false)*
 
  The visibility of the lines.
 
@@ -6459,36 +6459,36 @@ lines visibility being set to **true**
         ...
     });
 
-### `valueAxis.minorGridLines.width` : **Number** *(default: 1)*
+### valueAxis.minorGridLines.width `Number`*(default: 1)*
 
  The width of the lines.
 
 
 Note that this settings has no effect if the visibility of the minor grid lines is not set to **true**.
 
-### `valueAxis.minorTicks` : **Object** 
+### valueAxis.minorTicks `Object`
 
 The minor ticks of the axis.
 
-### `valueAxis.minorTicks.size` : **Number** *(default: 3)*
+### valueAxis.minorTicks.size `Number`*(default: 3)*
 
  The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick
 on the chart.
 
-### `valueAxis.minorTicks.visible` : **Boolean** *(default: false)*
+### valueAxis.minorTicks.visible `Boolean`*(default: false)*
 
  The visibility of the minor ticks.
 
-### `valueAxis.minorUnit` : **Number** 
+### valueAxis.minorUnit `Number`
 
 The interval between minor divisions.
 It defaults to 1/5th of the majorUnit.
 
-### `valueAxis.name` : **Object** *(default: primary)*
+### valueAxis.name `Object`*(default: primary)*
 
  The unique axis name.
 
-### `valueAxis.plotBands` : **Array** 
+### valueAxis.plotBands `Array`
 
 The plot bands of the value axis.
 The plot band fields:
@@ -6528,12 +6528,12 @@ The plot band fields:
         },
      });
 
-### `valueAxis.reverse` : **Boolean** *(default: false)*
+### valueAxis.reverse `Boolean`*(default: false)*
 
  Reverses the axis direction -
 values increase from right to left and from top to bottom.
 
-### `valueAxis.title` : **Object** 
+### valueAxis.title `Object`
 
 The title of the value axis.
 
@@ -6553,12 +6553,12 @@ The title of the value axis.
         ...
     });
 
-### `valueAxis.title.background` : **String** 
+### valueAxis.title.background `String`
 
 The background color of the title. Any valid CSS color string will work here, including
 hex and rgb.
 
-### `valueAxis.title.border` : **Object** 
+### valueAxis.title.border `Object`
 
 The border of the title.
 
@@ -6581,11 +6581,11 @@ The border of the title.
         ...
     });
 
-### `valueAxis.title.border.color` : **String** *(default: "black")*
+### valueAxis.title.border.color `String`*(default: "black")*
 
  The color of the border.
 
-### `valueAxis.title.border.dashType` : **String** *(default: "solid")*
+### valueAxis.title.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
 <div class="details-list">
@@ -6635,15 +6635,15 @@ The border of the title.
    </dl>
 </div>
 
-### `valueAxis.title.border.width` : **Number** *(default: 0)*
+### valueAxis.title.border.width `Number`*(default: 0)*
 
  The width of the border.
 
-### `valueAxis.title.color` : **String** 
+### valueAxis.title.color `String`
 
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
 
-### `valueAxis.title.font` : **String** *(default: "16px Arial,Helvetica,sans-serif")*
+### valueAxis.title.font `String`*(default: "16px Arial,Helvetica,sans-serif")*
 
 The font style of the title.
 
@@ -6659,7 +6659,7 @@ The font style of the title.
         ...
     });
 
-### `valueAxis.title.margin` : **Number | Object** *(default: 5)*
+### valueAxis.title.margin `Number | Object`*(default: 5)*
 
  The margin of the title.
 
@@ -6686,7 +6686,7 @@ The font style of the title.
         ...
     });
 
-### `valueAxis.title.padding` : **Number | Object** *(default: 0)*
+### valueAxis.title.padding `Number | Object`*(default: 0)*
 
  The padding of the title.
 
@@ -6712,7 +6712,7 @@ The font style of the title.
         ...
     });
 
-### `valueAxis.title.position` : **String** *(default: "center")*
+### valueAxis.title.position `String`*(default: "center")*
 
  The position of the title.
 <div class="details-list">
@@ -6750,7 +6750,7 @@ The font style of the title.
    </dl>
 </div>
 
-### `valueAxis.title.rotation` : **Number** *(default: 0)*
+### valueAxis.title.rotation `Number`*(default: 0)*
 
  The rotation angle of the title.
 
@@ -6766,11 +6766,11 @@ The font style of the title.
         ...
     });
 
-### `valueAxis.title.text` : **String** 
+### valueAxis.title.text `String`
 
 The text of the title.
 
-### `valueAxis.title.visible` : **Boolean** *(default: true)*
+### valueAxis.title.visible `Boolean`*(default: true)*
 
  The visibility of the title.
 
@@ -6786,16 +6786,16 @@ The text of the title.
         ...
     });
 
-### `valueAxis.visible` : **Boolean** *(default: true)*
+### valueAxis.visible `Boolean`*(default: true)*
 
  The visibility of the axis.
 
-### `xAxis` : **Object** 
+### xAxis `Object`
 
 Scatter charts X-axis configuration options.
 Includes **all valueAxis options** in addition to:
 
-### `xAxis.type` : **String** *(default: "Numeric")*
+### xAxis.type `String`*(default: "Numeric")*
 
  The axis type.
 
@@ -6820,15 +6820,15 @@ is of type Date. Specify type explicitly when such behavior is undesired.
    </dl>
 </div>
 
-### `xAxis.type: "Date"`  
+### xAxis.type: "Date"
 
 Properties specific to the date-time value axis
 
-### `xAxis.type: "Date".axisCrossingValue` : **Date** 
+### xAxis.type: "Date".axisCrossingValue `Date`
 
 Date at which the Y axis crosses this axis.
 
-### `xAxis.type: "Date".baseUnit` : **String** 
+### xAxis.type: "Date".baseUnit `String`
 
 The base time interval for the axis labels.
 The default baseUnit is determined automatically from the value range. Available options:
@@ -6839,15 +6839,15 @@ The default baseUnit is determined automatically from the value range. Available
 *   months
 *   years
 
-### `xAxis.type: "Date".labels` : **Object** 
+### xAxis.type: "Date".labels `Object`
 
 Label settings specific to the date axis.
 
-### `xAxis.type: "Date".labels.culture` : **String** *(default: global culture)*
+### xAxis.type: "Date".labels.culture `String`*(default: global culture)*
 
 Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
 
-### `xAxis.type: "Date".labels.dateFormats` : **Object** 
+### xAxis.type: "Date".labels.dateFormats `Object`
 
 Date format strings
 <div class="details-list">
@@ -6881,34 +6881,34 @@ Date format strings
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 
-### `xAxis.type: "Date".majorUnit` : **Number** 
+### xAxis.type: "Date".majorUnit `Number`
 
 The interval between major divisions in base units.
 
-### `xAxis.type: "Date".max` : **Date** 
+### xAxis.type: "Date".max `Date`
 
 The end date of the axis.
 This is often used in combination with the **min** configuration option.
 
-### `xAxis.type: "Date".min` : **Date** 
+### xAxis.type: "Date".min `Date`
 
 The start date of the axis.
 This is often used in combination with the **max** configuration option.
 
-### `xAxis.type: "Date".minorUnit` : **Number** 
+### xAxis.type: "Date".minorUnit `Number`
 
 The interval between minor divisions in base units.
 It defaults to 1/5th of the majorUnit.
 
-### `xAxis.type: "Numeric"` : **Number** 
+### xAxis.type: "Numeric" `Number`
 
 Options specific to the numeric axis.
 
-### `xAxis.type: "Numeric".axisCrossingValue`  *(default: 0)*
+### xAxis.type: "Numeric".axisCrossingValue *(default: 0)*
 
 Value at which the first Y axis crosses this axis.
 
-### `xAxis.type: "Numeric".axisCrossingValue` : **Array** *(default: [0])*
+### xAxis.type: "Numeric".axisCrossingValue `Array`*(default: [0])*
 
 Values at which the Y axes cross this X axis.
 <p>
@@ -6927,7 +6927,7 @@ axis maximum value to denote the far end of the axis.
     });
     </p>
 
-### `yAxis` : **Object** 
+### yAxis `Object`
 
 The scatter charts Y-axis configuration options.
 See **xAxis** for list of available options.
@@ -6941,7 +6941,7 @@ Reloads the data and repaints the chart.
 #### Example
 
     var chart = $("#chart").data("kendoChart");
-    
+
     // refreshes the chart
     chart.refresh();
 

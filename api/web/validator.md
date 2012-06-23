@@ -134,7 +134,7 @@ In order to trigger the element(s) validation, **validate** method should be use
 
 ## Configuration
 
-### `messages` : **Object** 
+### messages `Object`
 
 Set of messages (either strings or functions) which will be shown when given validation rule fails.
  By setting already existing key the appropriate built-in message will be overridden.
@@ -156,7 +156,7 @@ Set of messages (either strings or functions) which will be shown when given val
          }
     });
 
-### `rules` : **Object** 
+### rules `Object`
 
 Set of validation rules. Those rules will extend the built-in ones.
 
@@ -170,7 +170,7 @@ Set of validation rules. Those rules will extend the built-in ones.
          }
     });
 
-### `validateOnBlur` : **Boolean** 
+### validateOnBlur `Boolean`
 
 Determines if validation will be triggered when element loses focus. Default value is true.
 

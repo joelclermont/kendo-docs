@@ -19,29 +19,29 @@ publish: true
 
 ## Configuration
 
-### `allowSelection` : **Boolean** *(default: false)*
+### allowSelection `Boolean`*(default: false)*
 
  If set to true, the mousedown and selectstart events will not be prevented.
 
-### `filter` : **Selector** 
+### filter `Selector`
 
 If passed, the filter limits the child elements that will trigger the event sequence.
 
-### `global` : **Boolean** *(default: false)*
+### global `Boolean`*(default: false)*
 
  If set to true, the drag event will be tracked beyond the element boundaries.
 
-### `stopPropagation` : **Boolean** *(default: false)*
+### stopPropagation `Boolean`*(default: false)*
 
  If set to true, the mousedown event propagation will stopped, disabling
 drag capturing at parent elements.
 If set to false, dragging outside of the element boundaries will trigger the `end` event.
 
-### `surface` : **Element** 
+### surface `Element`
 
 If set, the drag event will be tracked for the surface boundaries. By default, leaving the element boundaries will end the drag.
 
-### `threshold` : **Number** *(default: 0)*
+### threshold `Number`*(default: 0)*
 
  The minimum distance the mouse/touch should move before the event is triggered.
 

@@ -71,11 +71,11 @@ Each mobile Layout instance exposes the following fields:
 
 ## Configuration
 
-### `id` : **String** *(default: null)*
+### id `String`*(default: null)*
 
  The id of the layout. Required.
 
-### `platform` : **String** 
+### platform `String`
 
  The specific platform this layout targets. By default, layouts are displayed
 on all platforms.

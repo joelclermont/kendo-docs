@@ -127,7 +127,7 @@ publish: true
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
 A collection of **Animation** objects, used to change default animations. A value of false will disable all animations in the widget.
 
@@ -152,15 +152,15 @@ by setting the **close** animation.  Each animation also has a direction which c
          animation: { open: { effects: "fadeIn" } }
      });
 
-### `animation.close` : **Animation** 
+### animation.close `Animation`
 
 The animation that will be used when closing sub menus.
 
-### `animation.open` : **Animation** 
+### animation.open `Animation`
 
 The animation that will be used when opening sub menus.
 
-### `closeOnClick` : **Boolean** *(default: true)*
+### closeOnClick `Boolean`*(default: true)*
 
  Specifies that sub menus should close after item selection (provided they won't navigate).
 
@@ -170,7 +170,7 @@ The animation that will be used when opening sub menus.
          closeOnClick: false
      });
 
-### `direction` : **String** *(default: "default")*
+### direction `String`*(default: "default")*
 
  Specifies Menu opening direction. Can be "top", "bottom", "left", "right".
 You can also specify different direction for root and sub menu items, separating them with space. The example below will initialize the root menu to open upwards and
@@ -182,7 +182,7 @@ its sub menus to the left.
         direction: "top left"
     });
 
-### `hoverDelay` : **Number** *(default: 100)*
+### hoverDelay `Number`*(default: 100)*
 
  Specifies the delay in ms before the menu is opened/closed - used to avoid accidental closure on leaving.
 
@@ -192,7 +192,7 @@ its sub menus to the left.
          hoverDelay: 200
      });
 
-### `openOnClick` : **Boolean** *(default: false)*
+### openOnClick `Boolean`*(default: false)*
 
  Specifies that the root sub menus will be opened on item click.
 
@@ -202,7 +202,7 @@ its sub menus to the left.
          openOnClick: true
      });
 
-### `orientation` : **String** *(default: "horizontal")*
+### orientation `String`*(default: "horizontal")*
 
  Root menu orientation. Could be horizontal or vertical.
 
@@ -212,7 +212,7 @@ its sub menus to the left.
          orientation: "vertical"
      });
 
-### `popupCollision` : **String** 
+### popupCollision `String`
 
 Specifies how Menu should adjust to screen boundaries. By default the strategy is **"fit"** for a sub menu with a horizontal parent,
 meaning it will move to fit in screen boundaries in all directions, and **"fit flip"** for a sub menu with vertical parent, meaning it will fit vertically and flip over

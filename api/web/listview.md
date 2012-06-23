@@ -63,7 +63,7 @@ By default, paging, selection, navigation and editing are **disabled**.
 
 ## Configuration
 
-### `autoBind` : **Boolean** *(default: true)*
+### autoBind `Boolean`*(default: true)*
 
  Indicates whether the list view will call read on the DataSource initially.
 
@@ -77,7 +77,7 @@ By default, paging, selection, navigation and editing are **disabled**.
          autoBind: false // the list view will not be populated with data until read() is called on the sharedDataSource
      });
 
-### `dataSource` : **kendo.data.DataSource | Object** 
+### dataSource `kendo.data.DataSource | Object`
 
 Instance of DataSource or Object with DataSource configuration.
 
@@ -102,7 +102,7 @@ Instance of DataSource or Object with DataSource configuration.
          }
      });
 
-### `editTemplate` : **Function** 
+### editTemplate `Function`
 
 Specifies ListView item template in edit mode.
 
@@ -138,7 +138,7 @@ Specifies ListView item template in edit mode.
          editTemplate: kendo.template($("#editTemplate").html())
      });
 
-### `navigatable` : **Boolean** *(default: false)*
+### navigatable `Boolean`*(default: false)*
 
  Indicates whether keyboard navigation is enabled/disabled.
 
@@ -152,7 +152,7 @@ Specifies ListView item template in edit mode.
          navigatable: true
      });
 
-### `selectable` : **String** *(default: false)*
+### selectable `String`*(default: false)*
 
  Indicates whether selection is enabled/disabled. Possible values:
 <div class="details-list">
@@ -178,7 +178,7 @@ Specifies ListView item template in edit mode.
    </dl>
 </div>
 
-### `template` : **Function** 
+### template `Function`
 
 Specifies ListView item template.
 

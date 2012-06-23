@@ -187,7 +187,7 @@ Removing an item only requires a reference to the target element that should be 
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
 A collection of visual animations used when **PanelBar** items are opened or closed through
 user interactions. Setting this option to **false** will disable all animations.
@@ -209,7 +209,7 @@ user interactions. Setting this option to **false** will disable all animations.
        }
     });
 
-### `animation.close` : **Object** 
+### animation.close `Object`
 
 The visual animation(s) that will be used when **PanelBar** items are closed.
 
@@ -224,7 +224,7 @@ The visual animation(s) that will be used when **PanelBar** items are closed.
         }
     });
 
-### `animation.close.duration` : **Number** *(default: 200)*
+### animation.close.duration `Number`*(default: 200)*
 
 The number of milliseconds used for the visual animation when a **PanelBar** item is closed.
 
@@ -240,7 +240,7 @@ The number of milliseconds used for the visual animation when a **PanelBar** ite
       }
     });
 
-### `animation.close.effects` : **String** 
+### animation.close.effects `String`
 
 A whitespace-delimited string of animation effects that are utilized when a **PanelBar** item
 is closed. Options include **"fadeOut"**.
@@ -256,7 +256,7 @@ is closed. Options include **"fadeOut"**.
         }
     });
 
-### `animation.open` : **Object** 
+### animation.open `Object`
 
 The visual animation(s) that will be used when opening items.
 
@@ -271,7 +271,7 @@ The visual animation(s) that will be used when opening items.
         }
     });
 
-### `animation.open.duration` : **Number** *(default: 200)*
+### animation.open.duration `Number`*(default: 200)*
 
 The number of milliseconds used for the visual animation when an item is opened.
 
@@ -285,16 +285,16 @@ The number of milliseconds used for the visual animation when an item is opened.
        }
     });
 
-### `animation.open.effects` : **String** *(default: "expandVertical")*
+### animation.open.effects `String`*(default: "expandVertical")*
 
 A whitespace-delimited string of animation effects that are used when an item is expanded. Options include
 **"expandVertical"** and **"fadeIn"**.
 
-### `animation.open.show` : **Boolean** *(default: true)*
+### animation.open.show `Boolean`*(default: true)*
 
 
 
-### `expandMode` : **String** *(default: "multiple")*
+### expandMode `String`*(default: "multiple")*
 
 Specifies how the **PanelBar** items are displayed when opened and closed. The following values
 are available:

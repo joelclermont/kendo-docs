@@ -53,19 +53,19 @@ application, use `data-target="_top"`.
 
 ## Configuration
 
-### `initial` : **String** 
+### initial `String`
 
  The id of the initial mobilie View to display.
 
-### `layout` : **String** 
+### layout `String`
 
  The id of the default Pane Layout.
 
-### `loading` : **String** *(default: Loading...)*
+### loading `String`*(default: Loading...)*
 
  The text displayed in the loading popup. Setting this value to false will disable the loading popup.
 
-### `transition` : **String** 
+### transition `String`
 
  The default View transition.
 

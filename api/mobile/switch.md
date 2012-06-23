@@ -62,15 +62,15 @@ or the `checked` attribute of the widget's element.
 
 ## Configuration
 
-### `checked` : **Boolean** *(default: false)*
+### checked `Boolean`*(default: false)*
 
  The checked state of the widget.
 
-### `offLabel` : **String** *(default: OFF)*
+### offLabel `String`*(default: OFF)*
 
  The OFF label.
 
-### `onLabel` : **String** *(default: ON)*
+### onLabel `String`*(default: ON)*
 
  The ON label.
 

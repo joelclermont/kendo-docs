@@ -140,11 +140,11 @@ suggestions
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
  Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
 
-### `animation.close` : **Object** 
+### animation.close `Object`
 
  Animation to be used for closing of the popup.
 
@@ -165,7 +165,7 @@ suggestions
          });
      </script>
 
-### `animation.open` : **Object** 
+### animation.open `Object`
 
  Animation to be used for opening of the popup.
 
@@ -185,7 +185,7 @@ suggestions
          });
      </script>
 
-### `dataSource` : **Object | kendo.data.DataSource** 
+### dataSource `Object | kendo.data.DataSource`
 
 The set of data that the AutoComplete will be bound to.
  Either a local JavaScript object, or an instance of the Kendo UI DataSource.
@@ -205,7 +205,7 @@ The set of data that the AutoComplete will be bound to.
         });
     });
 
-### `dataTextField` : **String** *(default: null)*
+### dataTextField `String`*(default: null)*
 
  Sets the field of the data item that provides the text content of the list items.
 
@@ -217,7 +217,7 @@ The set of data that the AutoComplete will be bound to.
         dataTextField: "Name"
     });
 
-### `delay` : **Number** *(default: 200)*
+### delay `Number`*(default: 200)*
 
  Specifies the delay in ms after which the AutoComplete will start filtering the dataSource.
 
@@ -228,7 +228,7 @@ The set of data that the AutoComplete will be bound to.
         delay: 500
     });
 
-### `enable` : **Boolean** *(default: true)*
+### enable `Boolean`*(default: true)*
 
  Controls whether the AutoComplete should be initially enabled.
 
@@ -239,7 +239,7 @@ The set of data that the AutoComplete will be bound to.
         enable: false
     });
 
-### `filter` : **String** *(default: "startswith")*
+### filter `String`*(default: "startswith")*
 
  Defines the type of filtration. This value is handled by the remote data source.
 
@@ -250,7 +250,7 @@ The set of data that the AutoComplete will be bound to.
         filter: 'contains'
     });
 
-### `height` : **Number** *(default: 200)*
+### height `Number`*(default: 200)*
 
  Sets the height of the drop-down list in pixels.
 
@@ -261,7 +261,7 @@ The set of data that the AutoComplete will be bound to.
         height: 500
     });
 
-### `highlightFirst` : **Boolean** *(default: true)*
+### highlightFirst `Boolean`*(default: true)*
 
  Controls whether the first item will be automatically highlighted.
 
@@ -271,7 +271,7 @@ The set of data that the AutoComplete will be bound to.
         highlightFirst: false //no of the suggested items will be highlighted
     });
 
-### `ignoreCase` : **String** *(default: true)*
+### ignoreCase `String`*(default: true)*
 
  Defines whether the filtration should be case sensitive.
 
@@ -282,7 +282,7 @@ The set of data that the AutoComplete will be bound to.
         ignoreCase: false //now filtration will be case sensitive
     });
 
-### `minLength` : **Number** *(default: 1)*
+### minLength `Number`*(default: 1)*
 
  Specifies the minimum number of characters that should be typed before the AutoComplete queries
 the dataSource.
@@ -294,7 +294,7 @@ the dataSource.
         minLength: 3
     });
 
-### `placeholder` : **String** *(default: "")*
+### placeholder `String`*(default: "")*
 
  A string that appears in the textbox when it has no value.
  
@@ -320,7 +320,7 @@ the dataSource.
          });
      </script>
 
-### `separator` : **String** *(default: "")*
+### separator `String`*(default: "")*
 
  Sets the separator for completion. Empty by default, allowing for only one completion.
 
@@ -331,7 +331,7 @@ the dataSource.
         separator: ", "
     });
 
-### `suggest` : **Boolean** *(default: false)*
+### suggest `Boolean`*(default: false)*
 
  Controls whether the AutoComplete should automatically auto-type the rest of text.
 
@@ -342,7 +342,7 @@ the dataSource.
         suggest: true
     });
 
-### `template` : **String** 
+### template `String`
 
 Template to be used for rendering the items in the list.
 

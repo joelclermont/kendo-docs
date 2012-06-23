@@ -8,39 +8,39 @@ publish: true
 
 ## Configuration
 
-### `largeStep` : **Number** *(default: 5)*
+### largeStep `Number`*(default: 5)*
 
 The delta with which the value will change when the user presses the Page Up or Page Down key (the drag
 handle must be focused). Note: The allied largeStep will also set large tick for every large step.
 
-### `max` : **Number** *(default: 10)*
+### max `Number`*(default: 10)*
 
 The maximum value of the **RangeSlider**.
 
-### `min` : **Number** *(default: 0)*
+### min `Number`*(default: 0)*
 
 The minimum value of the **RangeSlider**.
 
-### `orientation` : **String** *(default: "horizontal")*
+### orientation `String`*(default: "horizontal")*
 
 The orientation of a **RangeSlider**; **"horizontal"** or
 **"vertical"**.
 
-### `selectionEnd` : **Number** *(default: 10)*
+### selectionEnd `Number`*(default: 10)*
 
 The selection end value of the **RangeSlider**.
 
-### `selectionStart` : **Number** *(default: 0)*
+### selectionStart `Number`*(default: 0)*
 
 The selection start value of the **RangeSlider**.
 
-### `smallStep` : **Number** *(default: 1)*
+### smallStep `Number`*(default: 1)*
 
 The small step value of the **RangeSlider**. The underlying value will be changed when the end
 user (1) clicks on the increase or decrease buttons of the **RangeSlider**, (2) presses the
 arrow keys (the drag handle must be focused), or (3) drags the drag handle.
 
-### `tickPlacement` : **String** *(default: "both")*
+### tickPlacement `String`*(default: "both")*
 
 Denotes the location of the tick marks in the **RangeSlider**. The available options are:
 <div class="details-list">
@@ -74,15 +74,15 @@ Denotes the location of the tick marks in the **RangeSlider**. The available opt
    </dl>
 </div>
 
-### `tooltip` : **Object** 
+### tooltip `Object`
 
 Configuration of the **RangeSlider** tooltip.
 
-### `tooltip.enabled` : **Boolean** *(default: true)*
+### tooltip.enabled `Boolean`*(default: true)*
 
 Disables (**false**) or enables (**true**) the tooltip of the **RangeSlider**.
 
-### `tooltip.format` : **String** *(default: "{0}")*
+### tooltip.format `String`*(default: "{0}")*
 
 Format string for the text of the tooltip. Note: The applied format will also influence the appearance of
 the **RangeSlider** tick labels.

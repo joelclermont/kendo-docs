@@ -28,15 +28,15 @@ Enable any DOM element to be a target for draggable elements.
 
 ## Configuration
 
-### `axis` : **String** *(default: null)*
+### axis `String`*(default: null)*
 
  Constrains the hint movement to either the horizontal (x) or vertical (y) axis. Can be set to either "x" or "y".
 
-### `container` : **jQuery** 
+### container `jQuery`
 
 If set, the hint movement is constrained to the container boundaries.
 
-### `cursorOffset` : **Object** *(default: null)*
+### cursorOffset `Object`*(default: null)*
 
  If set, specifies the offset of the hint relative to the mouse cursor/finger.
 By default, the hint is initially positioned on top of the draggable source offset. The option accepts an object with two keys: `top` and `left`.
@@ -45,19 +45,19 @@ By default, the hint is initially positioned on top of the draggable source offs
 
     $("#draggable").kendoDraggable({cursorOffset: {top: 10, left: 10}});
 
-### `distance` : **Number** *(default: 5)*
+### distance `Number`*(default: 5)*
 
  The required distance that the mouse should travel in order to initiate a drag.
 
-### `filter` : **Selector** 
+### filter `Selector`
 
 Selects child elements that are draggable if a widget is attached to a container.
 
-### `group` : **String** *(default: "default")*
+### group `String`*(default: "default")*
 
  Used to group sets of draggable and drop targets. A draggable with the same group value as a drop target will be accepted by the drop target.
 
-### `hint` : **Function | jQuery** 
+### hint `Function | jQuery`
 
 Provides a way for customization of the drag indicator. If a function is supplied, it receives one argument - the draggable element's jQuery object.
 

@@ -51,19 +51,19 @@ when the device is rotated. To define a page, wrap the content in a div with `da
 
 ## Configuration
 
-### `bounceVelocityThreshold` : **Number** *(default: 1.6)*
+### bounceVelocityThreshold `Number`*(default: 1.6)*
 
  The velocity threshold after which a swipe will result in a bounce effect.
 
-### `duration` : **Number** *(default: 300)*
+### duration `Number`*(default: 300)*
 
  The milliseconds that take the ScrollView to snap to the current page after released.
 
-### `page` : **Number** *(default: 0)*
+### page `Number`*(default: 0)*
 
  The initial page to display.
 
-### `velocityThreshold` : **Number** *(default: 0.8)*
+### velocityThreshold `Number`*(default: 0.8)*
 
  The velocity threshold after which a swipe will navigate to the next page (as opposed to snapping back to the current page).
 

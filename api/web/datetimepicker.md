@@ -113,12 +113,12 @@ minimum and maximum datetime
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
 The animation(s) used for opening and/or closing the pop-ups. Setting this value to **false**
 will disable the animation(s).
 
-### `animation.close` : **Object** 
+### animation.close `Object`
 
 The animation(s) used for hiding of the pop-up.
 
@@ -135,7 +135,7 @@ The animation(s) used for hiding of the pop-up.
         }
     });
 
-### `animation.open` : **Object** 
+### animation.open `Object`
 
 The animation(s) used for displaying of the pop-up.
 
@@ -151,7 +151,7 @@ The animation(s) used for displaying of the pop-up.
         }
     });
 
-### `culture` : **String** *(default: en-US)*
+### culture `String`*(default: en-US)*
 
  Specifies the culture info used by the widget.
 
@@ -162,7 +162,7 @@ The animation(s) used for displaying of the pop-up.
         culture: "de-DE"
     });
 
-### `dates` : **Array** 
+### dates `Array`
 
  Specifies a list of dates, which are shown in the time drop-down list. If not set, the DateTimePicker will auto-generate the available times.
  
@@ -173,7 +173,7 @@ The animation(s) used for displaying of the pop-up.
         dates: [new Date(2000, 10, 10, 10, 0, 0), new Date(2000, 10, 10, 30, 0)] //the drop-down list will consist only two entries - "10:00 AM" and "10:30 AM"
     });
 
-### `depth` : **String** 
+### depth `String`
 
 Specifies the navigation depth of the calendar. The following
 settings are available for the **depth** value:
@@ -213,7 +213,7 @@ settings are available for the **depth** value:
         depth: "year" // the dateTimePicker will only go to the year level
     });
 
-### `footer` : **String** 
+### footer `String`
 
  Template to be used for rendering the footer of the calendar.
 
@@ -226,7 +226,7 @@ settings are available for the **depth** value:
          });
      </script>
 
-### `format` : **String** *(default: MM/dd/yyyy h:mm tt)*
+### format `String`*(default: MM/dd/yyyy h:mm tt)*
 
  Specifies the format, which is used to format the value of the DateTimePicker displayed in the input.
 
@@ -236,7 +236,7 @@ settings are available for the **depth** value:
         format: "yyyy/MM/dd hh:mm tt"
     });
 
-### `interval` : **Number** *(default: 30)*
+### interval `Number`*(default: 30)*
 
  Specifies the interval, between values in the popup list, in minutes.
 
@@ -246,7 +246,7 @@ settings are available for the **depth** value:
         interval: 15
     });
 
-### `max` : **Date** *(default: Date(2099, 11, 31))*
+### max `Date`*(default: Date(2099, 11, 31))*
 
  Specifies the maximum date, which the calendar can show.
 
@@ -262,7 +262,7 @@ settings are available for the **depth** value:
     // set the max date to Jan 1st, 2013 12:00 AM
     dateTimePicker.max(new Date(2013,0, 1));
 
-### `min` : **Date** *(default: Date(1900, 0, 1))*
+### min `Date`*(default: Date(1900, 0, 1))*
 
  Specifies the minimum date that the calendar can show.
 
@@ -280,11 +280,11 @@ settings are available for the **depth** value:
     // set the min date to Jan 1st, 2011 12:00 AM
     dateTimePicker.min(new Date(2011, 0, 1));
 
-### `month` : **Object** 
+### month `Object`
 
  Templates for the cells rendered in the calendar "month" view.
 
-### `month.content` : **String** 
+### month.content `String`
 
  Template to be used for rendering the cells in the calendar "month" view, which are in range.
 
@@ -306,12 +306,12 @@ settings are available for the **depth** value:
          });
      </script>
 
-### `month.empty` : **String** 
+### month.empty `String`
 
 The template used for rendering the cells in the calendar "month" view, which are not in the range between
 the minimum and maximum values.
 
-### `parseFormats` : **Array** 
+### parseFormats `Array`
 
  Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the options.format and options.timeFormat will be used.
 
@@ -322,7 +322,7 @@ the minimum and maximum values.
         parseFormats: ["MMMM yyyy", "HH:mm"] //format also will be added to parseFormats
     });
 
-### `start` : **String** *(default: month)*
+### start `String`*(default: month)*
 
  Specifies the start view of the calendar.
 The following settings are available for the **start** value:
@@ -361,7 +361,7 @@ The following settings are available for the **start** value:
         start: "decade" // the dateTimePicker will start with a decade display
     });
 
-### `timeFormat` : **String** *(default: h:mm tt)*
+### timeFormat `String`*(default: h:mm tt)*
 
  Specifies the format, which is used to format the values in the time drop-down list.
 
@@ -371,7 +371,7 @@ The following settings are available for the **start** value:
         timeFormat: "HH:mm" //24 hours format
     });
 
-### `value` : **Date** *(default: null)*
+### value `Date`*(default: null)*
 
  Specifies the selected value.
 

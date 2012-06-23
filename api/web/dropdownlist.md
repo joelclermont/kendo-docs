@@ -142,11 +142,11 @@ There are two ways to create a **DropDownList**:
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
  Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
 
-### `animation.close` : **Object** 
+### animation.close `Object`
 
  Animation to be used for closing of the popup.
 
@@ -167,7 +167,7 @@ There are two ways to create a **DropDownList**:
          });
      </script>
 
-### `animation.open` : **Object** 
+### animation.open `Object`
 
  Animation to be used for opening of the popup.
 
@@ -187,7 +187,7 @@ There are two ways to create a **DropDownList**:
          });
      </script>
 
-### `autoBind` : **Boolean** *(default: true)*
+### autoBind `Boolean`*(default: true)*
 
  Controls whether to bind the widget on initialization.
 
@@ -197,7 +197,7 @@ There are two ways to create a **DropDownList**:
         autoBind: false
     });
 
-### `dataSource` : **kendo.data.DataSource | Object** 
+### dataSource `kendo.data.DataSource | Object`
 
 Instance of DataSource or the data that the DropDownList will be bound to.
 
@@ -223,7 +223,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
         dataValueField: "Id"
     });
 
-### `dataTextField` : **String** *(default: "")*
+### dataTextField `String`*(default: "")*
 
  Sets the field of the data item that provides the text content of the list items.
 
@@ -236,7 +236,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
         dataValueField: "Id"
     });
 
-### `dataValueField` : **String** *(default: "")*
+### dataValueField `String`*(default: "")*
 
  Sets the field of the data item that provides the value content of the list items.
 
@@ -249,7 +249,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
         dataValueField: "Id"
     });
 
-### `delay` : **Number** *(default: 500)*
+### delay `Number`*(default: 500)*
 
  Specifies the delay in ms before the search text typed by the end user is cleared.
 
@@ -259,7 +259,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
         delay: 1000 // wait 1 second before clearing the user input
     });
 
-### `enable` : **Boolean** *(default: true)*
+### enable `Boolean`*(default: true)*
 
  Controls whether the DropDownList should be initially enabled.
 
@@ -276,7 +276,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
     // disable the dropdown
     dropdownlist.enable(false);
 
-### `height` : **Number** *(default: 200)*
+### height `Number`*(default: 200)*
 
  Define the height of the drop-down list in pixels.
 
@@ -286,7 +286,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
         height: 400
     });
 
-### `ignoreCase` : **String** *(default: true)*
+### ignoreCase `String`*(default: true)*
 
  Controls whether the search should be case sensitive.
 
@@ -296,7 +296,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
         ignoreCase: false //now search will be case sensitive
     });
 
-### `index` : **Number** *(default: 0)*
+### index `Number`*(default: 0)*
 
  Defines the initial selected item.
 
@@ -306,7 +306,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
         index: 1 // selects the second item in the dropdown list
     });
 
-### `optionLabel` : **String | Object** *(default: "")*
+### optionLabel `String | Object`*(default: "")*
 
  Define the text of the default empty item. If the value is an object, then the widget will use it directly.
 
@@ -327,7 +327,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
         }
     });
 
-### `template` : **String** 
+### template `String`
 
 Template to be used for rendering the items in the list.
 
@@ -352,7 +352,7 @@ Template to be used for rendering the items in the list.
          });
      </script>
 
-### `text` : **String** *(default: "")*
+### text `String`*(default: "")*
 
  Define the text of the widget, when the autoBind is set to false.
 
@@ -363,7 +363,7 @@ Template to be used for rendering the items in the list.
          text: "Chai"
     });
 
-### `value` : **String** *(default: "")*
+### value `String`*(default: "")*
 
  Define the value of the widget
 

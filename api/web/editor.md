@@ -67,7 +67,7 @@ The custom buttons get a **k-toolName** CSS class to allow styling. (where `tool
 
 ## Configuration
 
-### `encoded` : **Boolean** *(default: true)*
+### encoded `Boolean`*(default: true)*
 
  Indicates whether the Editor should submit encoded HTML tags.
 
@@ -77,7 +77,7 @@ The custom buttons get a **k-toolName** CSS class to allow styling. (where `tool
          encoded: false
      });
 
-### `stylesheets` : **Array** 
+### stylesheets `Array`
 
 Allows custom stylesheets to be included within the editing area.
 
@@ -90,7 +90,7 @@ Allows custom stylesheets to be included within the editing area.
          ]
      });
 
-### `tools` : **Array** 
+### tools `Array`
 
 A collection of tools that should render a button, combobox, etc, to interact with the Editor. Custom tools are defined
 as a collection of required properties, while the insertHtml  tool requires a collection of text-value pairs

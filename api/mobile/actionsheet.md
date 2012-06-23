@@ -87,23 +87,23 @@ After the callback has been executed, the ActionSheet closes automatically.
 
 ## Configuration
 
-### `cancel` : **String** *(default: Cancel)*
+### cancel `String`*(default: Cancel)*
 
  The text of the cancel button.
 
-### `popup` : **Object** 
+### popup `Object`
 
 The popup configuration options (tablet only).
 
-### `popup.direction` : **Number | String** *(default: down)*
+### popup.direction `Number | String`*(default: down)*
 
  The direction to which the popup will expand, relative to the target that opened it.
 
-### `popup.height` : **Number | String** *(default: auto)*
+### popup.height `Number | String`*(default: auto)*
 
  The height of the popup in pixels.
 
-### `popup.width` : **Number | String** *(default: 240)*
+### popup.width `Number | String`*(default: 240)*
 
  The width of the popup in pixels.
 

@@ -52,31 +52,31 @@ The mobile Scroller widget exposes the following fields:
 
 ## Configuration
 
-### `elastic` : **Boolean** *(default: true)*
+### elastic `Boolean`*(default: true)*
 
  Weather or not to allow out of bounds dragging and easing.
 
-### `pullOffset` : **Number** *(default: 140)*
+### pullOffset `Number`*(default: 140)*
 
  The threshold below which a releasing the scroller will trigger the pull event.
 Has effect only when the pullToRefresh option is set to true.
 
-### `pullTemplate` : **String** *(default: Pull to refresh)*
+### pullTemplate `String`*(default: Pull to refresh)*
 
  The message template displayed when the user pulls the scroller.
 Has effect only when the pullToRefresh option is set to true.
 
-### `pullToRefresh` : **Boolean** *(default: false)*
+### pullToRefresh `Boolean`*(default: false)*
 
  If set to true, the scroller will display a hint when the user pulls the container beyond its top limit.
 If a pull beyond the specified pullOffset occurs, a pull event will be triggered.
 
-### `refreshTemplate` : **String** *(default: Refreshing)*
+### refreshTemplate `String`*(default: Refreshing)*
 
  The message template displayed during the refresh.
 Has effect only when the pullToRefresh option is set to true.
 
-### `releaseTemplate` : **String** *(default: Release to refresh)*
+### releaseTemplate `String`*(default: Release to refresh)*
 
  The message template displayed when the user pulls the scroller below the
 pullOffset, indicating that pullToRefresh will occur.

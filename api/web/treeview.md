@@ -122,7 +122,7 @@ Currently, the **TreeView** does not support binding to a remote data source.
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
 A collection of visual animations used when items are expanded or collapsed through user interaction.
 Setting this option to **false** will disable all animations.
@@ -144,11 +144,11 @@ Setting this option to **false** will disable all animations.
         }
     });
 
-### `animation.collapse` : **Animation** 
+### animation.collapse `Animation`
 
 The animation that will be used when collapsing items.
 
-### `animation.collapse.duration` : **Number** *(default: 200)*
+### animation.collapse.duration `Number`*(default: 200)*
 
 The number of milliseconds used for the animation when a node is expanded.
 
@@ -162,7 +162,7 @@ The number of milliseconds used for the animation when a node is expanded.
         }
     });
 
-### `animation.collapse.effects` : **String** 
+### animation.collapse.effects `String`
 
 A whitespace-delimited string of animation effects that are utilized when a **TreeView** node
 is collapsed. Options include **"fadeOut"**.
@@ -178,11 +178,11 @@ is collapsed. Options include **"fadeOut"**.
         }
     });
 
-### `animation.expand` : **Animation** 
+### animation.expand `Animation`
 
 The animation that will be used when expanding items.
 
-### `animation.expand.duration` : **Number** *(default: 200)*
+### animation.expand.duration `Number`*(default: 200)*
 
  The number of milliseconds used for the animation when a
 node is expanded.
@@ -197,7 +197,7 @@ node is expanded.
         }
     });
 
-### `animation.expand.effects` : **String** *(default: "expandVertical")*
+### animation.expand.effects `String`*(default: "expandVertical")*
 
 A whitespace-delimited string of animation effects that are utilized when a **TreeView** node
 is expanded. Options include **"expandVertical"** and **"fadeIn"**.
@@ -213,11 +213,11 @@ is expanded. Options include **"expandVertical"** and **"fadeIn"**.
         }
     });
 
-### `animation.expand.show` : **Boolean** *(default: true)*
+### animation.expand.show `Boolean`*(default: true)*
 
 
 
-### `checkboxTemplate` : **String|Function** 
+### checkboxTemplate `String|Function`
 
 Template for rendering of the treeview checkboxes.
 
@@ -231,7 +231,7 @@ Template for rendering of the treeview checkboxes.
         )
     });
 
-### `dataImageUrlField` : **String** *(default: null)*
+### dataImageUrlField `String`*(default: null)*
 
  Sets the field of the data item that provides
 the image URL of the treeview nodes.
@@ -248,11 +248,11 @@ the image URL of the treeview nodes.
         dataImageUrlField: "image"
     });
 
-### `dataSource` : **Array** 
+### dataSource `Array`
 
 The data that the **TreeView** will be bound to.
 
-### `dataSpriteCssClassField` : **String** *(default: null)*
+### dataSpriteCssClassField `String`*(default: null)*
 
  Sets the field of the data item that provides
 the sprite CSS class of the treeview nodes.
@@ -269,7 +269,7 @@ the sprite CSS class of the treeview nodes.
         dataSpriteCssClassField: "sprite"
     });
 
-### `dataTextField` : **String** *(default: null)*
+### dataTextField `String`*(default: null)*
 
  Sets the field of the data item that provides
 the text content of the treeview nodes.
@@ -282,7 +282,7 @@ the text content of the treeview nodes.
         dataTextField: "ProductName"
     });
 
-### `dataUrlField` : **String** *(default: null)*
+### dataUrlField `String`*(default: null)*
 
  Sets the field of the data item that provides
 the link URL of the treeview nodes.
@@ -299,19 +299,19 @@ the link URL of the treeview nodes.
         dataUrlField: "LinksTo"
     });
 
-### `dragAndDrop` : **Boolean** *(default: false)*
+### dragAndDrop `Boolean`*(default: false)*
 
 Disables (**false**) or enables (**true**) drag-and-drop on the nodes of a
 **TreeView**.
 
-### `loadOnDemand` : **Boolean** *(default: true)*
+### loadOnDemand `Boolean`*(default: true)*
 
  Indicates whether the child datasources should be fetched
 lazily, when parent groups get expanded. Setting this to false causes all child dataSources to
 be loaded at initialization time. Note: when initializing a TreeView from array (rather than from a
 HierarchicalDataSource instance), the default value of this option is false.
 
-### `template` : **String|Function** 
+### template `String|Function`
 
 Template for rendering of the nodes of the treeview.
 

@@ -95,7 +95,7 @@ publish: true
 
 ## Configuration
 
-### `culture` : **String** *(default: en-US)*
+### culture `String`*(default: en-US)*
 
  Specifies the culture info used by the NumericTextBox widget.
 
@@ -106,7 +106,7 @@ publish: true
         culture: "de-DE"
     });
 
-### `decimals` : **Number** *(default: null)*
+### decimals `Number`*(default: null)*
 
  Specifies the number precision. If not set precision defined by current culture is used.
 
@@ -120,7 +120,7 @@ publish: true
         decimals: 1
     });
 
-### `downArrowText` : **String** *(default: Decrease value)*
+### downArrowText `String`*(default: Decrease value)*
 
  Specifies the text of the tooltip on the down arrow.
 
@@ -135,7 +135,7 @@ publish: true
         downArrowText: "Less"
     });
 
-### `format` : **String** *(default: n)*
+### format `String`*(default: n)*
 
  Specifies the format of the number. Any valid number format is allowed.
 
@@ -148,7 +148,7 @@ publish: true
        step: 0.01
     });
 
-### `max` : **Number** *(default: null)*
+### max `Number`*(default: null)*
 
  Specifies the largest value the user can enter.
 
@@ -164,7 +164,7 @@ publish: true
         value: 50
     });
 
-### `min` : **Number** *(default: null)*
+### min `Number`*(default: null)*
 
  Specifies the smallest value the user can enter.
 
@@ -180,7 +180,7 @@ publish: true
         value: 50
     });
 
-### `placeholder` : **String** *(default: "")*
+### placeholder `String`*(default: "")*
 
  Specifies the text displayed when the input is empty.
 
@@ -194,7 +194,7 @@ publish: true
         placeholder: "Select A Value"
     });
 
-### `step` : **Number** *(default: 1)*
+### step `Number`*(default: 1)*
 
  Specifies the increment/decrement step.
 
@@ -210,7 +210,7 @@ publish: true
         step: 0.1
     });
 
-### `upArrowText` : **String** *(default: Increase value)*
+### upArrowText `String`*(default: Increase value)*
 
  Specifies the text of the tooltip on the up arrow.
 
@@ -225,7 +225,7 @@ publish: true
         downArrowText: "Less"
     });
 
-### `value` : **Number** *(default: null)*
+### value `Number`*(default: null)*
 
  Specifies the value of the NumericTextBox widget.
 

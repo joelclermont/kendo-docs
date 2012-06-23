@@ -96,43 +96,43 @@ There are two types of **Slider**:
 
 ## Configuration
 
-### `decreaseButtonTitle` : **String** *(default: "Decrease")*
+### decreaseButtonTitle `String`*(default: "Decrease")*
 
 The title of the decrease button of the **Slider**.
 
-### `increaseButtonTitle` : **String** *(default: "Increase")*
+### increaseButtonTitle `String`*(default: "Increase")*
 
 The title of the increase button of the **Slider**.
 
-### `largeStep` : **Number** *(default: 5)*
+### largeStep `Number`*(default: 5)*
 
 The delta with which the value will change when the user presses the Page Up or Page Down key (the drag
 handle must be focused). Note: The allied largeStep will also set large tick for every large step.
 
-### `max` : **Number** *(default: 10)*
+### max `Number`*(default: 10)*
 
 The maximum value of the **Slider**.
 
-### `min` : **Number** *(default: 0)*
+### min `Number`*(default: 0)*
 
 The minimum value of the **Slider**.
 
-### `orientation` : **String** *(default: "horizontal")*
+### orientation `String`*(default: "horizontal")*
 
 The orientation of a **Slider**; **"horizontal"** or **"vertical"**.
 
-### `showButtons` : **Boolean** *(default: true)*
+### showButtons `Boolean`*(default: true)*
 
 Can be used to show (**true**) or hide (**false**) the
 increase and decrease buttons of a **Slider**.
 
-### `smallStep` : **Number** *(default: 1)*
+### smallStep `Number`*(default: 1)*
 
 The small step value of the **Slider**. The underlying value will be changed when the end user
 (1) clicks on the increase or decrease buttons of the **Slider**, (2) presses the arrow keys
 (the drag handle must be focused), or (3) drags the drag handle.
 
-### `tickPlacement` : **String** *(default: "both")*
+### tickPlacement `String`*(default: "both")*
 
 Denotes the location of the tick marks in the **Slider**. The available options are:
 <div class="details-list">
@@ -166,22 +166,22 @@ Denotes the location of the tick marks in the **Slider**. The available options 
    </dl>
 </div>
 
-### `tooltip` : **Object** 
+### tooltip `Object`
 
 Configuration of the **Slider** tooltip.
 
-### `tooltip.enabled` : **Boolean** *(default: true)*
+### tooltip.enabled `Boolean`*(default: true)*
 
 Disables (**false**) or enables (**true**) the tooltip of
 the **Slider**.
 
-### `tooltip.format` : **String** *(default: "{0}")*
+### tooltip.format `String`*(default: "{0}")*
 
 Format string for the text of the tooltip. Note: The applied
 format will also influence the appearance of the **Slider**
 tick labels.
 
-### `value` : **Number** *(default: 0)*
+### value `Number`*(default: 0)*
 
 The underlying value of the **Slider**.
 

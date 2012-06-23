@@ -67,19 +67,19 @@ The swipe event criteria (minimum horizontal distance, maximum vertical deviatio
 
 ## Configuration
 
-### `maxDuration` : **Number** *(default: 1000)*
+### maxDuration `Number`*(default: 1000)*
 
  The maximum amount of time in milliseconds the swipe event can last. Slower swipes are discarded.
 
-### `maxYDelta` : **Number** *(default: 10)*
+### maxYDelta `Number`*(default: 10)*
 
  The maximum vertical deviation in pixels of the swipe event. Swipe with higher deviation are discarded.
 
-### `minXDelta` : **Number** *(default: 30)*
+### minXDelta `Number`*(default: 30)*
 
  The minimum horizontal distance in pixels the user should swipe before the event is triggered.
 
-### `surface` : **jQuery** 
+### surface `jQuery`
 
 By default, swipe events are tracked only within the element boundries. If a surface is specified, the swipe events are extended to the provided surface. This is useful if  the swipe targets are small (or narrow).
 

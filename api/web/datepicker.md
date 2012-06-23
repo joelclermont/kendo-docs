@@ -93,12 +93,12 @@ minimum and maximum date
 
 ## Configuration
 
-### `animation` : **Object** 
+### animation `Object`
 
 The animation(s) used for opening and/or closing the pop-up. Setting this value to **false**
 will disable the animation(s).
 
-### `animation.close` : **Object** 
+### animation.close `Object`
 
 The animation(s) used for hiding of the pop-up.
 
@@ -115,7 +115,7 @@ The animation(s) used for hiding of the pop-up.
         }
     });
 
-### `animation.open` : **Object** 
+### animation.open `Object`
 
 The animation(s) used for displaying of the pop-up.
 
@@ -131,7 +131,7 @@ The animation(s) used for displaying of the pop-up.
         }
     });
 
-### `culture` : **String** *(default: en-US)*
+### culture `String`*(default: en-US)*
 
  Specifies the culture info used by the widget.
 
@@ -142,7 +142,7 @@ The animation(s) used for displaying of the pop-up.
         culture: "de-DE"
     });
 
-### `depth` : **String** 
+### depth `String`
 
 Specifies the navigation depth. The following
 settings are available for the **depth** value:
@@ -182,7 +182,7 @@ settings are available for the **depth** value:
         depth: "year" // the datePicker will only go to the year level
     });
 
-### `footer` : **String** 
+### footer `String`
 
  Template to be used for rendering the footer of the calendar.
 
@@ -195,7 +195,7 @@ settings are available for the **depth** value:
          });
      </script>
 
-### `format` : **String** *(default: MM/dd/yyyy)*
+### format `String`*(default: MM/dd/yyyy)*
 
  Specifies the format, which is used to format the value of the DatePicker displayed in the input.
 
@@ -205,7 +205,7 @@ settings are available for the **depth** value:
         format: "yyyy/MM/dd"
     });
 
-### `max` : **Date** *(default: Date(2099, 11, 31))*
+### max `Date`*(default: Date(2099, 11, 31))*
 
  Specifies the maximum date, which the calendar can show.
 
@@ -221,7 +221,7 @@ settings are available for the **depth** value:
     // set the max date to Jan 1st, 2013
     datePicker.max(new Date(2013,0, 1));
 
-### `min` : **Date** *(default: Date(1900, 0, 1))*
+### min `Date`*(default: Date(1900, 0, 1))*
 
  Specifies the minimum date that the calendar can show.
 
@@ -239,11 +239,11 @@ settings are available for the **depth** value:
     // set the min date to Jan 1st, 2011
     datePicker.min(new Date(2011, 0, 1));
 
-### `month` : **Object** 
+### month `Object`
 
  Templates for the cells rendered in the calendar "month" view.
 
-### `month.content` : **String** 
+### month.content `String`
 
  Template to be used for rendering the cells in the calendar "month" view, which are in range.
 
@@ -266,12 +266,12 @@ settings are available for the **depth** value:
          });
      </script>
 
-### `month.empty` : **String** 
+### month.empty `String`
 
 The template used for rendering the cells in the calendar "month" view, which are not in the range between
 the minimum and maximum values.
 
-### `parseFormats` : **Array** 
+### parseFormats `Array`
 
  Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the format will be used.
 
@@ -282,7 +282,7 @@ the minimum and maximum values.
         parseFormats: ["MMMM yyyy"] //format also will be added to parseFormats
     });
 
-### `start` : **String** *(default: month)*
+### start `String`*(default: month)*
 
  Specifies the start view.
 The following settings are available for the **start** value:
@@ -321,7 +321,7 @@ The following settings are available for the **start** value:
         start: "decade" // the datePicker will start with a decade display
     });
 
-### `value` : **Date** *(default: null)*
+### value `Date`*(default: null)*
 
  Specifies the selected date.
 

@@ -137,7 +137,7 @@ By default, paging, grouping, and sorting are **disabled**. Scrolling is enabled
 
 ## Configuration
 
-### `autoBind` : **Boolean** *(default: true)*
+### autoBind `Boolean`*(default: true)*
 
  Indicates whether the grid will call read on the DataSource initially.
 
@@ -158,7 +158,7 @@ By default, paging, grouping, and sorting are **disabled**. Scrolling is enabled
          autoBind: false // the grid will not be populated with data until read() is called on the sharedDataSource
      });
 
-### `columns` : **Array** 
+### columns `Array`
 
 A collection of column objects or collection of strings that represents the name of the fields.
 
@@ -175,11 +175,11 @@ A collection of column objects or collection of strings that represents the name
                    { title: "Year", field: "year", filterable: false, sortable: true, format: "{0:dd/MMMM/yyyy}" } ];
     });
 
-### `columns.command` : **String** 
+### columns.command `String`
 
 Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
 
-### `columns.editor` : **Function** 
+### columns.editor `Function`
 
 Provides a way to specify custom editor for this column.
 
@@ -210,35 +210,35 @@ Provides a way to specify custom editor for this column.
          ]
       });
 
-### `columns.editor.container` : **Object** 
+### columns.editor.container `Object`
 
 The container in which the editor must be added.
 
-### `columns.editor.options` : **Object** 
+### columns.editor.options `Object`
 
 Additional options.
 
-### `columns.editor.options.field` : **String** 
+### columns.editor.options.field `String`
 
 The field for the editor.
 
-### `columns.editor.options.model` : **Object** 
+### columns.editor.options.model `Object`
 
 The model for the editor.
 
-### `columns.encoded` : **Boolean** *(default: true)*
+### columns.encoded `Boolean`*(default: true)*
 
  Specified whether the column content is escaped. Disable encoding if the data contains HTML markup.
 
-### `columns.field` : **String** 
+### columns.field `String`
 
 The field from the datasource that will be displayed in the column.
 
-### `columns.filterable` : **Boolean** *(default: true)*
+### columns.filterable `Boolean`*(default: true)*
 
  Specifies whether given column is filterable.
 
-### `columns.format` : **String** 
+### columns.format `String`
 
 The format that will be applied on the column cells.
 
@@ -258,11 +258,11 @@ The format that will be applied on the column cells.
          ]
       });
 
-### `columns.sortable` : **Boolean** *(default: true)*
+### columns.sortable `Boolean`*(default: true)*
 
  Specifies whether given column is sortable.
 
-### `columns.template` : **String** 
+### columns.template `String`
 
 The template for column's cells.
 
@@ -285,15 +285,15 @@ The template for column's cells.
          ]
       });
 
-### `columns.title` : **String** 
+### columns.title `String`
 
 The text that will be displayed in the column header.
 
-### `columns.width` : **String** 
+### columns.width `String`
 
 The width of the column.
 
-### `dataSource` : **kendo.data.DataSource | Object** 
+### dataSource `kendo.data.DataSource | Object`
 
 Instance of DataSource or Object with DataSource configuration.
 
@@ -317,12 +317,12 @@ Instance of DataSource or Object with DataSource configuration.
          }
      });
 
-### `detailTemplate` : **Function** 
+### detailTemplate `Function`
 
 Template to be used for rendering the detail rows in the grid.
 See the [**Detail Template**](http://demos.kendoui.com/web/grid/detailtemplate.html) example.
 
-### `editable` : **Object** 
+### editable `Object`
 
 Indicates whether editing is enabled/disabled.
 
@@ -355,27 +355,27 @@ Indicates whether editing is enabled/disabled.
          }
      });
 
-### `editable.confirmation` : **Boolean | String** 
+### editable.confirmation `Boolean | String`
 
 Defines the text that will be used in confirmation box when delete an item.
 
-### `editable.destroy` : **Boolean** 
+### editable.destroy `Boolean`
 
 Indicates whether item should be deleted when click on delete button.
 
-### `editable.mode` : **String** 
+### editable.mode `String`
 
 Indicates which of the available edit modes(incell(default)/inline/popup) will be used
 
-### `editable.template` : **String** 
+### editable.template `String`
 
 Template which will be use during popup editing
 
-### `editable.update` : **Boolean** 
+### editable.update `Boolean`
 
 Indicates whether item should be switched to edit mode on click.
 
-### `groupable` : **Boolean** *(default: false)*
+### groupable `Boolean`*(default: false)*
 
  Indicates whether grouping is enabled/disabled.
 
@@ -399,7 +399,7 @@ Indicates whether item should be switched to edit mode on click.
          groupable: true
      });
 
-### `navigatable` : **Boolean** *(default: false)*
+### navigatable `Boolean`*(default: false)*
 
  Indicates whether keyboard navigation is enabled/disabled.
 
@@ -423,7 +423,7 @@ Indicates whether item should be switched to edit mode on click.
          navigatable: true
      });
 
-### `pageable` : **Boolean** *(default: false)*
+### pageable `Boolean`*(default: false)*
 
  Indicates whether paging is enabled/disabled.
 
@@ -447,7 +447,7 @@ Indicates whether item should be switched to edit mode on click.
          pageable: true
      });
 
-### `rowTemplate` : **Function** 
+### rowTemplate `Function`
 
 Template to be used for rendering the rows in the grid.
 
@@ -477,7 +477,7 @@ Template to be used for rendering the rows in the grid.
          });
      </script>
 
-### `scrollable` : **Boolean | Object** *(default: true)*
+### scrollable `Boolean | Object`*(default: true)*
 
  Enable/disable grid scrolling. Possible values:
 <div class="details-list">
@@ -517,7 +517,7 @@ Template to be used for rendering the rows in the grid.
          }
      });
 
-### `selectable` : **String** *(default: undefined)*
+### selectable `String`*(default: undefined)*
 
  Indicates whether selection is enabled/disabled. Possible values:
 <div class="details-list">
@@ -549,7 +549,7 @@ Template to be used for rendering the rows in the grid.
    </dl>
 </div>
 
-### `sortable` : **Object** 
+### sortable `Object`
 
 Defines whether grid columns are sortable.
 
@@ -567,11 +567,11 @@ Defines whether grid columns are sortable.
             allowUnsort: true
     });
 
-### `sortable.allowUnsort` : **Boolean** *(default: false)*
+### sortable.allowUnsort `Boolean`*(default: false)*
 
   Defines whether column can have unsorted state.
 
-### `sortable.mode` : **String** *(default: "single")*
+### sortable.mode `String`*(default: "single")*
 
  Defines sorting mode. Possible values:
 <div class="details-list">
@@ -591,7 +591,7 @@ Defines whether grid columns are sortable.
    </dl>
 </div>
 
-### `toolbar` : **Array** 
+### toolbar `Array`
 
 This is a list of commands for which the corresponding buttons will be rendered.
 The supported built-in commands are: "create", "cancel", "save", "destroy".
@@ -621,15 +621,15 @@ The supported built-in commands are: "create", "cancel", "save", "destroy".
          editable: true
       });
 
-### `toolbar.name` : **String** 
+### toolbar.name `String`
 
 The name of the command. One of the predefined or a custom.
 
-### `toolbar.template` : **String** 
+### toolbar.template `String`
 
 The template for the command button.
 
-### `toolbar.text` : **String** 
+### toolbar.text `String`
 
 The text of the command that will be set on the button.
 

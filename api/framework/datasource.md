@@ -142,7 +142,7 @@ publish: true
 
 ## Configuration
 
-### `aggregate` : **Array | Object** *(default: undefined)*
+### aggregate `Array | Object`*(default: undefined)*
 
  Sets fields on which initial aggregates should be calculated
 
@@ -151,7 +151,7 @@ publish: true
     // calculates total sum of unitPrice field's values.
     [{ field: "unitPrice", aggregate: "sum" }]
 
-### `data` : **Array** 
+### data `Array`
 
 Specifies the local JavaScript object to use for the data source.
 
@@ -163,7 +163,7 @@ Specifies the local JavaScript object to use for the data source.
          data: orders
     });
 
-### `filter` : **Array | Object** *(default: undefined)*
+### filter `Array | Object`*(default: undefined)*
 
  Sets initial filter
 
@@ -176,7 +176,7 @@ Specifies the local JavaScript object to use for the data source.
     filter: [ { field: "orderId", operator: "eq", value: 10248 },
               { field: "customerName", operator: "startswith", value: "Paul" } ]
 
-### `group` : **Array | Object** *(default: undefined)*
+### group `Array | Object`*(default: undefined)*
 
  Sets initial grouping
 
@@ -188,7 +188,7 @@ Specifies the local JavaScript object to use for the data source.
     // groups data by orderId and customerName fields
     group: [ { field: "orderId", dir: "desc" }, { field: "customerName", dir: "asc" } ]
 
-### `page` : **Number** *(default: undefined)*
+### page `Number`*(default: undefined)*
 
  Sets the index of the displayed page of data.
 
@@ -198,7 +198,7 @@ Specifies the local JavaScript object to use for the data source.
         page: 2 // displays the second page of data in the bound widget
     });
 
-### `pageSize` : **Number** *(default: undefined)*
+### pageSize `Number`*(default: undefined)*
 
  Sets the number of records which contains a given page of data.
 
@@ -208,7 +208,7 @@ Specifies the local JavaScript object to use for the data source.
         pageSize: 5 // 5 records per page of data
     });
 
-### `schema` : **Object** 
+### schema `Object`
 
 Set the object responsible for describing the raw data format
 
@@ -235,7 +235,7 @@ Set the object responsible for describing the raw data format
          }
      });
 
-### `schema.aggregates` : **Function** 
+### schema.aggregates `Function`
 
 Returns the calculated aggregates as object.
 Result should have the following format:
@@ -264,11 +264,11 @@ Result should have the following format:
       }
     }
 
-### `schema.data` : **Function** 
+### schema.data `Function`
 
 Returns the deserialized data as array.
 
-### `schema.groups` : **Function** 
+### schema.groups `Function`
 
 Used instead of data function if remote grouping operation is executed.
  Returns the deserialized data as array.
@@ -308,7 +308,7 @@ Result should have the following format:
     // group2, group3, etc.
     ]
 
-### `schema.model` : **Object** 
+### schema.model `Object`
 
 Describes the Model
 
@@ -346,7 +346,7 @@ Describes the Model
            }
        })
 
-### `schema.model.fields` : **Object** 
+### schema.model.fields `Object`
 
 Describes the model fields and their properties
 
@@ -391,24 +391,24 @@ Available field attrbiutes:
            }
        })
 
-### `schema.model.id` : **Number | String** 
+### schema.model.id `Number | String`
 
 The field use to identify an unique Model instance
 
-### `schema.parse` : **Function** 
+### schema.parse `Function`
 
 Executed before deserialized data is read.
  Appropriate for preprocessing of the raw data.
 
-### `schema.total` : **Function** 
+### schema.total `Function`
 
 Returns the total number of records.
 
-### `schema.type` : **String** 
+### schema.type `String`
 
 Specify the type of schema { xml | json }
 
-### `serverAggregates` : **Boolean** *(default: false)*
+### serverAggregates `Boolean`*(default: false)*
 
  Determines if aggregates should be calculated on the server.
 
@@ -422,7 +422,7 @@ Specify the type of schema { xml | json }
         aggregate: { field: "orderId", operator: "eq", value: 10248 } // return only data where orderId equals 10248
     });
 
-### `serverFiltering` : **Boolean** *(default: false)*
+### serverFiltering `Boolean`*(default: false)*
 
  Determines if filtering of the data should be handled on the server.
 
@@ -473,7 +473,7 @@ It is possible to modify these parameters by using the **parameterMap** function
         filter: { field: "orderId", operator: "eq", value: 10248 } // return only data where orderId equals 10248
     });
 
-### `serverGrouping` : **Boolean** *(default: false)*
+### serverGrouping `Boolean`*(default: false)*
 
  Determines if grouping of the data should be handled on the server.
 
@@ -496,7 +496,7 @@ It is possible to modify these parameters by using the **parameterMap** function
         sort: { field: "orderId", dir: "asc" } // group by orderId descending
     });
 
-### `serverPaging` : **Boolean** *(default: false)*
+### serverPaging `Boolean`*(default: false)*
 
  Determines if paging of the data should be handled on the server.
 
@@ -526,7 +526,7 @@ It is possible to modify these parameters by using the **parameterMap** function
         pageSize: 5 // 5 records per page
     });
 
-### `serverSorting` : **Boolean** *(default: false)*
+### serverSorting `Boolean`*(default: false)*
 
  Determines if sorting of the data should be handled on the server.
 
@@ -549,7 +549,7 @@ It is possible to modify these parameters by using the **parameterMap** function
         sort: { field: "orderId", dir: "asc" }
     });
 
-### `sort` : **Array | Object** *(default: undefined)*
+### sort `Array | Object`*(default: undefined)*
 
  Sets initial sort order
 
@@ -561,12 +561,12 @@ It is possible to modify these parameters by using the **parameterMap** function
     // sorts data ascending by orderId field and then descending by shipmentDate
     sort: [ { field: "orderId", dir: "asc" }, { field: "shipmentDate", dir: "desc" } ]
 
-### `transport` : **Object** 
+### transport `Object`
 
 Sets the object responsible for loading and saving of data.
  This can be a remote or local/in-memory data.
 
-### `transport.create` : **Object | String** 
+### transport.create `Object | String`
 
 Options for remote create data operation, or the URL of the remote service
 
@@ -584,27 +584,27 @@ Options for remote create data operation, or the URL of the remote service
         }
     });
 
-### `transport.create.dataType` : **String** 
+### transport.create.dataType `String`
 
 The type of data that you're expecting back from the server
 
-### `transport.create.url` : **Object | String** 
+### transport.create.url `Object | String`
 
 The remote url to call when creating a new record
 
-### `transport.destroy` : **Object | String** 
+### transport.destroy `Object | String`
 
 Options for the remote delete data operation, or the URL of the remote service
 
-### `transport.destroy.dataType` : **String** 
+### transport.destroy.dataType `String`
 
 The type of data that you're expecting back from the server
 
-### `transport.destroy.url` : **Object | String** 
+### transport.destroy.url `Object | String`
 
 The remote url to call when creating a new record
 
-### `transport.parameterMap` : **Function** 
+### transport.parameterMap `Function`
 
 Convert the request parameters from dataSource format to remote service specific format.
 
@@ -623,7 +623,7 @@ Convert the request parameters from dataSource format to remote service specific
          }
      });
 
-### `transport.read` : **Object | String** 
+### transport.read `Object | String`
 
 Options for remote read data operation, or the URL of the remote service
 
@@ -657,19 +657,19 @@ Options for remote read data operation, or the URL of the remote service
          }
      });
 
-### `transport.read.data` : **Object | Function** 
+### transport.read.data `Object | Function`
 
 Additional data to be sent to the server
 
-### `transport.read.dataType` : **String** 
+### transport.read.dataType `String`
 
 The type of data that you're expecting back from the server
 
-### `transport.read.url` : **String** 
+### transport.read.url `String`
 
 The remote service URL
 
-### `transport.update` : **Object | String** 
+### transport.update `Object | String`
 
 Options for remote update operation, or the URL of the remote service
 
@@ -684,15 +684,15 @@ Options for remote update operation, or the URL of the remote service
         }
     });
 
-### `transport.update.dataType` : **String** 
+### transport.update.dataType `String`
 
 The type of data that you're expecting back from the server
 
-### `transport.update.url` : **Object | String** 
+### transport.update.url `Object | String`
 
 The remote url to call when updating a record
 
-### `type` : **String** 
+### type `String`
 
 Loads transport with preconfigured settings. Currently supports only "odata" (Requires kendo.data.odata.js to be included).
 
