@@ -14,7 +14,7 @@ Encodes HTML characters to entities.
 
 #### Example
     var html = kendo.htmlEncode("<span>Hello</span>");
-    console.log(html); // outputs "&lt;span&gt;Hello&lt;/span&gt;&quot;"
+    console.log(html); // outputs "&lt;span&gt;Hello&lt;/span&gt;"
 
 #### Parameters
 
