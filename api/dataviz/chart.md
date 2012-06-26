@@ -242,7 +242,7 @@ The border of the labels.
 <div class="details-list">
     <dl>
         <dt>
-             `"solid"`
+             `solid`
         </dt>
         <dd>
              Specifies a solid line.
