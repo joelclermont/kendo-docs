@@ -6,18 +6,9 @@ publish: true
 
 # kendo.data.DataSource
 
-## Description
-
-
-
-     The DataSource component is an abstraction for using local (arrays of JavaScript objects) or
-     remote (XML, JSON, JSONP) data. It fully supports CRUD (Create, Read, Update, Destroy) data
-     operations and provides both local and server-side support for Sorting, Paging, Filtering, Grouping, and Aggregates.
- 
-
-
-     It is a powerful piece of the Kendo UI Framework, dramatically simplifying data binding and data operations.
- 
+The DataSource component is an abstraction for using local (arrays of JavaScript objects) or
+remote (XML, JSON, JSONP) data. It fully supports CRUD (Create, Read, Update, Destroy) data
+operations and provides both local and server-side support for Sorting, Paging, Filtering, Grouping, and Aggregates.
 
 ### Getting Started
 
@@ -43,10 +34,10 @@ publish: true
             read: {
                 // the remote service url
                 url: "http://search.twitter.com/search.json",
-    
+
                 // JSONP is required for cross-domain AJAX
                 dataType: "jsonp",
-    
+
                 // additional parameters sent to the remote service
                 data: {
                     q: "html5"
@@ -62,12 +53,10 @@ publish: true
 
 ### Binding UI widgets to DataSource
 
-
-     Many Kendo UI widgets support data binding, and the Kendo UI DataSource is an ideal
-     binding source for both local and remote data. A DataSource can be created in-line
-     with other UI widget configuration settings, or a shared DataSource can be created
-     to enable multiple UI widgets to bind to the same, observable data collection.
- 
+Many Kendo UI widgets support data binding, and the Kendo UI DataSource is an ideal
+binding source for both local and remote data. A DataSource can be created in-line
+with other UI widget configuration settings, or a shared DataSource can be created
+to enable multiple UI widgets to bind to the same, observable data collection.
 
 #### Creating a local DataSource in-line with UI widget configuration
 
@@ -110,7 +99,7 @@ publish: true
             }
         }
     });
-    
+
     // Bind two UI widgets to same DataSource
     $("#chart").kendoChart({
         title: {
@@ -125,7 +114,7 @@ publish: true
             field: "employee"
         }
     });
-    
+
     $("#grid").kendoGrid({
         dataSource: sharableDataSource,
             columns: [
@@ -171,7 +160,7 @@ Specifies the local JavaScript object to use for the data source.
 
     // returns only data where orderId is equal to 10248
     filter: { field: "orderId", operator: "eq", value: 10248 }
-    
+
     // returns only data where orderId is equal to 10248 and customerName starts with Paul
     filter: [ { field: "orderId", operator: "eq", value: 10248 },
               { field: "customerName", operator: "startswith", value: "Paul" } ]
@@ -184,7 +173,7 @@ Specifies the local JavaScript object to use for the data source.
 
     // groups data by orderId field
     group: { field: "orderId" }
-    
+
     // groups data by orderId and customerName fields
     group: [ { field: "orderId", dir: "desc" }, { field: "customerName", dir: "asc" } ]
 
@@ -557,7 +546,7 @@ It is possible to modify these parameters by using the **parameterMap** function
 
     // sorts data ascending by orderId field
     sort: { field: "orderId", dir: "asc" }
-    
+
     // sorts data ascending by orderId field and then descending by shipmentDate
     sort: [ { field: "orderId", dir: "asc" }, { field: "shipmentDate", dir: "desc" } ]
 
@@ -635,10 +624,10 @@ Options for remote read data operation, or the URL of the remote service
             read: {
                 // the remote service URL
                 url: "http://search.twitter.com/search.json",
-    
+
                 // JSONP is required for cross-domain AJAX
                 dataType: "jsonp",
-    
+
                 // additional parameters sent to the remote service
                 data: {
                     q: function() {
@@ -648,7 +637,7 @@ Options for remote read data operation, or the URL of the remote service
             }
         }
     });
-    
+
      // consuming odata feed without setting additional options
      var dataSource = new kendo.data.DataSource({
          type: "odata",
@@ -775,7 +764,7 @@ The zero-based index of the data record
 
 #### Returns
 
-`Object` 
+`Object`
 
 ### cancelChanges
 
@@ -1008,11 +997,11 @@ Otherwise operations are executed over the available data.
 
 #### Example
 
-    
+
     // create a view containing at most 20 records, taken from the
     // 5th page and sorted ascending by orderId field.
     dataSource.query({ page: 5, pageSize: 20, sort: { field: "orderId", dir: "asc" } });
-    
+
     // moves the view to the first page returning at most 20 records
     // but without particular ordering.
     dataSource.query({ page: 1, pageSize: 20 });
