@@ -300,11 +300,11 @@ Specifies how the **PanelBar** items are displayed when opened and closed. The f
 are available:
 
 
-##### *"single"*
+#### *"single"*
 
 Display one item at a time when an item is opened; opening an item will close the previously opened item.
 
-##### *"multiple"*
+#### *"multiple"*
 
 Display multiple values at one time; opening an item has no visual impact on any other items in the **PanelBar**.
 

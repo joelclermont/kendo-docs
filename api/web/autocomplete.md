@@ -363,7 +363,6 @@ Template to be used for rendering the items in the list.
          $("#autocomplete").kendoAutoComplete({
              dataSource: dataSource,
              dataTextField: "Name",
-             dataValueField: "Id",
              template: kendo.template($("#template").html())
          });
      </script>

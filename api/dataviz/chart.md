@@ -241,31 +241,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -471,31 +471,31 @@ Configures the axis line. This will also effect major and minor ticks, but not g
  The dash type of the line.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -548,31 +548,31 @@ body of the chart.
  The dash type of the grid lines.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -647,31 +647,31 @@ grid lines is not set to **true**.
  The dash type of the grid lines.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -709,15 +709,15 @@ The plot bands of category axis.
 The plot band fields:
 
 
-##### *"from"*
+#### *"from"*
 
 The start position of the plot band.
 
-##### *"to"*
+#### *"to"*
 
 The end position of the plot band.
 
-##### *"color"*
+#### *"color"*
 
 The color of the plot band.
 
@@ -797,31 +797,31 @@ hex and rgb.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -885,23 +885,23 @@ The font style of the title.
  The position of the title.
 
 
-##### *"top"*
+#### *"top"*
 
 The axis title is positioned on the top (applicable to vertical axis)
 
-##### *"bottom"*
+#### *"bottom"*
 
 The axis title is positioned on the bottom (applicable to vertical axis)
 
-##### *"left"*
+#### *"left"*
 
 The axis title is positioned on the left (applicable to horizontal axis)
 
-##### *"right"*
+#### *"right"*
 
 The axis title is positioned on the right (applicable to horizontal axis)
 
-##### *"center"*
+#### *"center"*
 
 The axis title is positioned in the center
 
@@ -946,11 +946,11 @@ The text of the title.
  The axis type.
 
 
-##### *"Category"*
+#### *"Category"*
 
 Discrete category axis.
 
-##### *"Date"*
+#### *"Date"*
 
 Specialized axis for displaying chronological data.
 
@@ -989,19 +989,19 @@ Culture to use for formatting the dates. See [Globalization](http://www.kendoui.
 Date format strings
 
 
-##### *"hours"*
+#### *"hours"*
 
 "HH:mm"
 
-##### *"days"*
+#### *"days"*
 
 "M/d"
 
-##### *"months"*
+#### *"months"*
 
 "MMM 'yy"
 
-##### *"years"*
+#### *"years"*
 
 "yyyy"
 The Chart will choose the appropriate format for the current `baseUnit`.
@@ -1047,31 +1047,31 @@ The border of the chart area.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -1195,31 +1195,31 @@ The border of the legend.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -1328,23 +1328,23 @@ upwards from the current position.
  The positions of the legend.
 
 
-##### *"top"*
+#### *"top"*
 
 The legend is positioned on the top.
 
-##### *"bottom"*
+#### *"bottom"*
 
 The legend is positioned on the bottom.
 
-##### *"left"*
+#### *"left"*
 
 The legend is positioned on the left.
 
-##### *"right"*
+#### *"right"*
 
 The legend is positioned on the right.
 
-##### *"custom"*
+#### *"custom"*
 
 The legend is positioned using OffsetX and OffsetY.
 
@@ -1383,31 +1383,31 @@ The border of the plot area.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -1502,27 +1502,27 @@ This function is used when a category (an year, month, etc.) contains two or mor
 The function return value is displayed instead of the individual points.
 
 
-##### *"max"*
+#### *"max"*
 
 The highest value for the date period.
 
-##### *"min"*
+#### *"min"*
 
 The lowest value for the date period.
 
-##### *"sum"*
+#### *"sum"*
 
 The sum of all values for the date period.
 
-##### *"count"*
+#### *"count"*
 
 The number of values for the date period.
 
-##### *"avg"*
+#### *"avg"*
 
 The average of all values for the date period.
 
-##### *function (values, series)*
+#### *function (values, series)*
 
 User-defined aggregate function.
 
@@ -1551,31 +1551,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -1631,19 +1631,19 @@ The margin of the labels.
 Defines the position of the area labels.
 
 
-##### *"above"*
+#### *"above"*
 
 The label is positioned at the top of the area chart marker.
 
-##### *"right"*
+#### *"right"*
 
 The label is positioned at the right of the area chart marker.
 
-##### *"below"*
+#### *"below"*
 
 The label is positioned at the bottom of the area chart marker.
 
-##### *"left"*
+#### *"left"*
 
 The label is positioned at the left of the area chart marker.
 
@@ -1732,15 +1732,15 @@ The border of the markers.
 Configures the markers shape type.
 
 
-##### *"square"*
+#### *"square"*
 
 The marker shape is square.
 
-##### *"triangle"*
+#### *"triangle"*
 
 The marker shape is triangle.
 
-##### *"circle"*
+#### *"circle"*
 
 The marker shape is circle.
 
@@ -1753,15 +1753,15 @@ The marker shape is circle.
 Configures the behavior for handling missing values in area series.
 
 
-##### *"interpolate"*
+#### *"interpolate"*
 
 The value is interpolated from neighboring points.
 
-##### *"zero"*
+#### *"zero"*
 
 The value is assumed to be zero.
 
-##### *"gap"*
+#### *"gap"*
 
 The line stops before the missing point and continues after it.
 
@@ -1876,27 +1876,27 @@ This function is used when a category (an year, month, etc.) contains two or mor
 The function return value is displayed instead of the individual points.
 
 
-##### *"max"*
+#### *"max"*
 
 The highest value for the date period.
 
-##### *"min"*
+#### *"min"*
 
 The lowest value for the date period.
 
-##### *"sum"*
+#### *"sum"*
 
 The sum of all values for the date period.
 
-##### *"count"*
+#### *"count"*
 
 The number of values for the date period.
 
-##### *"avg"*
+#### *"avg"*
 
 The average of all values for the date period.
 
-##### *function (values, series)*
+#### *function (values, series)*
 
 User-defined aggregate function.
 
@@ -1917,31 +1917,31 @@ The color of the border.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -1982,31 +1982,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -2062,19 +2062,19 @@ The format of the labels.
 Defines the position of the bar labels.
 
 
-##### *"center"*
+#### *"center"*
 
 The label is positioned at the bar center.
 
-##### *"insideEnd"*
+#### *"insideEnd"*
 
 The label is positioned inside, near the end of the bar.
 
-##### *"insideBase"*
+#### *"insideBase"*
 
 The label is positioned inside, near the base of the bar.
 
-##### *"outsideEnd"*
+#### *"outsideEnd"*
 
 The label is positioned outside, near the end of the bar.
              Not applicable for stacked bar series.
@@ -2136,11 +2136,11 @@ The effects overlay.
  The gradient name.
 
 
-##### *"glass"*
+#### *"glass"*
 
 The bars have glass effect overlay.
 
-##### *"none"*
+#### *"none"*
 
 The bars have no effect overlay.
 
@@ -2309,31 +2309,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -2389,19 +2389,19 @@ The margin of the labels.
 Defines the position of the bubble labels.
 
 
-##### *"above"*
+#### *"above"*
 
 The label is positioned at the top of the bubble chart marker.
 
-##### *"right"*
+#### *"right"*
 
 The label is positioned at the right of the bubble chart marker.
 
-##### *"below"*
+#### *"below"*
 
 The label is positioned at the bottom of the bubble chart marker.
 
-##### *"left"*
+#### *"left"*
 
 The label is positioned at the left of the bubble chart marker.
 
@@ -2612,31 +2612,31 @@ The color of the border.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -2675,23 +2675,23 @@ The donut chart can be bound to an array of numbers or an array of objects
 with the following fields:
 
 
-##### *"value"*
+#### *"value"*
 
 The sector value.
 
-##### *"category"*
+#### *"category"*
 
 The sector category that is shown in the legend.
 
-##### *"color"*
+#### *"color"*
 
 The sector color.
 
-##### *"explode"*
+#### *"explode"*
 
 A boolean value indicating whether to explode the sector(available only for the last level of the series).
 
-##### *"visibleInLegend"*
+#### *"visibleInLegend"*
 
 A boolean value indicating whether to show the sector in the legend.
  
@@ -2731,11 +2731,11 @@ Configures the series data labels.
 Defines the alignment of the donut labels.
 
 
-##### *"circle"*
+#### *"circle"*
 
 The labels are positioned in circle around the donut chart.
 
-##### *"column"*
+#### *"column"*
 
 The labels are positioned in columns to the left and right of the donut chart.
 
@@ -2756,31 +2756,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -2840,15 +2840,15 @@ The format of the labels.
 Defines the position of the donut labels.
 
 
-##### *"center"*
+#### *"center"*
 
 The labels are positioned at the center of the donut segments.
 
-##### *"insideEnd"*
+#### *"insideEnd"*
 
 The labels are positioned inside, near the end of the donut segments.
 
-##### *"outsideEnd"*
+#### *"outsideEnd"*
 
 The labels are positioned outside, near the end of the donut segments.
              The labels and the donut segments are connected with connector line.
@@ -3018,27 +3018,27 @@ This function is used when a category (an year, month, etc.) contains two or mor
 The function return value is displayed instead of the individual points.
 
 
-##### *"max"*
+#### *"max"*
 
 The highest value for the date period.
 
-##### *"min"*
+#### *"min"*
 
 The lowest value for the date period.
 
-##### *"sum"*
+#### *"sum"*
 
 The sum of all values for the date period.
 
-##### *"count"*
+#### *"count"*
 
 The number of values for the date period.
 
-##### *"avg"*
+#### *"avg"*
 
 The average of all values for the date period.
 
-##### *function (values, series)*
+#### *function (values, series)*
 
 User-defined aggregate function.
 
@@ -3055,31 +3055,31 @@ The series base color.
  The dash type of the line.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -3104,31 +3104,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -3184,19 +3184,19 @@ The margin of the labels.
 Defines the position of the line labels.
 
 
-##### *"above"*
+#### *"above"*
 
 The label is positioned at the top of the line chart marker.
 
-##### *"right"*
+#### *"right"*
 
 The label is positioned at the right of the line chart marker.
 
-##### *"below"*
+#### *"below"*
 
 The label is positioned at the bottom of the line chart marker.
 
-##### *"left"*
+#### *"left"*
 
 The label is positioned at the left of the line chart marker.
 
@@ -3269,15 +3269,15 @@ The border of the markers.
 Configures the markers shape type.
 
 
-##### *"square"*
+#### *"square"*
 
 The marker shape is square.
 
-##### *"triangle"*
+#### *"triangle"*
 
 The marker shape is triangle.
 
-##### *"circle"*
+#### *"circle"*
 
 The marker shape is circle.
 
@@ -3290,15 +3290,15 @@ The marker shape is circle.
 Configures the behavior for handling missing values in line series.
 
 
-##### *"interpolate"*
+#### *"interpolate"*
 
 The value is interpolated from neighboring points.
 
-##### *"zero"*
+#### *"zero"*
 
 The value is assumed to be zero.
 
-##### *"gap"*
+#### *"gap"*
 
 The line stops before the missing point and continues after it.
 
@@ -3423,31 +3423,31 @@ The color of the border.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -3486,23 +3486,23 @@ The pie chart can be bound to an array of numbers or an array of objects
 with the following fields:
 
 
-##### *"value"*
+#### *"value"*
 
 The sector value.
 
-##### *"category"*
+#### *"category"*
 
 The sector category that is shown in the legend.
 
-##### *"color"*
+#### *"color"*
 
 The sector color.
 
-##### *"explode"*
+#### *"explode"*
 
 A boolean value indicating whether to explode the sector.
 
-##### *"visibleInLegend"*
+#### *"visibleInLegend"*
 
 A boolean value indicating whether to show the sector in the legend.
  
@@ -3538,11 +3538,11 @@ Configures the series data labels.
 Defines the alignment of the pie labels.
 
 
-##### *"circle"*
+#### *"circle"*
 
 The labels are positioned in circle around the pie chart.
 
-##### *"column"*
+#### *"column"*
 
 The labels are positioned in columns to the left and right of the pie chart.
 
@@ -3563,31 +3563,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -3647,15 +3647,15 @@ The format of the labels.
 Defines the position of the pie labels.
 
 
-##### *"center"*
+#### *"center"*
 
 The labels are positioned at the center of the pie segments.
 
-##### *"insideEnd"*
+#### *"insideEnd"*
 
 The labels are positioned inside, near the end of the pie segments.
 
-##### *"outsideEnd"*
+#### *"outsideEnd"*
 
 The labels are positioned outside, near the end of the pie segments.
              The labels and the pie segments are connected with connector line.
@@ -3863,31 +3863,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -3943,19 +3943,19 @@ The margin of the labels.
 Defines the position of the scatter labels.
 
 
-##### *"above"*
+#### *"above"*
 
 The label is positioned at the top of the scatter chart marker.
 
-##### *"right"*
+#### *"right"*
 
 The label is positioned at the right of the scatter chart marker.
 
-##### *"below"*
+#### *"below"*
 
 The label is positioned at the bottom of the scatter chart marker.
 
-##### *"left"*
+#### *"left"*
 
 The label is positioned at the left of the scatter chart marker.
 
@@ -4025,15 +4025,15 @@ The border of the markers.
 Configures the markers shape type.
 
 
-##### *"square"*
+#### *"square"*
 
 The marker shape is square.
 
-##### *"triangle"*
+#### *"triangle"*
 
 The marker shape is triangle.
 
-##### *"circle"*
+#### *"circle"*
 
 The marker shape is circle.
 
@@ -4155,31 +4155,31 @@ The series base color.
  The dash type of the line.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -4220,31 +4220,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -4300,19 +4300,19 @@ The margin of the labels.
 Defines the position of the scatter labels.
 
 
-##### *"above"*
+#### *"above"*
 
 The label is positioned at the top of the scatter chart marker.
 
-##### *"right"*
+#### *"right"*
 
 The label is positioned at the right of the scatter chart marker.
 
-##### *"below"*
+#### *"below"*
 
 The label is positioned at the bottom of the scatter chart marker.
 
-##### *"left"*
+#### *"left"*
 
 The label is positioned at the left of the scatter chart marker.
 
@@ -4382,15 +4382,15 @@ The border of the markers.
 Configures the markers shape type.
 
 
-##### *"square"*
+#### *"square"*
 
 The marker shape is square.
 
-##### *"triangle"*
+#### *"triangle"*
 
 The marker shape is triangle.
 
-##### *"circle"*
+#### *"circle"*
 
 The marker shape is circle.
 
@@ -4403,15 +4403,15 @@ The marker shape is circle.
 Configures the behavior for handling missing values in scatter series.
 
 
-##### *"interpolate"*
+#### *"interpolate"*
 
 The value is interpolated from neighboring points.
 
-##### *"zero"*
+#### *"zero"*
 
 The value is assumed to be zero.
 
-##### *"gap"*
+#### *"gap"*
 
 The line stops before the missing point and continues after it.
 
@@ -4564,31 +4564,31 @@ The border of the series.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -4652,31 +4652,31 @@ The border of the labels.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -4949,15 +4949,15 @@ The chart title configuration options.
  The alignment of the title.
 
 
-##### *"left"*
+#### *"left"*
 
 The text is aligned to the left.
 
-##### *"center"*
+#### *"center"*
 
 The text is aligned to the middle.
 
-##### *"right"*
+#### *"right"*
 
 The text is aligned to the right.
 
@@ -4995,31 +4995,31 @@ The border of the title.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -5082,11 +5082,11 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
  The position of the title.
 
 
-##### *"top"*
+#### *"top"*
 
 The title is positioned on the top.
 
-##### *"bottom"*
+#### *"bottom"*
 
 The title is positioned on the bottom.
 
@@ -5272,31 +5272,31 @@ hex and rgb.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -5490,31 +5490,31 @@ not the grid lines.
  The dash type of the line.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -5629,31 +5629,31 @@ Note that this has no effect if the visibility of the minor grid lines is not se
  The dash type of the minor grid lines.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 body of the chart.  
@@ -5731,15 +5731,15 @@ The plot bands of the value axis.
 The plot band fields:
 
 
-##### *"from"*
+#### *"from"*
 
 The start position of the plot band in axis units.
 
-##### *"to"*
+#### *"to"*
 
 The end position of the plot band in axis units.
 
-##### *"color"*
+#### *"color"*
 
 The color of the plot band.
 
@@ -5818,31 +5818,31 @@ The border of the title.
  The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -5928,23 +5928,23 @@ The font style of the title.
  The position of the title.
 
 
-##### *"top"*
+#### *"top"*
 
 The axis title is positioned on the top (applicable to vertical axis).
 
-##### *"bottom"*
+#### *"bottom"*
 
 The axis title is positioned on the bottom (applicable to vertical axis).
 
-##### *"left"*
+#### *"left"*
 
 The axis title is positioned on the left (applicable to horizontal axis).
 
-##### *"right"*
+#### *"right"*
 
 "The axis title is positioned on the right (applicable to horizontal axis).
 
-##### *"center"*
+#### *"center"*
 
 "The axis title is positioned in the center.
 
@@ -6003,11 +6003,11 @@ is of type Date. Specify type explicitly when such behavior is undesired.
 
 
 
-##### *"Numeric"*
+#### *"Numeric"*
 
 Generic axis with automatic range.
 
-##### *"Date"*
+#### *"Date"*
 
 Suitable for displaying chronological data.
 
@@ -6043,19 +6043,19 @@ Culture to use for formatting the dates. See [Globalization](http://www.kendoui.
 Date format strings
 
 
-##### *"hours"*
+#### *"hours"*
 
 "HH:mm"
 
-##### *"days"*
+#### *"days"*
 
 "M/d"
 
-##### *"months"*
+#### *"months"*
 
 "MMM 'yy"
 
-##### *"years"*
+#### *"years"*
 
 "yyyy"
 The Chart will choose the appropriate format for the current `baseUnit`.

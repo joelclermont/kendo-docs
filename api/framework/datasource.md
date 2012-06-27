@@ -350,24 +350,24 @@ Available field attrbiutes:
 
 
 
-##### *editable*
+#### *editable*
 
 Determines if this field will be editable (default value is true)
 
-##### *defaultValue*
+#### *defaultValue*
 
 The value which will be used to populate the field when new non-existing model is created.
             Default value is type attrbiute specific i.e. string fields will have empty string as defaultValue
 
-##### *nullable*
+#### *nullable*
 
 Determines if the value set through defaultValue will be used (default value is false)
 
-##### *type*
+#### *type*
 
 The type of the field {Number|String|Boolean|Date}. Default type is string.
 
-##### *validation*
+#### *validation*
 
 A set of validation rules. The built-in KendoUI Validator rules are available as well as custom rules.
 
@@ -441,39 +441,39 @@ Possible values for **operator** include:
 
 
 
-##### *Equal To*
+#### *Equal To*
 
 "eq", "==", "isequalto", "equals", "equalto", "equal"
 
-##### *Not Equal To*
+#### *Not Equal To*
 
 "neq", "!=", "isnotequalto", "notequals", "notequalto", "notequal", "ne"
 
-##### *Less Then*
+#### *Less Then*
 
 "lt", "<", "islessthan", "lessthan", "less"
 
-##### *Less Then or Equal To*
+#### *Less Then or Equal To*
 
 "lte", "<=", "islessthanorequalto", "lessthanequal", "le"
 
-##### *Greater Then*
+#### *Greater Then*
 
 "gt", ">", "isgreaterthan", "greaterthan", "greater"
 
-##### *Greater Then or Equal To*
+#### *Greater Then or Equal To*
 
 "gte", ">=", "isgreaterthanorequalto", "greaterthanequal", "ge"
 
-##### *Starts With*
+#### *Starts With*
 
 "startswith"
 
-##### *Ends With*
+#### *Ends With*
 
 "endswith"
 
-##### *Contains*
+#### *Contains*
 
 "contains"
 
@@ -521,19 +521,19 @@ It is possible to modify these parameters by using the **parameterMap** function
 **serverPaging** must be used in conjunction with the **pageSize** configuration setting. The following options to the server as part of the query string by default:
 
 
-##### *take*
+#### *take*
 
 contains the number of records to retreive
 
-##### *skip*
+#### *skip*
 
 how many records from the front of the dataset to begin reading
 
-##### *page*
+#### *page*
 
 the index of the current page of data
 
-##### *pageSize*
+#### *pageSize*
 
 the number of records per page
 <p>It is possible to modify these parameters by using the **parameterMap** function found on the **transport** object (see **transport** in Configuration).
@@ -858,39 +858,39 @@ Get current filters or filter the data.
 _Supported filter operators/aliases are_:
 
 
-##### *Equal To*
+#### *Equal To*
 
 "eq", "==", "isequalto", "equals", "equalto", "equal"
 
-##### *Not Equal To*
+#### *Not Equal To*
 
 "neq", "!=", "isnotequalto", "notequals", "notequalto", "notequal", "ne"
 
-##### *Less Then*
+#### *Less Then*
 
 "lt", "<", "islessthan", "lessthan", "less"
 
-##### *Less Then or Equal To*
+#### *Less Then or Equal To*
 
 "lte", "<=", "islessthanorequalto", "lessthanequal", "le"
 
-##### *Greater Then*
+#### *Greater Then*
 
 "gt", ">", "isgreaterthan", "greaterthan", "greater"
 
-##### *Greater Then or Equal To*
+#### *Greater Then or Equal To*
 
 "gte", ">=", "isgreaterthanorequalto", "greaterthanequal", "ge"
 
-##### *Starts With*
+#### *Starts With*
 
 "startswith"
 
-##### *Ends With*
+#### *Ends With*
 
 "endswith"
 
-##### *Contains*
+#### *Contains*
 
 "contains", "substringof"
 

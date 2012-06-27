@@ -482,19 +482,19 @@ Template to be used for rendering the rows in the grid.
  Enable/disable grid scrolling. Possible values:
 
 
-##### *true*
+#### *true*
 
 Enables grid vertical scrolling
 
-##### *false*
+#### *false*
 
 Disables grid vertical scrolling
 
-##### *{ virtual: false }*
+#### *{ virtual: false }*
 
 Enables grid vertical scrolling without data virtualization. Same as first option.
 
-##### *{ virtual: true }*
+#### *{ virtual: true }*
 
 Enables grid vertical scrolling with data virtualization.
 
@@ -511,19 +511,19 @@ Enables grid vertical scrolling with data virtualization.
  Indicates whether selection is enabled/disabled. Possible values:
 
 
-##### *"row"*
+#### *"row"*
 
 Single row selection.
 
-##### *"cell"*
+#### *"cell"*
 
 Single cell selection.
 
-##### *"multiple, row"*
+#### *"multiple, row"*
 
 Multiple row selection.
 
-##### *"multiple, cell"*
+#### *"multiple, cell"*
 
 Multiple cell selection.
 
@@ -554,11 +554,11 @@ Defines whether grid columns are sortable.
  Defines sorting mode. Possible values:
 
 
-##### *"single"*
+#### *"single"*
 
 Defines that only once column can be sorted at a time.
 
-##### *"multiple"*
+#### *"multiple"*
 
 Defines that multiple columns can be sorted at a time.
 

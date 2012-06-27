@@ -157,15 +157,15 @@ Specifies ListView item template in edit mode.
  Indicates whether selection is enabled/disabled. Possible values:
 
 
-##### *true*
+#### *true*
 
 Single item selection.
 
-##### *"single"*
+#### *"single"*
 
 Single item selection.
 
-##### *"multiple"*
+#### *"multiple"*
 
 Multiple item selection.
 

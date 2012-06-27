@@ -137,15 +137,15 @@ by setting the **close** animation.  Each animation also has a direction which c
 
 
 
-##### *slideIn*
+#### *slideIn*
 
 Menu content slides in from the top
 
-##### *fadeIn*
+#### *fadeIn*
 
 Menu content fades in
 
-##### *expand*
+#### *expand*
 
 Menu content expands from the top down. Similar to slideIn.
 

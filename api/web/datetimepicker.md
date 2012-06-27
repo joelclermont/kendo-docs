@@ -179,19 +179,19 @@ Specifies the navigation depth of the calendar. The following
 settings are available for the **depth** value:
 
 
-##### *"month"*
+#### *"month"*
 
 shows the days of the month
 
-##### *"year"*
+#### *"year"*
 
 shows the months of the year
 
-##### *"decade"*
+#### *"decade"*
 
 shows the years of the decade
 
-##### *"century"*
+#### *"century"*
 
 shows the decades from the centery
 
@@ -317,19 +317,19 @@ the minimum and maximum values.
 The following settings are available for the **start** value:
 
 
-##### *"month"*
+#### *"month"*
 
 shows the days of the month
 
-##### *"year"*
+#### *"year"*
 
 shows the months of the year
 
-##### *"decade"*
+#### *"decade"*
 
 shows the years of the decade
 
-##### *"century"*
+#### *"century"*
 
 shows the decades from the centery
 

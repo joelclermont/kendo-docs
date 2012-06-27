@@ -134,11 +134,11 @@ To achieve complex layouts, the **Splitter** supports nested layouts.
 Specifies the orientation of the **Splitter**.
 
 
-##### *"horizontal"*
+#### *"horizontal"*
 
 Define horizontal orientation of the splitter.
 
-##### *"vertical"*
+#### *"vertical"*
 
 Define vertical orientation of the splitter.
 

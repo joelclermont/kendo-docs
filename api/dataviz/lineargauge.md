@@ -67,31 +67,31 @@ The color of the border. Any valid CSS color string will work here, including he
 The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -138,31 +138,31 @@ Any valid CSS color string will work here, including hex and rgb.
 The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -197,11 +197,11 @@ Any valid CSS color string will work here, including hex and rgb.
 The shape of the pointer.
 
 
-##### *"barIndicator"*
+#### *"barIndicator"*
 
 Specifies a filling bar indicator.
 
-##### *"arrow"*
+#### *"arrow"*
 
 Specifies a arrow shape.
 
@@ -227,31 +227,31 @@ The color of the border. Any valid CSS color string will work here, including he
 The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -305,31 +305,31 @@ The color of the border. Any valid CSS color string will work here, including he
 The dash type of the border.
 
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -473,15 +473,15 @@ The ranges of the scale.
 The range fields:
 
 
-##### *"from"*
+#### *"from"*
 
 The start position of the range in scale units.
 
-##### *"to"*
+#### *"to"*
 
 The end position of the range in scale units.
 
-##### *"color"*
+#### *"color"*
 
 The color of the range.
 Any valid CSS color string will work here, including hex and rgb.

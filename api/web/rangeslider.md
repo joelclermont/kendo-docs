@@ -45,21 +45,21 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
 Denotes the location of the tick marks in the **RangeSlider**. The available options are:
 
 
-##### *"topLeft"*
+#### *"topLeft"*
 
 Tick marks are located on the top of the horizontal widget or on the left of
   the vertical widget.
 
-##### *"bottomRight"*
+#### *"bottomRight"*
 
 Tick marks are located on the bottom of the horizontal widget or on the
   right side of the vertical widget.
 
-##### *"both"*
+#### *"both"*
 
 Tick marks are located on both sides of the widget.
 
-##### *"none"*
+#### *"none"*
 
 Tick marks are not visible.
 
