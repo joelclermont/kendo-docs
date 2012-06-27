@@ -480,34 +480,23 @@ Template to be used for rendering the rows in the grid.
 ### scrollable `Boolean | Object`*(default: true)*
 
  Enable/disable grid scrolling. Possible values:
-<div class="details-list">
-   <dl>
-        <dt>
-             **true**
-        </dt>
-        <dd>
-             Enables grid vertical scrolling
-        </dd>
-        <dt>
-             **false**
-        </dt>
-        <dd>
-             Disables grid vertical scrolling
-        </dd>
-        <dt>
-             **{ virtual: false }**
-        </dt>
-        <dd>
-             Enables grid vertical scrolling without data virtualization. Same as first option.
-        </dd>
-        <dt>
-             **{ virtual: true }**
-        </dt>
-        <dd>
-             Enables grid vertical scrolling with data virtualization.
-        </dd>
-   </dl>
-</div>
+
+
+##### *true*
+
+Enables grid vertical scrolling
+
+##### *false*
+
+Disables grid vertical scrolling
+
+##### *{ virtual: false }*
+
+Enables grid vertical scrolling without data virtualization. Same as first option.
+
+##### *{ virtual: true }*
+
+Enables grid vertical scrolling with data virtualization.
 
 #### Example
 

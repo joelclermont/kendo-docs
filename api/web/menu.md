@@ -135,16 +135,19 @@ A collection of **Animation** objects, used to change default animations. A valu
 Available animations for the **Menu** are listed below.  Each animation has a reverse options which is used for the **close** effect by default, but can be over-ridden
 by setting the **close** animation.  Each animation also has a direction which can be set off the animation (i.e. **slideIn:Down**).
 
-<div class="details-list">
-<dl>
-    <dt>**slideIn**</dt>
-    <dd>Menu content slides in from the top</dd>
-    <dt>**fadeIn**</dt>
-    <dd>Menu content fades in</dd>
-    <dt>**expand**</dt>
-    <dd>Menu content expands from the top down. Similar to slideIn.</dd>
-</dl>
-</div>
+
+
+##### *slideIn*
+
+Menu content slides in from the top
+
+##### *fadeIn*
+
+Menu content fades in
+
+##### *expand*
+
+Menu content expands from the top down. Similar to slideIn.
 
 #### Example
 

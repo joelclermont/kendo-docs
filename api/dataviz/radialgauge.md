@@ -65,52 +65,35 @@ The color of the border. Any valid CSS color string will work here, including he
 ### gaugeArea.border.dashType `String`*(default: "solid")*
 
 The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### gaugeArea.border.width `Number`*(default: 0)*
 

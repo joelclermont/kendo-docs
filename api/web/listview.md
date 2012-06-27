@@ -155,28 +155,19 @@ Specifies ListView item template in edit mode.
 ### selectable `String`*(default: false)*
 
  Indicates whether selection is enabled/disabled. Possible values:
-<div class="details-list">
-   <dl>
-        <dt>
-             **true**
-        </dt>
-        <dd>
-             Single item selection.
-        </dd>
-        <dt>
-             **"single"**
-        </dt>
-        <dd>
-             Single item selection.
-        </dd>
-        <dt>
-             **"multiple"**
-        </dt>
-        <dd>
-             Multiple item selection.
-        </dd>
-   </dl>
-</div>
+
+
+##### *true*
+
+Single item selection.
+
+##### *"single"*
+
+Single item selection.
+
+##### *"multiple"*
+
+Multiple item selection.
 
 ### template `Function`
 

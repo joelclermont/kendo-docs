@@ -132,14 +132,15 @@ To achieve complex layouts, the **Splitter** supports nested layouts.
 ### orientation `String`*(default: horizontal)*
 
 Specifies the orientation of the **Splitter**.
-<div class="details-list">
- <dl>
-  <dt>"horizontal"</dt>
-  <dd>Define horizontal orientation of the splitter.</dd>
-  <dt>"vertical"</dt>
-  <dd>Define vertical orientation of the splitter.</dd>
- </dl>
-</div>
+
+
+##### *"horizontal"*
+
+Define horizontal orientation of the splitter.
+
+##### *"vertical"*
+
+Define vertical orientation of the splitter.
 
 ### panes `Array`
 

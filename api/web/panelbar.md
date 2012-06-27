@@ -298,14 +298,15 @@ A whitespace-delimited string of animation effects that are used when an item is
 
 Specifies how the **PanelBar** items are displayed when opened and closed. The following values
 are available:
-<div class="details-list">
- <dl>
-  <dt>"single"</dt>
-  <dd>Display one item at a time when an item is opened; opening an item will close the previously opened item.</dd>
-  <dt>"multiple"</dt>
-  <dd>Display multiple values at one time; opening an item has no visual impact on any other items in the **PanelBar**.</dd>
- </dl>
-</div>
+
+
+##### *"single"*
+
+Display one item at a time when an item is opened; opening an item will close the previously opened item.
+
+##### *"multiple"*
+
+Display multiple values at one time; opening an item has no visual impact on any other items in the **PanelBar**.
 
 #### Example
 

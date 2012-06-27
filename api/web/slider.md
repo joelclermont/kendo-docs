@@ -135,36 +135,25 @@ The small step value of the **Slider**. The underlying value will be changed whe
 ### tickPlacement `String`*(default: "both")*
 
 Denotes the location of the tick marks in the **Slider**. The available options are:
-<div class="details-list">
-   <dl>
-        <dt>
-             `"topLeft"`
-        </dt>
-        <dd>
-             Tick marks are located on the top of the horizontal widget or on the left of
+
+
+##### *"topLeft"*
+
+Tick marks are located on the top of the horizontal widget or on the left of
   the vertical widget.
-        </dd>
-        <dt>
-             `"bottomRight"`
-        </dt>
-        <dd>
-            Tick marks are located on the bottom of the horizontal widget or on the
+
+##### *"bottomRight"*
+
+Tick marks are located on the bottom of the horizontal widget or on the
   right side of the vertical widget.
-        </dd>
-        <dt>
-             `"both"`
-        </dt>
-        <dd>
-            Tick marks are located on both sides of the widget.
-        </dd>
-        <dt>
-             `"none"`
-        </dt>
-        <dd>
-            Tick marks are not visible.
-        </dd>
-   </dl>
-</div>
+
+##### *"both"*
+
+Tick marks are located on both sides of the widget.
+
+##### *"none"*
+
+Tick marks are not visible.
 
 ### tooltip `Object`
 
