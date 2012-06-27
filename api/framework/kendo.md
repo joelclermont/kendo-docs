@@ -283,7 +283,7 @@ The `Date` or `Number` which should be formatted.
 ##### format `String`
 The format string which should be used to format the value.
 
-### Standard number formats
+#### Standard number formats
 
 ##### *n* - number
     kendo.culture("en-US");
@@ -345,7 +345,7 @@ Defines sections of separate format strings for positive, negative, and zero num
 ##### *"string"|'string'* - literal string
 Indicates literal strings which should be included in the result verbatim.
 
-### Standard date formats
+#### Standard date formats
 ##### *d* - short date pattern
     kendo.toString(new Date(2000, 10, 6), "d"); // 11/6/2000
 
@@ -370,7 +370,7 @@ Indicates literal strings which should be included in the result verbatim.
 ##### *y|Y* - month/year pattern
     kendo.toString(new Date(2000, 10, 6), "y"); // November, 2000
 
-### Custom date formats
+#### Custom date formats
 Custom date formats can be created by using one or more custom date specifiers.
 
 ##### *d* - the day of the month, from 1 to 31
