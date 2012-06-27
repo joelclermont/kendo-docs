@@ -33,9 +33,3 @@ Each axis instance contains the following fields:
 *   **client** - the offset of the mouse/touch relative to the viewport (clientX/Y);
 *   **delta** - the change from the previous event location
 *   **velocity** - the pixels per millisecond speed of the current move.
-
-## Configuration
-
-## Methods
-
-## Events

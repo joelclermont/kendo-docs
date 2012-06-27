@@ -82,7 +82,3 @@ The swipe event criteria (minimum horizontal distance, maximum vertical deviatio
 ### surface `jQuery`
 
 By default, swipe events are tracked only within the element boundries. If a surface is specified, the swipe events are extended to the provided surface. This is useful if  the swipe targets are small (or narrow).
-
-## Methods
-
-## Events

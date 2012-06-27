@@ -342,6 +342,7 @@ Fires when item is tapped.
 #### Accessing dataItem in event
 
     <ul id="foo"></ul>
+    
     <script>
      $("#foo").kendoMobileListView({
         dataSource: new kendo.data.DataSource({

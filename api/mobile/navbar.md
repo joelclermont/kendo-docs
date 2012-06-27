@@ -77,8 +77,6 @@ Different platforms can be styled separately with their respective root classes.
     </style>
     <div data-role="navbar" class="checkout">My View Title</div>
 
-## Configuration
-
 ## Methods
 
 ### title
@@ -100,5 +98,3 @@ Update the title element text. The title element is specified by setting the `ro
 ##### value `String`
 
 The text of title
-
-## Events

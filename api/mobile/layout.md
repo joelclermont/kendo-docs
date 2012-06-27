@@ -80,8 +80,6 @@ Each mobile Layout instance exposes the following fields:
  The specific platform this layout targets. By default, layouts are displayed
 on all platforms.
 
-## Methods
-
 ## Events
 
 ### hide

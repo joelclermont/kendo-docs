@@ -77,8 +77,6 @@ Provides a way for customization of the drag indicator. If a function is supplie
          hint: $("#draggableHint");
      });
 
-## Methods
-
 ## Events
 
 ### drag

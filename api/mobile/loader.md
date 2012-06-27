@@ -10,8 +10,6 @@ publish: true
 
 
 
-## Configuration
-
 ## Methods
 
 ### hide
@@ -29,5 +27,3 @@ Show the loading animation.
 #### Example
 
     
-
-## Events

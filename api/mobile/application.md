@@ -346,5 +346,3 @@ Get a reference to the current view.
 #### Returns
 
 `View` the view instance.
-
-## Events

@@ -242,7 +242,7 @@ The border of the labels.
 <div class="details-list">
     <dl>
         <dt>
-             `solid`
+             `"solid"`
         </dt>
         <dd>
              Specifies a solid line.
@@ -2235,6 +2235,10 @@ The color of the border.
 
 The series base color.
 
+### series.type="bar".colorField `String`
+
+The data field containing the bar color.
+
 ### series.type="bar".gap `Number`*(default: 1.5)*
 
  The distance between category clusters.
@@ -2461,13 +2465,13 @@ The effects overlay.
 
  Space between bars.
 
-### series.type="bar".stack `String`
-
-Indicates that the series should be stacked in a group with the specified name.
-
 ### series.type="bar".stack `Boolean`*(default: false)*
 
 A value indicating if the series should be stacked.
+
+### series.type="bar".stack `String`
+
+Indicates that the series should be stacked in a group with the specified name.
 
 ### series.type="bar".tooltip `Object`
 

@@ -6,8 +6,6 @@ publish: true
 
 # kendo.ui
 
-## Configuration
-
 ## Methods
 
 ### plugin
@@ -52,5 +50,3 @@ The container that will hold the overlay
 ##### toggle `Boolean`
 
 Whether the overlay should be shown or hidden
-
-## Events

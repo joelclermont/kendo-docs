@@ -102,9 +102,3 @@ by setting data-style="vertical" on your SplitView.
         </div>
       </div>
     </div>
-
-## Configuration
-
-## Methods
-
-## Events

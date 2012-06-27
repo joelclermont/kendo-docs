@@ -274,7 +274,7 @@ it will return the current content of the (Kendo UI) Window.
 
 ### destroy
 
-Destroys the window and its modal overlay, if necessary. Useful for removing modal windows.
+Destroys the window and its modal overlay, if necessary. Removes the Window HTML elements from the DOM.
 
 ### maximize
 
@@ -531,6 +531,7 @@ Triggered when a Window has been moved by a user.
     var onDragEnd = function(e) {
         // ...
     };
+    
     // attach dragEnd event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         dragend: onDragEnd
@@ -680,5 +681,6 @@ Triggered when a Window has been resized by a user.
     
     // attach resize event handler via bind()
     $("#window").data("kendoWindow").bind("resize", onResize);
+    
     // detach resize event handler via unbind()
     $("#window").data("kendoWindow").unbind("resize", onResize);

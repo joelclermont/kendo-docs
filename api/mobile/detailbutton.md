@@ -22,10 +22,6 @@ The DetailButton widget navigates to a mobile View when pressed.
 
     var button = $("#button").kendoMobileDetailButton();
 
-## Configuration
-
-## Methods
-
 ## Events
 
 ### click

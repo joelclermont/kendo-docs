@@ -22,10 +22,6 @@ The mobile BackButton widget navigates to the previously visited mobile View whe
 
     var button = $("#button").kendoMobileBackButton();
 
-## Configuration
-
-## Methods
-
 ## Events
 
 ### click

@@ -122,8 +122,6 @@ only few graphic editors, so **better stick with PNG24**). The image color is no
 
     var button = $("#button").kendoMobileButton({ icon: "stop" });
 
-## Methods
-
 ## Events
 
 ### click

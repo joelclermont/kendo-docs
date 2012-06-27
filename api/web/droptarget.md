@@ -12,8 +12,6 @@ publish: true
 
  Used to group sets of draggable and drop targets. A draggable with the same group value as a drop target will be accepted by the drop target.
 
-## Methods
-
 ## Events
 
 ### dragenter

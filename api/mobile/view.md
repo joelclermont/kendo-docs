@@ -92,8 +92,6 @@ Useful if the view contains an image or a map.
 
  The text to display in the navbar title (if present) and the browser title.
 
-## Methods
-
 ## Events
 
 ### beforeShow

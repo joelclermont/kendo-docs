@@ -628,5 +628,3 @@ Change the value of the gauge.
 
     var gauge = $("#linear-gauge").data("kendoLinearGauge");
     gauge.redraw();
-
-## Events
