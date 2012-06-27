@@ -224,5 +224,3 @@ Input element to be validated.
 #### Returns
 
 `Boolean` If all rules are passed successfully.
-
-## Events
