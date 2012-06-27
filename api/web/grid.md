@@ -509,34 +509,23 @@ Enables grid vertical scrolling with data virtualization.
 ### selectable `String`*(default: undefined)*
 
  Indicates whether selection is enabled/disabled. Possible values:
-<div class="details-list">
-   <dl>
-        <dt>
-             **"row"**
-        </dt>
-        <dd>
-             Single row selection.
-        </dd>
-        <dt>
-             **"cell"**
-        </dt>
-        <dd>
-             Single cell selection.
-        </dd>
-        <dt>
-             **"multiple, row"**
-        </dt>
-        <dd>
-             Multiple row selection.
-        </dd>
-        <dt>
-             **"multiple, cell"**
-        </dt>
-        <dd>
-             Multiple cell selection.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"row"*
+
+Single row selection.
+
+##### *"cell"*
+
+Single cell selection.
+
+##### *"multiple, row"*
+
+Multiple row selection.
+
+##### *"multiple, cell"*
+
+Multiple cell selection.
 
 ### sortable `Object`
 
@@ -563,22 +552,15 @@ Defines whether grid columns are sortable.
 ### sortable.mode `String`*(default: "single")*
 
  Defines sorting mode. Possible values:
-<div class="details-list">
-   <dl>
-        <dt>
-             **"single"**
-        </dt>
-        <dd>
-            Defines that only once column can be sorted at a time.
-        </dd>
-        <dt>
-             **"multiple"**
-        </dt>
-        <dd>
-             Defines that multiple columns can be sorted at a time.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"single"*
+
+Defines that only once column can be sorted at a time.
+
+##### *"multiple"*
+
+Defines that multiple columns can be sorted at a time.
 
 ### toolbar `Array`
 

@@ -469,52 +469,35 @@ Configures the axis line. This will also effect major and minor ticks, but not g
 ### categoryAxis.line.dashType `String`*(default: "solid")*
 
  The dash type of the line.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### categoryAxis.line.visible `Boolean`*(default: true)*
 
@@ -563,52 +546,35 @@ body of the chart.
 ### categoryAxis.majorGridLines.dashType `String`*(default: "solid")*
 
  The dash type of the grid lines.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### categoryAxis.majorGridLines.visible `Boolean`*(default: false)*
 
@@ -679,52 +645,35 @@ grid lines is not set to **true**.
 ### categoryAxis.minorGridLines.dashType `String`*(default: "solid")*
 
  The dash type of the grid lines.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### categoryAxis.minorGridLines.visible `Boolean`*(default: false)*
 
@@ -758,28 +707,19 @@ on the chart.
 
 The plot bands of category axis.
 The plot band fields:
-<div class="details-list">
-   <dl>
-        <dt>
-             `"from"`
-        </dt>
-        <dd>
-             The start position of the plot band.
-        </dd>
-        <dt>
-             `"to"`
-        </dt>
-        <dd>
-             The end position of the plot band.
-        </dd>
-        <dt>
-             `"color"`
-        </dt>
-        <dd>
-             The color of the plot band.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"from"*
+
+The start position of the plot band.
+
+##### *"to"*
+
+The end position of the plot band.
+
+##### *"color"*
+
+The color of the plot band.
 
 #### Example
 
@@ -855,52 +795,35 @@ hex and rgb.
 ### categoryAxis.title.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 #### Example
 
@@ -960,40 +883,27 @@ The font style of the title.
 ### categoryAxis.title.position `String`*(default: "center")*
 
  The position of the title.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"top"`
-        </dt>
-        <dd>
-             The axis title is positioned on the top (applicable to vertical axis)
-        </dd>
-        <dt>
-             `"bottom"`
-        </dt>
-        <dd>
-             The axis title is positioned on the bottom (applicable to vertical axis)
-        </dd>
-        <dt>
-             `"left"`
-        </dt>
-        <dd>
-             The axis title is positioned on the left (applicable to horizontal axis)
-        </dd>
-        <dt>
-             `"right"`
-        </dt>
-        <dd>
-             The axis title is positioned on the right (applicable to horizontal axis)
-        </dd>
-        <dt>
-             `"center"`
-        </dt>
-        <dd>
-             The axis title is positioned in the center
-        </dd>
-   </dl>
-</div>
+
+
+##### *"top"*
+
+The axis title is positioned on the top (applicable to vertical axis)
+
+##### *"bottom"*
+
+The axis title is positioned on the bottom (applicable to vertical axis)
+
+##### *"left"*
+
+The axis title is positioned on the left (applicable to horizontal axis)
+
+##### *"right"*
+
+The axis title is positioned on the right (applicable to horizontal axis)
+
+##### *"center"*
+
+The axis title is positioned in the center
 
 ### categoryAxis.title.rotation `Number`*(default: 0)*
 
@@ -1034,22 +944,15 @@ The text of the title.
 ### categoryAxis.type `String`*(default: "Category")*
 
  The axis type.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"Category"`
-        </dt>
-        <dd>
-             Discrete category axis.
-        </dd>
-        <dt>
-             `"Date"`
-        </dt>
-        <dd>
-             Specialized axis for displaying chronological data.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"Category"*
+
+Discrete category axis.
+
+##### *"Date"*
+
+Specialized axis for displaying chronological data.
 
 ### categoryAxis.type: "Date" 
 
@@ -1084,34 +987,23 @@ Culture to use for formatting the dates. See [Globalization](http://www.kendoui.
 ### categoryAxis.type: "Date".labels.dateFormats `Object`
 
 Date format strings
-<div class="details-list">
-   <dl>
-        <dt>
-             `"hours"`
-        </dt>
-        <dd>
-             "HH:mm"
-        </dd>
-        <dt>
-             `"days"`
-        </dt>
-        <dd>
-             "M/d"
-        </dd>
-        <dt>
-             `"months"`
-        </dt>
-        <dd>
-             "MMM 'yy"
-        </dd>
-        <dt>
-             `"years"`
-        </dt>
-        <dd>
-             "yyyy"
-        </dd>
-   </dl>
-</div>
+
+
+##### *"hours"*
+
+"HH:mm"
+
+##### *"days"*
+
+"M/d"
+
+##### *"months"*
+
+"MMM 'yy"
+
+##### *"years"*
+
+"yyyy"
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 
@@ -1153,52 +1045,35 @@ The border of the chart area.
 ### chartArea.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### chartArea.border.width `Number`*(default: 0)*
 
@@ -1318,52 +1193,35 @@ The border of the legend.
 ### legend.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 #### Example
 
@@ -1468,40 +1326,27 @@ upwards from the current position.
 ### legend.position `String`*(default: right)*
 
  The positions of the legend.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"top"`
-        </dt>
-        <dd>
-             The legend is positioned on the top.
-        </dd>
-        <dt>
-             `"bottom"`
-        </dt>
-        <dd>
-             The legend is positioned on the bottom.
-        </dd>
-        <dt>
-             `"left"`
-        </dt>
-        <dd>
-             The legend is positioned on the left.
-        </dd>
-        <dt>
-             `"right"`
-        </dt>
-        <dd>
-             The legend is positioned on the right.
-        </dd>
-        <dt>
-             `"custom"`
-        </dt>
-        <dd>
-             The legend is positioned using OffsetX and OffsetY.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"top"*
+
+The legend is positioned on the top.
+
+##### *"bottom"*
+
+The legend is positioned on the bottom.
+
+##### *"left"*
+
+The legend is positioned on the left.
+
+##### *"right"*
+
+The legend is positioned on the right.
+
+##### *"custom"*
+
+The legend is positioned using OffsetX and OffsetY.
 
 ### legend.visible `Boolean`*(default: true)*
 
@@ -1536,52 +1381,35 @@ The border of the plot area.
 ### plotArea.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### plotArea.border.width `Number`*(default: 0)*
 
@@ -1672,46 +1500,31 @@ Available options for area series:
  Aggregate function for date series.
 This function is used when a category (an year, month, etc.) contains two or more points.
 The function return value is displayed instead of the individual points.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"max"`
-        </dt>
-        <dd>
-             The highest value for the date period.
-        </dd>
-        <dt>
-             `"min"`
-        </dt>
-        <dd>
-             The lowest value for the date period.
-        </dd>
-        <dt>
-             `"sum"`
-        </dt>
-        <dd>
-             The sum of all values for the date period.
-        </dd>
-        <dt>
-             `"count"`
-        </dt>
-        <dd>
-             The number of values for the date period.
-        </dd>
-        <dt>
-             `"avg"`
-        </dt>
-        <dd>
-             The average of all values for the date period.
-        </dd>
-        <dt>
-             `function (values, series)`
-        </dt>
-        <dd>
-             User-defined aggregate function.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"max"*
+
+The highest value for the date period.
+
+##### *"min"*
+
+The lowest value for the date period.
+
+##### *"sum"*
+
+The sum of all values for the date period.
+
+##### *"count"*
+
+The number of values for the date period.
+
+##### *"avg"*
+
+The average of all values for the date period.
+
+##### *function (values, series)*
+
+User-defined aggregate function.
 
 ### series.type="area".color `String`
 
@@ -1736,52 +1549,35 @@ The border of the labels.
 ### series.type="area".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="area".labels.border.width `Number`*(default: 0)*
 
@@ -1833,34 +1629,23 @@ The margin of the labels.
 ### series.type="area".labels.position `String`*(default: "above")*
 
 Defines the position of the area labels.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"above"`
-        </dt>
-        <dd>
-             The label is positioned at the top of the area chart marker.
-        </dd>
-        <dt>
-             `"right"`
-        </dt>
-        <dd>
-             The label is positioned at the right of the area chart marker.
-        </dd>
-        <dt>
-             `"below"`
-        </dt>
-        <dd>
-             The label is positioned at the bottom of the area chart marker.
-        </dd>
-        <dt>
-             `"left"`
-        </dt>
-        <dd>
-             The label is positioned at the left of the area chart marker.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"above"*
+
+The label is positioned at the top of the area chart marker.
+
+##### *"right"*
+
+The label is positioned at the right of the area chart marker.
+
+##### *"below"*
+
+The label is positioned at the bottom of the area chart marker.
+
+##### *"left"*
+
+The label is positioned at the left of the area chart marker.
 
 ### series.type="area".labels.template `String/Function`
 
@@ -1945,28 +1730,19 @@ The border of the markers.
 ### series.type="area".markers.type `String`*(default: "circle")*
 
 Configures the markers shape type.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"square"`
-        </dt>
-        <dd>
-             The marker shape is square.
-        </dd>
-        <dt>
-             `"triangle"`
-        </dt>
-        <dd>
-             The marker shape is triangle.
-        </dd>
-        <dt>
-             `"circle"`
-        </dt>
-        <dd>
-             The marker shape is circle.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"square"*
+
+The marker shape is square.
+
+##### *"triangle"*
+
+The marker shape is triangle.
+
+##### *"circle"*
+
+The marker shape is circle.
 
 ### series.type="area".markers.visible `Boolean`*(default: false)*
 
@@ -1975,28 +1751,19 @@ Configures the markers shape type.
 ### series.type="area".missingValues `String`*(default: "gap")*
 
 Configures the behavior for handling missing values in area series.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"interpolate"`
-        </dt>
-        <dd>
-             The value is interpolated from neighboring points.
-        </dd>
-        <dt>
-             `"zero"`
-        </dt>
-        <dd>
-             The value is assumed to be zero.
-        </dd>
-        <dt>
-             `"gap"`
-        </dt>
-        <dd>
-             The line stops before the missing point and continues after it.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"interpolate"*
+
+The value is interpolated from neighboring points.
+
+##### *"zero"*
+
+The value is assumed to be zero.
+
+##### *"gap"*
+
+The line stops before the missing point and continues after it.
 
 ### series.type="area".name `String`
 
@@ -2107,46 +1874,31 @@ Available options for bar series:
  Aggregate function for date series.
 This function is used when a category (an year, month, etc.) contains two or more points.
 The function return value is displayed instead of the individual points.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"max"`
-        </dt>
-        <dd>
-             The highest value for the date period.
-        </dd>
-        <dt>
-             `"min"`
-        </dt>
-        <dd>
-             The lowest value for the date period.
-        </dd>
-        <dt>
-             `"sum"`
-        </dt>
-        <dd>
-             The sum of all values for the date period.
-        </dd>
-        <dt>
-             `"count"`
-        </dt>
-        <dd>
-             The number of values for the date period.
-        </dd>
-        <dt>
-             `"avg"`
-        </dt>
-        <dd>
-             The average of all values for the date period.
-        </dd>
-        <dt>
-             `function (values, series)`
-        </dt>
-        <dd>
-             User-defined aggregate function.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"max"*
+
+The highest value for the date period.
+
+##### *"min"*
+
+The lowest value for the date period.
+
+##### *"sum"*
+
+The sum of all values for the date period.
+
+##### *"count"*
+
+The number of values for the date period.
+
+##### *"avg"*
+
+The average of all values for the date period.
+
+##### *function (values, series)*
+
+User-defined aggregate function.
 
 ### series.type="bar".axis `String`*(default: primary)*
 
@@ -2163,52 +1915,35 @@ The color of the border.
 ### series.type="bar".border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="bar".border.width `Number`*(default: 1)*
 
@@ -2245,52 +1980,35 @@ The border of the labels.
 ### series.type="bar".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="bar".labels.border.width `Number`*(default: 0)*
 
@@ -2342,35 +2060,24 @@ The format of the labels.
 ### series.type="bar".labels.position `String`*(default: "outsideEnd")*
 
 Defines the position of the bar labels.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"center"`
-        </dt>
-        <dd>
-             The label is positioned at the bar center.
-        </dd>
-        <dt>
-             `"insideEnd"`
-        </dt>
-        <dd>
-             The label is positioned inside, near the end of the bar.
-        </dd>
-        <dt>
-             `"insideBase"`
-        </dt>
-        <dd>
-             The label is positioned inside, near the base of the bar.
-        </dd>
-        <dt>
-             `"outsideEnd"`
-        </dt>
-        <dd>
-             The label is positioned outside, near the end of the bar.
+
+
+##### *"center"*
+
+The label is positioned at the bar center.
+
+##### *"insideEnd"*
+
+The label is positioned inside, near the end of the bar.
+
+##### *"insideBase"*
+
+The label is positioned inside, near the base of the bar.
+
+##### *"outsideEnd"*
+
+The label is positioned outside, near the end of the bar.
              Not applicable for stacked bar series.
-        </dd>
-   </dl>
-</div>
 
 ### series.type="bar".labels.template `String/Function`
 
@@ -2427,22 +2134,15 @@ The effects overlay.
 ### series.type="bar".overlay.gradient `String`*(default: "glass")*
 
  The gradient name.
-<div class="details-list">
-   <dl>
-        <dt>
-             "glass"
-        </dt>
-        <dd>
-             The bars have glass effect overlay.
-        </dd>
-        <dt>
-             "none"
-        </dt>
-        <dd>
-             The bars have no effect overlay.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"glass"*
+
+The bars have glass effect overlay.
+
+##### *"none"*
+
+The bars have no effect overlay.
 
 ### series.type="bar".spacing `Number`*(default: 0.4)*
 
@@ -2607,52 +2307,35 @@ The border of the labels.
 ### series.type="bubble".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="bubble".labels.border.width `Number`*(default: 0)*
 
@@ -2704,34 +2387,23 @@ The margin of the labels.
 ### series.type="bubble".labels.position `String`*(default: "above")*
 
 Defines the position of the bubble labels.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"above"`
-        </dt>
-        <dd>
-             The label is positioned at the top of the bubble chart marker.
-        </dd>
-        <dt>
-             `"right"`
-        </dt>
-        <dd>
-             The label is positioned at the right of the bubble chart marker.
-        </dd>
-        <dt>
-             `"below"`
-        </dt>
-        <dd>
-             The label is positioned at the bottom of the bubble chart marker.
-        </dd>
-        <dt>
-             `"left"`
-        </dt>
-        <dd>
-             The label is positioned at the left of the bubble chart marker.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"above"*
+
+The label is positioned at the top of the bubble chart marker.
+
+##### *"right"*
+
+The label is positioned at the right of the bubble chart marker.
+
+##### *"below"*
+
+The label is positioned at the bottom of the bubble chart marker.
+
+##### *"left"*
+
+The label is positioned at the left of the bubble chart marker.
 
 ### series.type="bubble".labels.template `String/Function`
 
@@ -2938,52 +2610,35 @@ The color of the border.
 ### series.type="donut".border.dashType `String`*(default: solid)*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="donut".border.width `Number`*(default: 1)*
 
@@ -3018,40 +2673,27 @@ The padding between the connector line and the label, and connector line and don
 Array of data items (optional).
 The donut chart can be bound to an array of numbers or an array of objects
 with the following fields:
-<div class="details-list">
-   <dl>
-        <dt>
-             `"value"`
-        </dt>
-        <dd>
-             The sector value.
-        </dd>
-        <dt>
-             `"category"`
-        </dt>
-        <dd>
-             The sector category that is shown in the legend.
-        </dd>
-        <dt>
-             `"color"`
-        </dt>
-        <dd>
-             The sector color.
-        </dd>
-        <dt>
-             `"explode"`
-        </dt>
-        <dd>
-             A boolean value indicating whether to explode the sector(available only for the last level of the series).
-        </dd>
-        <dt>
-             `"visibleInLegend"`
-        </dt>
-        <dd>
-             A boolean value indicating whether to show the sector in the legend.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"value"*
+
+The sector value.
+
+##### *"category"*
+
+The sector category that is shown in the legend.
+
+##### *"color"*
+
+The sector color.
+
+##### *"explode"*
+
+A boolean value indicating whether to explode the sector(available only for the last level of the series).
+
+##### *"visibleInLegend"*
+
+A boolean value indicating whether to show the sector in the legend.
  
 
 #### Example
@@ -3087,22 +2729,15 @@ Configures the series data labels.
 ### series.type="donut".labels.align `String`*(default: "circle")*
 
 Defines the alignment of the donut labels.
-<div class="details-list">
-   <dl>
-        <dt>
-            `"circle"`
-        </dt>
-        <dd>
-             The labels are positioned in circle around the donut chart.
-        </dd>
-        <dt>
-            `"column"`
-        </dt>
-        <dd>
-             The labels are positioned in columns to the left and right of the donut chart.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"circle"*
+
+The labels are positioned in circle around the donut chart.
+
+##### *"column"*
+
+The labels are positioned in columns to the left and right of the donut chart.
 
 ### series.type="donut".labels.background `String`
 
@@ -3119,52 +2754,35 @@ The border of the labels.
 ### series.type="donut".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="donut".labels.border.width `Number`*(default: 0)*
 
@@ -3220,29 +2838,20 @@ The format of the labels.
 ### series.type="donut".labels.position `String`*(default: "center")*
 
 Defines the position of the donut labels.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"center"`
-        </dt>
-        <dd>
-             The labels are positioned at the center of the donut segments.
-        </dd>
-        <dt>
-             `"insideEnd"`
-        </dt>
-        <dd>
-             The labels are positioned inside, near the end of the donut segments.
-        </dd>
-        <dt>
-             `"outsideEnd"`
-        </dt>
-        <dd>
-             The labels are positioned outside, near the end of the donut segments.
+
+
+##### *"center"*
+
+The labels are positioned at the center of the donut segments.
+
+##### *"insideEnd"*
+
+The labels are positioned inside, near the end of the donut segments.
+
+##### *"outsideEnd"*
+
+The labels are positioned outside, near the end of the donut segments.
              The labels and the donut segments are connected with connector line.
-        </dd>
-   </dl>
-</div>
 
 ### series.type="donut".labels.template `String/Function`
 
@@ -3407,46 +3016,31 @@ Available options for line series:
  Aggregate function for date series.
 This function is used when a category (an year, month, etc.) contains two or more points.
 The function return value is displayed instead of the individual points.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"max"`
-        </dt>
-        <dd>
-             The highest value for the date period.
-        </dd>
-        <dt>
-             `"min"`
-        </dt>
-        <dd>
-             The lowest value for the date period.
-        </dd>
-        <dt>
-             `"sum"`
-        </dt>
-        <dd>
-             The sum of all values for the date period.
-        </dd>
-        <dt>
-             `"count"`
-        </dt>
-        <dd>
-             The number of values for the date period.
-        </dd>
-        <dt>
-             `"avg"`
-        </dt>
-        <dd>
-             The average of all values for the date period.
-        </dd>
-        <dt>
-             `function (values, series)`
-        </dt>
-        <dd>
-             User-defined aggregate function.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"max"*
+
+The highest value for the date period.
+
+##### *"min"*
+
+The lowest value for the date period.
+
+##### *"sum"*
+
+The sum of all values for the date period.
+
+##### *"count"*
+
+The number of values for the date period.
+
+##### *"avg"*
+
+The average of all values for the date period.
+
+##### *function (values, series)*
+
+User-defined aggregate function.
 
 ### series.type="line".axis `String`*(default: primary)*
 
@@ -3459,52 +3053,35 @@ The series base color.
 ### series.type="line".dashType `String`*(default: "solid")*
 
  The dash type of the line.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="line".labels `Object`
 
@@ -3525,52 +3102,35 @@ The border of the labels.
 ### series.type="line".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="line".labels.border.width `Number`*(default: 0)*
 
@@ -3622,34 +3182,23 @@ The margin of the labels.
 ### series.type="line".labels.position `String`*(default: "above")*
 
 Defines the position of the line labels.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"above"`
-        </dt>
-        <dd>
-             The label is positioned at the top of the line chart marker.
-        </dd>
-        <dt>
-             `"right"`
-        </dt>
-        <dd>
-             The label is positioned at the right of the line chart marker.
-        </dd>
-        <dt>
-             `"below"`
-        </dt>
-        <dd>
-             The label is positioned at the bottom of the line chart marker.
-        </dd>
-        <dt>
-             `"left"`
-        </dt>
-        <dd>
-             The label is positioned at the left of the line chart marker.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"above"*
+
+The label is positioned at the top of the line chart marker.
+
+##### *"right"*
+
+The label is positioned at the right of the line chart marker.
+
+##### *"below"*
+
+The label is positioned at the bottom of the line chart marker.
+
+##### *"left"*
+
+The label is positioned at the left of the line chart marker.
 
 ### series.type="line".labels.template `String/Function`
 
@@ -3718,28 +3267,19 @@ The border of the markers.
 ### series.type="line".markers.type `String`*(default: "circle")*
 
 Configures the markers shape type.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"square"`
-        </dt>
-        <dd>
-             The marker shape is square.
-        </dd>
-        <dt>
-             `"triangle"`
-        </dt>
-        <dd>
-             The marker shape is triangle.
-        </dd>
-        <dt>
-             `"circle"`
-        </dt>
-        <dd>
-             The marker shape is circle.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"square"*
+
+The marker shape is square.
+
+##### *"triangle"*
+
+The marker shape is triangle.
+
+##### *"circle"*
+
+The marker shape is circle.
 
 ### series.type="line".markers.visible `Boolean`*(default: true)*
 
@@ -3748,28 +3288,19 @@ Configures the markers shape type.
 ### series.type="line".missingValues `String`*(default: "gap")*
 
 Configures the behavior for handling missing values in line series.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"interpolate"`
-        </dt>
-        <dd>
-             The value is interpolated from neighboring points.
-        </dd>
-        <dt>
-             `"zero"`
-        </dt>
-        <dd>
-             The value is assumed to be zero.
-        </dd>
-        <dt>
-             `"gap"`
-        </dt>
-        <dd>
-             The line stops before the missing point and continues after it.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"interpolate"*
+
+The value is interpolated from neighboring points.
+
+##### *"zero"*
+
+The value is assumed to be zero.
+
+##### *"gap"*
+
+The line stops before the missing point and continues after it.
 
 ### series.type="line".name `String`
 
@@ -3890,52 +3421,35 @@ The color of the border.
 ### series.type="pie".border.dashType `String`*(default: solid)*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="pie".border.width `Number`*(default: 1)*
 
@@ -3970,40 +3484,27 @@ The padding between the connector line and the label, and connector line and pie
 Array of data items (optional).
 The pie chart can be bound to an array of numbers or an array of objects
 with the following fields:
-<div class="details-list">
-   <dl>
-        <dt>
-             `"value"`
-        </dt>
-        <dd>
-             The sector value.
-        </dd>
-        <dt>
-             `"category"`
-        </dt>
-        <dd>
-             The sector category that is shown in the legend.
-        </dd>
-        <dt>
-             `"color"`
-        </dt>
-        <dd>
-             The sector color.
-        </dd>
-        <dt>
-             `"explode"`
-        </dt>
-        <dd>
-             A boolean value indicating whether to explode the sector.
-        </dd>
-        <dt>
-             `"visibleInLegend"`
-        </dt>
-        <dd>
-             A boolean value indicating whether to show the sector in the legend.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"value"*
+
+The sector value.
+
+##### *"category"*
+
+The sector category that is shown in the legend.
+
+##### *"color"*
+
+The sector color.
+
+##### *"explode"*
+
+A boolean value indicating whether to explode the sector.
+
+##### *"visibleInLegend"*
+
+A boolean value indicating whether to show the sector in the legend.
  
 
 #### Example
@@ -4035,22 +3536,15 @@ Configures the series data labels.
 ### series.type="pie".labels.align `String`*(default: "circle")*
 
 Defines the alignment of the pie labels.
-<div class="details-list">
-   <dl>
-        <dt>
-            `"circle"`
-        </dt>
-        <dd>
-             The labels are positioned in circle around the pie chart.
-        </dd>
-        <dt>
-            `"column"`
-        </dt>
-        <dd>
-             The labels are positioned in columns to the left and right of the pie chart.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"circle"*
+
+The labels are positioned in circle around the pie chart.
+
+##### *"column"*
+
+The labels are positioned in columns to the left and right of the pie chart.
 
 ### series.type="pie".labels.background `String`
 
@@ -4067,52 +3561,35 @@ The border of the labels.
 ### series.type="pie".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="pie".labels.border.width `Number`*(default: 0)*
 
@@ -4168,29 +3645,20 @@ The format of the labels.
 ### series.type="pie".labels.position `String`*(default: "outsideEnd")*
 
 Defines the position of the pie labels.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"center"`
-        </dt>
-        <dd>
-             The labels are positioned at the center of the pie segments.
-        </dd>
-        <dt>
-             `"insideEnd"`
-        </dt>
-        <dd>
-             The labels are positioned inside, near the end of the pie segments.
-        </dd>
-        <dt>
-             `"outsideEnd"`
-        </dt>
-        <dd>
-             The labels are positioned outside, near the end of the pie segments.
+
+
+##### *"center"*
+
+The labels are positioned at the center of the pie segments.
+
+##### *"insideEnd"*
+
+The labels are positioned inside, near the end of the pie segments.
+
+##### *"outsideEnd"*
+
+The labels are positioned outside, near the end of the pie segments.
              The labels and the pie segments are connected with connector line.
-        </dd>
-   </dl>
-</div>
 
 ### series.type="pie".labels.template `String/Function`
 
@@ -4393,52 +3861,35 @@ The border of the labels.
 ### series.type="scatter".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="scatter".labels.border.width `Number`*(default: 0)*
 
@@ -4490,34 +3941,23 @@ The margin of the labels.
 ### series.type="scatter".labels.position `String`*(default: "above")*
 
 Defines the position of the scatter labels.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"above"`
-        </dt>
-        <dd>
-             The label is positioned at the top of the scatter chart marker.
-        </dd>
-        <dt>
-             `"right"`
-        </dt>
-        <dd>
-             The label is positioned at the right of the scatter chart marker.
-        </dd>
-        <dt>
-             `"below"`
-        </dt>
-        <dd>
-             The label is positioned at the bottom of the scatter chart marker.
-        </dd>
-        <dt>
-             `"left"`
-        </dt>
-        <dd>
-             The label is positioned at the left of the scatter chart marker.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"above"*
+
+The label is positioned at the top of the scatter chart marker.
+
+##### *"right"*
+
+The label is positioned at the right of the scatter chart marker.
+
+##### *"below"*
+
+The label is positioned at the bottom of the scatter chart marker.
+
+##### *"left"*
+
+The label is positioned at the left of the scatter chart marker.
 
 ### series.type="scatter".labels.template `String/Function`
 
@@ -4583,28 +4023,19 @@ The border of the markers.
 ### series.type="scatter".markers.type `String`*(default: "circle")*
 
 Configures the markers shape type.
-<div class="details-list">
-   <dl>
-        <dt>
-            `"square"`
-        </dt>
-        <dd>
-             The marker shape is square.
-        </dd>
-        <dt>
-             `"triangle"`
-        </dt>
-        <dd>
-             The marker shape is triangle.
-        </dd>
-        <dt>
-             `"circle"`
-        </dt>
-        <dd>
-             The marker shape is circle.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"square"*
+
+The marker shape is square.
+
+##### *"triangle"*
+
+The marker shape is triangle.
+
+##### *"circle"*
+
+The marker shape is circle.
 
 ### series.type="scatter".markers.visible `Boolean`*(default: true)*
 
@@ -4722,52 +4153,35 @@ The series base color.
 ### series.type="scatterLine".dashType `String`*(default: "solid")*
 
  The dash type of the line.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="scatterLine".data `Array`
 
@@ -4804,52 +4218,35 @@ The border of the labels.
 ### series.type="scatterLine".labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### series.type="scatterLine".labels.border.width `Number`*(default: 0)*
 
@@ -4901,34 +4298,23 @@ The margin of the labels.
 ### series.type="scatterLine".labels.position `String`*(default: "above")*
 
 Defines the position of the scatter labels.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"above"`
-        </dt>
-        <dd>
-             The label is positioned at the top of the scatter chart marker.
-        </dd>
-        <dt>
-             `"right"`
-        </dt>
-        <dd>
-             The label is positioned at the right of the scatter chart marker.
-        </dd>
-        <dt>
-             `"below"`
-        </dt>
-        <dd>
-             The label is positioned at the bottom of the scatter chart marker.
-        </dd>
-        <dt>
-             `"left"`
-        </dt>
-        <dd>
-             The label is positioned at the left of the scatter chart marker.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"above"*
+
+The label is positioned at the top of the scatter chart marker.
+
+##### *"right"*
+
+The label is positioned at the right of the scatter chart marker.
+
+##### *"below"*
+
+The label is positioned at the bottom of the scatter chart marker.
+
+##### *"left"*
+
+The label is positioned at the left of the scatter chart marker.
 
 ### series.type="scatterLine".labels.template `String/Function`
 
@@ -4994,28 +4380,19 @@ The border of the markers.
 ### series.type="scatterLine".markers.type `String`*(default: "circle")*
 
 Configures the markers shape type.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"square"`
-        </dt>
-        <dd>
-             The marker shape is square.
-        </dd>
-        <dt>
-             `"triangle"`
-        </dt>
-        <dd>
-             The marker shape is triangle.
-        </dd>
-        <dt>
-             `"circle"`
-        </dt>
-        <dd>
-             The marker shape is circle.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"square"*
+
+The marker shape is square.
+
+##### *"triangle"*
+
+The marker shape is triangle.
+
+##### *"circle"*
+
+The marker shape is circle.
 
 ### series.type="scatterLine".markers.visible `Boolean`*(default: true)*
 
@@ -5024,28 +4401,19 @@ Configures the markers shape type.
 ### series.type="scatterLine".missingValues `String`*(default: "gap")*
 
 Configures the behavior for handling missing values in scatter series.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"interpolate"`
-        </dt>
-        <dd>
-             The value is interpolated from neighboring points.
-        </dd>
-        <dt>
-             `"zero"`
-        </dt>
-        <dd>
-             The value is assumed to be zero.
-        </dd>
-        <dt>
-             `"gap"`
-        </dt>
-        <dd>
-             The line stops before the missing point and continues after it.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"interpolate"*
+
+The value is interpolated from neighboring points.
+
+##### *"zero"*
+
+The value is assumed to be zero.
+
+##### *"gap"*
+
+The line stops before the missing point and continues after it.
 
 ### series.type="scatterLine".name `String`
 
@@ -5194,52 +4562,35 @@ The border of the series.
 ### seriesDefaults.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### seriesDefaults.border.width `Number`*(default: 0)*
 
@@ -5299,52 +4650,35 @@ The border of the labels.
 ### seriesDefaults.labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### seriesDefaults.labels.border.width `Number`*(default: 0)*
 
@@ -5613,28 +4947,19 @@ The chart title configuration options.
 ### title.align `String`*(default: "center")*
 
  The alignment of the title.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"left"`
-        </dt>
-        <dd>
-             The text is aligned to the left.
-        </dd>
-        <dt>
-             `"center"`
-        </dt>
-        <dd>
-             The text is aligned to the middle.
-        </dd>
-        <dt>
-             `"right"`
-        </dt>
-        <dd>
-             The text is aligned to the right.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"left"*
+
+The text is aligned to the left.
+
+##### *"center"*
+
+The text is aligned to the middle.
+
+##### *"right"*
+
+The text is aligned to the right.
 
 ### title.background `String`*(default: "white")*
 
@@ -5668,52 +4993,35 @@ The border of the title.
 ### title.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### title.border.width `Number`*(default: 0)*
 
@@ -5772,22 +5080,15 @@ The border of the title.
 ### title.position `String`*(default: "top")*
 
  The position of the title.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"top"`
-        </dt>
-        <dd>
-             The title is positioned on the top.
-        </dd>
-        <dt>
-             `"bottom"`
-        </dt>
-        <dd>
-             The title is positioned on the bottom.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"top"*
+
+The title is positioned on the top.
+
+##### *"bottom"*
+
+The title is positioned on the bottom.
 
 ### title.text `String`
 
@@ -5969,52 +5270,35 @@ hex and rgb.
 ### valueAxis.labels.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### valueAxis.labels.border.width `Number`*(default: 0)*
 
@@ -6204,52 +5488,35 @@ not the grid lines.
 ### valueAxis.line.dashType `String`*(default: "solid")*
 
  The dash type of the line.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### valueAxis.line.visible `Boolean`*(default: true)*
 
@@ -6360,52 +5627,35 @@ Note that this has no effect if the visibility of the minor grid lines is not se
 ### valueAxis.minorGridLines.dashType `String`*(default: "solid")*
 
  The dash type of the minor grid lines.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 body of the chart.  
 
 Note that minor grid lines are not visible by default, therefore none of these settings will take effect without the minor grid
@@ -6479,28 +5729,19 @@ It defaults to 1/5th of the majorUnit.
 
 The plot bands of the value axis.
 The plot band fields:
-<div class="details-list">
-   <dl>
-        <dt>
-             `"from"`
-        </dt>
-        <dd>
-             The start position of the plot band in axis units.
-        </dd>
-        <dt>
-            `"to"`
-        </dt>
-        <dd>
-             The end position of the plot band in axis units.
-        </dd>
-        <dt>
-             `"color"`
-        </dt>
-        <dd>
-             The color of the plot band.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"from"*
+
+The start position of the plot band in axis units.
+
+##### *"to"*
+
+The end position of the plot band in axis units.
+
+##### *"color"*
+
+The color of the plot band.
 
 #### Example
 
@@ -6575,52 +5816,35 @@ The border of the title.
 ### valueAxis.title.border.dashType `String`*(default: "solid")*
 
  The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### valueAxis.title.border.width `Number`*(default: 0)*
 
@@ -6702,40 +5926,27 @@ The font style of the title.
 ### valueAxis.title.position `String`*(default: "center")*
 
  The position of the title.
-<div class="details-list">
-   <dl>
-        <dt>
-             `"top"`
-        </dt>
-        <dd>
-             The axis title is positioned on the top (applicable to vertical axis).
-        </dd>
-        <dt>
-             `"bottom"`
-        </dt>
-        <dd>
-             The axis title is positioned on the bottom (applicable to vertical axis).
-        </dd>
-        <dt>
-             `"left"`
-        </dt>
-        <dd>
-             The axis title is positioned on the left (applicable to horizontal axis).
-        </dd>
-        <dt>
-             `"right"`
-        </dt>
-        <dd>
-             "The axis title is positioned on the right (applicable to horizontal axis).
-        </dd>
-        <dt>
-            `"center"`
-        </dt>
-        <dd>
-             "The axis title is positioned in the center.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"top"*
+
+The axis title is positioned on the top (applicable to vertical axis).
+
+##### *"bottom"*
+
+The axis title is positioned on the bottom (applicable to vertical axis).
+
+##### *"left"*
+
+The axis title is positioned on the left (applicable to horizontal axis).
+
+##### *"right"*
+
+"The axis title is positioned on the right (applicable to horizontal axis).
+
+##### *"center"*
+
+"The axis title is positioned in the center.
 
 ### valueAxis.title.rotation `Number`*(default: 0)*
 
@@ -6790,22 +6001,15 @@ Includes **all valueAxis options** in addition to:
 Note: The Chart will automatically switch to a date axis if the series X value
 is of type Date. Specify type explicitly when such behavior is undesired.
 
-<div class="details-list">
-    <dl>
-        <dt>
-             `"Numeric"`
-        </dt>
-        <dd>
-             Generic axis with automatic range.
-        </dd>
-        <dt>
-             `"Date"`
-        </dt>
-        <dd>
-             Suitable for displaying chronological data.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"Numeric"*
+
+Generic axis with automatic range.
+
+##### *"Date"*
+
+Suitable for displaying chronological data.
 
 ### xAxis.type: "Date" 
 
@@ -6837,34 +6041,23 @@ Culture to use for formatting the dates. See [Globalization](http://www.kendoui.
 ### xAxis.type: "Date".labels.dateFormats `Object`
 
 Date format strings
-<div class="details-list">
-   <dl>
-        <dt>
-             `"hours"`
-        </dt>
-        <dd>
-             "HH:mm"
-        </dd>
-        <dt>
-             `"days"`
-        </dt>
-        <dd>
-             "M/d"
-        </dd>
-        <dt>
-             `"months"`
-        </dt>
-        <dd>
-             "MMM 'yy"
-        </dd>
-        <dt>
-             `"years"`
-        </dt>
-        <dd>
-             "yyyy"
-        </dd>
-   </dl>
-</div>
+
+
+##### *"hours"*
+
+"HH:mm"
+
+##### *"days"*
+
+"M/d"
+
+##### *"months"*
+
+"MMM 'yy"
+
+##### *"years"*
+
+"yyyy"
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 

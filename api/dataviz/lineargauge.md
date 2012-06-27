@@ -136,52 +136,35 @@ Any valid CSS color string will work here, including hex and rgb.
 ### pointer.border.dashType `String`*(default: "solid")*
 
 The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### pointer.border.width `Number`*(default: 1)*
 
@@ -212,22 +195,15 @@ Any valid CSS color string will work here, including hex and rgb.
 ### pointer.shape `String`
 
 The shape of the pointer.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"barIndicator"`
-        </dt>
-        <dd>
-             Specifies a filling bar indicator.
-        </dd>
-        <dt>
-             `"arrow"`
-        </dt>
-        <dd>
-             Specifies a arrow shape.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"barIndicator"*
+
+Specifies a filling bar indicator.
+
+##### *"arrow"*
+
+Specifies a arrow shape.
 
 ### pointer.size `Number`
 
@@ -249,52 +225,35 @@ The color of the border. Any valid CSS color string will work here, including he
 ### pointer.track.border.dashType `String`*(default: "solid")*
 
 The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### pointer.track.border.width `Number`*(default: 1)*
 
@@ -344,52 +303,35 @@ The color of the border. Any valid CSS color string will work here, including he
 ### scale.labels.border.dashType `String`*(default: "solid")*
 
 The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### scale.labels.border.width `Number`*(default: 0)*
 
@@ -529,29 +471,20 @@ If the labels are normally on the left side of the scale, mirroring the scale wi
 
 The ranges of the scale.
 The range fields:
-<div class="details-list">
-   <dl>
-        <dt>
-             `"from"`
-        </dt>
-        <dd>
-             The start position of the range in scale units.
-        </dd>
-        <dt>
-            `"to"`
-        </dt>
-        <dd>
-             The end position of the range in scale units.
-        </dd>
-        <dt>
-             `"color"`
-        </dt>
-        <dd>
-             The color of the range.
+
+
+##### *"from"*
+
+The start position of the range in scale units.
+
+##### *"to"*
+
+The end position of the range in scale units.
+
+##### *"color"*
+
+The color of the range.
 Any valid CSS color string will work here, including hex and rgb.
-        </dd>
-   </dl>
-</div>
 
 #### Example
 

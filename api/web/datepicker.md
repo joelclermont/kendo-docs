@@ -275,34 +275,23 @@ the minimum and maximum values.
 
  Specifies the start view.
 The following settings are available for the **start** value:
-<div class="details-list">
-   <dl>
-        <dt>
-             `"month"`
-        </dt>
-        <dd>
-            shows the days of the month
-        </dd>
-        <dt>
-             `"year"`
-        </dt>
-        <dd>
-             shows the months of the year
-        </dd>
-        <dt>
-             `"decade"`
-        </dt>
-        <dd>
-             shows the years of the decade
-        </dd>
-        <dt>
-             `"century"`
-        </dt>
-        <dd>
-             shows the decades from the centery
-        </dd>
-   </dl>
-</div>
+
+
+##### *"month"*
+
+shows the days of the month
+
+##### *"year"*
+
+shows the months of the year
+
+##### *"decade"*
+
+shows the years of the decade
+
+##### *"century"*
+
+shows the decades from the centery
 
 #### Example
 

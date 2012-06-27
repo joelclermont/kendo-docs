@@ -6,9 +6,14 @@ publish: true
 
 # kendo.data.DataSource
 
+## Description
+
+
+
 The DataSource component is an abstraction for using local (arrays of JavaScript objects) or
 remote (XML, JSON, JSONP) data. It fully supports CRUD (Create, Read, Update, Destroy) data
 operations and provides both local and server-side support for Sorting, Paging, Filtering, Grouping, and Aggregates.
+
 
 ### Getting Started
 
@@ -34,10 +39,10 @@ operations and provides both local and server-side support for Sorting, Paging, 
             read: {
                 // the remote service url
                 url: "http://search.twitter.com/search.json",
-
+    
                 // JSONP is required for cross-domain AJAX
                 dataType: "jsonp",
-
+    
                 // additional parameters sent to the remote service
                 data: {
                     q: "html5"
@@ -52,6 +57,7 @@ operations and provides both local and server-side support for Sorting, Paging, 
     });
 
 ### Binding UI widgets to DataSource
+
 
 Many Kendo UI widgets support data binding, and the Kendo UI DataSource is an ideal
 binding source for both local and remote data. A DataSource can be created in-line
@@ -99,7 +105,7 @@ to enable multiple UI widgets to bind to the same, observable data collection.
             }
         }
     });
-
+    
     // Bind two UI widgets to same DataSource
     $("#chart").kendoChart({
         title: {
@@ -114,7 +120,7 @@ to enable multiple UI widgets to bind to the same, observable data collection.
             field: "employee"
         }
     });
-
+    
     $("#grid").kendoGrid({
         dataSource: sharableDataSource,
             columns: [
@@ -160,7 +166,7 @@ Specifies the local JavaScript object to use for the data source.
 
     // returns only data where orderId is equal to 10248
     filter: { field: "orderId", operator: "eq", value: 10248 }
-
+    
     // returns only data where orderId is equal to 10248 and customerName starts with Paul
     filter: [ { field: "orderId", operator: "eq", value: 10248 },
               { field: "customerName", operator: "startswith", value: "Paul" } ]
@@ -173,7 +179,7 @@ Specifies the local JavaScript object to use for the data source.
 
     // groups data by orderId field
     group: { field: "orderId" }
-
+    
     // groups data by orderId and customerName fields
     group: [ { field: "orderId", dir: "desc" }, { field: "customerName", dir: "asc" } ]
 
@@ -342,21 +348,28 @@ Describes the model fields and their properties
 
 Available field attrbiutes:
 
-<div class="details-list">
-    <dl>
-        <dt>**editable**</dt>
-        <dd>Determines if this field will be editable (default value is true)</dd>
-        <dt>**defaultValue**</dt>
-        <dd>The value which will be used to populate the field when new non-existing model is created.
-            Default value is type attrbiute specific i.e. string fields will have empty string as defaultValue</dd>
-        <dt>**nullable**</dt>
-        <dd>Determines if the value set through defaultValue will be used (default value is false) </dd>
-        <dt>**type**</dt>
-        <dd>The type of the field {Number|String|Boolean|Date}. Default type is string.</dd>
-        <dt>**validation**</dt>
-        <dd>A set of validation rules. The built-in KendoUI Validator rules are available as well as custom rules.</dd>
-    </dl>
-</div>
+
+
+##### *editable*
+
+Determines if this field will be editable (default value is true)
+
+##### *defaultValue*
+
+The value which will be used to populate the field when new non-existing model is created.
+            Default value is type attrbiute specific i.e. string fields will have empty string as defaultValue
+
+##### *nullable*
+
+Determines if the value set through defaultValue will be used (default value is false)
+
+##### *type*
+
+The type of the field {Number|String|Boolean|Date}. Default type is string.
+
+##### *validation*
+
+A set of validation rules. The built-in KendoUI Validator rules are available as well as custom rules.
 
 #### Example
 
@@ -426,28 +439,43 @@ The **serverFiltering** must be used in conjunction with the **filter** configur
 
 Possible values for **operator** include:
 
-<div class="details-list">
-    <dl>
-        <dt>**Equal To**</dt>
-        <dd>"eq", "==", "isequalto", "equals", "equalto", "equal"</dd>
-        <dt>**Not Equal To**</dt>
-        <dd>"neq", "!=", "isnotequalto", "notequals", "notequalto", "notequal", "ne"</dd>
-        <dt>**Less Then**</dt>
-        <dd>"lt", "<", "islessthan", "lessthan", "less"</dd>
-        <dt>**Less Then or Equal To**</dt>
-        <dd> "lte", "<=", "islessthanorequalto", "lessthanequal", "le"</dd>
-        <dt>**Greater Then**</dt>
-        <dd> "gt", ">", "isgreaterthan", "greaterthan", "greater"</dd>
-        <dt>**Greater Then or Equal To**</dt>
-        <dd>"gte", ">=", "isgreaterthanorequalto", "greaterthanequal", "ge"</dd>
-        <dt>**Starts With**</dt>
-        <dd>"startswith"</dd>
-        <dt>**Ends With**</dt>
-        <dd>"endswith"</dd>
-        <dt>**Contains**</dt>
-        <dd>"contains"</dd>
-    </dl>
-</div>
+
+
+##### *Equal To*
+
+"eq", "==", "isequalto", "equals", "equalto", "equal"
+
+##### *Not Equal To*
+
+"neq", "!=", "isnotequalto", "notequals", "notequalto", "notequal", "ne"
+
+##### *Less Then*
+
+"lt", "<", "islessthan", "lessthan", "less"
+
+##### *Less Then or Equal To*
+
+"lte", "<=", "islessthanorequalto", "lessthanequal", "le"
+
+##### *Greater Then*
+
+"gt", ">", "isgreaterthan", "greaterthan", "greater"
+
+##### *Greater Then or Equal To*
+
+"gte", ">=", "isgreaterthanorequalto", "greaterthanequal", "ge"
+
+##### *Starts With*
+
+"startswith"
+
+##### *Ends With*
+
+"endswith"
+
+##### *Contains*
+
+"contains"
 
 
 It is possible to modify these parameters by using the **parameterMap** function found on the **transport** object (see **transport** in Configuration).
@@ -491,18 +519,23 @@ It is possible to modify these parameters by using the **parameterMap** function
 
 
 **serverPaging** must be used in conjunction with the **pageSize** configuration setting. The following options to the server as part of the query string by default:
-<div class="details-list">
-    <dl>
-        <dt>**take**</dt>
-        <dd>contains the number of records to retreive</dd>
-        <dt>**skip**</dt>
-        <dd>how many records from the front of the dataset to begin reading</dd>
-        <dt>**page**</dt>
-        <dd>the index of the current page of data</dd>
-        <dt>**pageSize**</dt>
-        <dd>the number of records per page</dd>
-   </dl>
-</div>
+
+
+##### *take*
+
+contains the number of records to retreive
+
+##### *skip*
+
+how many records from the front of the dataset to begin reading
+
+##### *page*
+
+the index of the current page of data
+
+##### *pageSize*
+
+the number of records per page
 <p>It is possible to modify these parameters by using the **parameterMap** function found on the **transport** object (see **transport** in Configuration).
 
 #### Example
@@ -546,7 +579,7 @@ It is possible to modify these parameters by using the **parameterMap** function
 
     // sorts data ascending by orderId field
     sort: { field: "orderId", dir: "asc" }
-
+    
     // sorts data ascending by orderId field and then descending by shipmentDate
     sort: [ { field: "orderId", dir: "asc" }, { field: "shipmentDate", dir: "desc" } ]
 
@@ -624,10 +657,10 @@ Options for remote read data operation, or the URL of the remote service
             read: {
                 // the remote service URL
                 url: "http://search.twitter.com/search.json",
-
+    
                 // JSONP is required for cross-domain AJAX
                 dataType: "jsonp",
-
+    
                 // additional parameters sent to the remote service
                 data: {
                     q: function() {
@@ -637,7 +670,7 @@ Options for remote read data operation, or the URL of the remote service
             }
         }
     });
-
+    
      // consuming odata feed without setting additional options
      var dataSource = new kendo.data.DataSource({
          type: "odata",
@@ -764,7 +797,7 @@ The zero-based index of the data record
 
 #### Returns
 
-`Object`
+`Object` 
 
 ### cancelChanges
 
@@ -823,28 +856,43 @@ Get current filters or filter the data.
 
 
 _Supported filter operators/aliases are_:
-<div class="details-list">
-    <dl>
-        <dt>**Equal To**</dt>
-        <dd>"eq", "==", "isequalto", "equals", "equalto", "equal"</dd>
-        <dt>**Not Equal To**</dt>
-        <dd>"neq", "!=", "isnotequalto", "notequals", "notequalto", "notequal", "ne"</dd>
-        <dt>**Less Then**</dt>
-        <dd>"lt", "<", "islessthan", "lessthan", "less"</dd>
-        <dt>**Less Then or Equal To**</dt>
-        <dd> "lte", "<=", "islessthanorequalto", "lessthanequal", "le"</dd>
-        <dt>**Greater Then**</dt>
-        <dd> "gt", ">", "isgreaterthan", "greaterthan", "greater"</dd>
-        <dt>**Greater Then or Equal To**</dt>
-        <dd>"gte", ">=", "isgreaterthanorequalto", "greaterthanequal", "ge"</dd>
-        <dt>**Starts With**</dt>
-        <dd>"startswith"</dd>
-        <dt>**Ends With**</dt>
-        <dd>"endswith"</dd>
-        <dt>**Contains**</dt>
-        <dd>"contains", "substringof"</dd>
-    </dl>
-</div>
+
+
+##### *Equal To*
+
+"eq", "==", "isequalto", "equals", "equalto", "equal"
+
+##### *Not Equal To*
+
+"neq", "!=", "isnotequalto", "notequals", "notequalto", "notequal", "ne"
+
+##### *Less Then*
+
+"lt", "<", "islessthan", "lessthan", "less"
+
+##### *Less Then or Equal To*
+
+"lte", "<=", "islessthanorequalto", "lessthanequal", "le"
+
+##### *Greater Then*
+
+"gt", ">", "isgreaterthan", "greaterthan", "greater"
+
+##### *Greater Then or Equal To*
+
+"gte", ">=", "isgreaterthanorequalto", "greaterthanequal", "ge"
+
+##### *Starts With*
+
+"startswith"
+
+##### *Ends With*
+
+"endswith"
+
+##### *Contains*
+
+"contains", "substringof"
 
 #### Example
 
@@ -997,11 +1045,11 @@ Otherwise operations are executed over the available data.
 
 #### Example
 
-
+    
     // create a view containing at most 20 records, taken from the
     // 5th page and sorted ascending by orderId field.
     dataSource.query({ page: 5, pageSize: 20, sort: { field: "orderId", dir: "asc" } });
-
+    
     // moves the view to the first page returning at most 20 records
     // but without particular ordering.
     dataSource.query({ page: 1, pageSize: 20 });

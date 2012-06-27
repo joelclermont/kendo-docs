@@ -179,52 +179,35 @@ The color of the border. Any valid CSS color string will work here, including he
 ### scale.labels.border.dashType `String`*(default: "solid")*
 
 The dash type of the border.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"solid"`
-        </dt>
-        <dd>
-             Specifies a solid line.
-        </dd>
-        <dt>
-             `"dot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dots.
-        </dd>
-        <dt>
-             `"dash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of dashes.
-        </dd>
-        <dt>
-             `"longDash"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash.
-        </dd>
-        <dt>
-             `"dashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of dash-dot.
-        </dd>
-        <dt>
-             `"longDashDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot.
-        </dd>
-        <dt>
-             `"longDashDotDot"`
-        </dt>
-        <dd>
-             Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"solid"*
+
+Specifies a solid line.
+
+##### *"dot"*
+
+Specifies a line consisting of dots.
+
+##### *"dash"*
+
+Specifies a line consisting of dashes.
+
+##### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+##### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+##### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+##### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### scale.labels.border.width `Number`*(default: 0)*
 
@@ -265,22 +248,15 @@ The format of the labels.
 ### scale.labels.position `String`*(default: "inside")*
 
 The labels positions.
-<div class="details-list">
-    <dl>
-        <dt>
-             `"inside"`
-        </dt>
-        <dd>
-             The labels are positioned inside.
-        </dd>
-        <dt>
-             `"outside"`
-        </dt>
-        <dd>
-             The labels are positioned outside.
-        </dd>
-   </dl>
-</div>
+
+
+##### *"inside"*
+
+The labels are positioned inside.
+
+##### *"outside"*
+
+The labels are positioned outside.
 
 ### scale.labels.template `String/Function`
 
@@ -370,29 +346,20 @@ The interval between minor divisions.
 
 The ranges of the scale.
 The range fields:
-<div class="details-list">
-   <dl>
-        <dt>
-             `"from"`
-        </dt>
-        <dd>
-             The start position of the range in scale units.
-        </dd>
-        <dt>
-            `"to"`
-        </dt>
-        <dd>
-             The end position of the range in scale units.
-        </dd>
-        <dt>
-             `"color"`
-        </dt>
-        <dd>
-             The color of the range.
+
+
+##### *"from"*
+
+The start position of the range in scale units.
+
+##### *"to"*
+
+The end position of the range in scale units.
+
+##### *"color"*
+
+The color of the range.
 Any valid CSS color string will work here, including hex and rgb.
-        </dd>
-   </dl>
-</div>
 
 #### Example
 
