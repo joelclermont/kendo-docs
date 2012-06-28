@@ -6,10 +6,6 @@ publish: true
 
 # kendo.mobile.ui.Loader
 
-## Description
-
-
-
 ## Methods
 
 ### hide
