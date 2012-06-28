@@ -283,35 +283,38 @@ The `Date` or `Number` which should be formatted.
 ##### format `String`
 The format string which should be used to format the value.
 
-#### Standard number formats
+### Standard number formats
 
-##### *n* - number
+*n* - number
     kendo.culture("en-US");
     kendo.toString(1234.567, "n"); //1,234.57
 
     kendo.culture("de-DE");
     kendo.toString(1234.567, "n3"); //1.234,567
 
-##### *c* - currency
+*c* - currency
     kendo.culture("en-US");
     kendo.toString(1234.567, "c"); //$1,234.57
 
     kendo.culture("de-DE");
     kendo.toString(1234.567, "c3"); //1.234,567 €
 
-##### *p* - percentage (the value is multiplied by 100)
+*p* - percentage (the value is multiplied by 100)
     kendo.culture("en-US");
     kendo.toString(0.222, "p"); //22.20 %
 
     kendo.culture("de-DE");
     kendo.toString(0.22, "p3"); //22.000 %
 
-##### *e* - exponential
+*e* - exponential
     kendo.toString(0.122, "e"); //1.22e-1
     kendo.toString(0.122, "e4"); //1.2200e-1
-#### Custom number formats
+
+### Custom number formats
 
 Custom number formats can be created by using one or more custom numeric specifiers.
+
+#### Format Specifiers
 
 ##### *0* - zero placeholder
 
@@ -370,8 +373,10 @@ Indicates literal strings which should be included in the result verbatim.
 ##### *y|Y* - month/year pattern
     kendo.toString(new Date(2000, 10, 6), "y"); // November, 2000
 
-#### Custom date formats
+### Custom date formats
 Custom date formats can be created by using one or more custom date specifiers.
+
+#### Format Specifiers
 
 ##### *d* - the day of the month, from 1 to 31
 
