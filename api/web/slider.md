@@ -10,9 +10,9 @@ publish: true
 
 
 
- The **Slider** provides a rich input for selecting values or ranges of values. Unlike the HTML5
- range input, the **Slider** presents a consistent experience across browsers and features a rich
- API and event model.
+The **Slider** provides a rich input for selecting values or ranges of values. Unlike the HTML5
+range input, the **Slider** presents a consistent experience across browsers and features a rich
+API and event model.
 
 
 ### Getting Started
@@ -29,8 +29,8 @@ There are two types of **Slider**:
 
     <input id="slider" />
 
- Initialization of a **Slider** should occur after the DOM is fully loaded. It is recommended that
- initialization the **Slider** occur within a handler is provided to $(document).ready().
+Initialization of a **Slider** should occur after the DOM is fully loaded. It is recommended that
+initialization the **Slider** occur within a handler is provided to $(document).ready().
 
 #### Initialize a Slider using a selector within $(document).ready()
 
@@ -47,8 +47,8 @@ There are two types of **Slider**:
         <input />
     </div>
 
- Initialization of a **RangeSlider** should occur after the DOM is fully loaded. It is recommended
- that initialization the **RangeSlider** occur within a handler is provided to $(document).ready().
+Initialization of a **RangeSlider** should occur after the DOM is fully loaded. It is recommended
+that initialization the **RangeSlider** occur within a handler is provided to $(document).ready().
 
 #### Initialize a RangeSlider using a selector within $(document).ready()
 
@@ -56,16 +56,16 @@ There are two types of **Slider**:
         $("#rangeSlider").kendoRangeSlider();
     });
 
- The **RangeSlider** requires two inputs to capture both ends of the value range. This benefits
- scenarios where JavaScript is disabled, in which case users will be presented with two inputs, still allowing
- them to input a valid range.
+The **RangeSlider** requires two inputs to capture both ends of the value range. This benefits
+scenarios where JavaScript is disabled, in which case users will be presented with two inputs, still allowing
+them to input a valid range.
 
 
 ### Customizing Slider Behaviors
 
 
- Many facets of the **Slider** and **RangeSlider** behavior can be configured through
- properties, including:
+Many facets of the **Slider** and **RangeSlider** behavior can be configured through
+properties, including:
 
 
 *   Minimum and/or maximum values
@@ -86,9 +86,9 @@ There are two types of **Slider**:
 ### Accessing an Existing Slider
 
 
- You can reference an existing **Slider** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
- use the API to control its behavior.
+You can reference an existing **Slider** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
+use the API to control its behavior.
 
 #### Accessing an existing Slider instance
 

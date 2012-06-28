@@ -10,8 +10,8 @@ publish: true
 
 
 
-      The Editor allows users to create rich text content by means of a WYSIWYG interfance. The generated widget value is an XHTML markup.
- 
+The Editor allows users to create rich text content by means of a WYSIWYG interfance. The generated widget value is an XHTML markup.
+
 
 ### Getting Started
 
@@ -27,7 +27,7 @@ publish: true
 
 ### Configuring the Editor
 
- If no specific tools are defined, the Editor will create its default set of tools for text formatting.
+If no specific tools are defined, the Editor will create its default set of tools for text formatting.
 
 #### Specifying a set of Editor tools
 
@@ -45,7 +45,7 @@ publish: true
 ### Specifying custom tools
 
 
- The Editor functionality can be extended through custom tools, defined in the `tools` array.
+The Editor functionality can be extended through custom tools, defined in the `tools` array.
 
 #### Adding a custom tool button
 

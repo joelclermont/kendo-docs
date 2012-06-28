@@ -31,7 +31,7 @@ The tabs of the TabStrip navigate to the mobile application's views. When the mo
 
 ### Tab icons
 
- A tab icon can be set in two ways - either by adding an `img` element inside the `a` element, or by setting an `icon` data attribute to the `a` element.
+A tab icon can be set in two ways - either by adding an `img` element inside the `a` element, or by setting an `icon` data attribute to the `a` element.
 Kendo mobile TabStrip ships with several ready to use icons:
 
 *   <span class="km-icon km-about"></span>about

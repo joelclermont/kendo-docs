@@ -10,10 +10,10 @@ publish: true
 
 
 
- The **AutoComplete** provides suggestions depending on the typed
- text. It also allows multiple value entries. The suggestions shown by
- the **AutoComplete** can come from a local Array or from a remote
- data service.
+The **AutoComplete** provides suggestions depending on the typed
+text. It also allows multiple value entries. The suggestions shown by
+the **AutoComplete** can come from a local Array or from a remote
+data service.
 
 
 ### Getting Started
@@ -31,8 +31,8 @@ publish: true
 ### AutoComplete Suggestions
 
 
- There are two primary ways to provide the **AutoComplete**
- suggestions:
+There are two primary ways to provide the **AutoComplete**
+suggestions:
 
 
 1.  From a local array
@@ -40,19 +40,19 @@ publish: true
 
 
 
- Locally defined values are best for small, fixed sets of suggestions.
- Remote suggestions should be used for larger data sets. When used
- with the **DataSource** component,
- filtering large remote data services can be pushed to the server as
- well, maximizing client-side performance.
+Locally defined values are best for small, fixed sets of suggestions.
+Remote suggestions should be used for larger data sets. When used
+with the **DataSource** component,
+filtering large remote data services can be pushed to the server as
+well, maximizing client-side performance.
 
 
 ### Local Suggestions
 
 
- To configure and provide **AutoComplete** suggestions locally, you
- can either pass an array directly to its constructor or you can set
- the dataSource property to an local array.
+To configure and provide **AutoComplete** suggestions locally, you
+can either pass an array directly to its constructor or you can set
+the dataSource property to an local array.
 
 #### Directly initialize suggestions in constructor
 
@@ -68,15 +68,15 @@ publish: true
 ### Remote Suggestions
 
 
- The easiest way to bind an **AutoComplete** to remote
- suggestions is to use the
- **DataSource** component; an
- abstraction for local and remote data. The **DataSource**
- component can be used to serve data from a variety of data services,
- such as
- [XML](http://en.wikipedia.org/wiki/XML),
- [JSON](http://en.wikipedia.org/wiki/JSON), and
- [JSONP](http://en.wikipedia.org/wiki/JSONP).
+The easiest way to bind an **AutoComplete** to remote
+suggestions is to use the
+**DataSource** component; an
+abstraction for local and remote data. The **DataSource**
+component can be used to serve data from a variety of data services,
+such as
+[XML](http://en.wikipedia.org/wiki/XML),
+[JSON](http://en.wikipedia.org/wiki/JSON), and
+[JSONP](http://en.wikipedia.org/wiki/JSONP).
 
 #### Using the Kendo UI Web DataSource component to bind to
 remote suggestions with OData
@@ -129,10 +129,10 @@ suggestions
 ### Accessing an Existing AutoComplete
 
 
- You can reference an existing **AutoComplete** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/).
- Once a reference has been established, you can use the API to control
- its behavior.
+You can reference an existing **AutoComplete** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/).
+Once a reference has been established, you can use the API to control
+its behavior.
 
 #### Accessing an existing AutoComplete instance
 

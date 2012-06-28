@@ -10,11 +10,11 @@ publish: true
 
 
 
- The **DateTimePicker** allows the end user to select a value from a
- calendar or a time drop-down list. Direct input is also allowed.
- It supports configurable options for minimum and maximum value, the format,
- the interval between predefined hours in the time view, custom templates for "month" view
- of the calendar, start view and the depth of the navigation.
+The **DateTimePicker** allows the end user to select a value from a
+calendar or a time drop-down list. Direct input is also allowed.
+It supports configurable options for minimum and maximum value, the format,
+the interval between predefined hours in the time view, custom templates for "month" view
+of the calendar, start view and the depth of the navigation.
 
 
 ### Getting Started
@@ -29,15 +29,15 @@ publish: true
      $("#dateTimePicker").kendoDateTimePicker();
     });
 
- When a **DateTimePicker** is initialized, it will be displayed at the
- location of the target HTML element.
+When a **DateTimePicker** is initialized, it will be displayed at the
+location of the target HTML element.
 
 
 ### Configuring DateTimePicker Behaviors
 
 
- The **DateTimePicker** provides configuration options that can be set
- during initialization. Among the properties that can be controlled:
+The **DateTimePicker** provides configuration options that can be set
+during initialization. Among the properties that can be controlled:
 
 
 *   Selected datetime
@@ -58,8 +58,8 @@ minimum and maximum datetime
      })
     });
 
- DateTimePicker will set the value only if the entered datetime is valid and
- within the defined range.
+DateTimePicker will set the value only if the entered datetime is valid and
+within the defined range.
 
 #### Define the format
 
@@ -76,9 +76,9 @@ minimum and maximum datetime
 ### Defining a Start View and Navigation Depth
 
 
- The first rendered view can be defined with "start" option.
- Navigation depth can be controlled with "depth" option. Predefined
- views are:
+The first rendered view can be defined with "start" option.
+Navigation depth can be controlled with "depth" option. Predefined
+views are:
 
 
 *   "month" - shows the days from the month
@@ -102,10 +102,10 @@ minimum and maximum datetime
 ### Accessing an Existing DateTimePicker
 
 
- You can reference an existing **DateTimePicker** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/).
- Once a reference has been established, you can use the API to control
- its behavior.
+You can reference an existing **DateTimePicker** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/).
+Once a reference has been established, you can use the API to control
+its behavior.
 
 #### Accessing an existing DateTimePicker instance
 

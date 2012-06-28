@@ -10,8 +10,8 @@ publish: true
 
 
 
- An **Upload** uses progressive enhancement to deliver the best possible uploading experience to
- users without requiring extra developer effort. Features highlights:
+An **Upload** uses progressive enhancement to deliver the best possible uploading experience to
+users without requiring extra developer effort. Features highlights:
 
 
 *   Asynchronous and synchronous (on form submit) file upload
@@ -43,11 +43,11 @@ An **Upload** is a standards-based widget; no plug-ins required.
         $("#photos").kendoUpload();
     });
 
- Note the array syntax in the input name; it is used to hint the upload handler to treat photos as an array.
+Note the array syntax in the input name; it is used to hint the upload handler to treat photos as an array.
 
 
 
- Please consult the documentation of your specific server technology regarding the handling of uploaded files.
+Please consult the documentation of your specific server technology regarding the handling of uploaded files.
 
 
 ### See Also
@@ -57,9 +57,9 @@ An **Upload** is a standards-based widget; no plug-ins required.
 ### Accessing an Existing Upload
 
 
- You can reference an existing **Upload** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
- use the API to control its behavior.
+You can reference an existing **Upload** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
+use the API to control its behavior.
 
 #### Accessing an existing Upload instance
 

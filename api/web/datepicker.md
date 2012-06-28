@@ -10,10 +10,10 @@ publish: true
 
 
 
- The **DatePicker** allows the end user to select a date from a
- calendar or by direct input. It supports custom templates for "month"
- view, configurable options for min and max date, start view and the
- depth of the navigation.
+The **DatePicker** allows the end user to select a date from a
+calendar or by direct input. It supports custom templates for "month"
+view, configurable options for min and max date, start view and the
+depth of the navigation.
 
 
 ### Getting Started
@@ -28,15 +28,15 @@ publish: true
      $("#datePicker").kendoDatePicker();
     });
 
- When a **DatePicker** is initialized, it will be displayed at the
- location of the target HTML element.
+When a **DatePicker** is initialized, it will be displayed at the
+location of the target HTML element.
 
 
 ### Configuring DatePicker Behaviors
 
 
- The **DatePicker** provides configuration options that can be set
- during initialization. Among the properties that can be controlled:
+The **DatePicker** provides configuration options that can be set
+during initialization. Among the properties that can be controlled:
 
 
 *   Selected date
@@ -56,15 +56,15 @@ minimum and maximum date
      })
     });
 
- DatePicker will set the value only if the entered date is valid and
- within the defined range.
+DatePicker will set the value only if the entered date is valid and
+within the defined range.
 
 ### Defining a Start View and Navigation Depth
 
 
- The first rendered view can be defined with "start" option.
- Navigation depth can be controlled with "depth" option. Predefined
- views are:
+The first rendered view can be defined with "start" option.
+Navigation depth can be controlled with "depth" option. Predefined
+views are:
 
 
 *   "month" - shows the days from the month
@@ -82,10 +82,10 @@ minimum and maximum date
 ### Accessing an Existing DatePicker
 
 
- You can reference an existing **DatePicker** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/).
- Once a reference has been established, you can use the API to control
- its behavior.
+You can reference an existing **DatePicker** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/).
+Once a reference has been established, you can use the API to control
+its behavior.
 
 #### Accessing an existing DatePicker instance
 

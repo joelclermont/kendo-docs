@@ -10,13 +10,13 @@ publish: true
 
 
 
- The **TreeView** displays hierarchical data in a traditional tree structure. It supports user
- interaction through the mouse or touch to perform re-ordering operations via drag-and-drop.
+The **TreeView** displays hierarchical data in a traditional tree structure. It supports user
+interaction through the mouse or touch to perform re-ordering operations via drag-and-drop.
 
 
 
- A **TreeView** can be created by leveraging HTML lists. However, it does not support binding to a
- remote data source at this point in time.
+A **TreeView** can be created by leveraging HTML lists. However, it does not support binding to a
+remote data source at this point in time.
 
 
 ### Getting Started
@@ -28,8 +28,8 @@ A **TreeView** can be created in two ways:
 
 
 
- Static HTML definition is appropriate for small hierarchies and for data that does not change frequently.
- Databinding should be used for larger data sets and for data that changes frequently.
+Static HTML definition is appropriate for small hierarchies and for data that does not change frequently.
+Databinding should be used for larger data sets and for data that changes frequently.
 
 
 ### Creating a TreeView from HTML
@@ -46,8 +46,8 @@ A **TreeView** can be created in two ways:
         <li>Item 2</li>
     </ul>
 
- Initialization of a **TreeView** should occur after the DOM is fully loaded. It is recommended
- that initialization the **TreeView** occur within a handler is provided to $(document).ready().
+Initialization of a **TreeView** should occur after the DOM is fully loaded. It is recommended
+that initialization the **TreeView** occur within a handler is provided to $(document).ready().
 
 #### Initialize a TreeView using a selector within $(document).ready()
 
@@ -105,16 +105,16 @@ Currently, the **TreeView** does not support binding to a remote data source.
         dragAndDrop: true
     });
 
- When drag-and-drop is enabled, the nodes of a **TreeView** can be dragged and dropped between all
- levels, with useful tooltips helping indicate where the node will be dropped.
+When drag-and-drop is enabled, the nodes of a **TreeView** can be dragged and dropped between all
+levels, with useful tooltips helping indicate where the node will be dropped.
 
 
 ### Accessing an Existing TreeView
 
 
- You can reference an existing **TreeView** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
- use the API to control its behavior.
+You can reference an existing **TreeView** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
+use the API to control its behavior.
 
 #### Accessing an existing TreeView instance
 

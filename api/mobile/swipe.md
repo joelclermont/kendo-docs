@@ -32,18 +32,18 @@ To register a swipe event for a given jQuery selector, use the `kendoMobileSwipe
 The event handler accepts a parameter with the following fields:
 
 <table>
- <tr>
- <th align="left" valign="top">target</th>
- <td>The DOM element which was swiped</td>
- </tr>
- <tr>
- <th align="left" valign="top">direction</th>
- <td>The swipe direction. Can be either `left` or `right`.</td>
- </tr>
- <tr>
- <th align="left" valign="top">drag</th>
- <td>An instance of the kendo.Drag component, containing additional information about the drag event sequence, that generated the swipe.</td>
- </tr>
+<tr>
+<th align="left" valign="top">target</th>
+<td>The DOM element which was swiped</td>
+</tr>
+<tr>
+<th align="left" valign="top">direction</th>
+<td>The swipe direction. Can be either `left` or `right`.</td>
+</tr>
+<tr>
+<th align="left" valign="top">drag</th>
+<td>An instance of the kendo.Drag component, containing additional information about the drag event sequence, that generated the swipe.</td>
+</tr>
 </table>
 
 

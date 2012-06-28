@@ -6,8 +6,13 @@ publish: true
 
 # kendo.ui.Validator
 
+## Description
+
+
+
 Validator offers an easy way to do client-side form validation.
 Built around the HTML5 form validation attributes it supports variety of built-in validation rules, but also provides a convenient way for setting custom rules handling.
+
 
 #### **Validator** initialization to validate input elements inside a container
 
@@ -16,7 +21,7 @@ Built around the HTML5 form validation attributes it supports variety of built-i
       <input type="text" name="lastName" required />
       <button id="save" type="button">Save</button>
      </div>
-
+    
      <script>
       $(document).ready(function(){
           var validatable = $("#myform").kendoValidator().data("kendoValidator");
@@ -54,9 +59,10 @@ Built around the HTML5 form validation attributes it supports variety of built-i
 
      <input type="email" name="email" />
 
-Beside the built-in validation rules, KendoUI Validator also provides a convenient way for setting custom rules through its rules configuration option.
+Beside the built-in validation rules, KendoUI Validator also provides a convenient way for setting custom rules through its rules configuration option. 
 
-####
+#### 
+
      $("#myform").kendoValidator({
          rules: {
            custom: function(input) {
@@ -96,18 +102,18 @@ There are several ways to control the messages which appears if validation fails
 
 #### Triggering validation
 
-In order to trigger the element(s) validation, **validate** method should be used. It will return either _true_ if validation succeeded or _false_ in case of a failure.
+In order to trigger the element(s) validation, **validate** method should be used. It will return either _true_ if validation succeeded or _false_ in case of a failure. 
 
 
- Note that if a HTML form element is set as validation container, the form submits will be automatically prevented if validation fails.
+Note that if a HTML form element is set as validation container, the form submits will be automatically prevented if validation fails.
 
 
 #### Initialize Kendo Validator with specific tooltip position
 
 
-     Ideally Kendo Validator places its tooltips besides the validated input. However, if the input is later enhanced to a ComboBox, AutoComplete or other Kendo Widget, placing the
-     tooltip beside the input may cover important information or break the widget rendering. In this case, you can specify where exactly do you want the tooltip to be placed by
-     adding a span with data-for attribute set to the validated input name and a class .k-invalid-msg. Check the example below:
+Ideally Kendo Validator places its tooltips besides the validated input. However, if the input is later enhanced to a ComboBox, AutoComplete or other Kendo Widget, placing the
+tooltip beside the input may cover important information or break the widget rendering. In this case, you can specify where exactly do you want the tooltip to be placed by
+adding a span with data-for attribute set to the validated input name and a class .k-invalid-msg. Check the example below:
 
 
 #### **Validator** initialization with specific tooltip placement (the tooltip will remain outside of the AutoComplete widget after enhancement)
@@ -116,13 +122,13 @@ In order to trigger the element(s) validation, **validate** method should be use
          <input type="text" id="name" name="name" required />
          <span class="k-invalid-msg" data-for="name"></span>
      </div>
-
+    
      <script>
          $("#name").kendoAutoComplete({
                         dataSource: data,
                         separator: ", "
                     });
-
+    
          $("#myform").kendoValidator();
      </script>
 

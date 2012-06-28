@@ -10,9 +10,9 @@ publish: true
 
 
 
- A **DropDownList** displays a list of values and allows the selection of a single value from the
- list.Custom values may not be entered via keyboard input.If you wish permit keyboard input - that is, custom
- values are allowed - use the **ComboBox**.
+A **DropDownList** displays a list of values and allows the selection of a single value from the
+list.Custom values may not be entered via keyboard input.If you wish permit keyboard input - that is, custom
+values are allowed - use the **ComboBox**.
 
 
 ### Getting Started
@@ -24,16 +24,16 @@ There are two ways to create a **DropDownList**:
 
 
 
- A **DropDownList** will look and operate consistently regardless of the way in which it was
- created.
+A **DropDownList** will look and operate consistently regardless of the way in which it was
+created.
 
 #### Creating a DropDownList from existing &lt;input&gt; element
 
     <input id="dropDownList" />
 
- Initialization of a **DropDownList** should occur after the DOM is fully loaded. It is recommended
- that initialization the **DropDownList** occur within a handler is provided to
- $(document).ready().
+Initialization of a **DropDownList** should occur after the DOM is fully loaded. It is recommended
+that initialization the **DropDownList** occur within a handler is provided to
+$(document).ready().
 
 #### Initialize a DropDownList using a selector within $(document).ready()
 
@@ -65,10 +65,10 @@ There are two ways to create a **DropDownList**:
 ### Binding to Local or Remote Data
 
 
- The **DropDownList** can be bound to both local arrays and remote data via the
- **DataSource** component; an abstraction for local and
- remote data. Local arrays are appropriate for limited value options, while remote data binding is better for
- larger data sets. With remote data-binding, items will be loaded on-demand; when they are displayed.
+The **DropDownList** can be bound to both local arrays and remote data via the
+**DataSource** component; an abstraction for local and
+remote data. Local arrays are appropriate for limited value options, while remote data binding is better for
+larger data sets. With remote data-binding, items will be loaded on-demand; when they are displayed.
 
 #### Binding to a remote OData service
 
@@ -91,9 +91,9 @@ There are two ways to create a **DropDownList**:
 ### Customizing Item Templates
 
 
- The **DropDownList** uses Kendo UI templates to enable you to control how items are rendered. For
- a detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
- [documentation](http://www.kendoui.com/documentation/framework/templates/overview.aspx "Kendo UI Template").
+The **DropDownList** uses Kendo UI templates to enable you to control how items are rendered. For
+a detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
+[documentation](http://www.kendoui.com/documentation/framework/templates/overview.aspx "Kendo UI Template").
 
 #### Basic item template customization
 
@@ -132,9 +132,9 @@ There are two ways to create a **DropDownList**:
 ### Accessing an Existing DropDownList
 
 
- You can reference an existing **DropDownList** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
- use the API to control its behavior.
+You can reference an existing **DropDownList** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
+use the API to control its behavior.
 
 #### Accessing an existing DropDownList instance
 

@@ -10,17 +10,17 @@ publish: true
 
 
 
-     The Grid widget displays tabular data and offers rich support interacting with data,
-     including paging, sorting, grouping, and selection. Grid is a powerful widget with
-     many configuration options. It can be bound to local JSON data or to remote data
-     using the Kendo DataSource component.
- 
+The Grid widget displays tabular data and offers rich support interacting with data,
+including paging, sorting, grouping, and selection. Grid is a powerful widget with
+many configuration options. It can be bound to local JSON data or to remote data
+using the Kendo DataSource component.
+
 
 ### Getting Started
 
- There are two primary ways to create a Kendo Grid:
+There are two primary ways to create a Kendo Grid:
 
- 
+
 
 1.  From an existing HTML table element, defining columns, rows, and data in HTML
 2.  From an HTML div element, defining columns and rows with configuration, and binding to data
@@ -88,9 +88,9 @@ publish: true
 
 ### Configuring Grid Behavior
 
- Kendo Grid supports paging, sorting, grouping, and scrolling. Configuring any of
- these Grid behaviors is done using simple boolean configuration options. For
- example, the follow snippet shows how to enable all of these behaviors.
+Kendo Grid supports paging, sorting, grouping, and scrolling. Configuring any of
+these Grid behaviors is done using simple boolean configuration options. For
+example, the follow snippet shows how to enable all of these behaviors.
 
 #### Enabling Grid paging, sorting, grouping, and scrolling
 
@@ -105,13 +105,13 @@ publish: true
 
 By default, paging, grouping, and sorting are **disabled**. Scrolling is enabled by default.
 
- 
+
 
 ### Performance with Virtual Scrolling
 
- When binding to large data sets or when using large page sizes, reducing active in-memory
- DOM objects is important for performance. Kendo Grid provides built-in UI virtualization
- for highly optimized binding to large data sets. Enabling UI virtualization is done via simple configuration.
+When binding to large data sets or when using large page sizes, reducing active in-memory
+DOM objects is important for performance. Kendo Grid provides built-in UI virtualization
+for highly optimized binding to large data sets. Enabling UI virtualization is done via simple configuration.
 
 #### Enabling Grid UI virtualization
 
@@ -126,10 +126,10 @@ By default, paging, grouping, and sorting are **disabled**. Scrolling is enabled
 ### Accessing an Existing Grid
 
 
- You can reference an existing **Grid** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/).
- Once a reference has been established, you can use the API to control
- its behavior.
+You can reference an existing **Grid** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/).
+Once a reference has been established, you can use the API to control
+its behavior.
 
 #### Accessing an existing Grid instance
 

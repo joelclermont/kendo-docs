@@ -10,10 +10,10 @@ publish: true
 
 
 
-      The ListView is designed to give your the freedom to specify custom type of layout
-      for the items displayed in the control. It can be bound to local JSON data or to
-      remote data using the Kendo DataSource component.
- 
+The ListView is designed to give your the freedom to specify custom type of layout
+for the items displayed in the control. It can be bound to local JSON data or to
+remote data using the Kendo DataSource component.
+
 
 ### Getting Started
 
@@ -42,9 +42,9 @@ publish: true
 
 ### Configuring ListView Behavior
 
- Kendo ListView supports paging, selection, navigation, editing. Configuring any of
- these ListView behaviors is done using simple boolean configuration options. For
- example, the follow snippet shows how to enable all of these behaviors.
+Kendo ListView supports paging, selection, navigation, editing. Configuring any of
+these ListView behaviors is done using simple boolean configuration options. For
+example, the follow snippet shows how to enable all of these behaviors.
 
 #### Enabling ListView paging, selection, navigation and editing
 

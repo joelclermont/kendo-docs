@@ -10,14 +10,14 @@ publish: true
 
 
 
- A **Window** displays content in a modal or non-modal HTML window. By default, a
- **Window** can be moved, resized, and closed. Its content can also be defined with either as
- static HTML or loaded dynamically via AJAX.
+A **Window** displays content in a modal or non-modal HTML window. By default, a
+**Window** can be moved, resized, and closed. Its content can also be defined with either as
+static HTML or loaded dynamically via AJAX.
 
 
 
- A **Window** can be initialized from virtually any DOM element. During initialization, the
- targeted content will automatically be wrapped in the div element of the **Window**.
+A **Window** can be initialized from virtually any DOM element. During initialization, the
+targeted content will automatically be wrapped in the div element of the **Window**.
 
 
 ### Getting Started
@@ -34,15 +34,15 @@ publish: true
         $("#window").kendoWindow();
     });
 
- When a **Window** is initialized, it will automatically be displayed open near the location of the
- DOM element that was used to initialize the content.
+When a **Window** is initialized, it will automatically be displayed open near the location of the
+DOM element that was used to initialize the content.
 
 
 ### Configuring Window Behaviors
 
 
- A **Window** provides many configuration options that can be easily set during initialization.
- Among the properties that can be controlled:
+A **Window** provides many configuration options that can be easily set during initialization.
+Among the properties that can be controlled:
 
 
 *   Minimum height/width
@@ -62,10 +62,10 @@ publish: true
         width: "500px"
     });
 
- The order of the values in the actions array determines the order in which the action buttons will be rendered
- in the title of a **Window**. The maximize action serves both as a button for expanding a
- **Window** to fill the screen and as a button to restore a **Window** to its previous
- size. The minimize action collapses a **Window** to its title.
+The order of the values in the actions array determines the order in which the action buttons will be rendered
+in the title of a **Window**. The maximize action serves both as a button for expanding a
+**Window** to fill the screen and as a button to restore a **Window** to its previous
+size. The minimize action collapses a **Window** to its title.
 
 
 If a non-recognized action name is supplied, it is treated as a custom action - **k-icon** and **k-actionname**
@@ -117,8 +117,8 @@ actions with the name "Custom", but any name can be used. Click events can be ca
 ### Loading Window content via AJAX
 
 
- A **Window** provides built-in support for asynchronously loading content from a URL. This URL
- should return a HTML fragment that can be loaded in a Window content area.
+A **Window** provides built-in support for asynchronously loading content from a URL. This URL
+should return a HTML fragment that can be loaded in a Window content area.
 
 #### Load Window content asynchronously
 
@@ -136,9 +136,9 @@ actions with the name "Custom", but any name can be used. Click events can be ca
 ### Accessing an Existing Window
 
 
- You can reference an existing **Window** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
- use the API to control its behavior.
+You can reference an existing **Window** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
+use the API to control its behavior.
 
 #### Accessing an existing Window instance
 

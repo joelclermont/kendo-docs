@@ -10,9 +10,9 @@ publish: true
 
 
 
- A **TabStrip** displays a collection of tabs with associated content. It is composed of an
- unordered list of items - representing tabs - and a collection of div elements, which contain the content for
- each tab.
+A **TabStrip** displays a collection of tabs with associated content. It is composed of an
+unordered list of items - representing tabs - and a collection of div elements, which contain the content for
+each tab.
 
 
 ### Getting Started
@@ -28,8 +28,8 @@ publish: true
         <div>Second tab content</div>
     </div>
 
- Initialization of a **TabStrip** should occur after the DOM is fully loaded. It is recommended
- that initialization the **TabStrip** occur within a handler is provided to $(document).ready().
+Initialization of a **TabStrip** should occur after the DOM is fully loaded. It is recommended
+that initialization the **TabStrip** occur within a handler is provided to $(document).ready().
 
 #### Initialize a TabStrip using a selector within $(document).ready()
 
@@ -71,17 +71,17 @@ publish: true
         });
     });
 
- The tabs of a **TabStrip** are not required to have content. Should a tab have no content, it is
- safe to omit its associated div.
+The tabs of a **TabStrip** are not required to have content. Should a tab have no content, it is
+safe to omit its associated div.
 
 
 ### Loading TabStrip content with AJAX
 
 
- While any valid technique for loading AJAX content can be used, a **TabStrip** supports loading
- content from URLs in an asynchronous manner. These URLs should return HTML fragments that can be loaded in a
- TabStrip content area. Content DIVs are not required and if present should be completely empty for AJAX loading
- to work.
+While any valid technique for loading AJAX content can be used, a **TabStrip** supports loading
+content from URLs in an asynchronous manner. These URLs should return HTML fragments that can be loaded in a
+TabStrip content area. Content DIVs are not required and if present should be completely empty for AJAX loading
+to work.
 
 #### Loading Tab content asynchronously
 
@@ -105,13 +105,13 @@ publish: true
 ### Dynamically Configure TabStrip Tabs
 
 
- The **TabStrip** API provides several methods for dynamically adding or removing tabs. To add
- tabs, provide the new item as a JSON object along with a reference item that will be used to determine the
- placement in the **TabStrip**. Note: append() does not require a reference item.
+The **TabStrip** API provides several methods for dynamically adding or removing tabs. To add
+tabs, provide the new item as a JSON object along with a reference item that will be used to determine the
+placement in the **TabStrip**. Note: append() does not require a reference item.
 <p>
 <p>
- A reference item is simply a target DOM element of a tab that already exists in the TabStrip. Any valid
- selector may be used to obtain a reference to the target item.
+A reference item is simply a target DOM element of a tab that already exists in the TabStrip. Any valid
+selector may be used to obtain a reference to the target item.
 
 
 Removing an item requires a reference to the target element.
@@ -127,8 +127,8 @@ Removing an item requires a reference to the target element.
 ### Selecting a Tab on Initial Load
 
 
- It is possible to select a tab and display its associated content upon its initial load. There are two (2) ways
- to accomplish this task:
+It is possible to select a tab and display its associated content upon its initial load. There are two (2) ways
+to accomplish this task:
 
 
 1.  Add a "k-state-active" class to the DOM element of the tab
@@ -165,9 +165,9 @@ Both approaches produce the same result.
 ### Accessing an Existing TabStrip
 
 
- You can reference an existing **TabStrip** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
- use the API to control its behavior.
+You can reference an existing **TabStrip** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
+use the API to control its behavior.
 
 #### Accessing an existing TabStrip instance
 

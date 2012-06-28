@@ -14,7 +14,7 @@ The mobile SplitView is a tablet-specific view that consists of two or more **mo
 Mobile Application automatically instantiates a mobile SplitView for each element with a `role` data attribute set
 to **splitview**. 
 
- **Important:** unlike most widgets, the splitview element **should not be nested**
+**Important:** unlike most widgets, the splitview element **should not be nested**
 in a view, but should be put as an immediate child of the mobile application element.
 
 #### Mobile SplitView with two panes

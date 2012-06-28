@@ -10,11 +10,11 @@ publish: true
 
 
 
-   The NumericTextBox widget can convert an INPUT element into a numeric, percentage or currency textbox.
-   The type is defined depending on the specified format. The widget renders spin buttons and with their help you can
-   increment/decrement the value with a predefined step. The NumericTextBox widget accepts only numeric entries.
-   The widget uses _kendo.culture.current_ culture in order to determine number precision and other culture
-   specific properties.
+The NumericTextBox widget can convert an INPUT element into a numeric, percentage or currency textbox.
+The type is defined depending on the specified format. The widget renders spin buttons and with their help you can
+increment/decrement the value with a predefined step. The NumericTextBox widget accepts only numeric entries.
+The widget uses _kendo.culture.current_ culture in order to determine number precision and other culture
+specific properties.
 
 
 ### Getting Started
@@ -29,17 +29,17 @@ publish: true
      $("#textBox").kendoNumericTextBox();
     });
 
- When a **NumericTextBox** is initialized, it will automatically
- wraps the input element with span element and will render spin
- buttons.
+When a **NumericTextBox** is initialized, it will automatically
+wraps the input element with span element and will render spin
+buttons.
 
 
 ### Configuring NumericTextBox behaviors
 
 
- The **NumericTextBox** provides configuration options that can be
- easily set during initialization. Among the properties that can be
- controlled:
+The **NumericTextBox** provides configuration options that can be
+easily set during initialization. Among the properties that can be
+controlled:
 
 
 *   Value of the **NumericTextBox**
@@ -50,8 +50,8 @@ publish: true
 
 
 
- To see a full list of available properties and values, review the
- Slider Configuration API documentation tab.
+To see a full list of available properties and values, review the
+Slider Configuration API documentation tab.
 
 #### Customizing NumericTextBox defaults
 
@@ -84,10 +84,10 @@ publish: true
 ### Accessing an Existing NumericTextBox
 
 
- You can reference an existing **NumericTextBox** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/).
- Once a reference has been established, you can use the API to control
- its behavior.
+You can reference an existing **NumericTextBox** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/).
+Once a reference has been established, you can use the API to control
+its behavior.
 
 #### Accessing an existing NumericTextBox instance
 

@@ -30,15 +30,15 @@ There are two ways to create a **ComboBox**:
 
 
 
- A **ComboBox** will look and operate consistently regardless of the way in which it was created.
+A **ComboBox** will look and operate consistently regardless of the way in which it was created.
 
 #### Creating a ComboBox from an existing &lt;input&gt; element
 
     <input id="comboBox" />
 
- Initialization of a **ComboBox** should occur after the DOM is fully loaded. It is recommended
- that initialization the **ComboBox** occur within a handler is provided to
- $(document).ready().
+Initialization of a **ComboBox** should occur after the DOM is fully loaded. It is recommended
+that initialization the **ComboBox** occur within a handler is provided to
+$(document).ready().
 
 #### Initialize a ComboBox using a selector within $(document).ready()
 
@@ -70,10 +70,10 @@ There are two ways to create a **ComboBox**:
 ### Binding to Local or Remote Data
 
 
- The **ComboBox** can be bound to both local arrays and remote data via the
- **DataSource** component; an abstraction for local and
- remote data. Local arrays are appropriate for limited value options, while remote data binding is better for
- larger data sets. With remote data-binding, items will be loaded on-demand; when they are displayed.
+The **ComboBox** can be bound to both local arrays and remote data via the
+**DataSource** component; an abstraction for local and
+remote data. Local arrays are appropriate for limited value options, while remote data binding is better for
+larger data sets. With remote data-binding, items will be loaded on-demand; when they are displayed.
 
 #### Binding to a remote OData service
 
@@ -98,9 +98,9 @@ There are two ways to create a **ComboBox**:
 ### Customizing Item Templates
 
 
- The **ComboBox** uses Kendo UI templates to enable you to control how items are rendered. For a
- detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
- [documentation](http://www.kendoui.com/documentation/framework/templates/overview.aspx "Kendo UI Template").
+The **ComboBox** uses Kendo UI templates to enable you to control how items are rendered. For a
+detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
+[documentation](http://www.kendoui.com/documentation/framework/templates/overview.aspx "Kendo UI Template").
 
 #### Basic item template customization
 
@@ -140,9 +140,9 @@ There are two ways to create a **ComboBox**:
 ### Accessing an Existing ComboBox
 
 
- You can reference an existing **ComboBox** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/). Objectnce a reference has been established, you
- can use the API to control its behavior.
+You can reference an existing **ComboBox** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/). Objectnce a reference has been established, you
+can use the API to control its behavior.
 
 #### Accessing an existing ComboBox instance
 

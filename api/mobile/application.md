@@ -63,7 +63,7 @@ The following transitions are supported:
 
 #### slide
 
- This is the default iOS **View** transition. Old **View** content slides to the left and the new **View** content slides in its place.
+This is the default iOS **View** transition. Old **View** content slides to the left and the new **View** content slides in its place.
 Headers and footers (if present) use the **fade** transition. 
 
 The transition direction can be specified by using `slide:(direction)`.

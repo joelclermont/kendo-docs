@@ -10,9 +10,9 @@ publish: true
 
 
 
- The **TimePicker** allows the end user to select a time value from a list of predefined values or
- to type a new value. It supports configurable options for the format, minimum and maximum time, and the
- interval between predefined values in the list.
+The **TimePicker** allows the end user to select a time value from a list of predefined values or
+to type a new value. It supports configurable options for the format, minimum and maximum time, and the
+interval between predefined values in the list.
 
 
 ### Getting Started
@@ -27,15 +27,15 @@ publish: true
         $("#timePicker").kendoTimePicker();
     });
 
- When a **TimePicker** is initialized, it will automatically be displayed near the location of the
- used HTML element.
+When a **TimePicker** is initialized, it will automatically be displayed near the location of the
+used HTML element.
 
 
 ### Configuring TimePicker Behaviors
 
 
- A **TimePicker** provides configuration options that can be easily set during initialization.
- Among the properties that can be controlled:
+A **TimePicker** provides configuration options that can be easily set during initialization.
+Among the properties that can be controlled:
 
 
 *   Selected time
@@ -51,8 +51,8 @@ publish: true
         max: new Date(2049, 11, 31, 18, 0, 0)
     });
 
- A **TimePicker** will set the value only if the entered time is valid and if it is in the defined
- range.
+A **TimePicker** will set the value only if the entered time is valid and if it is in the defined
+range.
 
 #### Define time format
 
@@ -69,9 +69,9 @@ publish: true
 ### Accessing an Existing TimePicker
 
 
- You can reference an existing **TimePicker** instance via
- [jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
- use the API to control its behavior.
+You can reference an existing **TimePicker** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
+use the API to control its behavior.
 
 #### Accessing an existing TimePicker instance
 
