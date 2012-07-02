@@ -82,7 +82,7 @@ be availble in your views.
                  <add namespace="Kendo.Mvc.UI" />
              </namespaces>
      - If you are using the Razor view engine open the **web.config** file which is in the **Views** folder
-     of your application.Add `&lt;add namespace="Kendo.Mvc.UI" /&gt;` before the closing `namespaces` tag:
+     of your application.Add `<add namespace="Kendo.Mvc.UI" />` before the closing `namespaces` tag:
 
              <system.web.webPages.razor>
                  <pages pageBaseType="System.Web.Mvc.WebViewPage">
