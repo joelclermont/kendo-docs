@@ -113,7 +113,7 @@ This means that these new JavaScript files have to be added to the project in or
 
 _The change_: Server-side code blocks, such as the one below, in a WebForms view are no longer supported:
 
-    .OnLoad(() => { %>
+    .OnSelect(() => { %>
         function() { }
     <% });
 
@@ -122,16 +122,16 @@ Within the Telerik Extensions for ASP.NET MVC there have been three ways of subs
 
 1.  Using the event handler name
 
-    .OnLoad("onLoad")
-    <script>function onLoad() {}</script>
+        .OnSelect("onSelect")
+        <script>function onSelect() {}</script>
 2.  Server-side code block in the WebForms ViewEngine
 
-    .OnLoad(() => { %>
-    function() { }
-    <% });
+        .OnSelect(() => { %>
+            function() { }
+        <% });
 3.  Inline templates for Razor ViewEngine:
 
-    .OnLoad(@<text> function() {} </text>)
+        .OnSelect(@<text> function() {} </text>)
 
 With Kendo UI Complete for ASP.NET MVC the second approach, using the server-side code block within the WebFroms ViewEngine, is no longer supported.
 This is due to complications and limitations around the server-side code block due to utilization of Response.Write to add this JavaScript to the page.
@@ -159,10 +159,10 @@ _The change_: Kendo UI Complete for ASP.NET MVC will not have the prefix of "On"
 
 When subscribing to client-side events the Telerik Extensions for ASP.NET MVC used names such as OnLoad, OnChange, OnDataBound etc., but all "On" prefixes are removed with Kendo UI Complete for ASP.NET MVC. So all event subscriptions will have to remove the "On" prefix as follows:
 
-    Events(events => events.OnChange("foo"))
+    .Events(events => events.OnChange("foo"))
 becomes
 
-    Events(events => events.Change ("foo"))
+    .Events(events => events.Change ("foo"))
 
 ### The client-side OnLoad event has been removed
 
@@ -190,11 +190,11 @@ _The change_: Kendo UI Complete for ASP.NET MVC utilizes a similar approach to t
 
 With the Telerik Extensions for ASP.NET MVC the client-side object of a Grid was retrieved in the following way:
 
-    $("#foo").data("tGrid")
+    var grid = $("#foo").data("tGrid")
 
 However, with Kendo UI Complete for ASP.NET MVC the proper way to grab the client-side object is:
 
-    $("#foo").data("kendoGrid")
+    var grid = $("#foo").data("kendoGrid")
 
 This change will require all instances of grabbing the client-side object to be changed to follow the Kendo UI Complete-specific convention.
 
