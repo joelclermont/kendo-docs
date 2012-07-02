@@ -3,11 +3,11 @@ title: Overview
 publish: true
 ---
 
-### DatePicker
+# DatePicker
 
 The DatePicker HtmlHelper extension is a server-side wrapper for the [Kendo UI DatePicker](http://www.kendoui.com/documentation/ui-widgets/datepicker/overview.aspx) widget.
 
-### Getting Started
+## Getting Started
 
 Here is how to configure a simple Kendo DatePicker:
 
@@ -15,56 +15,53 @@ Here is how to configure a simple Kendo DatePicker:
 
 2.  Create a new action method which renders the view:
 
-    public ActionResult Index()
-    {
-    return View();
-    }
-        3.  Add a datepicker:
+        public ActionResult Index()
+        {
+            return View();
+        }
+3.  Add a datepicker:
+    - WebForms
 
-#### WebForms
- 
-    <%: Html.Kendo().DatePicker()
-        .Name("datepicker") //The name of the datepicker is mandatory. It specifies the "id" attribute of the widget.
-        .Min(new DateTime(1900, 1, 1)) //Set min date of the datepicker
-        .Max(new DateTime(2099, 12, 31)) //Set min date of the datepicker
-        .Value(DateTime.Today) //Set the value of the datepicker
-    %>
-              
-#### Razor
- 
-    <pre class="prettyprint">@(Html.Kendo().DatePicker()
-        .Name("datepicker") //The name of the datepicker is mandatory. It specifies the "id" attribute of the widget.
-        .Min(new DateTime(1900, 1, 1)) //Set min date of the datepicker
-        .Max(new DateTime(2099, 12, 31)) //Set min date of the datepicker
-        .Value(DateTime.Today) //Set the value of the datepicker
-    ) </pre>  
+            <%: Html.Kendo().DatePicker()
+                .Name("datepicker") //The name of the datepicker is mandatory. It specifies the "id" attribute of the widget.
+                .Min(new DateTime(1900, 1, 1)) //Set min date of the datepicker
+                .Max(new DateTime(2099, 12, 31)) //Set min date of the datepicker
+                .Value(DateTime.Today) //Set the value of the datepicker
+            %>
+    - Razor
 
-### Accessing an Existing DatePicker
+            @(Html.Kendo().DatePicker()
+                .Name("datepicker") //The name of the datepicker is mandatory. It specifies the "id" attribute of the widget.
+                .Min(new DateTime(1900, 1, 1)) //Set min date of the datepicker
+                .Max(new DateTime(2099, 12, 31)) //Set min date of the datepicker
+                .Value(DateTime.Today) //Set the value of the datepicker
+            )
+
+## Accessing an Existing DatePicker
 
 You can reference an existing DatePicker instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
 Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/datepicker/methods.aspx) to control its behavior.
 
-  
 
-#### Accessing an existing DatePicker instance
- 
+### Accessing an existing DatePicker instance
+
     //Put this after your Kendo DatePicker for ASP.NET MVC declaration
     <script>
-    $(function() { 
+    $(function() {
     // Notice that the Name() of the datepicker is used to get its client-side instance
-    var grid = $("#datepicker").data("kendoDatePicker");
+    var datepicker = $("#datepicker").data("kendoDatePicker");
     });
     </script>
-      
+
 
 ### Handling Kendo UI DatePicker events
 
 You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/datepicker/events.aspx) exposed by Kendo UI DatePicker:
 
-  
 
-#### WebForms - subscribe by handler name
- 
+
+### WebForms - subscribe by handler name
+
     <%: Html.Kendo().DatePicker()
         .Name("datepicker")
         .Events(e => e
@@ -77,19 +74,19 @@ You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widget
     function datepicker_open() {
         //Handle the open event
     }
-    
+
     function datepicker_close() {
         //Handle the close event
     }
-    
+
     function datepicker_change() {
         //Handle the change event
     }
     </script>
-       
 
-#### Razor - subscribe by handler name
- 
+
+### Razor - subscribe by handler name
+
     @(Html.Kendo().DatePicker()
       .Name("datepicker")
       .Events(e => e
@@ -102,19 +99,19 @@ You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widget
     function datepicker_open() {
         //Handle the open event
     }
-    
+
     function datepicker_close() {
         //Handle the close event
     }
-    
+
     function datepicker_change() {
         //Handle the change event
     }
     </script>
-       
 
-#### Razor - subscribe by template delegate
- 
+
+### Razor - subscribe by template delegate
+
     @(Html.Kendo().DatePicker()
       .Name("datepicker")
       .Events(e => e
@@ -130,4 +127,4 @@ You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widget
             </text>)
       )
     )
-     
+
