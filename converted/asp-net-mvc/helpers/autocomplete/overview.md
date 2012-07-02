@@ -111,7 +111,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
     <script>
     $(function() {
         // Notice that the Name() of the autocomplete is used to get its client-side instance
-        var grid = $("#productAutoComplete").data("kendoAutoComplete");
+        var autocomplete = $("#productAutoComplete").data("kendoAutoComplete");
     });
     </script>
 
