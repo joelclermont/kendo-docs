@@ -1,6 +1,6 @@
 ---
 title: How-To: Interact With An Existing Database
-tags: 101, How-To
+tags: How-To
 publish: true
 related:
 ---
