@@ -41,73 +41,71 @@ Follow these steps:
 4.  Copy the Kendo UI CSS files from **\Content** to the **Content** folder of your application.
 5.  Configure your ASP.NET MVC layout page to use the Kendo UI scripts and themes:
 - Kendo UI Web (WebForms)
-    <link href="<%= Url.Content("~/Content/kendo.common.min.css") %>" rel="stylesheet" type="text/css" />
-    <link href="<%= Url.Content("~/Content/kendo.default.min.css") %>" rel="stylesheet" type="text/css" />
-    <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
-    <script src="<%= Url.Content("~/Scripts/kendo.web.min.js") %>"></script>
-    <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
+        <link href="<%= Url.Content("~/Content/kendo.common.min.css") %>" rel="stylesheet" type="text/css" />
+        <link href="<%= Url.Content("~/Content/kendo.default.min.css") %>" rel="stylesheet" type="text/css" />
+        <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
+        <script src="<%= Url.Content("~/Scripts/kendo.web.min.js") %>"></script>
+        <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
 
 - Kendo UI Web (Razor)
 
-    <link rel="stylesheet" href="@Url.Content("~/Content/kendo.common.min.css")">
-    <link rel="stylesheet" href="@Url.Content("~/Content/kendo.default.min.css")">
-    <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/kendo.web.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
+        <link rel="stylesheet" href="@Url.Content("~/Content/kendo.common.min.css")">
+        <link rel="stylesheet" href="@Url.Content("~/Content/kendo.default.min.css")">
+        <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
+        <script src="@Url.Content("~/Scripts/kendo.web.min.js")"></script>
+        <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
 
 - Kendo UI DataViz (WebForms)
 
-    <link href="<%= Url.Content("~/Content/kendo.dataviz.min.css") %>" rel="stylesheet" type="text/css" />
-    <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
-    <script src="<%= Url.Content("~/Scripts/kendo.dataviz.min.js") %>"></script>
-    <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
+        <link href="<%= Url.Content("~/Content/kendo.dataviz.min.css") %>" rel="stylesheet" type="text/css" />
+        <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
+        <script src="<%= Url.Content("~/Scripts/kendo.dataviz.min.js") %>"></script>
+        <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
 
 - Kendo UI DataViz (Razor)
 
-    <link href="@Url.Content("~/Content/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
-    <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/kendo.dataviz.min.js")"></script>
-    <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
+        <link href="@Url.Content("~/Content/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
+        <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
+        <script src="@Url.Content("~/Scripts/kendo.dataviz.min.js")"></script>
+        <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
 6.  Add a reference to the **Kendo.Mvc.UI** namespace to the **web.config**. Then the `Kendo` HtmlHelper extension would
 be availble in your views.
 
 - If you are using the WebForms view engine open the **web.config** file in the root folder of your application. Add
-    `&lt;add namespace="Kendo.Mvc.UI" /&gt;` before the closing `namespaces` tag:
+    `<add namespace="Kendo.Mvc.UI" />` before the closing `namespaces` tag:
 
-    <namespaces>
-        <add namespace="System.Web.Mvc" />
-        <add namespace="System.Web.Mvc.Ajax" />
-        <add namespace="System.Web.Mvc.Html" />
-        <add namespace="System.Web.Routing" />
-        <add namespace="System.Linq" />
-        <add namespace="System.Collections.Generic" />
+        <namespaces>
+            <add namespace="System.Web.Mvc" />
+            <add namespace="System.Web.Mvc.Ajax" />
+            <add namespace="System.Web.Mvc.Html" />
+            <add namespace="System.Web.Routing" />
+            <add namespace="System.Linq" />
+            <add namespace="System.Collections.Generic" />
 
-        <add namespace="Kendo.Mvc.UI" />
-    </namespaces>
+            <add namespace="Kendo.Mvc.UI" />
+        </namespaces>
 - If you are using the Razor view engine open the **web.config** file which is in the **Views** folder
     of your application.Add `&lt;add namespace="Kendo.Mvc.UI" /&gt;` before the closing `namespaces` tag:
 
-    <system.web.webPages.razor>
-        <pages pageBaseType="System.Web.Mvc.WebViewPage">
-            <namespaces>
-                <add namespace="System.Web.Mvc" />
-                <add namespace="System.Web.Mvc.Ajax" />
-                <add namespace="System.Web.Mvc.Html" />
-                <add namespace="System.Web.Routing" />
+        <system.web.webPages.razor>
+            <pages pageBaseType="System.Web.Mvc.WebViewPage">
+                <namespaces>
+                    <add namespace="System.Web.Mvc" />
+                    <add namespace="System.Web.Mvc.Ajax" />
+                    <add namespace="System.Web.Mvc.Html" />
+                    <add namespace="System.Web.Routing" />
 
-                <add namespace="Kendo.Mvc.UI" />
-            </namespaces>
-        </pages>
-    </system.web.webPages.razor>
+                    <add namespace="Kendo.Mvc.UI" />
+                </namespaces>
+            </pages>
+        </system.web.webPages.razor>
 7.  Use any Kendo UI for ASP.NET MVC HtmlHelper extension:
 
 - WebForms
-
-    <%: Html.Kendo().DatePicker().Name("Birthday") %>
+        <%: Html.Kendo().DatePicker().Name("Birthday") %>
 
 - Razor
-
-    @(Html.Kendo().DatePicker().Name("Birthday"))
+        @(Html.Kendo().DatePicker().Name("Birthday"))
 
 
 ### Running the sample application
