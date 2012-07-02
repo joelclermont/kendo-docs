@@ -21,6 +21,7 @@ Here is how to configure a simple Kendo Calendar:
         }
 3.  Add a calendar:
     - WebForms
+
             <%: Html.Kendo().Calendar()
                 .Name("calendar") //The name of the calendar is mandatory. It specifies the "id" attribute of the widget.
                 .Min(new DateTime(2010, 1, 1, 10, 0, 0)) //Set min time of the calendar
@@ -28,6 +29,7 @@ Here is how to configure a simple Kendo Calendar:
                 .Value(DateTime.Now) //Set the value of the calendar
             %>
     - Razor
+
             @(Html.Kendo().Calendar()
                 .Name("calendar") //The name of the calendar is mandatory. It specifies the "id" attribute of the widget.
                 .Min(new DateTime(2010, 1, 1, 10, 0, 0)) //Set min time of the calendar
@@ -48,7 +50,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
     <script>
     $(function() {
     // Notice that the Name() of the calendar is used to get its client-side instance
-    var grid = $("#calendar").data("kendoCalendar");
+    var calendar = $("#calendar").data("kendoCalendar");
     });
     </script>
 
