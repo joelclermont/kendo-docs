@@ -16,7 +16,7 @@ Kendo UI for ASP.NET MVC provides the following benefits:
 
 *   Built on top of the Kendo UI HTML5 framework and jQuery
 *   Leverages ASP.NET MVC features - data annotation, editor and display templates, validation, authorization
-*   Supports the WebForms and Razor view engines 
+*   Supports the WebForms and Razor view engines
 
 ### Downloading and Installing Kendo UI for ASP.NET MVC
 
@@ -29,7 +29,7 @@ The distribution files contain the following:
 *   **\Content** - Kendo UI minified CSS files
 *   **\Examples** - a sample ASP.NET MVC application
 *   **\LegacyThemes** - Kendo UI themes ported from [Telerik Extensions for ASP.NET MVC](http://www.telerik.com/products/aspnet-mvc.aspx) themes
-*   **\Scripts** - Kendo UI minified JavaScript files 
+*   **\Scripts** - Kendo UI minified JavaScript files
 
 ### Getting Started with Kendo UI for ASP.NET MVC
 
@@ -42,75 +42,75 @@ Follow these steps:
 5.  Configure your ASP.NET MVC layout page to use the Kendo UI scripts and themes:
 
 #### Kendo UI Web (WebForms)
- 
+
     <link href="<%= Url.Content("~/Content/kendo.common.min.css") %>" rel="stylesheet" type="text/css" />
     <link href="<%= Url.Content("~/Content/kendo.default.min.css") %>" rel="stylesheet" type="text/css" />
     <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
     <script src="<%= Url.Content("~/Scripts/kendo.web.min.js") %>"></script>
     <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
-              
+
 #### Kendo UI Web (Razor)
- 
+
     <link rel="stylesheet" href="@Url.Content("~/Content/kendo.common.min.css")">
     <link rel="stylesheet" href="@Url.Content("~/Content/kendo.default.min.css")">
     <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
     <script src="@Url.Content("~/Scripts/kendo.web.min.js")"></script>
     <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
-              
+
 #### Kendo UI DataViz (WebForms)
- 
+
     <link href="<%= Url.Content("~/Content/kendo.dataviz.min.css") %>" rel="stylesheet" type="text/css" />
     <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
     <script src="<%= Url.Content("~/Scripts/kendo.dataviz.min.js") %>"></script>
     <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
-              
+
 #### Kendo UI DataViz (Razor)
- 
+
     <link href="@Url.Content("~/Content/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
     <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
     <script src="@Url.Content("~/Scripts/kendo.dataviz.min.js")"></script>
     <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
-             6.  Add a reference to the **Kendo.Mvc.UI** namespace to the **web.config**. Then the `Kendo` HtmlHelper extension would
+6.  Add a reference to the **Kendo.Mvc.UI** namespace to the **web.config**. Then the `Kendo` HtmlHelper extension would
 be availble in your views.
 
-    *   If you are using the WebForms view engine open the **web.config** file in the root folder of your application. Add
+*   If you are using the WebForms view engine open the **web.config** file in the root folder of your application. Add
     `&lt;add namespace="Kendo.Mvc.UI" /&gt;` before the closing `namespaces` tag:
-    
+
     <namespaces>
-    <add namespace="System.Web.Mvc" />
-    <add namespace="System.Web.Mvc.Ajax" />
-    <add namespace="System.Web.Mvc.Html" />
-    <add namespace="System.Web.Routing" />
-    <add namespace="System.Linq" />
-    <add namespace="System.Collections.Generic" />
-    
-    <add namespace="Kendo.Mvc.UI" />
+        <add namespace="System.Web.Mvc" />
+        <add namespace="System.Web.Mvc.Ajax" />
+        <add namespace="System.Web.Mvc.Html" />
+        <add namespace="System.Web.Routing" />
+        <add namespace="System.Linq" />
+        <add namespace="System.Collections.Generic" />
+
+        <add namespace="Kendo.Mvc.UI" />
     </namespaces>
-                *   If you are using the Razor view engine open the **web.config** file which is in the **Views** folder
+*   If you are using the Razor view engine open the **web.config** file which is in the **Views** folder
     of your application.Add `&lt;add namespace="Kendo.Mvc.UI" /&gt;` before the closing `namespaces` tag:
-    
+
     <system.web.webPages.razor>
-    <pages pageBaseType="System.Web.Mvc.WebViewPage">
-        <namespaces>
-            <add namespace="System.Web.Mvc" />
-            <add namespace="System.Web.Mvc.Ajax" />
-            <add namespace="System.Web.Mvc.Html" />
-            <add namespace="System.Web.Routing" />
-    
-            <add namespace="Kendo.Mvc.UI" />
-        </namespaces>
-    </pages>
+        <pages pageBaseType="System.Web.Mvc.WebViewPage">
+            <namespaces>
+                <add namespace="System.Web.Mvc" />
+                <add namespace="System.Web.Mvc.Ajax" />
+                <add namespace="System.Web.Mvc.Html" />
+                <add namespace="System.Web.Routing" />
+
+                <add namespace="Kendo.Mvc.UI" />
+            </namespaces>
+        </pages>
     </system.web.webPages.razor>
-                7.  Use any Kendo UI for ASP.NET MVC HtmlHelper extension:
+7.  Use any Kendo UI for ASP.NET MVC HtmlHelper extension:
 
 #### WebForms
- 
+
     <%: Html.Kendo().DatePicker().Name("Birthday") %>
-              
+
 #### Razor
- 
+
     @(Html.Kendo().DatePicker().Name("Birthday"))
-              
+
 
 ### Running the sample application
 
