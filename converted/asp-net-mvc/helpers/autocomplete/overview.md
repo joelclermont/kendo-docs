@@ -20,37 +20,38 @@ Here is how to configure the Kendo AutoComplete for server binding to the Northw
 
 1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
 2.  Create a new action method and pass the Products table as the model:
-    public ActionResult Index()
-    {
-        NorthwindDataContext northwind = new NorthwindDataContext();
 
-        return View(northwind.Products);
-    }
+        public ActionResult Index()
+        {
+            NorthwindDataContext northwind = new NorthwindDataContext();
+
+            return View(northwind.Products);
+        }
 3.  Make your view strongly typed:
     - WebForms
 
-        <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master"
-           Inherits="System.Web.Mvc.ViewPage<IEnumerable<MvcApplication1.Models.Product>>" %>
+         <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master"
+             Inherits="System.Web.Mvc.ViewPage<IEnumerable<MvcApplication1.Models.Product>>" %>
     - Razor
 
-        @model IEnumerable<MvcApplication1.Models.Product>
+         @model IEnumerable<MvcApplication1.Models.Product>
 4.  Add a server bound autocomplete:
     - WebForms
 
-        <%: Html.Kendo().AutoComplete()
-            .Name("productAutoComplete") //The name of the autocomplete is mandatory. It specifies the "id" attribute of the widget.
-            .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
-            .BindTo(Model)   //Pass the list of Products to the autocomplete.
-            .Filter("contains") //Define the type of the filter, which autocomplete will use.
-        %>
+         <%: Html.Kendo().AutoComplete()
+             .Name("productAutoComplete") //The name of the autocomplete is mandatory. It specifies the "id" attribute of the widget.
+             .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
+             .BindTo(Model)   //Pass the list of Products to the autocomplete.
+             .Filter("contains") //Define the type of the filter, which autocomplete will use.
+         %>
     - Razor
 
-        @(Html.Kendo().AutoComplete()
-          .Name("productAutoComplete") //The name of the autocomplete is mandatory. It specifies the "id" attribute of the widget.
-          .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
-          .BindTo(Model)   //Pass the list of Products to the autocomplete.
-          .Filter("contains") //Define the type of the filter, which autocomplete will use.
-        )
+         @(Html.Kendo().AutoComplete()
+           .Name("productAutoComplete") //The name of the autocomplete is mandatory. It specifies the "id" attribute of the widget.
+           .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
+           .BindTo(Model)   //Pass the list of Products to the autocomplete.
+           .Filter("contains") //Define the type of the filter, which autocomplete will use.
+         )
 
 ### Configure the Kendo AutoComplete for ajax binding
 
@@ -58,46 +59,46 @@ Here is how to configure the Kendo AutoComplete for ajax binding to the Northwin
 
 1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
 2.  Create an action method which renders the view:
-public ActionResult Index()
-{
-    return View();
-}
+    public ActionResult Index()
+    {
+        return View();
+    }
 3.  Create a new action method and pass the Products table as Json result:
-public JsonResult GetProducts()
-{
-    NorthwindDataContext northwind = new NorthwindDataContext();
+    public JsonResult GetProducts()
+    {
+        NorthwindDataContext northwind = new NorthwindDataContext();
 
-    return Json(northwind.Products);
-}
+        return Json(northwind.Products);
+    }
 4.  Add a ajax bound autocomplete:
     - WebForms
 
-        <%: Html.Kendo().AutoComplete()
-            .Name("productAutoComplete") //The name of the autocomplete is mandatory. It specifies the "id" attribute of the widget.
-            .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
-            .DataSource(source =>
-            {
-                    source.Read(read =>
-                   {
-                            read.Action("GetProducts", "Home") //Set the Action and Controller name
-                                .ServerFiltering(true); //If true the DataSource will not filter the data on the client.
-                   });
-            })
-        %>
+         <%: Html.Kendo().AutoComplete()
+             .Name("productAutoComplete") //The name of the autocomplete is mandatory. It specifies the "id" attribute of the widget.
+             .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
+             .DataSource(source =>
+             {
+                     source.Read(read =>
+                    {
+                             read.Action("GetProducts", "Home") //Set the Action and Controller name
+                                 .ServerFiltering(true); //If true the DataSource will not filter the data on the client.
+                    });
+             })
+         %>
     - Razor
 
-        @(Html.Kendo().AutoComplete()
-          .Name("productAutoComplete") //The name of the autocomplete is mandatory. It specifies the "id" attribute of the widget.
-          .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
-          .DataSource(source =>
-            {
-                    source.Read(read =>
-                   {
-                            read.Action("GetProducts", "Home") //Set the Action and Controller name
-                                .ServerFiltering(true); //If true the DataSource will not filter the data on the client.
-                   });
-            })
-        )
+         @(Html.Kendo().AutoComplete()
+           .Name("productAutoComplete") //The name of the autocomplete is mandatory. It specifies the "id" attribute of the widget.
+           .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
+           .DataSource(source =>
+             {
+                     source.Read(read =>
+                    {
+                             read.Action("GetProducts", "Home") //Set the Action and Controller name
+                                 .ServerFiltering(true); //If true the DataSource will not filter the data on the client.
+                    });
+             })
+         )
 
 ## Accessing an Existing AutoComplete
 
