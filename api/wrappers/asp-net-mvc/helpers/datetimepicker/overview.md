@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC DateTimePicker Overview
+slug: mvc-datetimepicker-overview
 publish: true
 ---
 

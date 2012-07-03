@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC DropDownList Overview
+slug: mvc-dropdownlist-overview
 publish: true
 ---
 

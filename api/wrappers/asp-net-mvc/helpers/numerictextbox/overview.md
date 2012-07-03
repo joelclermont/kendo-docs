@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC Numeric Textbox Overview
+slug: mvc-numeric-textbox-overview
 publish: true
 ---
 

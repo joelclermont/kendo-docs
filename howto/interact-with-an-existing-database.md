@@ -1,5 +1,5 @@
 ---
-title: interact-with-db
+title: Interact With an Existing DB
 slug: howto-interact-with-an-existing-db
 tags: How-To
 publish: true

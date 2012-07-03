@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC ComboBox Overview
+slug: mvc-combobox-overview
 publish: true
 ---
 

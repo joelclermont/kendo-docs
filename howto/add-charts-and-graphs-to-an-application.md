@@ -1,5 +1,5 @@
 ---
-title: add-charts-and-graphs
+title: Add Charts and Graphs
 slug: howto-add-charts-and-graphs
 tags: How-To
 publish: true

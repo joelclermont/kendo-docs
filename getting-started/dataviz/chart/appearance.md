@@ -1,6 +1,6 @@
 ---
 title: Chart Appearance
-slug: chart-appearance-type
+slug: chart-appearance
 publish: true
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC Window Overview
+slug: mvc-window-overview
 publish: true
 ---
 

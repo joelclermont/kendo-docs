@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVc Treeview Overview
+slug: mvc-treeview-overview
 publish: true
 ---
 

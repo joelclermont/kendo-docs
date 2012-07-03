@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC Linear Gauge Overview
+slug: mvc-linear-gauge-overview
 publish: true
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC Grid Overview
+slug: mvc-grid-overview
 publish: true
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC Panelbar Overview
+slug: mvc-panelbar-overview
 publish: true
 ---
 

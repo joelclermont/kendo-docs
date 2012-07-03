@@ -1,5 +1,6 @@
 ---
-title: Configuration
+title: MVC Grid Configuration
+slug: mvc-grid-configuration
 publish: true
 ---
 

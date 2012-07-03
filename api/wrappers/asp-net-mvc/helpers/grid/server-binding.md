@@ -1,5 +1,6 @@
 ---
-title: Server Binding
+title: MVC Grid Server Binding
+slug: mvc-grid-server-binding
 publish: true
 ---
 

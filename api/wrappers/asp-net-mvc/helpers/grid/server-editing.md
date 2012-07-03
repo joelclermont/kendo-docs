@@ -1,5 +1,6 @@
 ---
-title: Server Editing
+title: MVC Grid Server Editing
+slug: mvc-grid-server-editing
 publish: true
 ---
 

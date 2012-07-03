@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC Tabstrip Overview
+slug: mvc-tabstrip-overview
 publish: true
 ---
 

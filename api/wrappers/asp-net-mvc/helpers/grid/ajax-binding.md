@@ -1,5 +1,6 @@
 ---
-title: Ajax Binding
+title: MVC Grid Ajax Binding
+slug: mvc-grid-ajax-binding
 publish: true
 ---
 

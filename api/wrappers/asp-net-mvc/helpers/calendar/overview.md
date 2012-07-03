@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVC Calendar Overview
+slug: mvc-calendar-overview
 publish: true
 ---
 

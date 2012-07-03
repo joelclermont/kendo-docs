@@ -1,5 +1,6 @@
 ---
-title: Overview
+title: MVc Timepicker Overview
+slug: mvc-timepicker-overview
 publish: true
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Migrating from Telerik Extensions for ASP.NET MVC
+slug: mvc-migrating-from-extensions-to-mvc
 publish: true
 ---
 

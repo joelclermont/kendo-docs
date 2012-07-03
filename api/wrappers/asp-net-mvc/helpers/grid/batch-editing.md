@@ -1,5 +1,6 @@
 ---
-title: Batch Editing
+title: MVC Grid Batch Editing
+slug: mvc-grid-batch-editing
 publish: true
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: build-native-apps
+title: Build Native Apps
 slug: howto-build-native-apps-with-kendo-ui-mobile
 tags: How-To
 publish: true
