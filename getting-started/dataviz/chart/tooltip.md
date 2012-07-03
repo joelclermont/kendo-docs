@@ -1,5 +1,6 @@
 ---
-title: Tooltip
+title: Chart Tooltip
+slug: chart-tooltip
 publish: true
 ---
 

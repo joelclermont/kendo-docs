@@ -1,9 +1,8 @@
 ---
-title: Appearance
+title: Chart Appearance
+slug: chart-appearance-type
 publish: true
 ---
-
-## 
 
 ## Chart Appearance 
 

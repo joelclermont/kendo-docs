@@ -1,5 +1,6 @@
 ---
-title: Walkthrough
+title: Grid Walkthrough
+slug: grid-walkthrough
 publish: true
 ---
 

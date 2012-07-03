@@ -1,5 +1,6 @@
 ---
-title: Source
+title: MVVM Source Binding
+slug: mvvm-source-binding
 publish: true
 ---
 

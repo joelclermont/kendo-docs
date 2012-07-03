@@ -1,5 +1,6 @@
 ---
-title: Text
+title: MVVM Text Binding
+slug: mvvm-text-binding
 publish: true
 ---
 

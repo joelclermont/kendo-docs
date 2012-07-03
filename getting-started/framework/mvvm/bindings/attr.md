@@ -1,5 +1,6 @@
 ---
-title: Attr
+title: MVVM Attr Binding
+slug: mvvm-attribute-binding
 publish: true
 ---
 

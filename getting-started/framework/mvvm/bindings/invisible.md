@@ -1,5 +1,6 @@
 ---
-title: Invisible
+title: MVVM Invisible Binding
+slug: mvvm-invisible-binding
 publish: true
 ---
 

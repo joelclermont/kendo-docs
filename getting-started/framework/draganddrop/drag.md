@@ -1,5 +1,6 @@
 ---
 title: Drag Component
+slug: drag-component
 publish: true
 ---
 

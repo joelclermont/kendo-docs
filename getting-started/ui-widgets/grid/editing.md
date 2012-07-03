@@ -1,5 +1,6 @@
 ---
-title: Editing
+title: Grid Editing
+slug: grid-editing
 publish: true
 ---
 

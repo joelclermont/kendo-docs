@@ -1,5 +1,6 @@
 ---
-title: Bar charts
+title: Bar Chart Type
+slug: chart-bar-type
 publish: true
 ---
 

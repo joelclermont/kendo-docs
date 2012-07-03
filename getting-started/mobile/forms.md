@@ -1,5 +1,6 @@
 ---
-title: Forms
+title: Mobile Forms
+slug: mobile-forms
 publish: true
 ---
 

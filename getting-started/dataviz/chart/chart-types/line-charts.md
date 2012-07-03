@@ -1,5 +1,6 @@
 ---
-title: Line Charts
+title: Line Chart Type
+slug: chart-line-type
 publish: true
 ---
 

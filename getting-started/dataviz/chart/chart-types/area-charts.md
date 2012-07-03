@@ -1,5 +1,6 @@
 ---
-title: Area Charts
+title: Area Chart Type
+slug: chart-area-type
 publish: true
 ---
 

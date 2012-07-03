@@ -1,5 +1,6 @@
 ---
-title: ObservableObject
+title: MVVM ObservableObject
+slug: mvvm-observableObject
 publish: true
 ---
 

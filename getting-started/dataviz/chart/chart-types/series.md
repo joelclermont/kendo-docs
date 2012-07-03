@@ -1,5 +1,6 @@
 ---
-title: Series
+title: Series Chart Type
+slug: chart-series-type
 publish: true
 ---
 

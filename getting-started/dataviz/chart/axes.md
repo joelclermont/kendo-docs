@@ -1,5 +1,6 @@
 ---
-title: Axes
+title: Chart Axes
+slug: chart-axes
 publish: true
 ---
 

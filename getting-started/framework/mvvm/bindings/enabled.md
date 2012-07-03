@@ -1,5 +1,6 @@
 ---
-title: Enabled
+title: MVVM Enabled Binding
+slug: mvv-enabled-binding
 publish: true
 ---
 
