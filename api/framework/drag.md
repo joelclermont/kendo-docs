@@ -1,5 +1,6 @@
 ---
 title: kendo.Drag
+slug: fw-kendo.drag
 tags: api,framework
 publish: true
 ---

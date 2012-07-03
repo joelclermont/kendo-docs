@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.TimePicker
+slug: web-kendo.ui.timepicker
 tags: api,web
 publish: true
 ---

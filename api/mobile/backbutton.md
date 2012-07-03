@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.BackButton
+slug: mobile-kendo.mobile.ui.backbutton
 tags: api,mobile
 publish: true
 ---

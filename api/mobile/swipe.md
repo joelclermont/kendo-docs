@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.Swipe
+slug: mobile-kendo.mobile.ui.swipe
 tags: api,mobile
 publish: true
 ---

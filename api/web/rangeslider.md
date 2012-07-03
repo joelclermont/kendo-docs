@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.RangeSlider
+slug: web-kendo.ui.rangeslider
 tags: api,web
 publish: true
 ---

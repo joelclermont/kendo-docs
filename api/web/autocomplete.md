@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.AutoComplete
+slug: web-kendo.ui.autocomplete
 tags: api,web
 publish: true
 ---

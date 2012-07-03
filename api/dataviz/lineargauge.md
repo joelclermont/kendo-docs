@@ -1,5 +1,6 @@
 ---
 title: kendo.dataviz.ui.LinearGauge
+slug: dataviz-kendo.dataviz.ui.lineargauge
 tags: api,dataviz
 publish: true
 ---

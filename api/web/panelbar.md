@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.PanelBar
+slug: web-kendo.ui.panelbar
 tags: api,web
 publish: true
 ---

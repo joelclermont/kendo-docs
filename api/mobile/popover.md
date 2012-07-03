@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.PopOver
+slug: mobile-kendo.mobile.ui.popover
 tags: api,mobile
 publish: true
 ---

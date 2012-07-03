@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.Pane
+slug: mobile-kendo.mobile.ui.pane
 tags: api,mobile
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.DropDownList
+slug: web-kendo.ui.dropdownlist
 tags: api,web
 publish: true
 ---

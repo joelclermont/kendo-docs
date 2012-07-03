@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.ListView
+slug: web-kendo.ui.listview
 tags: api,web
 publish: true
 ---

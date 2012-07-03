@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.TreeView
+slug: web-kendo.ui.treeview
 tags: api,web
 publish: true
 ---

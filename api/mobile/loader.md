@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.Loader
+slug: mobile-kendo.mobile.ui.loader
 tags: api,mobile
 publish: true
 ---

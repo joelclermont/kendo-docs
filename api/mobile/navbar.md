@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.NavBar
+slug: mobile-kendo.mobile.ui.navbar
 tags: api,mobile
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: kendo.DragAxis
+slug: fw-kendo.dragaxis
 tags: api,framework
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.TabStrip
+slug: mobile-kendo.mobile.ui.tabstrip
 tags: api,mobile
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.Switch
+slug: mobile-kendo.mobile.ui.switch
 tags: api,mobile
 publish: true
 ---

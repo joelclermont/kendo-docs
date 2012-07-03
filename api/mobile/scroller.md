@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.Scroller
+slug: mobile-kendo.mobile.ui.scroller
 tags: api,mobile
 publish: true
 ---

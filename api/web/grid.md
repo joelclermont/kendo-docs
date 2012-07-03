@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Grid
+slug: web-kendo.ui.grid
 tags: api,web
 publish: true
 ---

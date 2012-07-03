@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.ComboBox
+slug: web-kendo.ui.combobox
 tags: api,web
 publish: true
 ---

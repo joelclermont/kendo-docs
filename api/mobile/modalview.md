@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.ModalView
+slug: mobile-kendo.mobile.ui.modalview
 tags: api,mobile
 publish: true
 ---

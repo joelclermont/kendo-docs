@@ -1,5 +1,6 @@
 ---
 title: kendo
+slug: fw-kendo-main
 tags: api,framework
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Calendar
+slug: web-kendo.ui.calendar
 tags: api,web
 publish: true
 ---
