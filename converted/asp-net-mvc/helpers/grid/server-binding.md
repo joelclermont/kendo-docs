@@ -139,7 +139,8 @@ parameters. Thus more than one server-boud grid can coexist in the same view. Th
 
 
     <%: Html.Kendo().Grid(Model)
-        .PrefixUrlParameters(false)
+            .Name("Grid")
+            .PrefixUrlParameters(false)
     %>
 
 
@@ -171,6 +172,7 @@ Sometimes the action method which renders the view containing the grid may need 
 ### Razor View
 
     @(Html.Kendo().Grid(Model)
+          .Name("Grid")
           .DataSource(dataSource => dataSource
               .Server() //specify server type
               .Read(read => read.Action("Index", "Home", new { firstName = "John", lastName = "Doe } ))
