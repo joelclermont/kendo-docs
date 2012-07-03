@@ -50,17 +50,17 @@ Here is how to configure the Kendo Grid for server binding to the Northwind Prod
             %>
     - Razor
 
-        @(Html.Kendo().Grid(Model)            //The grid will be bound to the Model which is the Products table
-              .Name("productGrid") //The name of the grid is mandatory. It specifies the "id" attribute of the widget.
-              .Columns(columns =>
-              {
-                  columns.Bound(p => p.ProductID);   //Create a column bound to the "ProductID" property
-                  columns.Bound(p => p.ProductName); //Create a column bound to the "ProductName" property
-                  columns.Bound(p => p.UnitPrice);   //Create a column bound to the "UnitPrice" property
-                  columns.Bound(p => p.UnitsInStock);//Create a column bound to the "UnitsInStock" property
-              })
-             .Pageable() //Enable paging
-        )
+            @(Html.Kendo().Grid(Model)            //The grid will be bound to the Model which is the Products table
+                  .Name("productGrid") //The name of the grid is mandatory. It specifies the "id" attribute of the widget.
+                  .Columns(columns =>
+                  {
+                      columns.Bound(p => p.ProductID);   //Create a column bound to the "ProductID" property
+                      columns.Bound(p => p.ProductName); //Create a column bound to the "ProductName" property
+                      columns.Bound(p => p.UnitPrice);   //Create a column bound to the "UnitPrice" property
+                      columns.Bound(p => p.UnitsInStock);//Create a column bound to the "UnitsInStock" property
+                  })
+                 .Pageable() //Enable paging
+            )
 
 ## Accessing an Existing Grid
 
