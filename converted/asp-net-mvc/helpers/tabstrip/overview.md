@@ -116,12 +116,12 @@ There are several ways to define items of the Kendo TabStrip for ASP.NET MVC
             %>
     - Razor
 
-    @(Html.Kendo().TabStrip()
-          .BindTo(item, Model =>
-          {
-             item.Text = category.CategoryName;
-          })
-    )
+            @(Html.Kendo().TabStrip()
+                  .BindTo(item, Model =>
+                  {
+                     item.Text = category.CategoryName;
+                  })
+            )
 
 ## Accessing an Existing TabStrip
 
