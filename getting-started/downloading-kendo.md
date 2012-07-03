@@ -1,8 +1,9 @@
 ---
 title: Downloading Kendo UI
+slug: gs-downloading-kendo
 tags: 101, Getting Started
 publish: true
-relatedDocs: getting-started-with-kendo, your-first-application
+relatedDocs: gs-your-first-application
 ---
 
 # Downloading Kendo UI

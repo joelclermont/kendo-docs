@@ -1,8 +1,9 @@
 ---
 title:	Using Kendo Widgets
+slug: gs-using-kendo-widgets
 tags:	101, Getting Started, widgets
 Publish:	true
-related:	getting-started-with-kendo, downloading-kendo
+related:	gs-downloading-kendo
 ---
 
 # Using Kendo UI Widgets
