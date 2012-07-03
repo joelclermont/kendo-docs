@@ -30,8 +30,8 @@ Here is how to configure the Kendo AutoComplete for server binding to the Northw
  3.  Make your view strongly typed:
      - WebForms
 
-        <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master"
-        Inherits="System.Web.Mvc.ViewPage<IEnumerable<MvcApplication1.Models.Product>>" %>
+             <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master"
+             Inherits="System.Web.Mvc.ViewPage<IEnumerable<MvcApplication1.Models.Product>>" %>
      - Razor
 
              @model IEnumerable<MvcApplication1.Models.Product>
