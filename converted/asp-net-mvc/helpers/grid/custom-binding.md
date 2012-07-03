@@ -30,7 +30,6 @@ Decorate that parameter with the `Kendo.UI.DataSourceRequestAttribute`. That att
 
             IQueryable<Order> orders = new NorthwindDataContext().Orders;
         }
-
 3.  Handle the appropriate data operations:
 
         public ActionResult Index([DataSourceRequest]DataSourceRequest request)
@@ -95,7 +94,7 @@ Decorate that parameter with the `Kendo.UI.DataSourceRequestAttribute`. That att
 
             ViewData["total"] = total;
         }
- 5.  Pass the processed data to the View.
+5.  Pass the processed data to the View.
 
         public ActionResult Index([DataSourceRequest]DataSourceRequest request)
         {
@@ -107,7 +106,7 @@ Decorate that parameter with the `Kendo.UI.DataSourceRequestAttribute`. That att
 
             return View(orders);
         }
- 6.  Set `EnableCustomBinding(true)` through the Grid Widget declaration.
+6.  Set `EnableCustomBinding(true)` through the Grid Widget declaration.
 
         @(Html.Kendo().Grid<Kendo.Mvc.Examples.Models.Order>()
             .Name("Grid")
@@ -148,6 +147,7 @@ To configure the Kendo Grid for server custom binding follow these steps:
 1. Add a new parameter of type `Kendo.UI.DataSourceRequest` to the action method.
 It will contain the current grid request information - page, sort, group and filter. Decorate that parameter with the
 `Kendo.UI.DataSourceRequestAttribute`. That attribute is responsible for populating the DataSourceRequest object.
+
         public ActionResult Orders_Read([DataSourceRequest]DataSourceRequest request)
         {
             IQueryable<Order> orders = new NorthwindDataContext().Orders;
@@ -196,6 +196,7 @@ It will contain the current grid request information - page, sort, group and fil
             orders = orders.Take(request.PageSize);
         }
 3. Create new instance of `DataSourceResult` and set the `Data` and `Total` properties to the processed data and total number of records.
+
         public ActionResult Orders_Read([DataSourceRequest]DataSourceRequest request)
         {
             // Get the data (code omitted)
@@ -213,6 +214,7 @@ It will contain the current grid request information - page, sort, group and fil
             };
         }
 4. Return the `DataSourceResult` as JSON.
+
         public ActionResult Orders_Read([DataSourceRequest]DataSourceRequest request)
         {
             // Get the data (code omitted)
@@ -233,5 +235,3 @@ It will contain the current grid request information - page, sort, group and fil
             // Return the result as JSON
             return Json(result);
         }
-
-
