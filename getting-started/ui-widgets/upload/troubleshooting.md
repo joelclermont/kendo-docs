@@ -1,5 +1,6 @@
 ---
-title: Troubleshooting
+title: Upload Troubleshooting
+slug: upload-troubleshooting
 publish: true
 ---
 

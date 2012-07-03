@@ -1,5 +1,6 @@
 ---
-title: Supported browsers
+title: Upload Supported browsers
+slug: upload-supported-browsers
 publish: true
 ---
 

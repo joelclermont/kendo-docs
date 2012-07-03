@@ -1,5 +1,6 @@
 ---
 title: Fundamentals
+slug: widget-fundamentals
 publish: true
 ---
 

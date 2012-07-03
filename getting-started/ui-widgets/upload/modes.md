@@ -1,9 +1,8 @@
 ---
-title: Modes
+title: Upload Modes
+slug: upload-modes
 publish: true
----
-
- 
+--- 
 
 The Upload supports two modes of operation - synchronous and asynchronous.
 

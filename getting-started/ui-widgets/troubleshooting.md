@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting
+slug: widget-troubleshooting
 publish: true
 ---
 

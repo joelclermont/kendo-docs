@@ -1,5 +1,6 @@
 ---
-title: Metadata
+title: Upload Metadata
+slug: upload-metadata
 publish: true
 ---
 

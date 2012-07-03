@@ -1,5 +1,6 @@
 ---
 title: Drag and drop
+slug: upload-drag-and-drop
 publish: true
 ---
 

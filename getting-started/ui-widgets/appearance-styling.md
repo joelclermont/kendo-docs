@@ -1,5 +1,6 @@
 ---
 title: Appearance and Styling
+slug: widget-appearance-and-styling
 publish: true
 ---
 
