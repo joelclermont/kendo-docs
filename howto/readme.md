@@ -1,3 +1,9 @@
+---
+title: dummy-page
+tags: oss, contributing
+publish: true
+---
+
 # This is a sample Markdown document
 
 [Here's a link](http://kendoui.com)
