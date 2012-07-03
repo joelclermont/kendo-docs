@@ -35,7 +35,6 @@ Here is how to configure the Kendo Grid for server binding to the Northwind Prod
 
             @model IEnumerable<MvcApplication1.Models.Product>
 4.  Add a server bound grid:
-
     - WebForms
 
             <%: Html.Kendo().Grid(Model)         //The grid will be bound to the Model which is the Products table
