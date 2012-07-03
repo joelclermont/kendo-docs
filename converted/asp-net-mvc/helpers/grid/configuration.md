@@ -17,7 +17,7 @@ Kendo Grid for ASP.NET MVC supports two types of data sources -
 Sets the aggregates.
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Aggregates(aggregates =>
         {
             aggregates.Add(p => p.UnitsInStock).Min().Max().Count();
@@ -31,21 +31,21 @@ Sets the aggregates.
 Specify the action method which will create new model
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Create(create => create.Action(/### action ###/ "Create", /### controller ###/ "Home"))
     )
 ###   Destroy
 Specify the action method which will destroy existing models.
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Destroy(destroy =>  destroy.Destroy(/### action ###/ "Destroy", /### controller ###/ "Home"))
     )
 ###   Events
 Handle the [events](http://www.kendoui.com/documentation/framework/datasource/events.aspx) of the Kendo DataSource object.
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Events(events => events
             // Subscribe to the "change" event. The name of the JavaScript function which will be invoked is "changeHandler".
             .Change("changeHandler")
@@ -59,7 +59,7 @@ Handle the [events](http://www.kendoui.com/documentation/framework/datasource/ev
 Set the initial filter.
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Filter(filters =>
         {
             // Show products whose ProductName property contains "C"
@@ -72,7 +72,7 @@ Set the initial filter.
 Set the initial grouping.
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Groups(groups =>
         {
             // Group by the UnitPrice property
@@ -85,7 +85,7 @@ Set the initial grouping.
 Configure the model of the data source.
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Model(model =>
         {
             //The unique identifier (primary key) of the model is the ProductID property
@@ -102,21 +102,21 @@ Configure the model of the data source.
 Set the page size used during paging. The default page size is 10.
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .PageSize(20)
     )
 ###   Read
 Specify the action method which will read existing models and return them as JSON:
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Read(read =>  read.Read(/### action ###/ "Read", /### controller ###/ "Home"))
     )
 ###   Sort
 Set the initial sort.
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Sort(sort =>
         {
             // Sort by UnitsInStock in descending order
@@ -130,7 +130,7 @@ Set the initial sort.
 Specify the action method which will update existing models:
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
         .Update(update =>  update.Update(/### action ###/ "Update", /### controller ###/ "Home"))
     )
 
@@ -139,7 +139,7 @@ Specify the action method which will update existing models:
 To configure a `DataSource` to use ajax binding use the `Ajax` method:
 
     .DataSource(dataSource => dataSource
-        .Ajax()
+        .Ajax() // or .Server()
     )
 
 
@@ -231,7 +231,7 @@ A bound column is declared via the `Bound` method. It has the following settings
 
 ###   ClientTemplate
 A [Kendo template](http://www.kendoui.com/documentation/framework/templates/overview.aspx)
-which specifies the way the column is displayed. Works ######only###### when the grid is configured for
+which specifies the way the column is displayed. Works **only** when the grid is configured for
 [ajax binding](http://www.kendoui.com/documentation/asp-net-mvc/helpers/grid/ajax-binding.aspx).
 
     // Display the ProductName inside a strong tag
@@ -269,7 +269,7 @@ Enables or disables sorting by that column.
 columns.Bound(p =&gt; p.ProductID).Sortable(false);
 
 ###   Template
-Sets the server template which will be used when displaying the bound field.  Works ######only######
+Sets the server template which will be used when displaying the bound field.  Works **only**
 when the grid is configured for [server binding](http://www.kendoui.com/documentation/asp-net-mvc/helpers/grid/server-binding.aspx).
 Template syntax is different for WebForms and Razor views. In WebForms the template is a [server side code block](http://msdn.microsoft.com/en-us/library/ms178135%28vs.80%29.aspx).
 In Razor the template is a [templated razor delegate](http://haacked.com/archive/2011/02/27/templated-razor-delegates.aspx).
