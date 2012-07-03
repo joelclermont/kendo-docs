@@ -35,7 +35,7 @@ The minified versions of all JavaScript files (except jQuery) are also available
 
 **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN:
 
-    https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js</pre>
+    https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js
 
 ### Individual scripts
 
