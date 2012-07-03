@@ -30,12 +30,12 @@ to create a single JavaScript file which contains only the required widgets and 
 The minified versions of all JavaScript files (except jQuery) are also available via CDN
 
     http://cdn.kendostatic.com/<version>/js/<filename>.min.js
+    
+**e.g.** http://cdn.kendostatic.com/2011.3.1129/js/kendo.all.min.js
 
-    **e.g.** http://cdn.kendostatic.com/2011.3.1129/js/kendo.all.min.js
+**Important:** in order to use HTTPS, you need to directly access the CloudFront CDN:
 
-    **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN:
-
-         https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js</pre>
+    https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js</pre>
 
 ### Individual scripts
 
