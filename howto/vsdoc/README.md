@@ -1,3 +1,10 @@
+---
+title: using-vs-intellisense
+slug: howto-using-vs-intellisense
+tags: How-To, Visual Studio, Intellisense
+publish: true
+---
+
 # KendoUI Visual Studio Intellisense
 
 Kendo UI provides intellisense using an additional vsdoc javascript file. The approach was initially described in Scott Guthrie's blog post [jQuery Intellisense in VS 2008](http://weblogs.asp.net/scottgu/archive/2008/11/21/jquery-intellisense-in-vs-2008.aspx).
