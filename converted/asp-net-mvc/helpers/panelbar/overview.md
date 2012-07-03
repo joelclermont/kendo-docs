@@ -21,10 +21,10 @@ There are several ways to define items of the Kendo PanelBar for ASP.NET MVC
 
 2.  Create a new action method which renders the view:
 
-    public ActionResult Index()
-    {
-        return View();
-    }
+        public ActionResult Index()
+        {
+            return View();
+        }
 3.  Add a simple panelbar:
     - WebForms
 
@@ -38,14 +38,14 @@ There are several ways to define items of the Kendo PanelBar for ASP.NET MVC
             %>
     - Razor
 
-    @(Html.Kendo().PanelBar()
-          .Name("panelbar") //The name of the panelbar is mandatory. It specifies the "id" attribute of the widget.
-          .Items(items =>
-          {
-              items.Add().Text("Item 1"); //Add item with text "Item1")
-              items.Add().Text("Item 2"); //Add item with text "Item2")
-          })
-    )
+            @(Html.Kendo().PanelBar()
+                  .Name("panelbar") //The name of the panelbar is mandatory. It specifies the "id" attribute of the widget.
+                  .Items(items =>
+                  {
+                      items.Add().Text("Item 1"); //Add item with text "Item1")
+                      items.Add().Text("Item 2"); //Add item with text "Item2")
+                  })
+            )
 
 ### Bind Kendo PanelBar to a sitemap
 
@@ -53,29 +53,29 @@ There are several ways to define items of the Kendo PanelBar for ASP.NET MVC
 
 2.  Create a simple sitemap with **sample.sitemap** file name at the root of the project:
 
-    <?xml version="1.0" encoding="utf-8" ?>
-    <siteMap>
-      <siteMapNode title="Home" controller="Home" action="Overview">
-        <siteMapNode title="Grid">
-          <siteMapNode controller="grid" action="index" title="First Look (Razor)" area="razor"/>
-          <siteMapNode controller="grid" action="index" title="First Look (ASPX)" area="aspx"/>
-        </siteMapNode>
-        <siteMapNode title="PanelBar">
-          <siteMapNode controller="panelbar" action="index" title="First Look (Razor)" area="razor"/>
-          <siteMapNode controller="panelbar" action="index" title="First Look (ASPX)" area="aspx"/>
-        </siteMapNode>
-      </siteMapNode>
-    </siteMap>
+        <?xml version="1.0" encoding="utf-8" ?>
+        <siteMap>
+          <siteMapNode title="Home" controller="Home" action="Overview">
+            <siteMapNode title="Grid">
+              <siteMapNode controller="grid" action="index" title="First Look (Razor)" area="razor"/>
+              <siteMapNode controller="grid" action="index" title="First Look (ASPX)" area="aspx"/>
+            </siteMapNode>
+            <siteMapNode title="PanelBar">
+              <siteMapNode controller="panelbar" action="index" title="First Look (Razor)" area="razor"/>
+              <siteMapNode controller="panelbar" action="index" title="First Look (ASPX)" area="aspx"/>
+            </siteMapNode>
+          </siteMapNode>
+        </siteMap>
 3.  Load the sitemap using SiteMapManager:
 
-    public ActionResult Index()
-    {
-        if (!SiteMapManager.SiteMaps.ContainsKey("sample"))
+        public ActionResult Index()
         {
-            SiteMapManager.SiteMaps.Register<xmlsitemap>("sample", sitmap => sitmap.LoadFrom("~/sample.sitemap"));
+            if (!SiteMapManager.SiteMaps.ContainsKey("sample"))
+            {
+                SiteMapManager.SiteMaps.Register<xmlsitemap>("sample", sitmap => sitmap.LoadFrom("~/sample.sitemap"));
+            }
+            return View();
         }
-        return View();
-    }
 4.  Add a panelbar:
     - WebForms
 
@@ -83,7 +83,6 @@ There are several ways to define items of the Kendo PanelBar for ASP.NET MVC
                     .Name("panelbar") //The name of the panelbar is mandatory. It specifies the "id" attribute of the widget.
                     .BindTo("sample") //bind to sitemap with name "sample"
             %>
-
     - Razor
 
             @(Html.Kendo().PanelBar()
@@ -97,12 +96,12 @@ There are several ways to define items of the Kendo PanelBar for ASP.NET MVC
 
 2.  Create a new action method and pass the Categories table as the model. Note that the Categories should have association to the Products table:
 
-    public ActionResult Index()
-    {
-        NorthwindDataContext northwind = new NorthwindDataContext();
+        public ActionResult Index()
+        {
+            NorthwindDataContext northwind = new NorthwindDataContext();
 
-        return View(northwind.Categories);
-    }
+            return View(northwind.Categories);
+        }
 
 3.  Make your view strongly typed:
     - WebForms
