@@ -1,8 +1,8 @@
 ---
-title: How-To: Interact With An Existing Database
+title: interact-with-db
+slug: howto-interact-with-an-existing-db
 tags: How-To
 publish: true
-related:
 ---
 
 # How-To: Interact With An Existing Database

@@ -1,8 +1,8 @@
 ---
-title: How-To: Add Charts And Graphs To An Application
+title: add-charts-and-graphs
+slug: howto-add-charts-and-graphs
 tags: How-To
 publish: true
-related:
 ---
 
 # How-To: Add Charts and Graphs to an Application

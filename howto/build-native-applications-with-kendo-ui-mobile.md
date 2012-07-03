@@ -1,8 +1,8 @@
 ---
-title: How-To: Build Native Applications With Kendo UI Mobile
+title: build-native-apps
+slug: howto-build-native-apps-with-kendo-ui-mobile
 tags: How-To
 publish: true
-related:
 ---
 
 # How-To: Build Native Applications With Kendo UI Mobile
