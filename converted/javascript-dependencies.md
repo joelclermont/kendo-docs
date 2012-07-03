@@ -5,7 +5,8 @@ publish: true
 
 ### JavaScript files used by Kendo UI
 
-Every widget from **Kendo UI** needs its JavaScript files to be included in order to work properly. This help topic lists the JavaScript files required by each widget.
+Every widget from **Kendo UI** needs its JavaScript files to be included in order to work properly
+This help topic lists the JavaScript files required by each widget.
 
 ### Combined Scripts
 
@@ -13,32 +14,37 @@ The following combined scripts are made available in order to simplify developme
 
 *   **kendo.all.min.js** contains a minified version of all scripts (Web, DataViz and Mobile).
  **That file is available only in the Kendo Complete package**.
-*   **kendo.web.min.js** contains a minified version of all scripts from Kendo UI Web.
-*   **kendo.dataviz.min.js**&nbsp;contains a minified version of all scripts from Kendo UI DataViz.&nbsp;
-*   **kendo.mobile.min.js**&nbsp;contains a minified version of all scripts from Kendo UI Mobile.&nbsp;
+ *   **kendo.web.min.js** contains a minified version of all scripts from Kendo UI Web.
+ *   **kendo.dataviz.min.js** contains a minified version of all scripts from Kendo UI DataViz.
+ *   **kendo.mobile.min.js** contains a minified version of all scripts from Kendo UI Mobile.
 
-**Important:** Only one of the above scripts can be included at a time.
+ **Important:** Only one of the above scripts can be included at a time.
 
 ### Custom Combined Scripts
 
-Users who own a commercial license can use the [custom download builder tool](http://www.kendoui.com/custom-download) to create a single JavaScript file which contains only the required widgets and features.
+Users who own a commercial license can use the [custom download builder tool](http://www.kendoui.com/custom-download)
+to create a single JavaScript file which contains only the required widgets and features.
 
 ### CDN
 
 The minified versions of all JavaScript files (except jQuery) are also available via CDN
- <pre>http://cdn.kendostatic.com/&lt;version&gt;/js/&lt;filename&gt;.min.js </pre>
 
-**e.g.** http://cdn.kendostatic.com/2011.3.1129/js/kendo.all.min.js
- **Important:** in order to use HTTPS at this point, you need to directly access the CloudFront CDN:
-<pre>[https://da7xgjtj801h2.cloudfront.net/&lt;version&gt;/js/&lt;filename&gt;.min.js](https://da7xgjtj801h2.cloudfront.net/&lt;version&gt;/js/&lt;filename&gt;.min.js)&nbsp;</pre>
+    http://cdn.kendostatic.com/<version>/js/<filename>.min.js
+
+    **e.g.** http://cdn.kendostatic.com/2011.3.1129/js/kendo.all.min.js
+
+    **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN:
+
+         https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js</pre>
 
 ### Individual scripts
 
-If more granular control is required, the following separate script files, either minified or not, can be included per widget basis.
+If more granular control is required, the following separate script files, either minified or not,
+can be included per widget basis.
 
-<dl>
-<dt><a name="autocomplete">**AutoComplete**</a></dt>
-<dd>
+
+<a name="autocomplete">AutoComplete</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.odata.js (if binding to OData)
@@ -49,18 +55,17 @@ If more granular control is required, the following separate script files, eithe
 8.  kendo.popup.js
 9.  kendo.list.js
 10.  kendo.autocomplete.js
-</dd>
 
-<dt><a name="calendar">**Calendar**</a></dt>
-<dd>
+
+<a name="calendar">Calendar</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.fx.js (if animation is enabled)
 4.  kendo.calendar.js
-</dd>
 
-<dt><a name="chart">**Chart**</a></dt>
-<dd>
+<a name="chart">Chart</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.odata.js (if binding to OData)
@@ -71,10 +76,10 @@ If more granular control is required, the following separate script files, eithe
 8.  kendo.dataviz.vml.js
 9.  kendo.dataviz.svg.js
 10.  kendo.dataviz.chart.js
-</dd>
 
-<dt><a name="combobox">**ComboBox**</a></dt>
-<dd>
+
+<a name="combobox">ComboBox</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.odata.js (if binding to OData)
@@ -85,37 +90,37 @@ If more granular control is required, the following separate script files, eithe
 8.  kendo.popup.js
 9.  kendo.list.js
 10.  kendo.combobox.js
-</dd>
 
-<dt><a name="datasource">**DataSource**</a></dt>
-<dd>
+
+<a name="datasource">DataSource</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.odata.js (if binding to OData)
 4.  kendo.model.js (if binding to XML or editing)
 5.  kendo.data.xml.js (if binding to XML)
 6.  kendo.data.js
-</dd>
 
-<dt><a name="datepicker">**DatePicker**</a></dt>
-<dd>
+
+<a name="datepicker">DatePicker</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.fx.js (if animation is enabled)
 4.  kendo.popup.js
 5.  kendo.calendar.js
 6.  kendo.datepicker.js
-</dd>
 
-<dt><a name="dragdrop">**Drag and Drop**</a></dt>
-<dd>
+
+<a name="dragdrop">Drag and Drop</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.draganddrop.js
-</dd>
 
-<dt><a name="dropdownlist">**DropDownList**</a></dt>
-<dd>
+
+<a name="dropdownlist">DropDownList</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.odata.js (if binding to OData)
@@ -126,10 +131,10 @@ If more granular control is required, the following separate script files, eithe
 8.  kendo.popup.js
 9.  kendo.list.js
 10.  kendo.dropdownlist.js
-</dd>
 
-<dt><a name="editor">**Editor**</a></dt>
-<dd>
+
+<a name="editor">Editor</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.popup.js
@@ -140,10 +145,10 @@ If more granular control is required, the following separate script files, eithe
 8.  kendo.draganddrop.js (if popups are draggable and/or resizable)
 9.  kendo.window.js
 10.  kendo.editor.js
-</dd>
 
-<dt><a name="gauge">**Gauge**</a></dt>
-<dd>
+
+<a name="gauge">Gauge</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.js (if using MVVM)
@@ -152,10 +157,10 @@ If more granular control is required, the following separate script files, eithe
 6.  kendo.dataviz.vml.js
 7.  kendo.dataviz.svg.js
 8.  kendo.dataviz.gauge.js
-</dd>
 
-<dt><a name="grid">**Grid**</a></dt>
-<dd>
+
+<a name="grid">Grid</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.odata.js (if binding to OData)
@@ -179,10 +184,10 @@ If more granular control is required, the following separate script files, eithe
 21.  kendo.resizable.js (if resizing is enabled)
 22.  kendo.reorderable.js (if reordering is enabled)
 23.  kendo.grid.js
-</dd>
 
-<dt><a name="listview">**ListView**</a></dt>
-<dd>
+
+<a name="listview">ListView</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.odata.js (if binding to OData)
@@ -194,104 +199,104 @@ If more granular control is required, the following separate script files, eithe
 9.  kendo.editable.js (if editing is enabled)
 10.  kendo.selectable.js (if selection is enabled)
 11.  kendo.listview.js
-</dd>
 
-<dt><a name="menu">**Menu**</a></dt>
-<dd>
+
+<a name="menu">Menu</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.fx.js
 4.  kendo.popup.js
 5.  kendo.menu.js
-</dd>
 
-<dt><a name="numerictextbox">**NumericTextBox**</a> </dt>
-<dd>
+
+<a name="numerictextbox">NumericTextBox</a> 
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.numerictextbox.js
-</dd>
 
-<dt><a name="panelbar">**PanelBar**</a></dt>
-<dd>
+
+<a name="panelbar">PanelBar</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.fx.js
 4.  kendo.panelbar.js
-</dd>
 
-<dt><a name="slider">**Slider and RangeSlider**</a></dt>
-<dd>
+
+<a name="slider">Slider and RangeSlider</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.binder.js (if using MVVM)
 4.  kendo.draganddrop.js
 5.  kendo.slider.js
-</dd>
 
-<dt><a name="splitter">**Splitter**</a></dt>
-<dd>
+
+<a name="splitter">Splitter</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.fx.js
 4.  kendo.draganddrop.js
 5.  kendo.resizable.js
 6.  kendo.splitter.js
-</dd>
 
-<dt><a name="tabstrip">**TabStrip**</a></dt>
-<dd>
+
+<a name="tabstrip">TabStrip</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.js
 4.  kendo.fx.js
 5.  kendo.tabstrip.js
-</dd>
 
-<dt><a name="timepicker">**TimePicker**</a></dt>
-<dd>
+
+<a name="timepicker">TimePicker</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.fx.js
 4.  kendo.popup.js
 5.  kendo.timepicker.js
-</dd>
 
-<dt><a name="treeview">**TreeView**</a></dt>
-<dd>
+
+<a name="treeview">TreeView</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.fx.js
 4.  kendo.draganddrop.js (if drag &amp; drop enabled)
 5.  kendo.treeview.js
-</dd>
 
-<dt><a name="upload">**Upload**</a></dt>
-<dd>
+
+<a name="upload">Upload</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.upload.js
-</dd>
 
-<dt><a name="validator">**Validator**</a></dt>
-<dd>
+
+<a name="validator">Validator</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.validator.js
-</dd>
 
-<dt><a name="window">**Window**</a></dt>
-<dd>
+
+<a name="window">Window</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.fx.js
 4.  kendo.draganddrop.js
 5.  kendo.resizable.js
 6.  kendo.window.js
-</dd>
 
-<dt><a name="mobile.application">**Mobile Application**</a></dt>
-<dd>
+
+<a name="mobile.application">Mobile Application</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.history.js
@@ -300,10 +305,10 @@ If more granular control is required, the following separate script files, eithe
 6.  kendo.mobile.view.js
 7.  kendo.mobile.scroller.js
 8.  kendo.mobile.application.js
-</dd>
 
-<dt><a name="mobile.button">**Mobile Button**</a></dt>
-<dd>
+
+<a name="mobile.button">Mobile Button</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.history.js
@@ -313,10 +318,10 @@ If more granular control is required, the following separate script files, eithe
 7.  kendo.mobile.application.js
 8.  kendo.mobile.scroller.js
 9.  kendo.mobile.button.js
-</dd>
 
-<dt><a name="mobile.button-group">**Mobile ButtonGroup**</a></dt>
-<dd>
+
+<a name="mobile.button-group">Mobile ButtonGroup</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.history.js
@@ -326,10 +331,10 @@ If more granular control is required, the following separate script files, eithe
 7.  kendo.mobile.application.js
 8.  kendo.mobile.scroller.js
 9.  kendo.mobile.buttongroup.js
-</dd>
 
-<dt><a name="mobile.list-view">**Mobile ListView**</a></dt>
-<dd>
+
+<a name="mobile.list-view">Mobile ListView</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.js
@@ -343,10 +348,10 @@ If more granular control is required, the following separate script files, eithe
 11.  kendo.mobile.application.js
 12.  kendo.mobile.scroller.js
 13.  kendo.mobile.listview.js
-</dd>
 
-<dt><a name="mobile.nav-bar">**Mobile NavBar**</a></dt>
-<dd>
+
+<a name="mobile.nav-bar">Mobile NavBar</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.history.js
@@ -356,20 +361,20 @@ If more granular control is required, the following separate script files, eithe
 7.  kendo.mobile.application.js
 8.  kendo.mobile.scroller.js
 9.  kendo.mobile.navbar.js
-</dd>
 
-<dt><a name="mobile.scroller">**Mobile Scroller**</a></dt>
-<dd>
+
+<a name="mobile.scroller">Mobile Scroller</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.history.js
 4.  kendo.fx.js
 5.  kendo.draganddrop.js
 6.  kendo.mobile.scroller.js
-</dd>
 
-<dt><a name="mobile.scroll-view">**Mobile ScrollView**</a></dt>
-<dd>
+
+<a name="mobile.scroll-view">Mobile ScrollView</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.history.js
@@ -379,10 +384,10 @@ If more granular control is required, the following separate script files, eithe
 7.  kendo.mobile.application.js
 8.  kendo.mobile.scroller.js
 9.  kendo.mobile.scrollview.js
-</dd>
 
-<dt><a name="mobile.switch">**Mobile Switch**</a></dt>
-<dd>
+
+<a name="mobile.switch">Mobile Switch</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.history.js
@@ -392,10 +397,10 @@ If more granular control is required, the following separate script files, eithe
 7.  kendo.mobile.application.js
 8.  kendo.mobile.scroller.js
 9.  kendo.mobile.switch.js
-</dd>
 
-<dt><a name="mobile.tab-strip">**Mobile TabStrip**</a></dt>
-<dd>
+
+<a name="mobile.tab-strip">Mobile TabStrip</a>
+
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.history.js
@@ -405,5 +410,4 @@ If more granular control is required, the following separate script files, eithe
 7.  kendo.mobile.application.js
 8.  kendo.mobile.scroller.js
 9.  kendo.mobile.tabstrip.js
-</dd>
-</dl>
+
