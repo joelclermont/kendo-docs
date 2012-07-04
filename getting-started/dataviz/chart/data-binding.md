@@ -7,15 +7,19 @@ publish: true
 # Data Binding
 
 *   [Binding to inline data](#binding-to-inline-data)
+
     *   [Categorical series](#categorical-series)
     *   [Pie series](#pie-series)
     *   [Scatter series](#scatter-series)
+    
 *   [Binding to a Data Source](#binding-to-a-data-source)
+
     *   [Specifying a Data Source](#specifying-a-data-source)
     *   [Binding to local data](#binding-to-local-data)
     *   [Binding to remote data](#binding-to-remote-data)
 
 *   [Data-bound Series](#data--bound-series)
+
     *   [Categorical series](#data--bound-categorical-series)
     *   [Pie series](#data--bound-pie-series)
     *   [Scatter series](#data--bound-scatter-series)
