@@ -1,5 +1,5 @@
 ---
-title: DataViz Troubleshooting
+title: Troubleshooting
 slug: dataviz-troubleshooting
 publish: true
 ---

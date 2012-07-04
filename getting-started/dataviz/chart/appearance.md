@@ -1,5 +1,5 @@
 ---
-title: Chart Appearance
+title: Appearance
 slug: chart-appearance
 publish: true
 ---

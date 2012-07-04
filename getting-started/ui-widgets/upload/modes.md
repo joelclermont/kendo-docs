@@ -1,5 +1,5 @@
 ---
-title: Upload Modes
+title: Modes
 slug: upload-modes
 publish: true
 --- 

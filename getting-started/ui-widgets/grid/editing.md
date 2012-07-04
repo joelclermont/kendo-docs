@@ -1,5 +1,5 @@
 ---
-title: Grid Editing
+title: Editing
 slug: grid-editing
 publish: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Area Chart Type
+title: Area
 slug: chart-area-type
 publish: true
 ---

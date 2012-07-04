@@ -1,5 +1,5 @@
 ---
-title: DataViz Supported browsers
+title: Supported Browsers
 slug: dataviz-supported-browsers
 publish: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Bar Chart Type
+title: Bar Chart
 slug: chart-bar-type
 publish: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Editor Troubleshooting
+title: Troubleshooting
 slug: editor-troubleshooting
 publish: true
 ---

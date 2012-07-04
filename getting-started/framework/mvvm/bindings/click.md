@@ -1,5 +1,5 @@
 ---
-title: MVVM Click Binding
+title: Click
 slug: mvvm-click-binding
 publish: true
 ---

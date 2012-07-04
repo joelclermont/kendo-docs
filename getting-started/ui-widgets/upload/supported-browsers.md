@@ -1,5 +1,5 @@
 ---
-title: Upload Supported browsers
+title: Supported Browsers
 slug: upload-supported-browsers
 publish: true
 ---

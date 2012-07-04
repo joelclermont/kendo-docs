@@ -1,5 +1,5 @@
 ---
-title: Chart Axes
+title: Axes
 slug: chart-axes
 publish: true
 ---

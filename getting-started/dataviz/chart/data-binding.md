@@ -1,5 +1,5 @@
 ---
-title: Chart Data Binding
+title: Data Binding
 slug: chart-data-binding
 publish: true
 ---
