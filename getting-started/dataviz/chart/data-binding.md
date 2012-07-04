@@ -6,6 +6,8 @@ publish: true
 
 # Data Binding
 
+## Contents
+
 *   [Binding to inline data](#binding-to-inline-data)
 
     *   [Categorical series](#categorical-series)
