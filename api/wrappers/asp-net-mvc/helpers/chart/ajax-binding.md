@@ -1,5 +1,6 @@
 ---
 title: Ajax Binding
+slug: mav-chart-ajax-binding
 publish: true
 ---
 

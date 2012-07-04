@@ -1,5 +1,5 @@
 ---
-title: MVC Numeric Textbox Overview
+title: Overview
 slug: mvc-numeric-textbox-overview
 publish: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: MVC Grid Server Editing
+title: Server Editing
 slug: mvc-grid-server-editing
 publish: true
 ---

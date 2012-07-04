@@ -1,5 +1,5 @@
 ---
-title: MVC AutoComplete Overview
+title: Overview
 slug: mvc-autocomplete-overview
 publish: true
 ---

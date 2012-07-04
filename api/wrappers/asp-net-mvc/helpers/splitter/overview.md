@@ -1,5 +1,5 @@
 ---
-title: MVC Splitter Overview
+title: Overview
 slug: mvc-splitter-overview
 publish: true
 ---
