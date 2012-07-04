@@ -266,9 +266,10 @@ can be included per widget basis.
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
-3.  kendo.fx.js
-4.  kendo.draganddrop.js (if drag &amp; drop enabled)
-5.  kendo.treeview.js
+3.  kendo.data.js
+4.  kendo.fx.js (if animation is enabled)
+5.  kendo.draganddrop.js (if drag &amp; drop enabled)
+6.  kendo.treeview.js
 
 
 ### Upload

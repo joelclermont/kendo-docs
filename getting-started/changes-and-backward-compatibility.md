@@ -6,6 +6,28 @@ publish: true
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
+## KendoUI 2012 Q2
+
+### Changes from 2011 Q1 SP1 (2011.1.515)
+
+#### Breaking changes
+
+*  **TreeView:** The TreeView widget now depends on kendo.data.js
+*  **TreeView:** Using the API methods will re-create the HTML of the nodes. In order to get the new reference to the nodes, use the return value of the methods.
+
+    - Old
+
+            var foo = treeviewObject.findByText("foo");
+            treeviewObject.append(foo);
+            // starting with 2012 Q2, foo will point to a DOM node that is removed from the document
+            foo.text("bar: foo");
+
+    - New
+
+            var foo = treeviewObject.findByText("foo");
+            foo = treeviewObject.append(foo);
+            foo.text("bar: foo");
+
 ## KendoUI 2012 Q1 (2012.1.322)
 
 ### Changes from 2011 Q3 SP1 (2011.3.1407)
