@@ -1,5 +1,6 @@
 ---
 title: kendo.dataviz.ui.Chart
+slug: dataviz-kendo.dataviz.ui.chart
 tags: api,dataviz
 publish: true
 ---

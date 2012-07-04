@@ -1,5 +1,5 @@
 ---
-title: MVVM Checked Binding
+title: Checked
 slug: mvvm-checked-binding
 publish: true
 ---

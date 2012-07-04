@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Window
+slug: web-kendo.ui.window
 tags: api,web
 publish: true
 ---

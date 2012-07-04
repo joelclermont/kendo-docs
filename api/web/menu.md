@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Menu
+slug: web-kendo.ui.menu
 tags: api,web
 publish: true
 ---

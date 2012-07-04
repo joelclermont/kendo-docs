@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Validator
+slug: fw-kendo.ui.validator
 tags: api,web
 publish: true
 ---

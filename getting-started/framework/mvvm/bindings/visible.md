@@ -1,5 +1,5 @@
 ---
-title: MVVM Visible Binding
+title: Visible
 slug: mvvm-visible-binding
 publish: true
 ---

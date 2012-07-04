@@ -1,5 +1,5 @@
 ---
-title: Introduction to Kendo UI for ASP.NET MVC
+title: Introduction
 slug: mvc-introduction
 publish: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: MVVM Html Binding
+title: Html
 slug: mvvm-html-binding
 publish: true
 ---

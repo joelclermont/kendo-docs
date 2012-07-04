@@ -1,5 +1,5 @@
 ---
-title: MVC Custom Binding
+title: Custom Binding
 slug: mvc-custom-binding
 publish: true
 ---

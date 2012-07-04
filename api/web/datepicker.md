@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.DatePicker
+slug: web-kendo.ui.datepicker
 tags: api,web
 publish: true
 ---

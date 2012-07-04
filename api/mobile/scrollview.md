@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.ScrollView
+slug: mobile-kendo.mobile.ui.scrollview
 tags: api,mobile
 publish: true
 ---

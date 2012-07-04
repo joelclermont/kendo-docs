@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.ActionSheet
+slug: mobile-kendo.mobile.ui.actionsheet
 tags: api,mobile
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: kendo.data.DataSource
+slug: fw-kendo.data.datasource
 tags: api,framework
 publish: true
 ---

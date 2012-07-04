@@ -4,47 +4,46 @@ slug: gs-javascript-dependencies
 publish: true
 ---
 
-### JavaScript files used by Kendo UI
+# JavaScript files used by Kendo UI
 
 Every widget from **Kendo UI** needs its JavaScript files to be included in order to work properly
 This help topic lists the JavaScript files required by each widget.
 
-### Combined Scripts
+## Combined Scripts
 
 The following combined scripts are made available in order to simplify development and deployment.
 
 *   **kendo.all.min.js** contains a minified version of all scripts (Web, DataViz and Mobile).
- **That file is available only in the Kendo Complete package**.
- *   **kendo.web.min.js** contains a minified version of all scripts from Kendo UI Web.
- *   **kendo.dataviz.min.js** contains a minified version of all scripts from Kendo UI DataViz.
- *   **kendo.mobile.min.js** contains a minified version of all scripts from Kendo UI Mobile.
+**That file is available only in the Kendo Complete package**.
+*   **kendo.web.min.js** contains a minified version of all scripts from Kendo UI Web.
+*   **kendo.dataviz.min.js** contains a minified version of all scripts from Kendo UI DataViz.
+*   **kendo.mobile.min.js** contains a minified version of all scripts from Kendo UI Mobile.
 
- **Important:** Only one of the above scripts can be included at a time.
+**Important:** Only one of the above scripts can be included at a time.
 
-### Custom Combined Scripts
+## Custom Combined Scripts
 
 Users who own a commercial license can use the [custom download builder tool](http://www.kendoui.com/custom-download)
 to create a single JavaScript file which contains only the required widgets and features.
 
-### CDN
+## CDN
 
 The minified versions of all JavaScript files (except jQuery) are also available via CDN
 
     http://cdn.kendostatic.com/<version>/js/<filename>.min.js
-    
-**e.g.** http://cdn.kendostatic.com/2011.3.1129/js/kendo.all.min.js
+
+**e.g.** `http://cdn.kendostatic.com/2011.3.1129/js/kendo.all.min.js`
 
 **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN:
 
     https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js
 
-### Individual scripts
+## Individual scripts
 
 If more granular control is required, the following separate script files, either minified or not,
 can be included per widget basis.
 
-
-<a name="autocomplete">AutoComplete</a>
+### AutoComplete
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -58,14 +57,14 @@ can be included per widget basis.
 10.  kendo.autocomplete.js
 
 
-<a name="calendar">Calendar</a>
+### Calendar
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.fx.js (if animation is enabled)
 4.  kendo.calendar.js
 
-<a name="chart">Chart</a>
+### Chart
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -79,7 +78,7 @@ can be included per widget basis.
 10.  kendo.dataviz.chart.js
 
 
-<a name="combobox">ComboBox</a>
+### ComboBox
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -93,7 +92,7 @@ can be included per widget basis.
 10.  kendo.combobox.js
 
 
-<a name="datasource">DataSource</a>
+### DataSource
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -103,7 +102,7 @@ can be included per widget basis.
 6.  kendo.data.js
 
 
-<a name="datepicker">DatePicker</a>
+### DatePicker
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -113,14 +112,14 @@ can be included per widget basis.
 6.  kendo.datepicker.js
 
 
-<a name="dragdrop">Drag and Drop</a>
+### Drag and Drop
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.draganddrop.js
 
 
-<a name="dropdownlist">DropDownList</a>
+### DropDownList
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -134,7 +133,7 @@ can be included per widget basis.
 10.  kendo.dropdownlist.js
 
 
-<a name="editor">Editor</a>
+### Editor
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -148,7 +147,7 @@ can be included per widget basis.
 10.  kendo.editor.js
 
 
-<a name="gauge">Gauge</a>
+### Gauge
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -160,7 +159,7 @@ can be included per widget basis.
 8.  kendo.dataviz.gauge.js
 
 
-<a name="grid">Grid</a>
+### Grid
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -187,7 +186,7 @@ can be included per widget basis.
 23.  kendo.grid.js
 
 
-<a name="listview">ListView</a>
+### ListView
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -202,7 +201,7 @@ can be included per widget basis.
 11.  kendo.listview.js
 
 
-<a name="menu">Menu</a>
+### Menu
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -211,14 +210,14 @@ can be included per widget basis.
 5.  kendo.menu.js
 
 
-<a name="numerictextbox">NumericTextBox</a> 
+### NumericTextBox
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.numerictextbox.js
 
 
-<a name="panelbar">PanelBar</a>
+### PanelBar
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -226,7 +225,7 @@ can be included per widget basis.
 4.  kendo.panelbar.js
 
 
-<a name="slider">Slider and RangeSlider</a>
+### Slider and RangeSlider
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -235,7 +234,7 @@ can be included per widget basis.
 5.  kendo.slider.js
 
 
-<a name="splitter">Splitter</a>
+### Splitter
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -245,7 +244,7 @@ can be included per widget basis.
 6.  kendo.splitter.js
 
 
-<a name="tabstrip">TabStrip</a>
+### TabStrip
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -254,7 +253,7 @@ can be included per widget basis.
 5.  kendo.tabstrip.js
 
 
-<a name="timepicker">TimePicker</a>
+### TimePicker
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -263,30 +262,31 @@ can be included per widget basis.
 5.  kendo.timepicker.js
 
 
-<a name="treeview">TreeView</a>
+### TreeView
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
-3.  kendo.fx.js
-4.  kendo.draganddrop.js (if drag &amp; drop enabled)
-5.  kendo.treeview.js
+3.  kendo.data.js
+4.  kendo.fx.js (if animation is enabled)
+5.  kendo.draganddrop.js (if drag &amp; drop enabled)
+6.  kendo.treeview.js
 
 
-<a name="upload">Upload</a>
+### Upload
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.upload.js
 
 
-<a name="validator">Validator</a>
+### Validator
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.validator.js
 
 
-<a name="window">Window</a>
+### Window
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -296,7 +296,7 @@ can be included per widget basis.
 6.  kendo.window.js
 
 
-<a name="mobile.application">Mobile Application</a>
+### Mobile Application
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -308,7 +308,7 @@ can be included per widget basis.
 8.  kendo.mobile.application.js
 
 
-<a name="mobile.button">Mobile Button</a>
+### Mobile Button
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -321,7 +321,7 @@ can be included per widget basis.
 9.  kendo.mobile.button.js
 
 
-<a name="mobile.button-group">Mobile ButtonGroup</a>
+### Mobile ButtonGroup
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -334,7 +334,7 @@ can be included per widget basis.
 9.  kendo.mobile.buttongroup.js
 
 
-<a name="mobile.list-view">Mobile ListView</a>
+### Mobile ListView
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -351,7 +351,7 @@ can be included per widget basis.
 13.  kendo.mobile.listview.js
 
 
-<a name="mobile.nav-bar">Mobile NavBar</a>
+### Mobile NavBar
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -364,7 +364,7 @@ can be included per widget basis.
 9.  kendo.mobile.navbar.js
 
 
-<a name="mobile.scroller">Mobile Scroller</a>
+### Mobile Scroller
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -374,7 +374,7 @@ can be included per widget basis.
 6.  kendo.mobile.scroller.js
 
 
-<a name="mobile.scroll-view">Mobile ScrollView</a>
+### Mobile ScrollView
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -387,7 +387,7 @@ can be included per widget basis.
 9.  kendo.mobile.scrollview.js
 
 
-<a name="mobile.switch">Mobile Switch</a>
+### Mobile Switch
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
@@ -400,7 +400,7 @@ can be included per widget basis.
 9.  kendo.mobile.switch.js
 
 
-<a name="mobile.tab-strip">Mobile TabStrip</a>
+### Mobile TabStrip
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js

@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.Application
+slug: mobile-kendo.mobile.application
 tags: api,mobile
 publish: true
 ---

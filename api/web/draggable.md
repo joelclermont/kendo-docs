@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Draggable
+slug: web-kendo.ui.draggable
 tags: api,web
 publish: true
 ---

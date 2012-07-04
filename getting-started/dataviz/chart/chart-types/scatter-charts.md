@@ -1,5 +1,5 @@
 ---
-title: Scatter Chart Type
+title: Scatter Chart
 slug: chart-scatter-type
 publish: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: MVC Radial Gauge Overview
+title: Overview
 slug: mvc-radial-gauge-overview
 publish: true
 ---

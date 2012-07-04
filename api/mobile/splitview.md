@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.SplitView
+slug: mobile-kendo.mobile.ui.splitview
 tags: api,mobile
 publish: true
 ---

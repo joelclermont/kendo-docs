@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Editor
+slug: web-kendo.ui.editor
 tags: api,web
 publish: true
 ---

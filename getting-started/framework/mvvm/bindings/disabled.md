@@ -1,5 +1,5 @@
 ---
-title: MVVM Disabled Binding
+title: Disabled
 slug: mvv-disabled-binding
 publish: true
 ---

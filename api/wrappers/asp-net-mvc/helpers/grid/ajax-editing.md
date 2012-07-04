@@ -1,5 +1,5 @@
 ---
-title: MVC Grid Ajax Editing
+title: Ajax Editing
 slug: mvc-grid-ajax-editing
 publish: true
 ---

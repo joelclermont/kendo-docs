@@ -1,5 +1,5 @@
 ---
-title: using-vs-intellisense
+title: VS Intellisense
 slug: howto-using-vs-intellisense
 tags: How-To, Visual Studio, Intellisense
 publish: true

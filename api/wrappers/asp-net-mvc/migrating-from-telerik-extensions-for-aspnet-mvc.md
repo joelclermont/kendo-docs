@@ -1,5 +1,5 @@
 ---
-title: Migrating from Telerik Extensions for ASP.NET MVC
+title: Migrating to Kendo UI
 slug: mvc-migrating-from-extensions-to-mvc
 publish: true
 ---

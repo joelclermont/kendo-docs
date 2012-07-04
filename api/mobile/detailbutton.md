@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.DetailButton
+slug: mobile-kendo.mobile.ui.detailbutton
 tags: api,mobile
 publish: true
 ---

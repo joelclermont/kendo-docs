@@ -1,5 +1,5 @@
 ---
-title: MVC Menu Overview
+title: Overview
 slug: mvc-menu-overview
 publish: true
 ---

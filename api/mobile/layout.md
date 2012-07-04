@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.Layout
+slug: mobile-kendo.mobile.ui.layout
 tags: api,mobile
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.TabStrip
+slug: web-kendo.ui.tabstrip
 tags: api,web
 publish: true
 ---

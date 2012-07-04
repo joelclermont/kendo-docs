@@ -1,5 +1,5 @@
 ---
-title: MVV Value Binding
+title: Value
 slug: mvvm-value-binding
 publish: true
 ---

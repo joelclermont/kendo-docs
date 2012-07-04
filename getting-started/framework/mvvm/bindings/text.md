@@ -1,5 +1,5 @@
 ---
-title: MVVM Text Binding
+title: Text
 slug: mvvm-text-binding
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Upload
+slug: web-kendo.ui.upload
 tags: api,web
 publish: true
 ---

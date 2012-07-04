@@ -1,5 +1,5 @@
 ---
-title: Line Chart Type
+title: Line Chart
 slug: chart-line-type
 publish: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Pie Chart Type
+title: Pie Chart
 slug: chart-pie-type
 publish: true
 ---

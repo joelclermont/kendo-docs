@@ -1,5 +1,5 @@
 ---
-title: MVVM Enabled Binding
+title: Enabled
 slug: mvv-enabled-binding
 publish: true
 ---

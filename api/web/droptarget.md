@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.DropTarget
+slug: web-kendo.ui.droptarget
 tags: api,web
 publish: true
 ---

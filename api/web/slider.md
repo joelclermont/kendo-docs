@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Slider
+slug: web-kendo.ui.slider
 tags: api,web
 publish: true
 ---

@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.View
+slug: mobile-kendo.mobile.ui.view
 tags: api,mobile
 publish: true
 ---

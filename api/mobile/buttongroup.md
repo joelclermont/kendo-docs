@@ -1,5 +1,6 @@
 ---
 title: kendo.mobile.ui.ButtonGroup
+slug: mobile-kendo.mobile.ui.buttongroup
 tags: api,mobile
 publish: true
 ---

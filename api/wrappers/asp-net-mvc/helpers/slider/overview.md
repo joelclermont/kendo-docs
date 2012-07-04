@@ -1,5 +1,5 @@
 ---
-title: MVC Slider Overview
+title: Overview
 slug: mvc-slider-overview
 publish: true
 ---

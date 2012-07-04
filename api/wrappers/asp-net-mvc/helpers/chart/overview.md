@@ -1,5 +1,5 @@
 ---
-title: MVC Chart Overview
+title: Overview
 slug: mvc-chart-overview
 publish: true
 ---

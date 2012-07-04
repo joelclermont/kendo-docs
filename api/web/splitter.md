@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Splitter
+slug: web-kendo.ui.splitter
 tags: api,web
 publish: true
 ---

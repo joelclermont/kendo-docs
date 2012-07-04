@@ -1,5 +1,5 @@
 ---
-title: MVC DatePicker Overview
+title: Overview
 slug: mvc-datepicker-overview
 publish: true
 ---
