@@ -41,15 +41,15 @@ The save handler can sometimes produce a result that needs to be routed back to 
 The Upload requires the response to be in JSON format with Content-Type set to "text/plain". Any non-empty response that is not JSON will be treated as a server error.
 
 1. Build the response
-        <?php
 
-            header('Content-Type: text/plain;');
+    <?php
 
-            $data = array('foo' => 'bar', 'status' => 'ok');
-
-            echo json_encode($data);
-
-        ?>
+        header('Content-Type: text/plain;');
+    
+        $data = array('foo' => 'bar', 'status' => 'ok');
+    
+        echo json_encode($data);
+    ?>
 
 2. Declare a handler for the [success event](http://www.kendoui.com/documentation/ui-widgets/upload/events.aspx#success) and process the response
         function onSuccess(e) {
