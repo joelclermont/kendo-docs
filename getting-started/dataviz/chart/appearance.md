@@ -4,7 +4,7 @@ slug: chart-appearance
 publish: true
 ---
 
-## Chart Appearance 
+## Chart Appearance
 
 The appearance of the Chart is controlled with style options.
 
@@ -19,32 +19,32 @@ The main building blocks of the chart are:
 *   Chart Area
 *   Plot Area
 *   Axes
-*   Series 
+*   Series
 
-![Chart Structure](/Libraries/Documentation/chart-structure.sflb.ashx)
+![Chart Structure](chart-structure.png)
 
 ### Title
 
-The title location can be controlled with the "position" property of the "title" object. Available options are:
+The title location can be controlled with the `position` option of the `title` object. Available options are:
 
-*   top
-*   bottom 
+*   "top"
+*   "bottom"
 
 ### Legend
 
-The legend position is also controllable. Supported "position" values:
+The legend position is also controllable. Supported `position` values:
 
-*   top
-*   bottom
-*   left
-*   right
-*   custom 
+*   "top"
+*   "bottom"
+*   "left"
+*   "right"
+*   "custom"
 
-Custom positioning is configured through the "offsetX"&nbsp; and "offsetY" properties. For example:
+Custom positioning is configured through the `offsetX`  and `offsetY` options. For example:
 
-![Custom legend position](/Libraries/Documentation/chart-legend-custom-position.sflb.ashx) 
+![Custom legend position](chart-legend-custom-position.png)
 
-Series can be excluded from the legend by setting their "visibleInLegend" property to "false".
+Series can be excluded from the legend by setting their `visibleInLegend` option to `false`.
 
 ### Themes
 
@@ -54,43 +54,39 @@ The Chart comes with a number of predefined themes:
 *   Black
 *   BlueOpal
 *   Metro
-*   Silver 
+*   Silver
 
-Use the **theme** property to select a theme:
+Use the `theme` option to select a theme:
 
- 
+
     $("#chart").kendoChart({
-    theme: "blueOpal",
-    series: [{
-        type: "bar",
-        name: "United States",
-        data: [67.96, 68.93, 75, 74, 78]
-    }],
-    categoryAxis: {
-        categories: [2005, 2006, 2007, 2008, 2009]
-    }
+        theme: "blueOpal",
+        series: [{
+            type: "bar",
+            name: "United States",
+            data: [67.96, 68.93, 75, 74, 78]
+        }],
+        categoryAxis: {
+            categories: [2005, 2006, 2007, 2008, 2009]
+        }
     });
-     
+
 
 Note that theme names are case insensitive.
 
 ### Transitions
 
-The Chart uses animated transitions to display new and updated data. These transitions can be disabled through the **transitions** property:
- 
+The Chart uses animated transitions to display new and updated data. These transitions can be disabled through the `transitions` option:
+
     $("#chart").kendoChart({
-    series: [{
-        type: "bar",
-        name: "United States",
-        data: [67.96, 68.93, 75, 74, 78]
-    }],
-    categoryAxis: {
-        categories: [2005, 2006, 2007, 2008, 2009]
-    },
-    transitions: false
+        series: [{
+            type: "bar",
+            name: "United States",
+            data: [67.96, 68.93, 75, 74, 78]
+        }],
+        categoryAxis: {
+            categories: [2005, 2006, 2007, 2008, 2009]
+        },
+        transitions: false
     });
-     
 
-### See also
-
-Refer to the [Configuration section](http://www.kendoui.com/documentation/dataviz/chart/configuration.aspx) for a full list of configuration options for each element.
