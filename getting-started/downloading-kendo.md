@@ -8,7 +8,7 @@ relatedDocs: gs-your-first-application
 
 # Downloading Kendo UI
 
-You can download Kendo UI [here](http://www.kendoui.com/download)
+You can download Kendo UI [here](http://www.kendoui.com/download#foo)
 
 Contents of Kendo UI zip file distribution:
 
