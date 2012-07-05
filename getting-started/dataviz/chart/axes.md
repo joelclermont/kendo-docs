@@ -7,6 +7,7 @@ publish: true
 # Chart Axes
 
 ## Contents
+ 
 * [Categorical charts](#categorical-charts)
 
     * [Category axis](#category-axis)
