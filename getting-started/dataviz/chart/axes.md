@@ -9,9 +9,13 @@ publish: true
 ## Contents
 
 [Categorical charts](#categorical-charts)
+
 *[Category axis](#category-axis)
+
 *[Value axis](#value-axis)
+
 *[Multiple value axes](#multiple-value-axes)
+
 *[Axis crossing value(s)](#axis-crossing-values)
 
 [Scatter charts](#scatter-charts)
