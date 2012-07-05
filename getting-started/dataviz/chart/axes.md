@@ -7,21 +7,23 @@ publish: true
 # Chart Axes
 
 ## Contents
- 
-#### [Categorical charts](#categorical-charts)
-* [Category axis](#category-axis)
-* [Value axis](#value-axis)
-* [Multiple value axes](#multiple-value-axes)
-* [Axis crossing value(s)](#axis-crossing-values)
+Foo 
+* [Categorical charts](#categorical-charts)
 
-#### [Scatter charts](#scatter-charts)
-* [Multiple X/Y axes](#multiple-axes)
-* [Axis crossing value(s)](#scatter-axis-crossing)
+  * [Category axis](#category-axis)
+  * [Value axis](#value-axis)
+  * [Multiple value axes](#multiple-value-axes)
+  * [Axis crossing value(s)](#axis-crossing-values)
 
-#### [Common features](#common-features)
-* [Axis title](#axis-title)
-* [Plot bands](#plot-bands)
-* [Global settings](#global-settings)
+* [Scatter charts](#scatter-charts)
+
+  * [Multiple X/Y axes](#multiple-axes)
+  * [Axis crossing value(s)](#scatter-axis-crossing)
+
+* [Common features](#common-features)
+  * [Axis title](#axis-title)
+  * [Plot bands](#plot-bands)
+  * [Global settings](#global-settings)
 
 ## Categorical charts
 
