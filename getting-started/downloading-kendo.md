@@ -8,12 +8,12 @@ relatedDocs: gs-your-first-application
 
 # Downloading Kendo UI
 
-You can download Kendo UI [here](http://www.kendoui.com/download#foo)
+You can download Kendo UI [here](http://www.kendoui.com/download)
 
 Contents of Kendo UI zip file distribution:
 
-* /examples - Kendo UI quick start demos
-* /js - Kendo UI minified javascript files
+* /examples - Kendo UI quick start demos [test](http://foo#foo)
+* /js - Kendo UI minified javascript files [test](#foo)
 * /source - Kendo UI complete source code
 * /styles - Kendo UI minified css styles
 
