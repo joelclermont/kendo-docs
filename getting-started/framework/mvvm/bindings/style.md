@@ -1,5 +1,5 @@
 ---
-title: MVVM Style Binding
+title: Style
 slug: mvvm-style-binding
 publish: true
 ---
