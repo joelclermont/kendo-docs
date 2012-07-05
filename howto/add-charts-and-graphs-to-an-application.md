@@ -7,14 +7,18 @@ publish: true
 
 # How-To: Add Charts and Graphs to an Application
 
-In this how-to, we'll examine how to add charts and graphs to an application with Kendo UI DataViz.
+In this how-to, we'll examine how to add charts and graphs to an application with [Kendo UI DataViz](http://kendoui.com/dataviz.aspx).
 
-## Introduction
+[Kendo UI DataViz](http://kendoui.com/dataviz.aspx) has a number of data visualizations to choose from, including:
 
-[Introduction]
-
-## Kendo UI DataViz
-
-[Introduction to Kendo UI DataViz]
+- Area Charts
+- Bar Charts
+- Bubble Charts
+- Donut Charts
+- Line Charts
+- Pie Charts
+- Scatter Charts
+- Radial Gauges
+- Linear Gauges
 
 ## Example: Data Visualization of Popular Data Set
