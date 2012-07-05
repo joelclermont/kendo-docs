@@ -167,7 +167,7 @@ Disables the upload.
 #### Example
 
     var upload = $("#upload").data("kendoUpload");
-    
+
     // disables the upload
     upload.enable();
 
@@ -178,7 +178,7 @@ Enables the upload.
 #### Example
 
     var upload = $("#upload").data("kendoUpload");
-    
+
     // enables the upload
     upload.enable();
 
@@ -195,7 +195,7 @@ Toggles the upload enabled state.
 #### Example
 
     var upload = $("#upload").data("kendoUpload");
-    
+
     // toggles the upload enabled state
     upload.toggle();
 
@@ -222,11 +222,11 @@ Note: The cancel event fires only when the upload is in
         // ...
         cancel: onCancel
     });
-    
+
     function onCancel(e) {
         // Array with information about the uploaded files
         var files = e.files;
-    
+
         // Process the Cancel event
     }
 
@@ -257,7 +257,7 @@ Note: The complete event fires only when the upload is in
         // ...
         complete: onComplete
     });
-    
+
     function onComplete(e) {
         // The upload is now idle
     }
@@ -277,17 +277,14 @@ Note: The error event fires only when the upload is in
         // ...
         error: onError
     });
-    
+
     function onError(e) {
         // Array with information about the uploaded files
         var files = e.files;
-    
+
         if (e.operation == "upload") {
             alert("Failed to uploaded " + files.length + " files");
         }
-    
-        // Suppress the default error message
-        e.preventDefault();
     }
 
 #### Event Data
@@ -327,11 +324,11 @@ Cancelling the event will prevent the remove.
         // ...
         remove: onRemove
     });
-    
+
     function onRemove(e) {
         // Array with information about the removed files
         var files = e.files;
-    
+
         // Process the Remove event
         // Optionally cancel the remove operation by calling
         // e.preventDefault()
@@ -368,7 +365,7 @@ occurring.
             console.log("Extension: " + value.extension);
         });
     };
-    
+
     // initialize and configure an Upload widget with a select event handler
     $("#photos").kendoUpload({
         // ...
@@ -403,11 +400,11 @@ Note: The success event fires only when the upload is in
         // ...
         success: onSuccess
     });
-    
+
     function onSuccess(e) {
         // Array with information about the uploaded files
         var files = e.files;
-    
+
         if (e.operation == "upload") {
             alert("Successfully uploaded " + files.length + " files");
         }
@@ -459,11 +456,11 @@ Note: The upload event fires only when the upload is in
         // ...
         upload: onUpload
     });
-    
+
     function onUpload(e) {
         // Array with information about the uploaded files
         var files = e.files;
-    
+
         // Check the extension of each file and abort the upload if it is not .jpg
         $.each(files, function() {
             if (this.extension != ".jpg") {
