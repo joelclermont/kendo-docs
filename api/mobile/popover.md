@@ -26,7 +26,7 @@ To do so, add `data-rel="popover"` attribute and a `href` attribute equal to the
     <div data-role="view">
      <a data-role="button" href="#foo" data-rel="popover">Say Hello</a>
     
-     <div data-role="popover">
+     <div id="foo" data-role="popover">
          <div data-role="view">
              Hello world!
          </div>
