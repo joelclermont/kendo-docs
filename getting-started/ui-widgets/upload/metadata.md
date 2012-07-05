@@ -42,7 +42,7 @@ The Upload requires the response to be in JSON format with Content-Type set to "
 
 1. Build the response
 
-    <?php
+    &lt;?php
 
         header('Content-Type: text/plain;');
     
