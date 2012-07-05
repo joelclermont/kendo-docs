@@ -8,23 +8,23 @@ publish: true
 
 ## Contents
 
-* [Binding to inline data](#binding-to-inline-data)
+* Binding to inline data
 
-    * [Categorical series](#categorical-series)
-    * [Pie series](#pie-series)
-    * [Scatter series](#scatter-series)
+    * Categorical series
+    * Pie series
+    * Scatter series
     
-* [Binding to a Data Source](#binding-to-a-data-source)
+* Binding to a Data Source
 
-    * [Specifying a Data Source](#specifying-a-data-source)
-    * [Binding to local data](#binding-to-local-data)
-    * [Binding to remote data](#binding-to-remote-data)
+    * Specifying a Data Source
+    * Binding to local data
+    * Binding to remote data
 
-* [Data-bound Series](#data--bound-series)
+* Data-bound Series
 
-    * [Categorical series](#data--bound-categorical-series)
-    * [Pie series](#data--bound-pie-series)
-    * [Scatter series](#data--bound-scatter-series)
+    * Categorical series
+    * Pie series
+    * Scatter series
 
 ## Binding to inline data
 
