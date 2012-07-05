@@ -1,11 +1,11 @@
 ---
 title: Kendo UI Documentation Repo
-slug: kendo-docs-repo-main
-tags: oss, contributing
-publish: true
+publish: false
 ---
 
-# This is a sample Markdown document
+# Kendo UI Public Documentation
+
+## Contributing
 
 [Here's a link](http://kendoui.com)
 
