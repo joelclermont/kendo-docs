@@ -15,6 +15,7 @@ The users benefit from the ability to select a variable number of files. This fe
 ![](upload-sync.png)
 
 The Upload is initialized from an existing file input placed in a form.
+
     <form method="post" action="handler.php">
         <div>
             <input name="photos[]" id="photos" type="file" />
@@ -38,9 +39,11 @@ In this mode the Upload requires dedicated server handlers to store and remove u
 The async mode is implemented using the HTML5 File API. The upload will gracefully degrade and continue to function in legacy browsers using a hidden IFRAME.
 
 Start by creating a simple HTML input of type "file" (no `form` is required):
+
     <input name="photos[]" id="photos" type="file" />
 
 Initialize Upload and configure async upload end-points:
+
     $("#photos").kendoUpload({
         async: {
             saveUrl: "saveHandler.php",
