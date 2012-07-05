@@ -1,7 +1,7 @@
 ---
 title: Axes
 slug: chart-axes-2
-publish: true
+publish: false
 ---
 
 # Chart Axes
