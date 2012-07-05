@@ -81,7 +81,7 @@ This example uses the minified versions of Kendo UI's scripts and styles that in
 
 Also note that we've included a reference to jQuery. jQuery is the only external dependency for Kendo UI.
 
-> Modern CSS and JavaScript references don't require the `type` attribute in most cases. You can safely add references to your CSS and JavaScript assets while omitting this attribute and everything will work fine in new and old browsers. The `type` attribute is officially made optional for both script and link elements in the HTML5 spec.
+> Modern CSS and JavaScript references don't require the `type` attribute in most cases. You can safely add references to your CSS and JavaScript assets while omitting this attribute and everything will work fine in new and old browsers. The `type` attribute is officially made optional for both [script](http://dev.w3.org/html5/spec/the-script-element.html#attr-script-type) and [link](http://dev.w3.org/html5/spec/the-link-element.html#attr-link-type) elements in the HTML5 spec.
 
 ### Step 3: Define an app layout
 The layout is your app's template. All content from views (that we'll create later) will be rendered inside of the layout (or layouts- you can define as many layouts as you need). A layout can contain anything, but generally it's where your app titlebar and navigation will live. Let's add a layout to our app with these basic elements.
