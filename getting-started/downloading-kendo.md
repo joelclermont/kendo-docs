@@ -12,9 +12,9 @@ You can download Kendo UI [here](http://www.kendoui.com/download)
 
 Contents of Kendo UI zip file distribution:
 
-* /examples - Kendo UI quick start demos [test](http://foo#foo)
+* /examples - Kendo UI quick start demos [test](http://foo.com)
 * /js - Kendo UI minified javascript files [test](#foo)
-* /source - Kendo UI complete source code
+* /source - Kendo UI complete source code [test](http://foo.com#foo
 * /styles - Kendo UI minified css styles
 
 ## Installing and Getting Started with Kendo UI
