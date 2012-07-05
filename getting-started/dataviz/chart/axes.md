@@ -9,20 +9,19 @@ publish: true
 ## Contents
 
 [Categorical charts](#categorical-charts)
-* [Category axis](#category-axis)
-* [Value axis](#value-axis)
-* [Multiple value axes](#multiple-value-axes)
-* [Axis crossing value(s)](#axis-crossing-values)
+*[Category axis](#category-axis)
+*[Value axis](#value-axis)
+*[Multiple value axes](#multiple-value-axes)
+*[Axis crossing value(s)](#axis-crossing-values)
 
 [Scatter charts](#scatter-charts)
-* [Multiple X/Y axes](#multiple-axes)
-* [Axis crossing value(s)](#scatter-axis-crossing)
+*[Multiple X/Y axes](#multiple-axes)
+*[Axis crossing value(s)](#scatter-axis-crossing)
 
 [Common features](#common-features)
-
-* [Axis title](#axis-title)
-* [Plot bands](#plot-bands)
-* [Global settings](#global-settings)
+*[Axis title](#axis-title)
+*[Plot bands](#plot-bands)
+*[Global settings](#global-settings)
 
 ## Categorical charts
 
