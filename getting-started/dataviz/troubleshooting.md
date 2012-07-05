@@ -8,7 +8,7 @@ List of common problems and suggested solutions.
 
 # Problem: The chart graphics do not render in Internet Explorer
 
-![Chart in IE](ChartIE.png)
+![Chart in IE](chart-ie.png)
 
 **_Note:_**
 

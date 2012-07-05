@@ -13,6 +13,7 @@ The Chart can display details about the data point that the mouse is currently h
 ## Configuration
 
 The tooltip is not visible by default. You can enable it by setting the visible property of the tooltip object to true:
+
     $("#chart").kendoChart({
         series: [{
             type: "bar",
@@ -41,6 +42,7 @@ The tooltip can also be configured per-series:
 ## Formating values
 
 The point value can be formatted using the format property:
+
     tooltip: {
         visible: true,
         format: "Value: {0:N0}"
@@ -62,6 +64,7 @@ Tooltip content can be defined with a Kendo Template when more flexibility is de
 *   dataItem - the original data item (when binding to dataSource).
 
 For example:
+
     $("#chart").kendoChart({
          title: {
              text: "My Chart Title"
