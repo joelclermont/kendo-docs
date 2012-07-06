@@ -13,18 +13,18 @@ publish: true
     * [Categorical series](#categorical-series)
     * [Pie series](#pie-series)
     * [Scatter series](#scatter-series)
-    
+
 * [Binding to a Data Source](#binding-to-a-data-source)
 
     * [Specifying a Data Source](#specifying-a-data-source)
     * [Binding to local data](#binding-to-local-data)
     * [Binding to remote data](#binding-to-remote-data)
 
-* [Data-bound Series](#data--bound-series)
+* [Data-bound Series](#data-bound-series)
 
-    * [Categorical series](#data--bound-categorical-series)
-    * [Pie series](#data--bound-pie-series)
-    * [Scatter series](#data--bound-scatter-series)
+    * [Categorical series](#data-bound-categorical-series)
+    * [Pie series](#data-bound-pie-series)
+    * [Scatter series](#data-bound-scatter-series)
 
 ## Binding to inline data
 
@@ -196,7 +196,7 @@ In addition to the value "field", series of type pie accept fields for each poin
         }]
     });
 
-### Data-boiund scatter series
+### Data-bound scatter series
 
 Scatter and scatter line series accept "xField" and "yField" options.
 

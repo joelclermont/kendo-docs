@@ -15,8 +15,8 @@ publish: true
     * [Axis crossing value(s)](#axis-crossing-values)
 
 * [Scatter charts](#scatter-charts)
-    * [Multiple X/Y axes](#multiple-axes)
-    * [Axis crossing value(s)](#scatter-axis-crossing)
+    * [Multiple X/Y axes](#multiple-xy-axes)
+    * [Axis crossing value(s)](#axis-crossing-values)
 
 * [Common features](#common-features)
     * [Axis title](#axis-title)
