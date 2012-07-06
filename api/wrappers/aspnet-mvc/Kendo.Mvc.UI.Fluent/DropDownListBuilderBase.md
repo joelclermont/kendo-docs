@@ -8,6 +8,9 @@ publish:true
 
 ## Methods
 
+### Enable(System.Boolean)
+Enables or disables the combobox.
+
 ### IgnoreCase(System.Boolean)
 Use it to enable case insensitive bahavior of the combobox. If true the combobox will select the first matching item ignoring its casing.
 

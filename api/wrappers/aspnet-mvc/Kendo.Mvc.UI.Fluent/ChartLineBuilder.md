@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartLineBuilder
 
+Defines the fluent interface for configuring .
+
 ## Methods
 
 ### Visible(System.Boolean)

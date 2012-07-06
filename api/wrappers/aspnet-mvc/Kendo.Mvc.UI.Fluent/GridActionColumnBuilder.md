@@ -5,3 +5,5 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridActionColumnBuilder
+
+Defines the fluent interface for configuring the  component.

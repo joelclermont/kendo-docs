@@ -8,6 +8,14 @@ publish:true
 
 ## Methods
 
+### HtmlAttributes(System.Object)
+Sets the HTML attributes.
+
+#### Parameters
+
+##### attributes `System.Object`
+The HTML attributes.
+
 ### HtmlAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})
 Sets the HTML attributes.
 

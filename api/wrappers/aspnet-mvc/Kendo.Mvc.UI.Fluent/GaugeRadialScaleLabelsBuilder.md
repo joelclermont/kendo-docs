@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder
 
+Defines the fluent interface for configuring the radial gauge labels.
+
 ## Methods
 
 ### Position(Kendo.Mvc.UI.GaugeRadialScaleLabelsPosition)

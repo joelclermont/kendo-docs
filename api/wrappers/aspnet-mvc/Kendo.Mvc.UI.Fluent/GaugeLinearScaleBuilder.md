@@ -6,7 +6,41 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder
 
+Defines the fluent interface for configuring the gauge scale.
+
 ## Methods
+
+### Mirror(System.Boolean)
+Sets the mirror of the gauge
+
+#### Example
+    <%= Html.Kendo().LinearGauge()
+        .Name("LinearGauge")
+        .Scale(scale => scale
+        .Mirror(true)
+        )
+        %>
+
+#### Parameters
+
+##### mirror `System.Boolean`
+The mirror.
+
+### Vertical(System.Boolean)
+Sets the orientation of the gauge
+
+#### Example
+    <%= Html.Kendo().LinearGauge()
+        .Name("LinearGauge")
+        .Scale(scale => scale
+        .Vertical(false)
+        )
+        %>
+
+#### Parameters
+
+##### vertical `System.Boolean`
+The vertical.
 
 ### Labels(System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder})
 Configures the labels.

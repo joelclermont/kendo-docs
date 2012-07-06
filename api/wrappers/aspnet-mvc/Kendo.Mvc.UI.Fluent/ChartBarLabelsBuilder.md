@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder
 
+Defines the fluent interface for configuring the chart data labels.
+
 ## Methods
 
 ### Position(Kendo.Mvc.UI.ChartBarLabelsPosition)

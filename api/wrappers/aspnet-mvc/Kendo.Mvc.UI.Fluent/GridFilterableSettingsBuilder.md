@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder
 
+Defines the fluent interface for configuring .
+
 ## Methods
 
 ### Enabled(System.Boolean)

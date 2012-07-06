@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.MenuItemBuilder
 
+Defines the fluent interface for configuring child menu items.
+
 ## Methods
 
 ### Items(System.Action{Kendo.Mvc.UI.Fluent.MenuItemFactory})

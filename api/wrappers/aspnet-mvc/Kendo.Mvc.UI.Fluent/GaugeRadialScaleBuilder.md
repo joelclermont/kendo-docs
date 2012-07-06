@@ -6,7 +6,41 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder
 
+Defines the fluent interface for configuring the gauge scale.
+
 ## Methods
+
+### EndAngle(System.Double)
+Sets the end angle of the gauge
+
+#### Example
+    <%= Html.Kendo().RadialGauge()
+        .Name("radialGauge")
+        .Scale(scale => scale
+        .EndAngle(10)
+        )
+        %>
+
+#### Parameters
+
+##### endAngle `System.Double`
+The end angle.
+
+### StartAngle(System.Double)
+Sets the start angle of the gauge
+
+#### Example
+    <%= Html.Kendo().RadialGauge()
+        .Name("radialGauge")
+        .Scale(scale => scale
+        .StartAngle(220)
+        )
+        %>
+
+#### Parameters
+
+##### startAngle `System.Double`
+The start Angle.
 
 ### Labels(System.Action{Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder})
 Configures the labels.

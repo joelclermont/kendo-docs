@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder
 
+Defines the fluent interface for configuring ListView editing.
+
 ## Methods
 
 ### TemplateName(System.String)

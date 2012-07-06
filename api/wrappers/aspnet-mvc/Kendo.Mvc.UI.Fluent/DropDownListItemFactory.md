@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.DropDownListItemFactory
 
+Creates items for the .
+
 ## Methods
 
 ### Add

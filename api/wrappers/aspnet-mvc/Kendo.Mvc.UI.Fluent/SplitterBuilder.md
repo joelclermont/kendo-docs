@@ -8,6 +8,37 @@ publish:true
 
 ## Methods
 
+### Orientation(Kendo.Mvc.UI.SplitterOrientation)
+Sets the splitter orientation.
+
+#### Example
+    <%= Html.Kendo().Splitter()
+        .Name("Splitter")
+        .Orientation(SplitterOrientation.Vertical)
+        %>
+
+#### Parameters
+
+##### value `Kendo.Mvc.UI.SplitterOrientation`
+The desired orientation.
+
+### Panes(System.Action{Kendo.Mvc.UI.Fluent.SplitterPaneFactory})
+Defines the panes in the splitter.
+
+#### Example
+    <%= Html.Kendo().Splitter()
+        .Name("Splitter")
+        .Panes(panes => {
+        panes.Add().LoadContentFrom("Navigation", "Shared");
+        panes.Add().LoadContentFrom("Index", "Home");
+        })
+        %>
+
+#### Parameters
+
+##### configurePanes `System.Action{Kendo.Mvc.UI.Fluent.SplitterPaneFactory}`
+The action that configures the panes.
+
 ### Events(System.Action{Kendo.Mvc.UI.Fluent.SplitterEventBuilder})
 Configures the client events for the splitter.
 
