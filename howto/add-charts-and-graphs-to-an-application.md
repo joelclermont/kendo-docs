@@ -54,4 +54,22 @@ The first step is to add the necessary script and stylesheet references for Kend
 	</body>
 	</html>
 
-> Refer to the [JavaScript Dependencies of Kendo UI](http://docs.kendoui.com/getting-started/javascript-dependencies) for more information about script requirements.
+Note that a reference to jQuery has been included in the example (above) and it is the only external dependency for Kendo UI.
+
+> Please refer to the [JavaScript Dependencies of Kendo UI](http://docs.kendoui.com/getting-started/javascript-dependencies) for more information about script requirements for Kendo UI Web, Kendo UI DataViz, and Kendo UI Mobile.
+
+The next step is to declare a target element for your data visualization. Typically, this is represented by a `div` element.
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>My Kendo UI Application</title>
+		<link href="styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/kendo.dataviz.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>My Kendo UI Application</h1>
+		<div id="chart"></div>
+	</body>
+	</html>
