@@ -315,109 +315,109 @@ The format string which should be used to format the value.
 
 Custom number formats can be created by using one or more custom numeric specifiers.
 
-#### Format Specifiers
+### Format Specifiers
 
-##### *0* - zero placeholder
+#### *0* - zero placeholder
 
 Replaces the zero with the corresponding digit if one is present; otherwise, zero appears in the result string.
     kendo.toString(1234.5678, "00000"); // 01235
 
-##### *#* - digit placeholder
+#### *#* - digit placeholder
 
 Replaces the pound sign with the corresponding digit if one is present; otherwise, no digit appears in the result string.
     kendo.toString(1234.5678, "#####"); // 1235
 
-##### *.* - decimal placeholder
+#### *.* - decimal placeholder
 
 Determines the location of the decimal separator in the result string.
     kendo.tostring(0.45678, "0.00"); // 0.46
 
-##### *,* - group separator placeholder
+#### *,* - group separator placeholder
 Inserts a group separator between each group of digits.
     kendo.tostring(12345678, "##,#"); // 12,345,678
 
-##### *%* - percentage placeholder
+#### *%* - percentage placeholder
 Multiplies a number by 100 and inserts a the percentage symbol (according to the current culture) in the result string.
 
-##### *e* - exponential notation
+#### *e* - exponential notation
     kendo.toString(0.45678, "e0"); // 5e-1
 
-##### *;* - section separator
+#### *;* - section separator
 
 Defines sections of separate format strings for positive, negative, and zero numbers.
 
-##### *"string"|'string'* - literal string
+#### *"string"|'string'* - literal string
 Indicates literal strings which should be included in the result verbatim.
 
-#### Standard date formats
-##### *d* - short date pattern
+### Standard date formats
+#### *d* - short date pattern
     kendo.toString(new Date(2000, 10, 6), "d"); // 11/6/2000
 
-##### *D* - long date pattern
+#### *D* - long date pattern
     kendo.toString(new Date(2000, 10, 6), "D"); // Monday, November 06, 2000
 
-##### *F* - full date/time pattern
+#### *F* - full date/time pattern
     kendo.toString(new Date(2000, 10, 6), "F"); // Monday, November 06, 2000 12:00:00 AM
 
-##### *g* - general date/time pattern (short time)
+#### *g* - general date/time pattern (short time)
     kendo.toString(new Date(2000, 10, 6), "g"); // 11/6/2000 12:00 AM
 
-##### *G* - general date/time pattern (long time)
+#### *G* - general date/time pattern (long time)
     kendo.toString(new Date(2000, 10, 6), "G"); // 11/6/2000 12:00:00 AM
 
-##### *m|M* - month/day pattern
+#### *m|M* - month/day pattern
     kendo.toString(new Date(2000, 10, 6), "m"); // November 06
 
-##### *u* - universal sortable date/time pattern
+#### *u* - universal sortable date/time pattern
     kendo.toString(new Date(2000, 10, 6), "u"); // 2000-11-06 00:00:00Z
 
-##### *y|Y* - month/year pattern
+#### *y|Y* - month/year pattern
     kendo.toString(new Date(2000, 10, 6), "y"); // November, 2000
 
 ### Custom date formats
 Custom date formats can be created by using one or more custom date specifiers.
 
-#### Format Specifiers
+### Format Specifiers
 
-##### *d* - the day of the month, from 1 to 31
+#### *d* - the day of the month, from 1 to 31
 
-##### *dd* - the zero-padded day of the month - from 01 to 31
+#### *dd* - the zero-padded day of the month - from 01 to 31
 
-##### *ddd* - the abbreviated name of the day of the week
+#### *ddd* - the abbreviated name of the day of the week
 
-##### *dddd* - the full name of the day of the week
+#### *dddd* - the full name of the day of the week
 
-##### *f* - the tenths of a second
+#### *f* - the tenths of a second
 
-##### *ff* - the hundreds of a second
+#### *ff* - the hundreds of a second
 
-##### *fff* - the milliseconds
+#### *fff* - the milliseconds
 
-##### *M* - the month, from 1 to 12
+#### *M* - the month, from 1 to 12
 
-##### *MM* - the zero-padded month, from 01 to 12
+#### *MM* - the zero-padded month, from 01 to 12
 
-##### *MMM* - the abbreviated name of the month
+#### *MMM* - the abbreviated name of the month
 
-##### *MMMM* - the full name of the month
+#### *MMMM* - the full name of the month
 
-##### *h* - the hour, using 12-hour clock - from 1 to 12
+#### *h* - the hour, using 12-hour clock - from 1 to 12
 
-##### *hh* - the zero-padded hour, using 12-hour clock - from 01 to 12
+#### *hh* - the zero-padded hour, using 12-hour clock - from 01 to 12
 
-##### *H* - the hour, using 24-hour clock - from 0 to 23
+#### *H* - the hour, using 24-hour clock - from 0 to 23
 
-##### *HH* - the zero-padded hour, using 24-hour clock - from 00 to 23
+#### *HH* - the zero-padded hour, using 24-hour clock - from 00 to 23
 
-##### *m* - the minute, from 0 to 59
+#### *m* - the minute, from 0 to 59
 
-##### *mm* - the zero-padded minute, from 00 to 59
+#### *mm* - the zero-padded minute, from 00 to 59
 
-##### *s* - the second, from 00 to 59
+#### *s* - the second, from 00 to 59
 
-##### *ss* - the zero-padded second, from 00 to 59
+#### *ss* - the zero-padded second, from 00 to 59
 
-##### *tt* - the AM/PM designator
+#### *tt* - the AM/PM designator
 
 ### unbind
 
