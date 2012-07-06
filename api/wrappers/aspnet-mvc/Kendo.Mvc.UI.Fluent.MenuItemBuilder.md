@@ -11,16 +11,6 @@ publish:true
 ### Items(System.Action{Kendo.Mvc.UI.Fluent.MenuItemFactory})
 Configures the child items of a .
 
-#### Parameters
-
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.MenuItemFactory}`
-The add action.
-
-#### Parameters
-
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.MenuItemFactory}`
-The add action.
-
 #### Example
     <%= Html.Kendo().Menu()
         .Name("Menu")
@@ -33,3 +23,8 @@ The add action.
         });
         })
         %>
+
+#### Parameters
+
+##### addAction `System.Action{Kendo.Mvc.UI.Fluent.MenuItemFactory}`
+The add action.

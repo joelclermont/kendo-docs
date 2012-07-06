@@ -11,16 +11,6 @@ publish:true
 ### Expand(System.Func{System.Object,System.Object})
 Defines the inline handler of the Expand client-side event
 
-#### Parameters
-
-##### onExpandAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
-
-#### Parameters
-
-##### onExpandAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
-
 #### Example
     <% Html.Kendo().TreeView()
         .Name("TreeView")
@@ -34,18 +24,13 @@ The handler code wrapped in a text tag (Razor syntax).
         .Render();
         %>
 
+#### Parameters
+
+##### onExpandAction `System.Func{System.Object`
+The handler code wrapped in a text tag (Razor syntax).
+
 ### Expand(System.String)
 Defines the name of the JavaScript function that will handle the the Expand client-side event.
-
-#### Parameters
-
-##### onExpandHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-#### Parameters
-
-##### onExpandHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
 
 #### Example
     <%= Html.Kendo().TreeView()
@@ -53,18 +38,13 @@ The name of the JavaScript function that will handle the event.
         .Events(events => events.Expand("onExpand"))
         %>
 
+#### Parameters
+
+##### onExpandHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
 ### Collapse(System.Func{System.Object,System.Object})
 Defines the inline handler of the Collapse client-side event
-
-#### Parameters
-
-##### onCollapseAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
-
-#### Parameters
-
-##### onCollapseAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
 
 #### Example
     <% Html.Kendo().TreeView()
@@ -79,18 +59,13 @@ The handler code wrapped in a text tag (Razor syntax).
         .Render();
         %>
 
+#### Parameters
+
+##### onCollapseAction `System.Func{System.Object`
+The handler code wrapped in a text tag (Razor syntax).
+
 ### Collapse(System.String)
 Defines the name of the JavaScript function that will handle the the Collapse client-side event.
-
-#### Parameters
-
-##### onCollapseHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-#### Parameters
-
-##### onCollapseHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
 
 #### Example
     <%= Html.Kendo().TreeView()
@@ -98,18 +73,13 @@ The name of the JavaScript function that will handle the event.
         .Events(events => events.Collapse("onCollapse"))
         %>
 
+#### Parameters
+
+##### onCollapseHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
 ### Select(System.Func{System.Object,System.Object})
 Defines the inline handler of the Select client-side event
-
-#### Parameters
-
-##### onSelectAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
-
-#### Parameters
-
-##### onSelectAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
 
 #### Example
     <% Html.Kendo().TreeView()
@@ -124,18 +94,13 @@ The handler code wrapped in a text tag (Razor syntax).
         .Render();
         %>
 
+#### Parameters
+
+##### onSelectAction `System.Func{System.Object`
+The handler code wrapped in a text tag (Razor syntax).
+
 ### Select(System.String)
 Defines the name of the JavaScript function that will handle the the Select client-side event.
-
-#### Parameters
-
-##### onSelectHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-#### Parameters
-
-##### onSelectHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
 
 #### Example
     <%= Html.Kendo().TreeView()
@@ -143,18 +108,13 @@ The name of the JavaScript function that will handle the event.
         .Events(events => events.Select("onSelect"))
         %>
 
+#### Parameters
+
+##### onSelectHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
 ### DragStart(System.Func{System.Object,System.Object})
 Defines the inline handler of the DragStart client-side event
-
-#### Parameters
-
-##### onNodeDragAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
-
-#### Parameters
-
-##### onNodeDragAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
 
 #### Example
     <% Html.Kendo().TreeView()
@@ -169,18 +129,13 @@ The handler code wrapped in a text tag (Razor syntax).
         .Render();
         %>
 
+#### Parameters
+
+##### onNodeDragAction `System.Func{System.Object`
+The handler code wrapped in a text tag (Razor syntax).
+
 ### DragStart(System.String)
 Defines the name of the JavaScript function that will handle the the DragStart client-side event.
-
-#### Parameters
-
-##### onNodeDragHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-#### Parameters
-
-##### onNodeDragHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
 
 #### Example
     <%= Html.Kendo().TreeView()
@@ -188,18 +143,13 @@ The name of the JavaScript function that will handle the event.
         .Events(events => events.DragStart("onNodeDragStrat"))
         %>
 
+#### Parameters
+
+##### onNodeDragHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
 ### Drop(System.String)
 Defines the name of the JavaScript function that will handle the the Drop client-side event.
-
-#### Parameters
-
-##### DropHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-#### Parameters
-
-##### DropHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
 
 #### Example
     <%= Html.Kendo().TreeView()
@@ -207,18 +157,13 @@ The name of the JavaScript function that will handle the event.
         .Events(events => events.Drop("Drop"))
         %>
 
+#### Parameters
+
+##### DropHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
 ### DragEnd(System.Func{System.Object,System.Object})
 Defines the inline handler of the DragEnd client-side event
-
-#### Parameters
-
-##### DragEndAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
-
-#### Parameters
-
-##### DragEndAction `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
 
 #### Example
     <% Html.Kendo().TreeView()
@@ -233,18 +178,13 @@ The handler code wrapped in a text tag (Razor syntax).
         .Render();
         %>
 
+#### Parameters
+
+##### DragEndAction `System.Func{System.Object`
+The handler code wrapped in a text tag (Razor syntax).
+
 ### DragEnd(System.String)
 Defines the name of the JavaScript function that will handle the the DragEnd client-side event.
-
-#### Parameters
-
-##### DragEndHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-#### Parameters
-
-##### DragEndHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
 
 #### Example
     <%= Html.Kendo().TreeView()
@@ -252,18 +192,13 @@ The name of the JavaScript function that will handle the event.
         .Events(events => events.DragEnd("DragEnd"))
         %>
 
+#### Parameters
+
+##### DragEndHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
 ### Drag(System.Func{System.Object,System.Object})
 Defines the inline handler of the Drag client-side event
-
-#### Parameters
-
-##### onNodeDragging `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
-
-#### Parameters
-
-##### onNodeDragging `System.Func{System.Object`
-The handler code wrapped in a text tag (Razor syntax).
 
 #### Example
     <% Html.Kendo().TreeView()
@@ -278,21 +213,21 @@ The handler code wrapped in a text tag (Razor syntax).
         .Render();
         %>
 
+#### Parameters
+
+##### onNodeDragging `System.Func{System.Object`
+The handler code wrapped in a text tag (Razor syntax).
+
 ### Drag(System.String)
 Defines the name of the JavaScript function that will handle the the Drag client-side event.
-
-#### Parameters
-
-##### onNodeDragging `System.String`
-The name of the JavaScript function that will handle the event.
-
-#### Parameters
-
-##### onNodeDragging `System.String`
-The name of the JavaScript function that will handle the event.
 
 #### Example
     <%= Html.Kendo().TreeView()
         .Name("TreeView")
         .Events(events => events.Drag("Drag"))
         %>
+
+#### Parameters
+
+##### onNodeDragging `System.String`
+The name of the JavaScript function that will handle the event.

@@ -11,16 +11,6 @@ publish:true
 ### Color(System.String)
 Sets the border color.
 
-#### Parameters
-
-##### color `System.String`
-The border color (CSS format).
-
-#### Parameters
-
-##### color `System.String`
-The border color (CSS format).
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("Chart")
@@ -28,18 +18,13 @@ The border color (CSS format).
         .Render();
         %>
 
+#### Parameters
+
+##### color `System.String`
+The border color (CSS format).
+
 ### Opacity(System.Double)
 Sets the border opacity
-
-#### Parameters
-
-##### opacity `System.Double`
-The border opacity (CSS format).
-
-#### Parameters
-
-##### opacity `System.Double`
-The border opacity (CSS format).
 
 #### Example
     <% Html.Kendo().Chart()
@@ -48,18 +33,13 @@ The border opacity (CSS format).
         .Render();
         %>
 
+#### Parameters
+
+##### opacity `System.Double`
+The border opacity (CSS format).
+
 ### Width(System.Int32)
 Sets the border width.
-
-#### Parameters
-
-##### width `System.Int32`
-The border width.
-
-#### Parameters
-
-##### width `System.Int32`
-The border width.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -68,18 +48,13 @@ The border width.
         .Render();
         %>
 
+#### Parameters
+
+##### width `System.Int32`
+The border width.
+
 ### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the border dashType.
-
-#### Parameters
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The border dashType.
-
-#### Parameters
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The border dashType.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -87,3 +62,8 @@ The border dashType.
         .ChartArea(chartArea => chartArea.Border(border => border.DashType(ChartDashType.Dot)))
         .Render();
         %>
+
+#### Parameters
+
+##### dashType `Kendo.Mvc.UI.ChartDashType`
+The border dashType.

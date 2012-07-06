@@ -11,16 +11,6 @@ publish:true
 ### 1.From(`0)
 Sets the plot band start position.
 
-#### Parameters
-
-##### from ``0`
-The plot band start position.
-
-#### Parameters
-
-##### from ``0`
-The plot band start position.
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("Chart")
@@ -32,18 +22,13 @@ The plot band start position.
         .Render();
         %>
 
+#### Parameters
+
+##### from ``0`
+The plot band start position.
+
 ### 1.To(`0)
 Sets the plot band end position.
-
-#### Parameters
-
-##### to ``0`
-The plot band end position.
-
-#### Parameters
-
-##### to ``0`
-The plot band end position.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -56,18 +41,13 @@ The plot band end position.
         .Render();
         %>
 
+#### Parameters
+
+##### to ``0`
+The plot band end position.
+
 ### 1.Color(System.String)
 Sets the plot band background color
-
-#### Parameters
-
-##### background `System.String`
-The plot band background color.
-
-#### Parameters
-
-##### background `System.String`
-The plot band background color.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -80,18 +60,13 @@ The plot band background color.
         .Render();
         %>
 
+#### Parameters
+
+##### background `System.String`
+The plot band background color.
+
 ### 1.Opacity(System.Double)
 Sets the plot band opacity
-
-#### Parameters
-
-##### opacity `System.Double`
-The plot band opacity.
-
-#### Parameters
-
-##### opacity `System.Double`
-The plot band opacity.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -103,3 +78,8 @@ The plot band opacity.
         )
         .Render();
         %>
+
+#### Parameters
+
+##### opacity `System.Double`
+The plot band opacity.

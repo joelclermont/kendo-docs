@@ -11,16 +11,6 @@ publish:true
 ### Color(System.String)
 Sets the line color
 
-#### Parameters
-
-##### color `System.String`
-The line color (CSS format).
-
-#### Parameters
-
-##### color `System.String`
-The line color (CSS format).
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("Chart")
@@ -28,18 +18,13 @@ The line color (CSS format).
         .Render();
         %>
 
+#### Parameters
+
+##### color `System.String`
+The line color (CSS format).
+
 ### Width(System.Int32)
 Sets the line width
-
-#### Parameters
-
-##### width `System.Int32`
-The line width.
-
-#### Parameters
-
-##### width `System.Int32`
-The line width.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -48,18 +33,13 @@ The line width.
         .Render();
         %>
 
+#### Parameters
+
+##### width `System.Int32`
+The line width.
+
 ### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the line dashType.
-
-#### Parameters
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The line dashType.
-
-#### Parameters
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The line dashType.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -67,3 +47,8 @@ The line dashType.
         .CategoryAxis(axis => axis.MajorGridLines(lines => lines.DashType(ChartDashType.Dot)))
         .Render();
         %>
+
+#### Parameters
+
+##### dashType `Kendo.Mvc.UI.ChartDashType`
+The line dashType.

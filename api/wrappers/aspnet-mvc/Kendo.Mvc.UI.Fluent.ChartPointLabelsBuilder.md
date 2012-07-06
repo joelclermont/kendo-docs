@@ -11,16 +11,6 @@ publish:true
 ### Position(Kendo.Mvc.UI.ChartPointLabelsPosition)
 Sets the labels position
 
-#### Parameters
-
-##### position `Kendo.Mvc.UI.ChartPointLabelsPosition`
-The labels position.
-
-#### Parameters
-
-##### position `Kendo.Mvc.UI.ChartPointLabelsPosition`
-The labels position.
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("Chart")
@@ -33,3 +23,8 @@ The labels position.
         )
         .Render();
         %>
+
+#### Parameters
+
+##### position `Kendo.Mvc.UI.ChartPointLabelsPosition`
+The labels position.

@@ -16,18 +16,8 @@ Sets the page sizes of the grid.
 ##### pageSizes `System.Int32[]`
 The values shown in the pageSize dropdown
 
-#### Parameters
-
-##### pageSizes `System.Int32[]`
-The values shown in the pageSize dropdown
-
 ### PageSizes(System.Boolean)
 Sets the page sizes of the grid.
-
-#### Parameters
-
-##### enabled `System.Boolean`
-A value indicating whether to enable the page sizes dropdown
 
 #### Parameters
 

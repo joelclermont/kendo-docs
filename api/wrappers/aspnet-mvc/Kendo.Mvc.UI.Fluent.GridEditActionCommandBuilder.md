@@ -16,18 +16,8 @@ Sets the text displayed by the "update" button. If not set a default value is us
 ##### text `System.String`
 The text which should be displayed
 
-#### Parameters
-
-##### text `System.String`
-The text which should be displayed
-
 ### CancelText(System.String)
 Sets the text displayed by the "cancel" button. If not set a default value is used.
-
-#### Parameters
-
-##### text `System.String`
-The text which should be displayed
 
 #### Parameters
 

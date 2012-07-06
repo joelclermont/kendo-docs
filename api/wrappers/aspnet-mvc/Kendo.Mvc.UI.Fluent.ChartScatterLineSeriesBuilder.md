@@ -11,16 +11,6 @@ publish:true
 ### 1.Width(System.Double)
 Sets the chart line width.
 
-#### Parameters
-
-##### width `System.Double`
-The line width.
-
-#### Parameters
-
-##### width `System.Double`
-The line width.
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("Chart")
@@ -28,18 +18,13 @@ The line width.
         .Render();
         %>
 
+#### Parameters
+
+##### width `System.Double`
+The line width.
+
 ### 1.DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the chart line dash type.
-
-#### Parameters
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The line dash type.
-
-#### Parameters
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The line dash type.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -48,18 +33,13 @@ The line dash type.
         .Render();
         %>
 
+#### Parameters
+
+##### dashType `Kendo.Mvc.UI.ChartDashType`
+The line dash type.
+
 ### 1.MissingValues(Kendo.Mvc.UI.ChartScatterLineMissingValues)
 Configures the behavior for handling missing values in scatter line series.
-
-#### Parameters
-
-##### missingValues `Kendo.Mvc.UI.ChartScatterLineMissingValues`
-The missing values behavior. The default is to leave gaps.
-
-#### Parameters
-
-##### missingValues `Kendo.Mvc.UI.ChartScatterLineMissingValues`
-The missing values behavior. The default is to leave gaps.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -69,3 +49,8 @@ The missing values behavior. The default is to leave gaps.
         .MissingValues(ChartScatterLineMissingValues.Interpolate);
         )
         %>
+
+#### Parameters
+
+##### missingValues `Kendo.Mvc.UI.ChartScatterLineMissingValues`
+The missing values behavior. The default is to leave gaps.

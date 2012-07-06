@@ -11,16 +11,6 @@ publish:true
 ### 2.Events(System.Action{Kendo.Mvc.UI.Fluent.DatePickerEventBuilderBase})
 Configures the client-side events.
 
-#### Parameters
-
-##### clientEventsAction `System.Action{Kendo.Mvc.UI.Fluent.DatePickerEventBuilderBase}`
-The client events action.
-
-#### Parameters
-
-##### clientEventsAction `System.Action{Kendo.Mvc.UI.Fluent.DatePickerEventBuilderBase}`
-The client events action.
-
 #### Example
     <%= Html.Kendo().DatePicker()
         .Name("DatePicker")
@@ -28,6 +18,11 @@ The client events action.
         events.Open("open").Change("change")
         )
         %>
+
+#### Parameters
+
+##### clientEventsAction `System.Action{Kendo.Mvc.UI.Fluent.DatePickerEventBuilderBase}`
+The client events action.
 
 ### 2.Format(System.String)
 Sets the date format, which will be used to parse and format the machine date.

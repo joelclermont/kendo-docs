@@ -11,16 +11,6 @@ publish:true
 ### Size(System.Int32)
 Sets the ticks size
 
-#### Parameters
-
-##### size `System.Int32`
-The ticks size.
-
-#### Parameters
-
-##### size `System.Int32`
-The ticks size.
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("chart")
@@ -28,18 +18,13 @@ The ticks size.
         .Render();
         %>
 
+#### Parameters
+
+##### size `System.Int32`
+The ticks size.
+
 ### Visible(System.Boolean)
 Sets the ticks visibility
-
-#### Parameters
-
-##### visible `System.Boolean`
-The ticks visibility.
-
-#### Parameters
-
-##### visible `System.Boolean`
-The ticks visibility.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -47,3 +32,8 @@ The ticks visibility.
         .ValueAxis(axis => axis.MajorTicks(ticks => ticks.Visible(false)))
         .Render();
         %>
+
+#### Parameters
+
+##### visible `System.Boolean`
+The ticks visibility.

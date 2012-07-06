@@ -16,18 +16,8 @@ Sets the HTML content that will show initially in the editor.
 ##### value `System.Action`
 The action which renders the HTML content.
 
-#### Parameters
-
-##### value `System.Action`
-The action which renders the HTML content.
-
 ### Value(System.String)
 Sets the HTML content which the item should display as a string.
-
-#### Parameters
-
-##### value `System.String`
-An HTML string.
 
 #### Parameters
 

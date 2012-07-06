@@ -11,16 +11,6 @@ publish:true
 ### Change(System.Func{System.Object,System.Object})
 Defines the inline handler of the Change client-side event
 
-#### Parameters
-
-##### handlerName `System.Func{System.Object`
-The action defining the inline handler.
-
-#### Parameters
-
-##### handlerName `System.Func{System.Object`
-The action defining the inline handler.
-
 #### Example
     <% Html.Kendo().RangeSlider()
         .Name("RangeSlider")
@@ -35,18 +25,13 @@ The action defining the inline handler.
         .Render();
         %>
 
+#### Parameters
+
+##### handlerName `System.Func{System.Object`
+The action defining the inline handler.
+
 ### Change(System.String)
 Defines the name of the JavaScript function that will handle the the Kendo client-side event.
-
-#### Parameters
-
-##### handlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-#### Parameters
-
-##### handlerName `System.String`
-The name of the JavaScript function that will handle the event.
 
 #### Example
     <%= Html.Kendo().RangeSlider()
@@ -54,18 +39,13 @@ The name of the JavaScript function that will handle the event.
         .Events(events => events.Change("change"))
         %>
 
+#### Parameters
+
+##### handlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
 ### Slide(System.Func{System.Object,System.Object})
 Defines the inline handler of the Slide client-side event.
-
-#### Parameters
-
-##### handlerName `System.Func{System.Object`
-The action defining the inline handler.
-
-#### Parameters
-
-##### handlerName `System.Func{System.Object`
-The action defining the inline handler.
 
 #### Example
     <% Html.Kendo().RangeSlider()
@@ -81,21 +61,21 @@ The action defining the inline handler.
         .Render();
         %>
 
+#### Parameters
+
+##### handlerName `System.Func{System.Object`
+The action defining the inline handler.
+
 ### Slide(System.String)
 Defines the name of the JavaScript function that will handle the the Slide client-side event.
-
-#### Parameters
-
-##### handlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-#### Parameters
-
-##### handlerName `System.String`
-The name of the JavaScript function that will handle the event.
 
 #### Example
     <%= Html.Kendo().RangeSlider()
         .Name("RangeSlider")
         .Events(events => events.Slide("slide"))
         %>
+
+#### Parameters
+
+##### handlerName `System.String`
+The name of the JavaScript function that will handle the event.

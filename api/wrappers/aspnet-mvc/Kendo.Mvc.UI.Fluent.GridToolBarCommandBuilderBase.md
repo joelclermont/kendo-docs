@@ -16,18 +16,8 @@ Sets the HTML attributes.
 ##### attributes `System.Object`
 The HTML attributes.
 
-#### Parameters
-
-##### attributes `System.Object`
-The HTML attributes.
-
 ### 3.HtmlAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})
 Sets the HTML attributes.
-
-#### Parameters
-
-##### attributes `System.Collections.Generic.IDictionary{System.String`
-The HTML attributes.
 
 #### Parameters
 

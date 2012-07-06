@@ -20,27 +20,19 @@ Sets the name of the series.
 ### 1.Opacity(System.Double)
 Sets the series opacity.
 
-#### Parameters
-
-##### opacity `System.Double`
-
-            The series opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
-
-#### Parameters
-
-##### opacity `System.Double`
-
-            The series opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
-
 #### Example
     <%= Html.Kendo().Chart(Model)
         .Name("Chart")
         .Series(series => series.Pie(s => s.Sales, s => s.DateString).Opacity(0.5))
         %>
+
+#### Parameters
+
+##### opacity `System.Double`
+
+            The series opacity in the range from 0 (transparent) to 1 (opaque).
+            The default value is 1.
+            
 
 ### 1.Padding(System.Int32)
 Sets the padding of the chart.
@@ -55,16 +47,6 @@ Sets the padding of the chart.
 ### 1.StartAngle(System.Int32)
 Sets the start angle of the first pie segment.
 
-#### Parameters
-
-##### startAngle `System.Int32`
-The pie start angle(in degrees).
-
-#### Parameters
-
-##### startAngle `System.Int32`
-The pie start angle(in degrees).
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("Chart")
@@ -72,18 +54,13 @@ The pie start angle(in degrees).
         .Render();
         %>
 
+#### Parameters
+
+##### startAngle `System.Int32`
+The pie start angle(in degrees).
+
 ### 1.Labels(System.Action{Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder})
 Configures the pie chart labels.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder}`
-The configuration action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder}`
-The configuration action.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -97,18 +74,13 @@ The configuration action.
         )
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder}`
+The configuration action.
+
 ### 1.Labels(System.Boolean)
 Sets the visibility of pie chart labels.
-
-#### Parameters
-
-##### visible `System.Boolean`
-The visibility. The default value is false.
-
-#### Parameters
-
-##### visible `System.Boolean`
-The visibility. The default value is false.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -119,30 +91,13 @@ The visibility. The default value is false.
         )
         %>
 
+#### Parameters
+
+##### visible `System.Boolean`
+The visibility. The default value is false.
+
 ### 1.Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the pie segments border
-
-#### Parameters
-
-##### width `System.Int32`
-The pie segments border width.
-
-##### color `System.String`
-The pie segments border color (CSS syntax).
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The pie segments border dash type.
-
-#### Parameters
-
-##### width `System.Int32`
-The pie segments border width.
-
-##### color `System.String`
-The pie segments border color (CSS syntax).
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The pie segments border dash type.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -151,24 +106,19 @@ The pie segments border dash type.
         .Render();
         %>
 
+#### Parameters
+
+##### width `System.Int32`
+The pie segments border width.
+
+##### color `System.String`
+The pie segments border color (CSS syntax).
+
+##### dashType `Kendo.Mvc.UI.ChartDashType`
+The pie segments border dash type.
+
 ### 1.Overlay(Kendo.Mvc.UI.ChartPieSeriesOverlay)
 Sets the pie segments effects overlay
-
-#### Parameters
-
-##### overlay `Kendo.Mvc.UI.ChartPieSeriesOverlay`
-
-            The pie segment effects overlay.
-            The default value is set in the theme.
-            
-
-#### Parameters
-
-##### overlay `Kendo.Mvc.UI.ChartPieSeriesOverlay`
-
-            The pie segment effects overlay.
-            The default value is set in the theme.
-            
 
 #### Example
     <% Html.Kendo().Chart()
@@ -177,18 +127,16 @@ Sets the pie segments effects overlay
         .Render();
         %>
 
+#### Parameters
+
+##### overlay `Kendo.Mvc.UI.ChartPieSeriesOverlay`
+
+            The pie segment effects overlay.
+            The default value is set in the theme.
+            
+
 ### 1.Connectors(System.Action{Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder})
 Configures the pie chart connectors.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder}`
-The configuration action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder}`
-The configuration action.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -200,3 +148,8 @@ The configuration action.
         );
         )
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder}`
+The configuration action.

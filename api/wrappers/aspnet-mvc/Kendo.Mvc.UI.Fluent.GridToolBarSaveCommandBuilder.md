@@ -16,18 +16,8 @@ Sets the text displayed by the "save changes" button. If not set a default value
 ##### text `System.String`
 The text which should be displayed
 
-#### Parameters
-
-##### text `System.String`
-The text which should be displayed
-
 ### 1.CancelText(System.String)
 Sets the text displayed by the "cancel changes" button. If not set a default value is used.
-
-#### Parameters
-
-##### text `System.String`
-The text which should be displayed
 
 #### Parameters
 

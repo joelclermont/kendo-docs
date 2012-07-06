@@ -11,16 +11,6 @@ publish:true
 ### Events(System.Action{Kendo.Mvc.UI.Fluent.UploadEventBuilder})
 Configures the client-side events.
 
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.UploadEventBuilder}`
-The client events configuration action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.UploadEventBuilder}`
-The client events configuration action.
-
 #### Example
     <%= Html.Kendo().Upload()
         .Name("Upload")
@@ -30,18 +20,13 @@ The client events configuration action.
         )
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.UploadEventBuilder}`
+The client events configuration action.
+
 ### Enable(System.Boolean)
 Enables or disables the component.
-
-#### Parameters
-
-##### value `System.Boolean`
-true if the component should be enabled, false otherwise; the default is true.
-
-#### Parameters
-
-##### value `System.Boolean`
-true if the component should be enabled, false otherwise; the default is true.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -49,24 +34,24 @@ true if the component should be enabled, false otherwise; the default is true.
         .Enable(false)
         %>
 
+#### Parameters
+
+##### value `System.Boolean`
+true if the component should be enabled, false otherwise; the default is true.
+
 ### Multiple(System.Boolean)
 Enables or disables multiple file selection.
-
-#### Parameters
-
-##### value `System.Boolean`
-true if multiple file selection should be enabled, false otherwise; the default is true.
-
-#### Parameters
-
-##### value `System.Boolean`
-true if multiple file selection should be enabled, false otherwise; the default is true.
 
 #### Example
     <%= Html.Kendo().Upload()
         .Name("Upload")
         .Multiple(false)
         %>
+
+#### Parameters
+
+##### value `System.Boolean`
+true if multiple file selection should be enabled, false otherwise; the default is true.
 
 ### ShowFileList(System.Boolean)
 Sets a value indicating whether to show the list of uploaded files
@@ -76,23 +61,8 @@ Sets a value indicating whether to show the list of uploaded files
 ##### value `System.Boolean`
 true if the list of uploaded files should be visible, false otherwise; true by default
 
-#### Parameters
-
-##### value `System.Boolean`
-true if the list of uploaded files should be visible, false otherwise; true by default
-
 ### Async(System.Action{Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder})
 Use it to configure asynchronous uploading.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder}`
-Use builder to set different asynchronous uploading options.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder}`
-Use builder to set different asynchronous uploading options.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -102,20 +72,15 @@ Use builder to set different asynchronous uploading options.
         .Remove("Remove", "Compose")
         );
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder}`
+Use builder to set different asynchronous uploading options.
 
 ### Messages(System.Action{Kendo.Mvc.UI.Fluent.UploadMessagesBuilder})
 Use it to configure asynchronous uploading.
 
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.UploadMessagesBuilder}`
-Use builder to set different asynchronous uploading options.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.UploadMessagesBuilder}`
-Use builder to set different asynchronous uploading options.
-
 #### Example
     <%= Html.Kendo().Upload()
         .Name("Upload")
@@ -124,3 +89,8 @@ Use builder to set different asynchronous uploading options.
         .Remove("Remove", "Compose")
         );
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.UploadMessagesBuilder}`
+Use builder to set different asynchronous uploading options.

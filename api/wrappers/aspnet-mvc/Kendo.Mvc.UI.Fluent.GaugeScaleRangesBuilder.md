@@ -11,16 +11,6 @@ publish:true
 ### From(System.Double)
 Sets the ranges start position.
 
-#### Parameters
-
-##### from `System.Double`
-The ranges start position.
-
-#### Parameters
-
-##### from `System.Double`
-The ranges start position.
-
 #### Example
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
@@ -32,18 +22,13 @@ The ranges start position.
         .Render();
         %>
 
+#### Parameters
+
+##### from `System.Double`
+The ranges start position.
+
 ### To(System.Double)
 Sets the ranges end position.
-
-#### Parameters
-
-##### to `System.Double`
-The ranges end position.
-
-#### Parameters
-
-##### to `System.Double`
-The ranges end position.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -56,18 +41,13 @@ The ranges end position.
         .Render();
         %>
 
+#### Parameters
+
+##### to `System.Double`
+The ranges end position.
+
 ### Color(System.String)
 Sets the ranges color
-
-#### Parameters
-
-##### color `System.String`
-The ranges color.
-
-#### Parameters
-
-##### color `System.String`
-The ranges color.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -80,18 +60,13 @@ The ranges color.
         .Render();
         %>
 
+#### Parameters
+
+##### color `System.String`
+The ranges color.
+
 ### Opacity(System.Double)
 Sets the ranges opacity
-
-#### Parameters
-
-##### opacity `System.Double`
-The ranges opacity.
-
-#### Parameters
-
-##### opacity `System.Double`
-The ranges opacity.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -103,3 +78,8 @@ The ranges opacity.
         )
         .Render();
         %>
+
+#### Parameters
+
+##### opacity `System.Double`
+The ranges opacity.

@@ -11,16 +11,6 @@ publish:true
 ### Position(Kendo.Mvc.UI.GaugeRadialScaleLabelsPosition)
 Sets the labels position
 
-#### Parameters
-
-##### position `Kendo.Mvc.UI.GaugeRadialScaleLabelsPosition`
-The labels position.
-
-#### Parameters
-
-##### position `Kendo.Mvc.UI.GaugeRadialScaleLabelsPosition`
-The labels position.
-
 #### Example
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
@@ -30,3 +20,8 @@ The labels position.
         )
         )
         %>
+
+#### Parameters
+
+##### position `Kendo.Mvc.UI.GaugeRadialScaleLabelsPosition`
+The labels position.

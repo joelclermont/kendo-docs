@@ -15,8 +15,3 @@ Specify an editor template which to be used.
 
 ##### templateName `System.String`
 name of the editor template
-
-#### Parameters
-
-##### templateName `System.String`
-name of the editor template

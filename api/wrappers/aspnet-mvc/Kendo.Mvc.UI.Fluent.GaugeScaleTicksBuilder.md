@@ -11,16 +11,6 @@ publish:true
 ### Color(System.String)
 Sets the ticks color
 
-#### Parameters
-
-##### color `System.String`
-The ticks color (CSS format).
-
-#### Parameters
-
-##### color `System.String`
-The ticks color (CSS format).
-
 #### Example
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
@@ -28,18 +18,13 @@ The ticks color (CSS format).
         .Render();
         %>
 
+#### Parameters
+
+##### color `System.String`
+The ticks color (CSS format).
+
 ### Width(System.Int32)
 Sets the ticks width
-
-#### Parameters
-
-##### width `System.Int32`
-The ticks width.
-
-#### Parameters
-
-##### width `System.Int32`
-The ticks width.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -48,18 +33,13 @@ The ticks width.
         .Render();
         %>
 
+#### Parameters
+
+##### width `System.Int32`
+The ticks width.
+
 ### Size(System.Int32)
 Sets the ticks size
-
-#### Parameters
-
-##### size `System.Int32`
-The ticks size.
-
-#### Parameters
-
-##### size `System.Int32`
-The ticks size.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -68,18 +48,13 @@ The ticks size.
         .Render();
         %>
 
+#### Parameters
+
+##### size `System.Int32`
+The ticks size.
+
 ### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the ticks dashType
-
-#### Parameters
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The ticks dashType.
-
-#### Parameters
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The ticks dashType.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -88,18 +63,13 @@ The ticks dashType.
         .Render();
         %>
 
+#### Parameters
+
+##### dashType `Kendo.Mvc.UI.ChartDashType`
+The ticks dashType.
+
 ### Visible(System.Boolean)
 Sets the ticks visibility
-
-#### Parameters
-
-##### visible `System.Boolean`
-The ticks visibility.
-
-#### Parameters
-
-##### visible `System.Boolean`
-The ticks visibility.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -107,3 +77,8 @@ The ticks visibility.
         .Scale(scale => scale.MajorTicks(ticks => ticks.Visible(false)))
         .Render();
         %>
+
+#### Parameters
+
+##### visible `System.Boolean`
+The ticks visibility.

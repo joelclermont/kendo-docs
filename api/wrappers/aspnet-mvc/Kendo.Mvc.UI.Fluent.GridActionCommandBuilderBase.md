@@ -16,11 +16,6 @@ Sets the text displayed by the command. If not set a default value is used.
 ##### text `System.String`
 The text which should be displayed
 
-#### Parameters
-
-##### text `System.String`
-The text which should be displayed
-
 ### 2.HtmlAttributes(System.Object)
 Sets the HTML attributes.
 
@@ -29,18 +24,8 @@ Sets the HTML attributes.
 ##### attributes `System.Object`
 The HTML attributes.
 
-#### Parameters
-
-##### attributes `System.Object`
-The HTML attributes.
-
 ### 2.HtmlAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})
 Sets the HTML attributes.
-
-#### Parameters
-
-##### attributes `System.Collections.Generic.IDictionary{System.String`
-The HTML attributes.
 
 #### Parameters
 

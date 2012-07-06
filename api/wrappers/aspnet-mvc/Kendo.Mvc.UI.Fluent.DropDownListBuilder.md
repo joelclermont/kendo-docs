@@ -11,16 +11,6 @@ publish:true
 ### Items(System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory})
 Defines the items in the DropDownList
 
-#### Parameters
-
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory}`
-The add action.
-
-#### Parameters
-
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory}`
-The add action.
-
 #### Example
     <%= Html.Telerik().DropDownList()
         .Name("DropDownList")
@@ -31,21 +21,21 @@ The add action.
         })
         %>
 
+#### Parameters
+
+##### addAction `System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory}`
+The add action.
+
 ### SelectedIndex(System.Int32)
 Use it to set selected item index
-
-#### Parameters
-
-##### index `System.Int32`
-Item index.
-
-#### Parameters
-
-##### index `System.Int32`
-Item index.
 
 #### Example
     <%= Html.Kendo().DropDownList()
         .Name("DropDownList")
         .SelectedIndex(0);
         %>
+
+#### Parameters
+
+##### index `System.Int32`
+Item index.

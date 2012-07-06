@@ -11,16 +11,6 @@ publish:true
 ### Items(System.Action{Kendo.Mvc.UI.Fluent.TreeViewItemFactory})
 Configures the child items of a .
 
-#### Parameters
-
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.TreeViewItemFactory}`
-The add action.
-
-#### Parameters
-
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.TreeViewItemFactory}`
-The add action.
-
 #### Example
     <%= Html.Telerik().TreeView()
         .Name("TreeView")
@@ -34,18 +24,13 @@ The add action.
         })
         %>
 
+#### Parameters
+
+##### addAction `System.Action{Kendo.Mvc.UI.Fluent.TreeViewItemFactory}`
+The add action.
+
 ### Value(System.String)
 Sets the value for the item.
-
-#### Parameters
-
-##### value `System.String`
-The value.
-
-#### Parameters
-
-##### value `System.String`
-The value.
 
 #### Example
     <%= Html.Telerik().TreeView()
@@ -53,18 +38,13 @@ The value.
         .Items(items => items.Add().Value("1"))
         %>
 
+#### Parameters
+
+##### value `System.String`
+The value.
+
 ### Expanded(System.Boolean)
 Define when the item will be expanded on intial render.
-
-#### Parameters
-
-##### value `System.Boolean`
-If true the item will be expanded.
-
-#### Parameters
-
-##### value `System.Boolean`
-If true the item will be expanded.
 
 #### Example
     <%= Html.Telerik().TreeView()
@@ -80,18 +60,13 @@ If true the item will be expanded.
         })
         %>
 
+#### Parameters
+
+##### value `System.Boolean`
+If true the item will be expanded.
+
 ### Checked(System.Boolean)
 Define when the item will be checked on intial render.
-
-#### Parameters
-
-##### value `System.Boolean`
-If true the item will be checked.
-
-#### Parameters
-
-##### value `System.Boolean`
-If true the item will be checked.
 
 #### Example
     <%= Html.Telerik().TreeView()
@@ -107,18 +82,13 @@ If true the item will be checked.
         })
         %>
 
+#### Parameters
+
+##### value `System.Boolean`
+If true the item will be checked.
+
 ### Checkable(System.Boolean)
 Enables/disables the rendering of a checkbox for this item.
-
-#### Parameters
-
-##### value `System.Boolean`
-If false, no checkbox will be rendered.
-
-#### Parameters
-
-##### value `System.Boolean`
-If false, no checkbox will be rendered.
 
 #### Example
     <%= Html.Telerik().TreeView()
@@ -134,18 +104,13 @@ If false, no checkbox will be rendered.
         })
         %>
 
+#### Parameters
+
+##### value `System.Boolean`
+If false, no checkbox will be rendered.
+
 ### LoadOnDemand(System.Boolean)
 Sets the expand mode of the treeview item.
-
-#### Parameters
-
-##### value `System.Boolean`
-If true then item will be load on demand from client side.
-
-#### Parameters
-
-##### value `System.Boolean`
-If true then item will be load on demand from client side.
 
 #### Example
     <%= Html.Telerik().TreeView()
@@ -160,3 +125,8 @@ If true then item will be load on demand from client side.
         .LoadOnDemand(true);
         })
         %>
+
+#### Parameters
+
+##### value `System.Boolean`
+If true then item will be load on demand from client side.

@@ -29,16 +29,6 @@ Use it to enable filtering of items.
 ### Items(System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory})
 Defines the items in the ComboBox
 
-#### Parameters
-
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory}`
-The add action.
-
-#### Parameters
-
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory}`
-The add action.
-
 #### Example
     <%= Html.Telerik().ComboBox()
         .Name("ComboBox")
@@ -48,6 +38,11 @@ The add action.
         items.Add().Text("Second Item");
         })
         %>
+
+#### Parameters
+
+##### addAction `System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory}`
+The add action.
 
 ### HighlightFirst(System.Boolean)
 Use it to enable highlighting of first matched item.
@@ -61,18 +56,13 @@ Use it to enable highlighting of first matched item.
 ### SelectedIndex(System.Int32)
 Use it to set selected item index
 
-#### Parameters
-
-##### index `System.Int32`
-Item index.
-
-#### Parameters
-
-##### index `System.Int32`
-Item index.
-
 #### Example
     <%= Html.Kendo().ComboBox()
         .Name("ComboBox")
         .SelectedIndex(0);
         %>
+
+#### Parameters
+
+##### index `System.Int32`
+Item index.

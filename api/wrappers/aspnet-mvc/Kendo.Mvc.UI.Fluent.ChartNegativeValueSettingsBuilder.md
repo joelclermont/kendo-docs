@@ -11,16 +11,6 @@ publish:true
 ### Color(System.String)
 Sets the color for bubbles representing negative values
 
-#### Parameters
-
-##### color `System.String`
-The bubble color (CSS format).
-
-#### Parameters
-
-##### color `System.String`
-The bubble color (CSS format).
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("Chart")
@@ -34,18 +24,13 @@ The bubble color (CSS format).
         .Render();
         %>
 
+#### Parameters
+
+##### color `System.String`
+The bubble color (CSS format).
+
 ### Visible(System.Boolean)
 Sets the visibility for bubbles representing negative values
-
-#### Parameters
-
-##### visible `System.Boolean`
-The visibility for bubbles representing negative values.
-
-#### Parameters
-
-##### visible `System.Boolean`
-The visibility for bubbles representing negative values.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -58,3 +43,8 @@ The visibility for bubbles representing negative values.
         )
         .Render();
         %>
+
+#### Parameters
+
+##### visible `System.Boolean`
+The visibility for bubbles representing negative values.

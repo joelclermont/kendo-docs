@@ -11,16 +11,6 @@ publish:true
 ### Size(System.String)
 Sets the pane size.
 
-#### Parameters
-
-##### value `System.String`
-The desired size. Only sizes in pixels and percentages are allowed.
-
-#### Parameters
-
-##### value `System.String`
-The desired size. Only sizes in pixels and percentages are allowed.
-
 #### Example
     <%= Html.Kendo().Splitter()
         .Name("Splitter")
@@ -30,18 +20,13 @@ The desired size. Only sizes in pixels and percentages are allowed.
         })
         %>
 
+#### Parameters
+
+##### value `System.String`
+The desired size. Only sizes in pixels and percentages are allowed.
+
 ### MinSize(System.String)
 Sets the minimum pane size.
-
-#### Parameters
-
-##### value `System.String`
-The desired minimum size. Only sizes in pixels and percentages are allowed.
-
-#### Parameters
-
-##### value `System.String`
-The desired minimum size. Only sizes in pixels and percentages are allowed.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -52,18 +37,13 @@ The desired minimum size. Only sizes in pixels and percentages are allowed.
         })
         %>
 
+#### Parameters
+
+##### value `System.String`
+The desired minimum size. Only sizes in pixels and percentages are allowed.
+
 ### MaxSize(System.String)
 Sets the maximum pane size.
-
-#### Parameters
-
-##### value `System.String`
-The desired maximum size. Only sizes in pixels and percentages are allowed.
-
-#### Parameters
-
-##### value `System.String`
-The desired maximum size. Only sizes in pixels and percentages are allowed.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -74,18 +54,13 @@ The desired maximum size. Only sizes in pixels and percentages are allowed.
         })
         %>
 
+#### Parameters
+
+##### value `System.String`
+The desired maximum size. Only sizes in pixels and percentages are allowed.
+
 ### Scrollable(System.Boolean)
 Sets whether the pane shows a scrollbar when its content overflows.
-
-#### Parameters
-
-##### isScrollable `System.Boolean`
-Whether the pane will be scrollable.
-
-#### Parameters
-
-##### isScrollable `System.Boolean`
-Whether the pane will be scrollable.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -96,18 +71,13 @@ Whether the pane will be scrollable.
         })
         %>
 
+#### Parameters
+
+##### isScrollable `System.Boolean`
+Whether the pane will be scrollable.
+
 ### Resizable(System.Boolean)
 Sets whether the pane can be resized by the user.
-
-#### Parameters
-
-##### isResizable `System.Boolean`
-Whether the pane will be resizable.
-
-#### Parameters
-
-##### isResizable `System.Boolean`
-Whether the pane will be resizable.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -118,18 +88,13 @@ Whether the pane will be resizable.
         })
         %>
 
+#### Parameters
+
+##### isResizable `System.Boolean`
+Whether the pane will be resizable.
+
 ### Collapsed(System.Boolean)
 Sets whether the pane is initially collapsed.
-
-#### Parameters
-
-##### isCollapsed `System.Boolean`
-Whether the pane will be initially collapsed.
-
-#### Parameters
-
-##### isCollapsed `System.Boolean`
-Whether the pane will be initially collapsed.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -140,18 +105,13 @@ Whether the pane will be initially collapsed.
         })
         %>
 
+#### Parameters
+
+##### isCollapsed `System.Boolean`
+Whether the pane will be initially collapsed.
+
 ### Collapsible(System.Boolean)
 Sets whether the pane can be collapsed by the user.
-
-#### Parameters
-
-##### isCollapsible `System.Boolean`
-Whether the pane can be collapsed by the user.
-
-#### Parameters
-
-##### isCollapsible `System.Boolean`
-Whether the pane can be collapsed by the user.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -162,18 +122,13 @@ Whether the pane can be collapsed by the user.
         })
         %>
 
+#### Parameters
+
+##### isCollapsible `System.Boolean`
+Whether the pane can be collapsed by the user.
+
 ### HtmlAttributes(System.Object)
 Sets the HTML attributes applied to the outer HTML element rendered for the item
-
-#### Parameters
-
-##### attributes `System.Object`
-The attributes.
-
-#### Parameters
-
-##### attributes `System.Object`
-The attributes.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -184,13 +139,13 @@ The attributes.
         })
         %>
 
-### HtmlAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})
-Sets the HTML attributes applied to the outer HTML element rendered for the item
-
 #### Parameters
 
-##### attributes `System.Collections.Generic.IDictionary{System.String`
+##### attributes `System.Object`
 The attributes.
+
+### HtmlAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})
+Sets the HTML attributes applied to the outer HTML element rendered for the item
 
 #### Parameters
 
@@ -205,18 +160,8 @@ Sets the HTML content of the pane.
 ##### value `System.Action`
 The action which renders the HTML content.
 
-#### Parameters
-
-##### value `System.Action`
-The action which renders the HTML content.
-
 ### Content(System.Func{System.Object,System.Object})
 Sets the HTML content of the pane.
-
-#### Parameters
-
-##### value `System.Func{System.Object`
-The Razor template for the HTML content.
 
 #### Parameters
 
@@ -231,23 +176,8 @@ Sets the HTML content of the pane.
 ##### value `System.String`
 The HTML content.
 
-#### Parameters
-
-##### value `System.String`
-The HTML content.
-
 ### LoadContentFrom(System.Web.Routing.RouteValueDictionary)
 Sets the Url which will be requested to return the pane content.
-
-#### Parameters
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values of the Action method.
-
-#### Parameters
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values of the Action method.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -258,24 +188,13 @@ The route values of the Action method.
         })
         %>
 
+#### Parameters
+
+##### routeValues `System.Web.Routing.RouteValueDictionary`
+The route values of the Action method.
+
 ### LoadContentFrom(System.String,System.String)
 Sets the Url, which will be requested to return the pane content.
-
-#### Parameters
-
-##### actionName `System.String`
-The action name.
-
-##### controllerName `System.String`
-The controller name.
-
-#### Parameters
-
-##### actionName `System.String`
-The action name.
-
-##### controllerName `System.String`
-The controller name.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -286,30 +205,16 @@ The controller name.
         })
         %>
 
+#### Parameters
+
+##### actionName `System.String`
+The action name.
+
+##### controllerName `System.String`
+The controller name.
+
 ### LoadContentFrom(System.String,System.String,System.Object)
 Sets the Url, which will be requested to return the content.
-
-#### Parameters
-
-##### actionName `System.String`
-The action name.
-
-##### controllerName `System.String`
-The controller name.
-
-##### routeValues `System.Object`
-Route values.
-
-#### Parameters
-
-##### actionName `System.String`
-The action name.
-
-##### controllerName `System.String`
-The controller name.
-
-##### routeValues `System.Object`
-Route values.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -320,18 +225,19 @@ Route values.
         })
         %>
 
+#### Parameters
+
+##### actionName `System.String`
+The action name.
+
+##### controllerName `System.String`
+The controller name.
+
+##### routeValues `System.Object`
+Route values.
+
 ### LoadContentFrom(System.String)
 Sets the Url, which will be requested to return the pane content.
-
-#### Parameters
-
-##### value `System.String`
-The url.
-
-#### Parameters
-
-##### value `System.String`
-The url.
 
 #### Example
     <%= Html.Kendo().Splitter()
@@ -341,3 +247,8 @@ The url.
         .LoadContentFrom(Url.Action("AjaxView_OpenSource", "Splitter"));
         })
         %>
+
+#### Parameters
+
+##### value `System.String`
+The url.

@@ -15,8 +15,3 @@ Specifies an absolute or relative URL for the operation.
 
 ##### url `System.String`
 Absolute or relative URL for the operation
-
-#### Parameters
-
-##### url `System.String`
-Absolute or relative URL for the operation

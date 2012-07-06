@@ -20,37 +20,27 @@ Enables or disables sorting.
 ### 1.SortMode(Kendo.Mvc.UI.GridSortMode)
 Sets the sort mode of the grid.
 
-#### Parameters
-
-##### value `Kendo.Mvc.UI.GridSortMode`
-The value.
-
-#### Parameters
-
-##### value `Kendo.Mvc.UI.GridSortMode`
-The value.
-
 #### Example
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Sorting(sorting => sorting.SortMode(GridSortMode.MultipleColumns))
         %>
 
+#### Parameters
+
+##### value `Kendo.Mvc.UI.GridSortMode`
+The value.
+
 ### 1.AllowUnsort(System.Boolean)
 Enables or disables unsorted mode.
-
-#### Parameters
-
-##### value `System.Boolean`
-The value.
-
-#### Parameters
-
-##### value `System.Boolean`
-The value.
 
 #### Example
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Sorting(sorting => sorting.AllowUnsort(true))
         %>
+
+#### Parameters
+
+##### value `System.Boolean`
+The value.

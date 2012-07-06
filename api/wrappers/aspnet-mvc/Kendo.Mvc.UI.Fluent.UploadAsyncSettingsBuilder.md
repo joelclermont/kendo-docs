@@ -16,35 +16,8 @@ Sets a value indicating whether to start the upload immediately after selecting 
 ##### value `System.Boolean`
 true if the upload should start immediately after selecting a file, false otherwise; true by default
 
-#### Parameters
-
-##### value `System.Boolean`
-true if the upload should start immediately after selecting a file, false otherwise; true by default
-
 ### Save(System.String,System.String,System.Web.Routing.RouteValueDictionary)
 Sets the action, controller and route values for the save operation
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values.
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -54,30 +27,19 @@ The route values.
         )
         %>
 
+#### Parameters
+
+##### actionName `System.String`
+Name of the action.
+
+##### controllerName `System.String`
+Name of the controller.
+
+##### routeValues `System.Web.Routing.RouteValueDictionary`
+The route values.
+
 ### Save(System.String,System.String,System.Object)
 Sets the action, controller and route values for the save operation
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-##### routeValues `System.Object`
-The route values.
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-##### routeValues `System.Object`
-The route values.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -87,24 +49,19 @@ The route values.
         )
         %>
 
+#### Parameters
+
+##### actionName `System.String`
+Name of the action.
+
+##### controllerName `System.String`
+Name of the controller.
+
+##### routeValues `System.Object`
+The route values.
+
 ### Save(System.String,System.String)
 Sets the action and controller for the save operation
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -114,18 +71,16 @@ Name of the controller.
         )
         %>
 
+#### Parameters
+
+##### actionName `System.String`
+Name of the action.
+
+##### controllerName `System.String`
+Name of the controller.
+
 ### Save(System.String)
 Sets the route name for the save operation
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -135,18 +90,13 @@ Name of the route.
         )
         %>
 
+#### Parameters
+
+##### routeName `System.String`
+Name of the route.
+
 ### Save(System.Web.Routing.RouteValueDictionary)
 Sets the route values for the save operation
-
-#### Parameters
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values of the action method.
-
-#### Parameters
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values of the action method.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -156,24 +106,13 @@ The route values of the action method.
         )
         %>
 
+#### Parameters
+
+##### routeValues `System.Web.Routing.RouteValueDictionary`
+The route values of the action method.
+
 ### Save(System.String,System.Web.Routing.RouteValueDictionary)
 Sets the route and values for the save operation
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values.
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -183,24 +122,16 @@ The route values.
         )
         %>
 
+#### Parameters
+
+##### routeName `System.String`
+Name of the route.
+
+##### routeValues `System.Web.Routing.RouteValueDictionary`
+The route values.
+
 ### Save(System.String,System.Object)
 Sets the route and values for the save operation
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-##### routeValues `System.Object`
-The route values.
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-##### routeValues `System.Object`
-The route values.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -210,18 +141,16 @@ The route values.
         )
         %>
 
+#### Parameters
+
+##### routeName `System.String`
+Name of the route.
+
+##### routeValues `System.Object`
+The route values.
+
 ### Save``1(System.Linq.Expressions.Expression{System.Action{``0}})
 Sets the action for the save operation
-
-#### Parameters
-
-##### controllerAction `System.Linq.Expressions.Expression{System.Action{``0}}`
-The action.
-
-#### Parameters
-
-##### controllerAction `System.Linq.Expressions.Expression{System.Action{``0}}`
-The action.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -231,24 +160,13 @@ The action.
         )
         %>
 
+#### Parameters
+
+##### controllerAction `System.Linq.Expressions.Expression{System.Action{``0}}`
+The action.
+
 ### SaveField(System.String)
 Sets the field name for the save operation
-
-#### Parameters
-
-##### fieldName `System.String`
-
-            The form field name to use for submiting the files.
-            The Upload name is used if not set.
-            
-
-#### Parameters
-
-##### fieldName `System.String`
-
-            The form field name to use for submiting the files.
-            The Upload name is used if not set.
-            
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -258,19 +176,17 @@ Sets the field name for the save operation
         )
         %>
 
+#### Parameters
+
+##### fieldName `System.String`
+
+            The form field name to use for submiting the files.
+            The Upload name is used if not set.
+            
+
 ### SaveUrl(System.String)
 Sets an absolute or relative Save action URL.
             Note that the URL must be in the same domain for the upload to succeed.
-
-#### Parameters
-
-##### url `System.String`
-The Save action URL.
-
-#### Parameters
-
-##### url `System.String`
-The Save action URL.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -280,30 +196,13 @@ The Save action URL.
         )
         %>
 
+#### Parameters
+
+##### url `System.String`
+The Save action URL.
+
 ### Remove(System.String,System.String,System.Web.Routing.RouteValueDictionary)
 Sets the action, controller and route values for the remove operation
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values.
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -313,30 +212,19 @@ The route values.
         )
         %>
 
+#### Parameters
+
+##### actionName `System.String`
+Name of the action.
+
+##### controllerName `System.String`
+Name of the controller.
+
+##### routeValues `System.Web.Routing.RouteValueDictionary`
+The route values.
+
 ### Remove(System.String,System.String,System.Object)
 Sets the action, controller and route values for the remove operation
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-##### routeValues `System.Object`
-The route values.
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-##### routeValues `System.Object`
-The route values.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -346,24 +234,19 @@ The route values.
         )
         %>
 
+#### Parameters
+
+##### actionName `System.String`
+Name of the action.
+
+##### controllerName `System.String`
+Name of the controller.
+
+##### routeValues `System.Object`
+The route values.
+
 ### Remove(System.String,System.String)
 Sets the action and controller for the remove operation
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -373,18 +256,16 @@ Name of the controller.
         )
         %>
 
+#### Parameters
+
+##### actionName `System.String`
+Name of the action.
+
+##### controllerName `System.String`
+Name of the controller.
+
 ### Remove(System.String)
 Sets the route name for the remove operation
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -394,18 +275,13 @@ Name of the route.
         )
         %>
 
+#### Parameters
+
+##### routeName `System.String`
+Name of the route.
+
 ### Remove(System.Web.Routing.RouteValueDictionary)
 Sets the route values for the remove operation
-
-#### Parameters
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values of the action method.
-
-#### Parameters
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values of the action method.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -415,24 +291,13 @@ The route values of the action method.
         )
         %>
 
+#### Parameters
+
+##### routeValues `System.Web.Routing.RouteValueDictionary`
+The route values of the action method.
+
 ### Remove(System.String,System.Web.Routing.RouteValueDictionary)
 Sets the route and values for the remove operation
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values.
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-##### routeValues `System.Web.Routing.RouteValueDictionary`
-The route values.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -442,24 +307,16 @@ The route values.
         )
         %>
 
+#### Parameters
+
+##### routeName `System.String`
+Name of the route.
+
+##### routeValues `System.Web.Routing.RouteValueDictionary`
+The route values.
+
 ### Remove(System.String,System.Object)
 Sets the route and values for the remove operation
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-##### routeValues `System.Object`
-The route values.
-
-#### Parameters
-
-##### routeName `System.String`
-Name of the route.
-
-##### routeValues `System.Object`
-The route values.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -469,18 +326,16 @@ The route values.
         )
         %>
 
+#### Parameters
+
+##### routeName `System.String`
+Name of the route.
+
+##### routeValues `System.Object`
+The route values.
+
 ### Remove``1(System.Linq.Expressions.Expression{System.Action{``0}})
 Sets the action for the remove operation
-
-#### Parameters
-
-##### controllerAction `System.Linq.Expressions.Expression{System.Action{``0}}`
-The action.
-
-#### Parameters
-
-##### controllerAction `System.Linq.Expressions.Expression{System.Action{``0}}`
-The action.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -490,19 +345,14 @@ The action.
         )
         %>
 
+#### Parameters
+
+##### controllerAction `System.Linq.Expressions.Expression{System.Action{``0}}`
+The action.
+
 ### RemoveUrl(System.String)
 Sets an absolute or relative Remove action URL.
             Note that the URL must be in the same domain for the operation to succeed.
-
-#### Parameters
-
-##### url `System.String`
-The Remove action URL.
-
-#### Parameters
-
-##### url `System.String`
-The Remove action URL.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -512,24 +362,13 @@ The Remove action URL.
         )
         %>
 
+#### Parameters
+
+##### url `System.String`
+The Remove action URL.
+
 ### RemoveField(System.String)
 Sets the field name for the remove operation
-
-#### Parameters
-
-##### fieldName `System.String`
-
-            The form field name to use for submiting the files.
-            "fileNames" is used if not set.
-            
-
-#### Parameters
-
-##### fieldName `System.String`
-
-            The form field name to use for submiting the files.
-            "fileNames" is used if not set.
-            
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -538,3 +377,11 @@ Sets the field name for the remove operation
         .RemoveField("attachments");
         )
         %>
+
+#### Parameters
+
+##### fieldName `System.String`
+
+            The form field name to use for submiting the files.
+            "fileNames" is used if not set.
+            

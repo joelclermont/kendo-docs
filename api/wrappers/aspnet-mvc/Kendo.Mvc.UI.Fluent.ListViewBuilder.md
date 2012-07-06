@@ -11,34 +11,19 @@ publish:true
 ### 1.BindTo(System.Collections.Generic.IEnumerable{`0})
 Binds the ListView to a list of objects
 
-#### Parameters
-
-##### dataSource `System.Collections.Generic.IEnumerable{`0}`
-The data source.
-
-#### Parameters
-
-##### dataSource `System.Collections.Generic.IEnumerable{`0}`
-The data source.
-
 #### Example
     <%= Html.Kendo().ListView<Order>()
         .Name("Orders")
         .BindTo((IEnumerable<Order>)ViewData["Orders"]);
         %>
 
+#### Parameters
+
+##### dataSource `System.Collections.Generic.IEnumerable{`0}`
+The data source.
+
 ### 1.BindTo(System.Collections.IEnumerable)
 Binds the ListView to a list of objects
-
-#### Parameters
-
-##### dataSource `System.Collections.IEnumerable`
-The data source.
-
-#### Parameters
-
-##### dataSource `System.Collections.IEnumerable`
-The data source.
 
 #### Example
     <%= Html.Kendo().ListView<Order>()
@@ -46,24 +31,24 @@ The data source.
         .BindTo((IEnumerable)ViewData["Orders"]);
         %>
 
+#### Parameters
+
+##### dataSource `System.Collections.IEnumerable`
+The data source.
+
 ### 1.ClientTemplateId(System.String)
 Specifies ListView item template.
-
-#### Parameters
-
-##### templateId `System.String`
-The Id of the element which contains the template.
-
-#### Parameters
-
-##### templateId `System.String`
-The Id of the element which contains the template.
 
 #### Example
     <%= Html.Kendo().ListView<Order>()
         .Name("Orders")
         .ClientTemplateId("listViewTemplate");
         %>
+
+#### Parameters
+
+##### templateId `System.String`
+The Id of the element which contains the template.
 
 ### 1.Pageable
 Allows paging of the data.
@@ -78,22 +63,17 @@ Allows paging of the data.
 ### 1.Pageable(System.Action{Kendo.Mvc.UI.Fluent.PageableBuilder})
 Allows paging of the data.
 
-#### Parameters
-
-##### pagerAction `System.Action{Kendo.Mvc.UI.Fluent.PageableBuilder}`
-Use builder to define paging settings.
-
-#### Parameters
-
-##### pagerAction `System.Action{Kendo.Mvc.UI.Fluent.PageableBuilder}`
-Use builder to define paging settings.
-
 #### Example
     <%= Html.Kendo().ListView()
         .Name("Grid")
         .Ajax(ajax => ajax.Action("Orders", "ListView"))
         .Pageable(paging => paging.Enabled(true))
         %>
+
+#### Parameters
+
+##### pagerAction `System.Action{Kendo.Mvc.UI.Fluent.PageableBuilder}`
+Use builder to define paging settings.
 
 ### 1.Navigatable
 Enables keyboard navigation.
@@ -117,16 +97,6 @@ Enables single item selection.
 ### 1.Selectable(System.Action{Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder})
 Enables item selection.
 
-#### Parameters
-
-##### selectionAction `System.Action{Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder}`
-Use builder to define the selection mode.
-
-#### Parameters
-
-##### selectionAction `System.Action{Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder}`
-Use builder to define the selection mode.
-
 #### Example
     <%= Html.Kendo().ListView()
         .Name("ListView")
@@ -135,6 +105,11 @@ Use builder to define the selection mode.
         selection.Mode(ListViewSelectionMode.Multiple);
         })
         %>
+
+#### Parameters
+
+##### selectionAction `System.Action{Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder}`
+Use builder to define the selection mode.
 
 ### 1.TagName(System.String)
 Specifies ListView wrapper element tag name.
@@ -166,16 +141,6 @@ Enables ListView editing.
 ### 1.Events(System.Action{Kendo.Mvc.UI.Fluent.ListViewEventBuilder})
 Configures the client-side events.
 
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ListViewEventBuilder}`
-The client events action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ListViewEventBuilder}`
-The client events action.
-
 #### Example
     <%= Html.Kendo().ListView()
         .Name("ListView")
@@ -183,3 +148,8 @@ The client events action.
         .DataBound("onDataBound")
         )
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ListViewEventBuilder}`
+The client events action.

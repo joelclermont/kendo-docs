@@ -38,16 +38,6 @@ Display tooltip while drag.
 ### 1.Tooltip(System.Action{Kendo.Mvc.UI.Fluent.SliderTooltipBuilder})
 Use it to configure tooltip while drag.
 
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.SliderTooltipBuilder}`
-Use builder to set different tooltip options.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.SliderTooltipBuilder}`
-Use builder to set different tooltip options.
-
 #### Example
     <%= Html.Kendo().Slider()
         .Name("Slider")
@@ -57,18 +47,13 @@ Use builder to set different tooltip options.
         );
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.SliderTooltipBuilder}`
+Use builder to set different tooltip options.
+
 ### 1.Events(System.Action{Kendo.Mvc.UI.Fluent.RangeSliderEventBuilder})
 Configures the client-side events.
-
-#### Parameters
-
-##### events `System.Action{Kendo.Mvc.UI.Fluent.RangeSliderEventBuilder}`
-The client events action.
-
-#### Parameters
-
-##### events `System.Action{Kendo.Mvc.UI.Fluent.RangeSliderEventBuilder}`
-The client events action.
 
 #### Example
     <%= Html.Kendo().RangeSlider()
@@ -76,3 +61,8 @@ The client events action.
         .Events(events =>
         events.OnChange("onChange"))
         %>
+
+#### Parameters
+
+##### events `System.Action{Kendo.Mvc.UI.Fluent.RangeSliderEventBuilder}`
+The client events action.

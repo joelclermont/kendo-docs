@@ -11,16 +11,6 @@ publish:true
 ### Mirror(System.Boolean)
 Renders the axis labels on the other side.
 
-#### Parameters
-
-##### mirror `System.Boolean`
-A value indicating whether to render the axis labels on the other side.
-
-#### Parameters
-
-##### mirror `System.Boolean`
-A value indicating whether to render the axis labels on the other side.
-
 #### Example
     <%= Html.Kendo().Chart()
         .Name("Chart")
@@ -34,20 +24,13 @@ A value indicating whether to render the axis labels on the other side.
         )
         %>
 
+#### Parameters
+
+##### mirror `System.Boolean`
+A value indicating whether to render the axis labels on the other side.
+
 ### Step(System.Int32)
 Label rendering step.
-
-#### Parameters
-
-##### step `System.Int32`
-A value indicating the step at which labels are rendered.
-            Every n-th label is rendered where n is the step.
-
-#### Parameters
-
-##### step `System.Int32`
-A value indicating the step at which labels are rendered.
-            Every n-th label is rendered where n is the step.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -58,18 +41,14 @@ A value indicating the step at which labels are rendered.
         )
         %>
 
+#### Parameters
+
+##### step `System.Int32`
+A value indicating the step at which labels are rendered.
+            Every n-th label is rendered where n is the step.
+
 ### Skip(System.Int32)
 Label rendering skip.
-
-#### Parameters
-
-##### skip `System.Int32`
-Skips rendering the first n labels.
-
-#### Parameters
-
-##### skip `System.Int32`
-Skips rendering the first n labels.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -79,3 +58,8 @@ Skips rendering the first n labels.
         .Labels(labels => labels.Skip(2))
         )
         %>
+
+#### Parameters
+
+##### skip `System.Int32`
+Skips rendering the first n labels.

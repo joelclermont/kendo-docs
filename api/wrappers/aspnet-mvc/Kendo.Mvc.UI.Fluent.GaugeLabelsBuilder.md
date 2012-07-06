@@ -11,16 +11,6 @@ publish:true
 ### 1.Font(System.String)
 Sets the labels font
 
-#### Parameters
-
-##### font `System.String`
-The labels font (CSS format).
-
-#### Parameters
-
-##### font `System.String`
-The labels font (CSS format).
-
 #### Example
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
@@ -31,18 +21,13 @@ The labels font (CSS format).
         )
         %>
 
+#### Parameters
+
+##### font `System.String`
+The labels font (CSS format).
+
 ### 1.Visible(System.Boolean)
 Sets the labels visibility
-
-#### Parameters
-
-##### visible `System.Boolean`
-The labels visibility.
-
-#### Parameters
-
-##### visible `System.Boolean`
-The labels visibility.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -54,18 +39,13 @@ The labels visibility.
         )
         %>
 
+#### Parameters
+
+##### visible `System.Boolean`
+The labels visibility.
+
 ### 1.Background(System.String)
 Sets the labels background color
-
-#### Parameters
-
-##### background `System.String`
-The labels background color.
-
-#### Parameters
-
-##### background `System.String`
-The labels background color.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -77,18 +57,13 @@ The labels background color.
         )
         %>
 
+#### Parameters
+
+##### background `System.String`
+The labels background color.
+
 ### 1.Color(System.String)
 Sets the labels text color
-
-#### Parameters
-
-##### color `System.String`
-The labels text color.
-
-#### Parameters
-
-##### color `System.String`
-The labels text color.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -100,36 +75,13 @@ The labels text color.
         )
         %>
 
+#### Parameters
+
+##### color `System.String`
+The labels text color.
+
 ### 1.Margin(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the labels margin
-
-#### Parameters
-
-##### top `System.Int32`
-The labels top margin.
-
-##### right `System.Int32`
-The labels right margin.
-
-##### bottom `System.Int32`
-The labels bottom margin.
-
-##### left `System.Int32`
-The labels left margin.
-
-#### Parameters
-
-##### top `System.Int32`
-The labels top margin.
-
-##### right `System.Int32`
-The labels right margin.
-
-##### bottom `System.Int32`
-The labels bottom margin.
-
-##### left `System.Int32`
-The labels left margin.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -141,18 +93,22 @@ The labels left margin.
         )
         %>els
 
+#### Parameters
+
+##### top `System.Int32`
+The labels top margin.
+
+##### right `System.Int32`
+The labels right margin.
+
+##### bottom `System.Int32`
+The labels bottom margin.
+
+##### left `System.Int32`
+The labels left margin.
+
 ### 1.Margin(System.Int32)
 Sets the labels margin
-
-#### Parameters
-
-##### margin `System.Int32`
-The labels margin.
-
-#### Parameters
-
-##### margin `System.Int32`
-The labels margin.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -164,36 +120,13 @@ The labels margin.
         )
         %>
 
+#### Parameters
+
+##### margin `System.Int32`
+The labels margin.
+
 ### 1.Padding(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the labels padding
-
-#### Parameters
-
-##### top `System.Int32`
-The labels top padding.
-
-##### right `System.Int32`
-The labels right padding.
-
-##### bottom `System.Int32`
-The labels bottom padding.
-
-##### left `System.Int32`
-The labels left padding.
-
-#### Parameters
-
-##### top `System.Int32`
-The labels top padding.
-
-##### right `System.Int32`
-The labels right padding.
-
-##### bottom `System.Int32`
-The labels bottom padding.
-
-##### left `System.Int32`
-The labels left padding.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -205,18 +138,22 @@ The labels left padding.
         )
         %>
 
+#### Parameters
+
+##### top `System.Int32`
+The labels top padding.
+
+##### right `System.Int32`
+The labels right padding.
+
+##### bottom `System.Int32`
+The labels bottom padding.
+
+##### left `System.Int32`
+The labels left padding.
+
 ### 1.Padding(System.Int32)
 Sets the labels padding
-
-#### Parameters
-
-##### padding `System.Int32`
-The labels padding.
-
-#### Parameters
-
-##### padding `System.Int32`
-The labels padding.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -228,30 +165,13 @@ The labels padding.
         )
         %>
 
+#### Parameters
+
+##### padding `System.Int32`
+The labels padding.
+
 ### 1.Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the labels border
-
-#### Parameters
-
-##### width `System.Int32`
-The labels border width.
-
-##### color `System.String`
-The labels border color (CSS syntax).
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The labels border dash type.
-
-#### Parameters
-
-##### width `System.Int32`
-The labels border width.
-
-##### color `System.String`
-The labels border color (CSS syntax).
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The labels border dash type.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -263,18 +183,19 @@ The labels border dash type.
         )
         %>
 
+#### Parameters
+
+##### width `System.Int32`
+The labels border width.
+
+##### color `System.String`
+The labels border color (CSS syntax).
+
+##### dashType `Kendo.Mvc.UI.ChartDashType`
+The labels border dash type.
+
 ### 1.Format(System.String)
 Sets the labels format.
-
-#### Parameters
-
-##### format `System.String`
-The labels format.
-
-#### Parameters
-
-##### format `System.String`
-The labels format.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -286,18 +207,13 @@ The labels format.
         )
         %>
 
+#### Parameters
+
+##### format `System.String`
+The labels format.
+
 ### 1.Template(System.String)
 Sets the labels template.
-
-#### Parameters
-
-##### template `System.String`
-The labels template.
-
-#### Parameters
-
-##### template `System.String`
-The labels template.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -309,24 +225,13 @@ The labels template.
         )
         %>
 
+#### Parameters
+
+##### template `System.String`
+The labels template.
+
 ### 1.Opacity(System.Double)
 Sets the labels opacity.
-
-#### Parameters
-
-##### opacity `System.Double`
-
-            The series opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
-
-#### Parameters
-
-##### opacity `System.Double`
-
-            The series opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -337,3 +242,11 @@ Sets the labels opacity.
         )
         )
         %>
+
+#### Parameters
+
+##### opacity `System.Double`
+
+            The series opacity in the range from 0 (transparent) to 1 (opaque).
+            The default value is 1.
+            

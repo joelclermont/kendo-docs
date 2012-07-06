@@ -25,29 +25,19 @@ Specify an editor template which to be used for InForm or PopUp modes
 ##### templateName `System.String`
 name of the editor template
 
-#### Parameters
-
-##### templateName `System.String`
-name of the editor template
-
 ### 1.AdditionalViewData(System.Object)
 Provides additional view data in the editor template.
-
-#### Parameters
-
-##### additionalViewData `System.Object`
-An anonymous object which contains the additional data
-
-#### Parameters
-
-##### additionalViewData `System.Object`
-An anonymous object which contains the additional data
 
 #### Example
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Editable(editing => editing.AdditionalViewData(new { customers = Model.Customers }))
         %>
+
+#### Parameters
+
+##### additionalViewData `System.Object`
+An anonymous object which contains the additional data
 
 ### 1.DisplayDeleteConfirmation(System.Boolean)
 Enables or disables delete confirmation.

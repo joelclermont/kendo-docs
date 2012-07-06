@@ -11,16 +11,6 @@ publish:true
 ### Mirror(System.Boolean)
 Sets the mirror of the gauge
 
-#### Parameters
-
-##### mirror `System.Boolean`
-The mirror.
-
-#### Parameters
-
-##### mirror `System.Boolean`
-The mirror.
-
 #### Example
     <%= Html.Kendo().LinearGauge()
         .Name("LinearGauge")
@@ -29,18 +19,13 @@ The mirror.
         )
         %>
 
+#### Parameters
+
+##### mirror `System.Boolean`
+The mirror.
+
 ### Vertical(System.Boolean)
 Sets the orientation of the gauge
-
-#### Parameters
-
-##### vertical `System.Boolean`
-The vertical.
-
-#### Parameters
-
-##### vertical `System.Boolean`
-The vertical.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -50,18 +35,13 @@ The vertical.
         )
         %>
 
+#### Parameters
+
+##### vertical `System.Boolean`
+The vertical.
+
 ### Labels(System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder})
 Configures the labels.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder}`
-The configuration action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder}`
-The configuration action.
 
 #### Example
     <%= Html.Kendo().LinearGauge()
@@ -72,3 +52,8 @@ The configuration action.
         )
         )
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder}`
+The configuration action.

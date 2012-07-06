@@ -11,16 +11,6 @@ publish:true
 ### Color(System.String)
 Sets the pointer color.
 
-#### Parameters
-
-##### color `System.String`
-The pointer color.
-
-#### Parameters
-
-##### color `System.String`
-The pointer color.
-
 #### Example
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
@@ -30,18 +20,13 @@ The pointer color.
         .Render();
         %>
 
+#### Parameters
+
+##### color `System.String`
+The pointer color.
+
 ### Shape(Kendo.Mvc.UI.GaugeLinearPointerShape)
 Sets the pointer shape.
-
-#### Parameters
-
-##### shape `Kendo.Mvc.UI.GaugeLinearPointerShape`
-The pointer shape.
-
-#### Parameters
-
-##### shape `Kendo.Mvc.UI.GaugeLinearPointerShape`
-The pointer shape.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -52,36 +37,13 @@ The pointer shape.
         .Render();
         %>
 
+#### Parameters
+
+##### shape `Kendo.Mvc.UI.GaugeLinearPointerShape`
+The pointer shape.
+
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the pointer margin.
-
-#### Parameters
-
-##### top `System.Int32`
-The pointer top margin.
-
-##### right `System.Int32`
-The pointer right margin.
-
-##### bottom `System.Int32`
-The pointer bottom margin.
-
-##### left `System.Int32`
-The pointer left margin.
-
-#### Parameters
-
-##### top `System.Int32`
-The pointer top margin.
-
-##### right `System.Int32`
-The pointer right margin.
-
-##### bottom `System.Int32`
-The pointer bottom margin.
-
-##### left `System.Int32`
-The pointer left margin.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -92,18 +54,22 @@ The pointer left margin.
         .Render();
         %>
 
+#### Parameters
+
+##### top `System.Int32`
+The pointer top margin.
+
+##### right `System.Int32`
+The pointer right margin.
+
+##### bottom `System.Int32`
+The pointer bottom margin.
+
+##### left `System.Int32`
+The pointer left margin.
+
 ### Margin(System.Int32)
 Sets the pointer margin.
-
-#### Parameters
-
-##### margin `System.Int32`
-The pointer margin.
-
-#### Parameters
-
-##### margin `System.Int32`
-The pointer margin.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -114,30 +80,13 @@ The pointer margin.
         .Render();
         %>
 
+#### Parameters
+
+##### margin `System.Int32`
+The pointer margin.
+
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the pointer border
-
-#### Parameters
-
-##### width `System.Int32`
-The pointer border width.
-
-##### color `System.String`
-The pointer border color.
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The pointer dash type.
-
-#### Parameters
-
-##### width `System.Int32`
-The pointer border width.
-
-##### color `System.String`
-The pointer border color.
-
-##### dashType `Kendo.Mvc.UI.ChartDashType`
-The pointer dash type.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -148,24 +97,19 @@ The pointer dash type.
         .Render();
         %>
 
+#### Parameters
+
+##### width `System.Int32`
+The pointer border width.
+
+##### color `System.String`
+The pointer border color.
+
+##### dashType `Kendo.Mvc.UI.ChartDashType`
+The pointer dash type.
+
 ### Opacity(System.Double)
 Sets the pointer opacity.
-
-#### Parameters
-
-##### opacity `System.Double`
-
-            The pointer opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
-
-#### Parameters
-
-##### opacity `System.Double`
-
-            The pointer opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -176,18 +120,16 @@ Sets the pointer opacity.
         .Render();
         %>
 
+#### Parameters
+
+##### opacity `System.Double`
+
+            The pointer opacity in the range from 0 (transparent) to 1 (opaque).
+            The default value is 1.
+            
+
 ### Size(System.Double)
 Sets the pointer size.
-
-#### Parameters
-
-##### size `System.Double`
-The pointer size.
-
-#### Parameters
-
-##### size `System.Double`
-The pointer size.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -198,18 +140,13 @@ The pointer size.
         .Render();
         %>
 
+#### Parameters
+
+##### size `System.Double`
+The pointer size.
+
 ### Value(System.Double)
 Sets the pointer value.
-
-#### Parameters
-
-##### value `System.Double`
-The pointer value.
-
-#### Parameters
-
-##### value `System.Double`
-The pointer value.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -220,18 +157,13 @@ The pointer value.
         .Render();
         %>
 
+#### Parameters
+
+##### value `System.Double`
+The pointer value.
+
 ### Track(System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder})
 Configures the pointer track.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder}`
-The configuration action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder}`
-The configuration action.
 
 #### Example
     <% Html.Kendo().LinearGauge()
@@ -241,3 +173,8 @@ The configuration action.
         )
         .Render();
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder}`
+The configuration action.

@@ -11,16 +11,6 @@ publish:true
 ### Width(System.Int32)
 Sets the connectors width
 
-#### Parameters
-
-##### width `System.Int32`
-The connectors width.
-
-#### Parameters
-
-##### width `System.Int32`
-The connectors width.
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("Chart")
@@ -33,18 +23,13 @@ The connectors width.
         .Render();
         %>
 
+#### Parameters
+
+##### width `System.Int32`
+The connectors width.
+
 ### Color(System.String)
 Sets the connectors color
-
-#### Parameters
-
-##### color `System.String`
-The connectors color.
-
-#### Parameters
-
-##### color `System.String`
-The connectors color.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -58,18 +43,13 @@ The connectors color.
         .Render();
         %>
 
+#### Parameters
+
+##### color `System.String`
+The connectors color.
+
 ### Padding(System.Int32)
 Sets the connectors padding
-
-#### Parameters
-
-##### padding `System.Int32`
-The connectors padding.
-
-#### Parameters
-
-##### padding `System.Int32`
-The connectors padding.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -82,3 +62,8 @@ The connectors padding.
         )
         .Render();
         %>
+
+#### Parameters
+
+##### padding `System.Int32`
+The connectors padding.

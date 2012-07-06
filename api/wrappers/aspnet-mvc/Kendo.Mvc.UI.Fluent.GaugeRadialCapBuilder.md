@@ -11,16 +11,6 @@ publish:true
 ### Color(System.String)
 Sets the cap color.
 
-#### Parameters
-
-##### color `System.String`
-The cap color.
-
-#### Parameters
-
-##### color `System.String`
-The cap color.
-
 #### Example
     <% Html.Kendo().RadialGauge()
         .Name("radialGauge")
@@ -30,24 +20,13 @@ The cap color.
         .Render();
         %>
 
+#### Parameters
+
+##### color `System.String`
+The cap color.
+
 ### Opacity(System.Double)
 Sets the cap opacity.
-
-#### Parameters
-
-##### opacity `System.Double`
-
-            The cap opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
-
-#### Parameters
-
-##### opacity `System.Double`
-
-            The cap opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
 
 #### Example
     <% Html.Kendo().RadialGauge()
@@ -58,18 +37,16 @@ Sets the cap opacity.
         .Render();
         %>
 
+#### Parameters
+
+##### opacity `System.Double`
+
+            The cap opacity in the range from 0 (transparent) to 1 (opaque).
+            The default value is 1.
+            
+
 ### Size(System.Double)
 Sets the cap size in percents.
-
-#### Parameters
-
-##### size `System.Double`
-The cap size in percents.
-
-#### Parameters
-
-##### size `System.Double`
-The cap size in percents.
 
 #### Example
     <% Html.Kendo().RadialGauge()
@@ -79,3 +56,8 @@ The cap size in percents.
         )
         .Render();
         %>
+
+#### Parameters
+
+##### size `System.Double`
+The cap size in percents.

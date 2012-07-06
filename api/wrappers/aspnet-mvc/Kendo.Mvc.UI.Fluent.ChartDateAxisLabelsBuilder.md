@@ -11,16 +11,6 @@ publish:true
 ### Culture(System.Globalization.CultureInfo)
 Culture to use for formatting the dates.
 
-#### Parameters
-
-##### culture `System.Globalization.CultureInfo`
-Culture to use for formatting the dates.
-
-#### Parameters
-
-##### culture `System.Globalization.CultureInfo`
-Culture to use for formatting the dates.
-
 #### Example
     <%= Html.Kendo().Chart()
         .Name("Chart")
@@ -30,22 +20,17 @@ Culture to use for formatting the dates.
         .Labels(labels => labels.Culture(new CultureInfo("es-ES")))
         )
         %>
+
+#### Parameters
+
+##### culture `System.Globalization.CultureInfo`
+Culture to use for formatting the dates.
 
 ### DateFormats(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder})
 Culture to use for formatting the dates.
             See Globalization
             for more information.
 
-#### Parameters
-
-##### culture `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder}`
-Culture to use for formatting the dates.
-
-#### Parameters
-
-##### culture `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder}`
-Culture to use for formatting the dates.
-
 #### Example
     <%= Html.Kendo().Chart()
         .Name("Chart")
@@ -55,3 +40,8 @@ Culture to use for formatting the dates.
         .Labels(labels => labels.Culture(new CultureInfo("es-ES")))
         )
         %>
+
+#### Parameters
+
+##### culture `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder}`
+Culture to use for formatting the dates.

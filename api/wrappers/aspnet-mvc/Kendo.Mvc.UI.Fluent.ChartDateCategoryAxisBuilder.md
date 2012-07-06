@@ -18,22 +18,8 @@ Defines bound categories.
             The expression used to extract the categories value from the chart model
             
 
-#### Parameters
-
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
-
-            The expression used to extract the categories value from the chart model
-            
-
 ### 1.Categories(System.Collections.Generic.IEnumerable{System.DateTime})
 Defines categories.
-
-#### Parameters
-
-##### categories `System.Collections.Generic.IEnumerable{System.DateTime}`
-
-            The list of categories
-            
 
 #### Parameters
 
@@ -52,22 +38,8 @@ Defines categories.
             The list of categories
             
 
-#### Parameters
-
-##### categories `System.DateTime[]`
-
-            The list of categories
-            
-
 ### 1.BaseUnit(Kendo.Mvc.UI.ChartAxisBaseUnit)
 Sets the date category axis base unit.
-
-#### Parameters
-
-##### baseUnit `Kendo.Mvc.UI.ChartAxisBaseUnit`
-
-            The date category axis base unit
-            
 
 #### Parameters
 
@@ -86,22 +58,8 @@ Sets the date category axis minimum (start) date.
             The date category axis minimum (start) date
             
 
-#### Parameters
-
-##### min `System.DateTime`
-
-            The date category axis minimum (start) date
-            
-
 ### 1.Max(System.DateTime)
 Sets the date category axis maximum (end) date.
-
-#### Parameters
-
-##### min `System.DateTime`
-
-            The date category axis maximum (end) date
-            
 
 #### Parameters
 
@@ -113,16 +71,6 @@ Sets the date category axis maximum (end) date.
 ### 1.AxisCrossingValue(System.Double)
 Sets value at which the first perpendicular axis crosses this axis.
 
-#### Parameters
-
-##### axisCrossingValue `System.Double`
-The value at which the first perpendicular axis crosses this axis.
-
-#### Parameters
-
-##### axisCrossingValue `System.Double`
-The value at which the first perpendicular axis crosses this axis.
-
 #### Example
     <%= Html.Kendo().Chart(Model)
         .Name("Chart")
@@ -131,18 +79,13 @@ The value at which the first perpendicular axis crosses this axis.
         .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
         %>
 
+#### Parameters
+
+##### axisCrossingValue `System.Double`
+The value at which the first perpendicular axis crosses this axis.
+
 ### 1.AxisCrossingValue(System.Double[])
 Sets value at which perpendicular axes cross this axis.
-
-#### Parameters
-
-##### axisCrossingValues `System.Double[]`
-The values at which perpendicular axes cross this axis.
-
-#### Parameters
-
-##### axisCrossingValues `System.Double[]`
-The values at which perpendicular axes cross this axis.
 
 #### Example
     <%= Html.Kendo().Chart(Model)
@@ -152,18 +95,13 @@ The values at which perpendicular axes cross this axis.
         .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
         %>
 
+#### Parameters
+
+##### axisCrossingValues `System.Double[]`
+The values at which perpendicular axes cross this axis.
+
 ### 1.AxisCrossingValue(System.Collections.Generic.IEnumerable{System.Double})
 Sets value at which perpendicular axes cross this axis.
-
-#### Parameters
-
-##### axisCrossingValues `System.Collections.Generic.IEnumerable{System.Double}`
-The values at which perpendicular axes cross this axis.
-
-#### Parameters
-
-##### axisCrossingValues `System.Collections.Generic.IEnumerable{System.Double}`
-The values at which perpendicular axes cross this axis.
 
 #### Example
     <%= Html.Kendo().Chart(Model)
@@ -173,18 +111,13 @@ The values at which perpendicular axes cross this axis.
         .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
         %>
 
+#### Parameters
+
+##### axisCrossingValues `System.Collections.Generic.IEnumerable{System.Double}`
+The values at which perpendicular axes cross this axis.
+
 ### 1.Labels(System.Action{Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder})
 Configures the axis labels.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder}`
-The configuration action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder}`
-The configuration action.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -197,3 +130,8 @@ The configuration action.
         );
         )
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder}`
+The configuration action.

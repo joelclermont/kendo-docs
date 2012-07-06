@@ -11,16 +11,6 @@ publish:true
 ### Hours(System.String)
 Sets the date format when the base date unit is
 
-#### Parameters
-
-##### format `System.String`
-The date format.
-
-#### Parameters
-
-##### format `System.String`
-The date format.
-
 #### Example
     <%= Html.Kendo().Chart()
         .Name("Chart")
@@ -34,18 +24,13 @@ The date format.
         );
         %>
 
+#### Parameters
+
+##### format `System.String`
+The date format.
+
 ### Days(System.String)
 Sets the date format when the base date unit is
-
-#### Parameters
-
-##### format `System.String`
-The date format.
-
-#### Parameters
-
-##### format `System.String`
-The date format.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -60,18 +45,13 @@ The date format.
         );
         %>
 
+#### Parameters
+
+##### format `System.String`
+The date format.
+
 ### Months(System.String)
 Sets the date format when the base date unit is
-
-#### Parameters
-
-##### format `System.String`
-The date format.
-
-#### Parameters
-
-##### format `System.String`
-The date format.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -86,18 +66,13 @@ The date format.
         );
         %>
 
+#### Parameters
+
+##### format `System.String`
+The date format.
+
 ### Years(System.String)
 Sets the date format when the base date unit is
-
-#### Parameters
-
-##### format `System.String`
-The date format.
-
-#### Parameters
-
-##### format `System.String`
-The date format.
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -111,3 +86,8 @@ The date format.
         )
         );
         %>
+
+#### Parameters
+
+##### format `System.String`
+The date format.

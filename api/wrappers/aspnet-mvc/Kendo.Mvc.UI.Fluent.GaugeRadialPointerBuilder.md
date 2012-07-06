@@ -11,16 +11,6 @@ publish:true
 ### Color(System.String)
 Sets the pointer color.
 
-#### Parameters
-
-##### color `System.String`
-The pointer color.
-
-#### Parameters
-
-##### color `System.String`
-The pointer color.
-
 #### Example
     <% Html.Kendo().RadialGauge()
         .Name("radialGauge")
@@ -30,24 +20,13 @@ The pointer color.
         .Render();
         %>
 
+#### Parameters
+
+##### color `System.String`
+The pointer color.
+
 ### Opacity(System.Double)
 Sets the pointer opacity.
-
-#### Parameters
-
-##### opacity `System.Double`
-
-            The pointer opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
-
-#### Parameters
-
-##### opacity `System.Double`
-
-            The pointer opacity in the range from 0 (transparent) to 1 (opaque).
-            The default value is 1.
-            
 
 #### Example
     <% Html.Kendo().RadialGauge()
@@ -58,18 +37,16 @@ Sets the pointer opacity.
         .Render();
         %>
 
+#### Parameters
+
+##### opacity `System.Double`
+
+            The pointer opacity in the range from 0 (transparent) to 1 (opaque).
+            The default value is 1.
+            
+
 ### Value(System.Double)
 Sets the pointer value.
-
-#### Parameters
-
-##### value `System.Double`
-The pointer value.
-
-#### Parameters
-
-##### value `System.Double`
-The pointer value.
 
 #### Example
     <% Html.Kendo().RadialGauge()
@@ -80,18 +57,13 @@ The pointer value.
         .Render();
         %>
 
+#### Parameters
+
+##### value `System.Double`
+The pointer value.
+
 ### Cap(System.Action{Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder})
 Configures the pointer cap.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder}`
-The configuration action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder}`
-The configuration action.
 
 #### Example
     <% Html.Kendo().RadialGauge()
@@ -101,3 +73,8 @@ The configuration action.
         )
         .Render();
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder}`
+The configuration action.

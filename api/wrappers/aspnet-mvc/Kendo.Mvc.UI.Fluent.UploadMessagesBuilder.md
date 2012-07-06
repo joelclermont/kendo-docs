@@ -11,16 +11,6 @@ publish:true
 ### Cancel(System.String)
 Sets the Cancel button text
 
-#### Parameters
-
-##### cancelMessage `System.String`
-New cancel button text.
-
-#### Parameters
-
-##### cancelMessage `System.String`
-New cancel button text.
-
 #### Example
     <%= Html.Kendo().Upload()
         .Name("Upload")
@@ -29,18 +19,13 @@ New cancel button text.
         )
         %>
 
+#### Parameters
+
+##### cancelMessage `System.String`
+New cancel button text.
+
 ### Remove(System.String)
 Sets the Remove button text
-
-#### Parameters
-
-##### removeMessage `System.String`
-New Remove button text.
-
-#### Parameters
-
-##### removeMessage `System.String`
-New Remove button text.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -50,18 +35,13 @@ New Remove button text.
         )
         %>
 
+#### Parameters
+
+##### removeMessage `System.String`
+New Remove button text.
+
 ### Retry(System.String)
 Sets the Retry button text
-
-#### Parameters
-
-##### retryMessage `System.String`
-New Retry button text.
-
-#### Parameters
-
-##### retryMessage `System.String`
-New Retry button text.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -71,18 +51,13 @@ New Retry button text.
         )
         %>
 
+#### Parameters
+
+##### retryMessage `System.String`
+New Retry button text.
+
 ### Select(System.String)
 Sets the Select button text
-
-#### Parameters
-
-##### selectMessage `System.String`
-New Select button text.
-
-#### Parameters
-
-##### selectMessage `System.String`
-New Select button text.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -92,18 +67,13 @@ New Select button text.
         )
         %>
 
+#### Parameters
+
+##### selectMessage `System.String`
+New Select button text.
+
 ### StatusFailed(System.String)
 Sets the "failed" status text accessible by screen readers
-
-#### Parameters
-
-##### statusFailedMessage `System.String`
-New "failed" status text accessible by screen readers.
-
-#### Parameters
-
-##### statusFailedMessage `System.String`
-New "failed" status text accessible by screen readers.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -113,18 +83,13 @@ New "failed" status text accessible by screen readers.
         )
         %>
 
+#### Parameters
+
+##### statusFailedMessage `System.String`
+New "failed" status text accessible by screen readers.
+
 ### StatusUploaded(System.String)
 Sets the "uploaded" status text accessible by screen readers
-
-#### Parameters
-
-##### statusUploadedMessage `System.String`
-New "uploaded" status text accessible by screen readers.
-
-#### Parameters
-
-##### statusUploadedMessage `System.String`
-New "uploaded" status text accessible by screen readers.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -134,18 +99,13 @@ New "uploaded" status text accessible by screen readers.
         )
         %>
 
+#### Parameters
+
+##### statusUploadedMessage `System.String`
+New "uploaded" status text accessible by screen readers.
+
 ### StatusUploading(System.String)
 Sets the "uploading" status text accessible by screen readers
-
-#### Parameters
-
-##### statusUploadingMessage `System.String`
-New "uploading" status text accessible by screen readers.
-
-#### Parameters
-
-##### statusUploadingMessage `System.String`
-New "uploading" status text accessible by screen readers.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -155,18 +115,13 @@ New "uploading" status text accessible by screen readers.
         )
         %>
 
+#### Parameters
+
+##### statusUploadingMessage `System.String`
+New "uploading" status text accessible by screen readers.
+
 ### UploadSelectedFiles(System.String)
 Sets Upload button (visible when AutoUpload is set to false) text
-
-#### Parameters
-
-##### uploadSelectedFilesMessage `System.String`
-New Upload button text.
-
-#### Parameters
-
-##### uploadSelectedFilesMessage `System.String`
-New Upload button text.
 
 #### Example
     <%= Html.Kendo().Upload()
@@ -175,3 +130,8 @@ New Upload button text.
         .UploadSelectedFiles("uploading")
         )
         %>
+
+#### Parameters
+
+##### uploadSelectedFilesMessage `System.String`
+New Upload button text.

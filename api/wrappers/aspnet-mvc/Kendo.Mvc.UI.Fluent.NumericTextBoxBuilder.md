@@ -32,24 +32,8 @@ Enables or disables the spin buttons.
 
             
 
-#### Parameters
-
-##### allowSpinner `System.Boolean`
-
-            
-
 ### 1.Events(System.Action{Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder})
 Configures the client-side events.
-
-#### Parameters
-
-##### EventsAction `System.Action{Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder}`
-The client events action.
-
-#### Parameters
-
-##### EventsAction `System.Action{Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder}`
-The client events action.
 
 #### Example
     <%= Html.Kendo().NumericTextBox()
@@ -58,6 +42,11 @@ The client events action.
         events.OnLoad("onLoad").OnChange("onChange")
         )
         %>
+
+#### Parameters
+
+##### EventsAction `System.Action{Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder}`
+The client events action.
 
 ### 1.Enable(System.Boolean)
 Enables or disables the textbox.
@@ -68,20 +57,8 @@ Enables or disables the textbox.
 
             
 
-#### Parameters
-
-##### allowSpinner `System.Boolean`
-
-            
-
 ### 1.Format(System.String)
 Stes the format of the NumericTextBox.
-
-#### Parameters
-
-##### allowSpinner `System.String`
-
-            
 
 #### Parameters
 

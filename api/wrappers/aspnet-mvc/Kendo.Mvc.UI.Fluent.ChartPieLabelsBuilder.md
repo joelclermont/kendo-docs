@@ -11,16 +11,6 @@ publish:true
 ### Align(Kendo.Mvc.UI.ChartPieLabelsAlign)
 Sets the labels align
 
-#### Parameters
-
-##### align `Kendo.Mvc.UI.ChartPieLabelsAlign`
-The labels align.
-
-#### Parameters
-
-##### align `Kendo.Mvc.UI.ChartPieLabelsAlign`
-The labels align.
-
 #### Example
     <% Html.Kendo().Chart()
         .Name("Chart")
@@ -34,18 +24,13 @@ The labels align.
         .Render();
         %>
 
+#### Parameters
+
+##### align `Kendo.Mvc.UI.ChartPieLabelsAlign`
+The labels align.
+
 ### Distance(System.Int32)
 Sets the labels distance
-
-#### Parameters
-
-##### distance `System.Int32`
-The labels distance.
-
-#### Parameters
-
-##### distance `System.Int32`
-The labels distance.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -60,18 +45,13 @@ The labels distance.
         .Render();
         %>
 
+#### Parameters
+
+##### distance `System.Int32`
+The labels distance.
+
 ### Position(Kendo.Mvc.UI.ChartPieLabelsPosition)
 Sets the labels position
-
-#### Parameters
-
-##### position `Kendo.Mvc.UI.ChartPieLabelsPosition`
-The labels position.
-
-#### Parameters
-
-##### position `Kendo.Mvc.UI.ChartPieLabelsPosition`
-The labels position.
 
 #### Example
     <% Html.Kendo().Chart()
@@ -85,3 +65,8 @@ The labels position.
         )
         .Render();
         %>
+
+#### Parameters
+
+##### position `Kendo.Mvc.UI.ChartPieLabelsPosition`
+The labels position.

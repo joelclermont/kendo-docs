@@ -11,16 +11,6 @@ publish:true
 ### 1.RowTemplate(System.Action{`0,Kendo.Mvc.UI.Grid{`0}})
 Sets the row template of the grid
 
-#### Parameters
-
-##### codeBlockTemplate `System.Action{`0`
-The template
-
-#### Parameters
-
-##### codeBlockTemplate `System.Action{`0`
-The template
-
 #### Example
     <%= Html.Kendo().Grid(Model)
         .RowTemplate(o =>
@@ -31,20 +21,15 @@ The template
         <%
         })
         %>
+
+#### Parameters
+
+##### codeBlockTemplate `System.Action{`0`
+The template
 
 ### 1.RowTemplate(System.Action{`0})
 Sets the row template of the grid
 
-#### Parameters
-
-##### codeBlockTemplate `System.Action{`0}`
-The template
-
-#### Parameters
-
-##### codeBlockTemplate `System.Action{`0}`
-The template
-
 #### Example
     <%= Html.Kendo().Grid(Model)
         .RowTemplate(o =>
@@ -56,18 +41,13 @@ The template
         })
         %>
 
+#### Parameters
+
+##### codeBlockTemplate `System.Action{`0}`
+The template
+
 ### 1.RowTemplate(System.Func{`0,System.Object})
 Sets the row template of the grid using Razor syntax
-
-#### Parameters
-
-##### inlineTemplate `System.Func{`0`
-The template
-
-#### Parameters
-
-##### inlineTemplate `System.Func{`0`
-The template
 
 #### Example
     <%= Html.Kendo().Grid(Model)
@@ -77,18 +57,13 @@ The template
         </text>)
         %>
 
+#### Parameters
+
+##### inlineTemplate `System.Func{`0`
+The template
+
 ### 1.Resizable(System.Action{Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder})
 Configures the grid resizing settings
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder}`
-Resizing settings configurator method
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder}`
-Resizing settings configurator method
 
 #### Example
     <%= Html.Kendo().Grid(Model)
@@ -96,18 +71,13 @@ Resizing settings configurator method
         .Resizable(resizing => resizing.Columns(true))
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder}`
+Resizing settings configurator method
+
 ### 1.Reorderable(System.Action{Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder})
 Configures the grid reordering settings
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder}`
-Resizing settings configurator method
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder}`
-Resizing settings configurator method
 
 #### Example
     <%= Html.Kendo().Grid(Model)
@@ -115,18 +85,13 @@ Resizing settings configurator method
         .Reorderable(reordering => reordering.Columns(true))
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder}`
+Resizing settings configurator method
+
 ### 1.Editable(System.Action{Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder{`0}})
 Configures the grid editing settings.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder{`0}}`
-Configurator for the edit settings.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder{`0}}`
-Configurator for the edit settings.
 
 #### Example
     <%= Html.Kendo().Grid<Order>()
@@ -134,24 +99,24 @@ Configurator for the edit settings.
         .Editable(settings => settings.Enabled(true))
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder{`0}}`
+Configurator for the edit settings.
+
 ### 1.ToolBar(System.Action{Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory{`0}})
 Configures the toolbar of the grid.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory{`0}}`
-ToolBar configurator.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory{`0}}`
-ToolBar configurator.
 
 #### Example
     <%= Html.Kendo().Grid<Order>()
         .Name("Orders")
         .ToolBar(commands => commands.Create())
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory{`0}}`
+ToolBar configurator.
 
 ### 1.Footer(System.Boolean)
 Configure when to show footer of the grid.
@@ -161,23 +126,8 @@ Configure when to show footer of the grid.
 ##### visible `System.Boolean`
 If it is true, the feature is visible.
 
-#### Parameters
-
-##### visible `System.Boolean`
-If it is true, the feature is visible.
-
 ### 1.BindTo(System.Collections.Generic.IEnumerable{`0})
 Binds the grid to a list of objects
-
-#### Parameters
-
-##### dataSource `System.Collections.Generic.IEnumerable{`0}`
-The data source.
-
-#### Parameters
-
-##### dataSource `System.Collections.Generic.IEnumerable{`0}`
-The data source.
 
 #### Example
     <%= Html.Kendo().Grid<Order>()
@@ -193,20 +143,13 @@ The data source.
         .BindTo((IEnumerable<Order>)ViewData["Orders"]);
         %>
 
+#### Parameters
+
+##### dataSource `System.Collections.Generic.IEnumerable{`0}`
+The data source.
+
 ### 1.RowAction(System.Action{Kendo.Mvc.UI.GridRow{`0}})
 Callback for each row.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.GridRow{`0}}`
-Action, which will be executed for each row.
-            You can format the entire row
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.GridRow{`0}}`
-Action, which will be executed for each row.
-            You can format the entire row
 
 #### Example
     <%= Html.Kendo().Grid()
@@ -222,20 +165,14 @@ Action, which will be executed for each row.
         });
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.GridRow{`0}}`
+Action, which will be executed for each row.
+            You can format the entire row
+
 ### 1.CellAction(System.Action{Kendo.Mvc.UI.GridCell{`0}})
 Callback for each cell.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.GridCell{`0}}`
-Action, which will be executed for each cell.
-            You can format a concrete cell.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.GridCell{`0}}`
-Action, which will be executed for each cell.
-            You can format a concrete cell.
 
 #### Example
     <%= Html.Kendo().Grid()
@@ -253,6 +190,12 @@ Action, which will be executed for each cell.
         });
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.GridCell{`0}}`
+Action, which will be executed for each cell.
+            You can format a concrete cell.
+
 ### 1.EnableCustomBinding(System.Boolean)
 Enables or disables the custom binding of the grid.
 
@@ -261,23 +204,8 @@ Enables or disables the custom binding of the grid.
 ##### value `System.Boolean`
 If true enables custom binding.
 
-#### Parameters
-
-##### value `System.Boolean`
-If true enables custom binding.
-
 ### 1.Columns(System.Action{Kendo.Mvc.UI.Fluent.GridColumnFactory{`0}})
 Defines the columns of the grid.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridColumnFactory{`0}}`
-The add action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridColumnFactory{`0}}`
-The add action.
 
 #### Example
     <%= Html.Kendo().Grid()
@@ -292,6 +220,11 @@ The add action.
         })
         .BindTo((IEnumerable<Order>)ViewData["Orders"]);
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridColumnFactory{`0}}`
+The add action.
 
 ### 1.Sortable
 Allows sorting of the columns.
@@ -314,16 +247,6 @@ Allows sorting of the columns.
 ### 1.Sortable(System.Action{Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder{`0}})
 Allows sorting of the columns.
 
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder{`0}}`
-Use builder to define sort settings.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder{`0}}`
-Use builder to define sort settings.
-
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
@@ -339,6 +262,11 @@ Use builder to define sort settings.
         .Sortable(sorting => sorting.SortMode(GridSortMode.MultipleColumn)
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder{`0}}`
+Use builder to define sort settings.
+
 ### 1.Selectable
 Enables row selection.
 
@@ -351,21 +279,16 @@ Enables row selection.
 ### 1.Selectable(System.Action{Kendo.Mvc.UI.Fluent.GridSelectionSettingsBuilder})
 Enables row selection.
 
-#### Parameters
-
-##### selectionAction `System.Action{Kendo.Mvc.UI.Fluent.GridSelectionSettingsBuilder}`
-Use builder to define the selection settings.
-
-#### Parameters
-
-##### selectionAction `System.Action{Kendo.Mvc.UI.Fluent.GridSelectionSettingsBuilder}`
-Use builder to define the selection settings.
-
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
         .Selectable(selection => selection.Enabled(true))
         %>
+
+#### Parameters
+
+##### selectionAction `System.Action{Kendo.Mvc.UI.Fluent.GridSelectionSettingsBuilder}`
+Use builder to define the selection settings.
 
 ### 1.PrefixUrlParameters(System.Boolean)
 Put grid name as a prefix.
@@ -391,16 +314,6 @@ Allows paging of the data.
 ### 1.Pageable(System.Action{Kendo.Mvc.UI.Fluent.PageableBuilder})
 Allows paging of the data.
 
-#### Parameters
-
-##### pagerAction `System.Action{Kendo.Mvc.UI.Fluent.PageableBuilder}`
-Use builder to define paging settings.
-
-#### Parameters
-
-##### pagerAction `System.Action{Kendo.Mvc.UI.Fluent.PageableBuilder}`
-Use builder to define paging settings.
-
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
@@ -419,6 +332,11 @@ Use builder to define paging settings.
         .Position(GridPagerPosition.Bottom)
         )
         %>
+
+#### Parameters
+
+##### pagerAction `System.Action{Kendo.Mvc.UI.Fluent.PageableBuilder}`
+Use builder to define paging settings.
 
 ### 1.Filterable
 Allows filtering of the columns.
@@ -441,16 +359,6 @@ Allows filtering of the columns.
 ### 1.Filterable(System.Action{Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder})
 Allows filtering of the columns.
 
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder}`
-Use builder to define filtering settings.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder}`
-Use builder to define filtering settings.
-
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
@@ -465,6 +373,11 @@ Use builder to define filtering settings.
         .BindTo((IEnumerable<Order>)ViewData["Orders"])
         .Filterable(filtering => filtering.Enabled(true);
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder}`
+Use builder to define filtering settings.
 
 ### 1.Scrollable
 Show scrollbar if there are many items.
@@ -487,16 +400,6 @@ Show scrollbar if there are many items.
 ### 1.Scrollable(System.Action{Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder})
 Show scrollbar if there are many items.
 
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder}`
-Use builder to define scrolling settings.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder}`
-Use builder to define scrolling settings.
-
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
@@ -511,6 +414,11 @@ Use builder to define scrolling settings.
         .BindTo((IEnumerable<Order>)ViewData["Orders"])
         .Scrollable(scrolling => scrolling.Enabled(true);
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder}`
+Use builder to define scrolling settings.
 
 ### 1.Navigatable
 Enables keyboard navigation.
@@ -533,16 +441,6 @@ Enables keyboard navigation.
 ### 1.Navigatable(System.Action{Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder})
 Enables keyboard navigation.
 
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder}`
-Use builder to define keyboard navigation settings.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder}`
-Use builder to define keyboard navigation settings.
-
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
@@ -558,18 +456,13 @@ Use builder to define keyboard navigation settings.
         .Navigatable(navigation => navigation.Enabled(true));
         %>
 
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder}`
+Use builder to define keyboard navigation settings.
+
 ### 1.Events(System.Action{Kendo.Mvc.UI.Fluent.GridEventBuilder})
 Enables column context menu.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridEventBuilder}`
-The client events action.
-
-#### Parameters
-
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridEventBuilder}`
-The client events action.
 
 #### Example
     <%= Html.Kendo().Grid()
@@ -591,6 +484,11 @@ The client events action.
         .DataBinding("onDataBinding")
         )
         %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridEventBuilder}`
+The client events action.
 
 ### 1.Groupable(System.Action{Kendo.Mvc.UI.Fluent.GridGroupingSettingsBuilder})
 Use it to configure grouping.
