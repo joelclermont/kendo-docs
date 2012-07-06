@@ -8,7 +8,7 @@ publish: true
 ## Desktop browsers
 
 *   Internet Explorer 7+
-*   Firefox and [Firefox ESR](http://www.mozilla.org/en-US/firefox/organizations/all.html)
+*   Firefox and Firefox Extended Support Release (ESR)
 *   Safari 4+
 *   Chrome
 *   Opera 10+
