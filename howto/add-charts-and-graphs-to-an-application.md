@@ -9,7 +9,9 @@ publish: true
 
 In this how-to, we'll examine how to add charts and graphs to an application with [Kendo UI DataViz](http://kendoui.com/dataviz.aspx).
 
-[Kendo UI DataViz](http://kendoui.com/dataviz.aspx) has a number of data visualizations to choose from, including:
+## A Brief Introduction to Kendo UI DataViz
+
+[Kendo UI DataViz](http://www.kendoui.com/dataviz.aspx) is a collection of [Kendo UI](http://www.kendoui.com/) that features a number of data visualizations that you can incorporate into your new and/or existing applications. These data visualizations include:
 
 - Area Charts
 - Bar Charts
@@ -21,4 +23,35 @@ In this how-to, we'll examine how to add charts and graphs to an application wit
 - Radial Gauges
 - Linear Gauges
 
-## Example: Data Visualization of Popular Data Set
+[Kendo UI DataViz](http://www.kendoui.com/dataviz.aspx) generates data visualizations through DOM elements on a page, much in a similar manner as widgets in [Kendo UI Web](http://www.kendoui.com/web.aspx).
+
+### "Hello, DataViz!"
+
+Let's begin by examining how to add a simple Area Chart to an existing page. For this example, let's assume the following HTML for this page:
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>My Kendo UI Application</title>
+	</head>
+	<body>
+		<h1>My Kendo UI Application</h1>
+	</body>
+	</html>
+
+The first step is to add the necessary script and stylesheet references for Kendo UI, including a script reference to Kendo UI DataViz in order to utilize its data visualization widgets.
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>My Kendo UI Application</title>
+		<link href="styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/kendo.dataviz.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>My Kendo UI Application</h1>
+	</body>
+	</html>
+
+> Refer to the [JavaScript Dependencies of Kendo UI](http://docs.kendoui.com/getting-started/javascript-dependencies) for more information about script requirements.
