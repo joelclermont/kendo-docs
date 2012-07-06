@@ -1,3 +1,10 @@
+---
+title: Intro to Building Apps with Kendo UI And PHP
+slug: tutorial-intro-building-apps-with-kendo-ui-and-php-2
+tags: Tutorial
+publish: true
+---
+
 In [part one][1] of this two part tutorial, we went over how to get up
 and running with PHP, how to choose and IDE, and how to get some
 fake data if you need it.
