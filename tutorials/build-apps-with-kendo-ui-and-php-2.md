@@ -610,10 +610,6 @@ It is highly recommended that you use some sort of MVC framework with your PHP.
 [Zend][10] is popular and [CodeIgniter][11] looks promising. It really takes some of the headache out of the manual things
 that we did here.
 
-[Download Kendo UI][12] today and get rolling building your first PHP powered
-application.
-
-![][13]
 
    [1]: http://www.kendoui.com/blogs/teamblog/posts/12-01-18/get_rolling_with_
 kendo_ui_and_php_ndash_part_1.aspx
@@ -646,8 +642,6 @@ Rolling-With-Kendo-UI-And-PHP--Part-_7E9D-11_4.sflb.ashx
    [11]: http://codeigniter.com/
 
    [12]: http://www.kendoui.com/get-kendo-ui.aspx
-
-   [13]: http://www.kendoui.com/Libraries/Blog_Images/BurkeHolland.sflb.ashx
 
    [14]: http://twitter.com/burkeholland
 
