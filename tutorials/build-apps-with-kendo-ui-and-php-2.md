@@ -242,7 +242,7 @@ The grid code now looks like this.
     });
 
 
-### FAIL WHALE
+### Failed Request
 
 PHP is going to return a 200, even if the SQL statement doesn’t execute.  We
 don’t want this.  Then the grid thinks the data update happened, but in
@@ -319,8 +319,6 @@ can listen to the **error** event on the DataSource **update** method.
 #### Sample Failure…
 
 [![10][5]][6]
-
-###
 
 ### Requirement 2 – Add Sales Territories
 
@@ -598,13 +596,6 @@ And the model for the DataSource now becomes:
 
 No need to add the **EmployeeID** or **TerritoryID** to the model definition.
 It’s smart enough to pick those up on its own!
-
-
-### We’re Done!
-
-That was a lot to go over.  If you made it all the way through –
-congratulations!  You know understand enough to build some extremely awesome
-applications with Kendo UI and PHP!  Grab the completed project [here][9].
 
 It is highly recommended that you use some sort of MVC framework with your PHP.
 [Zend][10] is popular and [CodeIgniter][11] looks promising. It really takes some of the headache out of the manual things
