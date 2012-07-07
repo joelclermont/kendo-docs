@@ -430,9 +430,11 @@ This has been an example of how to get rolling with PHP and [Kendo UI][32].
    [7]: http://code.google.com/p/northwindextended/downloads/detail?name=North
 wind.MySQL5.sql
 
-   [8]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_1.png (1)
+   [8]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-1_thumb_1.png (1)
 
-   [9]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_2.png
+   [9]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-1_4_1.png
 
    [10]: http://www.kendoui.com/videos.aspx
 
@@ -440,29 +442,35 @@ wind.MySQL5.sql
 
    [12]: http://localhost:8888/KendoUI/data/employees.php
 
-   [13]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_3.png (2)
+   [13]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-2_thumb_2.png (2)
 
-   [14]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_4.png
+   [14]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-2_6.png
 
-   [15]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_5.png (3)
+   [15]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-3_thumb_2.png (3)
 
-   [16]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_6.png
+   [16]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-3_6.png
 
-   [17]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_7.png (4)
+   [17]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-4_thumb.png (4)
 
-   [18]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_8.png
+   [18]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-4_2.png
 
-   [19]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-ff819b019713_9A19-5_thumb_1.sflb.ashx (5)
+   [19]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-5_thumb_1.png (5)
 
-   [20]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-ff819b019713_9A19-5_4.sflb.ashx
+   [20]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-5_4.png
 
-   [21]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-ff819b019713_9A19-6_thumb.sflb.ashx (6)
+   [21]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-6_thumb.png (6)
 
-   [22]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-ff819b019713_9A19-6_2.sflb.ashx
+   [22]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-6_2.png
 
    [23]: http://demos.kendoui.com/web/grid/detailtemplate.html
 
@@ -473,17 +481,17 @@ http://www.kendoui.com/documentation/framework/templates/overview.aspx
 
    [26]: http://php.net/manual/en/pdo.prepared-statements.php
 
-   [27]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-ff819b019713_9A19-7_thumb_2.sflb.ashx (7)
+   [27]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-7_thumb_2.png (7)
 
-   [28]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-ff819b019713_9A19-7_6.sflb.ashx
+   [28]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-7_6.png
 
-   [29]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-ff819b019713_9A19-8_thumb_1.sflb.ashx (8)
+   [29]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-8_thumb_1.png (8)
 
-   [30]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-ff819b019713_9A19-8_4.sflb.ashx
+   [30]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
+ff819b019713_9A19-8_4.png
 
    [31]: /Blogs_Libraries/Source_Code/KendoUI.sflb.ashx
 
