@@ -103,24 +103,22 @@ To do this, we need to connect to the database instance using the MySQL PHP
 commands.
 
 
-	1.  <?php
+    1.  <?php
     2.
-	3.  $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
-	4.  mysql_select_db("northwind") or die("Unable To Connect To Northwind");
+	3.     $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
+	4.     mysql_select_db("northwind") or die("Unable To Connect To Northwind");
 	5.
-    6.  $arr = array();
+    6.      $arr = array();
 	7.
-	8.  $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
+	8.     $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
 	9.
-	10.  while($obj = mysql_fetch_object($rs)) {
-	11.
-	12.		$arr[] = $obj;
+	10.    while($obj = mysql_fetch_object($rs)) {
+	11.	       $arr[] = $obj;
+	12.    }
 	13.
-	14. }
+	14.    echo "{\"data\":" .json_encode($arr). "}";
 	15.
-	16. echo "{\"data\":" .json_encode($arr). "}";
-	17.
-    18. ?>
+    16. ?>
 
 
 **Line 3** connects to the MySQL server.  The first parameter is the server
@@ -131,11 +129,11 @@ name, the second is the username and the third is the password.
 **Line 8** defines a SQL query and associates the results with the **rs**
 variable.
 
-**Lines 10 through 14** iterate over the **rs** variable, which holds a
+**Lines 10 through 13** iterate over the **rs** variable, which holds a
 collection of records and stuffs each record into an array that was defined on
 line 5.
 
-**Line 16** returns back the results of the array using the **json_encode**
+**Line 14** returns back the results of the array using the **json_encode**
 PHP function which turns the array into formatted JSON.  Additionally, I have
 prefixed the array of data with a top level **data** element.  It’s typically
 a good idea to not have an array as your top level JSON element.
@@ -220,26 +218,24 @@ like this…
 
 	<?php
 
-    $link = mysql_pconnect("localhost", "root", "root") or die("Unable To
-Connect To Database Server");
+        $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
 
-    mysql_select_db("northwind") or die("Unable To Connect To Northwind");
+        mysql_select_db("northwind") or die("Unable To Connect To Northwind");
 
-    $arr = array();
+        $arr = array();
 
-    $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM
-Employees");
+        $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
 
-    while($obj = mysql_fetch_object($rs)) {
+        while($obj = mysql_fetch_object($rs)) {
 
-        $arr[] = $obj;
+            $arr[] = $obj;
 
-    }
+        }
 
-    // add the header line to specify that the content type is JSON
-    header("Content-type: application/json");
+        // add the header line to specify that the content type is JSON
+        header("Content-type: application/json");
 
-    echo "{\"data\":" .json_encode($arr). "}";
+        echo "{\"data\":" .json_encode($arr). "}";
 
     ?>
 
@@ -356,36 +352,36 @@ greaterthan, ect.) and a value.  We are only interested in the one value we
 are passing and we know the operator is always equals.
 
 
-       1:  <?php
-       2:  // DISCLAIMER: It is better to use prepared statements in PHP.
-           // This provides protection against sql injection.
-           // [http://php.net/manual/en/pdo.prepared-statements.php][26]
-       3:  // get the employee id off the request. escape it to protect against sql injection
-       4:  $employeeID = mysql_real_escape_string($_REQUEST["filter"]["filters"][0]["value"]);
-       5:
-       6:  $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
-       7:  mysql_select_db("northwind") or die("Unable To Connect To Northwind");
-       8:
-       9:  $arr = array();
-      10:   $rs = mysql_query("SELECT TRIM(t.TerritoryDescription) AS TerritoryDescription
-      11:                      FROM Territories t
-      12:                      INNER JOIN EmployeeTerritories et ON t.TerritoryID = et.TerritoryID
-      13:                      INNER JOIN Employees e ON et.EmployeeID = e.EmployeeID
-      14:                      WHERE e.EmployeeID = " .$employeeID);
-      15:
-      16:  while($obj = mysql_fetch_object($rs)) {
-      17:      $arr[] = $obj;
-      18:  }
-      19:
-      20:  // add the header line to specify that the content type is JSON
-      21:   header("Content-type: application/json");
-      22:
-      23:   echo "{\"data\":" .json_encode($arr). "}";
-      24:
-      25:  ?>
+    1:  <?php
+    2:      // DISCLAIMER: It is better to use prepared statements in PHP.
+    3.      // This provides protection against sql injection.
+    4.      // [http://php.net/manual/en/pdo.prepared-statements.php][26]
+    5:      // get the employee id off the request. escape it to protect against sql injection
+    6:      $employeeID = mysql_real_escape_string($_REQUEST["filter"]["filters"][0]["value"]);
+    7:
+    8:      $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
+    9:      mysql_select_db("northwind") or die("Unable To Connect To Northwind");
+    10:
+    11:     $arr = array();
+    12:     $rs = mysql_query("SELECT TRIM(t.TerritoryDescription) AS TerritoryDescription
+    13:                          FROM Territories t
+    14:                          INNER JOIN EmployeeTerritories et ON t.TerritoryID = et.TerritoryID
+    15:                          INNER JOIN Employees e ON et.EmployeeID = e.EmployeeID
+    16:                          WHERE e.EmployeeID = " .$employeeID);
+    17: 
+    18:      while($obj = mysql_fetch_object($rs)) {
+    19:          $arr[] = $obj;
+    20:     }
+    21:
+    22:     // add the header line to specify that the content type is JSON
+    23:     header("Content-type: application/json");
+    24:
+    25:     echo "{\"data\":" .json_encode($arr). "}";
+    26:
+    27:  ?>
 
 
-Line 4 pulls the filter data of the PHP **$_REQUEST** object.  This is not
+**Line 6** pulls the filter data of the PHP **$_REQUEST** object.  This is not
 necessarily the best way to read the parameter, but for the sake of simplicity
 and the ability to see how the filter object is actually structured, I have
 done it this way.
@@ -427,8 +423,7 @@ This has been an example of how to get rolling with PHP and [Kendo UI][32].
 
    [6]: http://www.microsoft.com/web/webmatrix/
 
-   [7]: http://code.google.com/p/northwindextended/downloads/detail?name=North
-wind.MySQL5.sql
+   [7]: http://code.google.com/p/northwindextended/downloads/detail?name=Northwind.MySQL5.sql
 
    [8]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-1_thumb_1.png (1)
 
