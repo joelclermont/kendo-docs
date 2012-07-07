@@ -5,7 +5,7 @@ publish: false
 
 # Kendo UI Public Documentation
 
-Welcome to the GitHub repo for [Kendo UI](http://www.kendoui.com) [Documentationn](http://docs.kendoui.com). This repository contains the source content--written in Markdown--that we use to power the Kendo UI Documentation at [docs.kendoui.com](http://docs.kendoui.com). If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to [docs.kendoui.com](http:\\docs.kendoui.com) where our content is prettified and searchable. 
+Welcome to the GitHub repo for [Kendo UI](http://www.kendoui.com) [Documentation](http://docs.kendoui.com). This repository contains the source content--written in Markdown--that we use to power the Kendo UI Documentation at [docs.kendoui.com](http://docs.kendoui.com). If you've arrived here wanting to search and peruse our docs, you'd be better served heading over to [docs.kendoui.com](http:\\docs.kendoui.com) where our content is prettified and searchable. 
 
 We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumer of that product. As such, this documentation is both public, and open sourced under and MIT license (see below). That means you can clone this repository, read the docs off line, or even load the entire thing to an Apple Newton, if that's your thing.
 
