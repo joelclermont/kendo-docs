@@ -430,11 +430,9 @@ This has been an example of how to get rolling with PHP and [Kendo UI][32].
    [7]: http://code.google.com/p/northwindextended/downloads/detail?name=North
 wind.MySQL5.sql
 
-   [8]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-1_thumb_1.png (1)
+   [8]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-1_thumb_1.png (1)
 
-   [9]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-1_4_1.png
+   [9]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-1_4_1.png
 
    [10]: http://www.kendoui.com/videos.aspx
 
@@ -442,35 +440,25 @@ ff819b019713_9A19-1_4_1.png
 
    [12]: http://localhost:8888/KendoUI/data/employees.php
 
-   [13]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-2_thumb_2.png (2)
+   [13]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-2_thumb_2.png (2)
 
-   [14]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-2_6.png
+   [14]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-2_6.png
 
-   [15]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-3_thumb_2.png (3)
+   [15]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-3_thumb_2.png (3)
 
-   [16]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-3_6.png
+   [16]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-3_6.png
 
-   [17]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-4_thumb.png (4)
+   [17]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-4_thumb.png (4)
 
-   [18]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-4_2.png
+   [18]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-4_2.png
 
-   [19]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-5_thumb_1.png (5)
+   [19]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-5_thumb_1.png (5)
 
-   [20]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-5_4.png
+   [20]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-5_4.png
 
-   [21]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-6_thumb.png (6)
+   [21]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-6_thumb.png (6)
 
-   [22]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-6_2.png
+   [22]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-6_2.png
 
    [23]: http://demos.kendoui.com/web/grid/detailtemplate.html
 
@@ -481,17 +469,13 @@ http://www.kendoui.com/documentation/framework/templates/overview.aspx
 
    [26]: http://php.net/manual/en/pdo.prepared-statements.php
 
-   [27]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-7_thumb_2.png (7)
+   [27]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-7_thumb_2.png (7)
 
-   [28]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-7_6.png
+   [28]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-7_6.png
 
-   [29]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-8_thumb_1.png (8)
+   [29]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-8_thumb_1.png (8)
 
-   [30]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/
-ff819b019713_9A19-8_4.png
+   [30]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/ff819b019713_9A19-8_4.png
 
    [31]: /Blogs_Libraries/Source_Code/KendoUI.sflb.ashx
 
