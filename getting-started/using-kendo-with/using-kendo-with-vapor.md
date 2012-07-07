@@ -1,5 +1,6 @@
 ---
 title: Using Kendo UI with Vapor.js
+slug: gs-kendo-and-vapor
 tags: 101, Getting Started, vapor, ftw
 publish: true
 ---
