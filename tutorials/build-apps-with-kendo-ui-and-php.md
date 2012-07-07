@@ -457,8 +457,7 @@ This has been an example of how to get rolling with PHP and [Kendo UI][32].
 
    [23]: http://demos.kendoui.com/web/grid/detailtemplate.html
 
-   [24]:
-http://www.kendoui.com/documentation/framework/templates/overview.aspx
+   [24]:http://www.kendoui.com/documentation/framework/templates/overview.aspx
 
    [25]: http://demos.kendoui.com/web/templates/index.html
 
