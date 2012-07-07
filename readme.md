@@ -43,9 +43,9 @@ You heard us right! To jump start community contributions to our new documentati
 Here's the fine print:
 
 1. Pull requests must be received by 11:59 p.m. CST on July 18th, but do not have to be accepted by that date to be eligible.
-2. By "noticably improves the content," we mean that the request must be substantive and impactful to the quality of the content. Spelling and Grammar fixes will be accepted, but these alone do not merit an entry into the raffle.
+2. By "noticeably improves the content," we mean that the request must be substantive and impactful to the quality of the content. Spelling and Grammar fixes will be accepted, but these alone do not merit an entry into the raffle.
 3. Individuals can submit as many times as they like, with each accepted pull request counting as one entry into the raffle.
-4. The winner will be accounced via the [@KendoUI](http://twitter.com/kendoui) Twitter account by 4 p.m. CST on Monday, July 23rd. 
+4. The winner will be announced via the [@KendoUI](http://twitter.com/kendoui) Twitter account by 4 p.m. CST on Monday, July 23rd. 
 
 ## License
 
