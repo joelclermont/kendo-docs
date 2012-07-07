@@ -32,6 +32,19 @@ There are two ways you can contribute to the public Kendo UI documentation: eith
 
 	- Fixing grammar, punctuation and other general errors is always appreciated. So are changes that expand on key ideas or correct errors in logic phrasing or otherwise. If your ambitions are greater, however, and you want to add completely new content to the site--like a new tutorial on using Kendo UI with an Atari 2600, for instance--we suggest you contact a member of the team first (or enter an issue!) to vet your idea. [John Bristowe](http://twitter.com/johnbristowe), [Burke Holland](http://twitter.com/burkeholland), [Todd Anglin](http://twitter.com/toddanglin) and [Brandon Satrom](http://twitter.com/brandonsatrom) would all be happy to hear your idea and offer advice.
 	- Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the [docs.kendoui.com](http://docs.kendoui.com) site. Please don't edit the content in this section of a document.
+
+		---
+		
+		title: kendo.dataviz.ui.Chart
+		
+		slug: dataviz-kendo.dataviz.ui.chart
+		
+		tags: api,dataviz
+
+		publish: true
+		
+		---
+
 	- When adding content or making changes, please use only standard Markdown syntax, and make to preview your additions or changes before sending us a pull request. You can use an online tool like [Dillinger.io](http://dillinger.io/) or [Marked](http://markedapp.com/) on OSX to view what your changes will look like when ported to HTML.
 
 	Once you've made your changes, commit, pull, merge, push and [send us a pull request](https://help.github.com/articles/using-pull-requests)! We--and Kendo UI users everywhere--thank you for making our docs the best front-end library documentation on the web! 
