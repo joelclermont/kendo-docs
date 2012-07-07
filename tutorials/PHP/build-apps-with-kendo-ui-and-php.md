@@ -430,8 +430,7 @@ This has been an example of how to get rolling with PHP and [Kendo UI][32].
    [7]: http://code.google.com/p/northwindextended/downloads/detail?name=North
 wind.MySQL5.sql
 
-   [8]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-ff819b019713_9A19-1_thumb_1.sflb.ashx (1)
+   [8]: http://docs.kendoui.com/tutorials/images/php1_1.png (1)
 
    [9]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
 ff819b019713_9A19-1_4_1.sflb.ashx
