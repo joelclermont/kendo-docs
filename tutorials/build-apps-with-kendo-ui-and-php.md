@@ -430,9 +430,9 @@ This has been an example of how to get rolling with PHP and [Kendo UI][32].
    [7]: http://code.google.com/p/northwindextended/downloads/detail?name=North
 wind.MySQL5.sql
 
-   [8]: https://github.com/telerik/kendo-docs/blob/master/tutorials/images/php1_1.png (1)
+   [8]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_1.png (1)
 
-   [9]: https://github.com/telerik/kendo-docs/blob/master/tutorials/images/php1_2.png
+   [9]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_2.png
 
    [10]: http://www.kendoui.com/videos.aspx
 
@@ -440,17 +440,17 @@ wind.MySQL5.sql
 
    [12]: http://localhost:8888/KendoUI/data/employees.php
 
-   [13]: https://github.com/telerik/kendo-docs/blob/master/tutorials/images/php1_3.png (2)
+   [13]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_3.png (2)
 
-   [14]: https://github.com/telerik/kendo-docs/blob/master/tutorials/images/php1_4.png
+   [14]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_4.png
 
-   [15]: https://github.com/telerik/kendo-docs/blob/master/tutorials/images/php1_5.png (3)
+   [15]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_5.png (3)
 
-   [16]: https://github.com/telerik/kendo-docs/blob/master/tutorials/images/php1_6.png
+   [16]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_6.png
 
-   [17]: https://github.com/telerik/kendo-docs/blob/master/tutorials/images/php1_7.png (4)
+   [17]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_7.png (4)
 
-   [18]: https://github.com/telerik/kendo-docs/blob/master/tutorials/images/php1_8.png
+   [18]: https://github.com/telerik/kendo-docs/raw/master/tutorials/images/php1_8.png
 
    [19]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
 ff819b019713_9A19-5_thumb_1.sflb.ashx (5)
