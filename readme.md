@@ -51,7 +51,7 @@ There are two ways you can contribute to the public Kendo UI documentation: eith
 
 ## Send us a Pull Request, Win and iPad!
 
-You heard us right! To jump start community contributions to our new documentation repo, we're raffling off a new iPad to one lucky committee. From July 11th-18th, every accepted pull request that **noticeably improves the content** in this repository will be entered into a raffle for a new iPad, to be given away on **Monday, July 23rd**. 
+You heard us right! To jump start community contributions to our new documentation repo, we're raffling off a new iPad to one lucky committer. From July 11th-18th, every accepted pull request that **noticeably improves the content** in this repository will be entered into a raffle for a new iPad, to be given away on **Monday, July 23rd**. 
 
 Here's the fine print:
 
