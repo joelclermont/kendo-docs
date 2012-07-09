@@ -7,17 +7,25 @@ publish: true
 
 # How-To: Interact With An Existing Database
 
-In this how-to, we'll examine how to interact to an existing database.
+In this how-to, we'll examine how to interact with an existing database via the DataSource component of the Kendo UI framework.
 
-## Introduction
+## A Brief Introduction to the DataSource Component
 
-[Introduction]
+The DataSource component plays a central role in the applications and sites built with Kendo UI. Fundamentally, it is an abstraction over local or remote data. However, it has many other responsibilities as well, including:
 
-## DataSource
+* retrieving data from a remote endpoint;
+* maintaining the structure and type of the data it represents (schema);
+* processing serialization formats to/from a remote endpoint;
+* synchronizing updates (i.e. create, update, delete) to/from a remote endpoint;
+* maintaining an in-memory cache of data (including changes) for a batch update to a remote endpoint;
+* calculating and maintaining aggregates, sorting order, and page sizes;
+* and, providing a query mechanism via filter expressions.
 
-The DataSource component is an abstraction in JavaScript that manages in-memory and remote data sources. Its purpose is to simplify the process of propagating updates to and from these data sources. In the case where data stored in a remote database (SQL Server, Oracle, MySQL, CouchDB, etc.), it is already assumed that the data is accessible to query via HTTP. This is necessary since we are talking about JavaScript running in the context of the browser. So, at a basic level, this is what is required for us to integrate your data with our framework. In terms of the actual data coming across the wire, this can be represented in a number of different ways. Out-of-the-box, Kendo UI supports XML, OData, and JSON.
+> To learn more, make sure to check out the [API reference][1] or [demos][2] of the DataSource.
 
-## Example: SQL Server
+## Connecting the DataSource Component to a Remote Database
 
-[Schema]
-[Server Configuration]
+In the case where data stored in a remote database (SQL Server, Oracle, MySQL, CouchDB, etc.), it is already assumed that the data is accessible to query via HTTP. This is necessary since we are talking about JavaScript running in the context of the browser. So, at a basic level, this is what is required for us to integrate your data with our framework. In terms of the actual data coming across the wire, this can be represented in a number of different ways. Out-of-the-box, Kendo UI supports XML, OData, and JSON.
+
+	[1]: http://docs.kendoui.com/api/framework/datasource
+	[2]: http://demos.kendoui.com/web/datasource/index.html
