@@ -61,7 +61,7 @@ $(document).ready().
         <option>Item 2</option>
         <option>Item 3</option>
     </select>
-    
+
     <script>
         $(document).ready(function(){
             $("#comboBox").kendoComboBox();
@@ -116,7 +116,7 @@ detailed description of the capabilities and syntax of the Kendo UI templates, p
             Title:${ data.Name }, Year: ${ data.Name }
         # } #
     </script>
-    
+
     <!-- ComboBox initialization -->
     <script>
         $(document).ready(function() {
@@ -189,7 +189,7 @@ can use the API to control its behavior.
 #### Example
 
     //combobox initialization
-    
+
     <script>
          $("#combobox").kendoComboBox({
              dataSource: dataSource,
@@ -211,6 +211,17 @@ can use the API to control its behavior.
 
     $("#comboBox").kendoComboBox({
         autoBind: false
+    });
+
+### cascadeFrom `String`
+
+Use it to set the Id of the parent DropDownList.
+
+#### Example
+    $("#dropdownlist1").kendoDropDownList();
+
+    $("#dropdownlist2").kendoDropDownList({
+        cascadeFrom: "dropdownlist1"
     });
 
 ### dataSource `Object | kendo.data.DataSource`
@@ -352,7 +363,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
 ### placeholder `String`*(default: "")*
 
  A string that appears in the textbox when the combobox has no value.
- 
+
 
 #### Example
 
@@ -367,7 +378,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
 #### Example
 
     <input id="combobox" placeholder="Select..." />
-    
+
      //combobox initialization
      <script>
          $("#combobox").kendoComboBox({
@@ -399,7 +410,7 @@ Template to be used for rendering the items in the list.
               <img alt="${ data.Name }" />Title:${ data.Name }, Year: ${ data.Name }
           # } #
      </script>
-    
+
      //combobox initialization
      <script>
          $("#combobox").kendoComboBox({
@@ -451,10 +462,10 @@ Returns the raw data record at the specified index. If the index is not specifie
 #### Example
 
     var combobox = $("#combobox").data("kendoComboBox");
-    
+
     // get the dataItem corresponding to the selectedIndex.
     var dataItem = combobox.dataItem();
-    
+
     // get the dataItem corresponding to the passed index.
     var dataItem = combobox.dataItem(1);
 
@@ -513,7 +524,7 @@ Filters dataSource using the provided parameter and rebinds drop-down list.
 #### Example
 
     var combobox = $("#combobox").data("kendoComboBox");
-    
+
     // Searches for item which has "In" in the name.
     combobox.search("In");
 
@@ -530,13 +541,13 @@ Selects drop-down list item and sets the value and the text of the combobox.
 #### Example
 
     var combobox = $("#combobox").data("kendoComboBox");
-    
+
     // selects by jQuery object
     combobox.select(combobox.ul.children().eq(0));
-    
+
     // selects by index
     combobox.select(1);
-    
+
     // selects item if its text is equal to "test" using predicate function
     combobox.select(function(dataItem) {
         return dataItem.text === "test";
@@ -579,7 +590,7 @@ Gets/Sets the text of the ComboBox.
 #### Example
 
     var combobox = $("#combobox").data("kendoComboBox");
-    
+
     // get the text of the combobox.
     var text = combobox.text();
 
@@ -600,7 +611,7 @@ Toggles the drop-down list between opened and closed state.
 #### Example
 
     var combobox = $("#combobox").data("kendoComboBox");
-    
+
     // toggles the open state of the drop-down list.
     combobox.toggle();
 
@@ -617,10 +628,10 @@ Gets/Sets the value of the combobox. If the value is undefined, text of the data
 #### Example
 
     var combobox = $("#combobox").data("kendoComboBox");
-    
+
     // get the value of the combobox.
     var value = combobox.value();
-    
+
     // set the value of the combobox.
     combobox.value("1"); //looks for item which has value "1"
 
@@ -709,12 +720,12 @@ Triggered when a Li element is selected.
     var onSelect = function(e) {
         // access the selected item via e.item (jQuery object)
     };
-    
+
     // attach select event handler during initialization
     var combobox = $("#combobox").kendoComboBox({
         select: onSelect
     });
-    
+
     // detach select event handler via unbind()
     combobox.data("kendoComboBox").unbind("select", onSelect);
 
@@ -724,10 +735,10 @@ Triggered when a Li element is selected.
     var onSelect = function(e) {
         // access the selected item via e.item (jQuery object)
     };
-    
+
     // attach select event handler via bind()
     $("#combobox").data("kendoComboBox").bind("select", onSelect);
-    
+
     // detach select event handler via unbind()
     $("#combobox").data("kendoComboBox").unbind("select", onSelect);
 

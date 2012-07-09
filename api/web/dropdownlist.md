@@ -56,7 +56,7 @@ $(document).ready().
         <option>Item 2</option>
         <option>Item 3</option>
     </select>
-    
+
     <script>
         $(document).ready(function(){
             $("#dropDownList").kendoDropDownList();
@@ -100,7 +100,7 @@ a detailed description of the capabilities and syntax of the Kendo UI templates,
 
     <!-- HTML -->
     <input id="titles" />
-    
+
     <!-- Template -->
     <script id="scriptTemplate" type="text/x-kendo-template">
         # if (data.BoxArt.SmallUrl) { #
@@ -111,7 +111,7 @@ a detailed description of the capabilities and syntax of the Kendo UI templates,
             Title:${ data.Name }, Year: ${ data.Name }
         # } #
     </script>
-    
+
     <!-- DropDownList initialization -->
     <script type="text/javascript">
         $(document).ready(function() {
@@ -196,6 +196,17 @@ use the API to control its behavior.
 
     $("#dropdownlist").kendoDropDownList({
         autoBind: false
+    });
+
+### cascadeFrom `String`
+
+Use it to set the Id of the parent DropDownList.
+
+#### Example
+    $("#dropdownlist1").kendoDropDownList();
+
+    $("#dropdownlist2").kendoDropDownList({
+        cascadeFrom: "dropdownlist1"
     });
 
 ### dataSource `kendo.data.DataSource | Object`
@@ -342,7 +353,7 @@ Template to be used for rendering the items in the list.
               <img alt="${ data.Name }" />Title:${ data.Name }, Year: ${ data.Name }
           # } #
      </script>
-    
+
      //dropdownlist initialization
      <script>
          $("#dropdownlist").kendoDropDownList({
@@ -395,10 +406,10 @@ Returns the raw data record at the specified index. If the index is not specifie
 #### Example
 
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
-    
+
     // get the dataItem corresponding to the selectedIndex.
     var dataItem = dropdownlist.dataItem();
-    
+
     // get the dataItem corresponding to the passed index.
     var dataItem = dropdownlist.dataItem(1);
 
@@ -459,7 +470,7 @@ Selects item, which starts with the provided parameter.
 
     // get a reference to the dropdown list
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
-    
+
     // Selects item which starts with "In".
     dropdownlist.search("In");
 
@@ -477,13 +488,13 @@ Selects drop-down list item and sets the value and the text of the dropdownlist.
 
     // get a reference to the dropdown list
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
-    
+
     // selects by jQuery object
     dropdownlist.select(dropdownlist.ul.children().eq(0));
-    
+
     // selects by index
     dropdownlist.select(1);
-    
+
     // selects item if its text is equal to "test" using predicate function
     dropdownlist.select(function(dataItem) {
         return dataItem.text === "test";
@@ -507,7 +518,7 @@ Gets/Sets the text of the dropdownlist.
 
     // get a reference to the dropdown list
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
-    
+
     // get the text of the dropdownlist.
     var text = dropdownlist.text();
 
@@ -529,7 +540,7 @@ Toggles the drop-down list between opened and closed state.
 
     // get a reference to the dropdown list
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
-    
+
     // toggles the open state of the drop-down list.
     dropdownlist.toggle();
 
@@ -547,10 +558,10 @@ Gets/Sets the value of the dropdownlist. The value will not be set if there is n
 
     // get a reference to the dropdown list
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
-    
+
     // get the value of the dropdownlist.
     var value = dropdownlist.value();
-    
+
     // set the value of the dropdownlist.
     dropdownlist.value("1"); //looks for item which has value "1"
 
@@ -639,12 +650,12 @@ Triggered when a Li element is selected.
     var onSelect = function(e) {
         // access the selected item via e.item (jQuery object)
     };
-    
+
     // attach select event handler during initialization
     var dropdownlist = $("#dropdownlist").kendoDropDownList({
         select: onSelect
     });
-    
+
     // detach select event handler via unbind()
     dropdownlist.data("kendoDropDownList").unbind("select", onSelect);
 
@@ -654,10 +665,10 @@ Triggered when a Li element is selected.
     var onSelect = function(e) {
         // access the selected item via e.item (jQuery object)
     };
-    
+
     // attach select event handler via bind()
     $("#dropdownlist").data("kendoDropDownList").bind("select", onSelect);
-    
+
     // detach select event handler via unbind()
     $("#dropdownlist").data("kendoDropDownList").unbind("select", onSelect);
 
