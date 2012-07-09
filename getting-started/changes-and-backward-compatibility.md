@@ -34,8 +34,7 @@ publish: true
 
 #### Breaking changes
 
-**The combined JavaScript file kendo.all.js is available only in the Kendo Complete package. The corresponding file in Kendo Web is called kendo.web.js.
-Use it instead of kendo.all.js.**
+> The combined JavaScript file kendo.all.js is available only in the Kendo Complete package. The corresponding file in Kendo Web is called kendo.web.js. Use it instead of kendo.all.js.
 
 *  **Data:** kendo.model.js file has been removed. The content of kendo.model.js file has been consolidated with the kendo.data.js content.
 *  **Data:** `Model.id` is no longer a function. It is a field.
