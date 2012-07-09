@@ -10,6 +10,7 @@ publish: true
 
 * [Categorical charts](#categorical-charts)
     * [Category axis](#category-axis)
+        * [Displaying Dates](#category-date-axis)
     * [Value axis](#value-axis)
     * [Multiple value axes](#multiple-value-axes)
     * [Axis crossing value(s)](#axis-crossing-values)
@@ -29,7 +30,7 @@ Categorical charts such as Bar, Column and Line use one category axis and one va
 
 ### Category axis
 
-Use the categoryAxis object to set the category names and other options:
+Use the categoryAxis object to set the category names:
 
     $("#chart").kendoChart({
         series: [{
@@ -65,6 +66,104 @@ The category name can also be bound to a field of the data item:
             field: "year"
         }
     });
+
+#### Displaying Dates
+
+The category axis provides built-in support for displaying dates. This includes:
+    * Automatic selection of granularity/base unit (minutes, hours, days, etc.)
+    * Label formatting matched to the granularity
+    * Grouping of categories into base units and series aggregates
+
+Specifying categories of type Date will switch the axis to date mode.
+
+##### Base Unit
+
+The default base unit is determined from the smallest duration between categories.
+For example:
+
+    categoryAxis: {
+        categories: [new Date(2005, 0, 1), new Date(2006, 0, 1)]
+        // baseUnit is set to "years"
+    }
+
+    categoryAxis: {
+        categories: [new Date(2005, 1, 1), new Date(2005, 1, 2)]
+        // baseUnit is set to "days"
+    }
+
+The base unit can also be specified manually. Valid options are:
+    * minutes
+    * hours
+    * days
+    * months
+    * years
+
+##### Labels format
+
+The date category axis supports specifying one format per base unit.
+
+    categoryAxis: {
+        labels: {
+            dateFormats: {
+                days: "M/d"
+            }
+        }
+    }
+
+The `labels.format` property takes priority, if specified.
+
+The global KendoUI culture is used for formatting the dates.
+It can be overriden by setting `labels.culture`.
+
+##### Series Aggregates
+
+If more than one category falls within a base unit, then its
+values are aggregated to display a single point.
+
+For example:
+
+    $("#chart").kendoChart({
+        series: [{
+            type: "column",
+            data: [20, 40, 45, 30, 50]
+        }],
+        categoryAxis: {
+            categories: [
+                new Date("2011/12/30"),
+                new Date("2011/12/31"),
+                new Date("2012/01/01"),
+                new Date("2012/01/02"),
+                new Date("2012/01/03")
+            ]
+        }
+    });
+
+Produces the following chart. Note that values are displayed as-is:
+
+![Chart with date category axis](chart-category-date-axis.png)
+
+Now change the base unit to "years":
+    categoryAxis: {
+        baseUnit: "years"
+    }
+
+Notice how the chart now displayes the maximum value for each year:
+
+![Chart with grouped date category axis](chart-category-date-axis-grouped.png)
+
+The aggregate function can be changed for each series:
+
+    series: [{
+        aggregate: "sum"
+    }]
+
+Available options are:
+* min
+* max
+* count
+* sum
+* avg
+* function (values, series) (Custom aggregate)
 
 ### Value axis
 

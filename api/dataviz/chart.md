@@ -969,11 +969,12 @@ The base time interval for the axis.
 The default baseUnit is determined automatically from the minimum difference
 between subsequent categories. Available options:
 
+* minutes
+* hours
+* days
+* months
+* years
 
-*   hours
-*   days
-*   months
-*   years
 Series data is aggregated for the specified base unit by using the
 **series.aggregate** function.
 
