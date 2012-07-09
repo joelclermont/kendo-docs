@@ -1,10 +1,10 @@
 ---
-title: Axes
+title: Overview
 slug: chart-axes
 publish: true
 ---
 
-# Chart Axes
+# Chart Overview
 
 ## Contents
 
