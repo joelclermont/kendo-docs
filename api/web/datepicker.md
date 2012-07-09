@@ -181,7 +181,7 @@ shows the decades from the centery
     // DatePicker initialization
      <script>
          $("#datePicker").kendoDatePicker({
-             footer: kendo.template("Today - #=kendo.toString(data, 'd') #")
+             footer: "Today - #=kendo.toString(data, 'd') #"
          });
      </script>
 
@@ -240,13 +240,13 @@ shows the decades from the centery
 #### Example
 
     //template
-    
+
     <script id="cellTemplate" type="text/x-kendo-tmpl">
          <div class="${ data.value < 10 ? exhibition : party }">
          </div>
          ${ data.value }
      </script>
-    
+
      //datePicker initialization
      <script>
          $("#datePicker").kendoDatePicker({
@@ -339,10 +339,10 @@ Enable/Disable the datePicker widget.
 
     // get a reference to the datepicker widget
     var datePicker = $("#datePicker").data("kendoDatePicker");
-    
+
     // disables the datePicker
     datePicker.enable(false);
-    
+
     // enables the datePicker
     datePicker.enable(true);
 
@@ -360,10 +360,10 @@ Gets/Sets the max value of the datePicker.
 
     // get a reference to the datepicker widget
     var datePicker = $("#datePicker").data("kendoDatePicker");
-    
+
     // get the max value of the datePicker.
     var max = datePicker.max();
-    
+
     // set the max value of the datePicker.
     datePicker.max(new Date(1900, 0, 1));
 
@@ -385,10 +385,10 @@ Gets/Sets the min value of the datePicker.
 
     // get a reference to the datepicker widget
     var datePicker = $("#datePicker").data("kendoDatePicker");
-    
+
     // get the min value of the datePicker.
     var min = datePicker.min();
-    
+
     // set the min value of the datePicker.
     datePicker.min(new Date(1900, 0, 1));
 
@@ -421,10 +421,10 @@ Gets/Sets the value of the datePicker.
 
     // get a reference to the datepicker widget
     var datePicker = $("#datePicker").data("kendoDatePicker");
-    
+
     // get the value of the datePicker.
     var value = datePicker.value();
-    
+
     // set the value of the datePicker.
     datePicker.value("10/10/2000"); //parse "10/10/2000" date and selects it in the calendar.
 

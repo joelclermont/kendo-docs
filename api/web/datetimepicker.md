@@ -166,7 +166,7 @@ The animation(s) used for displaying of the pop-up.
 ### dates `Array`
 
  Specifies a list of dates, which are shown in the time drop-down list. If not set, the DateTimePicker will auto-generate the available times.
- 
+
 
 #### Example
 
@@ -212,7 +212,7 @@ shows the decades from the centery
     // DateTimePicker initialization
      <script>
          $("#dateTimePicker").kendoDateTimePicker({
-             footer: kendo.template("Today - #=kendo.toString(data, 'd') #")
+             footer: "Today - #=kendo.toString(data, 'd') #"
          });
      </script>
 
@@ -286,7 +286,7 @@ shows the decades from the centery
          </div>
          ${ data.value }
      </script>
-    
+
      //dateTimePicker initialization
      <script>
          $("#dateTimePicker").kendoDateTimePicker({
@@ -545,12 +545,12 @@ Triggered when the underlying value of a DateTimePicker is changed.
     var onChange = function(e) {
         // ...
     };
-    
+
     // attach change event handler during initialization
     var dateTimePicker = $("#dateTimePicker").kendoDateTimePicker({
         change: onChange
     });
-    
+
     // detach change event handler via unbind()
     dateTimePicker.data("kendoDateTimePicker").unbind("change", onChange);
 
@@ -560,10 +560,10 @@ Triggered when the underlying value of a DateTimePicker is changed.
     var onChange = function(e) {
         // ...
     };
-    
+
     // attach change event handler via bind()
     $("#dateTimePicker").data("kendoDateTimePicker").bind("change", onChange);
-    
+
     // detach change event handler via unbind()
     $("#dateTimePicker").data("kendoDateTimePicker").unbind("change", onChange);
 

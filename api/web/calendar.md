@@ -136,7 +136,7 @@ its behavior.
 ### dates `Array`
 
  Specifies a list of dates, which will be passed to the month template.
- 
+
 
 #### Example
 
@@ -180,7 +180,7 @@ Specifies the navigation depth.
     //calendar intialization
      <script>
          $("#calendar").kendoCalendar({
-             footer: kendo.template("Today - #=kendo.toString(data, 'd') #")
+             footer: "Today - #=kendo.toString(data, 'd') #"
          });
      </script>
 
@@ -245,7 +245,7 @@ Specifies the navigation depth.
          </div>
          ${ data.value }
      </script>
-    
+
      //calendar intialization
      <script>
          $("#calendar").kendoCalendar({
@@ -297,10 +297,10 @@ Gets/Sets the max value of the calendar.
 
     // get a reference to the calendar widget
     var calendar = $("#calendar").data("kendoCalendar");
-    
+
     // get the max value of the calendar.
     var max = calendar.max();
-    
+
     // set the max value of the calendar.
     calendar.max(new Date(2100, 0, 1));
 
@@ -322,10 +322,10 @@ Gets/Sets the min value of the calendar.
 
     // get a reference to the calendar widget
     var calendar = $("#calendar").data("kendoCalendar");
-    
+
     // get the min value of the calendar.
     var min = calendar.min();
-    
+
     // set the min value of the calendar.
     calendar.min(new Date(1900, 0, 1));
 
@@ -418,10 +418,10 @@ Gets/Sets the value of the calendar.
 
     // get a reference to the calendar widget
     var calendar = $("#calendar").data("kendoCalendar");
-    
+
     // get the value of the calendar.
     var value = calendar.value();
-    
+
     // set the value of the calendar.
     calendar.value(new Date());
 
