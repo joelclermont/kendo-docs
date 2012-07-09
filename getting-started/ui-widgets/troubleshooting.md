@@ -6,12 +6,11 @@ publish: true
 
 # Troubleshooting
 
-This page suggests solutions for commonly encountered problems with the Kendo UI widgets.
+This page provides solutions for commonly problems you may encounter when working with Kendo UI widgets.
 
-## The widget object is undefined after loading a page through AJAX
+### Problem: The widget object is undefined after loading a page through AJAX
 
-**Causation:** Usually caused when the loaded page contains a script reference to jQuery.
-This causes all jQuery-based data attributes to be cleared, and in particular the data("kendoWidget") that holds the widget object.
+**Cause:** Usually caused when the page loaded via AJAX contains a script reference to jQuery. When jQuery is re-initialized, all jQuery-based data attributes are cleared, including the data("kendoWidget") attribute that holds the Kendo UI widget object.
 
 **Solution:** Load a partial HTML fragment that doesn't contain any unneeded jQuery references, or use an iframe to load the complete page.
 
