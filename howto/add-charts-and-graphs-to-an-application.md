@@ -65,7 +65,7 @@ The first step is to add the necessary script and stylesheet references for Kend
 
 > Please refer to the [JavaScript Dependencies of Kendo UI](http://docs.kendoui.com/getting-started/javascript-dependencies) for more information about script requirements for Kendo UI Web, Kendo UI DataViz, and Kendo UI Mobile.
 
-The next step is to declare a target element for your data visualization. Typically, this is represented by a `div` element. A script block to initialize and configure the area chart is also required.
+The next step is to declare a target element for your data visualization. Typically, this is represented by a `div` element. A script block is also required to initialize and configure the area chart. Here's an example with some sample data:
 
 	<!DOCTYPE html>
 	<html lang="en">
@@ -102,10 +102,19 @@ The next step is to declare a target element for your data visualization. Typica
 			// .ready() to initialise and configuration chart/gauge
 			jQuery(document).ready(function($) {
 				$("#chart").kendoChart({
-					// configuration properties and settings go here
+					series: [
+						{ name: "United States", data: [67.96, 68.93, 75, 74, 78] },
+						{ name: "World", data: [15.7, 16.7, 20, 23.5, 26.6] }
+					],
+					seriesDefaults: { type: "area" },
+					width: 400
 				});
 			});
 		</script>
 
 	</body>
 	</html>
+
+Here's how the page looks in the browser:
+
+![Area Chart](images/area-chart-example.png)
