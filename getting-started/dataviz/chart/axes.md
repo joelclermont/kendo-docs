@@ -147,6 +147,7 @@ Produces the following chart. Note that values are displayed as-is:
 ![Chart with date category axis](chart-category-date-axis.png)
 
 Now change the base unit to "years":
+
     categoryAxis: {
         baseUnit: "years"
     }
