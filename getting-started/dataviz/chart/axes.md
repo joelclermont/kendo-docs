@@ -16,6 +16,7 @@ publish: true
     * [Axis crossing value(s)](#axis-crossing-values)
 
 * [Scatter charts](#scatter-charts)
+    * [Displaying Dates](#xy-date-axis)
     * [Multiple X/Y axes](#multiple-xy-axes)
     * [Axis crossing value(s)](#axis-crossing-values)
 
@@ -75,6 +76,7 @@ The category axis provides built-in support for displaying dates. This includes:
     * Grouping of categories into base units and series aggregates
 
 Specifying categories of type Date will switch the axis to date mode.
+The automatic mode selection can be overriden by specifying `type: "Date"`
 
 ##### Base Unit
 
@@ -243,6 +245,7 @@ The first value axis will cross the category axis at the first category (leftmos
 
 ![Bar chart with customized axis crossing values](chart-axis-crossing-values.png)
 
+
 ## Scatter Charts
 
 XY charts such as Scatter and Scatter Line use one or more X and Y axes. These axes are configured through the xAxis and the yAxis objects:
@@ -260,6 +263,67 @@ XY charts such as Scatter and Scatter Line use one or more X and Y axes. These a
             min: 80
         }
     });
+
+### Displaying Dates
+
+The X/Y axis has built-in support for displaying dates.
+This includes:
+    * Automatic selection of granularity/base unit (minutes, hours, days, etc.)
+    * Label formatting matched to the granularity
+
+The axis will switch to date mode if the series values are of type Date.
+The automatic mode selection can be overriden by specifying `type: "Date"`
+
+The following options accept dates:
+    * min
+    * max
+    * axisCrossingValue
+
+The following options are expressed in base units:
+    * minorUnit
+    * majorUnit
+
+##### Base Unit
+
+The default base unit is determined from the axis (or series) range.
+For example:
+
+    xAxis: {
+        min: new Date(2005, 0, 1),
+        max: new Date(2006, 0, 1)
+        // baseUnit is set to "years"
+    }
+
+    xAxis: {
+        min: new Date(2005, 1, 1),
+        max: new Date(2005, 1, 2)
+        // baseUnit is set to "days"
+    }
+
+The base unit can also be specified manually. Valid options are:
+    * minutes
+    * hours
+    * days
+    * months
+    * years
+
+##### Labels format
+
+The date axis supports specifying one format per base unit.
+
+    xAxis: {
+        labels: {
+            dateFormats: {
+                days: "M/d"
+            }
+        }
+    }
+
+The `labels.format` property takes priority, if specified.
+
+The global KendoUI culture is used for formatting the dates.
+It can be overriden by setting `labels.culture`.
+
 
 ### Multiple X/Y axes
 

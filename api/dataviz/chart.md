@@ -6026,11 +6026,11 @@ Date at which the Y axis crosses this axis.
 The base time interval for the axis labels.
 The default baseUnit is determined automatically from the value range. Available options:
 
-
-*   hours
-*   days
-*   months
-*   years
+* minutes
+* hours
+* days
+* months
+* years
 
 ### xAxis.type: "Date".labels `Object`
 
