@@ -23,7 +23,7 @@ Kendo UI is a pure JavaScript library, so installing and getting started is quic
 
 1. Download [Kendo UI](http://www.kendoui.com/download)
 2. Copy the Kendo UI CSS and JavaScript resources to your project
-3. Configure your page to use Kendo UI scripts and skins:  
+3. Configure your page to use Kendo UI scripts and skins (see below).  
 
 ### Kendo UI Web
 
