@@ -1,5 +1,5 @@
 ---
-title: What is Kendo
+title: What is Kendo UI
 slug: gs-what-is-kendo
 tags: 101, Getting Started, internals
 publish: true
@@ -8,7 +8,9 @@ relatedDocs: gs-your-first-application, gs-downloading-kendo
 
 # What is Kendo UI
 
-Kendo UI is an HTML5, jQuery-based framework for building modern web apps. The framework features more than a dozen UI components, including a Grid and Chart, and all of the tools needed for a HTML5 app development, such as Data Binding, Templating, Drag-and-Drop API, and more. When you start building with Kendo UI, you have the core pieces you need:
+Kendo UI is an HTML5, jQuery-based framework for building modern web apps. The framework features more than a dozen UI components, a rich data vizualization framework, an auto-adaptive Mobile framework, and all of the tools needed for a HTML5 app development, such as Data Binding, Templating, Drag-and-Drop API, and more.
+
+When you start building with Kendo UI, you have all the core pieces you need to build rich web applications, including:
 
 * UI widgets
 * Client-side DataSource
@@ -18,7 +20,7 @@ Kendo UI is an HTML5, jQuery-based framework for building modern web apps. The f
 * Animations
 * Built-in touch support
 
-There’s no need to manually assemble a full framework for HTML app development; Kendo UI provides all the building blocks, designed to seamlessly work together. It is not only UI, but much more.
+There’s no need to manually assemble a full framework for HTML app development; Kendo UI provides all the building blocks, designed to seamlessly work together. It's not just UI, but so much more.
 
 ## Built for Performance
 
