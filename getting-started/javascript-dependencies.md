@@ -6,15 +6,16 @@ publish: true
 
 # JavaScript files used by Kendo UI
 
-Every widget from **Kendo UI** needs its JavaScript files to be included in order to work properly
-This help topic lists the JavaScript files required by each widget.
+Every widget from **Kendo UI** needs its JavaScript files to be included in order to work properly. This help topic lists the JavaScript files required by each widget.
 
 ## Combined Scripts
 
 The following combined scripts are made available in order to simplify development and deployment.
 
 *   **kendo.all.min.js** contains a minified version of all scripts (Web, DataViz and Mobile).
-**That file is available only in the Kendo Complete package**.
+
+> kendo.all.min.js is only available in the Kendo UI Complete package.
+
 *   **kendo.web.min.js** contains a minified version of all scripts from Kendo UI Web.
 *   **kendo.dataviz.min.js** contains a minified version of all scripts from Kendo UI DataViz.
 *   **kendo.mobile.min.js** contains a minified version of all scripts from Kendo UI Mobile.
@@ -34,14 +35,14 @@ The minified versions of all JavaScript files (except jQuery) are also available
 
 **e.g.** `http://cdn.kendostatic.com/2011.3.1129/js/kendo.all.min.js`
 
-**Important:** in order to use HTTPS, you need to directly access the CloudFront CDN:
+> **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN
 
     https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js
 
 ## Individual scripts
 
-If more granular control is required, the following separate script files, either minified or not,
-can be included per widget basis.
+If more granular control is required, the following script files, either minified or not,
+can be included on a per-widget basis.
 
 ### AutoComplete
 
