@@ -39,8 +39,6 @@ For example, let's visualize the following data points:
         marketShare: 0.25
     }];
 
-
-
     $("#chart").kendoChart({
         dataSource: {
             data: salesData
@@ -54,6 +52,6 @@ For example, let's visualize the following data points:
         }]
     });
 
-This Produces the following chart:
+This produces the following chart:
 
  ![Bubble Chart](chart-bubble.png)
