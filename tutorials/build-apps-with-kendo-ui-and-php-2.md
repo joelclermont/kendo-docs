@@ -1,5 +1,5 @@
 ---
-title: Intro to Building Apps with Kendo UI And PHP
+title: Intro to Building Apps with Kendo UI And PHP Part 2
 slug: tutorial-intro-building-apps-with-kendo-ui-and-php-2
 tags: Tutorial
 publish: true
@@ -602,29 +602,19 @@ It is highly recommended that you use some sort of MVC framework with your PHP.
 that we did here.
 
 
-   [1]: http://www.kendoui.com/blogs/teamblog/posts/12-01-18/get_rolling_with_
-kendo_ui_and_php_ndash_part_1.aspx
+   [2]: images/Part-_7E9D-9_thumb.png (9)
 
-   [2]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-Get-
-Rolling-With-Kendo-UI-And-PHP--Part-_7E9D-9_thumb.sflb.ashx (9)
+   [3]: Part-_7E9D-9_2.png
 
-   [3]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-Get-
-Rolling-With-Kendo-UI-And-PHP--Part-_7E9D-9_2.sflb.ashx
+   [4]: http://php.net/manual/en/pdo.prepared-statements.php(http://php.net/manual/en/pdo.prepared-statements.php)
 
-   [4]: http://php.net/manual/en/pdo.prepared-statements.php
-(http://php.net/manual/en/pdo.prepared-statements.php)
+   [5]: Part-_7E9D-10_thumb.png (10)
 
-   [5]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-Get-
-Rolling-With-Kendo-UI-And-PHP--Part-_7E9D-10_thumb.sflb.ashx (10)
+   [6]: Part-_7E9D-10_2.png
 
-   [6]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-Get-
-Rolling-With-Kendo-UI-And-PHP--Part-_7E9D-10_2.sflb.ashx
+   [7]: Part-_7E9D-11_thumb_1.png (11)
 
-   [7]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-Get-
-Rolling-With-Kendo-UI-And-PHP--Part-_7E9D-11_thumb_1.sflb.ashx (11)
-
-   [8]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-Get-
-Rolling-With-Kendo-UI-And-PHP--Part-_7E9D-11_4.sflb.ashx
+   [8]: Part-_7E9D-11_4.png
 
    [9]: http://www.kendoui.com/Libraries/Sample_Code/KendoUI_2.sflb.ashx
 
@@ -632,7 +622,4 @@ Rolling-With-Kendo-UI-And-PHP--Part-_7E9D-11_4.sflb.ashx
 
    [11]: http://codeigniter.com/
 
-   [12]: http://www.kendoui.com/get-kendo-ui.aspx
-
-   [14]: http://twitter.com/burkeholland
 

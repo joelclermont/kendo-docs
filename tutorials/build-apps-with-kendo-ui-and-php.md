@@ -1,5 +1,5 @@
 ---
-title: Intro to Building Apps with Kendo UI And PHP
+title: Intro to Building Apps with Kendo UI And PHP Part 1
 slug: tutorial-intro-building-apps-with-kendo-ui-and-php
 tags: Tutorial
 publish: true
