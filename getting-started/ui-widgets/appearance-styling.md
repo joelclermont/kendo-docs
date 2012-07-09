@@ -1,24 +1,24 @@
 ---
-title: Appearance and Styling
+title: Kendo Widget CSS Styles
 slug: widget-appearance-and-styling
 publish: true
 ---
 
 # Appearance and Styling
-The appearance of the **Kendo UI** widgets depends entirely on styles defined by the applied CSS classes. No inline styles are used, except for some very specific cases when they must be set with Javascript, depending on the browser or configuration.
+The appearance of the **Kendo UI** widgets depends entirely on styles defined by the applied CSS classes. No inline styles are used, except for some very specific cases in which these styles must be set with Javascript, depending on the browser or configuration.
 
 ## Common and theme StyleSheets
- Kendo UI always requires a pair of stylesheets - **kendo.common.css** and **kendo.[theme].css**.
- The common (base) stylesheet applies styles related to positioning and size, which are not related to the color scheme and are always required for the widget to
- look (and work) properly. The theme stylesheet applies styles related to colors and backgrounds, which are theme-specific.
+ Kendo UI requires two stylesheets: **kendo.common.css** and **kendo.[theme].css**.
+ The common (base) stylesheet applies styles related to positioning and size, but which are not related to the color scheme and are always required for the widget to
+ look correct and function properly. The theme stylesheet applies theme-specific styles like colors and backgrounds.
 
-Be sure to include the common CSS file before the theme CSS file, because in some cases the theme CSS file may override base styles because it uses selectors with the same specificity.
+> Be sure to include the common CSS file before the theme CSS file. In some cases, the theme CSS file may override base styles as it uses selectors with the same specificity.
 
 ## Primitives
 
-The widgets use the so-called primitives, i.e. different HTML elements in different widgets use the same CSS classes to provide a level of abstraction and allow common styling.
+Kendo UI widgets use primitives, meaning that different HTML elements in different widgets use the same CSS classes to provide a level of abstraction and allow common styling.
 
-Here is an outline of the CSS classes that are commonly used.
+Commonly-used CSS classes include:
 
 *   **k-widget** - applied to the widget wrapper to set a border, text and background color. In addition to t-widget, every widget has its own specific CSS class, for example **k-menu**, **k-panelbar**, **k-tabstrip**, etc.
 *   **k-header** - applied to Grid headers, Menu top level items, PanelBar top level items, TabStrip items, DropDownLists, to set a background image and a background color
@@ -33,7 +33,7 @@ Here is an outline of the CSS classes that are commonly used.
 *   **k-item** - applied to various repeating widget items, e.g. in the Menu, TabStrip, TreeView, PanelBar, ComboBox, DropDownList, etc. This CSS class does not apply any particular global styles and sports display: block.
 *   **k-first** and **k-last** - set on first and last k-item respectively, where special styling is needed - rounded corners, removing borders
 
-The appearance of a component or part of it may depend on its state, which is tied to a CSS class as well:
+The appearance of a component may also depend on its state, which is also tied to CSS classes:
 
 *   **k-state-default** - this class is applied on items to set their default appearance background and colors
 *   **k-state-hover** - this class is set to items when they are hovered to apply their hovered look
@@ -44,7 +44,7 @@ The appearance of a component or part of it may depend on its state, which is ti
 
 ## Customizing Appearance
 
-Usually, a CSS property defined by a primitive CSS class is used by all widgets that use this CSS class, unless overridden by a higher specificity selector. For example:
+Usually, a CSS property defined by a primitive class is used by all widgets that use that  class, unless overridden by a higher specificity selector. For example:
 
     .k-link
     {
@@ -60,16 +60,15 @@ will not affect
     }
 
 
-because its specificity is 10 and the latter is 20.
+because the latter uses a descendant selector and thus, is more specific (20 versus 10, to be precise).
 
-For more information about CSS specificity, check [this excellent article in Smashing Magazine](http://www.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/).
+For more information about CSS specificity, check out [this excellent article in Smashing Magazine](http://www.smashingmagazine.com/2007/07/27/css-specificity-things-you-should-know/).
 
-If you want to override the styling of a particular widget, you can use a CSS selector with the widget's own CSS class:
+If you want to override the styling of a given widget, you can use a CSS selector with the widget's own CSS class:
 
     .k-menu .k-link
     {
         color: red;
     }
 
-
-Though, make sure that you specify it after the inclusion of the respective theme CSS files.
+When you do, make sure to specify override rules after the inclusion of the respective theme CSS files.
