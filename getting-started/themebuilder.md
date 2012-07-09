@@ -7,11 +7,11 @@ publish: true
 
 ### What is the Kendo ThemeBuilder?
 
-The ThemeBuilder is a tool that lets you modify the Kendo themes with ease, so that they match the look and feel of your site or app.
+The Kendo ThemeBuilder is a tool that lets you modify Kendo themes so that they match the look and feel of your site or app.
 
 ### Using the ThemeBuilder on your own pages
 
-Because the ThemeBuilder is a browser bookmarklet, using it on your own pages is as easy as clicking on a button. Just drag the ThemeBuilder button to your bookmarks bar, and voila! You can now load the theming interface on every page that contains Kendo components.
+Because the ThemeBuilder is a browser bookmarklet, using it on your own pages is as easy as clicking a button. Just drag the ThemeBuilder button to your bookmarks bar, and voila! You can now load the theming interface on every page that contains Kendo components.
 
 ### Using the output from the ThemeBuilder
 
