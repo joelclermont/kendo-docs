@@ -313,6 +313,44 @@ This is either the original XHR used for the operation or a stub containing:
 *   statusText
 Verify that this is an actual XHR before accessing any other fields.
 
+### progress
+
+Fires when upload progress data is available.
+
+
+Note: The progress event fires only when the upload is in
+[async mode](http://www.kendoui.com/documentation/ui-widgets/upload/modes.aspx#async).
+
+#### Example
+
+    $("#photos").kendoUpload({
+        // ...
+        progress: onProgress
+    });
+
+    function onProgress(e) {
+        // Array with information about the uploaded files
+        var files = e.files;
+
+        console.log(e.percentComplete);
+    }
+
+#### Event Data
+
+##### e.files `Array`
+
+List of the files that are being uploaded. Each file has:
+
+
+*   name
+*   extension - the file extension
+        inlcuding the leading dot - ".jpg", ".png", etc.
+*   size - the file size in bytes (null if not available)
+
+##### percentComplete `Number`
+
+Upload progress (0 - 100)
+
 ### remove
 
 Fires when an uploaded file is about to be removed.
