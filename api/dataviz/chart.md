@@ -6191,6 +6191,40 @@ and is about to render it.
         // Series data is now available
     }
 
+### plotAreaClick
+
+Fires when plot area is clicked.
+
+#### Example
+
+    function onPlotAreaClick(e) {
+        alert("Clicked X axis value: " + e.x);
+    }
+
+#### Event Data
+
+##### e.value `Object`
+
+The data point value.
+Available only for categorical charts (bar, line, area and similar).
+
+##### e.category `Object`
+
+The data point category.
+Available only for categorical charts (bar, line, area and similar).
+
+##### e.element `Object`
+
+The DOM element of the plot area.
+
+##### e.x `Object`
+
+The X axis value or array of values for multi-axis charts.
+
+##### e.y `Object`
+
+The X axis value or array of values for multi-axis charts.
+
 ### seriesClick
 
 Fires when chart series are clicked.
