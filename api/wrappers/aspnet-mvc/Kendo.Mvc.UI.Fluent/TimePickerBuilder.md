@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.TimePickerBuilder
 
-Defines the fluent interface for configuring the  component.
+Defines the fluent interface for configuring the TimePicker component.
 
 ## Methods
 

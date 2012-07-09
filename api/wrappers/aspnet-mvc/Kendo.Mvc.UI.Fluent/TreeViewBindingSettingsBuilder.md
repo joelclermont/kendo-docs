@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.TreeViewBindingSettingsBuilder
 
-Defines the fluent interface for building
+Defines the fluent interface for building TreeViewBindingSettingsBuilder
 
 ## Methods
 

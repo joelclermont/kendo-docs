@@ -6,11 +6,30 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GridBuilder
 
-Defines the fluent interface for configuring the  component.
+Defines the fluent interface for configuring the !:Grid{T} component.
 
 ## Methods
 
-### RowTemplate(System.Action{`0,Kendo.Mvc.UI.Grid{`0}})
+### DataSource(System.Action{Kendo.Mvc.UI.Fluent.DataSourceBuilder{}})
+Configures the grid DataSource
+
+### DetailTemplate(System.Action{})
+Sets the detail template of the grid
+
+#### Parameters
+
+##### codeBlockTemplate `System.Action{}`
+The template
+
+### DetailTemplate(System.Func{,System.Object})
+Sets the detail template of the grid using Razor syntax
+
+#### Parameters
+
+##### inlineTemplate `System.Func{`
+The template
+
+### RowTemplate(System.Action{,Kendo.Mvc.UI.Grid{`0}})
 Sets the row template of the grid
 
 #### Example
@@ -26,10 +45,10 @@ Sets the row template of the grid
 
 #### Parameters
 
-##### codeBlockTemplate `System.Action{`0`
+##### codeBlockTemplate `System.Action{`
 The template
 
-### RowTemplate(System.Action{`0})
+### RowTemplate(System.Action{})
 Sets the row template of the grid
 
 #### Example
@@ -45,10 +64,10 @@ Sets the row template of the grid
 
 #### Parameters
 
-##### codeBlockTemplate `System.Action{`0}`
+##### codeBlockTemplate `System.Action{}`
 The template
 
-### RowTemplate(System.Func{`0,System.Object})
+### RowTemplate(System.Func{,System.Object})
 Sets the row template of the grid using Razor syntax
 
 #### Example
@@ -61,8 +80,33 @@ Sets the row template of the grid using Razor syntax
 
 #### Parameters
 
-##### inlineTemplate `System.Func{`0`
+##### inlineTemplate `System.Func{`
 The template
+
+### ClientRowTemplate(System.String)
+Sets the client row template
+
+#### Parameters
+
+##### template `System.String`
+The template
+
+### ClientRowTemplate(System.Func{Kendo.Mvc.UI.Grid{},System.String})
+Sets the client row template
+
+#### Parameters
+
+##### template `System.Func{Kendo.Mvc.UI.Grid{}`
+The template
+
+### AutoBind(System.Boolean)
+Specifies if the Grid should be automatically bound on initial load.
+            This is only possible if AJAX binding is used, and widget is not initialy populated on the server.
+
+#### Parameters
+
+##### value `System.Boolean`
+If true Grid will be automatically data bound, otherwise false
 
 ### Resizable(System.Action{Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder})
 Configures the grid resizing settings
@@ -92,7 +136,7 @@ Configures the grid reordering settings
 ##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder}`
 Resizing settings configurator method
 
-### Editable(System.Action{Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder{`0}})
+### Editable(System.Action{Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder{}})
 Configures the grid editing settings.
 
 #### Example
@@ -103,10 +147,10 @@ Configures the grid editing settings.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder{}}`
 Configurator for the edit settings.
 
-### ToolBar(System.Action{Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory{`0}})
+### ToolBar(System.Action{Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory{}})
 Configures the toolbar of the grid.
 
 #### Example
@@ -117,24 +161,15 @@ Configures the toolbar of the grid.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory{}}`
 ToolBar configurator.
 
-### Footer(System.Boolean)
-Configure when to show footer of the grid.
-
-#### Parameters
-
-##### visible `System.Boolean`
-If it is true, the feature is visible.
-
-### BindTo(System.Collections.Generic.IEnumerable{`0})
+### BindTo(System.Collections.Generic.IEnumerable{})
 Binds the grid to a list of objects
 
 #### Example
     <%= Html.Kendo().Grid<Order>()
         .Name("Orders")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -147,10 +182,10 @@ Binds the grid to a list of objects
 
 #### Parameters
 
-##### dataSource `System.Collections.Generic.IEnumerable{`0}`
+##### dataSource `System.Collections.Generic.IEnumerable{}`
 The data source.
 
-### RowAction(System.Action{Kendo.Mvc.UI.GridRow{`0}})
+### RowAction(System.Action{Kendo.Mvc.UI.GridRow{}})
 Callback for each row.
 
 #### Example
@@ -169,11 +204,11 @@ Callback for each row.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.GridRow{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.GridRow{}}`
 Action, which will be executed for each row.
             You can format the entire row
 
-### CellAction(System.Action{Kendo.Mvc.UI.GridCell{`0}})
+### CellAction(System.Action{Kendo.Mvc.UI.GridCell{}})
 Callback for each cell.
 
 #### Example
@@ -194,7 +229,7 @@ Callback for each cell.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.GridCell{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.GridCell{}}`
 Action, which will be executed for each cell.
             You can format a concrete cell.
 
@@ -206,13 +241,12 @@ Enables or disables the custom binding of the grid.
 ##### value `System.Boolean`
 If true enables custom binding.
 
-### Columns(System.Action{Kendo.Mvc.UI.Fluent.GridColumnFactory{`0}})
+### Columns(System.Action{Kendo.Mvc.UI.Fluent.GridColumnFactory{}})
 Defines the columns of the grid.
 
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -225,7 +259,7 @@ Defines the columns of the grid.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridColumnFactory{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridColumnFactory{}}`
 The add action.
 
 ### Sortable
@@ -234,7 +268,6 @@ Allows sorting of the columns.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -246,13 +279,12 @@ Allows sorting of the columns.
         .Sortable();
         %>
 
-### Sortable(System.Action{Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder{`0}})
+### Sortable(System.Action{Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder{}})
 Allows sorting of the columns.
 
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -266,7 +298,7 @@ Allows sorting of the columns.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder{}}`
 Use builder to define sort settings.
 
 ### Selectable
@@ -301,7 +333,6 @@ Allows paging of the data.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -319,7 +350,6 @@ Allows paging of the data.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -329,9 +359,7 @@ Allows paging of the data.
         })
         .BindTo((IEnumerable<Order>)ViewData["Orders"])
         .Pageable(paging =>
-        paging.PageSize(20)
-        .Style(GridPagerStyles.NextPreviousAndNumeric)
-        .Position(GridPagerPosition.Bottom)
+        paging.Refresh(true)
         )
         %>
 
@@ -346,7 +374,6 @@ Allows filtering of the columns.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -364,7 +391,6 @@ Allows filtering of the columns.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -381,13 +407,51 @@ Allows filtering of the columns.
 ##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder}`
 Use builder to define filtering settings.
 
+### ColumnMenu
+Enables/disables header column menu.
+
+#### Example
+    <%= Html.Kendo().Grid()
+        .Name("Grid")
+        .Columns(columns=>
+        {
+        columns.Add(c => c.OrderID).Width(100);
+        columns.Add(c => c.OrderDate).Width(200).Format("{0:dd/MM/yyyy}");
+        columns.Add(c => c.ShipAddress);
+        columns.Add(c => c.ShipCity).Width(200);
+        })
+        .BindTo((IEnumerable<Order>)ViewData["Orders"])
+        .ColumnMenu();
+        %>
+
+### ColumnMenu(System.Action{Kendo.Mvc.UI.Fluent.GridColumnMenuSettingsBuilder})
+Enables/disables header column menu.
+
+#### Example
+    <%= Html.Kendo().Grid()
+        .Name("Grid")
+        .Columns(columns=>
+        {
+        columns.Add(c => c.OrderID).Width(100);
+        columns.Add(c => c.OrderDate).Width(200).Format("{0:dd/MM/yyyy}");
+        columns.Add(c => c.ShipAddress);
+        columns.Add(c => c.ShipCity).Width(200);
+        })
+        .BindTo((IEnumerable<Order>)ViewData["Orders"])
+        .ColumnMenu(menu => menu.Enabled(true);
+        %>
+
+#### Parameters
+
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GridColumnMenuSettingsBuilder}`
+Use builder to define column menu settings.
+
 ### Scrollable
 Show scrollbar if there are many items.
 
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -405,7 +469,6 @@ Show scrollbar if there are many items.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -428,7 +491,6 @@ Enables keyboard navigation.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -446,7 +508,6 @@ Enables keyboard navigation.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -464,22 +525,9 @@ Enables keyboard navigation.
 Use builder to define keyboard navigation settings.
 
 ### Events(System.Action{Kendo.Mvc.UI.Fluent.GridEventBuilder})
-Enables column context menu.
+Configures the client-side events.
 
 #### Example
-    <%= Html.Kendo().Grid()
-        .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
-        .Columns(columns=>
-        {
-        columns.Add(c => c.OrderID).Width(100);
-        columns.Add(c => c.OrderDate).Width(200).Format("{0:dd/MM/yyyy}");
-        columns.Add(c => c.ShipAddress);
-        columns.Add(c => c.ShipCity).Width(200);
-        })
-        .BindTo((IEnumerable<Order>)ViewData["Orders"])
-        .ColumnContextMenu();
-        %>
     <%= Html.Kendo().Grid()
         .Name("Grid")
         .Events(events => events
@@ -498,7 +546,6 @@ Use it to configure grouping.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);
@@ -516,7 +563,6 @@ Allows grouping.
 #### Example
     <%= Html.Kendo().Grid()
         .Name("Grid")
-        .Ajax(ajax => ajax.Action("_RelatedGrids_Orders", "Grid", new { customerID = "ALFKI" }))
         .Columns(columns=>
         {
         columns.Add(c => c.OrderID).Width(100);

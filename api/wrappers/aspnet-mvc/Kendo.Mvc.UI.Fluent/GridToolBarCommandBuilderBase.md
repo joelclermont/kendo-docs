@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GridToolBarCommandBuilderBase
 
+Defines the fluent interface for configuring toolbar command.
+
 ## Methods
 
 ### HtmlAttributes(System.Object)

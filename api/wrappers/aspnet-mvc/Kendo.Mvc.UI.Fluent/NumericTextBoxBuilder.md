@@ -6,20 +6,20 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.NumericTextBoxBuilder
 
-Defines the fluent interface for configuring the  component.
+Defines the fluent interface for configuring the NumericTextBox component.
 
 ## Methods
 
-### Value(System.Nullable{`0})
+### Value(System.Nullable{})
 Sets the initial value of the NumericTextBox.
 
-### Step(`0)
+### Step()
 Sets the step, used ti increment/decrement the value of the textbox.
 
-### Min(System.Nullable{`0})
+### Min(System.Nullable{})
 Sets the minimal possible value allowed to the user.
 
-### Max(System.Nullable{`0})
+### Max(System.Nullable{})
 Sets the maximal possible value allowed to the user.
 
 ### Placeholder(System.String)
@@ -58,6 +58,26 @@ Enables or disables the textbox.
 ### Format(System.String)
 Stes the format of the NumericTextBox.
 
-#### Parameters
+#### Example
+    <%= Html.Kendo().NumericTextBox()
+        .Name("NumericTextBox")
+        .Format("c3")
+        %>
 
-##### allowSpinner `System.String`
+### Culture(System.String)
+Specifies the culture info used by the NumericTextBox widget.
+
+#### Example
+    <%= Html.Kendo().NumericTextBox()
+        .Name("NumericTextBox")
+        .Culture("de-DE")
+        %>
+
+### Decimals(System.Int32)
+Specifies the number precision. If not set precision defined by current culture is used.
+
+#### Example
+    <%= Html.Kendo().NumericTextBox()
+        .Name("NumericTextBox")
+        .Decimals(3)
+        %>

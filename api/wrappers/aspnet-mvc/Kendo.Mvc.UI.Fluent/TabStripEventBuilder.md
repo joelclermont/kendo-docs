@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.TabStripEventBuilder
 
-Defines the fluent interface for configuring the .
+Defines the fluent interface for configuring the Events.
 
 ## Methods
 

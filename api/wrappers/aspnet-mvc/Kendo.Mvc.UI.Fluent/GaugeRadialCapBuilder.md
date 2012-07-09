@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder
 
-Defines the fluent interface for configuring the .
+Defines the fluent interface for configuring the RadialGaugeCap.
 
 ## Methods
 

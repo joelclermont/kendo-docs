@@ -6,16 +6,16 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder
 
-Configures date category axis for the .
+Configures date category axis for the !:Chart{TModel}.
 
 ## Methods
 
-### Categories(System.Linq.Expressions.Expression{System.Func{`0,System.DateTime}})
+### Categories(System.Linq.Expressions.Expression{System.Func{,System.DateTime}})
 Defines bound categories.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression{System.Func{`
 The expression used to extract the categories value from the chart model
 
 ### Categories(System.Collections.Generic.IEnumerable{System.DateTime})

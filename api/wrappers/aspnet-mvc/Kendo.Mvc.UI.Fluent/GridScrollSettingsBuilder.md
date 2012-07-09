@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder
 
-Defines the fluent interface for configuring
+Defines the fluent interface for configuring Scrollable
 
 ## Methods
 

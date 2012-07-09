@@ -6,11 +6,11 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartSeriesFactory
 
-Creates series for the .
+Creates series for the !:Chart{TModel}.
 
 ## Methods
 
-### Bar``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}})
+### Bar`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}})
 Defines bound bar series.
 
 #### Parameters
@@ -54,7 +54,7 @@ Defines bar series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to.
 
-### Column``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}})
+### Column`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}})
 Defines bound column series.
 
 #### Parameters
@@ -98,7 +98,7 @@ Defines bar series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Line``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Line`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
 Defines bound line series.
 
 #### Parameters
@@ -133,7 +133,7 @@ Defines line series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### VerticalLine``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### VerticalLine`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
 Defines bound vertical line series.
 
 #### Parameters
@@ -168,7 +168,7 @@ Defines vertical line series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Area``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Area`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
 Defines bound area series.
 
 #### Parameters
@@ -203,7 +203,7 @@ Defines area series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### VerticalArea``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### VerticalArea`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
 Defines bound vertical area series.
 
 #### Parameters
@@ -238,7 +238,7 @@ Defines vertical area series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Scatter``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}})
+### Scatter`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}})
 Defines bound scatter series.
 
 #### Parameters
@@ -268,7 +268,7 @@ Defines scatter series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### ScatterLine``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}})
+### ScatterLine`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}})
 Defines bound scatter line series.
 
 #### Parameters
@@ -298,7 +298,7 @@ Defines scatter line series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Bubble``3(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.Linq.Expressions.Expression{System.Func{`0,``2}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+### Bubble`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.Linq.Expressions.Expression{System.Func{`0,``2}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
 Defines bound bubble series.
 
 ### Bubble(System.String,System.String,System.String,System.String,System.String,System.String)
@@ -315,7 +315,7 @@ Defines bubble series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Pie``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+### Pie`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
 Defines bound pie series.
 
 ### Pie(System.String,System.String,System.String,System.String,System.String)
@@ -332,7 +332,7 @@ Defines pie series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Donut``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+### Donut`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
 Defines bound pie series.
 
 ### Donut(System.String,System.String,System.String,System.String,System.String)

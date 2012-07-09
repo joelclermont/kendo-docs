@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.EditorEventBuilder
 
-Defines the fluent interface for configuring the .
+Defines the fluent interface for configuring the Events.

@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.SplitterBuilder
 
+Defines the fluent interface for configuring the Splitter component.
+
 ## Methods
 
 ### Orientation(Kendo.Mvc.UI.SplitterOrientation)

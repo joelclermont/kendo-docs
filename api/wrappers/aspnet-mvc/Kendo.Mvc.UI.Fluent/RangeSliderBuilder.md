@@ -6,14 +6,14 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.RangeSliderBuilder
 
-Defines the fluent interface for configuring the component.
+Defines the fluent interface for configuring the !:RangeSlider{T}component.
 
 ## Methods
 
-### Values(System.Nullable{`0},System.Nullable{`0})
+### Values(System.Nullable{},System.Nullable{`0})
 Sets the value of the range slider.
 
-### Values(`0[])
+### Values([])
 Sets the value of the range slider.
 
 ### Orientation(Kendo.Mvc.UI.SliderOrientation)
@@ -22,16 +22,16 @@ Sets orientation of the range slider.
 ### TickPlacement(Kendo.Mvc.UI.SliderTickPlacement)
 Sets a value indicating how to display the tick marks on the range slider.
 
-### Min(`0)
+### Min()
 Sets the minimum value of the range slider.
 
-### Max(`0)
+### Max()
 Sets the maximum value of the range slider.
 
-### SmallStep(`0)
+### SmallStep()
 Sets the step with which the range slider value will change.
 
-### LargeStep(`0)
+### LargeStep()
 Sets the delta with which the value will change when user click on the track.
 
 ### Tooltip(System.Boolean)

@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.UploadBuilder
 
-Defines the fluent interface for configuring the  component.
+Defines the fluent interface for configuring the Upload component.
 
 ## Methods
 

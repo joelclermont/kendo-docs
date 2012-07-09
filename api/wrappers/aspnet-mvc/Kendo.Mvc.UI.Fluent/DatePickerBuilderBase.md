@@ -6,9 +6,43 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.DatePickerBuilderBase
 
-Defines the fluent interface for configuring the  component.
+Defines the fluent interface for configuring the DatePickerBase component.
 
 ## Methods
+
+### Animation(System.Boolean)
+Use to enable or disable animation of the popup element.
+
+#### Example
+    <%= Html.Kendo().DatePicker()
+        	           .Name("DatePicker")
+        	           .Animation(false) //toggle effect
+        	%>
+
+#### Parameters
+
+##### enable `System.Boolean`
+The boolean value.
+
+### Animation(System.Action{Kendo.Mvc.UI.Fluent.PopupAnimationBuilder})
+Configures the animation effects of the widget.
+
+#### Example
+    <%= Html.Kendo().DatePicker()
+        	           .Name("DatePicker")
+        	           .Animation(animation =>
+        	           {
+        		            animation.Open(open =>
+        		            {
+        		                open.SlideIn(SlideDirection.Down);
+        		            }
+        	           })
+        	%>
+
+#### Parameters
+
+##### animationAction `System.Action{Kendo.Mvc.UI.Fluent.PopupAnimationBuilder}`
+The action which configures the animation effects.
 
 ### Events(System.Action{Kendo.Mvc.UI.Fluent.DatePickerEventBuilderBase})
 Configures the client-side events.
@@ -28,6 +62,9 @@ The client events action.
 
 ### Format(System.String)
 Sets the date format, which will be used to parse and format the machine date.
+
+### ParseFormats(System.Collections.Generic.IEnumerable{System.String})
+Specifies the formats, which are used to parse the value set with value() method or by direct input.
 
 ### Enable(System.Boolean)
 Enables or disables the picker.

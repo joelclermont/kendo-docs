@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.TreeViewBuilder
 
-Defines the fluent interface for configuring the  component.
+Defines the fluent interface for configuring the TreeView component.
 
 ## Methods
 
@@ -114,7 +114,7 @@ The data source.
 ##### itemDataBound `System.Action{Kendo.Mvc.UI.TreeViewItem`
 The action executed for every data bound item.
 
-### BindTo(System.Collections.IEnumerable,System.Action{Kendo.Mvc.UI.NavigationBindingFactory{Kendo.Mvc.UI.TreeViewItem}})
+### BindTo(System.Collections.IEnumerable,System.Action{Kendo.Mvc.UI.Fluent.NavigationBindingFactory{Kendo.Mvc.UI.TreeViewItem}})
 Binds the TreeView to a list of objects. The TreeView will create a hierarchy of items using the specified mappings.
 
 #### Example
@@ -137,7 +137,7 @@ Binds the TreeView to a list of objects. The TreeView will create a hierarchy of
 ##### dataSource `System.Collections.IEnumerable`
 The data source.
 
-##### factoryAction `System.Action{Kendo.Mvc.UI.NavigationBindingFactory{Kendo.Mvc.UI.TreeViewItem}}`
+##### factoryAction `System.Action{Kendo.Mvc.UI.Fluent.NavigationBindingFactory{Kendo.Mvc.UI.TreeViewItem}}`
 The action which will configure the mappings
 
 ### ItemAction(System.Action{Kendo.Mvc.UI.TreeViewItem})
@@ -172,6 +172,40 @@ Select item depending on the current URL.
 
 ##### value `System.Boolean`
 If true the item will be highlighted.
+
+### Animation(System.Boolean)
+Use to enable or disable animation of the TreeView.
+
+#### Example
+    <%= Html.Kendo().TreeView()
+        	           .Name("TreeView")
+        	           .Animation(false) //toggle effect
+        	%>
+
+#### Parameters
+
+##### enable `System.Boolean`
+The boolean value.
+
+### Animation(System.Action{Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder})
+Configures the animation effects of the widget.
+
+#### Example
+    <%= Html.Kendo().TreeView()
+        	           .Name("TreeView")
+        	           .Animation(animation =>
+        	           {
+        		            animation.Expand(open =>
+        		            {
+        		                open.SlideIn(SlideDirection.Down);
+        		            }
+        	           })
+        	%>
+
+#### Parameters
+
+##### animationAction `System.Action{Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder}`
+The action which configures the animation effects.
 
 ### ExpandAll(System.Boolean)
 Expand all the items.
@@ -306,4 +340,4 @@ Configure the DataSource of the component
 #### Parameters
 
 ##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder}`
-The action that configures the .
+The action that configures the ReadOnlyDataSource.

@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.WindowBuilder
 
+Defines the fluent interface for configuring the Window component.
+
 ## Methods
 
 ### Title(System.String)

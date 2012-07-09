@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder
 
-Defines the fluent interface for configuring
+Defines the fluent interface for configuring Navigatable
 
 ## Methods
 

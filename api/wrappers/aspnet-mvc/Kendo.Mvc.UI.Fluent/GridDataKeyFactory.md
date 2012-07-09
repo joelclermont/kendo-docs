@@ -6,11 +6,11 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GridDataKeyFactory
 
-Creates data key for the .
+Creates data key for the !:Grid{T}.
 
 ## Methods
 
-### Add``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Add`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
 Defines a data key.
 
 #### Parameters

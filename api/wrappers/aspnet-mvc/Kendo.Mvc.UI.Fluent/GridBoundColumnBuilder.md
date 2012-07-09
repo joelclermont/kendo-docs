@@ -84,7 +84,7 @@ Enables or disables HTML encoding the data of the column. All bound columns are 
         .Columns(columns => columns.Bound(o => o.OrderDate).Encoded(false))
         %>
 
-### Template(System.Action{`0})
+### Template(System.Action{})
 Sets the template for the column.
 
 #### Example
@@ -106,8 +106,40 @@ Sets the template for the column.
 
 #### Parameters
 
-##### templateAction `System.Action{`0}`
+##### templateAction `System.Action{}`
 The action defining the template.
+
+### Template(System.Func{,System.Object})
+Sets the template for the column.
+
+#### Parameters
+
+##### templateAction `System.Func{`
+The action defining the template.
+
+### ClientTemplate(System.String)
+Sets the client template for the column.
+
+#### Parameters
+
+##### value `System.String`
+The template
+
+### ClientGroupHeaderTemplate(System.String)
+Sets the client group template for the column.
+
+#### Parameters
+
+##### value `System.String`
+The template
+
+### ClientGroupFooterTemplate(System.String)
+Sets the client group footer template for the column.
+
+#### Parameters
+
+##### value `System.String`
+The template
 
 ### FooterTemplate(System.Action{Kendo.Mvc.UI.GridAggregateResult})
 Sets the footer template for the column.

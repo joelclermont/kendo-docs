@@ -6,11 +6,11 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.SliderBuilder
 
-Defines the fluent interface for configuring the component.
+Defines the fluent interface for configuring the !:Slider{T}component.
 
 ## Methods
 
-### Value(System.Nullable{`0})
+### Value(System.Nullable{})
 Sets the value of the slider.
 
 ### IncreaseButtonTitle(System.String)
@@ -28,16 +28,16 @@ Sets orientation of the slider.
 ### TickPlacement(Kendo.Mvc.UI.SliderTickPlacement)
 Sets a value indicating how to display the tick marks on the slider.
 
-### Min(`0)
+### Min()
 Sets the minimum value of the slider.
 
-### Max(`0)
+### Max()
 Sets the maximum value of the slider.
 
-### SmallStep(`0)
+### SmallStep()
 Sets the step with which the slider value will change.
 
-### LargeStep(`0)
+### LargeStep()
 Sets the delta with which the value will change when user click on the slider.
 
 ### Tooltip(System.Boolean)

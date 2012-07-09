@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder
 
-A builder class for
+A builder class for IUploadAsyncSettings
 
 ## Methods
 

@@ -6,11 +6,11 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder
 
-Configures the category axis for the .
+Configures the category axis for the !:Chart{TModel}.
 
 ## Methods
 
-### Categories``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Categories`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
 Defines bound categories.
 
 #### Parameters

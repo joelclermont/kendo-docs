@@ -6,12 +6,12 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder
 
-Defines the fluent interface for configuring .
+Defines the fluent interface for configuring ChartLine.
 
 ## Methods
 
 ### Hours(System.String)
-Sets the date format when the base date unit is
+Sets the date format when the base date unit is Hours
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -32,7 +32,7 @@ Sets the date format when the base date unit is
 The date format.
 
 ### Days(System.String)
-Sets the date format when the base date unit is
+Sets the date format when the base date unit is Days
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -53,7 +53,7 @@ Sets the date format when the base date unit is
 The date format.
 
 ### Months(System.String)
-Sets the date format when the base date unit is
+Sets the date format when the base date unit is Months
 
 #### Example
     <%= Html.Kendo().Chart()
@@ -74,7 +74,7 @@ Sets the date format when the base date unit is
 The date format.
 
 ### Years(System.String)
-Sets the date format when the base date unit is
+Sets the date format when the base date unit is Years
 
 #### Example
     <%= Html.Kendo().Chart()

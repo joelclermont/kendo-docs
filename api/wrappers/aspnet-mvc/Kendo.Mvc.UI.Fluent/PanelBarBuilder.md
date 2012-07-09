@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.PanelBarBuilder
 
-Defines the fluent interface for configuring the  component.
+Defines the fluent interface for configuring the PanelBar component.
 
 ## Methods
 
@@ -97,7 +97,7 @@ The data source.
 ##### itemDataBound `System.Action{Kendo.Mvc.UI.PanelBarItem`
 The action executed for every data bound item.
 
-### BindTo(System.Collections.IEnumerable,System.Action{Kendo.Mvc.UI.NavigationBindingFactory{Kendo.Mvc.UI.PanelBarItem}})
+### BindTo(System.Collections.IEnumerable,System.Action{Kendo.Mvc.UI.Fluent.NavigationBindingFactory{Kendo.Mvc.UI.PanelBarItem}})
 Binds the panelbar to a list of objects. The panelbar will create a hierarchy of items using the specified mappings.
 
 #### Example
@@ -120,7 +120,7 @@ Binds the panelbar to a list of objects. The panelbar will create a hierarchy of
 ##### dataSource `System.Collections.IEnumerable`
 The data source.
 
-##### factoryAction `System.Action{Kendo.Mvc.UI.NavigationBindingFactory{Kendo.Mvc.UI.PanelBarItem}}`
+##### factoryAction `System.Action{Kendo.Mvc.UI.Fluent.NavigationBindingFactory{Kendo.Mvc.UI.PanelBarItem}}`
 The action which will configure the mappings
 
 ### Animation(System.Boolean)

@@ -152,6 +152,34 @@ Makes the column visible or not. By default all columns are visible. Invisible c
         .Columns(columns => columns.Bound(o => o.OrderID).Visible((bool)ViewData["visible"]))
         %>
 
+### Hidden(System.Boolean)
+Makes the column hidden or not. By default all columns are not hidden. Hidden columns are rendered in the output HTML but are hidden.
+
+#### Example
+    <%= Html.Kendo().Grid(Model)
+        .Name("Grid")
+        .Columns(columns => columns.Bound(o => o.OrderID).Hidden((bool)ViewData["hidden"]))
+        %>
+
+### Hidden
+Hides a column. By default all columns are not hidden. Hidden columns are rendered in the output HTML but are hidden.
+
+#### Example
+    <%= Html.Kendo().Grid(Model)
+        .Name("Grid")
+        .Columns(columns => columns.Bound(o => o.OrderID).Hidden())
+        %>
+
+### IncludeInMenu(System.Boolean)
+Specifys whether the columns should be included in column header menu. By default all columns are included.
+            The column also need to have a Title set in order to be included in the menu.
+
+#### Example
+    <%= Html.Kendo().Grid(Model)
+        .Name("Grid")
+        .Columns(columns => columns.Bound(o => o.OrderID).IncludeInMenu((bool)ViewData["hidden"]))
+        %>
+
 ### HeaderTemplate(System.Action)
 Sets the header template for the column.
 

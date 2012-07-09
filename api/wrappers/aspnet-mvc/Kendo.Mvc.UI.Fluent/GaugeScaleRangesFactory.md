@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GaugeScaleRangesFactory
 
-Creates scale ranges for the .
+Creates scale ranges for the !:GaugeScaleRangesFactory{TScale, T}.
 
 ## Methods
 

@@ -6,11 +6,11 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ListViewBuilder
 
-Defines the fluent interface for configuring the .
+Defines the fluent interface for configuring the !:ListView{T}.
 
 ## Methods
 
-### BindTo(System.Collections.Generic.IEnumerable{`0})
+### BindTo(System.Collections.Generic.IEnumerable{})
 Binds the ListView to a list of objects
 
 #### Example
@@ -21,7 +21,7 @@ Binds the ListView to a list of objects
 
 #### Parameters
 
-##### dataSource `System.Collections.Generic.IEnumerable{`0}`
+##### dataSource `System.Collections.Generic.IEnumerable{}`
 The data source.
 
 ### BindTo(System.Collections.IEnumerable)
@@ -122,7 +122,7 @@ Specifies ListView wrapper element tag name.
         .TagName("div")
         %>
 
-### Editable(System.Action{Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder{`0}})
+### Editable(System.Action{Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder{}})
 Configures the ListView editing settings.
 
 #### Example

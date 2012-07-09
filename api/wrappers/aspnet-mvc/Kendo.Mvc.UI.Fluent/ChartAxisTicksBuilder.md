@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder
 
-Defines the fluent interface for configuring .
+Defines the fluent interface for configuring ChartAxisTicks.
 
 ## Methods
 

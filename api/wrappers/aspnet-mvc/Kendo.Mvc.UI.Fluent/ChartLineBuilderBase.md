@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartLineBuilderBase
 
-Defines the fluent interface for configuring .
+Defines the fluent interface for configuring ChartLine.
 
 ## Methods
 

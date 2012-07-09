@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartBuilder
 
-Defines the fluent interface for configuring the  component.
+Defines the fluent interface for configuring the !:Chart{T} component.
 
 ## Methods
 
@@ -124,7 +124,7 @@ Configures the legend.
 ##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartLegendBuilder}`
 The configuration action.
 
-### Series(System.Action{Kendo.Mvc.UI.Fluent.ChartSeriesFactory{`0}})
+### Series(System.Action{Kendo.Mvc.UI.Fluent.ChartSeriesFactory{}})
 Defines the chart series.
 
 #### Example
@@ -138,10 +138,10 @@ Defines the chart series.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartSeriesFactory{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartSeriesFactory{}}`
 The add action.
 
-### SeriesDefaults(System.Action{Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder{`0}})
+### SeriesDefaults(System.Action{Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder{}})
 Defines the options for all chart series of the specified type.
 
 #### Example
@@ -152,10 +152,10 @@ Defines the options for all chart series of the specified type.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder{}}`
 The configurator.
 
-### AxisDefaults(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder{`0}})
+### AxisDefaults(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder{}})
 Defines the options for all chart axes of the specified type.
 
 #### Example
@@ -166,10 +166,10 @@ Defines the options for all chart axes of the specified type.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder{}}`
 The configurator.
 
-### CategoryAxis(System.Action{Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder{`0}})
+### CategoryAxis(System.Action{Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder{}})
 Configures the category axis
 
 #### Example
@@ -182,10 +182,10 @@ Configures the category axis
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder{}}`
 The configurator
 
-### ValueAxis(System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{`0}})
+### ValueAxis(System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{}})
 Defines value axis options
 
 #### Example
@@ -196,10 +196,10 @@ Defines value axis options
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{}}`
 The configurator
 
-### XAxis(System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{`0}})
+### XAxis(System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{}})
 Defines X-axis options for scatter charts
 
 #### Example
@@ -210,10 +210,10 @@ Defines X-axis options for scatter charts
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{}}`
 The configurator
 
-### YAxis(System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{`0}})
+### YAxis(System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{}})
 Configures Y-axis options for scatter charts.
 
 #### Example
@@ -224,10 +224,10 @@ Configures Y-axis options for scatter charts.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartValueAxisFactory{}}`
 The configurator
 
-### DataSource(System.Action{Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder{`0}})
+### DataSource(System.Action{Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder{}})
 Data Source configuration
 
 #### Example
@@ -241,7 +241,7 @@ Data Source configuration
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder{`0}}`
+##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder{}}`
 Use the configurator to set different data binding options.
 
 ### SeriesColors(System.Collections.Generic.IEnumerable{System.String})

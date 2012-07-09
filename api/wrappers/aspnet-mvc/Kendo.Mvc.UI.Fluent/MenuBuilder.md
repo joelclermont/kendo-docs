@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.MenuBuilder
 
-Defines the fluent interface for configuring the  component.
+Defines the fluent interface for configuring the Menu component.
 
 ## Methods
 
@@ -139,7 +139,7 @@ The data source.
 ##### itemDataBound `System.Action{Kendo.Mvc.UI.MenuItem`
 The action executed for every data bound item.
 
-### BindTo(System.Collections.IEnumerable,System.Action{Kendo.Mvc.UI.NavigationBindingFactory{Kendo.Mvc.UI.MenuItem}})
+### BindTo(System.Collections.IEnumerable,System.Action{Kendo.Mvc.UI.Fluent.NavigationBindingFactory{Kendo.Mvc.UI.MenuItem}})
 Binds the menu to a list of objects. The menu will create a hierarchy of items using the specified mappings.
 
 #### Example
@@ -162,7 +162,7 @@ Binds the menu to a list of objects. The menu will create a hierarchy of items u
 ##### dataSource `System.Collections.IEnumerable`
 The data source.
 
-##### factoryAction `System.Action{Kendo.Mvc.UI.NavigationBindingFactory{Kendo.Mvc.UI.MenuItem}}`
+##### factoryAction `System.Action{Kendo.Mvc.UI.Fluent.NavigationBindingFactory{Kendo.Mvc.UI.MenuItem}}`
 The action which will configure the mappings
 
 ### ItemAction(System.Action{Kendo.Mvc.UI.MenuItem})

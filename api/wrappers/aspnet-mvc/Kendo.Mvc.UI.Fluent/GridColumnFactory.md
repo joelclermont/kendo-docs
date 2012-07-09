@@ -6,11 +6,11 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GridColumnFactory
 
-Creates columns for the .
+Creates columns for the !:Grid{TModel}.
 
 ## Methods
 
-### Bound``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Bound`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
 Defines a bound column.
 
 #### Parameters
@@ -23,14 +23,14 @@ Defines a bound column.
 ### Bound(System.Type,System.String)
 Defines a bound column.
 
-### ForeignKey``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Collections.IEnumerable,System.String,System.String)
+### ForeignKey`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Collections.IEnumerable,System.String,System.String)
 Defines a foreign key column.
 
 #### Parameters
 
 ##### expression `System.Linq.Expressions.Expression{System.Func{`0`
 
-### ForeignKey``1(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Web.Mvc.SelectList)
+### ForeignKey`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Web.Mvc.SelectList)
 Defines a foreign key column.
 
 #### Parameters
@@ -45,24 +45,24 @@ Determines if columns should be automatically generated.
 ##### shouldGenerate `System.Boolean`
 If true columns should be generated, otherwise false.
 
-### AutoGenerate(System.Action{Kendo.Mvc.UI.GridColumnBase{`0}})
+### AutoGenerate(System.Action{Kendo.Mvc.UI.GridColumnBase{}})
 Determines if columns should be automatically generated.
 
 #### Parameters
 
-##### columnAction `System.Action{Kendo.Mvc.UI.GridColumnBase{`0}}`
+##### columnAction `System.Action{Kendo.Mvc.UI.GridColumnBase{}}`
 Action which will be executed for each generated column.
 
-### Template(System.Action{`0})
+### Template(System.Action{})
 Defines a template column.
 
 #### Parameters
 
-##### templateAction `System.Action{`0}`
+##### templateAction `System.Action{}`
 
-### Command(System.Action{Kendo.Mvc.UI.Fluent.GridActionCommandFactory{`0}})
+### Command(System.Action{Kendo.Mvc.UI.Fluent.GridActionCommandFactory{}})
 Defines a command column.
 
 #### Parameters
 
-##### commandAction `System.Action{Kendo.Mvc.UI.Fluent.GridActionCommandFactory{`0}}`
+##### commandAction `System.Action{Kendo.Mvc.UI.Fluent.GridActionCommandFactory{}}`

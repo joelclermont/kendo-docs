@@ -24,6 +24,28 @@ Sets the series title displayed in the legend.
 ##### text `System.String`
 The title.
 
+### GroupNameTemplate(System.String)
+Sets the name template for auto-generated series when binding to grouped data.
+
+#### Example
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .DataSource(dataSource => dataSource
+        .Read(read => read.Action("_StockData", "Scatter_Charts"))
+        .Group(group => group.Add(model => model.Symbol)))
+        )
+        .Series(series => series.Bar(s => s.Sales)
+        .Name("Sales")
+        .GroupNameTemplate("#= series.name # for #= group.field # #= group.value #")
+        )
+        .Render();
+        %>
+
+#### Parameters
+
+##### groupNameTemplate `System.String`
+The name template for auto-generated series when binding to grouped data.
+
 ### Opacity(System.Double)
 Sets the series opacity.
 

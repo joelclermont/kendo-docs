@@ -6,6 +6,8 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GridToolBarSaveCommandBuilder
 
+Defines the fluent interface for configuring toolbar save command.
+
 ## Methods
 
 ### SaveText(System.String)

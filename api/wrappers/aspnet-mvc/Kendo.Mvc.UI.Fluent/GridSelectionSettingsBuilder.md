@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GridSelectionSettingsBuilder
 
-Defines the fluent interface for configuring
+Defines the fluent interface for configuring Selectable
 
 ## Methods
 

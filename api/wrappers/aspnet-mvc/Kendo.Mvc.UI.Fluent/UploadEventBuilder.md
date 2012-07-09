@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.UploadEventBuilder
 
-Defines the fluent interface for configuring the .
+Defines the fluent interface for configuring the Events.
 
 ## Methods
 
@@ -253,4 +253,39 @@ Defines the name of the JavaScript function that will handle the the Remove clie
 #### Parameters
 
 ##### onRemoveHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+### Progress(System.Func{System.Object,System.Object})
+Defines the inline handler of the Progress client-side event
+
+#### Example
+    <% Html.Kendo().Upload()
+        .Name("Upload")
+        .Events(events => events.Progress(
+        @<text>
+        function(e) {
+        //event handling code
+        }
+        </text>
+        ))
+        .Render();
+        %>
+
+#### Parameters
+
+##### inlineCodeBlock `System.Func{System.Object`
+The handler code wrapped in a text tag (Razor syntax).
+
+### Progress(System.String)
+Defines the name of the JavaScript function that will handle the the Progress client-side event.
+
+#### Example
+    <%= Html.Kendo().Upload()
+        .Name("Upload")
+        .Events(events => events.Progress("onProgress"))
+        %>
+
+#### Parameters
+
+##### onProgressHandlerName `System.String`
 The name of the JavaScript function that will handle the event.

@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder
 
-Defines the fluent interface for configuring the .
+Defines the fluent interface for configuring the CalendarSelectionSettings.
 
 ## Methods
 
@@ -16,7 +16,7 @@ Defines list of dates. This list determines which dates to be rendered with acti
 #### Parameters
 
 ##### dates `System.Collections.Generic.IList{System.DateTime}`
-List of  objects
+List of DateTime objects
 
 ### Action(System.Web.Routing.RouteValueDictionary)
 Sets the action to which the date should navigate

@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.UploadMessagesBuilder
 
-A builder class for
+A builder class for UploadMessages
 
 ## Methods
 

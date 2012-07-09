@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.TreeViewItemFactory
 
-Creates items for the .
+Creates items for the TreeView.
 
 ## Methods
 

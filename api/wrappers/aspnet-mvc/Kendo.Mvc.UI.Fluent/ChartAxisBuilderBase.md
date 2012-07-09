@@ -190,7 +190,7 @@ Sets the visibility of numeric axis chart labels.
 ##### visible `System.Boolean`
 The visibility. The default value is false.
 
-### PlotBands(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory{`0,`1}})
+### PlotBands(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory{,`1}})
 Defines the plot bands items.
 
 #### Example
@@ -205,7 +205,7 @@ Defines the plot bands items.
 
 #### Parameters
 
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory{`0`
+##### addAction `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory{`
 The add action.
 
 ### Title(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder})

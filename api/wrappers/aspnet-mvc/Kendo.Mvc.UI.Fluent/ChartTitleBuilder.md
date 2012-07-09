@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ChartTitleBuilder
 
-Defines the fluent interface for configuring the .
+Defines the fluent interface for configuring the ChartTitle.
 
 ## Methods
 
