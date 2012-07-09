@@ -107,7 +107,7 @@ be availble in your views.
                  </pages>
              </system.web.webPages.razor>
 
- 7.  Use any Kendo UI for ASP.NET MVC HtmlHelper extension:
+7.  Use any Kendo UI for ASP.NET MVC HtmlHelper extension:
     
     * WebForms
 
