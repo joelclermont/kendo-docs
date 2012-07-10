@@ -5,9 +5,11 @@ tags: Tutorial
 publish: true
 ---
 
-In [part one][1] of this two part tutorial, we went over how to get up
+In Part 1 of this two part tutorial, we went over how to get up
 and running with PHP, how to choose and IDE, and how to get some
 fake data if you need it.
+
+[### Read Part 1]()
 
 We built a simple SPA (single page application) which displays a list of sales
 employees and each employee can be expanded to show the territories they are
@@ -33,7 +35,7 @@ Not terribly complex requirements to implement, but this will allow us to work
 through how we can use the **DataSource** and **models** along with editable
 grids.
 
-### Requirement 1 – Update The Last Name
+### Requirement 1: Update The Last Name
 
 The first thing that we should do is tell the grid of employees that it is
 editable.  This is done by setting **editable: true.**
@@ -110,7 +112,7 @@ become and editable textbox.  However, if you click on the First Name, nothing
 happens because you can’t edit it.  Go ahead and try to blank out the Last
 Name and press enter.  You get a validation message.
 
-[![9][2]][3]
+[Validation Message](images/Part-_7E9D-9_2.png)
 
 For more information on all the things you can do with
 validation rules, make sure you check out the Kendo UI Validation Demos.
@@ -318,9 +320,9 @@ can listen to the **error** event on the DataSource **update** method.
 
 #### Sample Failure…
 
-[![10][5]][6]
+[Sample Failure](images/Part-_7E9D-10_2.png)
 
-### Requirement 2 – Add Sales Territories
+### Requirement 2: Add Sales Territories
 
 In order to enable our users to add sales territories, we need to give the
 details grid a model as well and specify it’s structure.  We also need to
@@ -486,7 +488,7 @@ and value fields are.
 Now if you view the page, we have a nifty drop down you can either type in, or
 select from.  Oh, and we also switched the theme to **default** just for fun!
 
-[![11][7]][8]
+[Nifty Drop Down](images/Part-_7E9D-11_4.png)
 
 Now we have a ComboBox that returns only the territories that
 are not currently assigned to this person.  Now let’s add the event for
@@ -598,28 +600,9 @@ No need to add the **EmployeeID** or **TerritoryID** to the model definition.
 It’s smart enough to pick those up on its own!
 
 It is highly recommended that you use some sort of MVC framework with your PHP.
-[Zend][10] is popular and [CodeIgniter][11] looks promising. It really takes some of the headache out of the manual things
+[Zend](http://www.zend.com/en/) is popular and [CodeIgniter](http://codeigniter.com/) looks promising. It really takes some of the headache out of the manual things
 that we did here.
 
-
-   [2]: images/Part-_7E9D-9_thumb.png (9)
-
-   [3]: images/Part-_7E9D-9_2.png
-
    [4]: http://php.net/manual/en/pdo.prepared-statements.php(http://php.net/manual/en/pdo.prepared-statements.php)
-
-   [5]: images/Part-_7E9D-10_thumb.png (10)
-
-   [6]: images/Part-_7E9D-10_2.png
-
-   [7]: images/Part-_7E9D-11_thumb_1.png (11)
-
-   [8]: images/Part-_7E9D-11_4.png
-
-   [9]: http://www.kendoui.com/Libraries/Sample_Code/KendoUI_2.sflb.ashx
-
-   [10]: http://www.zend.com/en/
-
-   [11]: http://codeigniter.com/
 
 
