@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartPieLabelsAlign
+title:ChartPieLabelsAlign
 slug:aspnetmvc-kendo.mvc.ui.chartpielabelsalign
 publish:true
 ---

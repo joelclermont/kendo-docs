@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartScatterLineMissingValues
+title:ChartScatterLineMissingValues
 slug:aspnetmvc-kendo.mvc.ui.chartscatterlinemissingvalues
 publish:true
 ---

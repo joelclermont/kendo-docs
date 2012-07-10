@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ComboBoxBuilder
+title:ComboBoxBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.comboboxbuilder
 publish:true
 ---

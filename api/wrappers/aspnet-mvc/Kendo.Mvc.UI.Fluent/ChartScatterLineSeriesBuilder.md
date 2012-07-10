@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartScatterLineSeriesBuilder
+title:ChartScatterLineSeriesBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartscatterlineseriesbuilder
 publish:true
 ---

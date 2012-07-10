@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory
+title:GridToolBarCommandFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridtoolbarcommandfactory
 publish:true
 ---
@@ -24,7 +24,7 @@ Sets toolbar template.
 
 #### Parameters
 
-##### templateAction `System.Action`
+##### template `System.Action`
 The action defining the template.
 
 ### Template(System.String)

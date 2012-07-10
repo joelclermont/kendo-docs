@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartBarSeriesOverlay
+title:ChartBarSeriesOverlay
 slug:aspnetmvc-kendo.mvc.ui.chartbarseriesoverlay
 publish:true
 ---

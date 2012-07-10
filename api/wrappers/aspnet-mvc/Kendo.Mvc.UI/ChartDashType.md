@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartDashType
+title:ChartDashType
 slug:aspnetmvc-kendo.mvc.ui.chartdashtype
 publish:true
 ---

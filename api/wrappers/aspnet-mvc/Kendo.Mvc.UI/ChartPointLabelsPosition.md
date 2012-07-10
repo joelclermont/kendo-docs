@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartPointLabelsPosition
+title:ChartPointLabelsPosition
 slug:aspnetmvc-kendo.mvc.ui.chartpointlabelsposition
 publish:true
 ---

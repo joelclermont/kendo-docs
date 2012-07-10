@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder
+title:ChartNegativeValueSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartnegativevaluesettingsbuilder
 publish:true
 ---

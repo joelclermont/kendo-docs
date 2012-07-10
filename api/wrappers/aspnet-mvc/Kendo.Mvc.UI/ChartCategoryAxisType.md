@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartCategoryAxisType
+title:ChartCategoryAxisType
 slug:aspnetmvc-kendo.mvc.ui.chartcategoryaxistype
 publish:true
 ---

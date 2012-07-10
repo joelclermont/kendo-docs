@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.TreeViewBindingSettingsBuilder
+title:TreeViewBindingSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.treeviewbindingsettingsbuilder
 publish:true
 ---

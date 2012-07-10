@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder
+title:GaugeRadialScaleLabelsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gaugeradialscalelabelsbuilder
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder
+title:ListViewEditingSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.listvieweditingsettingsbuilder
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder
+title:GridScrollSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridscrollsettingsbuilder
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.UploadMessagesBuilder
+title:UploadMessagesBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.uploadmessagesbuilder
 publish:true
 ---

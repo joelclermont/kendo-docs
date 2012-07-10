@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DataSourceGroupDescriptorFactory
+title:DataSourceGroupDescriptorFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.datasourcegroupdescriptorfactory
 publish:true
 ---

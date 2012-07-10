@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DropDownListItemFactory
+title:DropDownListItemFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.dropdownlistitemfactory
 publish:true
 ---

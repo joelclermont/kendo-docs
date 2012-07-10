@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ColumnMenuMessagesBuilder
+title:ColumnMenuMessagesBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.columnmenumessagesbuilder
 publish:true
 ---

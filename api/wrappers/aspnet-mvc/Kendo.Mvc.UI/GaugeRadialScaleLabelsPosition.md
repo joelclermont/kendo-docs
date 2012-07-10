@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.GaugeRadialScaleLabelsPosition
+title:GaugeRadialScaleLabelsPosition
 slug:aspnetmvc-kendo.mvc.ui.gaugeradialscalelabelsposition
 publish:true
 ---

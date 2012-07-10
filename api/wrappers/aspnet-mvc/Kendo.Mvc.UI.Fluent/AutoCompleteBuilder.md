@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.AutoCompleteBuilder
+title:AutoCompleteBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.autocompletebuilder
 publish:true
 ---

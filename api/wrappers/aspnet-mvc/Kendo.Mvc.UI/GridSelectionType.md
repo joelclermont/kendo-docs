@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.GridSelectionType
+title:GridSelectionType
 slug:aspnetmvc-kendo.mvc.ui.gridselectiontype
 publish:true
 ---

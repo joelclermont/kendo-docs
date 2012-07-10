@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.PlotAreaBuilder
+title:PlotAreaBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.plotareabuilder
 publish:true
 ---

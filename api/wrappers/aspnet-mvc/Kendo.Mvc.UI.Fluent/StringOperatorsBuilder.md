@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.StringOperatorsBuilder
+title:StringOperatorsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.stringoperatorsbuilder
 publish:true
 ---

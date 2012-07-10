@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.PageableBuilder
+title:PageableBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.pageablebuilder
 publish:true
 ---

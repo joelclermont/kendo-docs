@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.MenuBuilder
+title:MenuBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.menubuilder
 publish:true
 ---

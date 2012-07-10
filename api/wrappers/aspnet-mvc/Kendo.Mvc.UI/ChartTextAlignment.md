@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartTextAlignment
+title:ChartTextAlignment
 slug:aspnetmvc-kendo.mvc.ui.charttextalignment
 publish:true
 ---

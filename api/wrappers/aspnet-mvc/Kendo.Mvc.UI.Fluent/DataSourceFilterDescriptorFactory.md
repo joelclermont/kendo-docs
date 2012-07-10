@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DataSourceFilterDescriptorFactory
+title:DataSourceFilterDescriptorFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.datasourcefilterdescriptorfactory
 publish:true
 ---

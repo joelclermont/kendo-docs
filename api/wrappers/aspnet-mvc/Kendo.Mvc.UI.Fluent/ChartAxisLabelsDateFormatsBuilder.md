@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder
+title:ChartAxisLabelsDateFormatsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartaxislabelsdateformatsbuilder
 publish:true
 ---

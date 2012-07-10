@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder
+title:ChartDateCategoryAxisBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartdatecategoryaxisbuilder
 publish:true
 ---

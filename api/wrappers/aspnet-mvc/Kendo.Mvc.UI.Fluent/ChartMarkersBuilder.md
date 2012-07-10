@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartMarkersBuilder
+title:ChartMarkersBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartmarkersbuilder
 publish:true
 ---

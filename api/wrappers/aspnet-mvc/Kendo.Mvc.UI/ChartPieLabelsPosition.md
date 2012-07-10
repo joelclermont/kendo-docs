@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartPieLabelsPosition
+title:ChartPieLabelsPosition
 slug:aspnetmvc-kendo.mvc.ui.chartpielabelsposition
 publish:true
 ---

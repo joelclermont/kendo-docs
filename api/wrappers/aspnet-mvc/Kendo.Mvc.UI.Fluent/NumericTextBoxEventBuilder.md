@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder
+title:NumericTextBoxEventBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.numerictextboxeventbuilder
 publish:true
 ---

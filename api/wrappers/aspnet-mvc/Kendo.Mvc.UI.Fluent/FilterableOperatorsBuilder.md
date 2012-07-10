@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.FilterableOperatorsBuilder
+title:FilterableOperatorsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.filterableoperatorsbuilder
 publish:true
 ---

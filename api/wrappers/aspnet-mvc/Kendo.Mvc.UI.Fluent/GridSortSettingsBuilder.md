@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder
+title:GridSortSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridsortsettingsbuilder
 publish:true
 ---

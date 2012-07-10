@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartTitlePosition
+title:ChartTitlePosition
 slug:aspnetmvc-kendo.mvc.ui.charttitleposition
 publish:true
 ---

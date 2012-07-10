@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridSelectionSettingsBuilder
+title:GridSelectionSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridselectionsettingsbuilder
 publish:true
 ---

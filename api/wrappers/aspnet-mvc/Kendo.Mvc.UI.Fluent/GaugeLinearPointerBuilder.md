@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder
+title:GaugeLinearPointerBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gaugelinearpointerbuilder
 publish:true
 ---

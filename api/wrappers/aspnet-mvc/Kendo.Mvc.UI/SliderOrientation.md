@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.SliderOrientation
+title:SliderOrientation
 slug:aspnetmvc-kendo.mvc.ui.sliderorientation
 publish:true
 ---

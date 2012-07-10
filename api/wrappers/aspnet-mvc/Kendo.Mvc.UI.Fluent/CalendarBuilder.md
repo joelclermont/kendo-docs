@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.CalendarBuilder
+title:CalendarBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.calendarbuilder
 publish:true
 ---

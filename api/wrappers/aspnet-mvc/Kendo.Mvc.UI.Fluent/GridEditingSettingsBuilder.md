@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder
+title:GridEditingSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.grideditingsettingsbuilder
 publish:true
 ---

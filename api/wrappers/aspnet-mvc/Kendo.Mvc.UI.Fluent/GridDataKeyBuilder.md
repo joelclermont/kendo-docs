@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridDataKeyBuilder
+title:GridDataKeyBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.griddatakeybuilder
 publish:true
 ---

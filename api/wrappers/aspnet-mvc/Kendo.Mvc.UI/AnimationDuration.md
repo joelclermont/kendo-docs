@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.AnimationDuration
+title:AnimationDuration
 slug:aspnetmvc-kendo.mvc.ui.animationduration
 publish:true
 ---

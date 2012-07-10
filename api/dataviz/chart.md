@@ -67,7 +67,7 @@ The chart can then be given a title by specifying the "text" property of the "ti
         }
     });
 
-### 
+###
 Data Binding
 
 
@@ -110,7 +110,7 @@ You specify the labeling for the series in the categoryAxis property.
 
 ![Column Chart with categories](http://www.kendoui.com/Libraries/Documentation/chart-column-categories.sflb.ashx)</img>
 
-### 
+###
 Next Steps
 
 
@@ -613,7 +613,7 @@ on the chart.
 ### categoryAxis.minorGridLines `Object`
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
-the body of the chart. 
+the body of the chart.
 
 Note that minor grid lines are not visible by default, therefore none of these settings will take effect with the minor grid
 lines visibility being set to **true**
@@ -638,7 +638,7 @@ lines visibility being set to **true**
 ### categoryAxis.minorGridLines.color `String`*(default: "black")*
 
  The color of the lines. Any valid CSS color string will work here, including hex and
-rgb. 
+rgb.
 
 Note that this setting has no effect if the visibility of the minor
 grid lines is not set to **true**.
@@ -682,7 +682,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### categoryAxis.minorGridLines.width `Number`*(default: 1> The width of the lines. <p)*
 
- The width of the lines. 
+ The width of the lines.
 
 Note that this setting has no effect if the visibility of the minor
 grid lines is not set to **true**.
@@ -828,7 +828,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 #### Example
 
-    
+
 
 ### categoryAxis.title.border.width `Number`*(default: 0)*
 
@@ -955,7 +955,7 @@ Discrete category axis.
 
 Specialized axis for displaying chronological data.
 
-### categoryAxis.type: "Date" 
+### categoryAxis.type: "Date"
 
 Properties specific to the date-time value axis.
 
@@ -1093,7 +1093,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 5px (by default)
     margin: { top: 1, left: 1 }
@@ -1121,14 +1121,14 @@ DataSource configuration or instance.
             field: "year"
         }
     });
-    
+
     // Alternative configuration
     var dataSource = new kendo.data.DataSource({
         transport: {
              read: "spain-electricity.json"
         }
     });
-    
+
     $("#chart").kendoChart({
         dataSource: dataSource,
         series: [{
@@ -1227,7 +1227,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 #### Example
 
-    
+
 
 ### legend.border.width `Number`*(default: 0)*
 
@@ -1245,6 +1245,16 @@ Any valid CSS color string will work here, including hex and rgb.
 ### legend.labels.font `String`*(default: 12px Arial,Helvetica,sans-serif)*
 
  The font style of the labels.
+
+### legend.labels.tempate `String`
+
+The template of the labels.
+Template variables:
+*   **text** - the text the legend item
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array. (only for donut and pie charts)
+
 
 ### legend.margin `Number | Object`*(default: 10)*
 
@@ -1425,7 +1435,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 5px (by default)
     margin: { top: 1, left: 1 }
@@ -1493,7 +1503,7 @@ Template variables:
 
 The series name visible in the legend.
 
-### series.type="area" 
+### series.type="area"
 
 Available options for area series:
 
@@ -1610,7 +1620,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
@@ -1623,7 +1633,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -1824,7 +1834,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -1867,7 +1877,7 @@ Template variables:
 
  A value indicating if the tooltip should be displayed.
 
-### series.type="bar" 
+### series.type="bar"
 
 Available options for bar series:
 
@@ -2041,7 +2051,7 @@ The format of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 2px (by default)
     margin: { top: 1, left: 1 }
@@ -2054,7 +2064,7 @@ The format of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 2px (by default)
     padding: { top: 1, left: 1 }
@@ -2203,7 +2213,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -2246,7 +2256,7 @@ Template variables:
 
  A value indicating if the tooltip should be displayed.
 
-### series.type="bubble" 
+### series.type="bubble"
 
 Available options for bubble series:
 
@@ -2278,7 +2288,7 @@ The data field containing the bubble color.
 
 Array of data items (optional).
 The bubble chart can be bound to an array of arrays with three numbers (X, Y and Size).
- 
+
 
 #### Example
 
@@ -2368,7 +2378,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
@@ -2381,7 +2391,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -2530,7 +2540,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -2592,12 +2602,12 @@ The data field containing the bubble x value.
 
 The data field containing the bubble y value.
 
-### series.type="column" 
+### series.type="column"
 
 Column series accepts the same parameters as bar series.
 The difference is that column series are rendered on a horizontal category axis.
 
-### series.type="donut" 
+### series.type="donut"
 
 Available options for donut series:
 
@@ -2696,7 +2706,7 @@ A boolean value indicating whether to explode the sector(available only for the 
 #### *"visibleInLegend"*
 
 A boolean value indicating whether to show the sector in the legend.
- 
+
 
 #### Example
 
@@ -2819,7 +2829,7 @@ The format of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 2px (by default)
     margin: { top: 1, left: 1 }
@@ -2832,7 +2842,7 @@ The format of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 2px (by default)
     padding: { top: 1, left: 1 }
@@ -2970,7 +2980,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -3009,7 +3019,7 @@ Template variables:
 
  A value indicating if the tooltip should be displayed.
 
-### series.type="line" 
+### series.type="line"
 
 Available options for line series:
 
@@ -3163,7 +3173,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
@@ -3176,7 +3186,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -3361,7 +3371,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -3408,7 +3418,7 @@ Template variables:
 
  The line width of the line chart.
 
-### series.type="pie" 
+### series.type="pie"
 
 Available options for pie series:
 
@@ -3507,7 +3517,7 @@ A boolean value indicating whether to explode the sector.
 #### *"visibleInLegend"*
 
 A boolean value indicating whether to show the sector in the legend.
- 
+
 
 #### Example
 
@@ -3626,7 +3636,7 @@ The format of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 2px (by default)
     margin: { top: 1, left: 1 }
@@ -3639,7 +3649,7 @@ The format of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 2px (by default)
     padding: { top: 1, left: 1 }
@@ -3771,7 +3781,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -3820,7 +3830,7 @@ A boolean value indicating whether to show the sector in the legend.
 
 A boolean value indicating whether to show the sector in the legend.
 
-### series.type="scatter" 
+### series.type="scatter"
 
 Available options for scatter series:
 
@@ -3832,7 +3842,7 @@ The series base color.
 
 Array of data items (optional).
 The scatter chart can be bound to an array of arrays with two numbers (X and Y).
- 
+
 
 #### Example
 
@@ -3922,7 +3932,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
@@ -3935,7 +3945,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -4096,7 +4106,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -4144,7 +4154,7 @@ Template variables:
 
  The name of the Y axis to use.
 
-### series.type="scatterLine" 
+### series.type="scatterLine"
 
 Available options for scatter line series:
 
@@ -4189,7 +4199,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 Array of data items (optional).
 The scatter chart can be bound to an array of arrays with two numbers (X and Y).
- 
+
 
 #### Example
 
@@ -4279,7 +4289,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and bottom margin to 1px
     // margin left and right are with 5px (by default)
     margin: { top: 1, bottom: 1 }
@@ -4292,7 +4302,7 @@ The margin of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -4470,7 +4480,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -4522,12 +4532,12 @@ Template variables:
 
  The name of the Y axis to use.
 
-### series.type="verticalArea" 
+### series.type="verticalArea"
 
 Vertical area series use the same options as area series.
 The category axis is rendered vertically instead of horizontally.
 
-### series.type="verticalLine" 
+### series.type="verticalLine"
 
 Vertical line series accepts the same parameters as line series.
 The line and the category axis are now vertical instead of horizontal.
@@ -4694,7 +4704,7 @@ and rgb.
 ### seriesDefaults.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
-labels 
+labels
 
 #### Example
 
@@ -4749,7 +4759,7 @@ The format of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -4884,7 +4894,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -5155,7 +5165,7 @@ The padding of the tooltip.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // right and bottom padding are left at their default values
     padding: { top: 1, left: 1 }
@@ -5658,7 +5668,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot.
 #### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-body of the chart.  
+body of the chart.
 
 Note that minor grid lines are not visible by default, therefore none of these settings will take effect without the minor grid
 lines visibility being set to **true**
@@ -6013,7 +6023,7 @@ Generic axis with automatic range.
 
 Suitable for displaying chronological data.
 
-### xAxis.type: "Date" 
+### xAxis.type: "Date"
 
 Properties specific to the date-time value axis
 
@@ -6123,7 +6133,7 @@ Reloads the data and repaints the chart.
 #### Example
 
     var chart = $("#chart").data("kendoChart");
-    
+
     // refreshes the chart
     chart.refresh();
 

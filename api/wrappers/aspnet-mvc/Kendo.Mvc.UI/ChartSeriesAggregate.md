@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartSeriesAggregate
+title:ChartSeriesAggregate
 slug:aspnetmvc-kendo.mvc.ui.chartseriesaggregate
 publish:true
 ---

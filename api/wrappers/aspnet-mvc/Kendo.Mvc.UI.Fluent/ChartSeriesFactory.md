@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartSeriesFactory
+title:ChartSeriesFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartseriesfactory
 publish:true
 ---

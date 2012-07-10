@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder
+title:ChartBarLabelsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartbarlabelsbuilder
 publish:true
 ---

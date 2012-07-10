@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.EnumOperatorsBuilder
+title:EnumOperatorsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.enumoperatorsbuilder
 publish:true
 ---

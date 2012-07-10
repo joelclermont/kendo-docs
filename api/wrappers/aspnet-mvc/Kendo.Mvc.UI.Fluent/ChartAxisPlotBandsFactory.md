@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory
+title:ChartAxisPlotBandsFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartaxisplotbandsfactory
 publish:true
 ---

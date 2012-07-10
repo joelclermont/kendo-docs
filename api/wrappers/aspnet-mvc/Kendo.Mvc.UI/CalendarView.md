@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.CalendarView
+title:CalendarView
 slug:aspnetmvc-kendo.mvc.ui.calendarview
 publish:true
 ---

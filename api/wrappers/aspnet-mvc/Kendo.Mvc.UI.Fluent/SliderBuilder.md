@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.SliderBuilder
+title:SliderBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.sliderbuilder
 publish:true
 ---

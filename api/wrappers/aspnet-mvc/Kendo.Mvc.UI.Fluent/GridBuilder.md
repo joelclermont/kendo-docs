@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridBuilder
+title:GridBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridbuilder
 publish:true
 ---

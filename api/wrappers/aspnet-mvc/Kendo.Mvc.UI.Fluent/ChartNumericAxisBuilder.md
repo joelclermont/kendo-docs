@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartNumericAxisBuilder
+title:ChartNumericAxisBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartnumericaxisbuilder
 publish:true
 ---

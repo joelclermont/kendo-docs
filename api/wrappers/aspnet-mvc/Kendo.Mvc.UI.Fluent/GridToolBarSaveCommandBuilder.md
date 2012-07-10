@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridToolBarSaveCommandBuilder
+title:GridToolBarSaveCommandBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridtoolbarsavecommandbuilder
 publish:true
 ---

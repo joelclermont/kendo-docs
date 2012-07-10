@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DataSourceBuilder
+title:DataSourceBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.datasourcebuilder
 publish:true
 ---

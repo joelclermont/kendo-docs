@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder
+title:ListViewSelectionSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.listviewselectionsettingsbuilder
 publish:true
 ---

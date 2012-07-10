@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridActionCommandFactory
+title:GridActionCommandFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridactioncommandfactory
 publish:true
 ---

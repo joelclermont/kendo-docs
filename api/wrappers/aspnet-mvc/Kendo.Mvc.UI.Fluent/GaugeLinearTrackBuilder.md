@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder
+title:GaugeLinearTrackBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gaugelineartrackbuilder
 publish:true
 ---

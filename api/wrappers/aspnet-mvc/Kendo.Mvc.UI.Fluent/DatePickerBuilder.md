@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DatePickerBuilder
+title:DatePickerBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.datepickerbuilder
 publish:true
 ---

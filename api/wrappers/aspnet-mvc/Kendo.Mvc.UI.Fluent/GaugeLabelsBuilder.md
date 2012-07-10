@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GaugeLabelsBuilder
+title:GaugeLabelsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gaugelabelsbuilder
 publish:true
 ---

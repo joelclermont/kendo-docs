@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridEditActionCommandBuilder
+title:GridEditActionCommandBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.grideditactioncommandbuilder
 publish:true
 ---

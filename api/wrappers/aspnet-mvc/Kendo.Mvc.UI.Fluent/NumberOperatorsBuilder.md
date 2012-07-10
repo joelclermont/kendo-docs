@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.NumberOperatorsBuilder
+title:NumberOperatorsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.numberoperatorsbuilder
 publish:true
 ---

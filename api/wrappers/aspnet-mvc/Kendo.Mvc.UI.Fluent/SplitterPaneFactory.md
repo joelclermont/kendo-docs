@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.SplitterPaneFactory
+title:SplitterPaneFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.splitterpanefactory
 publish:true
 ---

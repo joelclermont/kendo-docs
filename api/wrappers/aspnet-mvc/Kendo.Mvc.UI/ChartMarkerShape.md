@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartMarkerShape
+title:ChartMarkerShape
 slug:aspnetmvc-kendo.mvc.ui.chartmarkershape
 publish:true
 ---

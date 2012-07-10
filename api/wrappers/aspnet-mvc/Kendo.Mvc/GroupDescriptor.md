@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.GroupDescriptor
+title:GroupDescriptor
 slug:aspnetmvc-kendo.mvc.groupdescriptor
 publish:true
 ---

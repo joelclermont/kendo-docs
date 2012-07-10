@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.WindowBuilder
+title:WindowBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.windowbuilder
 publish:true
 ---

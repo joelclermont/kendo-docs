@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.CrudOperationBuilder
+title:CrudOperationBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.crudoperationbuilder
 publish:true
 ---

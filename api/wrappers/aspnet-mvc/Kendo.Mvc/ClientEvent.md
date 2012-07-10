@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.ClientEvent
+title:ClientEvent
 slug:aspnetmvc-kendo.mvc.clientevent
 publish:true
 ---

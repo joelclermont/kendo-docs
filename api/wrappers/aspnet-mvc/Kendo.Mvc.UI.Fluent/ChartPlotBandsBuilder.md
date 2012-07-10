@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartPlotBandsBuilder
+title:ChartPlotBandsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartplotbandsbuilder
 publish:true
 ---

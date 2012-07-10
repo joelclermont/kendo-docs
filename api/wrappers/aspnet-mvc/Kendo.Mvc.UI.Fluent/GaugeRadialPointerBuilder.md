@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder
+title:GaugeRadialPointerBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gaugeradialpointerbuilder
 publish:true
 ---

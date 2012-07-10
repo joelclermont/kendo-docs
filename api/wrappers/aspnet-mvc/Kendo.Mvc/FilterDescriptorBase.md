@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.FilterDescriptorBase
+title:FilterDescriptorBase
 slug:aspnetmvc-kendo.mvc.filterdescriptorbase
 publish:true
 ---

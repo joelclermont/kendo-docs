@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder
+title:GridFilterableSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridfilterablesettingsbuilder
 publish:true
 ---

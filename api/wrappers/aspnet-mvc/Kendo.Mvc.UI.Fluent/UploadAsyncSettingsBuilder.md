@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder
+title:UploadAsyncSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.uploadasyncsettingsbuilder
 publish:true
 ---

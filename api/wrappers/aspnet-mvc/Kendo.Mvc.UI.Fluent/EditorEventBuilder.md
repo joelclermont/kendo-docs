@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.EditorEventBuilder
+title:EditorEventBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.editoreventbuilder
 publish:true
 ---

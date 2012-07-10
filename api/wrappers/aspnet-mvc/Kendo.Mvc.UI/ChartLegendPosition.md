@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartLegendPosition
+title:ChartLegendPosition
 slug:aspnetmvc-kendo.mvc.ui.chartlegendposition
 publish:true
 ---

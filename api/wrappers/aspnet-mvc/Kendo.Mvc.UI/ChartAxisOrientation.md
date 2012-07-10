@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartAxisOrientation
+title:ChartAxisOrientation
 slug:aspnetmvc-kendo.mvc.ui.chartaxisorientation
 publish:true
 ---
