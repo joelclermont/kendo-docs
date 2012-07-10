@@ -15,7 +15,7 @@ The Kendo mobile **Application** provides the necessary tools for building nativ
 
 ### Getting Started
 
-The simplest mobile **Application** consists of a single mobile **View**. 
+The simplest mobile **Application** consists of a single mobile **View**.
 
 #### Hello World mobile Application
 
@@ -25,7 +25,7 @@ The simplest mobile **Application** consists of a single mobile **View**.
          Hello world!
          <div data-role="footer">Footer</div>
        </div>
-    
+
        <script>
        var app = new kendo.mobile.Application(); //document.body is used by default
        </script>
@@ -35,7 +35,7 @@ The simplest mobile **Application** consists of a single mobile **View**.
 
 
 <p>The mobile **Application** consists of a single HTML page with one or more mobile Views, linked with navigational widgets (Buttons, TabStrip, etc.).
-Each child of the application element (`&lt;body&gt;` by default) with `data-role="view"` is considered a mobile view.
+Each child of the application element (`<body>` by default) with `data-role="view"` is considered a mobile view.
 
 ### Navigation
 
@@ -49,7 +49,7 @@ When targeting local views, The navigation **Widget**'s `href` attribute specifi
 
 ### Linking to External Pages
 
-By default, all navigational widgets try to navigate to loacal views when tapped. This behavior can be overridden by setting `data-rel="external"` attribute to the link element. 
+By default, all navigational widgets try to navigate to loacal views when tapped. This behavior can be overridden by setting `data-rel="external"` attribute to the link element.
 
 #### External links
 
@@ -65,7 +65,7 @@ The following transitions are supported:
 #### slide
 
 This is the default iOS **View** transition. Old **View** content slides to the left and the new **View** content slides in its place.
-Headers and footers (if present) use the **fade** transition. 
+Headers and footers (if present) use the **fade** transition.
 
 The transition direction can be specified by using `slide:(direction)`.
 Supported directions are `left` and `right`. By default, the direction is `left`.
@@ -81,7 +81,7 @@ The new **View** (along with its header and footer) content fades in on top of t
 #### overlay
 
 The new **View** content slides on top of the previous **View**. Unlike the `slide` transition,
-the previous View stays "under" the new one, and the headers / footers do not transition separately. 
+the previous View stays "under" the new one, and the headers / footers do not transition separately.
 
 The transition direction can be specified by using `overlay:(direction)` format.
 Supported directions are `down`, `left`, `up` and `right`. By default, the direction is `left`.
@@ -102,7 +102,7 @@ instance, to simulate returning to previous view using slide transition, use `"s
 When a **View** transitions to the **View** displayed before it (foo → bar → foo), this is considered a **back** navigation.
 In this case, the animation of the current **View** is applied in reverse.
 For instance, navigating with slide transition from `foo` to `bar`, then back to `foo`
-would cause the `foo` **View** to slide from the right side of the screen. 
+would cause the `foo` **View** to slide from the right side of the screen.
 
 ### Remote Views
 
@@ -110,19 +110,19 @@ The Kendo mobile **Application** can load **Views** remotely, using AJAX. If the
 the application considers the View to be remote, and issues an AJAX request to the provided URL.
 
 The View content (the first element with `data-role="view"`) is extracted from the AJAX response and appended into the Application DOM element.
-Once the remote **View** is fetched, no additional round trips to the server occur when the **View** is displayed again. 
+Once the remote **View** is fetched, no additional round trips to the server occur when the **View** is displayed again.
 
 #### Remote View
 
     <!-- foo.html -->
     <div data-role="view">Foo <a href="bar.html" data-role="button">Go to Bar</a></div>
-    
+
     <!-- bar.html -->
     <div data-role="view">Bar</div>
 
 The remote view request will also append (but not initialize) any **additional views** found in the AJAX
 response. **Inline style** elements, **inline script** elements, and **mobile layout** definitions will also be evaluated and appended to the
-application. The elements must be available in the root of the response, or nested inside the **body** element. 
+application. The elements must be available in the root of the response, or nested inside the **body** element.
 
 Scripts and styles from the **head** element (if present) will **not** be evaluated.
 
@@ -134,12 +134,12 @@ If the remote view needs an **additional scripting (widget initialization/bindin
     <div data-role="view">
     <a data-role="button" href="bar.html">Go to bar</a>
     </div>
-    
+
     <!-- bar.html -->
     <div data-role="view" data-init="initBar">
       <a href="#" id="link">Link</a>
     </div>
-    
+
     <script>
       function initBar(e) {
           e.view.element.find("#link").kendoMobileButton();
@@ -224,10 +224,10 @@ This is more complex, but allows fine grained tuning of the application look and
 
 ### hideAddressBar `Boolean`*(default: true)*
 
- Whether to hide the browser address bar.
-<script>
-     new kendo.mobile.Application($(document.body), { layout: "foo" });
-</script>
+Whether to hide the browser address bar.
+    <script>
+         new kendo.mobile.Application($(document.body), { layout: "foo" });
+    </script>
 
 ### initial `String`
 
@@ -248,7 +248,7 @@ This is more complex, but allows fine grained tuning of the application look and
 #### Example
 
     <div data-role="view">Bar</div>
-    
+
     <div data-role="layout" data-id="foo">
       <div data-role="header">Header</div>
     </div>
@@ -304,7 +304,7 @@ Navigate to local or to remote view.
 #### Navigate to a local view
 
     <div data-role="view" id="foo"> ... </div>
-    
+
     <script>
     var app = new kendo.mobile.Application();
     app.navigate("#foo");
