@@ -1,9 +1,11 @@
 ---
-title: Using Kendo UI Declarative Initialization
-slug: tutorial-declarative-initialization
-tags: Tutorial
+title: Use Kendo UI Declarative Initialization
+slug: howto-use-kendo-ui-declarative-initialization
+tags: How-To
 publish: true
 ---
+
+In this how-to, we'll look at how to use Kendo UI Declarative Initialization both with and without the MVVM framework.
 
 Since the introduction of [Custom Data Attributes](http://dev.w3.org/html5/spec/#custom) in the HTML5 spec,
 developers have discovered a whole new world of possibilities.  When you
