@@ -67,7 +67,7 @@ Sets the ticks dashType
 
 #### Parameters
 
-##### dashType `Kendo.Mvc.UI.ChartDashType`
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The ticks dashType.
 
 ### Visible(System.Boolean)

@@ -67,7 +67,7 @@ Sets the legend position
 
 #### Parameters
 
-##### position `Kendo.Mvc.UI.ChartLegendPosition`
+##### position [Kendo.Mvc.UI.ChartLegendPosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartLegendPosition)
 The legend position.
 
 ### Visible(System.Boolean)
@@ -199,5 +199,5 @@ The legend border width.
 ##### color `System.String`
 The legend border color (CSS syntax).
 
-##### dashType `Kendo.Mvc.UI.ChartDashType`
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The legend border dash type.

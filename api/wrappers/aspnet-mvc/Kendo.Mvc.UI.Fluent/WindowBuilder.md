@@ -131,7 +131,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.WindowEventBuilder>`
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowEventBuilder>)>
 The client events action.
 
 ### Resizable
@@ -156,7 +156,7 @@ Configures the resizing ability of the window.
 
 #### Parameters
 
-##### resizingSettingsAction `System.Action<Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder>`
+##### resizingSettingsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowResizingSettingsBuilder>)>
 Resizing settings action.
 
 ### Actions(System.Action<Kendo.Mvc.UI.Fluent.WindowActionsBuilder>)
@@ -172,7 +172,7 @@ Configures the window buttons.
 
 #### Parameters
 
-##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.WindowActionsBuilder>`
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowActionsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowActionsBuilder>)>
 The buttons configuration action.
 
 ### Width(System.Int32)
@@ -210,7 +210,7 @@ Configures the animation effects of the panelbar.
 
 #### Parameters
 
-##### animationAction `System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>`
+##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder>)>
 The action that configures the animation.
 
 ### Modal(System.Boolean)

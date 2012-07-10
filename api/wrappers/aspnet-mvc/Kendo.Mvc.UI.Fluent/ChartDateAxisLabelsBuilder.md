@@ -45,5 +45,5 @@ Culture to use for formatting the dates.
 
 #### Parameters
 
-##### culture `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder>`
+##### culture System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisLabelsDateFormatsBuilder>)>
 Culture to use for formatting the dates.

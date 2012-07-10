@@ -30,7 +30,7 @@ Sets the sort mode of the grid.
 
 #### Parameters
 
-##### value `Kendo.Mvc.UI.GridSortMode`
+##### value [Kendo.Mvc.UI.GridSortMode](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridSortMode)
 The value.
 
 ### AllowUnsort(System.Boolean)

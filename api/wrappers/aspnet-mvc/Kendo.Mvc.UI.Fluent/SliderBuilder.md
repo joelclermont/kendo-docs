@@ -57,7 +57,7 @@ Use it to configure tooltip.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.SliderTooltipBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SliderTooltipBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SliderTooltipBuilder>)>
 Use builder to set different tooltip options.
 
 ### Events(System.Action<Kendo.Mvc.UI.Fluent.SliderEventBuilder>)
@@ -72,5 +72,5 @@ Configures the client-side events.
 
 #### Parameters
 
-##### events `System.Action<Kendo.Mvc.UI.Fluent.SliderEventBuilder>`
+##### events System.Action<[Kendo.Mvc.UI.Fluent.SliderEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SliderEventBuilder>)>
 The client events action.

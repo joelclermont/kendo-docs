@@ -44,7 +44,7 @@ Determines whether the specified  descriptor
 
 #### Parameters
 
-##### other `Kendo.Mvc.FilterDescriptor`
+##### other [Kendo.Mvc.FilterDescriptor](/api/wrappers/aspnet-mvc/Kendo.Mvc/FilterDescriptor)
 The other filter descriptor.
 
 #### Returns

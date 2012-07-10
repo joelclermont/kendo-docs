@@ -96,7 +96,7 @@ Sets the client row template
 
 #### Parameters
 
-##### template `System.Func<Kendo.Mvc.UI.Grid<T>`
+##### template System.Func<[Kendo.Mvc.UI.Grid<T>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/Grid)>
 The template
 
 ### AutoBind(System.Boolean)
@@ -119,7 +119,7 @@ Configures the grid resizing settings
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridResizingSettingsBuilder>)>
 Resizing settings configurator method
 
 ### Reorderable(System.Action<Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder>)
@@ -133,7 +133,7 @@ Configures the grid reordering settings
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridReorderingSettingsBuilder>)>
 Resizing settings configurator method
 
 ### Editable(System.Action<Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder<T>>)
@@ -147,7 +147,7 @@ Configures the grid editing settings.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder<T>>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridEditingSettingsBuilder)>
 Configurator for the edit settings.
 
 ### ToolBar(System.Action<Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory<T>>)
@@ -161,7 +161,7 @@ Configures the toolbar of the grid.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory<T>>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridToolBarCommandFactory)>
 ToolBar configurator.
 
 ### BindTo(System.Collections.Generic.IEnumerable<T>)
@@ -204,7 +204,7 @@ Callback for each row.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.GridRow<T>>`
+##### configurator System.Action<[Kendo.Mvc.UI.GridRow<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridRow)>
 Action, which will be executed for each row.
             You can format the entire row
 
@@ -229,7 +229,7 @@ Callback for each cell.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.GridCell<T>>`
+##### configurator System.Action<[Kendo.Mvc.UI.GridCell<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridCell)>
 Action, which will be executed for each cell.
             You can format a concrete cell.
 
@@ -259,7 +259,7 @@ Defines the columns of the grid.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridColumnFactory<T>>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridColumnFactory<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridColumnFactory)>
 The add action.
 
 ### Sortable
@@ -298,7 +298,7 @@ Allows sorting of the columns.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder<T>>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridSortSettingsBuilder)>
 Use builder to define sort settings.
 
 ### Selectable
@@ -321,7 +321,7 @@ Enables row selection.
 
 #### Parameters
 
-##### selectionAction `System.Action<Kendo.Mvc.UI.Fluent.GridSelectionSettingsBuilder>`
+##### selectionAction System.Action<[Kendo.Mvc.UI.Fluent.GridSelectionSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridSelectionSettingsBuilder>)>
 Use builder to define the selection settings.
 
 ### PrefixUrlParameters(System.Boolean)
@@ -365,7 +365,7 @@ Allows paging of the data.
 
 #### Parameters
 
-##### pagerAction `System.Action<Kendo.Mvc.UI.Fluent.PageableBuilder>`
+##### pagerAction System.Action<[Kendo.Mvc.UI.Fluent.PageableBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PageableBuilder>)>
 Use builder to define paging settings.
 
 ### Filterable
@@ -404,7 +404,7 @@ Allows filtering of the columns.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridFilterableSettingsBuilder>)>
 Use builder to define filtering settings.
 
 ### ColumnMenu
@@ -443,7 +443,7 @@ Enables/disables header column menu.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridColumnMenuSettingsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridColumnMenuSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridColumnMenuSettingsBuilder>)>
 Use builder to define column menu settings.
 
 ### Scrollable
@@ -482,7 +482,7 @@ Show scrollbar if there are many items.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridScrollSettingsBuilder>)>
 Use builder to define scrolling settings.
 
 ### Navigatable
@@ -521,7 +521,7 @@ Enables keyboard navigation.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridNavigatableSettingsBuilder>)>
 Use builder to define keyboard navigation settings.
 
 ### Events(System.Action<Kendo.Mvc.UI.Fluent.GridEventBuilder>)
@@ -537,7 +537,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GridEventBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GridEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridEventBuilder>)>
 The client events action.
 
 ### Groupable(System.Action<Kendo.Mvc.UI.Fluent.GridGroupingSettingsBuilder>)

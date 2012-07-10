@@ -45,7 +45,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### EventsAction `System.Action<Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder>`
+##### EventsAction System.Action<[Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/NumericTextBoxEventBuilder>)>
 The client events action.
 
 ### Enable(System.Boolean)

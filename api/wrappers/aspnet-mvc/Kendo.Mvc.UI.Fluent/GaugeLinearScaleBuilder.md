@@ -62,5 +62,5 @@ Configures the labels.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearScaleLabelsBuilder>)>
 The configuration action.

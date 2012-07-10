@@ -24,7 +24,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.UploadEventBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.UploadEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/UploadEventBuilder>)>
 The client events configuration action.
 
 ### Enable(System.Boolean)
@@ -77,7 +77,7 @@ Use it to configure asynchronous uploading.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/UploadAsyncSettingsBuilder>)>
 Use builder to set different asynchronous uploading options.
 
 ### Messages(System.Action<Kendo.Mvc.UI.Fluent.UploadMessagesBuilder>)
@@ -94,5 +94,5 @@ Use it to configure asynchronous uploading.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.UploadMessagesBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.UploadMessagesBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/UploadMessagesBuilder>)>
 Use builder to set different asynchronous uploading options.

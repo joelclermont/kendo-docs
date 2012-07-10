@@ -41,7 +41,7 @@ Sets the pointer shape.
 
 #### Parameters
 
-##### shape `Kendo.Mvc.UI.GaugeLinearPointerShape`
+##### shape [Kendo.Mvc.UI.GaugeLinearPointerShape](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GaugeLinearPointerShape)
 The pointer shape.
 
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -107,7 +107,7 @@ The pointer border width.
 ##### color `System.String`
 The pointer border color.
 
-##### dashType `Kendo.Mvc.UI.ChartDashType`
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The pointer dash type.
 
 ### Opacity(System.Double)
@@ -176,5 +176,5 @@ Configures the pointer track.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearTrackBuilder>)>
 The configuration action.

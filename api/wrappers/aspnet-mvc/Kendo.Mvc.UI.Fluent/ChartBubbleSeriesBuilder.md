@@ -27,7 +27,7 @@ Configures the bubble chart behavior for negative values.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartNegativeValueSettingsBuilder>)>
 The configuration action.
 
 ### Border(System.Int32,System.String)

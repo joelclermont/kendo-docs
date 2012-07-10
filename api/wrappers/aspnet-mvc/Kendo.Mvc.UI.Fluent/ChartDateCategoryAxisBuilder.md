@@ -44,7 +44,7 @@ Sets the date category axis base unit.
 
 #### Parameters
 
-##### baseUnit `Kendo.Mvc.UI.ChartAxisBaseUnit`
+##### baseUnit [Kendo.Mvc.UI.ChartAxisBaseUnit](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartAxisBaseUnit)
 The date category axis base unit
 
 ### Min(System.DateTime)
@@ -128,5 +128,5 @@ Configures the axis labels.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartDateAxisLabelsBuilder>)>
 The configuration action.

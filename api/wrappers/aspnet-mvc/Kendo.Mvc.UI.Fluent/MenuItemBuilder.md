@@ -28,5 +28,5 @@ Configures the child items of a MenuItem.
 
 #### Parameters
 
-##### addAction `System.Action<Kendo.Mvc.UI.Fluent.MenuItemFactory>`
+##### addAction System.Action<[Kendo.Mvc.UI.Fluent.MenuItemFactory>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MenuItemFactory>)>
 The add action.

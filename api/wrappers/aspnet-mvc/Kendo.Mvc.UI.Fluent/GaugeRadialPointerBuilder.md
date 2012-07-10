@@ -76,5 +76,5 @@ Configures the pointer cap.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialCapBuilder>)>
 The configuration action.

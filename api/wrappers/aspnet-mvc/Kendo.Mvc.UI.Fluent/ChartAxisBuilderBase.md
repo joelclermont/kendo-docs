@@ -30,7 +30,7 @@ Configures the major ticks.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisTicksBuilder>)>
 The configuration action.
 
 ### MinorTicks(System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>)
@@ -48,7 +48,7 @@ Configures the minor ticks.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisTicksBuilder>)>
 The configuration action.
 
 ### MajorGridLines(System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>)
@@ -65,7 +65,7 @@ Configures the major grid lines.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLineBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLineBuilder>)>
 The configuration action.
 
 ### MajorGridLines(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -102,7 +102,7 @@ Configures the minor grid lines.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLineBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLineBuilder>)>
 The configuration action.
 
 ### MinorGridLines(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -139,7 +139,7 @@ Configures the axis line.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLineBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLineBuilder>)>
 The configuration action.
 
 ### Line(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -178,7 +178,7 @@ Configures the axis labels.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisLabelsBuilder>)>
 The configuration action.
 
 ### Labels(System.Boolean)
@@ -210,7 +210,7 @@ Defines the plot bands items.
 
 #### Parameters
 
-##### addAction `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory<T,T>>`
+##### addAction System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory<T](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisPlotBandsFactory<T),T>>
 The add action.
 
 ### Title(System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder>)
@@ -227,7 +227,7 @@ Configures the chart axis title.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder>`
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisTitleBuilder>)>
 The configuration action.
 
 ### Title(System.String)
