@@ -20,14 +20,11 @@ It’s essential that we take some of the fantastic structure and DRY principals
 from OO and use them in our JavaScript development.  Especially as JavaScript
 plays more and more of a role on the server (Node.js for instance).
 
-JavaScript is quite an elegant language that is described as a
-
-> [“prototype-based][7] [scripting language][8] that is [dynamic][9], [weakly
-typed][10] and has [first-class functions][11]. It is a [multi-paradigm][12]
-language, supporting [object-oriented][13],[[6]][14] [imperative][15], and
-[functional][16][[1]][17][[7]][18]programming styles.”
-
->
+> Wikipedia describes JavaScript as a:
+[“prototype-based](http://en.wikipedia.org/wiki/Prototype-based) [scripting language](http://en.wikipedia.org/wiki/Scripting_language) that is [dynamic](http://en.wikipedia.org/wiki/Dynamic_language), [weakly
+typed](http://en.wikipedia.org/wiki/Weak_typing) and has [first-class functions](http://en.wikipedia.org/wiki/First-class_functions). It is a [multi-paradigm](http://en.wikipedia.org/wiki/Multi-paradigm)
+language, supporting [object-oriented](http://en.wikipedia.org/wiki/Object-oriented_programming),[imperative](http://en.wikipedia.org/wiki/Imperative_programming), and
+[functional](http://en.wikipedia.org/wiki/Functional_programming) programming styles.”
 
 That’s a lot of ability in one language.  Functional languages are
 powerful, but when you are able to add in OO principals, it get's really
@@ -205,30 +202,6 @@ And by default, parents are not cool people.
 Use the Fiddle below to experiment with Inheritance In Kendo UI.
 
 <iframe style="width: 100%; height: 750px;" src="http://jsfiddle.net/burkeholland/FgShb/embedded/js,result" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
-   [7]: http://en.wikipedia.org/wiki/Prototype-based
-
-   [8]: http://en.wikipedia.org/wiki/Scripting_language
-
-   [9]: http://en.wikipedia.org/wiki/Dynamic_language
-
-   [10]: http://en.wikipedia.org/wiki/Weak_typing
-
-   [11]: http://en.wikipedia.org/wiki/First-class_functions
-
-   [12]: http://en.wikipedia.org/wiki/Multi-paradigm
-
-   [13]: http://en.wikipedia.org/wiki/Object-oriented_programming
-
-   [14]: http://en.wikipedia.org/wiki/Javascript#cite_note-ECMA-262-5
-
-   [15]: http://en.wikipedia.org/wiki/Imperative_programming
-
-   [16]: http://en.wikipedia.org/wiki/Functional_programming
-
-   [17]: http://en.wikipedia.org/wiki/Javascript#cite_note-jsfunc-0
-
-   [18]: http://en.wikipedia.org/wiki/Javascript#cite_note-6
 
    [19]: images/8C23-Capture_thumb.png (Capture)
 
