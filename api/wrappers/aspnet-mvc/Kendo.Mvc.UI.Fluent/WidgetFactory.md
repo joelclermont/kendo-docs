@@ -28,7 +28,7 @@ Creates a Editor
         %>
 
 ### Grid\<T1\>
-Creates a new !:Grid<T> bound to the specified data item type.
+Creates a new !:Kendo.Mvc.UI.Grid{T} bound to the specified data item type.
 
 #### Example
     <%= Html.Kendo().Grid<Order>()
@@ -37,7 +37,7 @@ Creates a new !:Grid<T> bound to the specified data item type.
         %>
 
 ### Grid\<T1\>(System.Collections.Generic.IEnumerable\<T1\>)
-Creates a new !:Kendo.Web.UI.Grid<T> bound to the specified data source.
+Creates a new !:Kendo.Mvc.UI.Grid{T} bound to the specified data source.
 
 #### Example
     <%= Html.Kendo().Grid(Model)
@@ -50,7 +50,7 @@ Creates a new !:Kendo.Web.UI.Grid<T> bound to the specified data source.
 The data source.
 
 ### Grid(System.Data.DataTable)
-Creates a new !:Kendo.Web.UI.Grid<T> bound to a DataTable.
+Creates a new !:Kendo.Mvc.UI.Grid{T} bound to a DataTable.
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Creates a new !:Kendo.Web.UI.Grid<T> bound to a DataTable.
 DataTable from which the grid instance will be bound
 
 ### Grid(System.Data.DataView)
-Creates a new !:Kendo.Web.UI.Grid<T> bound to a DataView.
+Creates a new !:Kendo.Mvc.UI.Grid{T} bound to a DataView.
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Creates a new !:Kendo.Web.UI.Grid<T> bound to a DataView.
 DataView from which the grid instance will be bound
 
 ### Grid\<T1\>(System.String)
-Creates a new !:Kendo.Web.UI.Grid<T> bound an item in ViewData.
+Creates a new !:Kendo.Mvc.UI.Grid{T} bound an item in ViewData.
 
 #### Example
     <%= Html.Kendo().Grid<Order>("orders")
@@ -79,7 +79,7 @@ Creates a new !:Kendo.Web.UI.Grid<T> bound an item in ViewData.
 The data source view data key.
 
 ### ListView\<T1\>
-Creates a new !:ListView<T> bound to the specified data item type.
+Creates a new !:UI.ListView{T} bound to the specified data item type.
 
 #### Example
     <%= Html.Kendo().ListView<Order>()
@@ -88,7 +88,7 @@ Creates a new !:ListView<T> bound to the specified data item type.
         %>
 
 ### ListView\<T1\>(System.Collections.Generic.IEnumerable\<T1\>)
-Creates a new !:Kendo.Web.UI.ListView<T> bound to the specified data source.
+Creates a new !:ListView{T} bound to the specified data source.
 
 #### Example
     <%= Html.Kendo().ListView(Model)
@@ -101,7 +101,7 @@ Creates a new !:Kendo.Web.UI.ListView<T> bound to the specified data source.
 The data source.
 
 ### ListView\<T1\>(System.String)
-Creates a new !:Kendo.Web.UI.ListView<T> bound an item in ViewData.
+Creates a new !:ListView{T} bound an item in ViewData.
 
 #### Example
     <%= Html.Kendo().ListView<Order>("orders")
@@ -189,15 +189,20 @@ Creates a TreeView
         %>
 
 ### NumericTextBox
-Creates a new !:NumericTextBox{double}.
+Creates a new NumericTextBox.
 
 #### Example
     <%= Html.Kendo().NumericTextBox()
         .Name("NumericTextBox")
         %>
 
-#### Returns
-Returns !:NumericTextBoxBuilder{double}.
+### NumericTextBox\<T1\>
+Creates a new !:NumericTextBox{T}.
+
+#### Example
+    <%= Html.Kendo().NumericTextBox<double>()
+        .Name("NumericTextBox")
+        %>
 
 ### CurrencyTextBox
 Creates a new CurrencyTextBox.
@@ -207,9 +212,6 @@ Creates a new CurrencyTextBox.
         .Name("CurrencyTextBox")
         %>
 
-#### Returns
-Returns !:NumericTextBoxBuilder{decimal}.
-
 ### PercentTextBox
 Creates a new PercentTextBox.
 
@@ -218,9 +220,6 @@ Creates a new PercentTextBox.
         .Name("PercentTextBox")
         %>
 
-#### Returns
-Returns !:NumericTextBoxBuilder{double}.
-
 ### IntegerTextBox
 Creates a new IntegerTextBox.
 
@@ -228,9 +227,6 @@ Creates a new IntegerTextBox.
     <%= Html.Kendo().IntegerTextBox()
         .Name("IntegerTextBox")
         %>
-
-#### Returns
-Returns !:NumericTextBoxBuilder{int}.
 
 ### Window
 Creates a new Window.

@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.WindowEventBuilder
 
-Defines the fluent interface for configuring the Events.
+Defines the fluent interface for configuring the Window events.
 
 ## Methods
 

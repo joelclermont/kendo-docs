@@ -26,6 +26,22 @@ Sets the Cancel button text
 ##### cancelMessage `System.String`
 New cancel button text.
 
+### DropFilesHere(System.String)
+Sets the Drag and Drop hint text
+
+#### Example
+    <%= Html.Kendo().Upload()
+        .Name("Upload")
+        .Messages(msgs => msgs
+        .DropFilesHere("drop files here")
+        )
+        %>
+
+#### Parameters
+
+##### dropFilesHereMessage `System.String`
+New Drag and Drop hint text.
+
 ### Remove(System.String)
 Sets the Remove button text
 

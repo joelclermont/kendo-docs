@@ -31,19 +31,19 @@ Configures the child items of a TreeViewItem.
 ##### addAction System.Action\<[Kendo.Mvc.UI.Fluent.TreeViewItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TreeViewItemFactory)\>
 The add action.
 
-### Value(System.String)
-Sets the value for the item.
+### Id(System.String)
+Sets the id of the item.
 
 #### Example
     <%= Html.Telerik().TreeView()
         .Name("TreeView")
-        .Items(items => items.Add().Value("1"))
+        .Items(items => items.Add().Id("42"))
         %>
 
 #### Parameters
 
 ##### value `System.String`
-The value.
+The id.
 
 ### Expanded(System.Boolean)
 Define when the item will be expanded on intial render.
@@ -67,51 +67,7 @@ Define when the item will be expanded on intial render.
 ##### value `System.Boolean`
 If true the item will be expanded.
 
-### Checked(System.Boolean)
-Define when the item will be checked on intial render.
-
-#### Example
-    <%= Html.Telerik().TreeView()
-        .Name("TreeView")
-        .Items(items =>
-        {
-        items.Add().Text("First Item").Items(firstItemChildren =>
-        {
-        firstItemChildren.Add().Text("Child Item 1");
-        firstItemChildren.Add().Text("Child Item 2");
-        })
-        .Checked(true);
-        })
-        %>
-
-#### Parameters
-
-##### value `System.Boolean`
-If true the item will be checked.
-
-### Checkable(System.Boolean)
-Enables/disables the rendering of a checkbox for this item.
-
-#### Example
-    <%= Html.Telerik().TreeView()
-        .Name("TreeView")
-        .Items(items =>
-        {
-        items.Add().Text("First Item").Items(firstItemChildren =>
-        {
-        firstItemChildren.Add().Text("Child Item 1");
-        firstItemChildren.Add().Text("Child Item 2");
-        })
-        .Checkable(false);
-        })
-        %>
-
-#### Parameters
-
-##### value `System.Boolean`
-If false, no checkbox will be rendered.
-
-### LoadOnDemand(System.Boolean)
+### HasChildren(System.Boolean)
 Sets the expand mode of the treeview item.
 
 #### Example
@@ -124,11 +80,11 @@ Sets the expand mode of the treeview item.
         firstItemChildren.Add().Text("Child Item 1");
         firstItemChildren.Add().Text("Child Item 2");
         })
-        .LoadOnDemand(true);
+        .HasChildren(true);
         })
         %>
 
 #### Parameters
 
 ##### value `System.Boolean`
-If true then item will be load on demand from client side.
+If true then item will be loaded on demand from client side, if the treeview DataSource is properly configured.

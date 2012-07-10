@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder
 
-Defines the fluent interface for configuring the CalendarSelectionSettings.
+Defines the fluent interface for configuring the SelectionSettings.
 
 ## Methods
 

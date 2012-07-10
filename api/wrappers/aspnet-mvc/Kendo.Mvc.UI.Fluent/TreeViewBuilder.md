@@ -10,6 +10,51 @@ Defines the fluent interface for configuring the TreeView component.
 
 ## Methods
 
+### AutoBind(System.Boolean)
+Controls whether to bind the widget to the DataSource on initialization.
+
+#### Example
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .AutoBind(false)
+        %>
+
+### CheckboxTemplate(System.String)
+Template to be used for rendering the item checkboxes in the treeview.
+
+#### Example
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .CheckboxTemplate("#= data #")
+        %>
+
+### CheckboxTemplateId(System.String)
+Id of the template element to be used for rendering the item checkboxes in the treeview.
+
+#### Example
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .CheckboxTemplateId("widgetTemplateId")
+        %>
+
+### Template(System.String)
+Template to be used for rendering the items in the treeview.
+
+#### Example
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Template("#= data #")
+        %>
+
+### TemplateId(System.String)
+Id of the template element to be used for rendering the items in the treeview.
+
+#### Example
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .TemplateId("widgetTemplateId")
+        %>
+
 ### Items(System.Action\<Kendo.Mvc.UI.Fluent.TreeViewItemFactory\>)
 Defines the items in the TreeView
 
@@ -221,20 +266,6 @@ Expand all the items.
 ##### value `System.Boolean`
 If true all the items will be expanded.
 
-### ShowCheckBox(System.Boolean)
-ShowCheckBox indicates if checkbox displayed before node.
-
-#### Example
-    <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .ShowCheckBox(true)
-        %>
-
-#### Parameters
-
-##### value `System.Boolean`
-If true checkbox will be displayed for every node.
-
 ### DragAndDrop(System.Boolean)
 Enables drag & drop between treeview nodes.
 
@@ -340,4 +371,4 @@ Configure the DataSource of the component
 #### Parameters
 
 ##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ReadOnlyDataSourceBuilder)\>
-The action that configures the ReadOnlyDataSource.
+The action that configures the DataSource.

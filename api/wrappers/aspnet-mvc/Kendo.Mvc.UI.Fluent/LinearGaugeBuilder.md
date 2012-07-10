@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.LinearGaugeBuilder
 
-Defines the fluent interface for configuring the !:LinearGauge{T} component.
+Defines the fluent interface for configuring the LinearGauge component.
 
 ## Methods
 

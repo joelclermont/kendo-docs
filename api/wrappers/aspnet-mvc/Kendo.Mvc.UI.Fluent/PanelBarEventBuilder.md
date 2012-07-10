@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.PanelBarEventBuilder
 
-Defines the fluent interface for configuring the Events.
+Defines the fluent interface for configuring the PanelBar events.
 
 ## Methods
 

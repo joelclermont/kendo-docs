@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.UploadEventBuilder
 
-Defines the fluent interface for configuring the Events.
+Defines the fluent interface for configuring the Upload events.
 
 ## Methods
 

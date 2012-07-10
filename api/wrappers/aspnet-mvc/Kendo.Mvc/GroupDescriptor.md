@@ -14,8 +14,6 @@ Represents grouping criteria.
 Gets or sets the type of the member that is used for grouping.
             Set this property if the member type cannot be resolved automatically.
             Such cases are: items with ICustomTypeDescriptor, XmlNode or DataRow.
-            Changing this property did not raise
-            PropertyChanged event.
 
 ### DisplayContent
 Gets or sets the content which will be used from UI.

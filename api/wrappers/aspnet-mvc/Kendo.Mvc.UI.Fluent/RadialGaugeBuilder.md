@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.RadialGaugeBuilder
 
-Defines the fluent interface for configuring the !:RadialGauge{T} component.
+Defines the fluent interface for configuring the RadialGauge component.
 
 ## Methods
 

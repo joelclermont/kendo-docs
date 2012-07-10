@@ -6,7 +6,7 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder
 
-Defines the fluent interface for configuring the !:GaugeLinearPointer{T}.
+Defines the fluent interface for configuring the GaugeLinearPointer.
 
 ## Methods
 

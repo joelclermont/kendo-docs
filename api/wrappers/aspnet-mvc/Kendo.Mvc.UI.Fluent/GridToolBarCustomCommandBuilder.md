@@ -56,7 +56,7 @@ Sets command action and controller.
 ##### actionName `System.String`
 The action name
 
-##### conrollerName `System.String`
+##### controllerName `System.String`
 The controller name
 
 ### Action(System.String,System.String,System.Object)
@@ -67,7 +67,7 @@ Sets command action and controller.
 ##### actionName `System.String`
 The action name
 
-##### conrollerName `System.String`
+##### controllerName `System.String`
 The controller name
 
 ##### routeValues `System.Object`
@@ -81,7 +81,7 @@ Sets command action and controller.
 ##### actionName `System.String`
 The action name
 
-##### conrollerName `System.String`
+##### controllerName `System.String`
 The controller name
 
 ##### routeValues `System.Web.Routing.RouteValueDictionary`
