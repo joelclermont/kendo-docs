@@ -839,8 +839,7 @@ The completed application used in this project is available on the course
 
 ![][63]
 
-   [1]: http://www.kendoui.com/blogs/teamblog/posts/12-05-02/html5_development
-_for_asp_net_developers.aspx
+   [1]: http://www.kendoui.com/blogs/teamblog/posts/12-05-02/html5_development_for_asp_net_developers.aspx
 
    [2]: http://www.asp.net/web-api
 
@@ -848,20 +847,15 @@ _for_asp_net_developers.aspx
 
    [4]: https://github.com/telerik/html5-dev-for-aspnet-devs
 
-   [5]: http://en.wikipedia.org/wiki/Representational_state_transfer
-(Representational state transfer - Wikipedia, the free encyclopedia)
+   [5]: http://en.wikipedia.org/wiki/Representational_state_transfer(Representational state transfer - Wikipedia, the free encyclopedia)
 
    [6]: http://www.json.org/ (JSON)
 
-   [7]: http://en.wikipedia.org/wiki/Serialization (Serialization - Wikipedia,
-the free encyclopedia)
+   [7]: http://en.wikipedia.org/wiki/Serialization (Serialization - Wikipedia,the free encyclopedia)
 
-   [12]: http://www.microsoft.com/en-us/download/details.aspx?id=23654
-(Download: NorthWind and pubs Sample Databases for SQL Server 2000 - Microsoft
-Download Center - Download Details)
+   [12]: http://www.microsoft.com/en-us/download/details.aspx?id=23654(Download: NorthWind and pubs Sample Databases for SQL Server 2000 - Microsoft Download Center -Download Details)
 
-   [13]: http://msdn.microsoft.com/en-us/library/bb425822.aspx (LINQ to SQL:
-.NET Language-Integrated Query for Relational Data)
+   [13]: http://msdn.microsoft.com/en-us/library/bb425822.aspx (LINQ to SQL:.NET Language-Integrated Query for Relational Data)
 
    [18]: http://nuget.org/ (NuGet Gallery)
 
@@ -873,8 +867,7 @@ Download Center - Download Details)
 
    [42]: http://api.jquery.com/ready/ (.ready() – jQuery API)
 
-   [43]: http://en.wikipedia.org/wiki/Document_Object_Model (Document Object
-Model - Wikipedia, the free encyclopedia)
+   [43]: http://en.wikipedia.org/wiki/Document_Object_Model (Document ObjectModel - Wikipedia, the free encyclopedia)
 
    [44]: http://api.jquery.com/id-selector/ (ID Selector (“#id”) – jQuery API)
 
@@ -896,7 +889,5 @@ Model - Wikipedia, the free encyclopedia)
 
    [57]: http://api.jquery.com/remove/ (.remove() – jQuery API)
 
-   [62]: http://weblogs.asp.net/jgalloway/archive/2012/03/16/asp-net-web-api-
-screencast-series-with-downloadable-sample-code-part-1.aspx (ASP.NET Web API -
-Screencast series with downloadable sample code - Part 1 - Jon Galloway)
+   [62]: http://weblogs.asp.net/jgalloway/archive/2012/03/16/asp-net-web-api-screencast-series-with-downloadable-sample-code-part-1.aspx (ASP.NET Web API -Screencast series with downloadable sample code - Part 1 - Jon Galloway)
 
