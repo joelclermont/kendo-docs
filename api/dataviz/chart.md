@@ -9,15 +9,10 @@ publish: true
 
 ## Description
 
-
-
 The Chart widget uses modern browser technologies to render high-quality data visualizations.
 All graphics are rendered on the client using SVG with a fallback to VML for legacy browsers.
 
-
-
 Kendo UI DataViz includes the following chart types:
-
 
 *   Bar / Column
 *   Line / Vertical Line
@@ -26,15 +21,10 @@ Kendo UI DataViz includes the following chart types:
 *   Scatter
 *   Scatter Line
 
-
-
-
 Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for additional information about
 new Chart types and features.
 
-
 ### Creating a Chart
-
 
 To create a chart, add an empty div in the HTML and give it an ID.
 
@@ -55,6 +45,7 @@ The chart is rendered by selecting the div with a jQuery selector and calling th
     $("#chart").kendoChart();
 
 This will render the chart shown below:
+
 ![Empty Chart](http://www.kendoui.com/Libraries/Documentation/chart-empty.sflb.ashx)</img>
 
 The chart can then be given a title by specifying the "text" property of the "title" object in the Kendo Chart.
@@ -67,13 +58,9 @@ The chart can then be given a title by specifying the "text" property of the "ti
         }
     });
 
-###
-Data Binding
-
-
+### Data Binding
 
 The Charts can visualize series bound to both local and remote data.
-
 
 Start by creating a series that displays inline data.
 
@@ -89,6 +76,7 @@ Start by creating a series that displays inline data.
     });
 
 This will render a column chart by default.
+
 ![Column Chart without categories](http://www.kendoui.com/Libraries/Documentation/chart-column-no-categories.sflb.ashx)</img>
 
 You will notice that the columns have no label across the category axis.
@@ -110,10 +98,7 @@ You specify the labeling for the series in the categoryAxis property.
 
 ![Column Chart with categories](http://www.kendoui.com/Libraries/Documentation/chart-column-categories.sflb.ashx)</img>
 
-###
-Next Steps
-
-
+### Next Steps
 
 Explore the Chart demos for a quick overview of the major features.
 Detailed reference is available in the Configuration, Methods and Events tabs.
@@ -237,36 +222,35 @@ The border of the labels.
 
  The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
-### categoryAxis.labels.border.dashType `String`*(default: "solid")*
+#### categoryAxis.labels.border.dashType `String`*(default: "solid")*
 
- The dash type of the border.
+The dash type of the border.
 
-
-#### *"solid"*
+##### *"solid"*
 
 Specifies a solid line.
 
-#### *"dot"*
+##### *"dot"*
 
 Specifies a line consisting of dots.
 
-#### *"dash"*
+##### *"dash"*
 
 Specifies a line consisting of dashes.
 
-#### *"longDash"*
+##### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-#### *"dashDot"*
+##### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-#### *"longDashDot"*
+##### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-#### *"longDashDotDot"*
+##### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -357,7 +341,7 @@ mirroring the axis will render them to the right.
 
 ### categoryAxis.labels.padding `Number | Object`*(default: 0)*
 
- The padding of the labels.
+The padding of the labels.
 
 #### Example
 
@@ -411,12 +395,10 @@ Template variables:
          title: {
              text: "My Chart Title"
          },
-         series: [
-             {
+         series: [{
                  name: "Series 1",
                  data: [200, 450, 300, 125]
-             }
-         ],
+         }],
          categoryAxis: {
              categories: [2000, 2001, 2002, 2003],
              labels: {
@@ -469,34 +451,34 @@ Configures the axis line. This will also effect major and minor ticks, but not g
 
 ### categoryAxis.line.dashType `String`*(default: "solid")*
 
- The dash type of the line.
+The dash type of the line.
 
-
-#### *"solid"*
+#### 
+##### *"solid"*
 
 Specifies a solid line.
 
-#### *"dot"*
+##### *"dot"*
 
 Specifies a line consisting of dots.
 
-#### *"dash"*
+##### *"dash"*
 
 Specifies a line consisting of dashes.
 
-#### *"longDash"*
+##### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-#### *"dashDot"*
+##### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-#### *"longDashDot"*
+##### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-#### *"longDashDotDot"*
+##### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -546,34 +528,33 @@ body of the chart.
 
 ### categoryAxis.majorGridLines.dashType `String`*(default: "solid")*
 
- The dash type of the grid lines.
+The dash type of the grid lines.
 
-
-#### *"solid"*
+##### *"solid"*
 
 Specifies a solid line.
 
-#### *"dot"*
+##### *"dot"*
 
 Specifies a line consisting of dots.
 
-#### *"dash"*
+##### *"dash"*
 
 Specifies a line consisting of dashes.
 
-#### *"longDash"*
+##### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-#### *"dashDot"*
+##### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-#### *"longDashDot"*
+##### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-#### *"longDashDotDot"*
+##### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -725,7 +706,6 @@ The color of the plot band.
 #### Example
 
     $("#chart").kendoChart({
-        ...,
         categoryAxis: {
             plotBands: [{
                 from: 0.2,
