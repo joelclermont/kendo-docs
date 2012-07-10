@@ -604,17 +604,17 @@ that we did here.
 
    [2]: images/Part-_7E9D-9_thumb.png (9)
 
-   [3]: Part-_7E9D-9_2.png
+   [3]: images/Part-_7E9D-9_2.png
 
    [4]: http://php.net/manual/en/pdo.prepared-statements.php(http://php.net/manual/en/pdo.prepared-statements.php)
 
-   [5]: Part-_7E9D-10_thumb.png (10)
+   [5]: images/Part-_7E9D-10_thumb.png (10)
 
-   [6]: Part-_7E9D-10_2.png
+   [6]: images/Part-_7E9D-10_2.png
 
-   [7]: Part-_7E9D-11_thumb_1.png (11)
+   [7]: images/Part-_7E9D-11_thumb_1.png (11)
 
-   [8]: Part-_7E9D-11_4.png
+   [8]: images/Part-_7E9D-11_4.png
 
    [9]: http://www.kendoui.com/Libraries/Sample_Code/KendoUI_2.sflb.ashx
 
