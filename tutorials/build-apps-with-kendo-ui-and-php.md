@@ -7,7 +7,14 @@ publish: true
 
 # Tutorial: Intro to Building Apps with Kendo UI And PHP
 
-This tutorial will walk you through setting up your PHP development environment, connecting to a database, and interacting with your data using Kendo UI.
+This tutorial will walk you through building your first Kendo UI PHP Application.  It is a two part tutorial in which you will learn...
+
+- How to setup your PHP Development Environment, including selecting an IDE
+- How to connect to your database and return data
+- How to create a Kendo UI Grid bound to data
+- How to handle read, create, update and delete operations
+- How to filter data
+- How to use detail grids
 
 ### Setting Up To Develop In PHP
 
