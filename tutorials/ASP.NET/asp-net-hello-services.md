@@ -1,3 +1,10 @@
+---
+title: HTML5 Development With ASP.NET - Part 2 - Hello Services
+slug: tutorial-html5-development-with-asp-net-part-2-hello-services
+tags: Tutorial
+publish: true
+---
+
 This tutorial will cover how to create RESTful services with ASP.NET WebAPI.  You will learn...
 
 - How to install ASP.NET WebAPI
