@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the !:Grid{T} component.
 
 ## Methods
 
-### DataSource(System.Action<Kendo.Mvc.UI.Fluent.DataSourceBuilder<T>>)
+### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.DataSourceBuilder<T>>`)
 Configures the grid DataSource
 
 ### DetailTemplate(System.Action<T>)
