@@ -79,6 +79,11 @@ for more details.
 The selected files will be uploaded immediately by default. You can change this behavior by setting
 autoUpload to false.
 
+### async.batch `Boolean`*(default: false)*
+
+The selected files will be uploaded in separate requests by default. You can change this behavior by setting
+batch to true.
+
 ### async.removeField `String`*(default: "fileNames")*
 
 The name of the form field submitted to the Remove URL.
