@@ -9,7 +9,7 @@ In Part 1 of this two part tutorial, we went over how to get up
 and running with PHP, how to choose and IDE, and how to get some
 fake data if you need it.
 
-[### Read Part 1]()
+[Read Part 1](http://docs.kendoui.com/tutorials/PHP/build-apps-with-kendo-ui-and-php)
 
 We built a simple SPA (single page application) which displays a list of sales
 employees and each employee can be expanded to show the territories they are
@@ -24,9 +24,8 @@ The requirements are as follows:
 not their first name.  This is because first names don’t change, but last
 names sometimes do.
 
-    * Last name cannot be null
-
-    * Add save and cancel buttons
+- Last name cannot be null
+- Add save and cancel buttons
 
 **Requirement 2:** Users should be able to add new territories to a sales
 employee.
@@ -112,7 +111,7 @@ become and editable textbox.  However, if you click on the First Name, nothing
 happens because you can’t edit it.  Go ahead and try to blank out the Last
 Name and press enter.  You get a validation message.
 
-[Validation Message](images/Part-_7E9D-9_2.png)
+![Validation Message](images/Part-_7E9D-9_2.png)
 
 For more information on all the things you can do with
 validation rules, make sure you check out the Kendo UI Validation Demos.
@@ -320,7 +319,7 @@ can listen to the **error** event on the DataSource **update** method.
 
 #### Sample Failure…
 
-[Sample Failure](images/Part-_7E9D-10_2.png)
+![Sample Failure](images/Part-_7E9D-10_2.png)
 
 ### Requirement 2: Add Sales Territories
 
@@ -488,7 +487,7 @@ and value fields are.
 Now if you view the page, we have a nifty drop down you can either type in, or
 select from.  Oh, and we also switched the theme to **default** just for fun!
 
-[Nifty Drop Down](images/Part-_7E9D-11_4.png)
+![Nifty Drop Down](images/Part-_7E9D-11_4.png)
 
 Now we have a ComboBox that returns only the territories that
 are not currently assigned to this person.  Now let’s add the event for
