@@ -52,7 +52,7 @@ buy JavaScript, but is also much easier for humans to read and debug.
 Open Visual Studio. Select **File** / **New Project** and select the **ASP.NET
 Web Application** template. Name the application **HelloServices**.
 
-[File New Project](images/hello-services-file-new-project.png)
+![File New Project](images/hello-services-file-new-project.png)
 
 Open the **Default.aspx** page and delete all the content.
 
@@ -64,7 +64,7 @@ project which will hold the data access layer. Create a second folder called
 **Controllers **which will hold the WebAPI service that will be created in
 this tutorial.
 
-[Data Controllers](images/hello-services-data-controllers.png)
+![Data Controllers](images/hello-services-data-controllers.png)
 
 ### Create A Data Access Layer
 
@@ -81,9 +81,9 @@ the left-hand side, or from the **View** menu. Expand the **Northwind**
 database and expand **Tables**. Drag the **Employees** table onto the design
 surface. Save the file.
 
-[![add-linq-to-sql][14]][15]
+![Add Linq To Sql](images/hello-services-add-linq-to-sql.png)
 
-[![linq-to-sql-table-added][16]][17]
+![Linq To Sql Table Added](images/hello-services-linq-to-sql-table-added.png)
 
 ### Install NuGet Packages
 
@@ -98,14 +98,14 @@ dialogue comes up, click the **online** tab on the left-hand side and enter
 result and click the **“install”** button. Accept the package dependencies and
 install those as well.
 
-[![nuget-aspnetwebapi][19]][20]
+![Nuget AspNetWebApi](images/hello-services-nuget-aspnetwebapi.png)
 
 **Install jQuery**
 
 Enter **“jquery”** in the search box. Select the **jQuery** result and select
 **“install”**.
 
-[![install-jquery][21]][22]
+![Install jQuery](images/hello-services-install-jquery.png)
 
 Close the **Add Library Package Reference** dialogue.
 
@@ -115,7 +115,7 @@ In order to create the WebAPI Service, an empty class is needed. Right-click
 the **Controllers **folder and select **Add** and then **Class**. Name the
 class **EmployeesController.cs**.
 
-[![employees-controller][23]][24]
+![Employees Controller](images/hello-services-employees-controller.png)
 
 In order to designate the **EmployeesControllers.cs** class that was just
 added as a WebAPI controller that will respond to requests, inherit from the
@@ -124,7 +124,7 @@ over the word until you get the context menu. This will give you the option to
 include **System.Web.Http**. Optionally, you can achieve the same result by
 click **Alt+Shift+F10**, which will bring up the same context menu.
 
-[![employee-contoller-class-inherit][25]][26]
+![Employee Controller Inherits ApiController Class](images/hello-services-employee-contoller-class-inherit.png)
 
 This class will contain methods that can be invoked from the web service that
 is being created. This service represents the **Employees** table in the
@@ -176,7 +176,7 @@ Since WebAPI operates on convention over configuration, simply naming this
 method [**Get**][27]**()** is enough to designate as the method that will
 respond to an HTTP **GET**.
 
-[![return-linq-object][28]][29]
+![Return A LinqToSql Object](images/hello-services-return-linq-object.png)
 
 You can override this convention by specifying the verb you want a method to
 respond to by decorating the method with the correct attribute (i.e.
@@ -231,7 +231,7 @@ application throws an error that is somewhat obscure.  If you inspect the
 details of that error, it will tell you that it cannot serialize the LINQ To
 SQL object.
 
-[![serialization-error][31]][32]
+![Serialization Error](images/hello-services-serialization-error.png)
 
 This is because .NET cannot serialize the LINQ To SQL object that is being
 returned by the **Get()** method in the **EmployeesController.cs** file. LINQ
@@ -271,7 +271,7 @@ properties. One for the employee id, first name, and last name.
 
 
 
-[![employee-model][33]][34]
+![Employee Model](images/hello-services-employee-model.png)
 
 Open up the **EmployeesController.cs** file in the **Controllers** folder.
 Alter the **Get()** method to return a list of **Model.Employee** objects
@@ -309,7 +309,7 @@ from the database.
 
 
 
-[![web-get][35]][36]
+![Web Get](images/hello-services-web-get.png)
 
 ### Test The Application
 
@@ -318,7 +318,7 @@ URL. Notice that WebAPI returns the records from the Northwind Employees table
 in XML format.  IE will try to download the file, but other browsers such as
 Chrome will display the results.
 
-[![employees-xml][37]][38]
+![Employees XML](images/hello-services-employees-xml.png)
 
 ### Getting JSON Data With AJAX
 
@@ -336,7 +336,7 @@ Open the **Site.Master** file and drag the **jquery.min** file over to the
 page just below the **Site.css** link tag in the head of the page. At the time
 of this writing, the current version of jQuery is **jquery-1.7.2.min.js**.
 
-[![add-jquery-to-master-page][40]][41]
+![Add jQuery To Master Page](images/hello-services-add-jquery-to-master-page.png)
 
 Open up the **Default.aspx** file. Create an HTML table element with the id
 **“employees”**.
@@ -347,27 +347,18 @@ Open up the **Default.aspx** file. Create an HTML table element with the id
     <table id="employees"></table>
 
 
-
 Below the **table** element that you just created, but before the closing
 **content** tag, open a new script block.
 
 ### Open A New Script Block
 
-> <table id="employees"></table>
+    <table id="employees"></table>
 
->
+    <script>
 
->     <script>
+        // jquery ajax code will go here
 
->
-
->         // jquery ajax code will go here
-
->
-
->     </script>
-
->
+    </script>
 
 
 Inside the **script block**, create a [jQuery Document Ready][42] function.
@@ -384,33 +375,23 @@ sees it later down in the code. The table is selected by it’s ID using the
 
 ### Select Table When The Document Is Ready
 
-
     <table id="employees"></table>
-
 
     <script>
 
-
         // document ready function
-
-
 
         $(function() {
 
-
-        // select the employees table from the page and
-
-        // store it in a variable for later use.
-
-        var $employees = $("#employees");
+            // select the employees table from the page and
+            // store it in a variable for later use.
+            var $employees = $("#employees");
 
         });
 
 
     </script>
 
-
-##
 
 ### AJAX
 
@@ -450,58 +431,40 @@ which will hold the JSON response returned from the employees web service.
 
     <table id="employees"></table>
 
-
     <script>
 
-
         // document ready function
-
         $(function() {
 
+            // select the employees table from the page and
+            // store it in a variable for later use.
+            var $employees = $("#employees");
 
-        // select the employees table from the page and
+            // make an ajax call to the employees WebAPI service
+            // to retrieve a JSON response of all the employees
+            $.ajax({
 
-        // store it in a variable for later use.
+                // the url to the service
+                url: "api/employees",
 
-        var $employees = $("#employees");
+                // the format that the data should be in when
+                // it is returned
+                contentType: "json",
 
+                // the function that executes when the server
+                // responds to this ajax request successfully
+                success: function(data) {
 
-        // make an ajax call to the employees WebAPI service
+                    // put the JSON response in the employees table
 
-        // to retrieve a JSON response of all the employees
+                }
 
-        $.ajax({
-
-            // the url to the service
-
-            url: "api/employees",
-
-            // the format that the data should be in when
-
-            // it is returned
-
-            contentType: "json",
-
-            // the function that executes when the server
-
-            // responds to this ajax request successfully
-
-            success: function(data) {
-
-
-                // put the JSON response in the employees table
-
-
-            }
-
-
-        });
+            });
 
         });
 
 
     </script>
-
 
 
 In order to put the data returned into the page, it will be necessary to
@@ -517,7 +480,6 @@ for performance and cuts down on code clutter.
 
     <table id="employees"></table>
 
-
     <script>
 
 
@@ -526,67 +488,47 @@ for performance and cuts down on code clutter.
         $(function() {
 
 
-        // select the employees table from the page and
-
-        // store it in a variable for later use.
-
-        var $employees = $("#employees");
+            // select the employees table from the page and
+            // store it in a variable for later use.
+            var $employees = $("#employees");
 
 
-        // make an ajax call to the employees WebAPI service
+            // make an ajax call to the employees WebAPI service
+            // to retrieve a JSON response of all the employees
+            $.ajax({
 
-        // to retrieve a JSON response of all the employees
+                // the url to the service
+                url: "api/employees",
 
-        $.ajax({
+                // the format that the data should be in when
+                // it is returned
+                contentType: "json",
 
-            // the url to the service
-
-            url: "api/employees",
-
-            // the format that the data should be in when
-
-            // it is returned
-
-            contentType: "json",
-
-            // the function that executes when the server
-
-            // responds to this ajax request successfully
-
-            success: function(data) {
+                // the function that executes when the server
+                // responds to this ajax request successfully
+                success: function(data) {
 
 
-                // iterate over the data items returned from the server
+                    // iterate over the data items returned from the server
+                    // the index variable is the position in the colleciton.
+                    // the item variable is the item itself
+                    $.each(data, function(index, item){
 
-                // the index variable is the position in the colleciton.
+                        // append the first and last name to the table
+                        $employees.append("<tr><td>" + item.FirstName + "</td>" +
+                                              "<td>" + item.LastName + "</td>");
 
-                // the item variable is the item itself
+                    });
 
-                $.each(data, function(index, item){
+                  }
 
-
-                    // append the first and last name to the table
-
-                    $employees.append("<tr><td>" + item.FirstName + "</td>" +
-
-                                          "<td>" + item.LastName + "</td>");
-
-
-                });
-
-
-              }
-
-
-        });
+            });
 
         });
 
 
     </script>
 
-
-##
 
 ### Test The Application
 
@@ -601,12 +543,12 @@ Capturing”** button. Refresh the page. Notice the request that is made to
 **api/employees**. Double-click on the request. Notice that the **Content-
 Type** is set to **JSON**.
 
-[![f12-content-type-json][50]][51]
+![F12 Content Type Inspection](images/hello-services-f12-content-type-json.png)
 
 Select the **Response body** tab. Inspect the JSON response returned from the
 server.
 
-[![f12-response-body-json][52]][53]
+![F12 Response Body](images/hello-services-f12-response-body-json.png)
 
 ### Enable Deleting Of Employees
 
@@ -643,94 +585,59 @@ will be used over and over again.
 
     <table id="employees"></table>
 
-
     <script>
 
-
         // document ready function
-
         $(function() {
 
+            // select the employees table from the page and
+            // store it in a variable for later use.
+            var $employees = $("#employees");
 
-        // select the employees table from the page and
+            // make an ajax call to the employees WebAPI service
+            // to retrieve a JSON response of all the employees
+            $.ajax({
 
-        // store it in a variable for later use.
+                // the url to the service
+                url: "api/employees",
 
-        var $employees = $("#employees");
+                // the format that the data should be in when
+                // it is returned
+                contentType: "json",
 
+                // the function that executes when the server
+                // responds to this ajax request successfully
+                success: function(data) {
 
-        // make an ajax call to the employees WebAPI service
+                    // iterate over the data items returned from the server
+                    // the index variable is the position in the collection.
+                    // the item variable is the item itself
+                    $.each(data, function(index, item){
 
-        // to retrieve a JSON response of all the employees
+                            // append the first and last name to the table
+                            $employees.append("<tr><td>" + item.FirstName + "</td>" +
+                                                  "<td>" + item.LastName + "</td>");
 
-        $.ajax({
+                    });
 
-            // the url to the service
+                }
 
-            url: "api/employees",
-
-            // the format that the data should be in when
-
-            // it is returned
-
-            contentType: "json",
-
-            // the function that executes when the server
-
-            // responds to this ajax request successfully
-
-            success: function(data) {
-
-
-                // iterate over the data items returned from the server
-
-                // the index variable is the position in the collection.
-
-                // the item variable is the item itself
-
-                $.each(data, function(index, item){
-
-
-                        // append the first and last name to the table
-
-                        $employees.append("<tr><td>" + item.FirstName +
-"</td>" +
-
-                                              "<td>" + item.LastName +
-"</td>");
-
-
-                });
-
-
-            }
-
-
-          });
-
->      });
-
+            });
+        });
 
      </script>
-
 
     <div id="templates" style="display: none">
 
         <table>
 
-        <tr class="row-template">
-
-            <td class="firstName" style="width: 100px;"></td>
-
-            <td class="lastName" style="width: 100px;"></td>
-
-            <td>
-
-                <input type="button" value="X" class="delete" />
-
-            </td>
-
-        </tr>
+            <tr class="row-template">
+                <td class="firstName" style="width: 100px;"></td>
+                <td class="lastName" style="width: 100px;"></td>
+                <td>
+                    <input type="button" value="X" class="delete" />
+                </td>
+            </tr>
 
         </table>
 
@@ -767,115 +674,68 @@ row to the table.
 
     <table id="employees"></table>
 
-
     <script>
 
-
         // document ready function
-
         $(function() {
 
+            // select the employees table from the page and
+            // store it in a variable for later use.
+            var $employees = $("#employees");
 
-        // select the employees table from the page and
+            // make an ajax call to the employees WebAPI service
+            // to retrieve a JSON response of all the employees
+            $.ajax({
 
-        // store it in a variable for later use.
+                // the url to the service
+                url: "api/employees",
 
-        var $employees = $("#employees");
+                // the format that the data should be in when
+                // it is returned
+                contentType: "json",
 
+                // the function that executes when the server
+                // responds to this ajax request successfully
+                success: function(data) {
 
-        // make an ajax call to the employees WebAPI service
+                    // iterate over the data items returned from the server
+                    // the index variable is the position in the colleciton.
+                    // the item variable is the item itself
+                    $.each(data, function(index, item){
 
-        // to retrieve a JSON response of all the employees
+                        // create a row template
+                        var $row = $("#templates").find(".row-template").clone();
 
-        $.ajax({
+                        // set the first and last name column text for the row
+                        $row.find(".firstName").html(item.FirstName);
+                        $row.find(".lastName").html(item.LastName);
 
-            // the url to the service
+                        // find the button and set its click event
+                        $row.find(".delete").click(function() {
 
-            url: "api/employees",
+                        // call the delete method on the employees service
 
-            // the format that the data should be in when
+                        $.ajax({
+                            // append the current employee id onto the url
+                            url: "api/employees/" + item.Id,
 
-            // it is returned
+                            // set the request type to be a DELETE
+                            type: "DELETE",
 
-            contentType: "json",
+                            // remove the row on a success response from the server
+                            success: function() {
+                                $row.remove();
+                            }
+                        });
 
-            // the function that executes when the server
-
-            // responds to this ajax request successfully
-
-            success: function(data) {
-
-
-                // iterate over the data items returned from the server
-
-                // the index variable is the position in the colleciton.
-
-                // the item variable is the item itself
-
-                $.each(data, function(index, item){
-
-
-                    // create a row template
-
-                    var $row = $("#templates").find(".row-template").clone();
-
-
-                    // set the first and last name column text for the row
-
-                    $row.find(".firstName").html(item.FirstName);
-
-                    $row.find(".lastName").html(item.LastName);
-
-
-                    // find the button and set its click event
-
-                    $row.find(".delete").click(function() {
-
-
-                    // call the delete method on the employees service
-
-                    $.ajax({
-
-                        // append the current employee id onto the url
-
-                        url: "api/employees/" + item.Id,
-
-                        // set the request type to be a DELETE
-
-                        type: "DELETE",
-
-                        // remove the row on a success response from the
-server
-
-                        success: function() {
-
-
-                            $row.remove();
-
-
-                        }
-
+                        // append the row to the table
+                        $employees.append($row);
                     });
 
-
-                });
-
-
-            // append the row to the table
-
-            $employees.append($row);
-
-
+                }
             });
 
-
-          }
-
-
         });
-
-    });
-
 
     </script>
 
@@ -884,19 +744,13 @@ server
 
         <table>
 
-        <tr class="row-template">
-
-            <td class="firstName" style="width: 100px;"></td>
-
-            <td class="lastName" style="width: 100px;"></td>
-
-            <td>
-
-                <input type="button" value="X" class="delete" />
-
-            </td>
-
-        </tr>
+            <tr class="row-template">
+                <td class="firstName" style="width: 100px;"></td>
+                <td class="lastName" style="width: 100px;"></td>
+                <td>
+                    <input type="button" value="X" class="delete" />
+                </td>
+            </tr>
 
         </table>
 
@@ -912,7 +766,7 @@ Notice that when the **delete** button is clicked, an AJAX request is fired to
 the server with a method of **DELETE**. The server is currently returning a
 404, because the **DELETE** method has not yet been created in the service.
 
-[![delete-not-implemented-404][58]][59]
+![Delete Not Implemented](images/hello-services-delete-not-implemented-404.png)
 
 ## Add A Delete Method To The Employees Service
 
@@ -926,9 +780,7 @@ method underneath the **Get()** method called **Delete()** which takes in an
 
     public void Delete(int id) {
 
-
         // code to delete employee by id goes here
-
 
     }
 
@@ -941,28 +793,18 @@ respond to an HTTP **DELETE** verb.
 
 ### Delete The Employee With LINQ To SQL
 
-
     public void Delete(int id) {
 
-
         // select the employee from the database by its id
-
         var employeeToDelete = (from e in _context.Employees
-
                                 where e.EmployeeID == id
-
                                 select e).FirstOrDefault();
 
-
         // delete the employee from the context
-
         _context.Employees.DeleteOnSubmit(employeeToDelete);
 
-
         // submit the changes
-
         _context.SubmitChanges();
-
 
     }
 
@@ -980,7 +822,7 @@ the delete button next to the name you added to the database. Notice that the
 This means that everything has happened OK and the item has been deleted from
 the database. Also notice that your name was removed from the page by jQuery.
 
-[![finally][60]][61]
+![Finally](images/hello-services-finally.png)
 
 ### Further Reading / Resources
 
@@ -994,13 +836,6 @@ The completed application used in this project is available on the course
 [GitHub site][4].
 
 ![][63]
-
-**About the Author
-
-**Burke Holland is a web developer living in Nashville, TN. He enjoys working
-with and meeting developers who are building mobile apps with jQuery / HTML5
-and loves to hack on social API's. Burke works for Telerik as a Developer
-Evangelist focusing on Kendo UI. Burke is [@burkeholland][64] on Twitter.
 
    [1]: http://www.kendoui.com/blogs/teamblog/posts/12-05-02/html5_development
 _for_asp_net_developers.aspx
@@ -1019,18 +854,6 @@ _for_asp_net_developers.aspx
    [7]: http://en.wikipedia.org/wiki/Serialization (Serialization - Wikipedia,
 the free encyclopedia)
 
-   [8]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-file-new-project_thumb.sflb.ashx (file-new-project)
-
-   [9]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-file-new-project.sflb.ashx
-
-   [10]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-data-controllers_thumb.sflb.ashx (data-controllers)
-
-   [11]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-data-controllers.sflb.ashx
-
    [12]: http://www.microsoft.com/en-us/download/details.aspx?id=23654
 (Download: NorthWind and pubs Sample Databases for SQL Server 2000 - Microsoft
 Download Center - Download Details)
@@ -1038,88 +861,13 @@ Download Center - Download Details)
    [13]: http://msdn.microsoft.com/en-us/library/bb425822.aspx (LINQ to SQL:
 .NET Language-Integrated Query for Relational Data)
 
-   [14]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-add-linq-to-sql_thumb.sflb.ashx (add-linq-to-sql)
-
-   [15]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-add-linq-to-sql.sflb.ashx
-
-   [16]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-linq-to-sql-table-added_thumb.sflb.ashx (linq-to-sql-table-
-added)
-
-   [17]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-linq-to-sql-table-added.sflb.ashx
-
    [18]: http://nuget.org/ (NuGet Gallery)
-
-   [19]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-nuget-aspnetwebapi_thumb.sflb.ashx (nuget-aspnetwebapi)
-
-   [20]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-nuget-aspnetwebapi.sflb.ashx
-
-   [21]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-install-jquery_thumb.sflb.ashx (install-jquery)
-
-   [22]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-install-jquery.sflb.ashx
-
-   [23]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-employees-controller_thumb.sflb.ashx (employees-controller)
-
-   [24]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-employees-controller.sflb.ashx
-
-   [25]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-employee-contoller-class-inherit_thumb.sflb.ashx (employee-
-contoller-class-inherit)
-
-   [26]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-employee-contoller-class-inherit.sflb.ashx
 
    [27]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
 
-   [28]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-return-linq-object_thumb.sflb.ashx (return-linq-object)
-
-   [29]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-return-linq-object.sflb.ashx
-
    [30]: http://localhost:3593/api/employees
 
-   [31]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-serialization-error_thumb_1.sflb.ashx (serialization-error)
-
-   [32]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-serialization-error_1.sflb.ashx
-
-   [33]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-employee-model_thumb.sflb.ashx (employee-model)
-
-   [34]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-employee-model.sflb.ashx
-
-   [35]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-web-get_thumb.sflb.ashx (web-get)
-
-   [36]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-web-get.sflb.ashx
-
-   [37]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-employees-xml_thumb.sflb.ashx (employees-xml)
-
-   [38]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-employees-xml.sflb.ashx
-
    [39]: http://en.wikipedia.org/wiki/Ajax_(programming
-
-   [40]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-add-jquery-to-master-page_thumb.sflb.ashx (add-jquery-to-
-master-page)
-
-   [41]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-add-jquery-to-master-page.sflb.ashx
 
    [42]: http://api.jquery.com/ready/ (.ready() – jQuery API)
 
@@ -1138,20 +886,6 @@ Model - Wikipedia, the free encyclopedia)
 
    [49]: http://api.jquery.com/append/ (.append() – jQuery API)
 
-   [50]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-f12-content-type-json_thumb.sflb.ashx (f12-content-type-
-json)
-
-   [51]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-f12-content-type-json.sflb.ashx
-
-   [52]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-f12-response-body-json_thumb.sflb.ashx (f12-response-body-
-json)
-
-   [53]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-f12-response-body-json.sflb.ashx
-
    [54]: http://api.jquery.com/find/ (.find() – jQuery API)
 
    [55]: http://api.jquery.com/clone/ (.clone() – jQuery API)
@@ -1160,24 +894,7 @@ json)
 
    [57]: http://api.jquery.com/remove/ (.remove() – jQuery API)
 
-   [58]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-delete-not-implemented-404_thumb.sflb.ashx (delete-not-
-implemented-404)
-
-   [59]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-delete-not-implemented-404.sflb.ashx
-
-   [60]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-finally_thumb.sflb.ashx (finally)
-
-   [61]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-1e3972a56ba1_A60A-finally.sflb.ashx
-
    [62]: http://weblogs.asp.net/jgalloway/archive/2012/03/16/asp-net-web-api-
 screencast-series-with-downloadable-sample-code-part-1.aspx (ASP.NET Web API -
 Screencast series with downloadable sample code - Part 1 - Jon Galloway)
-
-   [63]: http://www.kendoui.com/Libraries/Blog_Images/BurkeHolland.sflb.ashx
-
-   [64]: http://twitter.com/burkeholland
 
