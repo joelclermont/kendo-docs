@@ -1,5 +1,5 @@
 ---
-title: HTML5 Development With ASP.NET - Part 2 - Hello Services
+title: Part 2 - Hello Services
 slug: tutorial-html5-development-with-asp-net-part-2-hello-services
 tags: Tutorial
 publish: true

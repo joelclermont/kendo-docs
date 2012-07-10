@@ -1,5 +1,5 @@
 ---
-title: HTML5 Development With ASP.NET - Part 1 - Hello jQuery
+title: Part 1 - Hello jQuery
 slug: tutorial-html5-development-with-asp-net-part-1-hello-jquery
 tags: Tutorial
 publish: true
