@@ -37,7 +37,7 @@ development is the browser. As long the browser is capable, .NET is capable.
 Select **File** / **New Project** and select the **ASP.NET Web Application
 **project template.  Name the application “**HellojQuery**”.
 
-[File New Project](images/hello-jquery-file-new-project.png)
+![File New Project](images/hello-jquery-file-new-project.png)
 
 Open the **Default.aspx** page.  Switch to **Design **view and delete all the
 content.  From the toolbox, drag out two **TextBoxes**, a **Button** and a
@@ -51,7 +51,7 @@ Name the Button **“btnSayHello”** and change it’s **Text **property to **�
 Hello”**.  Set the Label ID to **lblResult** and clear out the **Text
 **property.
 
-[Default Design View](images/hello-jquery-default-design-view.png)
+![Default Design View](images/hello-jquery-default-design-view.png)
 
 Double-click the **Say Hello **button to create a new button click event in
 the **Default.aspx.cs** file.  Set the label text equal to the string **“Hello
@@ -76,7 +76,7 @@ name yet or click the button.  Instead, press **F12 **to open the IE Developer
 Tools.  Switch to the **Network **tab and click the **Start Capturing**
 button.
 
-[F12 Developer Tools](images/hello-jquery-developer-tools.png)
+![F12 Developer Tools](images/hello-jquery-developer-tools.png)
 
 Refresh the page.  Notice that the **Network **tab now shows three items.  The
 first is the **Default.aspx** page that you are looking at.  The second is the
@@ -91,7 +91,7 @@ an HTTP **[GET][10]**.  A **[GET][10]**  is commonly used when requesting
 information from a server.  By default when you visit a URL, your browser will
 do a **[GET][10] **to retrieve the requested site.
 
-[Network Traffic For A Get](images/hello-jquery-network-traffic-get.png)
+![Network Traffic For A Get](images/hello-jquery-network-traffic-get.png)
 
 Now fill the form out in the application with your first name and click the
 **Say Hello** button.  The server responds as expected by setting the label
@@ -103,13 +103,13 @@ values of the first name and last name textboxes.  When browsers send
 information to the server and expect a response, this is typically done with a
 **[POST][10]**.
 
-[Network Traffic For A Post](images/hello-jquery-network-traffic-post.png)
+![Network Traffic For A Post](images/hello-jquery-network-traffic-post.png)
 
 In ASP.NET WebForms, the page posts back to itself, or the same URL. To
 inspect the information that was sent to the server, double click on the
 **[POST][10] **method and click on the **Request Body **tab.
 
-[Network Request Body](images/hello-jquery-network-request-body.png)
+![Network Request Body](images/hello-jquery-network-request-body.png)
 
 Here you can see that the _[VIEWSTATE][17] object was sent back to the server.
 If you scroll down far enough, you will find the values of the first and last
@@ -130,8 +130,7 @@ straight forward way.
 
 Visual Studio projects actually come with [jQuery](http://jquery.com/) in the **Scripts**
 folder by default.  However, these [jQuery](http://jquery.com/) and VSDoc files may be out of
-date and not connected with a [Nuget](http://msdn.microsoft.com/en-us/library/dd565622(v=vs.85)) installation.  Delete the
-[jQuery](http://jquery.com/) files in the **Scripts **folder, including the VSDoc file.
+date and not connected with a [Nuget](http://msdn.microsoft.com/en-us/library/dd565622(v=vs.85)) installation.  Delete the [jQuery](http://jquery.com/) files in the **Scripts **folder, including the VSDoc file.
 
 To install [jQuery](http://jquery.com/) from [Nuget](http://msdn.microsoft.com/en-us/library/dd565622(v=vs.85).aspx), right-click the project and select
 **Add Library Package Reference**.  Select **Online **from the left-hand side
@@ -139,7 +138,7 @@ and enter “**jquery”** in the search box.  Click the **Install **button on t
 [jQuery](http://jquery.com/) package.  This will install the VSDoc files as well.  There is no
 need to install them separately.
 
-[Nuget jQuery Search](images/hello-jquery-nuget-jquery-search.png)
+![Nuget jQuery Search](images/hello-jquery-nuget-jquery-search.png)
 
 This will put the latest version of [jQuery](http://jquery.com/) in the **Scripts **folder.
 There will be 3 files there.
@@ -162,7 +161,7 @@ Open up the **Site.Master** page.  Drag the full [jQuery][2] source into the
 will create a new **link** tag pointing to the jQuery-1.7.2.js file.
 [JQuery][2] has now been added to the project.
 
-[jQuery Added To The Master Page](images/hello-jquery-jquery-added-to-master.png)
+![jQuery Added To The Master Page](images/hello-jquery-jquery-added-to-master.png)
 
 #### Using jQuery Directly In The Browser
 
@@ -171,7 +170,7 @@ selecting **F12**.  Switch to the **Console** tab in the developer tools.  The
 console allows a developer to execute arbitrary JavaScript commands at
 runtime.  As a test, type **alert(“Hello!”); **in the console and press enter.
 
-[Alert Hello](hello-jquery-alert-hello.png)
+![Alert Hello](hello-jquery-alert-hello.png)
 
 [jQuery](http://jquery.com/) code can be executed either by calling methods off of the
 **jQuery** object, or simply using the **$**.  The **$** is commonly known and
@@ -232,7 +231,7 @@ textbox.  Enter the following command in the console and press enter.
 Notice that the command is echoed out into the Console, but there is no value.
 This mistake was made to demonstrate an important feature of ASP.NET WebForms.
 
-[txtFirstName Has No Value](images/hello-jquery-txtfirstname-no-value.png)
+![txtFirstName Has No Value](images/hello-jquery-txtfirstname-no-value.png)
 
 To debug why this didn’t work, click on the white arrow which is the element
 selector.  Then go up into the page and click on the textbox that you named
@@ -244,7 +243,7 @@ a parent server control will be prefixed with the parent name.  If parents are
 nested within parents, they may have multiple values appended onto the front.
 This is to make sure that ID’s do in fact remain unique.
 
-[Main Content Prefixed txtFirstName](hello-jquery-main-content-txt-firstname.png)
+![Main Content Prefixed txtFirstName](hello-jquery-main-content-txt-firstname.png)
 
 Switch back to the **Console** tab and keeping in mind the actual ID of
 **txtFirstName **at runtime, enter the following command in the **console.**
@@ -258,7 +257,7 @@ Switch back to the **Console** tab and keeping in mind the actual ID of
 
 Notice that the text value of the first name textbox is returned.
 
-[txtFirstName Has A Value](hello-jquery-txtfirstname-has-value.png)
+![txtFirstName Has A Value](hello-jquery-txtfirstname-has-value.png)
 
 #### Refactor The Application To Use jQuery
 
