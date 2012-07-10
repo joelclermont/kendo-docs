@@ -37,6 +37,8 @@ Kendo UI MVVM implementation as well as Knockout. MVVM will not be covered conce
 Assume that we have a simple select list and we want to bind it to the view
 model.  We declare the HTML and the view model.
 
+<iframe src="http://jsfiddle.net/YtYrC/14/embedded/js,html,result" frameborder="0" style="width: 100%; height: 300px;" allowfullscreen="allowfullscreen"></iframe>
+
 This is very basic, but we are using the **data-bind **to bind the source of
 the select to the view model **things** array.  Also note that you can bind to
 a function as well as I’m doing with **data-bind=”text: thingSelection” **on
@@ -79,9 +81,9 @@ For instance, lets look at styling the drop down a bit using the data-bind
 syntax with style.  I can set the drop down width as well as setting its
 margins by using data-bind and the above referenced style.
 
+  data-bind="style: { width: thingsWidth, fontSize: thingsFontSize}"
 
-    data-bind="style: { width: thingsWidth, fontSize: thingsFontSize}"
-
+<iframe src="http://jsfiddle.net/YtYrC/15/embedded/js,html,result" frameborder="0" style="width: 100%; height: 300px;" allowfullscreen="allowfullscreen"></iframe>
 
 The width and font-size are now bound to view model properties and the select
 element will be styled appropriately based on the values in the view model.
@@ -107,6 +109,8 @@ turn the select into a Kendo UI DropDown List.  We do this by setting the
 calling **kendoDropDownList **on the element.  Thanks to declarative binding,
 we don’t have to do that anymore.
 
+<iframe src="http://jsfiddle.net/YtYrC/16/embedded/js,html,result" frameborder="0" style="width: 100%; height: 300px;" allowfullscreen="allowfullscreen"></iframe>
+
 Notice that we lost our previous styling.  This is because the ordinary select
 is now a Kendo UI DropDown which has it’s own styling.  Everything else keeps
 right on working exactly they way you would expect.
@@ -122,6 +126,8 @@ them.
 Let’s rework the above example and get rid of the view model, but this time
 we’ll bind it to a DataSource and let declarative initialization do all the
 work for us.
+
+<iframe src="http://jsfiddle.net/YtYrC/22/embedded/js,html,result" frameborder="0" style="width: 100%; height: 300px;" allowfullscreen="allowfullscreen"></iframe>
 
 The **kendo.init **call will initialize whatever piece of the UI is passed in
 as a reference. Notice that I am only calling **init** on the **main **div.
@@ -145,8 +151,7 @@ the **h2** tag.
 
 1. Bindings are not JavaScript.  Do not try and do this…
 
-
-    data-bind="value: if ($(“#div”).html() === “somevalue”)…
+  data-bind="value: if ($(“#div”).html() === “somevalue”)…
 
 That won’t work.  You should be doing that in your view model.  If you aren’t
 using a view model and you have a good use case for sticking JavaScript into
@@ -158,13 +163,13 @@ need to mitigate collisions with Kendo UI and some other JS library, you can
 provide a namespace for Kendo UI and then reference that namespace instead.
 
 
-    kendo.ns="kendo";
+  kendo.ns="kendo";
 
-    // then
-    data-bind="value: someValue" 
+  // then
+  data-bind="value: someValue" 
 
-	// becomes
-    data-kendo-bind="value: someValue"
+  // becomes
+  data-kendo-bind="value: someValue"
 
 
 ## Don’t Do Guesswork!
