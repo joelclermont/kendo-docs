@@ -24,7 +24,7 @@ Use to enable or disable animation of the popup element.
 ##### enable `System.Boolean`
 The boolean value.
 
-### Animation(System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>)
+### Animation(System.Action\<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder\>)
 Configures the animation effects of the widget.
 
 #### Example
@@ -41,10 +41,10 @@ Configures the animation effects of the widget.
 
 #### Parameters
 
-##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder>)>
+##### animationAction `System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>`
 The action which configures the animation effects.
 
-### Events(System.Action<Kendo.Mvc.UI.Fluent.DatePickerEventBuilderBase>)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.DatePickerEventBuilderBase\>)
 Configures the client-side events.
 
 #### Example
@@ -57,13 +57,13 @@ Configures the client-side events.
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.DatePickerEventBuilderBase>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DatePickerEventBuilderBase>)>
+##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.DatePickerEventBuilderBase>`
 The client events action.
 
 ### Format(System.String)
 Sets the date format, which will be used to parse and format the machine date.
 
-### ParseFormats(System.Collections.Generic.IEnumerable<System.String>)
+### ParseFormats(System.Collections.Generic.IEnumerable\<System.String\>)
 Specifies the formats, which are used to parse the value set with value() method or by direct input.
 
 ### Enable(System.Boolean)
@@ -75,7 +75,7 @@ Sets the minimal date, which can be selected in picker.
 ### Max(System.DateTime)
 Sets the maximal date, which can be selected in picker.
 
-### Value(System.Nullable<System.DateTime>)
+### Value(System.Nullable\<System.DateTime\>)
 Sets the value of the picker input
 
 ### Value(System.String)

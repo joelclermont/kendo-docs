@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the !:ListView{T}.
 
 ## Methods
 
-### BindTo(System.Collections.Generic.IEnumerable<T>)
+### BindTo(System.Collections.Generic.IEnumerable\<T\>)
 Binds the ListView to a list of objects
 
 #### Example
@@ -62,7 +62,7 @@ Allows paging of the data.
         .Pageable();
         %>
 
-### Pageable(System.Action<Kendo.Mvc.UI.Fluent.PageableBuilder>)
+### Pageable(System.Action\<Kendo.Mvc.UI.Fluent.PageableBuilder\>)
 Allows paging of the data.
 
 #### Example
@@ -74,7 +74,7 @@ Allows paging of the data.
 
 #### Parameters
 
-##### pagerAction System.Action<[Kendo.Mvc.UI.Fluent.PageableBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PageableBuilder>)>
+##### pagerAction `System.Action<Kendo.Mvc.UI.Fluent.PageableBuilder>`
 Use builder to define paging settings.
 
 ### Navigatable
@@ -96,7 +96,7 @@ Enables single item selection.
         .Selectable()
         %>
 
-### Selectable(System.Action<Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder>)
+### Selectable(System.Action\<Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder\>)
 Enables item selection.
 
 #### Example
@@ -110,7 +110,7 @@ Enables item selection.
 
 #### Parameters
 
-##### selectionAction System.Action<[Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ListViewSelectionSettingsBuilder>)>
+##### selectionAction `System.Action<Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder>`
 Use builder to define the selection mode.
 
 ### TagName(System.String)
@@ -122,7 +122,7 @@ Specifies ListView wrapper element tag name.
         .TagName("div")
         %>
 
-### Editable(System.Action<Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder<T>>)
+### Editable(System.Action\<Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder\<T\>\>)
 Configures the ListView editing settings.
 
 #### Example
@@ -140,7 +140,7 @@ Enables ListView editing.
         .Editable()
         %>
 
-### Events(System.Action<Kendo.Mvc.UI.Fluent.ListViewEventBuilder>)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.ListViewEventBuilder\>)
 Configures the client-side events.
 
 #### Example
@@ -153,5 +153,5 @@ Configures the client-side events.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ListViewEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ListViewEventBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ListViewEventBuilder>`
 The client events action.

@@ -19,15 +19,15 @@ Enables or disables filtering
         .Filterable(filtering => filtering.Enabled((bool)ViewData["enableFiltering"]))
         %>
 
-### Operators(System.Action<Kendo.Mvc.UI.Fluent.FilterableOperatorsBuilder>)
+### Operators(System.Action\<Kendo.Mvc.UI.Fluent.FilterableOperatorsBuilder\>)
 Configures the Filter menu operators.
 
-### Messages(System.Action<Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder>)
+### Messages(System.Action\<Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder\>)
 Configures Filter menu messages.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/FilterableMessagesBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder>`
 
 ### Extra(System.Boolean)
 Specify if the extra input fields should be visible within the filter menu. Default is true.

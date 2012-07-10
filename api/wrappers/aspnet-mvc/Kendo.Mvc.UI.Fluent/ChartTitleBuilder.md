@@ -67,7 +67,7 @@ Sets the title position
 
 #### Parameters
 
-##### position [Kendo.Mvc.UI.ChartTitlePosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartTitlePosition)
+##### position `Kendo.Mvc.UI.ChartTitlePosition`
 The title position.
 
 ### Align(Kendo.Mvc.UI.ChartTextAlignment)
@@ -82,7 +82,7 @@ Sets the title alignment
 
 #### Parameters
 
-##### align [Kendo.Mvc.UI.ChartTextAlignment](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartTextAlignment)
+##### align `Kendo.Mvc.UI.ChartTextAlignment`
 The title alignment.
 
 ### Visible(System.Boolean)
@@ -196,5 +196,5 @@ The title border width.
 ##### color `System.String`
 The title border color.
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType `Kendo.Mvc.UI.ChartDashType`
 The title dash type.

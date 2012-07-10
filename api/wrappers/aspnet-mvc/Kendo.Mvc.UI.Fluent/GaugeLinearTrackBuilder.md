@@ -81,5 +81,5 @@ The pointer border width.
 ##### color `System.String`
 The pointer border color.
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType `Kendo.Mvc.UI.ChartDashType`
 The pointer dash type.

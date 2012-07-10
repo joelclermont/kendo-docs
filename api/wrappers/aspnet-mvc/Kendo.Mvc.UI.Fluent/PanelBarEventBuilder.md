@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the Events.
 
 ## Methods
 
-### Expand(System.Func<System.Object,System.Object>)
+### Expand(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Expand client-side event
 
 #### Example
@@ -28,7 +28,7 @@ Defines the inline handler of the Expand client-side event
 
 #### Parameters
 
-##### expandInlineCodeBlock `System.Func<System.Object`
+##### expandInlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Expand(System.String)
@@ -45,7 +45,7 @@ Defines the name of the JavaScript function that will handle the the Expand clie
 ##### expandHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### ContentLoad(System.Func<System.Object,System.Object>)
+### ContentLoad(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the ContentLoad client-side event
 
 #### Example
@@ -63,7 +63,7 @@ Defines the inline handler of the ContentLoad client-side event
 
 #### Parameters
 
-##### contentLoadInlineCodeBlock `System.Func<System.Object`
+##### contentLoadInlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### ContentLoad(System.String)
@@ -80,7 +80,7 @@ Defines the name of the JavaScript function that will handle the the ContentLoad
 ##### contentLoadHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Collapse(System.Func<System.Object,System.Object>)
+### Collapse(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Collapse client-side event
 
 #### Example
@@ -98,7 +98,7 @@ Defines the inline handler of the Collapse client-side event
 
 #### Parameters
 
-##### collapseInlineCodeBlock `System.Func<System.Object`
+##### collapseInlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Collapse(System.String)
@@ -115,7 +115,7 @@ Defines the name of the JavaScript function that will handle the the Collapse cl
 ##### collapseHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Select(System.Func<System.Object,System.Object>)
+### Select(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Select client-side event
 
 #### Example
@@ -133,7 +133,7 @@ Defines the inline handler of the Select client-side event
 
 #### Parameters
 
-##### selectInlineCodeBlock `System.Func<System.Object`
+##### selectInlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Select(System.String)
@@ -150,7 +150,7 @@ Defines the name of the JavaScript function that will handle the the Select clie
 ##### selectHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Error(System.Func<System.Object,System.Object>)
+### Error(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Error client-side event
 
 #### Example
@@ -168,7 +168,7 @@ Defines the inline handler of the Error client-side event
 
 #### Parameters
 
-##### errorInlineCodeBlock `System.Func<System.Object`
+##### errorInlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Error(System.String)

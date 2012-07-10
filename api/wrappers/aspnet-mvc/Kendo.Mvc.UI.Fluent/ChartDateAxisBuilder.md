@@ -15,7 +15,7 @@ Sets the date axis base unit.
 
 #### Parameters
 
-##### baseUnit [Kendo.Mvc.UI.ChartAxisBaseUnit](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartAxisBaseUnit)
+##### baseUnit `Kendo.Mvc.UI.ChartAxisBaseUnit`
 The date axis base unit
 
 ### Min(System.DateTime)
@@ -105,7 +105,7 @@ Sets value at which perpendicular axes cross this axis.
 ##### axisCrossingValues `System.DateTime[]`
 The values at which perpendicular axes cross this axis.
 
-### AxisCrossingValue(System.Collections.Generic.IEnumerable<System.DateTime>)
+### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.DateTime\>)
 Sets value at which perpendicular axes cross this axis.
 
 #### Example
@@ -123,7 +123,7 @@ Sets value at which perpendicular axes cross this axis.
 ##### axisCrossingValues `System.Collections.Generic.IEnumerable<System.DateTime>`
 The values at which perpendicular axes cross this axis.
 
-### Labels(System.Action<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>)
+### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder\>)
 Configures the axis labels.
 
 #### Example
@@ -140,5 +140,5 @@ Configures the axis labels.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartDateAxisLabelsBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>`
 The configuration action.

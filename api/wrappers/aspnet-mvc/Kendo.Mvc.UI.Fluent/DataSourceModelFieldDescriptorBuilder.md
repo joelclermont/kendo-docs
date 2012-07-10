@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the ModelFieldDescriptor.
 
 ## Methods
 
-### DefaultValue(<T>)
+### DefaultValue(\<T\>)
 Sets the value which will be used to populate the field when new non-existing model is created.
 
 #### Parameters

@@ -151,7 +151,7 @@ Name of the route.
 ##### routeValues `System.Object`
 The route values.
 
-### Save<T1>(System.Linq.Expressions.Expression<System.Action<T1>>)
+### Save\<T1\>(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
 Sets the action for the save operation
 
 #### Example
@@ -334,7 +334,7 @@ Name of the route.
 ##### routeValues `System.Object`
 The route values.
 
-### Remove<T1>(System.Linq.Expressions.Expression<System.Action<T1>>)
+### Remove\<T1\>(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
 Sets the action for the remove operation
 
 #### Example

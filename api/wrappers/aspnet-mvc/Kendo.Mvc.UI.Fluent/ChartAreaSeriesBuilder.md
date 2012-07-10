@@ -36,10 +36,10 @@ Sets the aggregate function for date series.
 
 #### Parameters
 
-##### aggregate [Kendo.Mvc.UI.ChartSeriesAggregate](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)
+##### aggregate `Kendo.Mvc.UI.ChartSeriesAggregate`
 Aggregate function name.
 
-### Labels(System.Action<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder>)
+### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder\>)
 Configures the area chart labels.
 
 #### Example
@@ -56,7 +56,7 @@ Configures the area chart labels.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartPointLabelsBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder>`
 The configuration action.
 
 ### Labels(System.Boolean)
@@ -94,7 +94,7 @@ Configures the area chart line.
 ##### configurator `System.Int32`
 The configuration action.
 
-### Line(System.Action<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder>)
+### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder\>)
 Configures the area chart line.
 
 #### Example
@@ -109,10 +109,10 @@ Configures the area chart line.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAreaLineBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder>`
 The configuration action.
 
-### Markers(System.Action<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder>)
+### Markers(System.Action\<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder\>)
 Configures the area chart markers.
 
 #### Example
@@ -128,7 +128,7 @@ Configures the area chart markers.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartMarkersBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartMarkersBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder>`
 The configuration action.
 
 ### Markers(System.Boolean)
@@ -162,5 +162,5 @@ Configures the behavior for handling missing values in area series.
 
 #### Parameters
 
-##### missingValues [Kendo.Mvc.UI.ChartAreaMissingValues](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartAreaMissingValues)
+##### missingValues `Kendo.Mvc.UI.ChartAreaMissingValues`
 The missing values behavior. The default is to leave gaps.

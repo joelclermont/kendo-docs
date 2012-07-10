@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the Events.
 
 ## Methods
 
-### Change(System.Func<System.Object,System.Object>)
+### Change(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Change client-side event
 
 #### Example
@@ -29,7 +29,7 @@ Defines the inline handler of the Change client-side event
 
 #### Parameters
 
-##### handlerName `System.Func<System.Object`
+##### handlerName `System.Func<System.Object,System.Object>`
 The action defining the inline handler.
 
 ### Change(System.String)
@@ -46,7 +46,7 @@ Defines the name of the JavaScript function that will handle the the Kendo clien
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Slide(System.Func<System.Object,System.Object>)
+### Slide(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Slide client-side event.
 
 #### Example
@@ -65,7 +65,7 @@ Defines the inline handler of the Slide client-side event.
 
 #### Parameters
 
-##### handlerName `System.Func<System.Object`
+##### handlerName `System.Func<System.Object,System.Object>`
 The action defining the inline handler.
 
 ### Slide(System.String)

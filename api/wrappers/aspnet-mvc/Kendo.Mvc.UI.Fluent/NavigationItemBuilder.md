@@ -27,12 +27,12 @@ Sets the HTML attributes applied to the outer HTML element rendered for the item
 ##### attributes `System.Object`
 The attributes.
 
-### HtmlAttributes(System.Collections.Generic.IDictionary<System.String,System.Object>)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes applied to the outer HTML element rendered for the item
 
 #### Parameters
 
-##### attributes `System.Collections.Generic.IDictionary<System.String`
+##### attributes `System.Collections.Generic.IDictionary<System.String,System.Object>`
 The attributes.
 
 ### Text(System.String)
@@ -245,12 +245,12 @@ Sets the HTML attributes for the item image.
 ##### attributes `System.Object`
 The attributes.
 
-### ImageHtmlAttributes(System.Collections.Generic.IDictionary<System.String,System.Object>)
+### ImageHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes for the item image.
 
 #### Parameters
 
-##### attributes `System.Collections.Generic.IDictionary<System.String`
+##### attributes `System.Collections.Generic.IDictionary<System.String,System.Object>`
 The attributes.
 
 ### SpriteCssClasses(System.String[])
@@ -277,12 +277,12 @@ Sets the HTML content which the item should display.
 ##### value `System.Action`
 The action which renders the content.
 
-### Content(System.Func<System.Object,System.Object>)
+### Content(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the item should display.
 
 #### Parameters
 
-##### value `System.Func<System.Object`
+##### value `System.Func<System.Object,System.Object>`
 The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 ### Content(System.String)
@@ -310,15 +310,15 @@ Sets the HTML attributes of the content element of the item.
 ##### attributes `System.Object`
 The attributes.
 
-### ContentHtmlAttributes(System.Collections.Generic.IDictionary<System.String,System.Object>)
+### ContentHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes of the content element of the item.
 
 #### Parameters
 
-##### attributes `System.Collections.Generic.IDictionary<System.String`
+##### attributes `System.Collections.Generic.IDictionary<System.String,System.Object>`
 The attributes.
 
-### Action<T1>(System.Linq.Expressions.Expression<System.Action<T1>>)
+### Action\<T1\>(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
 Makes the item navigate to the specified controllerAction method.
 
 #### Example

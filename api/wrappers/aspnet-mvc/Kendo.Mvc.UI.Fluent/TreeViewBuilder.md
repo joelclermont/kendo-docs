@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the TreeView component.
 
 ## Methods
 
-### Items(System.Action<Kendo.Mvc.UI.Fluent.TreeViewItemFactory>)
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.TreeViewItemFactory\>)
 Defines the items in the TreeView
 
 #### Example
@@ -25,10 +25,10 @@ Defines the items in the TreeView
 
 #### Parameters
 
-##### addAction System.Action<[Kendo.Mvc.UI.Fluent.TreeViewItemFactory>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TreeViewItemFactory>)>
+##### addAction `System.Action<Kendo.Mvc.UI.Fluent.TreeViewItemFactory>`
 The add action.
 
-### Events(System.Action<Kendo.Mvc.UI.Fluent.TreeViewEventBuilder>)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.TreeViewEventBuilder\>)
 Configures the client-side events.
 
 #### Example
@@ -42,10 +42,10 @@ Configures the client-side events.
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.TreeViewEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TreeViewEventBuilder>)>
+##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.TreeViewEventBuilder>`
 The client events action.
 
-### BindTo(System.String,System.Action<Kendo.Mvc.UI.TreeViewItem,Kendo.Mvc.SiteMapNode>)
+### BindTo(System.String,System.Action\<Kendo.Mvc.UI.TreeViewItem,Kendo.Mvc.SiteMapNode\>)
 Binds the TreeView to a sitemap
 
 #### Example
@@ -61,7 +61,7 @@ Binds the TreeView to a sitemap
 ##### viewDataKey `System.String`
 The view data key.
 
-##### siteMapAction System.Action<[Kendo.Mvc.UI.TreeViewItem](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TreeViewItem)
+##### siteMapAction `System.Action<Kendo.Mvc.UI.TreeViewItem,Kendo.Mvc.SiteMapNode>`
 The action to configure the item.
 
 ### BindTo(System.String)
@@ -78,7 +78,7 @@ Binds the TreeView to a sitemap.
 ##### viewDataKey `System.String`
 The view data key.
 
-### BindTo(System.Collections.Generic.IEnumerable<Kendo.Mvc.UI.TreeViewItemModel>)
+### BindTo(System.Collections.Generic.IEnumerable\<Kendo.Mvc.UI.TreeViewItemModel\>)
 Binds the TreeView to a list of items.
             Use if a hierarchy of items is being sent from the controller; to bind the TreeView declaratively, use the Items() method.
 
@@ -90,10 +90,10 @@ Binds the TreeView to a list of items.
 
 #### Parameters
 
-##### items System.Collections.Generic.IEnumerable<[Kendo.Mvc.UI.TreeViewItemModel>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TreeViewItemModel>)>
+##### items `System.Collections.Generic.IEnumerable<Kendo.Mvc.UI.TreeViewItemModel>`
 The list of items
 
-### BindTo<T1>(System.Collections.Generic.IEnumerable<T1>,System.Action<Kendo.Mvc.UI.TreeViewItem,<T1>)
+### BindTo\<T1\>(System.Collections.Generic.IEnumerable\<T1\>,System.Action\<Kendo.Mvc.UI.TreeViewItem,T1\>)
 Binds the TreeView to a list of objects. The TreeView will be "flat" which means a TreeView item will be created for
             every item in the data source.
 
@@ -111,10 +111,10 @@ Binds the TreeView to a list of objects. The TreeView will be "flat" which means
 ##### dataSource `System.Collections.Generic.IEnumerable<T1>`
 The data source.
 
-##### itemDataBound System.Action<[Kendo.Mvc.UI.TreeViewItem](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TreeViewItem)
+##### itemDataBound `System.Action<Kendo.Mvc.UI.TreeViewItem,T1>`
 The action executed for every data bound item.
 
-### BindTo(System.Collections.IEnumerable,System.Action<Kendo.Mvc.UI.Fluent.NavigationBindingFactory<Kendo.Mvc.UI.TreeViewItem>)
+### BindTo(System.Collections.IEnumerable,System.Action\<Kendo.Mvc.UI.Fluent.NavigationBindingFactory\<Kendo.Mvc.UI.TreeViewItem\>\>)
 Binds the TreeView to a list of objects. The TreeView will create a hierarchy of items using the specified mappings.
 
 #### Example
@@ -137,10 +137,10 @@ Binds the TreeView to a list of objects. The TreeView will create a hierarchy of
 ##### dataSource `System.Collections.IEnumerable`
 The data source.
 
-##### factoryAction System.Action<[Kendo.Mvc.UI.Fluent.NavigationBindingFactory<Kendo](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/NavigationBindingFactory<Kendo).Mvc.UI.TreeViewItem>
+##### factoryAction `System.Action<Kendo.Mvc.UI.Fluent.NavigationBindingFactory<Kendo.Mvc.UI.TreeViewItem>>`
 The action which will configure the mappings
 
-### ItemAction(System.Action<Kendo.Mvc.UI.TreeViewItem>)
+### ItemAction(System.Action\<Kendo.Mvc.UI.TreeViewItem\>)
 Callback for each item.
 
 #### Example
@@ -156,7 +156,7 @@ Callback for each item.
 
 #### Parameters
 
-##### action System.Action<[Kendo.Mvc.UI.TreeViewItem>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TreeViewItem>)>
+##### action `System.Action<Kendo.Mvc.UI.TreeViewItem>`
 Action, which will be executed for each item.
 
 ### HighlightPath(System.Boolean)
@@ -187,7 +187,7 @@ Use to enable or disable animation of the TreeView.
 ##### enable `System.Boolean`
 The boolean value.
 
-### Animation(System.Action<Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder>)
+### Animation(System.Action\<Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder\>)
 Configures the animation effects of the widget.
 
 #### Example
@@ -204,7 +204,7 @@ Configures the animation effects of the widget.
 
 #### Parameters
 
-##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ExpandableAnimationBuilder>)>
+##### animationAction `System.Action<Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder>`
 The action which configures the animation effects.
 
 ### ExpandAll(System.Boolean)
@@ -324,7 +324,7 @@ Sets the name of the field that will supply the URL for the item image.
 ##### field `System.String`
 The field name.
 
-### DataSource(System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder>)
+### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder\>)
 Configure the DataSource of the component
 
 #### Example
@@ -339,5 +339,5 @@ Configure the DataSource of the component
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ReadOnlyDataSourceBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder>`
 The action that configures the ReadOnlyDataSource.

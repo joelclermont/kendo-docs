@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the !:Chart{T} component.
 
 ## Methods
 
-### Events(System.Action<Kendo.Mvc.UI.Fluent.ChartEventBuilder>)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.ChartEventBuilder\>)
 Configures the client-side events.
 
 #### Example
@@ -23,7 +23,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartEventBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartEventBuilder>`
 The client events configuration action.
 
 ### Theme(System.String)
@@ -40,7 +40,7 @@ Sets the theme of the chart.
 ##### theme `System.String`
 The Chart theme.
 
-### ChartArea(System.Action<Kendo.Mvc.UI.Fluent.ChartAreaBuilder>)
+### ChartArea(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaBuilder\>)
 Sets the Chart area.
 
 #### Example
@@ -51,10 +51,10 @@ Sets the Chart area.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAreaBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAreaBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAreaBuilder>`
 The Chart area.
 
-### PlotArea(System.Action<Kendo.Mvc.UI.Fluent.PlotAreaBuilder>)
+### PlotArea(System.Action\<Kendo.Mvc.UI.Fluent.PlotAreaBuilder\>)
 Sets the Plot area.
 
 #### Example
@@ -65,7 +65,7 @@ Sets the Plot area.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.PlotAreaBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PlotAreaBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.PlotAreaBuilder>`
 The Plot area.
 
 ### Title(System.String)
@@ -82,7 +82,7 @@ Sets the title of the chart.
 ##### title `System.String`
 The Chart title.
 
-### Title(System.Action<Kendo.Mvc.UI.Fluent.ChartTitleBuilder>)
+### Title(System.Action\<Kendo.Mvc.UI.Fluent.ChartTitleBuilder\>)
 Defines the title of the chart.
 
 #### Example
@@ -93,7 +93,7 @@ Defines the title of the chart.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartTitleBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartTitleBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartTitleBuilder>`
 The configuration action.
 
 ### Legend(System.Boolean)
@@ -110,7 +110,7 @@ Sets the legend visibility.
 ##### visible `System.Boolean`
 A value indicating whether to show the legend.
 
-### Legend(System.Action<Kendo.Mvc.UI.Fluent.ChartLegendBuilder>)
+### Legend(System.Action\<Kendo.Mvc.UI.Fluent.ChartLegendBuilder\>)
 Configures the legend.
 
 #### Example
@@ -121,10 +121,10 @@ Configures the legend.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLegendBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLegendBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartLegendBuilder>`
 The configuration action.
 
-### Series(System.Action<Kendo.Mvc.UI.Fluent.ChartSeriesFactory<T>>)
+### Series(System.Action\<Kendo.Mvc.UI.Fluent.ChartSeriesFactory\<T\>\>)
 Defines the chart series.
 
 #### Example
@@ -138,10 +138,10 @@ Defines the chart series.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSeriesFactory<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSeriesFactory)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartSeriesFactory<T>>`
 The add action.
 
-### SeriesDefaults(System.Action<Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder<T>>)
+### SeriesDefaults(System.Action\<Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder\<T\>\>)
 Defines the options for all chart series of the specified type.
 
 #### Example
@@ -152,10 +152,10 @@ Defines the options for all chart series of the specified type.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSeriesDefaultsBuilder)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder<T>>`
 The configurator.
 
-### AxisDefaults(System.Action<Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder<T>>)
+### AxisDefaults(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder\<T\>\>)
 Defines the options for all chart axes of the specified type.
 
 #### Example
@@ -166,10 +166,10 @@ Defines the options for all chart axes of the specified type.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisDefaultsBuilder)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder<T>>`
 The configurator.
 
-### CategoryAxis(System.Action<Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder<T>>)
+### CategoryAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder\<T\>\>)
 Configures the category axis
 
 #### Example
@@ -182,10 +182,10 @@ Configures the category axis
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartCategoryAxisBuilder)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder<T>>`
 The configurator
 
-### ValueAxis(System.Action<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>)
+### ValueAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory\<T\>\>)
 Defines value axis options
 
 #### Example
@@ -196,10 +196,10 @@ Defines value axis options
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartValueAxisFactory)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>`
 The configurator
 
-### XAxis(System.Action<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>)
+### XAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory\<T\>\>)
 Defines X-axis options for scatter charts
 
 #### Example
@@ -210,10 +210,10 @@ Defines X-axis options for scatter charts
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartValueAxisFactory)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>`
 The configurator
 
-### YAxis(System.Action<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>)
+### YAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory\<T\>\>)
 Configures Y-axis options for scatter charts.
 
 #### Example
@@ -224,10 +224,10 @@ Configures Y-axis options for scatter charts.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartValueAxisFactory)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>`
 The configurator
 
-### DataSource(System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder<T>>)
+### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder\<T\>\>)
 Data Source configuration
 
 #### Example
@@ -241,10 +241,10 @@ Data Source configuration
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ReadOnlyAjaxDataSourceBuilder)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder<T>>`
 Use the configurator to set different data binding options.
 
-### SeriesColors(System.Collections.Generic.IEnumerable<System.String>)
+### SeriesColors(System.Collections.Generic.IEnumerable\<System.String\>)
 Sets the series colors.
 
 #### Example
@@ -272,7 +272,7 @@ Sets the series colors.
 ##### colors `System.String[]`
 The series colors.
 
-### Tooltip(System.Action<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>)
+### Tooltip(System.Action\<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder\>)
 Use it to configure the data point tooltip.
 
 #### Example
@@ -286,7 +286,7 @@ Use it to configure the data point tooltip.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartTooltipBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>`
 Use the configurator to set data tooltip options.
 
 ### Tooltip(System.Boolean)

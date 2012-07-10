@@ -50,7 +50,7 @@ Sets the aggregate function for date series.
 
 #### Parameters
 
-##### aggregate [Kendo.Mvc.UI.ChartSeriesAggregate](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)
+##### aggregate `Kendo.Mvc.UI.ChartSeriesAggregate`
 Aggregate function name.
 
 ### Gap(System.Double)
@@ -81,7 +81,7 @@ Sets a value indicating the distance between bars / categories.
 Value of 1 means that the distance between bars is equal to their width.
             The default value is 0
 
-### Labels(System.Action<Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder>)
+### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder\>)
 Configures the bar chart labels.
 
 #### Example
@@ -98,7 +98,7 @@ Configures the bar chart labels.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBarLabelsBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder>`
 The configuration action.
 
 ### Labels(System.Boolean)
@@ -136,7 +136,7 @@ The bars border width.
 ##### color `System.String`
 The bars border color (CSS syntax).
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType `Kendo.Mvc.UI.ChartDashType`
 The bars border dash type.
 
 ### Overlay(Kendo.Mvc.UI.ChartBarSeriesOverlay)
@@ -151,5 +151,5 @@ Sets the bar effects overlay
 
 #### Parameters
 
-##### overlay [Kendo.Mvc.UI.ChartBarSeriesOverlay](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartBarSeriesOverlay)
+##### overlay `Kendo.Mvc.UI.ChartBarSeriesOverlay`
 The bar effects overlay. The default is ChartBarSeriesOverlay.Glass

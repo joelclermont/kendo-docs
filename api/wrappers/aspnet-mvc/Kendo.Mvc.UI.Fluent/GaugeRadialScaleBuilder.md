@@ -47,7 +47,7 @@ Sets the start angle of the gauge
 ##### startAngle `System.Double`
 The start Angle.
 
-### Labels(System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder>)
+### Labels(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder\>)
 Configures the labels.
 
 #### Example
@@ -62,5 +62,5 @@ Configures the labels.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialScaleLabelsBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder>`
 The configuration action.

@@ -86,7 +86,7 @@ Sets the route name for the operation.
 
 ##### routeName `System.String`
 
-### Data(System.Func<System.Object,System.Object>)
+### Data(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return additional parameters which to be sent the server.
 
 ### Data(System.String)

@@ -64,7 +64,7 @@ Templates for the cells rendered in the "month" view.
         .MonthTemplate("#= data.value #")
         %>
 
-### MonthTemplate(System.Action<Kendo.Mvc.UI.Fluent.MonthTemplateBuilder>)
+### MonthTemplate(System.Action\<Kendo.Mvc.UI.Fluent.MonthTemplateBuilder\>)
 Configures the content of cells of the Calendar.
 
 #### Example

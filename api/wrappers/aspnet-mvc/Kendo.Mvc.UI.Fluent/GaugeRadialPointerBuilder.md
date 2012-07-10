@@ -62,7 +62,7 @@ Sets the pointer value.
 ##### value `System.Double`
 The pointer value.
 
-### Cap(System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder>)
+### Cap(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder\>)
 Configures the pointer cap.
 
 #### Example
@@ -76,5 +76,5 @@ Configures the pointer cap.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialCapBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder>`
 The configuration action.

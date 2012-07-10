@@ -10,7 +10,7 @@ Creates columns for the !:Grid{TModel}.
 
 ## Methods
 
-### Bound<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
+### Bound\<T1\>(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Defines a bound column.
 
 #### Parameters
@@ -23,7 +23,7 @@ Defines a bound column.
 ### Bound(System.Type,System.String)
 Defines a bound column.
 
-### ForeignKey<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Collections.IEnumerable,System.String,System.String)
+### ForeignKey\<T1\>(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Collections.IEnumerable,System.String,System.String)
 Defines a foreign key column.
 
 #### Parameters
@@ -40,7 +40,7 @@ The data value field
 ##### dataFieldText `System.String`
 The data text field
 
-### ForeignKey<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Web.Mvc.SelectList)
+### ForeignKey\<T1\>(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Web.Mvc.SelectList)
 Defines a foreign key column.
 
 #### Parameters
@@ -59,24 +59,24 @@ Determines if columns should be automatically generated.
 ##### shouldGenerate `System.Boolean`
 If true columns should be generated, otherwise false.
 
-### AutoGenerate(System.Action<Kendo.Mvc.UI.GridColumnBase<T>>)
+### AutoGenerate(System.Action\<Kendo.Mvc.UI.GridColumnBase\<T\>\>)
 Determines if columns should be automatically generated.
 
 #### Parameters
 
-##### columnAction System.Action<[Kendo.Mvc.UI.GridColumnBase<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridColumnBase)>
+##### columnAction `System.Action<Kendo.Mvc.UI.GridColumnBase<T>>`
 Action which will be executed for each generated column.
 
-### Template(System.Action<T>)
+### Template(System.Action\<T\>)
 Defines a template column.
 
 #### Parameters
 
 ##### templateAction `System.Action<T>`
 
-### Command(System.Action<Kendo.Mvc.UI.Fluent.GridActionCommandFactory<T>>)
+### Command(System.Action\<Kendo.Mvc.UI.Fluent.GridActionCommandFactory\<T\>\>)
 Defines a command column.
 
 #### Parameters
 
-##### commandAction System.Action<[Kendo.Mvc.UI.Fluent.GridActionCommandFactory<T>>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridActionCommandFactory)>
+##### commandAction `System.Action<Kendo.Mvc.UI.Fluent.GridActionCommandFactory<T>>`

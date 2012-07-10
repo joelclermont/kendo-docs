@@ -20,7 +20,7 @@ Sets the field of the data item that provides the value content of the list item
         .DataValueField("Value")
         %>
 
-### Items(System.Action<Kendo.Mvc.UI.Fluent.DropDownListItemFactory>)
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.DropDownListItemFactory\>)
 Defines the items in the DropDownList
 
 #### Example
@@ -35,7 +35,7 @@ Defines the items in the DropDownList
 
 #### Parameters
 
-##### addAction System.Action<[Kendo.Mvc.UI.Fluent.DropDownListItemFactory>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DropDownListItemFactory>)>
+##### addAction `System.Action<Kendo.Mvc.UI.Fluent.DropDownListItemFactory>`
 The add action.
 
 ### OptionLabel(System.String)

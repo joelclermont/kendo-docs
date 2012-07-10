@@ -32,7 +32,7 @@ Sets the HTML content which the window should display.
 ##### value `System.Action`
 The action which renders the content.
 
-### Content(System.Func<System.Object,System.Object>)
+### Content(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the window should display
 
 #### Example
@@ -42,7 +42,7 @@ Sets the HTML content which the window should display
 
 #### Parameters
 
-##### value `System.Func<System.Object`
+##### value `System.Func<System.Object,System.Object>`
 The Razor inline template
 
 ### Content(System.String)
@@ -118,7 +118,7 @@ Sets the Url, which will be requested to return the content.
 ##### value `System.String`
 The url.
 
-### Events(System.Action<Kendo.Mvc.UI.Fluent.WindowEventBuilder>)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.WindowEventBuilder\>)
 Configures the client-side events.
 
 #### Example
@@ -131,7 +131,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowEventBuilder>)>
+##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.WindowEventBuilder>`
 The client events action.
 
 ### Resizable
@@ -143,7 +143,7 @@ Enables windows resizing.
         .Resizable()
         %>
 
-### Resizable(System.Action<Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder>)
+### Resizable(System.Action\<Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder\>)
 Configures the resizing ability of the window.
 
 #### Example
@@ -156,10 +156,10 @@ Configures the resizing ability of the window.
 
 #### Parameters
 
-##### resizingSettingsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowResizingSettingsBuilder>)>
+##### resizingSettingsAction `System.Action<Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder>`
 Resizing settings action.
 
-### Actions(System.Action<Kendo.Mvc.UI.Fluent.WindowActionsBuilder>)
+### Actions(System.Action\<Kendo.Mvc.UI.Fluent.WindowActionsBuilder\>)
 Configures the window buttons.
 
 #### Example
@@ -172,7 +172,7 @@ Configures the window buttons.
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowActionsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowActionsBuilder>)>
+##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.WindowActionsBuilder>`
 The buttons configuration action.
 
 ### Width(System.Int32)
@@ -200,7 +200,7 @@ Configures the animation effects of the window.
 ##### enable `System.Boolean`
 Whether the component animation is enabled.
 
-### Animation(System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>)
+### Animation(System.Action\<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder\>)
 Configures the animation effects of the panelbar.
 
 #### Example
@@ -210,7 +210,7 @@ Configures the animation effects of the panelbar.
 
 #### Parameters
 
-##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder>)>
+##### animationAction `System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>`
 The action that configures the animation.
 
 ### Modal(System.Boolean)

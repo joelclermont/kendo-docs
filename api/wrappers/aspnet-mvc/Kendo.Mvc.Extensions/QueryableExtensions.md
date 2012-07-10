@@ -10,7 +10,7 @@ Provides extension methods to process DataSourceRequest.
 
 ## Methods
 
-### Sort(System.Linq.IQueryable,System.Collections.Generic.IEnumerable<Kendo.Mvc.SortDescriptor>)
+### Sort(System.Linq.IQueryable,System.Collections.Generic.IEnumerable\<Kendo.Mvc.SortDescriptor\>)
 Sorts the elements of a sequence using the specified sort descriptors.
 
 #### Parameters
@@ -18,7 +18,7 @@ Sorts the elements of a sequence using the specified sort descriptors.
 ##### source `System.Linq.IQueryable`
 A sequence of values to sort.
 
-##### sortDescriptors System.Collections.Generic.IEnumerable<[Kendo.Mvc.SortDescriptor>](/api/wrappers/aspnet-mvc/Kendo.Mvc/SortDescriptor>)>
+##### sortDescriptors `System.Collections.Generic.IEnumerable<Kendo.Mvc.SortDescriptor>`
 The sort descriptors used for sorting.
 
 #### Returns
@@ -100,7 +100,7 @@ A function to extract a key from an element.
 #### Returns
 An IQueryable whose elements are sorted in descending order according to a key.
 
-### OrderBy(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression,System.Nullable<System.ComponentModel.ListSortDirection>)
+### OrderBy(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression,System.Nullable\<System.ComponentModel.ListSortDirection\>)
 Calls M:Kendo.Mvc.Extensions.QueryableExtensions.OrderBy(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression)
             or M:Kendo.Mvc.Extensions.QueryableExtensions.OrderByDescending(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression) depending on the .
 
@@ -118,7 +118,7 @@ The sort direction.
 #### Returns
 An IQueryable whose elements are sorted according to a key.
 
-### GroupBy(System.Linq.IQueryable,System.Collections.Generic.IEnumerable<Kendo.Mvc.GroupDescriptor>)
+### GroupBy(System.Linq.IQueryable,System.Collections.Generic.IEnumerable\<Kendo.Mvc.GroupDescriptor\>)
 Groups the elements of a sequence according to a specified .
 
 #### Parameters
@@ -126,14 +126,14 @@ Groups the elements of a sequence according to a specified .
 ##### source `System.Linq.IQueryable`
 An IQueryable whose elements to group.
 
-##### groupDescriptors System.Collections.Generic.IEnumerable<[Kendo.Mvc.GroupDescriptor>](/api/wrappers/aspnet-mvc/Kendo.Mvc/GroupDescriptor>)>
+##### groupDescriptors `System.Collections.Generic.IEnumerable<Kendo.Mvc.GroupDescriptor>`
 The group descriptors used for grouping.
 
 #### Returns
 An IQueryable with IGroup items,
             whose elements contains a sequence of objects and a key.
 
-### Aggregate(System.Linq.IQueryable,System.Collections.Generic.IEnumerable<Kendo.Mvc.AggregateFunction>)
+### Aggregate(System.Linq.IQueryable,System.Collections.Generic.IEnumerable\<Kendo.Mvc.AggregateFunction\>)
 Calculates the results of given aggregates functions on a sequence of elements.
 
 #### Parameters
@@ -142,7 +142,7 @@ Calculates the results of given aggregates functions on a sequence of elements.
 An IQueryable whose elements will
             be used for aggregate calculation.
 
-##### aggregateFunctions System.Collections.Generic.IEnumerable<[Kendo.Mvc.AggregateFunction>](/api/wrappers/aspnet-mvc/Kendo.Mvc/AggregateFunction>)>
+##### aggregateFunctions `System.Collections.Generic.IEnumerable<Kendo.Mvc.AggregateFunction>`
 The aggregate functions.
 
 #### Returns
@@ -163,7 +163,7 @@ A function to test each element for a condition.
 An IQueryable that contains elements from the input sequence
             that satisfy the condition specified by .
 
-### Where(System.Linq.IQueryable,System.Collections.Generic.IEnumerable<Kendo.Mvc.IFilterDescriptor>)
+### Where(System.Linq.IQueryable,System.Collections.Generic.IEnumerable\<Kendo.Mvc.IFilterDescriptor\>)
 Filters a sequence of values based on a collection of IFilterDescriptor.
 
 #### Parameters
@@ -171,7 +171,7 @@ Filters a sequence of values based on a collection of IFilterDescriptor.
 ##### source `System.Linq.IQueryable`
 The source.
 
-##### filterDescriptors System.Collections.Generic.IEnumerable<[Kendo.Mvc.IFilterDescriptor>](/api/wrappers/aspnet-mvc/Kendo.Mvc/IFilterDescriptor>)>
+##### filterDescriptors `System.Collections.Generic.IEnumerable<Kendo.Mvc.IFilterDescriptor>`
 The filter descriptors.
 
 #### Returns

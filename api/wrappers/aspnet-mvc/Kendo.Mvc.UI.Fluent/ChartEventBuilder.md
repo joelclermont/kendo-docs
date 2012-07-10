@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the ChartClientEvents.
 
 ## Methods
 
-### DataBound(System.Func<System.Object,System.Object>)
+### DataBound(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the DataBound client-side event
 
 #### Example
@@ -28,7 +28,7 @@ Defines the inline handler of the DataBound client-side event
 
 #### Parameters
 
-##### inlineCodeBlock `System.Func<System.Object`
+##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### DataBound(System.String)
@@ -45,7 +45,7 @@ Defines the name of the JavaScript function that will handle the the DataBound c
 ##### onDataBoundHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### DataBinding(System.Func<System.Object,System.Object>)
+### DataBinding(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the DataBinding client-side event
 
 #### Example
@@ -63,7 +63,7 @@ Defines the inline handler of the DataBinding client-side event
 
 #### Parameters
 
-##### inlineCodeBlock `System.Func<System.Object`
+##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### DataBinding(System.String)
@@ -80,7 +80,7 @@ Defines the name of the JavaScript function that will handle the the DataBinding
 ##### onDataBindingHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### SeriesClick(System.Func<System.Object,System.Object>)
+### SeriesClick(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the SeriesClick client-side event
 
 #### Example
@@ -98,7 +98,7 @@ Defines the inline handler of the SeriesClick client-side event
 
 #### Parameters
 
-##### inlineCodeBlock `System.Func<System.Object`
+##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### SeriesClick(System.String)
@@ -115,7 +115,7 @@ Defines the name of the JavaScript function that will handle the the SeriesClick
 ##### onSeriesClickHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### SeriesHover(System.Func<System.Object,System.Object>)
+### SeriesHover(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the SeriesHover client-side event
 
 #### Example
@@ -133,7 +133,7 @@ Defines the inline handler of the SeriesHover client-side event
 
 #### Parameters
 
-##### inlineCodeBlock `System.Func<System.Object`
+##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### SeriesHover(System.String)
@@ -150,7 +150,7 @@ Defines the name of the JavaScript function that will handle the the SeriesHover
 ##### onSeriesHoverHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### AxisLabelClick(System.Func<System.Object,System.Object>)
+### AxisLabelClick(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the AxisLabelClick client-side event
 
 #### Example
@@ -168,7 +168,7 @@ Defines the inline handler of the AxisLabelClick client-side event
 
 #### Parameters
 
-##### inlineCodeBlock `System.Func<System.Object`
+##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### AxisLabelClick(System.String)
@@ -185,7 +185,7 @@ Defines the name of the JavaScript function that will handle the the AxisLabelCl
 ##### onAxisLabelClickHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### PlotAreaClick(System.Func<System.Object,System.Object>)
+### PlotAreaClick(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the PlotAreaClick client-side event
 
 #### Example
@@ -203,7 +203,7 @@ Defines the inline handler of the PlotAreaClick client-side event
 
 #### Parameters
 
-##### inlineCodeBlock `System.Func<System.Object`
+##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### PlotAreaClick(System.String)

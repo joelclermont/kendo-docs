@@ -81,7 +81,7 @@ Sets the bar fill color
 ##### color `System.String`
 The bar fill color (CSS syntax).
 
-### Tooltip(System.Action<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>)
+### Tooltip(System.Action\<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder\>)
 Configure the data point tooltip for the series.
 
 #### Example
@@ -97,7 +97,7 @@ Configure the data point tooltip for the series.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartTooltipBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>`
 Use the configurator to set data tooltip options.
 
 ### Tooltip(System.Boolean)

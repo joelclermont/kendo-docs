@@ -219,7 +219,7 @@ The labels border width.
 ##### color `System.String`
 The labels border color (CSS syntax).
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType `Kendo.Mvc.UI.ChartDashType`
 The labels border dash type.
 
 ### Format(System.String)

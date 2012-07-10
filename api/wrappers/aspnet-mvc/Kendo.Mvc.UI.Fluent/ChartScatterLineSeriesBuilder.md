@@ -37,7 +37,7 @@ Sets the chart line dash type.
 
 #### Parameters
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType `Kendo.Mvc.UI.ChartDashType`
 The line dash type.
 
 ### MissingValues(Kendo.Mvc.UI.ChartScatterLineMissingValues)
@@ -54,5 +54,5 @@ Configures the behavior for handling missing values in scatter line series.
 
 #### Parameters
 
-##### missingValues [Kendo.Mvc.UI.ChartScatterLineMissingValues](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartScatterLineMissingValues)
+##### missingValues `Kendo.Mvc.UI.ChartScatterLineMissingValues`
 The missing values behavior. The default is to leave gaps.

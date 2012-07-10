@@ -10,7 +10,7 @@ Defines the fluent interface for configuring plot band.
 
 ## Methods
 
-### From(<T>)
+### From(\<T\>)
 Sets the plot band start position.
 
 #### Example
@@ -29,7 +29,7 @@ Sets the plot band start position.
 ##### from `<T>`
 The plot band start position.
 
-### To(<T>)
+### To(\<T\>)
 Sets the plot band end position.
 
 #### Example

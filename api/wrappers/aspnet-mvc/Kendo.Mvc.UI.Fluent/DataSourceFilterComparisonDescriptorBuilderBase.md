@@ -10,7 +10,7 @@ Defines the fluent interface for configuring filter operator.
 
 ## Methods
 
-### IsLessThan(<T>)
+### IsLessThan(\<T\>)
 Includes only values which are less then the given value.
 
 #### Parameters
@@ -18,7 +18,7 @@ Includes only values which are less then the given value.
 ##### value `<T>`
 The value which the result should be less then
 
-### IsLessThanOrEqualTo(<T>)
+### IsLessThanOrEqualTo(\<T\>)
 Includes only values which are less or equal to the given value.
 
 #### Parameters
@@ -26,7 +26,7 @@ Includes only values which are less or equal to the given value.
 ##### value `<T>`
 The value which the result should be less or equal to
 
-### IsGreaterThanOrEqualTo(<T>)
+### IsGreaterThanOrEqualTo(\<T\>)
 Includes only values which are greater then or equal to the given value.
 
 #### Parameters
@@ -34,7 +34,7 @@ Includes only values which are greater then or equal to the given value.
 ##### value `<T>`
 The value which the result should be greater then or equal to
 
-### IsGreaterThan(<T>)
+### IsGreaterThan(\<T\>)
 Includes only values which are greater then the given value.
 
 #### Parameters

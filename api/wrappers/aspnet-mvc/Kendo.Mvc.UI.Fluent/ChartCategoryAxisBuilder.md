@@ -15,7 +15,7 @@ The parent Chart
 
 ## Methods
 
-### Categories<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
+### Categories\<T1\>(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Defines bound categories.
 
 #### Parameters
@@ -71,7 +71,7 @@ Sets value at which perpendicular axes cross this axis.
 ##### axisCrossingValues `System.Double[]`
 The values at which perpendicular axes cross this axis.
 
-### AxisCrossingValue(System.Collections.Generic.IEnumerable<System.Double>)
+### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.Double\>)
 Sets value at which perpendicular axes cross this axis.
 
 #### Example

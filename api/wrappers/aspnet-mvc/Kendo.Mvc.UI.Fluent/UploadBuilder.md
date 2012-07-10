@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the Upload component.
 
 ## Methods
 
-### Events(System.Action<Kendo.Mvc.UI.Fluent.UploadEventBuilder>)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.UploadEventBuilder\>)
 Configures the client-side events.
 
 #### Example
@@ -24,7 +24,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.UploadEventBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/UploadEventBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.UploadEventBuilder>`
 The client events configuration action.
 
 ### Enable(System.Boolean)
@@ -63,7 +63,7 @@ Sets a value indicating whether to show the list of uploaded files
 ##### value `System.Boolean`
 true if the list of uploaded files should be visible, false otherwise; true by default
 
-### Async(System.Action<Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder>)
+### Async(System.Action\<Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder\>)
 Use it to configure asynchronous uploading.
 
 #### Example
@@ -77,10 +77,10 @@ Use it to configure asynchronous uploading.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/UploadAsyncSettingsBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder>`
 Use builder to set different asynchronous uploading options.
 
-### Messages(System.Action<Kendo.Mvc.UI.Fluent.UploadMessagesBuilder>)
+### Messages(System.Action\<Kendo.Mvc.UI.Fluent.UploadMessagesBuilder\>)
 Use it to configure asynchronous uploading.
 
 #### Example
@@ -94,5 +94,5 @@ Use it to configure asynchronous uploading.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.UploadMessagesBuilder>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/UploadMessagesBuilder>)>
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.UploadMessagesBuilder>`
 Use builder to set different asynchronous uploading options.

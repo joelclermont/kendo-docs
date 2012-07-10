@@ -84,7 +84,7 @@ Enables or disables HTML encoding the data of the column. All bound columns are 
         .Columns(columns => columns.Bound(o => o.OrderDate).Encoded(false))
         %>
 
-### Template(System.Action<T>)
+### Template(System.Action\<T\>)
 Sets the template for the column.
 
 #### Example
@@ -109,12 +109,12 @@ Sets the template for the column.
 ##### templateAction `System.Action<T>`
 The action defining the template.
 
-### Template(System.Func<T>,System.Object>)
+### Template(System.Func\<T,System.Object\>)
 Sets the template for the column.
 
 #### Parameters
 
-##### inlineTemplate `System.Func<T>`
+##### inlineTemplate `System.Func<T,System.Object>`
 The action defining the template.
 
 ### ClientTemplate(System.String)
@@ -141,50 +141,50 @@ Sets the client group footer template for the column.
 ##### value `System.String`
 The template
 
-### FooterTemplate(System.Action<Kendo.Mvc.UI.GridAggregateResult>)
+### FooterTemplate(System.Action\<Kendo.Mvc.UI.GridAggregateResult\>)
 Sets the footer template for the column.
 
 #### Parameters
 
-##### template System.Action<[Kendo.Mvc.UI.GridAggregateResult>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridAggregateResult>)>
+##### template `System.Action<Kendo.Mvc.UI.GridAggregateResult>`
 The action defining the template.
 
-### FooterTemplate(System.Func<Kendo.Mvc.UI.GridAggregateResult,System.Object>)
+### FooterTemplate(System.Func\<Kendo.Mvc.UI.GridAggregateResult,System.Object\>)
 Sets the footer template for the column.
 
 #### Parameters
 
-##### template System.Func<[Kendo.Mvc.UI.GridAggregateResult](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridAggregateResult)
+##### template `System.Func<Kendo.Mvc.UI.GridAggregateResult,System.Object>`
 The action defining the template.
 
-### GroupFooterTemplate(System.Action<Kendo.Mvc.UI.GridAggregateResult>)
+### GroupFooterTemplate(System.Action\<Kendo.Mvc.UI.GridAggregateResult\>)
 Sets the group footer template for the column.
 
 #### Parameters
 
-##### template System.Action<[Kendo.Mvc.UI.GridAggregateResult>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridAggregateResult>)>
+##### template `System.Action<Kendo.Mvc.UI.GridAggregateResult>`
 The action defining the template.
 
-### GroupFooterTemplate(System.Func<Kendo.Mvc.UI.GridAggregateResult,System.Object>)
+### GroupFooterTemplate(System.Func\<Kendo.Mvc.UI.GridAggregateResult,System.Object\>)
 Sets the group footer template for the column.
 
 #### Parameters
 
-##### template System.Func<[Kendo.Mvc.UI.GridAggregateResult](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridAggregateResult)
+##### template `System.Func<Kendo.Mvc.UI.GridAggregateResult,System.Object>`
 The action defining the template.
 
-### GroupHeaderTemplate(System.Action<Kendo.Mvc.UI.GridGroupAggregateResult>)
+### GroupHeaderTemplate(System.Action\<Kendo.Mvc.UI.GridGroupAggregateResult\>)
 Sets the group footer template for the column.
 
 #### Parameters
 
-##### template System.Action<[Kendo.Mvc.UI.GridGroupAggregateResult>](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridGroupAggregateResult>)>
+##### template `System.Action<Kendo.Mvc.UI.GridGroupAggregateResult>`
 The action defining the template.
 
-### GroupHeaderTemplate(System.Func<Kendo.Mvc.UI.GridGroupAggregateResult,System.Object>)
+### GroupHeaderTemplate(System.Func\<Kendo.Mvc.UI.GridGroupAggregateResult,System.Object\>)
 Sets the group footer template for the column.
 
 #### Parameters
 
-##### template System.Func<[Kendo.Mvc.UI.GridGroupAggregateResult](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridGroupAggregateResult)
+##### template `System.Func<Kendo.Mvc.UI.GridGroupAggregateResult,System.Object>`
 The action defining the template.

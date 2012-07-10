@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the Events.
 
 ## Methods
 
-### Open(System.Func<System.Object,System.Object>)
+### Open(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Open client-side event
 
 #### Example
@@ -28,7 +28,7 @@ Defines the inline handler of the Open client-side event
 
 #### Parameters
 
-##### onOpenAction `System.Func<System.Object`
+##### onOpenAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Open(System.String)
@@ -45,7 +45,7 @@ Defines the name of the JavaScript function that will handle the the Open client
 ##### onOpenHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Close(System.Func<System.Object,System.Object>)
+### Close(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Close client-side event
 
 #### Example
@@ -63,7 +63,7 @@ Defines the inline handler of the Close client-side event
 
 #### Parameters
 
-##### onCloseAction `System.Func<System.Object`
+##### onCloseAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Close(System.String)
@@ -80,7 +80,7 @@ Defines the name of the JavaScript function that will handle the the Close clien
 ##### onCloseHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Select(System.Func<System.Object,System.Object>)
+### Select(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Select client-side event
 
 #### Example
@@ -98,7 +98,7 @@ Defines the inline handler of the Select client-side event
 
 #### Parameters
 
-##### onSelectAction `System.Func<System.Object`
+##### onSelectAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Select(System.String)

@@ -18,5 +18,5 @@ The Axis
 ### Add
 Adds a plot band.
 
-### Add(<T,T>,System.String)
+### Add(\<T\>,\<T\>,System.String)
 Defines a item.
