@@ -29,7 +29,7 @@ Sets the detail template of the grid using Razor syntax
 ##### inlineTemplate `System.Func<T,System.Object>`
 The template
 
-### RowTemplate(System.Action\<T,Kendo.Mvc.UI.Grid\<T\>\>)
+### RowTemplate(System.Action<T,Kendo.Mvc.UI.Grid<T>>)
 Sets the row template of the grid
 
 #### Example
@@ -45,7 +45,7 @@ Sets the row template of the grid
 
 #### Parameters
 
-##### codeBlockTemplate System.Action\<T,[Kendo.Mvc.UI.Grid](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/Grid)\<T\>\>
+##### codeBlockTemplate System.Action<T,[Kendo.Mvc.UI.Grid](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/Grid)<T>>
 The template
 
 ### RowTemplate(System.Action\<T\>)
