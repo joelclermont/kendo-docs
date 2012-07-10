@@ -9,7 +9,7 @@ publish: true
 
 In this how-to, we'll examine how to add charts and gauges to an application or site with [Kendo UI DataViz](http://www.kendoui.com/dataviz.aspx).
 
-Let's begin by examining how to add an area chart to an existing page. For this example, let's assume the following HTML:
+Let's begin by examining how to add a chart to an existing page. For this example, let's assume the following HTML:
 
 	<!DOCTYPE html>
 	<html lang="en">
@@ -66,7 +66,7 @@ The first step is to add script and stylesheet references for jQuery and Kendo U
 
 > Style and script references to Kendo UI are accessible via HTTPS. However, they are hosted on Amazon CloudFront. Please refer to the [JavaScript Dependencies of Kendo UI](http://docs.kendoui.com/getting-started/javascript-dependencies) for more information about script requirements for Kendo UI Web, Kendo UI DataViz, and Kendo UI Mobile.
 
-The next step is to declare a target element for the area chart. This will be represented by a `div` element. A script block is also required to initialize and configure the area chart. Here's an example with some sample data:
+The next step is to declare a target element for a chart. This will be represented by a `div` element. A script block is also required to initialize and configure the area chart. Here's an example for an area chart along with some sample data:
 
 	<!DOCTYPE html>
 	<html lang="en">
