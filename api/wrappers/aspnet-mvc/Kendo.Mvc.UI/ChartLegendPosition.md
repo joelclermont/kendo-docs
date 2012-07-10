@@ -8,7 +8,7 @@ publish:true
 
 Defines the position chart legend
 
-## Members
+## Fields
 
 ### Top
 The legend is positioned on the top

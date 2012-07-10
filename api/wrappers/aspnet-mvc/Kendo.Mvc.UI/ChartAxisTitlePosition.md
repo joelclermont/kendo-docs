@@ -8,7 +8,7 @@ publish:true
 
 Defines the position chart axis title
 
-## Members
+## Fields
 
 ### Top
 The axis title is positioned on the top (work only with vertical axis)

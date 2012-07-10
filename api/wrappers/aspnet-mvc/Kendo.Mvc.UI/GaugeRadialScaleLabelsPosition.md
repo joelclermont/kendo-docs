@@ -8,7 +8,7 @@ publish:true
 
 Defines the position of the radial gauge labels.
 
-## Members
+## Fields
 
 ### Inside
 The labels are positioned inside.

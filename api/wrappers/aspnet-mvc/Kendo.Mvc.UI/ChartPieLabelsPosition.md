@@ -8,7 +8,7 @@ publish:true
 
 Defines the position of pie chart labels.
 
-## Members
+## Fields
 
 ### Center
 The label is positioned at the center of the pie segment.

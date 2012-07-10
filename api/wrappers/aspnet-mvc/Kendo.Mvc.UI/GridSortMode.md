@@ -8,7 +8,7 @@ publish:true
 
 Defines the sort modes supported by Kendo UI Grid for ASP.NET MVC
 
-## Members
+## Fields
 
 ### SingleColumn
 The user can sort only by one column at the same time.

@@ -8,6 +8,11 @@ publish:true
 
 Defines the fluent interface for configuring columns.
 
+## Properties
+
+### Column
+Gets or sets the column.
+
 ## Methods
 
 ### Title(System.String)

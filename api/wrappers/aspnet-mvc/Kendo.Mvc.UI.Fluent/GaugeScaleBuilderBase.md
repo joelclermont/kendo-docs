@@ -8,6 +8,11 @@ publish:true
 
 Defines the fluent interface for configuring scale.
 
+## Properties
+
+### Scale
+Gets or sets the scale.
+
 ## Methods
 
 ### MinorTicks(System.Action{Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder})

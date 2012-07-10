@@ -8,7 +8,7 @@ publish:true
 
 Aggregate function for date series.
 
-## Members
+## Fields
 
 ### Max
 The highest value for the date period

@@ -8,6 +8,11 @@ publish:true
 
 Defines the fluent interface for configuring the gauge scale.
 
+## Properties
+
+### radialGauge
+The parent Guage
+
 ## Methods
 
 ### EndAngle(System.Double)

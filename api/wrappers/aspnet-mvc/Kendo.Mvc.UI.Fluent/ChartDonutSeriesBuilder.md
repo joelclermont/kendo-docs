@@ -8,6 +8,11 @@ publish:true
 
 Defines the fluent interface for configuring donut series.
 
+## Properties
+
+### Series
+Gets or sets the series.
+
 ## Methods
 
 ### Margin(System.Int32)

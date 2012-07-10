@@ -8,7 +8,7 @@ publish:true
 
 Defines the shape of the liner gauge pointer.
 
-## Members
+## Fields
 
 ### BarIndicator
 Specifies a filling bar indicator.

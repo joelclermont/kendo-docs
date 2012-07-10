@@ -8,7 +8,7 @@ publish:true
 
 Defines text alignment options
 
-## Members
+## Fields
 
 ### Left
 The text is aligned to the left

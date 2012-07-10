@@ -8,7 +8,7 @@ publish:true
 
 Defines the available pie series effects overlays
 
-## Members
+## Fields
 
 ### None
 The pies have no effect overlay

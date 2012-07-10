@@ -8,7 +8,7 @@ publish:true
 
 Defines the possible series orientation.
 
-## Members
+## Fields
 
 ### Horizontal
 The series are horizontal (bar chart, line chart, etc.)

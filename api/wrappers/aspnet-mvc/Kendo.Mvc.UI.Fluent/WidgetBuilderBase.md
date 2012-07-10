@@ -8,6 +8,11 @@ publish:true
 
 View component Builder base class.
 
+## Properties
+
+### Component
+Gets the view component.
+
 ## Methods
 
 ### ToComponent

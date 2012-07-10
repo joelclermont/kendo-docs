@@ -8,7 +8,7 @@ publish:true
 
 Specifies the animation duration of item.
 
-## Members
+## Fields
 
 ### Fast
 Fast animation, duration is set to 200.

@@ -8,6 +8,11 @@ publish:true
 
 Configures date category axis for the !:Chart{TModel}.
 
+## Properties
+
+### Container
+The parent Chart
+
 ## Methods
 
 ### Categories(System.Linq.Expressions.Expression{System.Func{,System.DateTime}})

@@ -8,7 +8,7 @@ publish:true
 
 Logical operator used for filter descriptor composition.
 
-## Members
+## Fields
 
 ### And
 Combines filters with logical AND.

@@ -8,7 +8,7 @@ publish:true
 
 Defines the alignment of the pie labels.
 
-## Members
+## Fields
 
 ### Circle
 The labels are positioned in circle around the pie chart.

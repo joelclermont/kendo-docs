@@ -8,7 +8,7 @@ publish:true
 
 Defines chart axis orientation
 
-## Members
+## Fields
 
 ### Vertical
 The axis is verical

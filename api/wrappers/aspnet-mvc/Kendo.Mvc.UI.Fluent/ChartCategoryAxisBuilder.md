@@ -8,6 +8,11 @@ publish:true
 
 Configures the category axis for the !:Chart{TModel}.
 
+## Properties
+
+### Container
+The parent Chart
+
 ## Methods
 
 ### Categories`(System.Linq.Expressions.Expression{System.Func{`0,``0}})

@@ -8,7 +8,7 @@ publish:true
 
 Specifies the location of tick marks in a component.
 
-## Members
+## Fields
 
 ### None
 No tick marks appear in the component.

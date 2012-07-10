@@ -8,6 +8,11 @@ publish:true
 
 Creates plot bands for the !:ChartAxisPlotBandsFactory{TAxis}.
 
+## Properties
+
+### Axis
+The Axis
+
 ## Methods
 
 ### Add

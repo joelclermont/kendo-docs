@@ -8,6 +8,14 @@ publish:true
 
 Represents a filtering descriptor which serves as a container for one or more child filtering descriptors.
 
+## Properties
+
+### LogicalOperator
+Gets or sets the logical operator used for composing of FilterDescriptors.
+
+### FilterDescriptors
+Gets or sets the filter descriptors that will be used for composition.
+
 ## Methods
 
 ### CreateFilterExpression(System.Linq.Expressions.ParameterExpression)

@@ -8,7 +8,7 @@ publish:true
 
 Specifies the general layout of the slider.
 
-## Members
+## Fields
 
 ### Horizontal
 The slider is oriented horizontally.

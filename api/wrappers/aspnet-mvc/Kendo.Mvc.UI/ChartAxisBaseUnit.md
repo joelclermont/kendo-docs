@@ -8,7 +8,7 @@ publish:true
 
 The base time interval for the axis.
 
-## Members
+## Fields
 
 ### Hours
 Hours.

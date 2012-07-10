@@ -8,6 +8,11 @@ publish:true
 
 Creates series for the !:Chart{TModel}.
 
+## Properties
+
+### Container
+The parent Chart
+
 ## Methods
 
 ### Bar`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}})

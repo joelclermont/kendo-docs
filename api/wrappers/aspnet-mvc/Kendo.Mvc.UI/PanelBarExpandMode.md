@@ -8,7 +8,7 @@ publish:true
 
 Specifies the expand mode in which the panelbar will expand its items
 
-## Members
+## Fields
 
 ### Single
 Only one item can be expanded.

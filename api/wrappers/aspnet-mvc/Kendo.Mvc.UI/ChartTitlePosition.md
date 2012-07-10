@@ -8,7 +8,7 @@ publish:true
 
 Defines the position chart title
 
-## Members
+## Fields
 
 ### Top
 The title is positioned on the top

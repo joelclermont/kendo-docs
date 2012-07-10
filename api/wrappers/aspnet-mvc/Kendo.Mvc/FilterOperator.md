@@ -8,7 +8,7 @@ publish:true
 
 Operator used in FilterDescriptor
 
-## Members
+## Fields
 
 ### IsLessThan
 Left operand must be smaller than the right one.

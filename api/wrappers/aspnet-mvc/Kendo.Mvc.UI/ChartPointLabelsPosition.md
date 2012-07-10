@@ -8,7 +8,7 @@ publish:true
 
 Defines the position of point labels.
 
-## Members
+## Fields
 
 ### Above
 The label is positioned at the top of the point marker.

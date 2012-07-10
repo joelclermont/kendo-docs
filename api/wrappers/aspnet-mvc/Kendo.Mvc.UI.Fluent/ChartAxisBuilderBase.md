@@ -8,6 +8,11 @@ publish:true
 
 Defines the fluent interface for configuring axes.
 
+## Properties
+
+### Axis
+Gets or sets the axis.
+
 ## Methods
 
 ### MajorTicks(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder})

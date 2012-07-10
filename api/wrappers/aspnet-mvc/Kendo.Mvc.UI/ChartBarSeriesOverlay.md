@@ -8,7 +8,7 @@ publish:true
 
 Defines the available bar series effects overlays
 
-## Members
+## Fields
 
 ### None
 The bars have no effect overlay

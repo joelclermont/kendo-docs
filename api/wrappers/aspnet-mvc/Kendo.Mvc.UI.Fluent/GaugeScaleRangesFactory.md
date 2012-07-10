@@ -8,6 +8,11 @@ publish:true
 
 Creates scale ranges for the !:GaugeScaleRangesFactory{TScale, T}.
 
+## Properties
+
+### Scale
+The gauge scale
+
 ## Methods
 
 ### Add

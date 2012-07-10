@@ -8,7 +8,7 @@ publish:true
 
 Specifies the orientation in which the menu items will be ordered
 
-## Members
+## Fields
 
 ### Horizontal
 Items are oredered horizontally

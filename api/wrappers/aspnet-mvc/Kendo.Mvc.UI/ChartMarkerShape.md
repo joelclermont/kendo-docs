@@ -8,7 +8,7 @@ publish:true
 
 Defines the shape of the marker.
 
-## Members
+## Fields
 
 ### Square
 The marker shape is square.

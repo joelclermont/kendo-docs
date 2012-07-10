@@ -8,7 +8,7 @@ publish:true
 
 Defines the position of bar/column chart labels
 
-## Members
+## Fields
 
 ### Center
 The label is positioned at the bar center

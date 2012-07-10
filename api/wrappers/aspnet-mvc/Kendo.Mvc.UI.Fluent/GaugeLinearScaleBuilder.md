@@ -8,6 +8,11 @@ publish:true
 
 Defines the fluent interface for configuring the gauge scale.
 
+## Properties
+
+### linearGauge
+The parent Guage
+
 ## Methods
 
 ### Mirror(System.Boolean)

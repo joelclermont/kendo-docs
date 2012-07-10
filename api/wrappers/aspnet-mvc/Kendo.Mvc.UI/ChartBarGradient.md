@@ -8,7 +8,7 @@ publish:true
 
 Defines the gradient of bar/column charts
 
-## Members
+## Fields
 
 ### Glass
 The bars have glass effect overlay.

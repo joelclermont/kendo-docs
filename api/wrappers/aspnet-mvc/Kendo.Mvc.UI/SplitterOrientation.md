@@ -8,7 +8,7 @@ publish:true
 
 Specifies the orientation in which the splitter panes will be ordered
 
-## Members
+## Fields
 
 ### Horizontal
 Panes are oredered horizontally

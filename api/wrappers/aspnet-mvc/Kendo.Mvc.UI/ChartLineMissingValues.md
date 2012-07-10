@@ -8,7 +8,7 @@ publish:true
 
 Defines the behavior for handling missing values in line series.
 
-## Members
+## Fields
 
 ### Interpolate
 The value is interpolated from neighboring points.

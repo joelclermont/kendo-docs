@@ -8,7 +8,7 @@ publish:true
 
 Specifies the category axis type.
 
-## Members
+## Fields
 
 ### Category
 Discrete category axis.

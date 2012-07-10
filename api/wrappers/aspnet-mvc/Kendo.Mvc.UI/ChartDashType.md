@@ -8,7 +8,7 @@ publish:true
 
 Specifies a line dash type.
 
-## Members
+## Fields
 
 ### Solid
 Specifies a solid line.

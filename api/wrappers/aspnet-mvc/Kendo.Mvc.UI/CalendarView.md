@@ -8,7 +8,7 @@ publish:true
 
 Represents available types of calendar views.
 
-## Members
+## Fields
 
 ### Month
 Shows the days of the current month
