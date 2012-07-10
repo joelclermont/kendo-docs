@@ -45,7 +45,7 @@ Sets the row template of the grid
 
 #### Parameters
 
-##### codeBlockTemplate System.Action<T,[Kendo.Mvc.UI.Grid](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/Grid)<T>>
+##### codeBlockTemplate System.Action\<T,[Kendo.Mvc.UI.Grid](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/Grid)\<T>>
 The template
 
 ### RowTemplate(System.Action\<T\>)
