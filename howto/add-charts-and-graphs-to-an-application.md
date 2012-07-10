@@ -58,7 +58,7 @@ The first step is to add the necessary script and stylesheet references for Kend
 
 		<!-- Kendo UI CDN reference for DataViz; utilizing a local reference if offline -->
 		<script src="//cdn.kendostatic.com/2012.2.621/js/kendo.dataviz.min.js"></script>
-		<script>(window.kendo && window.kendo.dataviz) || document.write('<script src="js/kendo.dataviz.min.js"><\/script>')</script>
+		<script>(window.kendo &amp;&amp; window.kendo.dataviz) || document.write('<script src="js/kendo.dataviz.min.js"><\/script>')</script>
 
 	</body>
 	</html>
