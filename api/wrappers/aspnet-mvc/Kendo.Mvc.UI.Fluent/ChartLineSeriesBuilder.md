@@ -36,7 +36,7 @@ Sets the aggregate function for date series.
 
 #### Parameters
 
-##### aggregate `Kendo.Mvc.UI.ChartSeriesAggregate`
+##### aggregate [Kendo.Mvc.UI.ChartSeriesAggregate](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)
 Aggregate function name.
 
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder\>)
@@ -56,7 +56,7 @@ Configures the line chart labels.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartPointLabelsBuilder)\>
 The configuration action.
 
 ### Labels(System.Boolean)
@@ -103,7 +103,7 @@ Sets the line chart line dash type.
 
 #### Parameters
 
-##### dashType `Kendo.Mvc.UI.ChartDashType`
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The line dash type.
 
 ### Markers(System.Action\<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder\>)
@@ -122,7 +122,7 @@ Configures the line chart markers.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.ChartMarkersBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartMarkersBuilder)\>
 The configuration action.
 
 ### Markers(System.Boolean)
@@ -156,5 +156,5 @@ Configures the behavior for handling missing values in line series.
 
 #### Parameters
 
-##### missingValues `Kendo.Mvc.UI.ChartLineMissingValues`
+##### missingValues [Kendo.Mvc.UI.ChartLineMissingValues](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartLineMissingValues)
 The missing values behavior. The default is to leave gaps.

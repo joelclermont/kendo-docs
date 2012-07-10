@@ -23,7 +23,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.CalendarEventBuilder>`
+##### clientEventsAction System.Action\<[Kendo.Mvc.UI.Fluent.CalendarEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/CalendarEventBuilder)\>
 The client events action.
 
 ### Format(System.String)
@@ -115,5 +115,5 @@ Configures the selection settings of the calendar.
 
 #### Parameters
 
-##### selectionAction `System.Action<Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder>`
+##### selectionAction System.Action\<[Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/CalendarSelectionSettingsBuilder)\>
 SelectAction settings, which includes Action name and IEnumerable of DateTime objects.

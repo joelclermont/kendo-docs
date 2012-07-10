@@ -27,7 +27,7 @@ Configures Filter menu messages.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/FilterableMessagesBuilder)\>
 
 ### Extra(System.Boolean)
 Specify if the extra input fields should be visible within the filter menu. Default is true.

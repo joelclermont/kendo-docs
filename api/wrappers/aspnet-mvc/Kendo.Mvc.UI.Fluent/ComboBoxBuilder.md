@@ -62,7 +62,7 @@ Defines the items in the ComboBox
 
 #### Parameters
 
-##### addAction `System.Action<Kendo.Mvc.UI.Fluent.DropDownListItemFactory>`
+##### addAction System.Action\<[Kendo.Mvc.UI.Fluent.DropDownListItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DropDownListItemFactory)\>
 The add action.
 
 ### HighlightFirst(System.Boolean)

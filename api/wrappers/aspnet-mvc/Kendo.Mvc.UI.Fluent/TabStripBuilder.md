@@ -25,7 +25,7 @@ Defines the items in the tabstrip
 
 #### Parameters
 
-##### addAction `System.Action<Kendo.Mvc.UI.Fluent.TabStripItemFactory>`
+##### addAction System.Action\<[Kendo.Mvc.UI.Fluent.TabStripItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TabStripItemFactory)\>
 The add action.
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.TabStripEventBuilder\>)
@@ -41,7 +41,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.TabStripEventBuilder>`
+##### clientEventsAction System.Action\<[Kendo.Mvc.UI.Fluent.TabStripEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TabStripEventBuilder)\>
 The client events action.
 
 ### Animation(System.Boolean)
@@ -67,7 +67,7 @@ Configures the animation effects of the tabstrip.
 
 #### Parameters
 
-##### animationAction `System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>`
+##### animationAction System.Action\<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder)\>
 The action that configures the animation.
 
 ### BindTo(System.String,System.Action\<Kendo.Mvc.UI.TabStripItem,Kendo.Mvc.SiteMapNode\>)
@@ -86,7 +86,7 @@ Binds the tabstrip to a sitemap
 ##### viewDataKey `System.String`
 The view data key.
 
-##### siteMapAction `System.Action<Kendo.Mvc.UI.TabStripItem,Kendo.Mvc.SiteMapNode>`
+##### siteMapAction System.Action\<[Kendo.Mvc.UI.TabStripItem](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TabStripItem),Kendo.Mvc.SiteMapNode\>
 The action to configure the item.
 
 ### BindTo(System.String)
@@ -120,7 +120,7 @@ Binds the tabstrip to a list of objects
 ##### dataSource `System.Collections.Generic.IEnumerable<T1>`
 The data source.
 
-##### itemDataBound `System.Action<Kendo.Mvc.UI.TabStripItem,T1>`
+##### itemDataBound System.Action\<[Kendo.Mvc.UI.TabStripItem](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TabStripItem),T1\>
 The action executed for every data bound item.
 
 ### SelectedIndex(System.Int32)
@@ -158,7 +158,7 @@ Callback for each item.
 
 #### Parameters
 
-##### action `System.Action<Kendo.Mvc.UI.TabStripItem>`
+##### action System.Action\<[Kendo.Mvc.UI.TabStripItem](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TabStripItem)\>
 Action, which will be executed for each item.
 
 ### HighlightPath(System.Boolean)

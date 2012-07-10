@@ -82,5 +82,5 @@ The border width.
 ##### color `System.String`
 The border color (CSS syntax).
 
-##### dashType `Kendo.Mvc.UI.ChartDashType`
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The border dash type.

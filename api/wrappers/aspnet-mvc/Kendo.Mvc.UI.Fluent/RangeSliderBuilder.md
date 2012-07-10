@@ -51,7 +51,7 @@ Use it to configure tooltip while drag.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.SliderTooltipBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.SliderTooltipBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SliderTooltipBuilder)\>
 Use builder to set different tooltip options.
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.RangeSliderEventBuilder\>)
@@ -66,5 +66,5 @@ Configures the client-side events.
 
 #### Parameters
 
-##### events `System.Action<Kendo.Mvc.UI.Fluent.RangeSliderEventBuilder>`
+##### events System.Action\<[Kendo.Mvc.UI.Fluent.RangeSliderEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/RangeSliderEventBuilder)\>
 The client events action.

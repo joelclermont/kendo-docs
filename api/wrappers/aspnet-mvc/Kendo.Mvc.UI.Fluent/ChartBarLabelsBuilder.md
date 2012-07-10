@@ -28,5 +28,5 @@ Sets the labels position
 
 #### Parameters
 
-##### position `Kendo.Mvc.UI.ChartBarLabelsPosition`
+##### position [Kendo.Mvc.UI.ChartBarLabelsPosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartBarLabelsPosition)
 The labels position.

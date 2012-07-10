@@ -102,7 +102,7 @@ Sets the axis title position.
 
 #### Parameters
 
-##### position `Kendo.Mvc.UI.ChartAxisTitlePosition`
+##### position [Kendo.Mvc.UI.ChartAxisTitlePosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartAxisTitlePosition)
 The axis title position.
 
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -221,7 +221,7 @@ The axis title border width.
 ##### color `System.String`
 The axis title border color.
 
-##### dashType `Kendo.Mvc.UI.ChartDashType`
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The axis title dash type.
 
 ### Opacity(System.Double)

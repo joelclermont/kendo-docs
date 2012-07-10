@@ -28,7 +28,7 @@ Sets the labels align
 
 #### Parameters
 
-##### align `Kendo.Mvc.UI.ChartPieLabelsAlign`
+##### align [Kendo.Mvc.UI.ChartPieLabelsAlign](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartPieLabelsAlign)
 The labels align.
 
 ### Distance(System.Int32)
@@ -70,5 +70,5 @@ Sets the labels position
 
 #### Parameters
 
-##### position `Kendo.Mvc.UI.ChartPieLabelsPosition`
+##### position [Kendo.Mvc.UI.ChartPieLabelsPosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartPieLabelsPosition)
 The labels position.

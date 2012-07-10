@@ -28,7 +28,7 @@ Configures the child items of a TreeViewItem.
 
 #### Parameters
 
-##### addAction `System.Action<Kendo.Mvc.UI.Fluent.TreeViewItemFactory>`
+##### addAction System.Action\<[Kendo.Mvc.UI.Fluent.TreeViewItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TreeViewItemFactory)\>
 The add action.
 
 ### Value(System.String)

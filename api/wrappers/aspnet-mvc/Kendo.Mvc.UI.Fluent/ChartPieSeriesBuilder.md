@@ -81,7 +81,7 @@ Configures the pie chart labels.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartPieLabelsBuilder)\>
 The configuration action.
 
 ### Labels(System.Boolean)
@@ -119,7 +119,7 @@ The pie segments border width.
 ##### color `System.String`
 The pie segments border color (CSS syntax).
 
-##### dashType `Kendo.Mvc.UI.ChartDashType`
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The pie segments border dash type.
 
 ### Overlay(Kendo.Mvc.UI.ChartPieSeriesOverlay)
@@ -134,7 +134,7 @@ Sets the pie segments effects overlay
 
 #### Parameters
 
-##### overlay `Kendo.Mvc.UI.ChartPieSeriesOverlay`
+##### overlay [Kendo.Mvc.UI.ChartPieSeriesOverlay](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartPieSeriesOverlay)
 The pie segment effects overlay.
             The default value is set in the theme.
 
@@ -154,5 +154,5 @@ Configures the pie chart connectors.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartPieConnectorsBuilder)\>
 The configuration action.

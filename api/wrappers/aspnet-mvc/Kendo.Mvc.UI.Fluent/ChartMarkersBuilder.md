@@ -27,7 +27,7 @@ Sets the markers shape type.
 
 #### Parameters
 
-##### type `Kendo.Mvc.UI.ChartMarkerShape`
+##### type [Kendo.Mvc.UI.ChartMarkerShape](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartMarkerShape)
 The markers shape type.
 
 ### Size(System.Int32)
@@ -93,7 +93,7 @@ The markers border width.
 ##### color `System.String`
 The markers border color (CSS syntax).
 
-##### dashType `Kendo.Mvc.UI.ChartDashType`
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The markers border dash type.
 
 ### Background(System.String)

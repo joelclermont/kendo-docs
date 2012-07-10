@@ -35,7 +35,7 @@ Sets the radial gauge area.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeAreaBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.GaugeAreaBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeAreaBuilder)\>
 The radial gauge area.
 
 ### Scale(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder\>)
@@ -51,7 +51,7 @@ Configures the scale
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialScaleBuilder)\>
 The configurator
 
 ### Pointer(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder\>)
@@ -67,7 +67,7 @@ Configures the pointer
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialPointerBuilder)\>
 The configurator
 
 ### Transitions(System.Boolean)

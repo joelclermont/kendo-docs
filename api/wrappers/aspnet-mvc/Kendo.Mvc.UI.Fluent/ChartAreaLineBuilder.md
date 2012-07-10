@@ -61,7 +61,7 @@ Sets the line dashType.
 
 #### Parameters
 
-##### dashType `Kendo.Mvc.UI.ChartDashType`
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The line dashType.
 
 ### Opacity(System.Double)

@@ -146,7 +146,7 @@ Sets the footer template for the column.
 
 #### Parameters
 
-##### template `System.Action<Kendo.Mvc.UI.GridAggregateResult>`
+##### template System.Action\<[Kendo.Mvc.UI.GridAggregateResult](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridAggregateResult)\>
 The action defining the template.
 
 ### FooterTemplate(System.Func\<Kendo.Mvc.UI.GridAggregateResult,System.Object\>)
@@ -154,7 +154,7 @@ Sets the footer template for the column.
 
 #### Parameters
 
-##### template `System.Func<Kendo.Mvc.UI.GridAggregateResult,System.Object>`
+##### template System.Func\<[Kendo.Mvc.UI.GridAggregateResult](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridAggregateResult),System.Object\>
 The action defining the template.
 
 ### GroupFooterTemplate(System.Action\<Kendo.Mvc.UI.GridAggregateResult\>)
@@ -162,7 +162,7 @@ Sets the group footer template for the column.
 
 #### Parameters
 
-##### template `System.Action<Kendo.Mvc.UI.GridAggregateResult>`
+##### template System.Action\<[Kendo.Mvc.UI.GridAggregateResult](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridAggregateResult)\>
 The action defining the template.
 
 ### GroupFooterTemplate(System.Func\<Kendo.Mvc.UI.GridAggregateResult,System.Object\>)
@@ -170,7 +170,7 @@ Sets the group footer template for the column.
 
 #### Parameters
 
-##### template `System.Func<Kendo.Mvc.UI.GridAggregateResult,System.Object>`
+##### template System.Func\<[Kendo.Mvc.UI.GridAggregateResult](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridAggregateResult),System.Object\>
 The action defining the template.
 
 ### GroupHeaderTemplate(System.Action\<Kendo.Mvc.UI.GridGroupAggregateResult\>)
@@ -178,7 +178,7 @@ Sets the group footer template for the column.
 
 #### Parameters
 
-##### template `System.Action<Kendo.Mvc.UI.GridGroupAggregateResult>`
+##### template System.Action\<[Kendo.Mvc.UI.GridGroupAggregateResult](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridGroupAggregateResult)\>
 The action defining the template.
 
 ### GroupHeaderTemplate(System.Func\<Kendo.Mvc.UI.GridGroupAggregateResult,System.Object\>)
@@ -186,5 +186,5 @@ Sets the group footer template for the column.
 
 #### Parameters
 
-##### template `System.Func<Kendo.Mvc.UI.GridGroupAggregateResult,System.Object>`
+##### template System.Func\<[Kendo.Mvc.UI.GridGroupAggregateResult](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridGroupAggregateResult),System.Object\>
 The action defining the template.

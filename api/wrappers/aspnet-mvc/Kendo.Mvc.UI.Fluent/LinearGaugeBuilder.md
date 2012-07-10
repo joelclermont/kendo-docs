@@ -35,7 +35,7 @@ Sets the linear gauge area.
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeAreaBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.GaugeAreaBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeAreaBuilder)\>
 The linear gauge area.
 
 ### Scale(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder\>)
@@ -51,7 +51,7 @@ Configures the scale
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearScaleBuilder)\>
 The configurator
 
 ### Pointer(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder\>)
@@ -67,7 +67,7 @@ Configures the pointer
 
 #### Parameters
 
-##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder>`
+##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearPointerBuilder)\>
 The configurator
 
 ### Transitions(System.Boolean)
