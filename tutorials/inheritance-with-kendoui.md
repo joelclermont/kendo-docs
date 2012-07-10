@@ -71,7 +71,7 @@ in the variable not being found.
 
 
 
-[![Capture][19]][20]
+![Capture][19](images/8C23-Capture.png)
 
 We can also add a constructor for this object by including an "_init_" method.
 We could then create a new person by newing up a new **Person** object. We’ll
@@ -81,52 +81,37 @@ to true.
 
     var Person = kendo.Class.extend({
 
-
         firstName: 'Not Set',
-
 
         lastName: 'Not Set',
 
-
         isAPrettyCoolPerson: false,
-
 
         init: function(firstName, lastName) {
 
+            if (firstName) this.firstName = firstName;
 
-     if (firstName) this.firstName = firstName;
-
-
-     if (lastName) this.lastName = lastName;
-
+            if (lastName) this.lastName = lastName;    
 
         },
 
-
         sayHello: function() {
-
 
             alert("Hello! I'm " + this.firstName + " " + this.lastName);
 
-
         }
-
 
     });
 
 
-
-
     var person = new Person("John", "Bristowe");
 
-
     person.isAPrettyCoolPerson = true;
-
 
     person.sayHello();
 
 
-[![nh5][23]][24]
+![nh5](images/8C23-nh5.png)
 
 Now we can instantiate a new person object of type parent that inherits the
 properties of **Person** by extending the base person object.  Here I’ve
@@ -162,9 +147,9 @@ person so we’ll toggle that on.
     alert(myDad.isAPrettyCoolPerson);
 
 
-[![nh1][25]][26]
+![nh1](images/8C23-nh1_1.png)
 
-[![nh2][27]][28]
+![nh2](images/8C23-nh2.png)
 
 Now a child would inherit some, but not all properties from their parents. I
 inherit my father's last name, but I override the first name since I have my
@@ -186,9 +171,9 @@ inherit from his as well right?
 
 
 
-[![nh3][29]][30]
+![nh3](images/8C23-nh3.png)
 
-[![nh4][31]][32]
+![nh4](images/8C23-nh4.png)
 
 ### Understanding Parent Objects
 
@@ -203,28 +188,4 @@ Use the Fiddle below to experiment with Inheritance In Kendo UI.
 
 <iframe style="width: 100%; height: 750px;" src="http://jsfiddle.net/burkeholland/FgShb/embedded/js,result" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-   [19]: images/8C23-Capture_thumb.png (Capture)
-
-   [20]: images/8C23-Capture.png
-
    [21]: http://twitter.com/johnbristowe
-
-   [23]: images/8C23-nh5_thumb.png (nh5)
-
-   [24]: images/8C23-nh5.png
-
-   [25]: images/8C23-nh1_thumb_1.png (nh1)
-
-   [26]: images/8C23-nh1_1.png
-
-   [27]: images/8C23-nh2_thumb.png (nh2)
-
-   [28]: images/8C23-nh2.png
-
-   [29]: images/8C23-nh3_thumb.png (nh3)
-
-   [30]: images/8C23-nh3.png
-
-   [31]: images/8C23-nh4_thumb.png (nh4)
-
-   [32]: images/8C23-nh4.png
