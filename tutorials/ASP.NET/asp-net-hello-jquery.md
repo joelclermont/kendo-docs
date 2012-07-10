@@ -63,9 +63,8 @@ the **Default.aspx.cs** file.  Set the label text equal to the string **“Hello
 
     protected void btnSayHello_Click(object sender, EventArgs e) {
 
-        lblResult.Text = "Hello " + txtFirstName.Text + " " +
-txtLastName.Text;
-
+        lblResult.Text = "Hello " + txtFirstName.Text + " " + txtLastName.Text;
+    
     }
 
 
@@ -170,7 +169,7 @@ selecting **F12**.  Switch to the **Console** tab in the developer tools.  The
 console allows a developer to execute arbitrary JavaScript commands at
 runtime.  As a test, type **alert(“Hello!”); **in the console and press enter.
 
-![Alert Hello](hello-jquery-alert-hello.png)
+![Alert Hello](images/hello-jquery-alert-hello.png)
 
 [jQuery](http://jquery.com/) code can be executed either by calling methods off of the
 **jQuery** object, or simply using the **$**.  The **$** is commonly known and
@@ -243,7 +242,7 @@ a parent server control will be prefixed with the parent name.  If parents are
 nested within parents, they may have multiple values appended onto the front.
 This is to make sure that ID’s do in fact remain unique.
 
-![Main Content Prefixed txtFirstName](hello-jquery-main-content-txt-firstname.png)
+![Main Content Prefixed txtFirstName](images/hello-jquery-main-content-txt-firstname.png)
 
 Switch back to the **Console** tab and keeping in mind the actual ID of
 **txtFirstName **at runtime, enter the following command in the **console.**
@@ -257,7 +256,7 @@ Switch back to the **Console** tab and keeping in mind the actual ID of
 
 Notice that the text value of the first name textbox is returned.
 
-![txtFirstName Has A Value](hello-jquery-txtfirstname-has-value.png)
+![txtFirstName Has A Value](images/hello-jquery-txtfirstname-has-value.png)
 
 #### Refactor The Application To Use jQuery
 
@@ -315,12 +314,10 @@ click will not cause the form to post.
 
 
     <!-- Replace This -->
-
     <asp:Button ID="btnSayHello" runat="server" onclick="btnSayHello_Click" Text="Say Hello" />
 
 
     <!-- With This -->
-
     <input type="button" id="btnSayHello" value="Say Hello" />
 
 
