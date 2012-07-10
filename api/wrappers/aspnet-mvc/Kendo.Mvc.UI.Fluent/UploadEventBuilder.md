@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.UploadEventBuilder
+title:UploadEventBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.uploadeventbuilder
 publish:true
 ---

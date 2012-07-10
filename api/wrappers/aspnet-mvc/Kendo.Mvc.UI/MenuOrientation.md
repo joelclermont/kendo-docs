@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.MenuOrientation
+title:MenuOrientation
 slug:aspnetmvc-kendo.mvc.ui.menuorientation
 publish:true
 ---

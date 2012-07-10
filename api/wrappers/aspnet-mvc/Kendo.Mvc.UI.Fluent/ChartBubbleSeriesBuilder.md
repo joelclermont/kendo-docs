@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartBubbleSeriesBuilder
+title:ChartBubbleSeriesBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartbubbleseriesbuilder
 publish:true
 ---

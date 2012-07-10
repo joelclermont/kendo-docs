@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartAxisBaseUnit
+title:ChartAxisBaseUnit
 slug:aspnetmvc-kendo.mvc.ui.chartaxisbaseunit
 publish:true
 ---

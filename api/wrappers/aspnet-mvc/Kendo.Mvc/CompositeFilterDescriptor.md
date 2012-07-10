@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.CompositeFilterDescriptor
+title:CompositeFilterDescriptor
 slug:aspnetmvc-kendo.mvc.compositefilterdescriptor
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder
+title:ChartPointLabelsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartpointlabelsbuilder
 publish:true
 ---

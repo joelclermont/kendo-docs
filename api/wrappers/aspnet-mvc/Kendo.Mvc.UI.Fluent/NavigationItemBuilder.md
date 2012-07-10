@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.NavigationItemBuilder
+title:NavigationItemBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.navigationitembuilder
 publish:true
 ---

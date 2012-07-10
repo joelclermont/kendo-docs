@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.SliderTickPlacement
+title:SliderTickPlacement
 slug:aspnetmvc-kendo.mvc.ui.slidertickplacement
 publish:true
 ---

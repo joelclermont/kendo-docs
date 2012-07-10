@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DataSourceEventBuilder
+title:DataSourceEventBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.datasourceeventbuilder
 publish:true
 ---

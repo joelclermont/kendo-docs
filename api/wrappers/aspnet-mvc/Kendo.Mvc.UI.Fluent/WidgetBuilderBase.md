@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.WidgetBuilderBase
+title:WidgetBuilderBase
 slug:aspnetmvc-kendo.mvc.ui.fluent.widgetbuilderbase
 publish:true
 ---

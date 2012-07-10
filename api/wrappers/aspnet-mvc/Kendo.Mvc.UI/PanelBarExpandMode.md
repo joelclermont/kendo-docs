@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.PanelBarExpandMode
+title:PanelBarExpandMode
 slug:aspnetmvc-kendo.mvc.ui.panelbarexpandmode
 publish:true
 ---

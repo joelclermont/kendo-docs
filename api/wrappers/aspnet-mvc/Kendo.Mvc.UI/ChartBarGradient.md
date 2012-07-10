@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartBarGradient
+title:ChartBarGradient
 slug:aspnetmvc-kendo.mvc.ui.chartbargradient
 publish:true
 ---

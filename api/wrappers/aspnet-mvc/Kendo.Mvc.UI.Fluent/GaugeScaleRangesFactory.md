@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GaugeScaleRangesFactory
+title:GaugeScaleRangesFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.gaugescalerangesfactory
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartLegendBuilder
+title:ChartLegendBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartlegendbuilder
 publish:true
 ---

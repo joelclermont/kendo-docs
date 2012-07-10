@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.SplitterOrientation
+title:SplitterOrientation
 slug:aspnetmvc-kendo.mvc.ui.splitterorientation
 publish:true
 ---

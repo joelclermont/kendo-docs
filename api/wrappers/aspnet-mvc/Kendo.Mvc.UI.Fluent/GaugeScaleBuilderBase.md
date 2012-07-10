@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GaugeScaleBuilderBase
+title:GaugeScaleBuilderBase
 slug:aspnetmvc-kendo.mvc.ui.fluent.gaugescalebuilderbase
 publish:true
 ---

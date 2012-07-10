@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.RangeSliderBuilder
+title:RangeSliderBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.rangesliderbuilder
 publish:true
 ---

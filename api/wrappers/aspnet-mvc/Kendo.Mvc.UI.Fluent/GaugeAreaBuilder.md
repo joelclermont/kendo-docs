@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GaugeAreaBuilder
+title:GaugeAreaBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gaugeareabuilder
 publish:true
 ---

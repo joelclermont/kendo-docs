@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DropDownListItemBuilder
+title:DropDownListItemBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.dropdownlistitembuilder
 publish:true
 ---

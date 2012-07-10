@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DataSourceModelFieldDescriptorBuilder
+title:DataSourceModelFieldDescriptorBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.datasourcemodelfielddescriptorbuilder
 publish:true
 ---

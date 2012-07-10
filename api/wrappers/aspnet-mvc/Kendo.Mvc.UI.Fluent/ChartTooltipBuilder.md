@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartTooltipBuilder
+title:ChartTooltipBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.charttooltipbuilder
 publish:true
 ---

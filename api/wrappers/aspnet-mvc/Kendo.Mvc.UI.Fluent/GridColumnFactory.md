@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridColumnFactory
+title:GridColumnFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridcolumnfactory
 publish:true
 ---
@@ -29,6 +29,16 @@ Defines a foreign key column.
 #### Parameters
 
 ##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+The member which matches the selected item
+
+##### data ```0}}`
+The foreign data
+
+##### dataFieldValue `System.Collections.IEnumerable`
+The data value field
+
+##### dataFieldText `System.String`
+The data text field
 
 ### ForeignKey`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Web.Mvc.SelectList)
 Defines a foreign key column.
@@ -36,6 +46,10 @@ Defines a foreign key column.
 #### Parameters
 
 ##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+The member which matches the selected item
+
+##### data ```0}}`
+The foreign data
 
 ### AutoGenerate(System.Boolean)
 Determines if columns should be automatically generated.

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.TimePickerBuilder
+title:TimePickerBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.timepickerbuilder
 publish:true
 ---

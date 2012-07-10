@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartAxisTitlePosition
+title:ChartAxisTitlePosition
 slug:aspnetmvc-kendo.mvc.ui.chartaxistitleposition
 publish:true
 ---

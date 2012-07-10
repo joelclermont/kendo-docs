@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.WindowEventBuilder
+title:WindowEventBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.windoweventbuilder
 publish:true
 ---

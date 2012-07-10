@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridActionColumnBuilder
+title:GridActionColumnBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridactioncolumnbuilder
 publish:true
 ---

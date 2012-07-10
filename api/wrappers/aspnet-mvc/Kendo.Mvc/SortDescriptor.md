@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.SortDescriptor
+title:SortDescriptor
 slug:aspnetmvc-kendo.mvc.sortdescriptor
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.SliderEventBuilder
+title:SliderEventBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.slidereventbuilder
 publish:true
 ---

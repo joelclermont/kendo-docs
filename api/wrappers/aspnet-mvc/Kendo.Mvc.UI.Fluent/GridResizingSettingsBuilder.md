@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder
+title:GridResizingSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridresizingsettingsbuilder
 publish:true
 ---

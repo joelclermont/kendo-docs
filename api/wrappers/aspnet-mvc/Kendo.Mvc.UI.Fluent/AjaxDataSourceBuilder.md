@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.AjaxDataSourceBuilder
+title:AjaxDataSourceBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.ajaxdatasourcebuilder
 publish:true
 ---

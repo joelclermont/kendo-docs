@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.AjaxDataSourceBuilderBase
+title:AjaxDataSourceBuilderBase
 slug:aspnetmvc-kendo.mvc.ui.fluent.ajaxdatasourcebuilderbase
 publish:true
 ---
@@ -27,6 +27,9 @@ Action name
 ##### controllerName `System.String`
 Controller Name
 
+##### routeValues `System.Object`
+Route values
+
 ### Read(System.String,System.String)
 Sets controller, action and routeValues for Read operation.
 
@@ -37,9 +40,6 @@ Action name
 
 ##### controllerName `System.String`
 Controller Name
-
-##### routeValues `undefined`
-Route values
 
 ### Total(System.Int32)
 Sets the total number of records in the data source. Required during Custom binding.

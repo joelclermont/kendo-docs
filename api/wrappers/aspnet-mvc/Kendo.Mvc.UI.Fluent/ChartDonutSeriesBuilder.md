@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartDonutSeriesBuilder
+title:ChartDonutSeriesBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartdonutseriesbuilder
 publish:true
 ---

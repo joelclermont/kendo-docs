@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DataSourceFilterComparisonDescriptorBuilderBase
+title:DataSourceFilterComparisonDescriptorBuilderBase
 slug:aspnetmvc-kendo.mvc.ui.fluent.datasourcefiltercomparisondescriptorbuilderbase
 publish:true
 ---

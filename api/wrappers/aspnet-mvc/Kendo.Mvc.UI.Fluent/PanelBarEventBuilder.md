@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.PanelBarEventBuilder
+title:PanelBarEventBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.panelbareventbuilder
 publish:true
 ---

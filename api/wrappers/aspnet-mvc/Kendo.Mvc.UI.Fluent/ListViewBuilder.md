@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ListViewBuilder
+title:ListViewBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.listviewbuilder
 publish:true
 ---

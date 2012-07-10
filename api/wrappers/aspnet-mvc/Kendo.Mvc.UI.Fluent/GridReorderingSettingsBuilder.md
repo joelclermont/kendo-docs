@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder
+title:GridReorderingSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridreorderingsettingsbuilder
 publish:true
 ---

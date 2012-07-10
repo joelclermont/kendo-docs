@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.GridEditMode
+title:GridEditMode
 slug:aspnetmvc-kendo.mvc.ui.grideditmode
 publish:true
 ---

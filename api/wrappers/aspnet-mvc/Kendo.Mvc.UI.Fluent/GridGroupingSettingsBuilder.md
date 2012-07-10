@@ -1,12 +1,12 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridGroupingSettingsBuilder
+title:GridGroupingSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridgroupingsettingsbuilder
 publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridGroupingSettingsBuilder
 
-Defines the fluent interface for configuring Groupable.
+Defines the fluent interface for configuring GridGroupableSettings.
 
 ## Methods
 

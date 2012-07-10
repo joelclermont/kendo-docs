@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartLineMissingValues
+title:ChartLineMissingValues
 slug:aspnetmvc-kendo.mvc.ui.chartlinemissingvalues
 publish:true
 ---

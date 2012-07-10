@@ -1,12 +1,12 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GroupingMessagesBuilder
+title:GroupingMessagesBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.groupingmessagesbuilder
 publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GroupingMessagesBuilder
 
-Defines the fluent interface for configuring Groupable messages.
+Defines the fluent interface for configuring GridGroupableSettings messages.
 
 ## Methods
 

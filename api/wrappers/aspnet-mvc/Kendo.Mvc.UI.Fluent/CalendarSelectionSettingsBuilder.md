@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder
+title:CalendarSelectionSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.calendarselectionsettingsbuilder
 publish:true
 ---

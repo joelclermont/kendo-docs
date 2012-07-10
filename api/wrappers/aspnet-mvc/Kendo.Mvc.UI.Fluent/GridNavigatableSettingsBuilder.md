@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder
+title:GridNavigatableSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridnavigatablesettingsbuilder
 publish:true
 ---

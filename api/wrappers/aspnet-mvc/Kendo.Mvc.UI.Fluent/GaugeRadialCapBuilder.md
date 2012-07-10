@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder
+title:GaugeRadialCapBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gaugeradialcapbuilder
 publish:true
 ---

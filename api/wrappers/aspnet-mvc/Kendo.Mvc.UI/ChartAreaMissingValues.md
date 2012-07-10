@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartAreaMissingValues
+title:ChartAreaMissingValues
 slug:aspnetmvc-kendo.mvc.ui.chartareamissingvalues
 publish:true
 ---

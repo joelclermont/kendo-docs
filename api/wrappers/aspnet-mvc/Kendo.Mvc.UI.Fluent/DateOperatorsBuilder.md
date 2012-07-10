@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DateOperatorsBuilder
+title:DateOperatorsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.dateoperatorsbuilder
 publish:true
 ---

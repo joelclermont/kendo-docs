@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.FilterCompositionLogicalOperator
+title:FilterCompositionLogicalOperator
 slug:aspnetmvc-kendo.mvc.filtercompositionlogicaloperator
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.ChartAxisTickType
+title:ChartAxisTickType
 slug:aspnetmvc-kendo.mvc.ui.chartaxisticktype
 publish:true
 ---

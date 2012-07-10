@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.FilterOperator
+title:FilterOperator
 slug:aspnetmvc-kendo.mvc.filteroperator
 publish:true
 ---

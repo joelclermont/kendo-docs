@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.MenuEventBuilder
+title:MenuEventBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.menueventbuilder
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder
+title:ReadOnlyDataSourceBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.readonlydatasourcebuilder
 publish:true
 ---
@@ -24,6 +24,9 @@ Action name
 ##### controllerName `System.String`
 Controller Name
 
+##### routeValues `System.Object`
+Route values
+
 ### Read(System.String,System.String)
 Sets controller, action and routeValues for Read operation.
 
@@ -34,9 +37,6 @@ Action name
 
 ##### controllerName `System.String`
 Controller Name
-
-##### routeValues `undefined`
-Route values
 
 ### ServerFiltering
 Specifies if filtering should be handled by the server.

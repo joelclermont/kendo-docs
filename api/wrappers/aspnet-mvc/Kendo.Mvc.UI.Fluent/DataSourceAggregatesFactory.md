@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.DataSourceAggregatesFactory
+title:DataSourceAggregatesFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.datasourceaggregatesfactory
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.Extensions.QueryableExtensions
+title:QueryableExtensions
 slug:aspnetmvc-kendo.mvc.extensions.queryableextensions
 publish:true
 ---

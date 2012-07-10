@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridBoundColumnBuilder
+title:GridBoundColumnBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridboundcolumnbuilder
 publish:true
 ---
@@ -114,7 +114,7 @@ Sets the template for the column.
 
 #### Parameters
 
-##### templateAction `System.Func{`
+##### inlineTemplate `System.Func{`
 The action defining the template.
 
 ### ClientTemplate(System.String)

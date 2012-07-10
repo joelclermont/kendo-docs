@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.EditorStyleSheetBuilder
+title:EditorStyleSheetBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.editorstylesheetbuilder
 publish:true
 ---

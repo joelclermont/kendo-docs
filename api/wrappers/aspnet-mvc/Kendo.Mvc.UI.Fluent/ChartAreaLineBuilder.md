@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder
+title:ChartAreaLineBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartarealinebuilder
 publish:true
 ---

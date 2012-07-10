@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder
+title:FilterableMessagesBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.filterablemessagesbuilder
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartEventBuilder
+title:ChartEventBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.charteventbuilder
 publish:true
 ---

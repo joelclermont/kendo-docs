@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.GaugeLinearPointerShape
+title:GaugeLinearPointerShape
 slug:aspnetmvc-kendo.mvc.ui.gaugelinearpointershape
 publish:true
 ---

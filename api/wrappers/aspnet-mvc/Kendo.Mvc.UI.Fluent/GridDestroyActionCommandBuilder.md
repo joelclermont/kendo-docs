@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridDestroyActionCommandBuilder
+title:GridDestroyActionCommandBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.griddestroyactioncommandbuilder
 publish:true
 ---

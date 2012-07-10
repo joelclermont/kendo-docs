@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartValueAxisFactory
+title:ChartValueAxisFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartvalueaxisfactory
 publish:true
 ---

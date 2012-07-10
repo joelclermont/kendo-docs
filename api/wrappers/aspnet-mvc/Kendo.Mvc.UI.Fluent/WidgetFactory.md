@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.WidgetFactory
+title:WidgetFactory
 slug:aspnetmvc-kendo.mvc.ui.fluent.widgetfactory
 publish:true
 ---

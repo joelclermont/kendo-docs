@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.SplitterBuilder
+title:SplitterBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.splitterbuilder
 publish:true
 ---

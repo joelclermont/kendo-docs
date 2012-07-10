@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.TreeViewBuilder
+title:TreeViewBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.treeviewbuilder
 publish:true
 ---

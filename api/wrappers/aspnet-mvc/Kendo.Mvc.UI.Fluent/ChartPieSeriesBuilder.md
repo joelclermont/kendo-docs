@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.ChartPieSeriesBuilder
+title:ChartPieSeriesBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.chartpieseriesbuilder
 publish:true
 ---

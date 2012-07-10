@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.GridColumnMenuSettingsBuilder
+title:GridColumnMenuSettingsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.gridcolumnmenusettingsbuilder
 publish:true
 ---

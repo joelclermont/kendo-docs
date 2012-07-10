@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.WindowActionsBuilder
+title:WindowActionsBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.windowactionsbuilder
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.Fluent.TabStripItemBuilder
+title:TabStripItemBuilder
 slug:aspnetmvc-kendo.mvc.ui.fluent.tabstripitembuilder
 publish:true
 ---

@@ -1,5 +1,5 @@
 ---
-title:Kendo.Mvc.UI.GridSortMode
+title:GridSortMode
 slug:aspnetmvc-kendo.mvc.ui.gridsortmode
 publish:true
 ---
