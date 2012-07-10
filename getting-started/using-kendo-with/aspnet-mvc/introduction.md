@@ -4,45 +4,46 @@ slug: mvc-introduction
 publish: true
 ---
 
-# What is ASP.NET MVC
+## What is ASP.NET MVC
 
  [ASP.NET MVC](http://www.asp.net/mvc/) is a free and fully supported Microsoft framework for building web applications that use the model-view-controller pattern.
 ASP.NET MVC is built on top of the [ASP.NET](http://www.asp.net/) framework.
 
-### What is Kendo UI for ASP.NET MVC
+## What is Kendo UI Complete for ASP.NET MVC
 
-Kendo UI for ASP.NET MVC is a set of HTML helpers which help you configure Kendo UI widgets by using server-side code in ASP.NET MVC applications.
+Kendo UI Complete for ASP.NET MVC is a set of HTML helpers which help you configure Kendo UI widgets by using server-side code in ASP.NET MVC applications.
 
-Kendo UI for ASP.NET MVC provides the following benefits:
+Kendo UI Complete for ASP.NET MVC provides the following benefits:
 
 *   Built on top of the Kendo UI HTML5 framework and jQuery
 *   Leverages ASP.NET MVC features - data annotation, editor and display templates, validation, authorization
 *   Supports the WebForms and Razor view engines
 
-### Downloading and Installing Kendo UI for ASP.NET MVC
+## Downloading and Installing Kendo UI Complete for ASP.NET MVC
 
 You can choose to download either the msi installer or the zip file. If you choose the former just run the msi file to install it. If you choose to
 download the zip file simply extract it to your preferred location.
 
 The distribution files contain the following:
 
-*   **\Binaries** - Kendo UI for ASP.NET MVC assembly
-*   **\Content** - Kendo UI minified CSS files
-*   **\Examples** - a sample ASP.NET MVC application
-*   **\LegacyThemes** - Kendo UI themes ported from [Telerik Extensions for ASP.NET MVC](http://www.telerik.com/products/aspnet-mvc.aspx) themes
-*   **\Scripts** - Kendo UI minified JavaScript files
+*   **\js** - Kendo UI minified JavaScript files
+*   **\styles** - Kendo UI minified CSS files
+*   **\wrappers\aspnetmvc\Binaries** - Kendo UI Complete for ASP.NET MVC assemblies
+*   **\wrappers\aspnetmvc\Examples** - a sample ASP.NET MVC application
+*   **\wrappers\aspnetmvc\EditorTemplates** - ready-to-use editor templates based on various Kendo UI widgets
+*   **\wrappers\aspnermvc\LegacyThemes** - Kendo UI themes ported from [Telerik Extensions for ASP.NET MVC](http://www.telerik.com/products/aspnet-mvc.aspx) themes
 
-### Getting Started with Kendo UI for ASP.NET MVC
+## Getting Started with Kendo UI Complete for ASP.NET MVC
 
 Follow these steps:
 
 1.  Create a new ASP.NET MVC application from Visual Studio. ASP.NET MVC 3 and 4 are supported
 
-2.  Add a reference to **\Binaries\Mvc3\Kendo.Mvc.dll**
+2.  Add a reference to **\wrappers\aspnetmvc\Binaries\Mvc3\Kendo.Mvc.dll**
 
-3.  Copy the Kendo UI JavaScript files from **\Scripts** to the **Scripts** folder of your application.
+3.  Copy the Kendo UI JavaScript files from **\js** to the **Scripts** folder of your application.
 
-4.  Copy the Kendo UI CSS files from **\Content** to the **Content** folder of your application.
+4.  Copy the Kendo UI CSS files from **\styles** to the **Content** folder of your application.
 
 5.  Configure your ASP.NET MVC layout page to use the Kendo UI scripts and themes:
 
@@ -107,19 +108,19 @@ be availble in your views.
                  </pages>
              </system.web.webPages.razor>
 
-7.  Use any Kendo UI for ASP.NET MVC HtmlHelper extension:
-    
+7.  Use any Kendo UI HtmlHelper extension:
+
     * WebForms
 
             <%: Html.Kendo().DatePicker().Name("Birthday") %>
-    
+
     * Razor
 
             @(Html.Kendo().DatePicker().Name("Birthday"))
 
-### Running the sample application
+## Running the sample application
 
-You can find a sample ASP.NET MVC application in the **Examples** folder.
+You can find a sample ASP.NET MVC application in the **\wrappers\aspnetmvc\Examples** folder.
 It contains the following:
 
 *   **Areas/aspx** - WebForm views
