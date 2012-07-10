@@ -1,0 +1,186 @@
+<p>This is the first section in the ongoing course <a href="http://www.kendoui.com/blogs/teamblog/posts/12-05-02/html5_development_for_asp_net_developers.aspx">HTML5 Development For ASP.NET Developers</a>.</p>
+<p>This module will covers the very basic information that you will need to know about <a href="http://jquery.com/">jQuery</a> and how to use it inside of Visual Studio / Internet Explorer. There are some good tips on things you can do with the <a href="http://msdn.microsoft.com/en-us/library/dd565622(v=vs.85).aspx">IE Developer Tools</a> here as well. Check out the screencast, or skip to the written summary below.</p>
+<h2>Screencast</h2>
+<p><iframe height="360" src="http://www.youtube.com/embed/6BS-dZMHyKg?rel=0" frameborder="0" width="640"></iframe></p>
+<h2 id="written_summary">Written Summary</h2>
+<p>In this tutorial, you will be building a sample application which takes in a user’s first name and last name, and then returns a greeting. First you will build the application in typical WebForms fashion, then you will refactor the application to use <a href="http://jquery.com/">jQuery</a>.</p>
+<h4>Create The Sample Application</h4>
+<p>Open Visual Studio. All of these examples will use Visual Studio 2010 and .NET Version 4.0, but remember that the only limiting factor to your HTML5 development is the browser. As long the browser is capable, .NET is capable.</p>
+<p>Select <strong>File</strong> / <strong>New Project</strong> and select the <strong>ASP.NET Web Application </strong>project template.&nbsp; Name the application “<strong>HellojQuery</strong>”.</p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-file-new-project.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="file-new-project" alt="file-new-project" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-file-new-project_thumb.sflb.ashx" width="710" height="355" /></a></p>
+<p style="text-align: left;">Open the <strong>Default.aspx</strong> page.&nbsp; Switch to <strong>Design </strong>view and delete all the content.&nbsp; From the toolbox, drag out two <strong>TextBoxes</strong>, a <strong>Button</strong> and a <strong>Label</strong> control.&nbsp; In front of the first TextBox, type “<strong>First Name: “</strong>.&nbsp; After the first TextBox, put a space and then type “<strong>Last Name “</strong>.&nbsp; Put a space between the second TextBox and the Button.&nbsp; Put the label on the following line by pressing “<strong>Enter</strong>”.</p>
+<p style="text-align: left;">Name the first TextBox <strong>“txtFirstName”</strong>, the second one <strong>“txtLastName”</strong>.&nbsp; Name the Button <strong>“btnSayHello”</strong> and change it’s <strong>Text </strong>property to <strong>“Say Hello”</strong>.&nbsp; Set the Label ID to <strong>lblResult</strong> and clear out the <strong>Text </strong>property.</p>
+<p style="text-align: left;"><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-default-design-view.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="default-design-view" alt="default-design-view" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-default-design-view_thumb.sflb.ashx" width="717" height="344" /></a></p>
+<p style="text-align: left;">Double-click the <strong>Say Hello </strong>button to create a new button click event in the <strong>Default.aspx.cs</strong> file.&nbsp; Set the label text equal to the string <strong>“Hello “ </strong>concatenated with the <strong>Text </strong>property of <strong>txtFirstName</strong> and the <strong>Text</strong> property of <strong>txtLastName</strong>.</p>
+<div class="code-sample">
+<h3 class="code-title">btnSayHello Click Event</h3>
+<pre class="prettyprint csharp">        
+protected void btnSayHello_Click(object sender, EventArgs e) {
+	lblResult.Text = "Hello " + txtFirstName.Text + " " + txtLastName.Text;
+}
+</pre>
+</div>
+<p>&nbsp;</p>
+<h4>Using IE Developer Tools</h4>
+<p>Press <strong>F5 </strong>or the run icon and run the application.&nbsp; Don’t enter in your name yet or click the button.&nbsp; Instead, press <strong>F12 </strong>to open the IE Developer Tools.&nbsp; Switch to the <strong>Network </strong>tab and click the <strong>Start Capturing</strong> button.</p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-f12-developer-tools.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="f12-developer-tools" alt="f12-developer-tools" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-f12-developer-tools_thumb.sflb.ashx" width="716" height="406" /></a></p>
+<p>Refresh the page.&nbsp; Notice that the <strong>Network </strong>tab now shows three items.&nbsp; The first is the <strong>Default.aspx</strong> page that you are looking at.&nbsp; The second is the <strong>CSS</strong> file that is referenced in the head of the <strong>Default.aspx</strong> page.&nbsp; The last one is the<strong> WebResource.axd </strong>file which contains JavaScript and other resources for the page as determined by WebForms per the ASP.NET controls that you choose to use.</p>
+<p>Also notice that the method for all three requests is a <strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">GET</a></strong>.&nbsp; This means that the browser requested three files from the server and did that with an HTTP <strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">GET</a></strong>.&nbsp; A <strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">GET</a></strong>&nbsp; is commonly used when requesting information from a server.&nbsp; By default when you visit a URL, your browser will do a <strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">GET</a> </strong>to retrieve the requested site.</p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-network-traffic-get.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="network-traffic-get" alt="network-traffic-get" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-network-traffic-get_thumb.sflb.ashx" width="718" height="191" /></a></p>
+<p>Now fill the form out in the application with your first name and click the <strong>Say Hello</strong> button.&nbsp; The server responds as expected by setting the label text equal to the first name field plus the last name field.&nbsp; Have another look at the network traffic pane.&nbsp; It looks nearly identical, but the <strong>Default.aspx</strong> page was retrieved this time with a <strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">POST</a></strong>.&nbsp; This is because this time the browser sent some data to the server – specifically the values of the first name and last name textboxes.&nbsp; When browsers send information to the server and expect a response, this is typically done with a <strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">POST</a></strong>.&nbsp; </p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-network-traffic-post.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="network-traffic-post" alt="network-traffic-post" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-network-traffic-post_thumb.sflb.ashx" width="706" height="168" /></a></p>
+<p>In ASP.NET WebForms, the page posts back to itself, or the same URL. To inspect the information that was sent to the server, double click on the <strong><a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html">POST</a> </strong>method and click on the <strong>Request Body </strong>tab.&nbsp; </p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-network-request-body.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="network-request-body" alt="network-request-body" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-network-request-body_thumb.sflb.ashx" width="705" height="100" /></a></p>
+<p>Here you can see that the _<a href="http://msdn.microsoft.com/en-us/library/ms972976.aspx">VIEWSTATE</a> object was sent back to the server.&nbsp; If you scroll down far enough, you will find the values of the first and last name textboxes in the view state object.&nbsp; What happened is that the browser did a <strong>POST </strong>to the server requesting the page, but also passing in the values of the textboxes.&nbsp; The server event was fired, the HTML in the <strong>Default.aspx </strong>page was altered and then sent to the browser.</p>
+<p>This requires a complete “round trip” to the server.&nbsp; This means that the browser has to load up the page all over again.&nbsp; This is completely unnecessary (especially in this simple application).&nbsp; </p>
+<p><a href="http://jquery.com/">jQuery</a> is a simple JavaScript library that allows the developer to interact with the HTML of the page (amongst many other things) in a very straight forward way.&nbsp; </p>
+<h4>Add jQuery To The Project</h4>
+<p>Visual Studio projects actually come with <a href="http://jquery.com/">jQuery</a> in the <strong>Scripts</strong> folder by default.&nbsp; However, these <a href="http://jquery.com/">jQuery</a> and VSDoc files may be out of date and not connected with a <a href="http://nuget.org/">Nuget</a> installation.&nbsp; Delete the <a href="http://jquery.com/">jQuery</a> files in the <strong>Scripts </strong>folder, including the VSDoc file.</p>
+<p>To install <a href="http://jquery.com/">jQuery</a> from <a href="http://nuget.org/">Nuget</a>, right-click the project and select <strong>Add Library Package Reference</strong>.&nbsp; Select <strong>Online </strong>from the left-hand side and enter “<strong>jquery”</strong> in the search box.&nbsp; Click the <strong>Install </strong>button on the <a href="http://jquery.com/">jQuery</a> package.&nbsp; This will install the VSDoc files as well.&nbsp; There is no need to install them separately.</p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-nuget-jquery-search.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="nuget-jquery-search" alt="nuget-jquery-search" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-nuget-jquery-search_thumb.sflb.ashx" width="707" height="215" /></a></p>
+<p>This will put the latest version of <a href="http://jquery.com/">jQuery</a> in the <strong>Scripts </strong>folder.&nbsp; There will be 3 files there.</p>
+<p><strong>1. jquery-1.7.2.js</strong> – This is the full <a href="http://jquery.com/">jQuery</a> source file.</p>
+<p><strong>2. jquery-1.7.2.min.js – </strong>This is the minified version of <a href="http://jquery.com/">jQuery</a>, which removes all whitespace and comments, as well as “<a href="http://en.wikipedia.org/wiki/Minification_(programming)">minifying</a>” the script to make it as small as possible.&nbsp; This version is identical to the first one in every way except that it is unreadable for debugging.&nbsp; This is generally the file used when an application is in production.&nbsp; For development, use the full <a href="http://jquery.com/">jQuery</a> version.</p>
+<p><strong>3. jquery-1.7.2-vsdoc.js</strong> – This file provides Intellisense inside of Visual Studio for <a href="http://jquery.com/">jQuery</a>.&nbsp; As long as this file is named in the same way as the <a href="http://jquery.com/">jQuery</a> file, Intellisense will work.</p>
+<p>Open up the <strong>Site.Master</strong> page.&nbsp; Drag the full <a href="http://jquery.com/">jQuery</a> source into the <strong>head</strong> of the page, directly below the <strong>link</strong> tag to <strong>Site.css</strong>.&nbsp; This will create a new <strong>link</strong> tag pointing to the jQuery-1.7.2.js file.&nbsp; <a href="http://jquery.com/">JQuery</a> has now been added to the project.</p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-jquery-added-to-master.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="jquery-added-to-master" alt="jquery-added-to-master" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-jquery-added-to-master_thumb.sflb.ashx" width="708" height="242" /></a></p>
+<h4>Using jQuery Directly In The Browser</h4>
+<p>Run the application again.&nbsp; When it comes up, open the developer tools by selecting <strong>F12</strong>.&nbsp; Switch to the <strong>Console</strong> tab in the developer tools.&nbsp; The console allows a developer to execute arbitrary JavaScript commands at runtime.&nbsp; As a test, type <strong>alert(“Hello!”); </strong>in the console and press enter.&nbsp; </p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-alert-hello.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="alert-hello" alt="alert-hello" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-alert-hello_thumb.sflb.ashx" width="707" height="215" /></a></p>
+<p><a href="http://jquery.com/">jQuery</a> code can be executed either by calling methods off of the <strong>jQuery</strong> object, or simply using the <strong>$</strong>.&nbsp; The <strong>$</strong> is commonly known and recognized as representing <a href="http://jquery.com/">jQuery</a>.&nbsp; </p>
+<p>For this project, you should be aware of one important thing that <a href="http://jquery.com/">jQuery</a> does, and that’s select items out of the <a href="http://www.w3schools.com/htmldom/default.asp">DOM</a>.&nbsp; The <a href="http://www.w3schools.com/htmldom/default.asp">DOM</a> is the Document Object Model, but you can think of this as just your page.&nbsp; <a href="http://jquery.com/">jQuery</a> allows you to select elements out of your page and get or set different properties on the elements.&nbsp; <a href="http://jquery.com/">jQuery</a> has many types of selectors, but it’s important to be very comfortable with the following two basic types of selectors.</p>
+<p><strong>1. ID Selectors</strong></p>
+<p>This is when you select an element based upon it’s unique ID.&nbsp; Every HTML element on your page should have a unique ID.&nbsp; This is done by using a <strong># </strong>sign.</p>
+<div class="code-sample">
+<h3 class="code-title">Selecting An Element By ID With jQuery</h3>
+<pre class="prettyprint javascript">// gets the firstname textbox
+var txtFirstName = $("#txtFirstName"); 
+</pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>2. Class Selectors</strong></p>
+<p>This is when an element, or a group of elements is selected by the <strong>css</strong> class.&nbsp; If you have several elements on a page with the same class, all of them will be returned.&nbsp; This is done by using a <strong>“.” </strong>.</p>
+<div class="code-sample">
+<h3 class="code-title">Selecting Elements By Class With jQuery</h3>
+<pre class="prettyprint javascript">// gets the textboxes with a class of "textbox"
+var textboxes = $(".textbox"); 
+</pre>
+</div>
+<p>&nbsp;</p>
+<p>Enter a first and last name in the textboxes in the application before proceeding.</p>
+<p>To select the <strong>First Name</strong> textbox value in this project, remember that you set the ID earlier in this tutorial to <strong>txtFirstName</strong>.&nbsp; You then need to call the <a href="http://jquery.com/">jQuery</a> <strong><a href="http://api.jquery.com/val/">val()</a> </strong>method to retrieve the text inside of the textbox.&nbsp; Enter the following command in the console and press enter.</p>
+<div class="code-sample">
+<h3 class="code-title">Get The Text Of txtFirstName</h3>
+<pre class="prettyprint javascript">// gets the text of the element with the id txtFirstName
+$("#txtFirstName").val(); 
+</pre>
+</div>
+<p>&nbsp;</p>
+<p>Notice that the command is echoed out into the Console, but there is no value.&nbsp; This mistake was made to demonstrate an important feature of ASP.NET WebForms.</p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-txtfirstname-no-value_1.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="txtfirstname-no-value" alt="txtfirstname-no-value" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-txtfirstname-no-value_thumb_1.sflb.ashx" width="682" height="278" /></a></p>
+<p>To debug why this didn’t work, click on the white arrow which is the element selector.&nbsp; Then go up into the page and click on the textbox that you named <strong>txtFirstName</strong>.&nbsp; The HTML tab will open and the element in the page will be highlighted.&nbsp; Notice that it’s ID is not <strong>txtFirstName</strong>, but rather <strong>MainContent_txtFirstName</strong>.&nbsp; This is because the controls were added to a content container in <strong>Default.aspx</strong>.&nbsp; In ASP.NET WebForms, controls added to a parent server control will be prefixed with the parent name.&nbsp; If parents are nested within parents, they may have multiple values appended onto the front.&nbsp; This is to make sure that ID’s do in fact remain unique.</p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-main-content-txt-firstname.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="main-content-txt-firstname" alt="main-content-txt-firstname" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-main-content-txt-firstname_thumb.sflb.ashx" width="686" height="340" /></a></p>
+<p>Switch back to the <strong>Console</strong> tab and keeping in mind the actual ID of <strong>txtFirstName </strong>at runtime, enter the following command in the <strong>console.</strong></p>
+<div class="code-sample">
+<h3 class="code-title">Get The Text Of txtFirstName</h3>
+<pre class="prettyprint javascript">// gets the text of the element with the id txtFirstName
+$("#MainContent_txtFirstName").val(); 
+</pre>
+</div>
+<p>&nbsp;</p>
+<p>Notice that the text value of the first name textbox is returned.</p>
+<p><a href="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-txtfirstname-has-value.sflb.ashx"><img style="display: inline; background-image: none; border-width: 0px; border-style: solid;" title="txtfirstname-has-value" alt="txtfirstname-has-value" src="http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-07976fe46293_7C8A-txtfirstname-has-value_thumb.sflb.ashx" width="680" height="249" /></a></p>
+<h4>Refactor The Application To Use jQuery</h4>
+<p>Given the fact that you can select any element in the page, and get or set its value, switch back to Visual Studio and open up the <strong>Default.aspx </strong>file.&nbsp; Right above the closing <strong>&lt;/asp:Content&gt; </strong>tag, open a new script block.&nbsp; You do not have to specify the type of the script block.&nbsp; All script blocks are assumed to be JavaScript unless otherwise specified.</p>
+<div class="code-sample">
+<h3 class="code-title">Open A New Script Block</h3>
+<pre class="prettyprint javascript">&lt;script&gt;
+
+    // ... JavaScript will go here
+
+&lt;/script&gt;
+</pre>
+</div>
+<p>&nbsp;</p>
+<p><strong>Document Ready</strong></p>
+<p>Another important concept to understand in jQuery is the <strong><a href="http://api.jquery.com/ready/">Document Ready</a> </strong>function.&nbsp; This is a function that jQuery will execute when the page has finished loading.&nbsp; This is important as you don’t want to execute any code until all libraries, CSS and HTML elements have been loaded into the page.</p>
+<p>The shorthand for this function is to declare a function, wrap that function in parenthesis and put the jQuery <strong>$</strong> at the front.&nbsp; This should be committed to memory as it is used quite frequently in jQuery powered applications.</p>
+<div class="code-sample">
+<h3 class="code-title">Create A Document Ready Function</h3>
+<pre class="prettyprint javascript">&lt;script&gt;
+
+    $(function() {
+		
+	// no code here will be executed until the page has
+	// finished loading
+	
+    });
+
+&lt;/script&gt;</pre>
+</div>
+<p>&nbsp;</p>
+<p>Before writing any code in the <strong><a href="http://api.jquery.com/ready/">document ready</a> function</strong>, a slight modification is needed in the HTML.&nbsp; All the contents inside of <strong>Default.aspx </strong>are ultimately rendered inside a <strong>Form </strong>tag that is in the Master page.&nbsp; This means that any button click will cause the page to “post back” or rather, submits the page to the server.&nbsp; This is the round trip that we are attempting eliminate.&nbsp; Remove the <strong>Button </strong>markup and replace it with plain HTML that renders an input with a type of button.&nbsp; This will display a button, but its click will not cause the form to post.</p>
+<div class="code-sample">
+<h3 class="code-title">Replace ASP Button Control With Standard Input</h3>
+<pre class="prettyprint javascript">&lt;!-- Replace This --&gt;
+&lt;asp:Button ID="btnSayHello" runat="server" onclick="btnSayHello_Click" 
+	Text="Say Hello" /&gt;
+
+&lt;!-- With This --&gt;
+&lt;input type="button" id="btnSayHello" value="Say Hello" /&gt;
+
+</pre>
+</div>
+<p>&nbsp;</p>
+<p>In order to create a new click event for the input button, select the button with <a href="http://jquery.com/">jQuery</a> and then specify its <strong>click</strong> event.&nbsp; When the click event is specified, a function is passed in that will be executed when the button click actually occurs.&nbsp; Notice that it is unnecessary to prefix the new button with <strong>MainContent</strong>, because while it is in fact in an ASP.NET Content Area, it is not a server control and consequently its ID will not be modified at runtime.</p>
+<div class="code-sample">
+<h3 class="code-title">Create A Click Event For The New Button</h3>
+<pre class="prettyprint javascript">&lt;script&gt;
+
+    $(function() {
+		
+	$("#btnSayHello").click(function() {
+		
+	    // all code here will be executed when 
+	    // btnSayHello is clicked
+			
+	});
+		
+	
+    });
+
+&lt;/script&gt;</pre>
+</div>
+<p>&nbsp;</p>
+<p>Select both the first name and last name textboxes and store their values in variables.&nbsp; Lastly, the <strong>lblResult</strong> control renders as a <strong>&lt;span&gt;</strong>&nbsp; tag at runtime.&nbsp; In order to set the text that’s rendered inside of the span tag, select the <strong>lblResult</strong> control with <a href="http://jquery.com/">jQuery</a> and set its <strong>html </strong>property.</p>
+<div class="code-sample">
+<h3 class="code-title">The Full Click Event Code</h3>
+<pre class="prettyprint javascript">&lt;script&gt;
+
+    $(function() {
+		
+	$("#btnSayHello").click(function() {
+		
+	    // get the values of the first and last name textboxes
+	    var firstName = $("#MainContent_txtFirstName").val();
+	    var lastName = $("#MainContent_txtLastName").val();
+			
+	    // set the text of the label
+	    $("#MainContent_lblResult").html("Hello " + firstName + " " + lastName);
+			
+	});
+		
+	
+    });
+
+&lt;/script&gt;</pre>
+</div>
+<p>&nbsp;</p>
+<p>Run the application.&nbsp; Enter in a first name and last name value.&nbsp; Click the button and notice that the value of the label is updated, but the page never posts back to the server.&nbsp; All manipulation happens client side.</p>
+<h3>Further Reading / Resources</h3>
+<p>If you wish to become very knowledgeable about <a href="http://jquery.com/">jQuery</a>, it is highly recommended that you go through the “<strong><a href="http://tutsplus.com/course/30-days-to-learn-jquery/">30 Days To Learn jQuery</a>” </strong>course on <a href="http://tutsplus.com/">TutsPlus</a>.&nbsp; After finishing this set of learning screencasts for <a href="http://jquery.com/">jQuery</a>, you should not only be extremely comfortable with the library, but you will have vastly accelerated your skills in overall HTML5 development.</p>
+<p>Code from this module can be downloaded from the course <a href="https://github.com/telerik/html5-dev-for-aspnet-devs">GitHub repository</a>.</p>
+<div style="padding: 20px 0px; margin-top: 20px; border-top-color: #999999; border-top-width: 1px; border-top-style: dashed;" class="author"><img alt="" style="float: left;" src="http://www.kendoui.com/Libraries/Blog_Images/BurkeHolland.sflb.ashx" />
+<p style="margin-left: 130px;"><strong>About the Author<br />
+</strong>Burke Holland is a web developer living in Nashville, TN. He enjoys working with and meeting developers who are building mobile apps with jQuery / HTML5 and loves to hack on social API's. Burke works for Telerik as a Developer Evangelist focusing on Kendo UI. Burke is <a href="http://twitter.com/burkeholland" target="_blank">@burkeholland</a> on Twitter.</p>
+</div>
