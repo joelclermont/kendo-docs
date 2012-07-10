@@ -1,15 +1,15 @@
 ---
-title: Add Charts and Graphs
-slug: howto-add-charts-and-graphs
+title: Add Charts and Gauges
+slug: howto-add-charts-and-gauges
 tags: How-To
 publish: true
 ---
 
-# How-To: Add Charts and Graphs with Kendo UI DataViz
+# How-To: Add Charts and Gauges with Kendo UI DataViz
 
-In this how-to, we'll examine how to add charts and graphs to an application with [Kendo UI DataViz](http://kendoui.com/dataviz.aspx).
+In this how-to, we'll examine how to add charts and gauges to an application or site with [Kendo UI DataViz](http://www.kendoui.com/dataviz.aspx).
 
-Let's begin by examining how to add an area chart to an existing page. For this example, let's assume the following HTML for this page:
+Let's begin by examining how to add an area chart to an existing page. For this example, let's assume the following HTML:
 
 	<!DOCTYPE html>
 	<html lang="en">
@@ -21,8 +21,8 @@ Let's begin by examining how to add an area chart to an existing page. For this 
 		<header>
 			<h1>My Kendo UI Application</h1>
 		</header>
+		<!-- page content goes here -->
 		<div role="main">
-
 		</div>
 		<footer>
 			<p>Kendo UI FTW!</p>
@@ -30,7 +30,7 @@ Let's begin by examining how to add an area chart to an existing page. For this 
 	</body>
 	</html>
 
-The first step is to add the necessary script and stylesheet references for Kendo UI:
+The first step is to add script and stylesheet references for jQuery and Kendo UI DataViz:
 
 	<!DOCTYPE html>
 	<html lang="en">
@@ -38,34 +38,35 @@ The first step is to add the necessary script and stylesheet references for Kend
 		<meta charset="utf-8">
 		<title>My Kendo UI Application</title>
 
-		<!-- contains a small number of CSS rules and classes for styling charts and gauges -->
-		<link rel="stylesheet" href="//cdn.kendostatic.com/2012.2.621/styles/kendo.dataviz.min.css">
+		<!-- Kendo UI HTTP CDN style reference for DataViz -->
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.704/styles/kendo.dataviz.min.css">
 
 	</head>
 	<body>
 		<header>
 			<h1>My Kendo UI Application</h1>
 		</header>
+		<!-- page content goes here -->
 		<div role="main">
 		</div>
 		<footer>
 			<p>Kendo UI FTW!</p>
 		</footer>
 
-		<!-- Google CDN reference for jQuery; utilizing a local reference if offline -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<!-- Google CDN script reference for jQuery; utilizing a local reference if offline -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/<version>/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
-		<!-- Kendo UI CDN reference for DataViz; utilizing a local reference if offline -->
-		<script src="//cdn.kendostatic.com/2012.2.621/js/kendo.dataviz.min.js"></script>
+		<!-- Kendo UI HTTP CDN script reference for DataViz; utilizing a local reference if offline -->
+		<script src="http://cdn.kendostatic.com/2012.1.704/js/kendo.dataviz.min.js"></script>
 		<script>(window.kendo && window.kendo.dataviz) || document.write('<script src="js/kendo.dataviz.min.js"><\/script>')</script>
 
 	</body>
 	</html>
 
-> Please refer to the [JavaScript Dependencies of Kendo UI](http://docs.kendoui.com/getting-started/javascript-dependencies) for more information about script requirements for Kendo UI Web, Kendo UI DataViz, and Kendo UI Mobile.
+> Style and script references to Kendo UI are accessible via HTTPS. However, they are hosted on Amazon CloudFront. Please refer to the [JavaScript Dependencies of Kendo UI](http://docs.kendoui.com/getting-started/javascript-dependencies) for more information about script requirements for Kendo UI Web, Kendo UI DataViz, and Kendo UI Mobile.
 
-The next step is to declare a target element for your data visualization. Typically, this is represented by a `div` element. A script block is also required to initialize and configure the area chart. Here's an example with some sample data:
+The next step is to declare a target element for the area chart. This will be represented by a `div` element. A script block is also required to initialize and configure the area chart. Here's an example with some sample data:
 
 	<!DOCTYPE html>
 	<html lang="en">
@@ -73,14 +74,15 @@ The next step is to declare a target element for your data visualization. Typica
 		<meta charset="utf-8">
 		<title>My Kendo UI Application</title>
 
-		<!-- contains a small number of CSS rules and classes for styling charts and gauges -->
-		<link rel="stylesheet" href="//cdn.kendostatic.com/2012.2.621/styles/kendo.dataviz.min.css">
+		<!-- Kendo UI HTTP CDN style reference for DataViz -->
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.704/styles/kendo.dataviz.min.css">
 
 	</head>
 	<body>
 		<header>
 			<h1>My Kendo UI Application</h1>
 		</header>
+		<!-- page content goes here -->
 		<div role="main">
 			<!-- chart/gauge -->
 			<div id="chart">
@@ -94,8 +96,8 @@ The next step is to declare a target element for your data visualization. Typica
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
-		<!-- Kendo UI CDN reference for DataViz; utilizing a local reference if offline -->
-		<script src="//cdn.kendostatic.com/2012.2.621/js/kendo.dataviz.min.js"></script>
+		<!-- Kendo UI HTTP CDN script reference for DataViz; utilizing a local reference if offline -->
+		<script src="http://cdn.kendostatic.com/2012.1.704/js/kendo.dataviz.min.js"></script>
 		<script>(window.kendo && window.kendo.dataviz) || document.write('<script src="js/kendo.dataviz.min.js"><\/script>')</script>
 
 		<script>
