@@ -10,7 +10,7 @@ Defines the fluent interface for configuring bubble series.
 
 ## Methods
 
-### NegativeValues(System.Action{Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder})
+### NegativeValues(System.Action<Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder>)
 Configures the bubble chart behavior for negative values.
             By default negative values are not visible.
 
@@ -27,7 +27,7 @@ Configures the bubble chart behavior for negative values.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder>`
 The configuration action.
 
 ### Border(System.Int32,System.String)
@@ -51,7 +51,7 @@ The bubble border width.
 ##### color `System.String`
 The bubble border color (CSS syntax).
 
-### Markers(System.Action{Kendo.Mvc.UI.Fluent.ChartMarkersBuilder})
+### Markers(System.Action<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder>)
 Not applicable to bubble series
 
 ### Markers(System.Boolean)

@@ -10,10 +10,10 @@ Defines the fluent interface for configuring the DataSource options.
 
 ## Methods
 
-### Events(System.Action{Kendo.Mvc.UI.Fluent.DataSourceEventBuilder})
+### Events(System.Action<Kendo.Mvc.UI.Fluent.DataSourceEventBuilder>)
 Configures the client-side events
 
-### Read(System.Action{Kendo.Mvc.UI.Fluent.CrudOperationBuilder})
+### Read(System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>)
 Configures the URL for Read operation.
 
 ### Read(System.String,System.String,System.Object)
@@ -67,14 +67,14 @@ Sets the operation mode of the DataSource.
 ##### enabled `System.Boolean`
 True(default) if server operation mode is enabled, otherwise false.
 
-### Sort(System.Action{Kendo.Mvc.UI.Fluent.DataSourceSortDescriptorFactory{}})
+### Sort(System.Action<Kendo.Mvc.UI.Fluent.DataSourceSortDescriptorFactory<T>>)
 Configures the initial sorting.
 
-### Group(System.Action{Kendo.Mvc.UI.Fluent.DataSourceGroupDescriptorFactory{}})
+### Group(System.Action<Kendo.Mvc.UI.Fluent.DataSourceGroupDescriptorFactory<T>>)
 Configures the initial grouping.
 
-### Aggregates(System.Action{Kendo.Mvc.UI.Fluent.DataSourceAggregateDescriptorFactory{}})
+### Aggregates(System.Action<Kendo.Mvc.UI.Fluent.DataSourceAggregateDescriptorFactory<T>>)
 Configures the initial aggregates.
 
-### Filter(System.Action{Kendo.Mvc.UI.Fluent.DataSourceFilterDescriptorFactory{}})
+### Filter(System.Action<Kendo.Mvc.UI.Fluent.DataSourceFilterDescriptorFactory<T>>)
 Configures the initial filter.

@@ -46,7 +46,7 @@ Enables/disables columns section in header column menu.
         .ColumnMenu(menu => menu.Columns((bool)ViewData["enableColumns"]))
         %>
 
-### Messages(System.Action{Kendo.Mvc.UI.Fluent.ColumnMenuMessagesBuilder})
+### Messages(System.Action<Kendo.Mvc.UI.Fluent.ColumnMenuMessagesBuilder>)
 Enables you to define custom messages in grid column menu.
 
 #### Example

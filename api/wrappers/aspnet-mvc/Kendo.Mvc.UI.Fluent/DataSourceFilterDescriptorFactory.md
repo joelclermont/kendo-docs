@@ -10,34 +10,34 @@ Defines the fluent interface for configuring filter.
 
 ## Methods
 
-### Add(System.Linq.Expressions.Expression{System.Func{,System.Boolean}})
+### Add(System.Linq.Expressions.Expression<System.Func<T>,System.Boolean>)
 Specifies the member on which the filter should be applied.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`
+##### expression `System.Linq.Expressions.Expression<System.Func<T>`
 Member access expression which describes the member
 
-### Add(System.Linq.Expressions.Expression{System.Func{,System.Nullable{System.Boolean}}})
+### Add(System.Linq.Expressions.Expression<System.Func<T>,System.Nullable<System.Boolean>>)
 Specifies the member on which the filter should be applied.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`
+##### expression `System.Linq.Expressions.Expression<System.Func<T>`
 Member access expression which describes the member
 
-### Add`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Add<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Specifies the member on which the filter should be applied.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 Member access expression which describes the member
 
-### Add(System.Linq.Expressions.Expression{System.Func{,System.String}})
+### Add(System.Linq.Expressions.Expression<System.Func<T>,System.String>)
 Specifies the member on which the filter should be applied.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`
+##### expression `System.Linq.Expressions.Expression<System.Func<T>`
 Member access expression which describes the member

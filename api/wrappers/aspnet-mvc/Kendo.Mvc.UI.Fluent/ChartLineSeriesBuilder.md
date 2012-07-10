@@ -39,7 +39,7 @@ Sets the aggregate function for date series.
 ##### aggregate `Kendo.Mvc.UI.ChartSeriesAggregate`
 Aggregate function name.
 
-### Labels(System.Action{Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder})
+### Labels(System.Action<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder>)
 Configures the line chart labels.
 
 #### Example
@@ -56,7 +56,7 @@ Configures the line chart labels.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder>`
 The configuration action.
 
 ### Labels(System.Boolean)
@@ -106,7 +106,7 @@ Sets the line chart line dash type.
 ##### dashType `Kendo.Mvc.UI.ChartDashType`
 The line dash type.
 
-### Markers(System.Action{Kendo.Mvc.UI.Fluent.ChartMarkersBuilder})
+### Markers(System.Action<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder>)
 Configures the line chart markers.
 
 #### Example
@@ -122,7 +122,7 @@ Configures the line chart markers.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartMarkersBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder>`
 The configuration action.
 
 ### Markers(System.Boolean)

@@ -35,18 +35,18 @@ Sets toolbar template.
 ##### template `System.String`
 The template
 
-### Template(System.Action{Kendo.Mvc.UI.Grid{}})
+### Template(System.Action<Kendo.Mvc.UI.Grid<T>>)
 Sets the toolbar template.
 
 #### Parameters
 
-##### template `System.Action{Kendo.Mvc.UI.Grid{}}`
+##### template `System.Action<Kendo.Mvc.UI.Grid<T>>`
 The action defining the template.
 
-### Template(System.Func{Kendo.Mvc.UI.Grid{},System.Object})
+### Template(System.Func<Kendo.Mvc.UI.Grid<T>,System.Object>)
 Sets the toolbar template.
 
 #### Parameters
 
-##### template `System.Func{Kendo.Mvc.UI.Grid{}`
+##### template `System.Func<Kendo.Mvc.UI.Grid<T>`
 The action defining the template.

@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the DataSource when in read-only mo
 
 ## Methods
 
-### Read(System.Action{Kendo.Mvc.UI.Fluent.CrudOperationBuilder})
+### Read(System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>)
 Configures the URL for Read operation.
 
 ### Read(System.String,System.String,System.Object)
@@ -44,5 +44,5 @@ Specifies if filtering should be handled by the server.
 ### ServerFiltering(System.Boolean)
 Specifies if filtering should be handled by the server.
 
-### Events(System.Action{Kendo.Mvc.UI.Fluent.DataSourceEventBuilder})
+### Events(System.Action<Kendo.Mvc.UI.Fluent.DataSourceEventBuilder>)
 Configures the client-side events

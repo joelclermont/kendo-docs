@@ -15,20 +15,20 @@ The parent Chart
 
 ## Methods
 
-### Categories(System.Linq.Expressions.Expression{System.Func{,System.DateTime}})
+### Categories(System.Linq.Expressions.Expression<System.Func<T>,System.DateTime>)
 Defines bound categories.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`
+##### expression `System.Linq.Expressions.Expression<System.Func<T>`
 The expression used to extract the categories value from the chart model
 
-### Categories(System.Collections.Generic.IEnumerable{System.DateTime})
+### Categories(System.Collections.Generic.IEnumerable<System.DateTime>)
 Defines categories.
 
 #### Parameters
 
-##### categories `System.Collections.Generic.IEnumerable{System.DateTime}`
+##### categories `System.Collections.Generic.IEnumerable<System.DateTime>`
 The list of categories
 
 ### Categories(System.DateTime[])
@@ -95,7 +95,7 @@ Sets value at which perpendicular axes cross this axis.
 ##### axisCrossingValues `System.Double[]`
 The values at which perpendicular axes cross this axis.
 
-### AxisCrossingValue(System.Collections.Generic.IEnumerable{System.Double})
+### AxisCrossingValue(System.Collections.Generic.IEnumerable<System.Double>)
 Sets value at which perpendicular axes cross this axis.
 
 #### Example
@@ -108,10 +108,10 @@ Sets value at which perpendicular axes cross this axis.
 
 #### Parameters
 
-##### axisCrossingValues `System.Collections.Generic.IEnumerable{System.Double}`
+##### axisCrossingValues `System.Collections.Generic.IEnumerable<System.Double>`
 The values at which perpendicular axes cross this axis.
 
-### Labels(System.Action{Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder})
+### Labels(System.Action<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>)
 Configures the axis labels.
 
 #### Example
@@ -128,5 +128,5 @@ Configures the axis labels.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>`
 The configuration action.

@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the Events.
 
 ## Methods
 
-### Activate(System.Func{System.Object,System.Object})
+### Activate(System.Func<System.Object,System.Object>)
 Defines the inline handler of the Activate client-side event
 
 #### Example
@@ -28,7 +28,7 @@ Defines the inline handler of the Activate client-side event
 
 #### Parameters
 
-##### onSelectAction `System.Func{System.Object`
+##### onSelectAction `System.Func<System.Object`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Activate(System.String)
@@ -45,7 +45,7 @@ Defines the name of the JavaScript function that will handle the the Activate cl
 ##### onSelectHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Select(System.Func{System.Object,System.Object})
+### Select(System.Func<System.Object,System.Object>)
 Defines the inline handler of the Select client-side event
 
 #### Example
@@ -63,7 +63,7 @@ Defines the inline handler of the Select client-side event
 
 #### Parameters
 
-##### onSelectAction `System.Func{System.Object`
+##### onSelectAction `System.Func<System.Object`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Select(System.String)
@@ -80,7 +80,7 @@ Defines the name of the JavaScript function that will handle the the Select clie
 ##### onSelectHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### ContentLoad(System.Func{System.Object,System.Object})
+### ContentLoad(System.Func<System.Object,System.Object>)
 Defines the inline handler of the ContentLoad client-side event
 
 #### Example
@@ -98,7 +98,7 @@ Defines the inline handler of the ContentLoad client-side event
 
 #### Parameters
 
-##### onSelectAction `System.Func{System.Object`
+##### onSelectAction `System.Func<System.Object`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### ContentLoad(System.String)
@@ -115,7 +115,7 @@ Defines the name of the JavaScript function that will handle the the ContentLoad
 ##### onSelectHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Error(System.Func{System.Object,System.Object})
+### Error(System.Func<System.Object,System.Object>)
 Defines the inline handler of the Error client-side event
 
 #### Example
@@ -133,7 +133,7 @@ Defines the inline handler of the Error client-side event
 
 #### Parameters
 
-##### onErrorAction `System.Func{System.Object`
+##### onErrorAction `System.Func<System.Object`
 The handler code wrapped in a text tag (Razor syntax).
 
 ### Error(System.String)

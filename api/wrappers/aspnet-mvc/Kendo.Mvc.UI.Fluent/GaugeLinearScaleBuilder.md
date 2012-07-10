@@ -47,7 +47,7 @@ Sets the orientation of the gauge
 ##### vertical `System.Boolean`
 The vertical.
 
-### Labels(System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder})
+### Labels(System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder>)
 Configures the labels.
 
 #### Example
@@ -62,5 +62,5 @@ Configures the labels.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder>`
 The configuration action.

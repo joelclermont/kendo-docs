@@ -15,7 +15,7 @@ Gets or sets the axis.
 
 ## Methods
 
-### MajorTicks(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder})
+### MajorTicks(System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>)
 Configures the major ticks.
 
 #### Example
@@ -30,10 +30,10 @@ Configures the major ticks.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>`
 The configuration action.
 
-### MinorTicks(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder})
+### MinorTicks(System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>)
 Configures the minor ticks.
 
 #### Example
@@ -48,10 +48,10 @@ Configures the minor ticks.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>`
 The configuration action.
 
-### MajorGridLines(System.Action{Kendo.Mvc.UI.Fluent.ChartLineBuilder})
+### MajorGridLines(System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>)
 Configures the major grid lines.
 
 #### Example
@@ -65,7 +65,7 @@ Configures the major grid lines.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartLineBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`
 The configuration action.
 
 ### MajorGridLines(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -88,7 +88,7 @@ The major gridlines width
 ##### width `System.String`
 The major gridlines color (CSS syntax)
 
-### MinorGridLines(System.Action{Kendo.Mvc.UI.Fluent.ChartLineBuilder})
+### MinorGridLines(System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>)
 Configures the minor grid lines.
 
 #### Example
@@ -102,7 +102,7 @@ Configures the minor grid lines.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartLineBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`
 The configuration action.
 
 ### MinorGridLines(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -125,7 +125,7 @@ The minor gridlines width
 ##### width `System.String`
 The minor gridlines color (CSS syntax)
 
-### Line(System.Action{Kendo.Mvc.UI.Fluent.ChartLineBuilder})
+### Line(System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>)
 Configures the axis line.
 
 #### Example
@@ -139,7 +139,7 @@ Configures the axis line.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartLineBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`
 The configuration action.
 
 ### Line(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -162,7 +162,7 @@ The axis line width
 ##### width `System.String`
 The axis line color (CSS syntax)
 
-### Labels(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder})
+### Labels(System.Action<Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder>)
 Configures the axis labels.
 
 #### Example
@@ -178,7 +178,7 @@ Configures the axis labels.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder>`
 The configuration action.
 
 ### Labels(System.Boolean)
@@ -195,7 +195,7 @@ Sets the visibility of numeric axis chart labels.
 ##### visible `System.Boolean`
 The visibility. The default value is false.
 
-### PlotBands(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory{,`1}})
+### PlotBands(System.Action<Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory<T,T>>)
 Defines the plot bands items.
 
 #### Example
@@ -210,10 +210,10 @@ Defines the plot bands items.
 
 #### Parameters
 
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory{`
+##### addAction `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory<T,T>>`
 The add action.
 
-### Title(System.Action{Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder})
+### Title(System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder>)
 Configures the chart axis title.
 
 #### Example
@@ -227,7 +227,7 @@ Configures the chart axis title.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder>`
 The configuration action.
 
 ### Title(System.String)

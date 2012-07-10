@@ -10,7 +10,7 @@ Defines the fluent interface for configuring plot band.
 
 ## Methods
 
-### From()
+### From(<T>)
 Sets the plot band start position.
 
 #### Example
@@ -26,10 +26,10 @@ Sets the plot band start position.
 
 #### Parameters
 
-##### from ``
+##### from `<T>`
 The plot band start position.
 
-### To()
+### To(<T>)
 Sets the plot band end position.
 
 #### Example
@@ -45,7 +45,7 @@ Sets the plot band end position.
 
 #### Parameters
 
-##### to ``
+##### to `<T>`
 The plot band end position.
 
 ### Color(System.String)

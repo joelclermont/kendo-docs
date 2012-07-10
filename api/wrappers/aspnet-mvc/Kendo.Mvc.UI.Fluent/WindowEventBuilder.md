@@ -24,7 +24,7 @@ Defines the name of the JavaScript function that will handle the the Open client
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Open(System.Func{System.Object,System.Object})
+### Open(System.Func<System.Object,System.Object>)
 Defines the name of the JavaScript function that will handle the the Open client-side event.
 
 #### Example
@@ -35,7 +35,7 @@ Defines the name of the JavaScript function that will handle the the Open client
 
 #### Parameters
 
-##### handlerName `System.Func{System.Object`
+##### handlerName `System.Func<System.Object`
 The name of the JavaScript function that will handle the event.
 
 ### Activate(System.String)
@@ -52,7 +52,7 @@ Defines the name of the JavaScript function that will handle the the Activate cl
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Activate(System.Func{System.Object,System.Object})
+### Activate(System.Func<System.Object,System.Object>)
 Defines the name of the JavaScript function that will handle the the Activate client-side event.
 
 #### Example
@@ -63,7 +63,7 @@ Defines the name of the JavaScript function that will handle the the Activate cl
 
 #### Parameters
 
-##### handlerName `System.Func{System.Object`
+##### handlerName `System.Func<System.Object`
 The name of the JavaScript function that will handle the event.
 
 ### Deactivate(System.String)
@@ -80,7 +80,7 @@ Defines the name of the JavaScript function that will handle the the Deactivate 
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Deactivate(System.Func{System.Object,System.Object})
+### Deactivate(System.Func<System.Object,System.Object>)
 Defines the name of the JavaScript function that will handle the the Deactivate client-side event.
 
 #### Example
@@ -91,7 +91,7 @@ Defines the name of the JavaScript function that will handle the the Deactivate 
 
 #### Parameters
 
-##### handlerName `System.Func{System.Object`
+##### handlerName `System.Func<System.Object`
 The name of the JavaScript function that will handle the event.
 
 ### Close(System.String)
@@ -108,7 +108,7 @@ Defines the name of the JavaScript function that will handle the the Close clien
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Close(System.Func{System.Object,System.Object})
+### Close(System.Func<System.Object,System.Object>)
 Defines the name of the JavaScript function that will handle the the Close client-side event.
 
 #### Example
@@ -119,7 +119,7 @@ Defines the name of the JavaScript function that will handle the the Close clien
 
 #### Parameters
 
-##### handlerName `System.Func{System.Object`
+##### handlerName `System.Func<System.Object`
 The name of the JavaScript function that will handle the event.
 
 ### DragStart(System.String)
@@ -136,7 +136,7 @@ Defines the name of the JavaScript function that will handle the the DragStart c
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### DragStart(System.Func{System.Object,System.Object})
+### DragStart(System.Func<System.Object,System.Object>)
 Defines the name of the JavaScript function that will handle the the DragStart client-side event.
 
 #### Example
@@ -147,7 +147,7 @@ Defines the name of the JavaScript function that will handle the the DragStart c
 
 #### Parameters
 
-##### handlerName `System.Func{System.Object`
+##### handlerName `System.Func<System.Object`
 The name of the JavaScript function that will handle the event.
 
 ### DragEnd(System.String)
@@ -164,7 +164,7 @@ Defines the name of the JavaScript function that will handle the the DragEnd cli
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### DragEnd(System.Func{System.Object,System.Object})
+### DragEnd(System.Func<System.Object,System.Object>)
 Defines the name of the JavaScript function that will handle the the DragEnd client-side event.
 
 #### Example
@@ -175,7 +175,7 @@ Defines the name of the JavaScript function that will handle the the DragEnd cli
 
 #### Parameters
 
-##### handlerName `System.Func{System.Object`
+##### handlerName `System.Func<System.Object`
 The name of the JavaScript function that will handle the event.
 
 ### Resize(System.String)
@@ -192,7 +192,7 @@ Defines the name of the JavaScript function that will handle the the Resize clie
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Resize(System.Func{System.Object,System.Object})
+### Resize(System.Func<System.Object,System.Object>)
 Defines the name of the JavaScript function that will handle the the Resize client-side event.
 
 #### Example
@@ -203,7 +203,7 @@ Defines the name of the JavaScript function that will handle the the Resize clie
 
 #### Parameters
 
-##### handlerName `System.Func{System.Object`
+##### handlerName `System.Func<System.Object`
 The name of the JavaScript function that will handle the event.
 
 ### Refresh(System.String)
@@ -220,7 +220,7 @@ Defines the name of the JavaScript function that will handle the the Refresh cli
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Refresh(System.Func{System.Object,System.Object})
+### Refresh(System.Func<System.Object,System.Object>)
 Defines the name of the JavaScript function that will handle the the Refresh client-side event.
 
 #### Example
@@ -231,7 +231,7 @@ Defines the name of the JavaScript function that will handle the the Refresh cli
 
 #### Parameters
 
-##### handlerName `System.Func{System.Object`
+##### handlerName `System.Func<System.Object`
 The name of the JavaScript function that will handle the event.
 
 ### Error(System.String)
@@ -248,7 +248,7 @@ Defines the name of the JavaScript function that will handle the the Error clien
 ##### handlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Error(System.Func{System.Object,System.Object})
+### Error(System.Func<System.Object,System.Object>)
 Defines the name of the JavaScript function that will handle the the Error client-side event.
 
 #### Example
@@ -259,5 +259,5 @@ Defines the name of the JavaScript function that will handle the the Error clien
 
 #### Parameters
 
-##### handlerName `System.Func{System.Object`
+##### handlerName `System.Func<System.Object`
 The name of the JavaScript function that will handle the event.

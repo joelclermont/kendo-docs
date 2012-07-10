@@ -105,7 +105,7 @@ Sets value at which perpendicular axes cross this axis.
 ##### axisCrossingValues `System.DateTime[]`
 The values at which perpendicular axes cross this axis.
 
-### AxisCrossingValue(System.Collections.Generic.IEnumerable{System.DateTime})
+### AxisCrossingValue(System.Collections.Generic.IEnumerable<System.DateTime>)
 Sets value at which perpendicular axes cross this axis.
 
 #### Example
@@ -120,10 +120,10 @@ Sets value at which perpendicular axes cross this axis.
 
 #### Parameters
 
-##### axisCrossingValues `System.Collections.Generic.IEnumerable{System.DateTime}`
+##### axisCrossingValues `System.Collections.Generic.IEnumerable<System.DateTime>`
 The values at which perpendicular axes cross this axis.
 
-### Labels(System.Action{Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder})
+### Labels(System.Action<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>)
 Configures the axis labels.
 
 #### Example
@@ -140,5 +140,5 @@ Configures the axis labels.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>`
 The configuration action.

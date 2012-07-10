@@ -81,7 +81,7 @@ Sets a value indicating the distance between bars / categories.
 Value of 1 means that the distance between bars is equal to their width.
             The default value is 0
 
-### Labels(System.Action{Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder})
+### Labels(System.Action<Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder>)
 Configures the bar chart labels.
 
 #### Example
@@ -98,7 +98,7 @@ Configures the bar chart labels.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder>`
 The configuration action.
 
 ### Labels(System.Boolean)

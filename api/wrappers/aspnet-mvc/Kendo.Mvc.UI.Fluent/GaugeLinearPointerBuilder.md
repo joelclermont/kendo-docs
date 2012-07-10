@@ -162,7 +162,7 @@ Sets the pointer value.
 ##### value `System.Double`
 The pointer value.
 
-### Track(System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder})
+### Track(System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder>)
 Configures the pointer track.
 
 #### Example
@@ -176,5 +176,5 @@ Configures the pointer track.
 
 #### Parameters
 
-##### configurator `System.Action{Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder}`
+##### configurator `System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder>`
 The configuration action.

@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the Calendar.
 
 ## Methods
 
-### Events(System.Action{Kendo.Mvc.UI.Fluent.CalendarEventBuilder})
+### Events(System.Action<Kendo.Mvc.UI.Fluent.CalendarEventBuilder>)
 Configures the client-side events.
 
 #### Example
@@ -23,7 +23,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### clientEventsAction `System.Action{Kendo.Mvc.UI.Fluent.CalendarEventBuilder}`
+##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.CalendarEventBuilder>`
 The client events action.
 
 ### Format(System.String)
@@ -83,7 +83,7 @@ Templates for the cells rendered in the "month" view.
         .MonthTemplate("#= data.value #")
         %>
 
-### MonthTemplate(System.Action{Kendo.Mvc.UI.Fluent.MonthTemplateBuilder})
+### MonthTemplate(System.Action<Kendo.Mvc.UI.Fluent.MonthTemplateBuilder>)
 Configures the content of cells of the Calendar.
 
 #### Example
@@ -104,16 +104,16 @@ Sets the minimal date, which can be selected in the calendar
 ### Max(System.DateTime)
 Sets the maximal date, which can be selected in the calendar
 
-### Value(System.Nullable{System.DateTime})
+### Value(System.Nullable<System.DateTime>)
 Sets the value of the calendar
 
 ### Value(System.String)
 Sets the value of the calendar
 
-### Selection(System.Action{Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder})
+### Selection(System.Action<Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder>)
 Configures the selection settings of the calendar.
 
 #### Parameters
 
-##### selectionAction `System.Action{Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder}`
+##### selectionAction `System.Action<Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder>`
 SelectAction settings, which includes Action name and IEnumerable of DateTime objects.

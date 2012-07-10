@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the TimePicker component.
 
 ## Methods
 
-### Value(System.Nullable{System.TimeSpan})
+### Value(System.Nullable<System.TimeSpan>)
 Sets the value of the timepicker input
 
 ### Min(System.TimeSpan)

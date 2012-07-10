@@ -27,7 +27,7 @@ Creates a Editor
         .Name("Editor");
         %>
 
-### Grid`
+### Grid<T1>
 Creates a new !:Grid<T> bound to the specified data item type.
 
 #### Example
@@ -36,7 +36,7 @@ Creates a new !:Grid<T> bound to the specified data item type.
         .BindTo(Model)
         %>
 
-### Grid`(System.Collections.Generic.IEnumerable{``0})
+### Grid<T1>(System.Collections.Generic.IEnumerable<T1>)
 Creates a new !:Kendo.Web.UI.Grid<T> bound to the specified data source.
 
 #### Example
@@ -46,7 +46,7 @@ Creates a new !:Kendo.Web.UI.Grid<T> bound to the specified data source.
 
 #### Parameters
 
-##### dataSource `System.Collections.Generic.IEnumerable{``0}`
+##### dataSource `System.Collections.Generic.IEnumerable<T1>`
 The data source.
 
 ### Grid(System.Data.DataTable)
@@ -65,7 +65,7 @@ Creates a new !:Kendo.Web.UI.Grid<T> bound to a DataView.
 ##### dataSource `System.Data.DataView`
 DataView from which the grid instance will be bound
 
-### Grid`(System.String)
+### Grid<T1>(System.String)
 Creates a new !:Kendo.Web.UI.Grid<T> bound an item in ViewData.
 
 #### Example
@@ -78,7 +78,7 @@ Creates a new !:Kendo.Web.UI.Grid<T> bound an item in ViewData.
 ##### dataSourceViewDataKey `System.String`
 The data source view data key.
 
-### ListView`
+### ListView<T1>
 Creates a new !:ListView<T> bound to the specified data item type.
 
 #### Example
@@ -87,7 +87,7 @@ Creates a new !:ListView<T> bound to the specified data item type.
         .BindTo(Model)
         %>
 
-### ListView`(System.Collections.Generic.IEnumerable{``0})
+### ListView<T1>(System.Collections.Generic.IEnumerable<T1>)
 Creates a new !:Kendo.Web.UI.ListView<T> bound to the specified data source.
 
 #### Example
@@ -97,10 +97,10 @@ Creates a new !:Kendo.Web.UI.ListView<T> bound to the specified data source.
 
 #### Parameters
 
-##### dataSource `System.Collections.Generic.IEnumerable{``0}`
+##### dataSource `System.Collections.Generic.IEnumerable<T1>`
 The data source.
 
-### ListView`(System.String)
+### ListView<T1>(System.String)
 Creates a new !:Kendo.Web.UI.ListView<T> bound an item in ViewData.
 
 #### Example
@@ -295,7 +295,7 @@ Creates a new AutoComplete.
         })
         %>
 
-### Slider`
+### Slider<T1>
 Creates a new Slider.
 
 #### Example
@@ -311,7 +311,7 @@ Creates a new Slider.
         .Name("Slider")
         %>
 
-### RangeSlider`
+### RangeSlider<T1>
 Creates a new RangeSlider.
 
 #### Example
@@ -339,7 +339,7 @@ Creates a Upload
         )
         %>
 
-### Chart`
+### Chart<T1>
 Creates a !:Kendo.Mvc.UI.Chart{T}
 
 #### Example
@@ -347,7 +347,7 @@ Creates a !:Kendo.Mvc.UI.Chart{T}
         .Name("Chart")
         %>
 
-### Chart`(System.Collections.Generic.IEnumerable{``0})
+### Chart<T1>(System.Collections.Generic.IEnumerable<T1>)
 Creates a new !:Kendo.Mvc.UI.Chart{T} bound to the specified data source.
 
 #### Example
@@ -357,10 +357,10 @@ Creates a new !:Kendo.Mvc.UI.Chart{T} bound to the specified data source.
 
 #### Parameters
 
-##### data `System.Collections.Generic.IEnumerable{``0}`
+##### data `System.Collections.Generic.IEnumerable<T1>`
 The data source.
 
-### Chart`(System.String)
+### Chart<T1>(System.String)
 Creates a new !:Kendo.Mvc.UI.Chart{T} bound an item in ViewData.
 
 #### Example

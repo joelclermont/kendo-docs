@@ -10,7 +10,7 @@ Defines the fluent interface for configuring child menu items.
 
 ## Methods
 
-### Items(System.Action{Kendo.Mvc.UI.Fluent.MenuItemFactory})
+### Items(System.Action<Kendo.Mvc.UI.Fluent.MenuItemFactory>)
 Configures the child items of a MenuItem.
 
 #### Example
@@ -28,5 +28,5 @@ Configures the child items of a MenuItem.
 
 #### Parameters
 
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.MenuItemFactory}`
+##### addAction `System.Action<Kendo.Mvc.UI.Fluent.MenuItemFactory>`
 The add action.

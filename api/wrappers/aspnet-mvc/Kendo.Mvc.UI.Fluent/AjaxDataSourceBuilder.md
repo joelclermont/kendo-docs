@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the DataSource AJAX create/update/d
 
 ## Methods
 
-### Update(System.Action{Kendo.Mvc.UI.Fluent.CrudOperationBuilder})
+### Update(System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>)
 Configures the URL for Update operation.
 
 ### Update(System.String,System.String)
@@ -38,7 +38,7 @@ Controller Name
 ##### routeValues `System.Object`
 Route values
 
-### Create(System.Action{Kendo.Mvc.UI.Fluent.CrudOperationBuilder})
+### Create(System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>)
 Configures the URL for Create operation.
 
 ### Create(System.String,System.String)
@@ -66,7 +66,7 @@ Controller Name
 ##### routeValues `System.Object`
 Route values
 
-### Destroy(System.Action{Kendo.Mvc.UI.Fluent.CrudOperationBuilder})
+### Destroy(System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>)
 Configures the URL for Destroy operation.
 
 ### Destroy(System.String,System.String)
@@ -94,7 +94,7 @@ Controller Name
 ##### routeValues `System.Object`
 Route values
 
-### Model(System.Action{Kendo.Mvc.UI.Fluent.DataSourceModelDescriptorFactory{}})
+### Model(System.Action<Kendo.Mvc.UI.Fluent.DataSourceModelDescriptorFactory<T>>)
 Configures Model properties
 
 ### Batch(System.Boolean)

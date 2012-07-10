@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the Menu component.
 
 ## Methods
 
-### Items(System.Action{Kendo.Mvc.UI.Fluent.MenuItemFactory})
+### Items(System.Action<Kendo.Mvc.UI.Fluent.MenuItemFactory>)
 Defines the items in the menu
 
 #### Example
@@ -25,10 +25,10 @@ Defines the items in the menu
 
 #### Parameters
 
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.MenuItemFactory}`
+##### addAction `System.Action<Kendo.Mvc.UI.Fluent.MenuItemFactory>`
 The add action.
 
-### Events(System.Action{Kendo.Mvc.UI.Fluent.MenuEventBuilder})
+### Events(System.Action<Kendo.Mvc.UI.Fluent.MenuEventBuilder>)
 Configures the client-side events.
 
 #### Example
@@ -41,7 +41,7 @@ Configures the client-side events.
 
 #### Parameters
 
-##### clientEventsAction `System.Action{Kendo.Mvc.UI.Fluent.MenuEventBuilder}`
+##### clientEventsAction `System.Action<Kendo.Mvc.UI.Fluent.MenuEventBuilder>`
 The client events action.
 
 ### Orientation(Kendo.Mvc.UI.MenuOrientation)
@@ -85,7 +85,7 @@ Specifies the delay in ms before the menu is opened/closed - used to avoid accid
         .HoverDelay(300)
         %>
 
-### BindTo(System.String,System.Action{Kendo.Mvc.UI.MenuItem,Kendo.Mvc.SiteMapNode})
+### BindTo(System.String,System.Action<Kendo.Mvc.UI.MenuItem,Kendo.Mvc.SiteMapNode>)
 Binds the menu to a sitemap
 
 #### Example
@@ -101,7 +101,7 @@ Binds the menu to a sitemap
 ##### viewDataKey `System.String`
 The view data key.
 
-##### siteMapAction `System.Action{Kendo.Mvc.UI.MenuItem`
+##### siteMapAction `System.Action<Kendo.Mvc.UI.MenuItem`
 The action to configure the item.
 
 ### BindTo(System.String)
@@ -118,7 +118,7 @@ Binds the menu to a sitemap.
 ##### viewDataKey `System.String`
 The view data key.
 
-### BindTo`(System.Collections.Generic.IEnumerable{``0},System.Action{Kendo.Mvc.UI.MenuItem,``0})
+### BindTo<T1>(System.Collections.Generic.IEnumerable<T1>,System.Action<Kendo.Mvc.UI.MenuItem,<T1>)
 Binds the menu to a list of objects. The menu will be "flat" which means a menu item will be created for
             every item in the data source.
 
@@ -133,13 +133,13 @@ Binds the menu to a list of objects. The menu will be "flat" which means a menu 
 
 #### Parameters
 
-##### dataSource `System.Collections.Generic.IEnumerable{``0}`
+##### dataSource `System.Collections.Generic.IEnumerable<T1>`
 The data source.
 
-##### itemDataBound `System.Action{Kendo.Mvc.UI.MenuItem`
+##### itemDataBound `System.Action<Kendo.Mvc.UI.MenuItem`
 The action executed for every data bound item.
 
-### BindTo(System.Collections.IEnumerable,System.Action{Kendo.Mvc.UI.Fluent.NavigationBindingFactory{Kendo.Mvc.UI.MenuItem}})
+### BindTo(System.Collections.IEnumerable,System.Action<Kendo.Mvc.UI.Fluent.NavigationBindingFactory<Kendo.Mvc.UI.MenuItem>)
 Binds the menu to a list of objects. The menu will create a hierarchy of items using the specified mappings.
 
 #### Example
@@ -162,10 +162,10 @@ Binds the menu to a list of objects. The menu will create a hierarchy of items u
 ##### dataSource `System.Collections.IEnumerable`
 The data source.
 
-##### factoryAction `System.Action{Kendo.Mvc.UI.Fluent.NavigationBindingFactory{Kendo.Mvc.UI.MenuItem}}`
+##### factoryAction `System.Action<Kendo.Mvc.UI.Fluent.NavigationBindingFactory<Kendo.Mvc.UI.MenuItem>`
 The action which will configure the mappings
 
-### ItemAction(System.Action{Kendo.Mvc.UI.MenuItem})
+### ItemAction(System.Action<Kendo.Mvc.UI.MenuItem>)
 Callback for each item.
 
 #### Example
@@ -181,7 +181,7 @@ Callback for each item.
 
 #### Parameters
 
-##### action `System.Action{Kendo.Mvc.UI.MenuItem}`
+##### action `System.Action<Kendo.Mvc.UI.MenuItem>`
 Action, which will be executed for each item.
 
 ### HighlightPath(System.Boolean)

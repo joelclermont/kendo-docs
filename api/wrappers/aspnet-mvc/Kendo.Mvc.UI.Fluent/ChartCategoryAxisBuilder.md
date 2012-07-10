@@ -15,12 +15,12 @@ The parent Chart
 
 ## Methods
 
-### Categories`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Categories<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Defines bound categories.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the categories value from the chart model
 
 ### Categories(System.Collections.IEnumerable)
@@ -71,7 +71,7 @@ Sets value at which perpendicular axes cross this axis.
 ##### axisCrossingValues `System.Double[]`
 The values at which perpendicular axes cross this axis.
 
-### AxisCrossingValue(System.Collections.Generic.IEnumerable{System.Double})
+### AxisCrossingValue(System.Collections.Generic.IEnumerable<System.Double>)
 Sets value at which perpendicular axes cross this axis.
 
 #### Example
@@ -84,5 +84,5 @@ Sets value at which perpendicular axes cross this axis.
 
 #### Parameters
 
-##### axisCrossingValues `System.Collections.Generic.IEnumerable{System.Double}`
+##### axisCrossingValues `System.Collections.Generic.IEnumerable<System.Double>`
 The values at which perpendicular axes cross this axis.

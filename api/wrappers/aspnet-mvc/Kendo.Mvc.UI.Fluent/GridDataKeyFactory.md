@@ -10,9 +10,9 @@ Creates data key for the !:Grid{T}.
 
 ## Methods
 
-### Add`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Add<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Defines a data key.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`

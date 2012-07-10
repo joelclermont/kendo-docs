@@ -10,12 +10,12 @@ Creates columns for the !:Grid{TModel}.
 
 ## Methods
 
-### Bound`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Bound<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Defines a bound column.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 
 ### Bound(System.String)
 Defines a bound column.
@@ -23,32 +23,32 @@ Defines a bound column.
 ### Bound(System.Type,System.String)
 Defines a bound column.
 
-### ForeignKey`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Collections.IEnumerable,System.String,System.String)
+### ForeignKey<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Collections.IEnumerable,System.String,System.String)
 Defines a foreign key column.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The member which matches the selected item
 
-##### data ```0}}`
+##### data `System.Collections.IEnumerable`
 The foreign data
 
-##### dataFieldValue `System.Collections.IEnumerable`
+##### dataFieldValue `System.String`
 The data value field
 
 ##### dataFieldText `System.String`
 The data text field
 
-### ForeignKey`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Web.Mvc.SelectList)
+### ForeignKey<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Web.Mvc.SelectList)
 Defines a foreign key column.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The member which matches the selected item
 
-##### data ```0}}`
+##### data `System.Web.Mvc.SelectList`
 The foreign data
 
 ### AutoGenerate(System.Boolean)
@@ -59,24 +59,24 @@ Determines if columns should be automatically generated.
 ##### shouldGenerate `System.Boolean`
 If true columns should be generated, otherwise false.
 
-### AutoGenerate(System.Action{Kendo.Mvc.UI.GridColumnBase{}})
+### AutoGenerate(System.Action<Kendo.Mvc.UI.GridColumnBase<T>>)
 Determines if columns should be automatically generated.
 
 #### Parameters
 
-##### columnAction `System.Action{Kendo.Mvc.UI.GridColumnBase{}}`
+##### columnAction `System.Action<Kendo.Mvc.UI.GridColumnBase<T>>`
 Action which will be executed for each generated column.
 
-### Template(System.Action{})
+### Template(System.Action<T>)
 Defines a template column.
 
 #### Parameters
 
-##### templateAction `System.Action{}`
+##### templateAction `System.Action<T>`
 
-### Command(System.Action{Kendo.Mvc.UI.Fluent.GridActionCommandFactory{}})
+### Command(System.Action<Kendo.Mvc.UI.Fluent.GridActionCommandFactory<T>>)
 Defines a command column.
 
 #### Parameters
 
-##### commandAction `System.Action{Kendo.Mvc.UI.Fluent.GridActionCommandFactory{}}`
+##### commandAction `System.Action<Kendo.Mvc.UI.Fluent.GridActionCommandFactory<T>>`

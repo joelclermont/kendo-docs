@@ -43,7 +43,7 @@ Sets the HTML attributes applied to the header cell of the column.
 ##### attributes `System.Object`
 The attributes.
 
-### HeaderHtmlAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})
+### HeaderHtmlAttributes(System.Collections.Generic.IDictionary<System.String,System.Object>)
 Sets the HTML attributes applied to the header cell of the column.
 
 #### Example
@@ -54,7 +54,7 @@ Sets the HTML attributes applied to the header cell of the column.
 
 #### Parameters
 
-##### attributes `System.Collections.Generic.IDictionary{System.String`
+##### attributes `System.Collections.Generic.IDictionary<System.String`
 The attributes.
 
 ### FooterHtmlAttributes(System.Object)
@@ -71,7 +71,7 @@ Sets the HTML attributes applied to the footer cell of the column.
 ##### attributes `System.Object`
 The attributes.
 
-### FooterHtmlAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})
+### FooterHtmlAttributes(System.Collections.Generic.IDictionary<System.String,System.Object>)
 Sets the HTML attributes applied to the footer cell of the column.
 
 #### Example
@@ -82,7 +82,7 @@ Sets the HTML attributes applied to the footer cell of the column.
 
 #### Parameters
 
-##### attributes `System.Collections.Generic.IDictionary{System.String`
+##### attributes `System.Collections.Generic.IDictionary<System.String`
 The attributes.
 
 ### HtmlAttributes(System.Object)
@@ -99,7 +99,7 @@ Sets the HTML attributes applied to the content cell of the column.
 ##### attributes `System.Object`
 The attributes.
 
-### HtmlAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})
+### HtmlAttributes(System.Collections.Generic.IDictionary<System.String,System.Object>)
 Sets the HTML attributes applied to the content cell of the column.
 
 #### Example
@@ -110,7 +110,7 @@ Sets the HTML attributes applied to the content cell of the column.
 
 #### Parameters
 
-##### attributes `System.Collections.Generic.IDictionary{System.String`
+##### attributes `System.Collections.Generic.IDictionary<System.String`
 The attributes.
 
 ### Width(System.Int32)
@@ -201,12 +201,12 @@ Sets the header template for the column.
 ##### template `System.String`
 The string defining the template.
 
-### HeaderTemplate(System.Func{System.Object,System.Object})
+### HeaderTemplate(System.Func<System.Object,System.Object>)
 Sets the header template for the column.
 
 #### Parameters
 
-##### template `System.Func{System.Object`
+##### template `System.Func<System.Object`
 The action defining the template.
 
 ### FooterTemplate(System.Action)
@@ -225,10 +225,10 @@ Sets the footer template for the column.
 ##### template `System.String`
 The string defining the template.
 
-### FooterTemplate(System.Func{System.Object,System.Object})
+### FooterTemplate(System.Func<System.Object,System.Object>)
 Sets the footer template for the column.
 
 #### Parameters
 
-##### template `System.Func{System.Object`
+##### template `System.Func<System.Object`
 The action defining the template.

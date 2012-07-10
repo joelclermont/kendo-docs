@@ -18,10 +18,10 @@ Sets the HTML attributes.
 ##### attributes `System.Object`
 The HTML attributes.
 
-### HtmlAttributes(System.Collections.Generic.IDictionary{System.String,System.Object})
+### HtmlAttributes(System.Collections.Generic.IDictionary<System.String,System.Object>)
 Sets the HTML attributes.
 
 #### Parameters
 
-##### attributes `System.Collections.Generic.IDictionary{System.String`
+##### attributes `System.Collections.Generic.IDictionary<System.String`
 The HTML attributes.

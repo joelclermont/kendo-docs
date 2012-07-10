@@ -47,7 +47,7 @@ Use it to enable filtering of items.
         .Filter(FilterType.Contains);
         %>
 
-### Items(System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory})
+### Items(System.Action<Kendo.Mvc.UI.Fluent.DropDownListItemFactory>)
 Defines the items in the ComboBox
 
 #### Example
@@ -62,7 +62,7 @@ Defines the items in the ComboBox
 
 #### Parameters
 
-##### addAction `System.Action{Kendo.Mvc.UI.Fluent.DropDownListItemFactory}`
+##### addAction `System.Action<Kendo.Mvc.UI.Fluent.DropDownListItemFactory>`
 The add action.
 
 ### HighlightFirst(System.Boolean)

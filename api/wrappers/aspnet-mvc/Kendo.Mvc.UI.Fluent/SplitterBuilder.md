@@ -24,7 +24,7 @@ Sets the splitter orientation.
 ##### value `Kendo.Mvc.UI.SplitterOrientation`
 The desired orientation.
 
-### Panes(System.Action{Kendo.Mvc.UI.Fluent.SplitterPaneFactory})
+### Panes(System.Action<Kendo.Mvc.UI.Fluent.SplitterPaneFactory>)
 Defines the panes in the splitter.
 
 #### Example
@@ -38,10 +38,10 @@ Defines the panes in the splitter.
 
 #### Parameters
 
-##### configurePanes `System.Action{Kendo.Mvc.UI.Fluent.SplitterPaneFactory}`
+##### configurePanes `System.Action<Kendo.Mvc.UI.Fluent.SplitterPaneFactory>`
 The action that configures the panes.
 
-### Events(System.Action{Kendo.Mvc.UI.Fluent.SplitterEventBuilder})
+### Events(System.Action<Kendo.Mvc.UI.Fluent.SplitterEventBuilder>)
 Configures the client events for the splitter.
 
 #### Example
@@ -54,5 +54,5 @@ Configures the client events for the splitter.
 
 #### Parameters
 
-##### configureClientEvents `System.Action{Kendo.Mvc.UI.Fluent.SplitterEventBuilder}`
+##### configureClientEvents `System.Action<Kendo.Mvc.UI.Fluent.SplitterEventBuilder>`
 The action that configures the client events.

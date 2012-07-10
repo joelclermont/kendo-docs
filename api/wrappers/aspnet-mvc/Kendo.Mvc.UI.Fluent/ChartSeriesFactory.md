@@ -15,15 +15,15 @@ The parent Chart
 
 ## Methods
 
-### Bar`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}})
+### Bar<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T>,System.String>)
 Defines bound bar series.
 
 #### Parameters
 
-##### valueExpression `System.Linq.Expressions.Expression{System.Func{`0`
+##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the point value from the chart model
 
-##### colorExpression ```0}}`
+##### colorExpression `System.Linq.Expressions.Expression<System.Func<T>`
 The expression used to extract the point color from the chart model
 
 ### Bar(System.String,System.String)
@@ -59,15 +59,15 @@ Defines bar series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to.
 
-### Column`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}})
+### Column<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T>,System.String>)
 Defines bound column series.
 
 #### Parameters
 
-##### valueExpression `System.Linq.Expressions.Expression{System.Func{`0`
+##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the point value from the chart model
 
-##### colorExpression ```0}}`
+##### colorExpression `System.Linq.Expressions.Expression<System.Func<T>`
 The expression used to extract the point color from the chart model
 
 ### Column(System.String,System.String)
@@ -103,12 +103,12 @@ Defines bar series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Line`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Line<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Defines bound line series.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the series value from the chart model
 
 ### Line(System.String)
@@ -138,12 +138,12 @@ Defines line series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### VerticalLine`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### VerticalLine<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Defines bound vertical line series.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the series value from the chart model
 
 ### VerticalLine(System.String)
@@ -173,12 +173,12 @@ Defines vertical line series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Area`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### Area<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Defines bound area series.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the series value from the chart model.
 
 ### Area(System.String)
@@ -208,12 +208,12 @@ Defines area series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### VerticalArea`(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+### VerticalArea<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Defines bound vertical area series.
 
 #### Parameters
 
-##### expression `System.Linq.Expressions.Expression{System.Func{`0`
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the series value from the chart model.
 
 ### VerticalArea(System.String)
@@ -243,15 +243,15 @@ Defines vertical area series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Scatter`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}})
+### Scatter<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Defines bound scatter series.
 
 #### Parameters
 
-##### xValueExpression `System.Linq.Expressions.Expression{System.Func{`0`
+##### xValueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the X value from the chart model
 
-##### yValueExpression ```0}}`
+##### yValueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the Y value from the chart model
 
 ### Scatter(System.String,System.String)
@@ -273,15 +273,15 @@ Defines scatter series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### ScatterLine`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}})
+### ScatterLine<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>)
 Defines bound scatter line series.
 
 #### Parameters
 
-##### xValueExpression `System.Linq.Expressions.Expression{System.Func{`0`
+##### xValueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the X value from the chart model
 
-##### yValueExpression ```0}}`
+##### yValueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 The expression used to extract the Y value from the chart model
 
 ### ScatterLine(System.String,System.String)
@@ -303,7 +303,7 @@ Defines scatter line series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Bubble`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,``1}},System.Linq.Expressions.Expression{System.Func{`0,``2}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+### Bubble<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T>,System.String>,System.Linq.Expressions.Expression<System.Func<T>,System.String>,System.Linq.Expressions.Expression<System.Func<T>,System.Boolean>)
 Defines bound bubble series.
 
 ### Bubble(System.String,System.String,System.String,System.String,System.String,System.String)
@@ -320,7 +320,7 @@ Defines bubble series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Pie`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+### Pie<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T>,System.String>,System.Linq.Expressions.Expression<System.Func<T>,System.String>,System.Linq.Expressions.Expression<System.Func<T>,System.Boolean>,System.Linq.Expressions.Expression<System.Func<T>,System.Boolean>)
 Defines bound pie series.
 
 ### Pie(System.String,System.String,System.String,System.String,System.String)
@@ -337,7 +337,7 @@ Defines pie series bound to inline data.
 ##### data `System.Collections.IEnumerable`
 The data to bind to
 
-### Donut`(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})
+### Donut<T1>(System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T>,System.String>,System.Linq.Expressions.Expression<System.Func<T>,System.String>,System.Linq.Expressions.Expression<System.Func<T>,System.Boolean>,System.Linq.Expressions.Expression<System.Func<T>,System.Boolean>)
 Defines bound pie series.
 
 ### Donut(System.String,System.String,System.String,System.String,System.String)
