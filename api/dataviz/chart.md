@@ -1239,21 +1239,22 @@ Configures the legend labels.
 
 ### legend.labels.color `String`*(default: "black")*
 
- The color of the labels.
+The color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
 
 ### legend.labels.font `String`*(default: 12px Arial,Helvetica,sans-serif)*
 
- The font style of the labels.
+The font style of the labels.
 
-### legend.labels.tempate `String`
+### legend.labels.template `String`
 
 The template of the labels.
 Template variables:
-*   **text** - the text the legend item
-*   **series** - the data series
-*   **dataItem** - the original data item used to construct the point.
-        Will be null if binding to array. (only for donut and pie charts)
+*   **text** - the text the legend item.
+*   **series** - the data series.
+*   **value** - the point value. (only for donut and pie charts)
+*   **percentage** - the point value represented as a percentage value. (only for donut and pie charts)
+*   **dataItem** - the original data item used to construct the point. (only for donut and pie charts)
 
 
 ### legend.margin `Number | Object`*(default: 10)*
