@@ -38,7 +38,7 @@ The first step is to add script and stylesheet references for jQuery and Kendo U
 		<meta charset="utf-8">
 		<title>My Kendo UI Application</title>
 
-		<!-- Kendo UI HTTP CDN style reference for DataViz -->
+		<!-- CDN-based stylesheet reference for Kendo UI DataViz -->
 		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.704/styles/kendo.dataviz.min.css">
 
 	</head>
@@ -53,11 +53,11 @@ The first step is to add script and stylesheet references for jQuery and Kendo U
 			<p>Kendo UI FTW!</p>
 		</footer>
 
-		<!-- Google CDN script reference for jQuery; utilizing a local reference if offline -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/<version>/jquery.min.js"></script>
+		<!-- CDN-based script reference for jQuery; utilizing a local reference if offline -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
-		<!-- Kendo UI HTTP CDN script reference for DataViz; utilizing a local reference if offline -->
+		<!-- CDN-based script reference for Kendo UI DataViz; utilizing a local reference if offline -->
 		<script src="http://cdn.kendostatic.com/2012.1.704/js/kendo.dataviz.min.js"></script>
 		<script>(window.kendo && window.kendo.dataviz) || document.write('<script src="js/kendo.dataviz.min.js"><\/script>')</script>
 
