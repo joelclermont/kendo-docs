@@ -30,7 +30,6 @@ The following example shows how to setup an asynchronous upload that saves the u
                         .Save("Save", "Home")
                     )
             %>
-
     - Razor
 
             @(Html.Telerik().Upload()
