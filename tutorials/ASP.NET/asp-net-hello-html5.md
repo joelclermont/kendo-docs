@@ -243,7 +243,7 @@ stylesheet reference.
 Press **F5** to run the application.  Switch to IE 7 rendering mode and notice
 that the salmon background color style is applied.
 
-Switch to the **HTML **tab and notice that the **&lt;html&gt; **tag now has a long
+Switch to the **HTML** tab and notice that the **&lt;html&gt; **tag now has a long
 string of classes.  Each of these classes indicates either a feature, or the
 lack of one.  If a feature is not supported, it will be prefixed with **no-**.
 Switch between IE 7, 8 and 9 rendering modes and notice how the classes change
@@ -261,9 +261,6 @@ Development.
 [HTML5 Doctor][35]
 
 [Modernizr Website][31]
-
-![][36]
-
 
    [2]: http://www.css3.info/ (CSS3 . Info - All you ever needed to know about CSS3)
 
