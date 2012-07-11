@@ -6,7 +6,7 @@ publish: true
 
 # Menu
 
-The Menu HtmlHelper extension is a server-side wrapper for the [Kendo UI Menu](http://www.kendoui.com/documentation/ui-widgets/menu/overview.aspx) widget.
+The Menu HtmlHelper extension is a server-side wrapper for the [Kendo UI Menu](http://docs.kendoui.com/api/web/menu) widget.
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ There are several ways to define items of the Kendo Menu for ASP.NET MVC
 
 ### Define items of the Kendo Menu
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -50,7 +50,7 @@ There are several ways to define items of the Kendo Menu for ASP.NET MVC
 
 ### Bind Kendo Menu to a sitemap
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a simple sitemap with **sample.sitemap** file name at the root of the project:
 
@@ -93,7 +93,7 @@ There are several ways to define items of the Kendo Menu for ASP.NET MVC
 
 ### Bind Kendo Menu to a hierarchical model
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method and pass the Categories table as the model. Note that the Categories should have association to the Products table:
 
@@ -154,7 +154,7 @@ There are several ways to define items of the Kendo Menu for ASP.NET MVC
 ## Accessing an Existing Menu
 
 You can reference an existing Menu instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/menu/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/menu#methods) to control its behavior.
 
 
 ### Accessing an existing Menu instance
@@ -170,7 +170,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI Menu events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/menu/events.aspx) exposed by Kendo UI Menu:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/menu#events) exposed by Kendo UI Menu:
 
 ### WebForms - subscribe by handler name
 

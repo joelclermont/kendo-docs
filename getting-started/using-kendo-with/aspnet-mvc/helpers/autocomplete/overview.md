@@ -6,7 +6,7 @@ publish: true
 
 # AutoComplete
 
-The AutoComplete HtmlHelper extension is a server-side wrapper for the [Kendo UI AutoComplete](http://www.kendoui.com/documentation/ui-widgets/autocomplete/overview.aspx) widget.
+The AutoComplete HtmlHelper extension is a server-side wrapper for the [Kendo UI AutoComplete](http://docs.kendoui.com/api/web/autocomplete) widget.
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ There are two ways to bind a Kendo AutoComplete for ASP.NET MVC:
 
 Here is how to configure the Kendo AutoComplete for server binding to the Northwind Products table using Linq to SQL:
 
- 1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+ 1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
  2.  Create a new action method and pass the Products table as the model:
 
         public ActionResult Index()
@@ -58,7 +58,7 @@ Here is how to configure the Kendo AutoComplete for server binding to the Northw
 
 Here is how to configure the Kendo AutoComplete for ajax binding to the Northwind Products table using Linq to SQL:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 2.  Create an action method which renders the view:
     public ActionResult Index()
     {
@@ -104,7 +104,7 @@ Here is how to configure the Kendo AutoComplete for ajax binding to the Northwin
 ## Accessing an Existing AutoComplete
 
 You can reference an existing AutoComplete instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/autocomplete/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/autocomplete#methods) to control its behavior.
 
 ### Accessing an existing AutoComplete instance
 
@@ -119,7 +119,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI AutoComplete events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/autocomplete/events.aspx) exposed by Kendo UI autocomplete:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/autocomplete#events) exposed by Kendo UI autocomplete:
 
 ### WebForms - subscribe by handler name
 

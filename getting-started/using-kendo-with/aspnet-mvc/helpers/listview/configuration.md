@@ -21,35 +21,35 @@ The `ClientTemplateId` is mandatory for the listview widget. It contains the `id
 	            <dd>${kendo.toString(UnitPrice, "c")}</dd>
 	        </dl>
 	    </div>
-	</script>	
+	</script>
 
 ## Common DataSource Settings
 
 The `DataSource` of the Kendo ListView for ASP.NET MVC contains configuration used by
-the [Kendo DataSource](http://www.kendoui.com/documentation/framework/datasource/overview.aspx) object.
+the [Kendo DataSource](http://docs.kendoui.com/api/framework/datasource) object.
 
-Kendo ListView for ASP.NET MVC supports 
-[ajax](http://www.kendoui.com/documentation/asp-net-mvc/helpers/listview/binding.aspx) type of data source.
+Kendo ListView for ASP.NET MVC supports
+[ajax](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/helpers/listview/binding) type of data source.
 
 
 ###   Create
 Specify the action method which will create new model
 
-    .DataSource(dataSource => dataSource        
+    .DataSource(dataSource => dataSource
         .Create(create => create.Action(/### action ###/ "Create", /### controller ###/ "Home"))
     )
 
 ###   Destroy
 Specify the action method which will destroy existing models.
 
-    .DataSource(dataSource => dataSource        
+    .DataSource(dataSource => dataSource
         .Destroy(destroy =>  destroy.Destroy(/### action ###/ "Destroy", /### controller ###/ "Home"))
     )
 
 ###   Events
-Handle the [events](http://www.kendoui.com/documentation/framework/datasource/events.aspx) of the Kendo DataSource object.
+Handle the [events](http://docs.kendoui.com/api/framework/datasource#events) of the Kendo DataSource object.
 
-    .DataSource(dataSource => dataSource        
+    .DataSource(dataSource => dataSource
         .Events(events => events
             // Subscribe to the "change" event. The name of the JavaScript function which will be invoked is "changeHandler".
             .Change("changeHandler")

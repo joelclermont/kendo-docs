@@ -6,13 +6,13 @@ publish: true
 
 # RadialGauge
 
-The LinearGauge HtmlHelper extension is a server-side wrapper for the [Kendo DataViz LinearGauge](http://www.kendoui.com/documentation/dataviz/linear-gauge/overview.aspx) widget.
+The LinearGauge HtmlHelper extension is a server-side wrapper for the [Kendo DataViz LinearGauge](http://docs.kendoui.com/api/dataviz/lineargauge) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo LinearGauge:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -49,7 +49,7 @@ Here is how to configure a simple Kendo LinearGauge:
 ## Accessing an Existing LinearGauge
 
 You can reference an existing LinearGauge instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/dataviz/linear-gauge/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/dataviz/lineargauge#methods) to control its behavior.
 
 ### Accessing an existing LinearGauge instance
 

@@ -6,18 +6,18 @@ publish: true
 
 # Grid
 
-The Grid HtmlHelper extension is a server-side wrapper for the [Kendo UI Grid](http://www.kendoui.com/documentation/ui-widgets/grid/overview.aspx) widget.
+The Grid HtmlHelper extension is a server-side wrapper for the [Kendo UI Grid](http://docs.kendoui.com/api/web/grid) widget.
 
 ## Getting Started
 
 There are two ways to bind a Kendo Grid for ASP.NET MVC:
 
-*   [server ](http://www.kendoui.com/documentation/asp-net-mvc/helpers/grid/server-binding.aspx)- the grid will make HTTP GET requests when binding
-*   [ajax ](http://www.kendoui.com/documentation/asp-net-mvc/helpers/grid/ajax-binding.aspx)- the grid will make ajax requests when binding
+*   [server ](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/server-binding)- the grid will make HTTP GET requests when binding
+*   [ajax ](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/ajax-binding)- the grid will make ajax requests when binding
 
 Here is how to configure the Kendo Grid for server binding to the Northwind Products table using Linq to SQL:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method and pass the Products table as the model:
 
@@ -66,7 +66,7 @@ Here is how to configure the Kendo Grid for server binding to the Northwind Prod
 ## Accessing an Existing Grid
 
 You can reference an existing Grid instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/grid/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/grid#methods) to control its behavior.
 
 ### Accessing an existing Grid instance
 
@@ -81,7 +81,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI Grid events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/grid/events.aspx) exposed by Kendo UI grid:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/grid#events) exposed by Kendo UI grid:
 
 
 ### WebForms - subscribe by handler name

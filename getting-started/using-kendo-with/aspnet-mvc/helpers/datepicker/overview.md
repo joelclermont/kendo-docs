@@ -6,13 +6,13 @@ publish: true
 
 # DatePicker
 
-The DatePicker HtmlHelper extension is a server-side wrapper for the [Kendo UI DatePicker](http://www.kendoui.com/documentation/ui-widgets/datepicker/overview.aspx) widget.
+The DatePicker HtmlHelper extension is a server-side wrapper for the [Kendo UI DatePicker](http://docs.kendoui.com/api/web/datepicker) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo DatePicker:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -41,7 +41,7 @@ Here is how to configure a simple Kendo DatePicker:
 ## Accessing an Existing DatePicker
 
 You can reference an existing DatePicker instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/datepicker/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/datepicker#methods) to control its behavior.
 
 
 ### Accessing an existing DatePicker instance
@@ -57,7 +57,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ### Handling Kendo UI DatePicker events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/datepicker/events.aspx) exposed by Kendo UI DatePicker:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/datepicker#events) exposed by Kendo UI DatePicker:
 
 
 

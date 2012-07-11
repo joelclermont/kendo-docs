@@ -7,11 +7,11 @@ publish: true
 ## Common DataSource Settings
 
 The `DataSource` of the Kendo Grid for ASP.NET MVC contains configuration used by
-the [Kendo DataSource](http://www.kendoui.com/documentation/framework/datasource/overview.aspx) object.
+the [Kendo DataSource](http://docs.kendoui.com/api/framework/datasource) object.
 
 Kendo Grid for ASP.NET MVC supports two types of data sources -
-[server](http://www.kendoui.com/documentation/asp-net-mvc/helpers/grid/server-binding.aspx) and
-[ajax](http://www.kendoui.com/documentation/asp-net-mvc/helpers/grid/ajax-binding.aspx).
+[server](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/server-binding) and
+[ajax](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/ajax-binding).
 
 ###  Aggregates
 
@@ -43,7 +43,7 @@ Specify the action method which will destroy existing models.
         .Destroy(destroy =>  destroy.Destroy(/### action ###/ "Destroy", /### controller ###/ "Home"))
     )
 ###   Events
-Handle the [events](http://www.kendoui.com/documentation/framework/datasource/events.aspx) of the Kendo DataSource object.
+Handle the [events](http://docs.kendoui.com/api/framework/datasource#events) of the Kendo DataSource object.
 
     .DataSource(dataSource => dataSource
         .Ajax() // or .Server()
@@ -231,9 +231,9 @@ To add grid columns use the `Columns` method:
 A bound column is declared via the `Bound` method. It has the following settings:
 
 ###   ClientTemplate
-A [Kendo template](http://www.kendoui.com/documentation/framework/templates/overview.aspx)
+A [Kendo template](http://docs.kendoui.com/getting-started/framework/templates/overview)
 which specifies the way the column is displayed. Works **only** when the grid is configured for
-[ajax binding](http://www.kendoui.com/documentation/asp-net-mvc/helpers/grid/ajax-binding.aspx).
+[ajax binding](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/ajax-binding).
 
     // Display the ProductName inside a strong tag
     columns.Bound(p => p.ProductName).ClientTemplate("<strong>#: ProductName #</strong>");
@@ -255,7 +255,7 @@ Specifies the format used when displaying the value of the bound property. Empty
     // Format the value as currency
     columns.Bound(p => p.UnitPrice).Format("{0:C}");
 
-The available formats are described in the [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx)
+The available formats are described in the [Globalization](http://docs.kendoui.com/getting-started/framework/globalization/overview)
 help topic.
 
 ###   Groupable
@@ -271,7 +271,7 @@ columns.Bound(p =&gt; p.ProductID).Sortable(false);
 
 ###   Template
 Sets the server template which will be used when displaying the bound field.  Works **only**
-when the grid is configured for [server binding](http://www.kendoui.com/documentation/asp-net-mvc/helpers/grid/server-binding.aspx).
+when the grid is configured for [server binding](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/server-binding).
 Template syntax is different for WebForms and Razor views. In WebForms the template is a [server side code block](http://msdn.microsoft.com/en-us/library/ms178135%28vs.80%29.aspx).
 In Razor the template is a [templated razor delegate](http://haacked.com/archive/2011/02/27/templated-razor-delegates.aspx).
 
@@ -320,8 +320,8 @@ In Razor the template is a [templated razor delegate](http://haacked.com/archive
 A template column is declared via the `Template` method. It has the following settings:
 
 ###   ClientTemplate
-A [Kendo template](http://www.kendoui.com/documentation/framework/templates/overview.aspx)
-which specifies the way the column is displayed. Works **only** when the grid is configured for [ajax binding](http://www.kendoui.com/documentation/asp-net-mvc/helpers/grid/ajax-binding.aspx).
+A [Kendo template](http://docs.kendoui.com/getting-started/framework/templates/overview)
+which specifies the way the column is displayed. Works **only** when the grid is configured for [ajax binding](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/ajax-binding).
 
 ###   Title
 Sets the text displayed in the header of the column. Empty by default.

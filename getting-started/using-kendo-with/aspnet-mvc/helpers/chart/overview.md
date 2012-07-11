@@ -6,7 +6,7 @@ publish: true
 
 # Chart
 
-The Chart HtmlHelper extension is a server-side wrapper for the [Kendo UI Chart](http://www.kendoui.com/documentation/dataviz/chart/overview.aspx) widget.
+The Chart HtmlHelper extension is a server-side wrapper for the [Kendo UI Chart](http://docs.kendoui.com/api/dataviz/chart) widget.
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ There are two ways to bind a Kendo Chart for ASP.NET MVC:
 
 Here is how to configure the Kendo Chart for server binding to the list of InternetUsers:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method and pass the InternetUsers list as the model:
 
@@ -64,7 +64,7 @@ Here is how to configure the Kendo Chart for server binding to the list of Inter
 ## Accessing an Existing Chart
 
 You can reference an existing chart instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/dataviz/chart/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/dataviz/chart#methods) to control its behavior.
 
 ### Accessing an existing Chart instance
 
@@ -78,7 +78,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI Chart events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/dataviz/chart/events.aspx) exposed by Kendo UI Chart:
+You can subscribe to all [events](http://docs.kendoui.com/api/dataviz/chart#events) exposed by Kendo UI Chart:
 
 
 ### WebForms - subscribe by handler name

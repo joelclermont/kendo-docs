@@ -6,13 +6,13 @@ publish: true
 
 # Splitter
 
-The Splitter HtmlHelper extension is a server-side wrapper for the [Kendo UI Splitter](http://www.kendoui.com/documentation/ui-widgets/splitter/overview.aspx) widget.
+The Splitter HtmlHelper extension is a server-side wrapper for the [Kendo UI Splitter](http://docs.kendoui.com/api/web/splitter) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo TreeView:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -45,7 +45,7 @@ Here is how to configure a simple Kendo TreeView:
 ## Accessing an Existing Splitter
 
 You can reference an existing Splitter instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/splitter/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/splitter#methods) to control its behavior.
 
 
 
@@ -62,7 +62,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI Splitter events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/splitter/events.aspx) exposed by Kendo UI Splitter:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/splitter#events) exposed by Kendo UI Splitter:
 
 ### WebForms - subscribe by handler name
 

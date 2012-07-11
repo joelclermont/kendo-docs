@@ -6,13 +6,13 @@ publish: true
 
 # NumericTextBox
 
-The NumericTextBox HtmlHelper extension is a server-side wrapper for the [Kendo UI NumericTextBox](http://www.kendoui.com/documentation/ui-widgets/numerictextbox/overview.aspx) widget.
+The NumericTextBox HtmlHelper extension is a server-side wrapper for the [Kendo UI NumericTextBox](http://docs.kendoui.com/api/web/numerictextbox) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo NumericTextBox:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -41,7 +41,7 @@ Here is how to configure a simple Kendo NumericTextBox:
 ## Accessing an Existing NumericTextBox
 
 You can reference an existing NumericTextBox instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/numerictextbox/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/numerictextbox#methods) to control its behavior.
 
 
 ### Accessing an existing NumericTextBox instance
@@ -57,7 +57,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI NumericTextBox events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/numerictextbox/events.aspx) exposed by Kendo UI NumericTextBox:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/numerictextbox#events) exposed by Kendo UI NumericTextBox:
 
 ### WebForms - subscribe by handler name
 

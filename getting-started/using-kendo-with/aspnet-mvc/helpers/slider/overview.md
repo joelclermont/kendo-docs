@@ -6,7 +6,7 @@ publish: true
 
 # Slider
 
-The Slider HtmlHelper extension is a server-side wrapper for the&nbsp;[Kendo UI Slider](http://www.kendoui.com/documentation/ui-widgets/slider/overview.aspx)&nbsp;widget.
+The Slider HtmlHelper extension is a server-side wrapper for the&nbsp;[Kendo UI Slider](http://docs.kendoui.com/api/web/slider)&nbsp;widget.
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ There are two types of Slider:
 
 Here is how to configure a simple Kendo Slider:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -46,7 +46,7 @@ Here is how to configure a simple Kendo Slider:
 ## Accessing an Existing Slider
 
 You can reference an existing slider instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/slider/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/slider#methods) to control its behavior.
 
 ### Accessing an existing slider instance
 
@@ -61,7 +61,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI Slider events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/slider/events.aspx) exposed by Kendo UI Slider:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/slider#events) exposed by Kendo UI Slider:
 
 ### WebForms - subscribe by handler name
 

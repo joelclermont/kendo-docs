@@ -6,13 +6,13 @@ publish: true
 
 # TreeView
 
-The TreeView HtmlHelper extension is a server-side wrapper for the [Kendo UI TreeView](http://www.kendoui.com/documentation/ui-widgets/treeview/overview.aspx) widget.
+The TreeView HtmlHelper extension is a server-side wrapper for the [Kendo UI TreeView](http://docs.kendoui.com/api/web/treeview) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo TreeView:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -45,7 +45,7 @@ Here is how to configure a simple Kendo TreeView:
 ## Accessing an Existing TreeView
 
 You can reference an existing TreeView instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/treeview/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/treeview#methods) to control its behavior.
 
 ### Accessing an existing TreeView instance
 
@@ -60,7 +60,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI TreeView events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/treeview/events.aspx) exposed by Kendo UI TreeView:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/treeview#events) exposed by Kendo UI TreeView:
 
 ### WebForms - subscribe by handler name
 

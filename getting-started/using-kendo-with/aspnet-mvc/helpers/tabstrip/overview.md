@@ -6,7 +6,7 @@ publish: true
 
 # TabStrip
 
-The TabStrip HtmlHelper extension is a server-side wrapper for the [Kendo UI TabStrip](http://www.kendoui.com/documentation/ui-widgets/tabstrip/overview.aspx) widget.
+The TabStrip HtmlHelper extension is a server-side wrapper for the [Kendo UI TabStrip](http://docs.kendoui.com/api/web/tabstrip) widget.
 
 ## Getting Started
 
@@ -18,7 +18,7 @@ There are several ways to define items of the Kendo TabStrip for ASP.NET MVC
 
 ### Define items of the Kendo TabStrip
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -50,7 +50,7 @@ There are several ways to define items of the Kendo TabStrip for ASP.NET MVC
 
 ### Bind Kendo TabStrip to a sitemap
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a simple sitemap with **sample.sitemap** file name at the root of the project:
 
@@ -87,7 +87,7 @@ There are several ways to define items of the Kendo TabStrip for ASP.NET MVC
 
 ### Bind Kendo TabStrip to a model
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method and pass the Categories table as the model:
 
@@ -127,7 +127,7 @@ There are several ways to define items of the Kendo TabStrip for ASP.NET MVC
 ## Accessing an Existing TabStrip
 
 You can reference an existing TabStrip instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/tabstrip/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/tabstrip#methods) to control its behavior.
 
 ### Accessing an existing TabStrip instance
 
@@ -141,7 +141,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI TabStrip events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/tabstrip/events.aspx) exposed by Kendo UI TabStrip:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/tabstrip#events) exposed by Kendo UI TabStrip:
 
 ### WebForms - subscribe by handler name
 

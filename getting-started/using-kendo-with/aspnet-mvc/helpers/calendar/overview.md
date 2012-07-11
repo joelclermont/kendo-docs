@@ -6,13 +6,13 @@ publish: true
 
 # Calendar
 
-The Calendar HtmlHelper extension is a server-side wrapper for the [Kendo UI Calendar](http://www.kendoui.com/documentation/ui-widgets/calendar/overview.aspx) widget.
+The Calendar HtmlHelper extension is a server-side wrapper for the [Kendo UI Calendar](http://docs.kendoui.com/api/web/calendar) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo Calendar:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://www.kendoui.com/documentation/asp-net-mvc/introduction.aspx) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -41,7 +41,7 @@ Here is how to configure a simple Kendo Calendar:
 ## Accessing an Existing Calendar
 
 You can reference an existing Calendar instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://www.kendoui.com/documentation/ui-widgets/calendar/methods.aspx) to control its behavior.
+Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/calendar#methods) to control its behavior.
 
 
 
@@ -58,7 +58,7 @@ Once a reference has been established, you can use the [API](http://www.kendoui.
 
 ## Handling Kendo UI Calendar events
 
-You can subscribe to all [events](http://www.kendoui.com/documentation/ui-widgets/calendar/events.aspx) exposed by Kendo UI Calendar:
+You can subscribe to all [events](http://docs.kendoui.com/api/web/calendar#events) exposed by Kendo UI Calendar:
 
 
 
