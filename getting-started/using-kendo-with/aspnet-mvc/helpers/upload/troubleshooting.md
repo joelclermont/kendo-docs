@@ -38,7 +38,7 @@ You can override these settings in the web.config file.
                 </security>
         </system.webServer>
 
-## Problem: AJAX requests to ASP.NET MVC actions are blocked during upload
+## Problem: Requests to ASP.NET MVC actions are blocked during upload
 
 ### Suggested actions
 
