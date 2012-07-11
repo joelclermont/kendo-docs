@@ -1,5 +1,6 @@
 ---
 title: Using Kendo With Rails
+slug: gs-using-kendo-with-rails
 tags: 101, Getting Started, Rails
 related: gs-what-is-kendo, gs-downloading-kendo, gs-dummy-test
 publish: true
