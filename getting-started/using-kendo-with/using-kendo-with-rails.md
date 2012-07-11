@@ -1,28 +1,25 @@
 ---
 title: Using Kendo With Rails
-slug: gs-using-kendo-with-rails
 tags: 101, Getting Started, Rails
-related: gs-what-is-kendo, gs-downloading-kendo
+related: gs-what-is-kendo, gs-downloading-kendo, gs-dummy-test
 publish: true
 ---
 
 # Using Kendo with Ruby on Rails
 
-**Summary** 
+In this article, I'll show you how to get up and running with Kendo UI in Ruby on Rails applications. In particular, I cover using the [kendoui-rails Gem][1], though the concepts in this article are the same if you are using a fully-licensed version of Kendo UI.
 
-Today, we're announcing the availability of a RubyGem that helps you quickly add Kendo UI to your Rails applications. In this post, I'll share an overview of the Gem, a quick tutorial on how to use it, and even a video of the new Gem in action.
+### `kendoui-rails`: A Ruby Gem for Rails Apps
 
-### A RubyGem?
+Ruby on Rails developers love speeding up common development tasks, and we do too. As such, we created the [kendoui-rails][1] gem to get Kendo UI into your Rails apps with little manual effort on your part. If you're using the Rails 3.1+ [Asset Pipeline][4], you can get up and running with Kendo UI with two simple commands. Even if not, or if you're using an older version of Rails, this gem will get you rolling with Rails faster.
 
-In addition to putting together some killer features for the next release of Kendo UI ([have you seen the latest beta](http://demos.kendoui.com/beta/)? It's awesome!) we also want to give you the best resources for building awesome sites and applications with Kendo UI. Along those lines, we've created a RubyGem for using Kendo in Rails applications that we'd like to share with you today.
+If you want the sources, check it out over at [http://github.com/telerik/kendoui_rails][2], and feel free to fork it, send us pull-requests, enter issues or offer any other kind of feedback you think we need. 
 
-The gem, which is designed to get Kendo into your Rails apps with little manual effort on your part, is called '[kendoui-rails](https://rubygems.org/gems/kendoui-rails).' If you want the sources, check it out over at [http://github.com/telerik/kendoui_rails](http://github.com/telerik/kendoui_rails), and feel free to fork it, send us pull-requests, enter issues or offer any other kind of feedback you think we need. 
+> The kendo-rails gem provides a GPLv3-licensed version of the latest major release of Kendo UI Web. If you own a licensed version of Kendo UI DataViz or Kendo UI Mobile and you want to use the Gem, you can create a private fork and extend the pipeline references below.
 
-> this kendo-rails gem provides a GPLv3-licensed version of the latest major release of Kendo UI Web.
+### Installing the `kendoui-rails` Gem
 
-### Cool. How do I use it?
-
-Getting started with the Gem is simple, just create a new Rails application (if you already have one, skip this step). Mine is called 'shoe_fodder':
+To start using rails with Kendo UI, create a new Rails application:
 
 	$ rails new shoe_fodder
  	$ cd shoe_fodder
@@ -31,32 +28,38 @@ Then, edit your Gemfile by adding a reference to the gem, just after `gem 'jquer
 
 	gem 'kendoui-rails'
 
-Now, return to your console and run `bundle install.` Check that wall of text that Bundler sends your way to confirm that kendoui-rails (v0.0.5 at the time of this post) has been properly installed.
+> Much like Kendo UI depends on jQuery, kendoui-rails depends on the jquery-rails gem
 
-This step is where many JavaScript-enabling RubyGems would drop you off, leaving you to handle asset configuration on your own. Not our Gem, though! We said 'little manual effort,' and we meant it. The kendoui-rails Gem includes a custom install generator that will make sure you have all the JavaScript and CSS you need to get cracking with Kendo. Just type the following in your console:
+Now, return to your console and run `bundle install.` Check that wall of text that Bundler sends your way to confirm that kendoui-rails has been properly installed.
+
+### Installing Kendo UI Assets
+
+The kendoui-rails Gem includes a custom install generator that will make sure you have all the JavaScript and CSS you need to get going with Kendo. To use it, type the following in your console:
 
 	$ rails generate kendoui:install
 
-Now, depending on your Rails version and environment, one of two things will happen here. If you're using Rails 3.1 or later, and have the new asset pipeline features enabled--they are, by default--the Gem will add the appropriate references to your `app/assets/javascripts/application.js` and `app/assets/stylesheets/application.css` files:
+Depending on your Rails version and environment, one of two things will happen in this step: 
 
-	// app/assets/javascripts/application.js
-	//= require kendo/kendo.all.min
+* If you're using Rails 3.1 or later, and have the new asset pipeline features enabled (they are, by default) the Gem will add the appropriate references to your `app/assets/javascripts/application.js` and `app/assets/stylesheets/application.css` files:
 
-	/* app/assets/stylesheets/application.css */
-	*= require kendo/kendo.common.min
-	*= require kendo/kendo.default.min
+		// app/assets/javascripts/application.js
+		//= require kendo/kendo.all.min
 
-If, on the other hand, you're using Rails 3.0 or previous, or have the asset pipeline disabled, the Gem will manually copy all the needed assets into your `public/` folder. From there, you can add the proper `<link>` and `<script>` references for Kendo, and you're off to the races!
+		/* app/assets/stylesheets/application.css */
+		*= require kendo/kendo.common.min
+		*= require kendo/kendo.default.min
 
-### But I want to use another theme!
+* If, on the other hand, you're using Rails 3.0 or previous, or have the asset pipeline disabled, the Gem will manually copy all the needed assets into the `public/` folder of your app. From there, you'll need to add the proper `<link>` and `<script>` references for Kendo UI.
 
-Ok, we have a switch for that. You no doubt noticed that the generator command used the 'default' theme upon installation. 'default' is, of course, the default, but you can use the '--theme' switch on the generator command to install another theme instead. Let's say I prefer BlueOpal:
+### Specifying an Alternate Theme
+
+Kendo UI ships with several out-of-the-box themes that you can use in your apps. In the example above, the default theme was installed into our app, but the Rails generator for the kendoui-rails gem provides a handy switch that you can use to specify another theme, if you wish. For instance, let's say I want my app to use the BlueOpal theme:
 
 	$ rails generate kendoui:install --theme=blueopal
 
-### Scaffold, Migrate, Add Kendo and Go!
+### Using Rails with Kendo UI
 
-Now that I've added Kendo UI into my rails app, I can do some quick scaffolding to see just how easy it is to use. I'll run the following in my terminal to generate a `shoe` model, including views and controller:
+Once the generator command completes, I have everything I need to start using Kendo UI in my Rails app. I'll start with some quick scaffolding and run the following in my terminal to generate a `shoe` model, including views and controller:
 
 	$ rails g scaffold shoe name price:decimal url replacement_mileage
 
@@ -64,7 +67,7 @@ Once that's finished, I'll migrate the database:
 
 	$ rake db:migrate
 
-Now, I'll navigate to my `shoes/new` view and add some Kendo goodness to the bottom of the page. In this case, an AutoComplete box that provides some assitance to the user when naming a new shoe:
+Now, to add a Kendo UI widget. I'll navigate to my `shoes/new` view and add some Kendo goodness to the bottom of the page. In this case, an [AutoComplete][5] box that provides some assistance to the user when naming a new shoe:
 
 	<script>
       $(function() {
@@ -73,27 +76,28 @@ Now, I'll navigate to my `shoes/new` view and add some Kendo goodness to the bot
       });
     </script>
 
-Then, I'll start up my server
+Next, I'll start up my server
 
 	$ rails server
 
-And, open up a browser at localhost:3000/shoes/new. 
+And finally, open up a browser at `localhost:3000/shoes/new`. 
 
  ![Kendo UI and Rails in Action](images/shoefodder.png)
 
-That's it! I'm rocking and rolling with Rails and Kendo UI from scratch in under three minutes. Or two minutes and twenty-seven seconds, to be exact. To show you just how quick this whole process can be--and prove that I didn't make that 2:2\. figure up--I recorded myself going through the exact same steps as above. Check out the embedded video below, or [watch it over on our YouTube channel](http://www.youtube.com/watch?v=7_KlxiCMQe8\. (Note: be sure to watch in Fullscreen mode to get all of the detail.)
+Using Kendo UI with Rails in your apps is simple with the kendo-rails gem. If you want to view a recorded walk-through of this process, you can check out the embedded video below, or [watch it over on our YouTube channel][3] (Note: be sure to watch in full screen mode to get all of the detail.)
 
 ### See the Gem in Action
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/7_KlxiCMQe8" frameborder="0"></iframe>
 
-### Give us Your Feedback!
-
-So what do you think? Is this Gem useful for your development? Let us know what you think here, and feel free to also suggest improvements, new features or anything here or over at the GitHub Repo.
-
 ### Links
 
-[kendoui-rails on GitHub](https://github.com/telerik/kendoui_rails)
-[kendoui-rails at RubyGems.org](https://rubygems.org/gems/kendoui-rails) 
+* [kendoui-rails on GitHub][2]
+* [kendoui-rails at RubyGems.org][1]
+* [Screencast on YouTube][3]
 
-[Screencast on YouTube](http://www.youtube.com/watch?v=7_KlxiCMQe8)
+[1]: https://rubygems.org/gems/kendoui-rails "kendoui-rails Gem"
+[2]: https://github.com/telerik/kendoui_rails "kendoui_rails on GitHub"
+[3]: http://www.youtube.com/watch?v=7_KlxiCMQe8 "Demo of the kendoui-rails Gem on YouTube"
+[4]: http://guides.rubyonrails.org/asset_pipeline.html "Rails 3.1 Asset Pipeline"
+[5]: /api/web/autocomplete "AutoComplete Reference"
