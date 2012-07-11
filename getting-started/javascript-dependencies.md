@@ -33,7 +33,7 @@ The minified versions of all JavaScript files (except jQuery) are also available
 
     http://cdn.kendostatic.com/<version>/js/<filename>.min.js
 
-**e.g.** `http://cdn.kendostatic.com/2011.3.1129/js/kendo.all.min.js`
+**e.g.** `http://cdn.kendostatic.com/2012.2.710/js/kendo.all.min.js`
 
 > **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN
 
@@ -52,7 +52,7 @@ can be included on a per-widget basis.
 4.  kendo.model.js (if binding to XML)
 5.  kendo.data.xml.js (if binding to XML)
 6.  kendo.data.js
-7.  kendo.fx.js (if animation is enabled)
+7.  kendo.fx.js (optional for animation)
 8.  kendo.popup.js
 9.  kendo.list.js
 10.  kendo.autocomplete.js
@@ -62,7 +62,7 @@ can be included on a per-widget basis.
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
-3.  kendo.fx.js (if animation is enabled)
+3.  kendo.fx.js (optional for animation)
 4.  kendo.calendar.js
 
 ### Chart
@@ -87,7 +87,7 @@ can be included on a per-widget basis.
 4.  kendo.model.js (if binding to XML)
 5.  kendo.data.xml.js (if binding to XML)
 6.  kendo.data.js
-7.  kendo.fx.js (if animation is enabled)
+7.  kendo.fx.js (optional for animation)
 8.  kendo.popup.js
 9.  kendo.list.js
 10.  kendo.combobox.js
@@ -107,7 +107,7 @@ can be included on a per-widget basis.
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
-3.  kendo.fx.js (if animation is enabled)
+3.  kendo.fx.js (optional for animation)
 4.  kendo.popup.js
 5.  kendo.calendar.js
 6.  kendo.datepicker.js
@@ -128,7 +128,7 @@ can be included on a per-widget basis.
 4.  kendo.model.js (if binding to XML)
 5.  kendo.data.xml.js (if binding to XML)
 6.  kendo.data.js
-7.  kendo.fx.js (if animation is enabled)
+7.  kendo.fx.js (optional for animation)
 8.  kendo.popup.js
 9.  kendo.list.js
 10.  kendo.dropdownlist.js
@@ -142,7 +142,7 @@ can be included on a per-widget basis.
 4.  kendo.list.js
 5.  kendo.dropdownlist.js
 6.  kendo.combobox.js
-7.  kendo.fx.js (if animation is enabled)
+7.  kendo.fx.js (optional for animation)
 8.  kendo.draganddrop.js (if popups are draggable and/or resizable)
 9.  kendo.window.js
 10.  kendo.editor.js
@@ -167,6 +167,7 @@ can be included on a per-widget basis.
 3.  kendo.data.odata.js (if binding to OData)
 4.  kendo.data.xml.js (if binding to XML)
 5.  kendo.data.js
+6.  kendo.fx.js (optional for animation)
 6.  kendo.popup.js (if editing or filtering is enabled)
 7.  kendo.list.js&nbsp;(if editing or filtering is enabled)
 8.  kendo.calendar.js (if editing or filtering is enabled)
@@ -206,7 +207,7 @@ can be included on a per-widget basis.
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
-3.  kendo.fx.js
+3.  kendo.fx.js (optional for animation)
 4.  kendo.popup.js
 5.  kendo.menu.js
 
@@ -222,7 +223,7 @@ can be included on a per-widget basis.
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
-3.  kendo.fx.js
+3.  kendo.fx.js (optional for animation)
 4.  kendo.panelbar.js
 
 
@@ -239,10 +240,9 @@ can be included on a per-widget basis.
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
-3.  kendo.fx.js
-4.  kendo.draganddrop.js
-5.  kendo.resizable.js
-6.  kendo.splitter.js
+3.  kendo.draganddrop.js
+4.  kendo.resizable.js
+5.  kendo.splitter.js
 
 
 ### TabStrip
@@ -250,7 +250,7 @@ can be included on a per-widget basis.
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.js
-4.  kendo.fx.js
+3.  kendo.fx.js (optional for animation)
 5.  kendo.tabstrip.js
 
 
@@ -258,7 +258,7 @@ can be included on a per-widget basis.
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
-3.  kendo.fx.js
+3.  kendo.fx.js (optional for animation)
 4.  kendo.popup.js
 5.  kendo.timepicker.js
 
@@ -268,7 +268,7 @@ can be included on a per-widget basis.
 1.  jquery-1.7.1.js
 2.  kendo.core.js
 3.  kendo.data.js
-4.  kendo.fx.js (if animation is enabled)
+4.  kendo.fx.js (optional for animation)
 5.  kendo.draganddrop.js (if drag &amp; drop enabled)
 6.  kendo.treeview.js
 
@@ -291,7 +291,7 @@ can be included on a per-widget basis.
 
 1.  jquery-1.7.1.js
 2.  kendo.core.js
-3.  kendo.fx.js
+3.  kendo.fx.js (optional for animation)
 4.  kendo.draganddrop.js
 5.  kendo.resizable.js
 6.  kendo.window.js
