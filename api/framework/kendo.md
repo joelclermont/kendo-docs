@@ -286,7 +286,7 @@ The format string which should be used to format the value.
 
 ## Properties
 
-### support `Object`
+### support
 A range of useful supported by the current browser capabilities and features.
 
 #### touch `Boolean`
@@ -295,11 +295,8 @@ Return true if the browser supports touch events.
 #### pointers `Boolean`
 Return true if the browser supports pointer events (IE10 and Metro apps currently).
 
-#### scrollbar
-Checks for the browser scrollbar width
-
-##### Returns
-Scrollbar width in pixels, 0 if no scrollbars available (e.g. in mobile).
+#### scrollbar `Function`
+Checks for the browser scrollbar width, returns scrollbar width in pixels, 0 if no scrollbars available (e.g. in mobile).
 
 #### hasHW3D `Boolean`
 Return true if the browser supports 3D transitions and transforms.
@@ -310,22 +307,22 @@ Returns true if the browser supports overflow-scrolling CSS property (currently 
 #### transforms `Object`
 Returns a number of browser specific transformation properties
 
-##### css `String`
+#### transforms.css `String`
 Returns the CSS prefix of the current browser proprietary transform properties. E.g. "-webkit-", "-moz-", "-o-", "-ms-"
 
-##### prefix `String`
+#### transforms.prefix `String`
 Returns the JavaScript prefix of the current browser proprietary transform properties. E.g. "webkit", "Moz", "O", "ms"
 
 #### transitions `Object`
 Returns a number of browser specific transition properties
 
-##### css `String`
+#### transitions.css `String`
 Returns the CSS prefix of the current browser proprietary transition properties. E.g. "-webkit-", "-moz-", "-o-", "-ms-"
 
-##### prefix `String`
+#### transitions.prefix `String`
 Returns the JavaScript prefix of the current browser proprietary transition properties. E.g. "webkit", "Moz", "O", "ms"
 
-##### event `String`
+#### transitions.event `String`
 Returns the transition end event name in the current browser. E.g. "webkitTransitionEnd", "transitionend", "oTransitionEnd"
 
 #### devicePixelRatio `Number` *(default: 1)*
@@ -340,19 +337,19 @@ Returns the current zoom level on a mobile browser (returns 1 on desktop).
 #### mobileOS `Object`
 Returns a number of properties that identify the current mobile browser. Parses navigator.userAgent to do it. Undefined on desktop.
 
-##### device `String`
+#### mobileOS.device `String`
 Returns the current mobile device identificator, can be "fire", "android", "iphone", "ipad", "meego", "webos", "blackberry", "playbook", "winphone", "windows".
 
-##### device `String`
+#### mobileOS.device `String`
 Returns the current mobile device identificator, can be "fire", "android", "iphone", "ipad", "meego", "webos", "blackberry", "playbook", "winphone", "windows".
 
-##### tablet `String` *(default: false)*
+#### mobileOS.tablet `String` *(default: false)*
 Returns the current tablet identificator or false if the current device is not a tablet, can be "fire", "ipad", "playbook" or false.
 
-##### browser `String` *(default: "default")*
+#### mobileOS.browser `String` *(default: "default")*
 Returns the current browser identificator or "default" if the browser is the native one, can be "omini", "omobile", "firefox", "mobilesafari", "webkit", "ie", "default".
 
-##### name `String`
+#### mobileOS.name `String`
 Returns the current os name identificator, can be "ios", "android", "blackberry", "windows", "webos", "meego". For convenience a property with the os name is also initialized,
 for instance:
 
@@ -360,13 +357,13 @@ for instance:
         // Do something in Android
     }
 
-##### majorVersion `String`
+#### mobileOS.majorVersion `String`
 The current OS major version, e.g. "5" in iOS 5.1.
 
-##### minorVersion `String`
+#### mobileOS.minorVersion `String`
 The current OS minor versions, e.g. "1.1" in iOS 5.1.1.
 
-##### flatVersion `Number`
+#### mobileOS.flatVersion `Number`
 A convenience property to allow easier version checks, for instance:
 
     var os = kendo.support.mobileOS;
@@ -374,7 +371,7 @@ A convenience property to allow easier version checks, for instance:
         // Do something in iOS 4.x
     }
 
-##### appMode `Boolean`
+#### mobileOS.appMode `Boolean`
 Returns true if running in application mode - pinned to desktop in iOS or running in PhoneGap/WebView.
 
 ## Standard number formats
