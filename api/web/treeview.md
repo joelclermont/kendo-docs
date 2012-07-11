@@ -472,12 +472,12 @@ The text that is being searched for.
 ### findByUid
 
 Searches a TreeView for a node with the given unique identifier.
-Applicable when the widget is bound to a HierarchicalDataSource.
+Applicable when the widget is bound to a [HierarchicalDataSource](/api/framework/hierarchicaldatasource).
 
-#### Search a TreeView for the item that has the text, "CSS3 is da bomb!"
+#### Search a TreeView for the item that has the unique id "95c1925d-a779-47fc-8420-b4274f01c037"
 
     var treeView = $("#treeView").data("kendoTreeView");
-    var foundNode = treeView.findByText("CSS3 is da bomb!");
+    var node = treeView.findByUid("95c1925d-a779-47fc-8420-b4274f01c037");
 
 #### Parameters
 
