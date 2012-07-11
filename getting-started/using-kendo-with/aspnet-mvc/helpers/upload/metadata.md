@@ -26,9 +26,7 @@ Any metadata that is known during rendering can be forwarded to the save action 
         }
 
 2. Add the message ID to the route values.
-
     - WebForms
-
         <%= Html.Telerik().Upload()
                 .Name("attachments")
                 .Async(async => async
@@ -38,7 +36,6 @@ Any metadata that is known during rendering can be forwarded to the save action 
         %>
 
     - Razor
-
         @(Html.Telerik().Upload()
                 .Name("attachments")
                 .Async(async => async
@@ -85,7 +82,6 @@ You can also add metadata directly on the client. This is useful when the data i
         }
 
 3. Attach the event handler.
-
     - WebForms
 
         <%= Html.Telerik().Upload()
@@ -99,7 +95,6 @@ You can also add metadata directly on the client. This is useful when the data i
         %>
 
     - Razor
-
         @(Html.Telerik().Upload()
             .Name("attachments")
             .Async(async => async
@@ -154,9 +149,7 @@ The Upload requires the response to be in JSON format with Content-Type set to "
         }
 
 3. Attach the event handler
-
     - WebForms
-
         <%= Html.Telerik().Upload()
             .Name("attachments")
             .Async(async => async
@@ -168,7 +161,6 @@ The Upload requires the response to be in JSON format with Content-Type set to "
         %>
 
     - Razor
-
         @(Html.Telerik().Upload()
             .Name("attachments")
             .Async(async => async
