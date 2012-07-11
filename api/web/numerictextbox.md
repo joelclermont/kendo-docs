@@ -10,7 +10,6 @@ publish: true
 ## Description
 
 
-
 The NumericTextBox widget can convert an INPUT element into a numeric, percentage or currency textbox.
 The type is defined depending on the specified format. The widget renders spin buttons and with their help you can
 increment/decrement the value with a predefined step. The NumericTextBox widget accepts only numeric entries.
@@ -34,6 +33,7 @@ When a **NumericTextBox** is initialized, it will automatically
 wraps the input element with span element and will render spin
 buttons.
 
+> When working the input being used for your NumericTextBox, always select by id instead of class. Behind the scenes, the NumericTextBox creates a secondary element to represent the visual look of the widget, and copies over all non-id attributes, including the class. As such, selecting this widget by class can cause unexpected results.
 
 ### Configuring NumericTextBox behaviors
 
