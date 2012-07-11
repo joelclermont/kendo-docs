@@ -1,7 +1,8 @@
 ---
 title: Using Kendo With Rails
+slug: gs-using-kendo-with-rails
 tags: 101, Getting Started, Rails
-related: gs-what-is-kendo, gs-downloading-kendo, gs-dummy-test
+related: gs-what-is-kendo, gs-downloading-kendo
 publish: true
 ---
 
@@ -28,7 +29,7 @@ Then, edit your Gemfile by adding a reference to the gem, just after `gem 'jquer
 
 	gem 'kendoui-rails'
 
-> Much like Kendo UI depends on jQuery, kendoui-rails depends on the jquery-rails gem
+> Because Kendo UI depends on jQuery, kendoui-rails depends on the jquery-rails gem, so make sure to add a reference to this gem as well if it's no longer in your Gemfile for some reason.
 
 Now, return to your console and run `bundle install.` Check that wall of text that Bundler sends your way to confirm that kendoui-rails has been properly installed.
 

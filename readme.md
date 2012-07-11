@@ -1,5 +1,6 @@
 ---
 title: Kendo UI Documentation Repo
+slug: root-readme
 publish: false
 ---
 
