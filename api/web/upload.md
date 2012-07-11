@@ -81,8 +81,8 @@ autoUpload to false.
 
 ### async.batch `Boolean`*(default: false)*
 
-The selected files will be uploaded in separate requests by default. You can change this behavior by setting
-batch to true.
+The selected files will be uploaded in separate requests, if this is supported by the browser.
+You can change this behavior by setting batch to true.
 
 ### async.removeField `String`*(default: "fileNames")*
 
