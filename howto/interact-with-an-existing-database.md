@@ -7,9 +7,11 @@ publish: true
 
 # How-To: Interact With An Existing Database
 
-In this how-to, we'll examine how to interact with an existing database via the DataSource component of Kendo UI.
+In this how-to, we'll examine how to interact with an existing database via the DataSource of Kendo UI.
 
-The DataSource component plays a central role in the applications and sites built with Kendo UI. Fundamentally, it is an abstraction over local or remote data. However, it has many other responsibilities as well, including:
+## Introduction to the DataSource
+
+The DataSource plays a central role in the applications and sites built with Kendo UI. Fundamentally, it is an abstraction over local or remote data. However, it has many other responsibilities as well, including:
 
 * retrieving data from a remote endpoint;
 * maintaining the structure and type of the data it represents (schema);
@@ -19,10 +21,36 @@ The DataSource component plays a central role in the applications and sites buil
 * calculating and maintaining aggregates, sorting order, and page sizes;
 * and, providing a query mechanism via filter expressions.
 
-> To learn more, make sure to check out the [API reference](http://docs.kendoui.com/api/framework/datasource) or [demos](http://demos.kendoui.com/web/datasource/index.html) of the DataSource.
+> To learn more about the capabilities of the DataSource, make sure to check out its [API reference](http://docs.kendoui.com/api/framework/datasource) or [demos](http://demos.kendoui.com/web/datasource/index.html).
 
-## Connecting the DataSource Component to a Remote Database
+## Exposing Data via HTTP(S)
 
-The DataSource component may only access remote data exposed via HTTP(S).
+Many modern databases support the ability to expose data via Internet-friendly protocols like HTTP(S). However, it is strongly recommended to implement a service layer to expose this data instead. Doing so will provide a number of benefits to the producers and consumers of this data. These benefits include:
 
-In the case where data stored in a remote database (SQL Server, Oracle, MySQL, CouchDB, etc.), it is already assumed that the data is accessible to query via HTTP. This is necessary since we are talking about JavaScript running in the context of the browser. So, at a basic level, this is what is required for us to integrate your data with our framework. In terms of the actual data coming across the wire, this can be represented in a number of different ways. Out-of-the-box, Kendo UI supports XML, OData, and JSON.
+* improved useability through APIs and (optionally) denormalization;
+* reduced exposure of (potentially) sensitive data;
+* and/or, abstraction layer for additional architectural concerns (i.e. service throttling).
+
+There are many frameworks that support the creation of service endpoints like [ASP.NET Web API](http://www.asp.net/web-api).
+
+## Accessing Remote Data
+
+The DataSource may query a remote endpoint that provides data stored in a remote database (SQL Server, Oracle, MySQL, CouchDB, etc.) via HTTP(S). Operations conducted by the DataSource against this remote endpoint are done so via [jQuery.ajax()](http://api.jquery.com/jQuery.ajax/) and therefore, subject to the same security constraints enforced by the user agent. Additional security constraints also apply to XHRs made across different domains. The DataSource may query remote endpoints from different domains via [JSONP](http://en.wikipedia.org/wiki/JSONP). This is accomplished by setting the `dataType` configuration property:
+
+	var remoteDataSource = new kendo.data.DataSource({
+		transport: {
+			read: {
+				url: "http://search.twitter.com/search.json",
+				dataType: "jsonp",
+				data: {
+					q: function() {
+						return $("#searchFor").val();
+					}
+				}
+			}
+		}
+	});
+
+In this example, the DataSource is initialized to represent an in-memory cache of tweets from the search service for Twitter. Setting the `dataType` configuration property is required to instruct the DataSource to access the endpoint.
+
+> Refer to the how-to article entitled, [How To: Use CORS with All (Modern) Browsers](http://docs.kendoui.com/howto/use-cors-with-all-modern-browsers) for more information about Cross-Origin Resource Sharing (CORS).
