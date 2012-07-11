@@ -164,7 +164,7 @@ Defines the inline handler of the Complete client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
 
 #### Parameters
 
@@ -269,7 +269,7 @@ Defines the inline handler of the Progress client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
 
 #### Parameters
 

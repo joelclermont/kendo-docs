@@ -51,7 +51,7 @@ Configures the area chart labels.
         .Position(ChartBarLabelsPosition.Above)
         .Visible(true)
         );
-        )
+    )
         %>
 
 #### Parameters

@@ -256,7 +256,7 @@ Sets the labels template.
         .Visible(true);
         );
         )
-        .Render();
+    .Render();
         %>
 
 #### Parameters

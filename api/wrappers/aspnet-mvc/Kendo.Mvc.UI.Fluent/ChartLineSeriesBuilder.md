@@ -51,7 +51,7 @@ Configures the line chart labels.
         .Position(ChartBarLabelsPosition.Above)
         .Visible(true)
         );
-        )
+    )
         %>
 
 #### Parameters
