@@ -89,7 +89,6 @@ be availble in your views.
                  <add namespace="System.Web.Routing" />
                  <add namespace="System.Linq" />
                  <add namespace="System.Collections.Generic" />
-
                  <add namespace="Kendo.Mvc.UI" />
              </namespaces>
     * If you are using the Razor view engine open the **web.config** file which is in the **Views** folder
@@ -102,7 +101,6 @@ be availble in your views.
                          <add namespace="System.Web.Mvc.Ajax" />
                          <add namespace="System.Web.Mvc.Html" />
                          <add namespace="System.Web.Routing" />
-
                          <add namespace="Kendo.Mvc.UI" />
                      </namespaces>
                  </pages>
