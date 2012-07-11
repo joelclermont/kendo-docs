@@ -1,14 +1,16 @@
 ---
-title: Using Kendo With Rails
-slug: gs-using-kendo-with-rails
-tags: 101, Getting Started, Rails
-related: gs-what-is-kendo, gs-downloading-kendo
+title: MVVM Features in Kendo UI
+slug: gs-mvvm-features-in-kendo-ui
+tags: tutorial, mvvm
+related: mvvm-overview
 publish: true
 ---
 
 # MVVM in Kendo UI Walkthrough
 
-For those not familiar with the term **MVVM**, lets gets some context and then we’ll jump in and take a look at how to use it.
+This document provides an in-depth look on creating Kendo UI apps that use framework MVVM features. For those not familiar with the term **MVVM**, we'll start by setting some context.
+
+## A Brief MVVM Primer
 
 ### The Problem
 
@@ -30,7 +32,7 @@ Lets look at a simple scenario and how we might typically build this application
 
 ### An Example of Developing Without MVVM
 
-Have a look at the “old school” way that we might build a simple list application.
+Let's take a look at how one might build a simple list application without MVVM (click the JavaScript and HTML tabs of the embedded fiddle to view the code).
 
 <iframe frameborder="0" allowfullscreen="allowfullscreen" src="http://jsfiddle.net/NqSuS/embedded/result,js,html" style="width: 100%; height: 300px;"></iframe>
 
