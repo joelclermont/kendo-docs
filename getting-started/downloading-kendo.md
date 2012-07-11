@@ -16,6 +16,8 @@ Contents of Kendo UI zip file distribution:
 * /js - Kendo UI minified javascript files
 * /source - Kendo UI complete source code
 * /styles - Kendo UI minified css styles
+* /vsdoc - Kendo UI completion helper for VS2008 SP1 or newer
+* changelog.html - Kendo UI release notes
 
 ## Installing and Getting Started with Kendo UI
 
