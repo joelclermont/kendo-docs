@@ -2,7 +2,7 @@
 title: Part 3 - Hello HTML5
 slug: tutorial-html5-development-with-asp-net-part-3-hello-html5
 tags: Tutorial
-publish: false
+publish: true
 ---
 
 # Tutorial: HTML5 Development With ASP.NET Part 3, Hello HTML5
