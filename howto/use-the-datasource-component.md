@@ -23,9 +23,9 @@ The DataSource plays a central role in the applications and sites built with Ken
 
 > To learn more about the capabilities of the DataSource, make sure to check out its [API reference](http://docs.kendoui.com/api/framework/datasource) or [demos](http://demos.kendoui.com/web/datasource/index.html).
 
-## Creating a Local DataSource
+## Creating a DataSource for Local Data
 
-Creating a DataSource to local data is simple:
+Creating a DataSource for local data is simple:
 
 	var movies = [
 		{ title: "Star Wars: A New Hope", year: 1977 },
@@ -39,3 +39,29 @@ In this example, the variable, `localDataSource` is a DataSource that is initial
 
 	localDataSource.read();
 
+When the DataSource is bound to a widget or chart, the explicit invocation may not be necessary; their default configuration is set to automatically bind to an associated DataSource. However, this may be overriden (i.e. `autoBind`).
+
+## Creating a DataSource for Remote Data
+
+The process of creating a DataSource for remote data differs in several ways from creating a DataSource for a local data:
+
+* a transport must identify the protocol(s), URL(s) of endpoints, and serialization format(s) for any/all CRUD operations;
+* optionally requires the use of a `parameterMap`, which marshalls request parameters to the format of a remote endpoint;
+* and, optionally configures the use of server operations for calculating aggregates, defining filters, and supporting features like grouping, paging, and sorting.
+
+Here's an example of creating a DataSource for data from a remote endpoint:
+
+	var remoteDataSource = new kendo.data.DataSource({
+		type: "odata",
+		transport: {
+			read: "http://odata.netflix.com/Catalog/Titles"
+		}
+	});
+
+The variable, `remoteDataSource` is a DataSource that is initialized to represent an in-memory cache of movies titles from the Netflix catalog service, which employs the [Open Data Protocol](http://www.odata.org/) (OData). It is only configured to act as a read-only source of data to any widgets to which it is bound.
+
+As is the case with creating a DataSource for local data, the data provided by the Netflix catalog service is not loaded until the `.read()` method is called:
+
+	remoteDataSource.read();
+
+When the DataSource is bound to a widget or chart, the explicit invocation may not be necessary; their default configuration is set to automatically bind to an associated DataSource. However, this may be overriden (i.e. `autoBind`).
