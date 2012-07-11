@@ -31,7 +31,7 @@ publish: true
             .k-i-arrow-w
             .k-i-seek-w
             .k-i-seek-e
-    for more information check the [Styling demo](http://demos.kendoui.com/web/styling/index.html).
+    for more information check the [Styling Icons demo](http://demos.kendoui.com/web/styling/icons.html).
 
 *  **Popup:** Popup based widgets nested in other Popup based widgets create their Popup container inside the Popup parent. This means that a DropDownList created inside an already
     initialized Menu will create its list inside the Menu item's parent Popup.
