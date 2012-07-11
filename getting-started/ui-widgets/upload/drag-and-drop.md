@@ -18,3 +18,11 @@ This feature is only available in [async mode](modes#asynchronous-mode) and requ
 
 The drop zone is not visible by default. You can override this behavior with the following CSS rules:
 
+    div.k-dropzone {
+        border: 1px solid #c5c5c5; /* For Default; Different for each theme */
+    }
+
+    div.k-dropzone em {
+        visibility: visible;
+    }
+
