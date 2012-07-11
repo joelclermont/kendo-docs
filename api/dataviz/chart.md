@@ -222,35 +222,35 @@ The border of the labels.
 
  The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
-#### categoryAxis.labels.border.dashType `String`*(default: "solid")*
+### categoryAxis.labels.border.dashType `String`*(default: "solid")*
 
 The dash type of the border.
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -453,32 +453,31 @@ Configures the axis line. This will also effect major and minor ticks, but not g
 
 The dash type of the line.
 
-#### 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -530,31 +529,31 @@ body of the chart.
 
 The dash type of the grid lines.
 
-##### *"solid"*
+#### *"solid"*
 
 Specifies a solid line.
 
-##### *"dot"*
+#### *"dot"*
 
 Specifies a line consisting of dots.
 
-##### *"dash"*
+#### *"dash"*
 
 Specifies a line consisting of dashes.
 
-##### *"longDash"*
+#### *"longDash"*
 
 Specifies a line consisting of a repeating pattern of long-dash.
 
-##### *"dashDot"*
+#### *"dashDot"*
 
 Specifies a line consisting of a repeating pattern of dash-dot.
 
-##### *"longDashDot"*
+#### *"longDashDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot.
 
-##### *"longDashDotDot"*
+#### *"longDashDotDot"*
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
@@ -626,8 +625,7 @@ grid lines is not set to **true**.
 
 ### categoryAxis.minorGridLines.dashType `String`*(default: "solid")*
 
- The dash type of the grid lines.
-
+The dash type of the grid lines.
 
 #### *"solid"*
 
@@ -775,8 +773,7 @@ hex and rgb.
 
 ### categoryAxis.title.border.dashType `String`*(default: "solid")*
 
- The dash type of the border.
-
+The dash type of the border.
 
 #### *"solid"*
 
@@ -1005,7 +1002,7 @@ set up a fixed date range.
 
 ### categoryAxis.visible `Boolean`*(default: true)*
 
- The visibility of the axis.
+The visibility of the axis.
 
 ### chartArea `Object`
 
@@ -1014,7 +1011,7 @@ This is the entire visible area of the chart.
 
 ### chartArea.background `String`*(default: "white")*
 
- The background color of the chart area.
+The background color of the chart area.
 
 ### chartArea.border `Object`
 
@@ -1022,12 +1019,11 @@ The border of the chart area.
 
 ### chartArea.border.color `String`*(default: "black")*
 
- The color of the border.
+The color of the border.
 
 ### chartArea.border.dashType `String`*(default: "solid")*
 
- The dash type of the border.
-
+The dash type of the border.
 
 #### *"solid"*
 

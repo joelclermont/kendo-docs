@@ -225,8 +225,10 @@ This is more complex, but allows fine grained tuning of the application look and
 ### hideAddressBar `Boolean`*(default: true)*
 
 Whether to hide the browser address bar.
+
+#### Example
     <script>
-         new kendo.mobile.Application($(document.body), { layout: "foo" });
+         new kendo.mobile.Application($(document.body), { hideAddressBar: false });
     </script>
 
 ### initial `String`
