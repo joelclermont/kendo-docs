@@ -46,7 +46,6 @@ Follow these steps:
 4.  Copy the Kendo UI CSS files from **\styles** to the **Content** folder of your application.
 
 5.  Configure your ASP.NET MVC layout page to use the Kendo UI scripts and themes:
-
     * For Kendo UI Web (WebForms)
 
              <link href="<%= Url.Content("~/Content/kendo.common.min.css") %>" rel="stylesheet" type="text/css" />
@@ -54,7 +53,6 @@ Follow these steps:
              <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
              <script src="<%= Url.Content("~/Scripts/kendo.web.min.js") %>"></script>
              <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
-
     * For Kendo UI Web (Razor)
 
              <link rel="stylesheet" href="@Url.Content("~/Content/kendo.common.min.css")">
@@ -62,21 +60,18 @@ Follow these steps:
              <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
              <script src="@Url.Content("~/Scripts/kendo.web.min.js")"></script>
              <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
-
     * Kendo UI DataViz (WebForms)
 
              <link href="<%= Url.Content("~/Content/kendo.dataviz.min.css") %>" rel="stylesheet" type="text/css" />
              <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
              <script src="<%= Url.Content("~/Scripts/kendo.dataviz.min.js") %>"></script>
              <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
-
     * Kendo UI DataViz (Razor)
 
              <link href="@Url.Content("~/Content/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
              <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
              <script src="@Url.Content("~/Scripts/kendo.dataviz.min.js")"></script>
              <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
-
 6. Add a reference to the **Kendo.Mvc.UI** namespace to the **web.config**. Then the `Kendo` HtmlHelper extension would
 be availble in your views.
     * If you are using the WebForms view engine open the **web.config** file in the root folder of your application. Add
@@ -107,11 +102,9 @@ be availble in your views.
              </system.web.webPages.razor>
 
 7.  Use any Kendo UI HtmlHelper extension:
-
     * WebForms
 
             <%: Html.Kendo().DatePicker().Name("Birthday") %>
-
     * Razor
 
             @(Html.Kendo().DatePicker().Name("Birthday"))
