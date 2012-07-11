@@ -132,7 +132,7 @@ The **Add** button has only one new change. It now has a **data-bind=”click: c
 	<div data-role="grid" data-sortable="true" data-bind="source: expenses"
     	 data-columns='["Type", "Merchant", "Amount"]' ></div>
 
-This last one is the grid. Yes, this one line creates a [Kendo UI Grid](http://demos.kendoui.com/web/grid/index.html).
+This last one is the grid. Yes, this one line creates a [Kendo UI Grid](/getting-started/ui-widgets/grid/walkthrough).
 
 ### The Final Result
 
