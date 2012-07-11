@@ -1,10 +1,10 @@
 ---
-title: Using CORS with All Browsers
-slug: howto-using-cors-with-all-modern-browsers
+title: Use CORS with All Browsers
+slug: howto-use-cors-with-all-modern-browsers
 tags: How-To
 publish: true
 ---
-# Using CORS with All (Modern) Browsers
+# How To: Use CORS with All (Modern) Browsers
 
 CORS is cool. [Cross-Origin Resource Sharing](http://www.w3.org/TR/cors/) is a (slowly) emerging technology for the web that finally gives async web operations a way to directly grab resources from different domains. In fact, we've talked about CORS a couple of times on the Kendo UI blogs [here](http://www.kendoui.com/blogs/teamblog/posts/11-08-25/shields_up_web_service_abstraction_with_kendo_ui.aspx) and [here](http://www.kendoui.com/blogs/teamblog/posts/11-08-23/cross-domain_queries_to_odata_services_with_jquery.aspx).
 
