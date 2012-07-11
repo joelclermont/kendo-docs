@@ -24,9 +24,30 @@ It receives platform specific styling when initialized in a Kendo UI Mobile appl
 To do so, include **kendo.dropdownlist.js** and its requirements
 **kendo.list.js** and **kendo.popup.js** in the application.
 
+*   Select element drop down arrow can't be removed in Firefox.
+
 *   Input with type search shows **reset icon** in Chrome and Safari, which is not present on a mobile device.
+
 *   All input and select elements in Android 4.x default browser render a fake input when focused.
 This focused input can't be styled and is not part of the page flow so it won't scroll
 resulting in 2 identical but differently styled input elements at some point.
-There is no workaround for this issue, unless the form fits the screen and no scrolling is needed.
-*   Select element drop down arrow can't be removed in Firefox.
+**There is a workaround for this issue integrated in Kendo UI Mobile since Q2 2012, which unfortunately has the following negative effects:**
+    * Cyrillic characters can't be entered in Android 2.x
+    * Some keyboards can't enter long-click characters in Android 2.x (HTC Desire default keyboard for instance)
+    * Swype keyboard doesn't enter characters at all in Android 3.x (maybe in other versions too)
+
+Since a number of keyboard features in Android are dependent on the fact that the fake native input rendered on top is visible and on the screen,
+if you encounter such issues and want to work around them, you can disable the workaround by adding this CSS after the Kendo UI Mobile one (or do it for specific input only):
+
+    .km-android4 input
+    {
+        -webkit-user-modify: read-write;
+    }
+
+    .km-android2 .km-list > li,
+    .km-android3 .km-list > li
+    {
+        bottom: auto;
+        -webkit-transform: none;
+        -moz-transform: none;
+    }
