@@ -116,7 +116,7 @@ The **select** element now has no options. Instead, it has some new **data** att
 		<input id="merchant" type="text" class='k-textbox' data-bind="value: merchant" />
 	</dd>
 
-The **merchant** input has a new binding. The **data-bind=”value: merchant”** says that we want to bind the value of this input to the **merchant** variable in the view model. I also added a “**k-textbox**” css class to it to style it using [Kendo UI styles](getting-started/ui-widgets/appearance-styling).
+The **merchant** input has a new binding. The **data-bind=”value: merchant”** says that we want to bind the value of this input to the **merchant** variable in the view model. I also added a “**k-textbox**” css class to it to style it using [Kendo UI styles](/getting-started/ui-widgets/appearance-styling).
 
 	<dt>Amount</dt> 
 	<dd>
