@@ -11,12 +11,15 @@ publish: true
 
 
 
-The Kendo ModalView is used to present self-contained functionality in the context of the current task.  
+The Kendo ModalView is used to present self-contained functionality in the context of the current task.
 
 ### Getting Started
 
 The Kendo mobile Application will automatically initialize a mobile ModalView widget for every `div` element with `role` data attribute set to `modalview` present in the views/layouts markup.
 Alternatively, it can be initialized using jQuery plugin syntax. The ModalView element may contain optional header and/or footer. A mobile scroller is automatically initialized around the contents of the element.
+
+**Important:** When used in conjunction with a SplitView, the ModalView should be placed
+as a child of a View inside it or if you want it to cover the whole SplitView - as a direct child of it.
 
 #### ModalView with header and footer
 
