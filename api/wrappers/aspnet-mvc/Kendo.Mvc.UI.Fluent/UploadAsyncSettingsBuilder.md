@@ -18,6 +18,14 @@ Sets a value indicating whether to start the upload immediately after selecting 
 ##### value `System.Boolean`
 true if the upload should start immediately after selecting a file, false otherwise; true by default
 
+### Batch(System.Boolean)
+Sets a value indicating whether to upload selected files in one batch (request)
+
+#### Parameters
+
+##### value `System.Boolean`
+true if the files should be uploaded in a single request, false otherwise; false by default
+
 ### Save(System.String,System.String,System.Web.Routing.RouteValueDictionary)
 Sets the action, controller and route values for the save operation
 
