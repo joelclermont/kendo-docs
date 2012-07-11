@@ -32,17 +32,6 @@ Set the following option to "Enable" in Internet Explorer: "Internet Options -> 
 
 Turn off Opera Dragonfly. This debugging tool will interfere with the upload by firing an extra Load event for the IFRAME.
 
-## Problem: AJAX requests to ASP.NET MVC actions are blocked during upload
-
-### Suggested actions
-
-* Change the controller [Session State Behavior](http://msdn.microsoft.com/en-us/library/system.web.sessionstate.sessionstatebehavior.aspx) to ReadOnly or Disabled
-
-### See Also
-
-[Concurrent Requests In ASP.NET MVC](http://weblogs.asp.net/imranbaloch/archive/2010/07/10/concurrent-requests-in-asp-net-mvc.aspx)
-
-
 ## Problem: How to see a message logged in the console
 
 When a server error occurs the complete server response is logged in the console.
