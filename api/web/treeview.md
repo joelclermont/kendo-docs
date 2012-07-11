@@ -79,9 +79,29 @@ that initialization the **TreeView** occur within a handler is provided to $(doc
         })
     });
 
-Currently, the **TreeView** does not support binding to a remote data source.
+#### Binding to remote HierarchicalDataSource
 
-#### TreeView item JSON structure
+    $("#treeView").kendoTreeView({
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.kendoui.com/service/Employees",
+                    dataType: "json"
+                }
+            },
+            schema: {
+                model: {
+                    id: "EmployeeId",
+                    hasChildren: "HasEmployees"
+                }
+            }
+        }
+    })
+
+A complete reference on how to bind the TreeView to different service end-points can be found
+on the [HierarchicalDataSource API help](/api/framework/hierarchicaldatasource).
+
+#### Default item JSON structure
 
     var item = {
         text: "Item text",
@@ -94,11 +114,11 @@ Currently, the **TreeView** does not support binding to a remote data source.
     
         // specifies whether the node text should be encoded or not
         // useful when rendering node-specific HTML
-        encoded: false,
-    
-     A number of <strong>TreeView</strong> behaviors can be easily controlled by simple configuration properties,
-     such as animation behaviors and drag-and-drop behaviors.
-    </p>
+        encoded: false
+    };
+
+A number of **TreeView** behaviors can be easily controlled by simple configuration properties,
+such as animation behaviors and drag-and-drop behaviors.
 
 #### Enabling drag-and-drop for TreeView nodes
 
