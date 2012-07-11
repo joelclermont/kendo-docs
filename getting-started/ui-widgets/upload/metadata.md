@@ -13,14 +13,19 @@ The message and the file even might be processed on different servers in a load 
 ## Sending metadata to the save handler
 
 1. Add an input field for description. We will send its value to the save handler.
+
         <input type="text" id="fileDescription" />
+
 2. Declare a handler for the upload event and attach a data object to the passed event.
+
         function onUpload(e) {
             e.data = {
                 fileDescription: $("#fileDescription").val()
             };
         }
+
 3. Attach the `upload` event handler.
+
         $("#photos").kendoUpload({
             async: {
                 saveUrl: "saveHandler.php",
@@ -28,6 +33,7 @@ The message and the file even might be processed on different servers in a load 
             },
             upload: onUpload
         });
+
 4. Process the file and the associated description
 
 The description, and any other fields of the `e.data` object, will be serialized in the POST request.
@@ -42,20 +48,23 @@ The Upload requires the response to be in JSON format with Content-Type set to "
 
 1. Build the response
 
-    &lt;?php
+        &lt;?php
 
-        header('Content-Type: text/plain;');
-    
-        $data = array('foo' => 'bar', 'status' => 'ok');
-    
-        echo json_encode($data);
-    ?>
+            header('Content-Type: text/plain;');
+
+            $data = array('foo' => 'bar', 'status' => 'ok');
+
+            echo json_encode($data);
+        ?>
 
 2. Declare a handler for the [success event](http://www.kendoui.com/documentation/ui-widgets/upload/events.aspx#success) and process the response
+
         function onSuccess(e) {
             alert("Status: " + e.response.status);
         }
+
 3. Attach the event handler
+
         $("#photos").kendoUpload({
             async: {
                 saveUrl: "saveHandler.php",
@@ -63,4 +72,5 @@ The Upload requires the response to be in JSON format with Content-Type set to "
             },
             success: onSuccess
         });
+
 The same approach is applicable for the remove handler as well.
