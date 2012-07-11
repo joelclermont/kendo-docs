@@ -12,6 +12,29 @@ publish: true
 
 #### Breaking changes
 
+*  **All Widgets:** All arrows have been renamed to better reflect their direction and size. For instance:
+
+    - Old
+
+            .k-arrow-up
+            .k-arrow-next
+            .k-arrow-down
+            .k-arrow-prev
+            .k-arrow-first
+            .k-arrow-last
+
+    - New
+
+            .k-i-arrow-n
+            .k-i-arrow-e
+            .k-i-arrow-s
+            .k-i-arrow-w
+            .k-i-seek-w
+            .k-i-seek-e
+    for more information check the [Styling demo](http://demos.kendoui.com/web/styling/index.html).
+
+*  **Popup:** Popup based widgets nested in other Popup based widgets create their Popup container inside the Popup parent. This means that a DropDownList created inside an already
+    initialized Menu will create its list inside the Menu item's parent Popup.
 *  **TreeView:** The TreeView widget now depends on kendo.data.js
 *  **TreeView:** Using the API methods will re-create the HTML of the nodes. In order to get the new reference to the nodes, use the return value of the methods.
 
