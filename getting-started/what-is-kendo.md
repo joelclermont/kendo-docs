@@ -3,7 +3,7 @@ title: What is Kendo UI
 slug: gs-what-is-kendo
 tags: 101, Getting Started, internals
 publish: true
-relatedDocs: gs-your-first-application, gs-downloading-kendo
+relatedDocs: gs-downloading-kendo
 ---
 
 # What is Kendo UI
