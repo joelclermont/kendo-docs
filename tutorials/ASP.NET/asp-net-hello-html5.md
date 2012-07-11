@@ -51,15 +51,15 @@ as new HTML elements like the canvas, audio and video tags.
 New semantic tags introduce the concept of having html elements that not only
 define the visual layout of the page, but their function in the page as well.
 
-For instance, some of the new tags are the **<header>**, **<footer>** and
-**<article>**. Content that appears in a **<header>** tag will not be
+For instance, some of the new tags are the **&lt;header&gt;**, **&lt;footer&gt;** and
+**&lt;article&gt;**. Content that appears in a **&lt;header&gt;** tag will not be
 automatically laid out in a header format, but accessible screen readers will
-know that when the content in the **<header>** tag is not the real content of
-the page. The real content would most likely appear in the **<article> **or
-**<section>** tag.
+know that when the content in the **&lt;header&gt;** tag is not the real content of
+the page. The real content would most likely appear in the **&lt;article&gt; **or
+**&lt;section&gt;** tag.
 
-The new **<canvas>** tag creates an area on the page that can be drawn to with
-JavaScript. The **<video>** and **<audio>** tags allow the developer to embed
+The new **&lt;canvas&gt;** tag creates an area on the page that can be drawn to with
+JavaScript. The **&lt;video&gt;** and **&lt;audio&gt;** tags allow the developer to embed
 audio and video directly into the site, without having to use some sort of
 player, such as Flash or Silverlight.
 
@@ -156,7 +156,7 @@ all of the unnecessary and confusing configuration attributes.
 
 Inside the **form **tag, add some new HTML5 semantic tags to the page to
 demonstrate a hypothetical page structure.  Delete the empty **div **that is
-there by default.  Add **<header>, <footer>, <section> **and **<article>**
+there by default.  Add **&lt;header&gt;, &lt;footer&gt;, &lt;section&gt; **and **&lt;article&gt;**
 tags.
 
 ![Semantic Tags](images/hello-html5-semantic-tags.png)
@@ -181,8 +181,8 @@ Add some filler text to the article section.  You can use a **Lorem**
 ### Run The Application
 
 Press **F5** to run the application.  Notice that there is nothing special
-about the layout of the content.  **<header>, <section>, <footer> **and
-**<article> **are all block level elements, so they are displayed vertically
+about the layout of the content.  **&lt;header&gt;, &lt;section&gt;, &lt;footer&gt; **and
+**&lt;article&gt; **are all block level elements, so they are displayed vertically
 stacked on the page with a default margin between them.
 
 ![F5 No Style](images/hello-html5-f5-no-style.png)
@@ -243,7 +243,7 @@ stylesheet reference.
 Press **F5** to run the application.  Switch to IE 7 rendering mode and notice
 that the salmon background color style is applied.
 
-Switch to the **HTML **tab and notice that the **<html> **tag now has a long
+Switch to the **HTML **tab and notice that the **&lt;html&gt; **tag now has a long
 string of classes.  Each of these classes indicates either a feature, or the
 lack of one.  If a feature is not supported, it will be prefixed with **no-**.
 Switch between IE 7, 8 and 9 rendering modes and notice how the classes change
