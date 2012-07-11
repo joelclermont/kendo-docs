@@ -112,7 +112,7 @@ Open **Visual Studio** and create a blank **ASP.NET Web Application** called
 **Add New Item** dialgoue, select **Web Form**.  Call it **Default.aspx** and
 click **Add**.
 
-[![new-web-form][10]][11]
+![New Web Form](images/hello-html5-new-web-form.png)
 
 When the **Default.aspx **file is added, it will open in the designer.  If it
 doesn’t, open the file.  Make sure you are viewing the HTML source of the Web
@@ -145,9 +145,9 @@ The new HTML5 doctype is not case sensitive.
 On the line below the doctype, remove the **xmlns** attribute.  This is not
 necessary.
 
-[![xmlns][13]][14]
+![xmlns](images/hello-html5-xmlns.png)
 
-[![no-xmlns][15]][16]
+![No XMLNS](images/hello-html5-no-xmlns.png)
 
 Some of HTML5 involves simplifying the web development experience and removing
 all of the unnecessary and confusing configuration attributes.
@@ -159,12 +159,12 @@ demonstrate a hypothetical page structure.  Delete the empty **div **that is
 there by default.  Add **<header>, <footer>, <section> **and **<article>**
 tags.
 
-[![semantic-tags][17]][18]
+![Semantic Tags](images/hello-html5-semantic-tags.png)
 
 Notice that Visual Studio intellisense recognizes these as valid tags.  Ensure
 that the schema validation selection is set to **HTML5**.
 
-[![html5-schema-validation][19]][20]
+![HTML5 Schema Validation](images/hello-html5-html5-schema-validation.png)
 
 If **HTML5 **is not available in the select box, ensure that you are running
 at least Visual Studio 2008 SP 1.  If you cannot run at least Visual Studio
@@ -176,7 +176,7 @@ downloading these packages…
 Add some filler text to the article section.  You can use a **Lorem**
 **Ipsum** generator to do this for you.  My favorite one is [here][22].
 
-[![lorem-ipsum][23]][24]
+![Lorem Ipsum](images/hello-html5-lorem-ipsum.png)
 
 ### Run The Application
 
@@ -185,12 +185,12 @@ about the layout of the content.  **<header>, <section>, <footer> **and
 **<article> **are all block level elements, so they are displayed vertically
 stacked on the page with a default margin between them.
 
-[![f5-no-style][25]][26]
+![F5 No Style](images/hello-html5-f5-no-style.png)
 
 Press **F12 **to open the IE Developer Tools.  Change the rendering mode from
 IE 9 to IE 7.  Observe that there is virtually no change in the display.
 
-[![browser-mode-ie-7-no-style][27]][28]
+![Browser Mode IE 7 No Style](images/hello-html5-browser-mode-ie-7-no-style.png)
 
 ### Breaking HTML5 In Older Browsershello-html
 
@@ -199,7 +199,7 @@ clicking the project and select **Add New Item**.  Select **Style Sheet** and
 name it **style.css**.  Link the stylesheet in the page by dragging it from
 the **Project Explorer **and dropping it just under the empty title tag.
 
-[![link-stylesheet][29]][30]
+![Link Stylesheet](images/hello-html5-link-stylesheet.png)
 
 Open the **site.css**  file and add the following style to change the
 background color of the article to **salmon**.
@@ -209,9 +209,7 @@ background color of the article to **salmon**.
 
     article {
 
-
         background-color: salmon;
-
 
     }
 
@@ -236,7 +234,7 @@ Return to Visual Studio and stop the application if necessary.  Right-click
 the project and select **Add Library Package Reference**.  Select **online
 **from the left-hand side and search for **modernizr.**
 
-**[![modernizr][32]][33]**
+![Modernizr](images/hello-html5-modernizr.png)
 
 Add **Modernizr** to the head of the page by dragging it from the scripts
 folder into the **Default.aspx** page and drop it directly below the
@@ -266,115 +264,31 @@ Development.
 
 ![][36]
 
-**About the Author
 
-**Burke Holland is a web developer living in Nashville, TN. He enjoys working
-with and meeting developers who are building mobile apps with jQuery / HTML5
-and loves to hack on social API's. Burke works for Telerik as a Developer
-Evangelist focusing on Kendo UI. Burke is [@burkeholland][37] on Twitter.
-
-   [1]: http://www.kendoui.com/blogs/teamblog/posts/12-05-02/html5_development
-_for_asp_net_developers.aspx
-
-   [2]: http://www.css3.info/ (CSS3 . Info - All you ever needed to know about
-CSS3)
+   [2]: http://www.css3.info/ (CSS3 . Info - All you ever needed to know about CSS3)
 
    [3]: http://www.css3.info/preview/rgba/ (RGBA colors - CSS3 . Info)
 
-   [4]: http://en.wikipedia.org/wiki/HSL_and_HSV (HSL and HSV - Wikipedia, the
-free encyclopedia)
+   [4]: http://en.wikipedia.org/wiki/HSL_and_HSV (HSL and HSV - Wikipedia, the free encyclopedia)
 
-   [5]: http://en.wikipedia.org/wiki/Geolocation (Geolocation - Wikipedia, the
-free encyclopedia)
+   [5]: http://en.wikipedia.org/wiki/Geolocation (Geolocation - Wikipedia, the free encyclopedia)
 
-   [6]: http://dev.w3.org/geo/api/spec-source-orientation.html
-(DeviceOrientation Event Specification)
+   [6]: http://dev.w3.org/geo/api/spec-source-orientation.html (DeviceOrientation Event Specification)
 
    [7]: http://www.w3.org/TR/FileAPI/ (File API)
 
-   [8]: https://developer.mozilla.org/en/DOM/Manipulating_the_browser_history
-(Manipulating the browser history - MDN)
+   [8]: https://developer.mozilla.org/en/DOM/Manipulating_the_browser_history (Manipulating the browser history - MDN)
 
-   [9]: http://remysharp.com/2010/10/08/what-is-a-polyfill/ (What is a
-Polyfill?)
-
-   [10]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-new-web-form_thumb.sflb.ashx (new-web-form)
-
-   [11]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-new-web-form.sflb.ashx
+   [9]: http://remysharp.com/2010/10/08/what-is-a-polyfill/ (What is a Polyfill?)
 
    [12]: http://www.w3schools.com/tags/tag_doctype.asp
 
-   [13]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-xmlns_thumb.sflb.ashx (xmlns)
-
-   [14]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-xmlns.sflb.ashx
-
-   [15]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-no-xmlns_thumb.sflb.ashx (no-xmlns)
-
-   [16]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-no-xmlns.sflb.ashx
-
-   [17]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-semantic-tags_thumb.sflb.ashx (semantic-tags)
-
-   [18]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-semantic-tags.sflb.ashx
-
-   [19]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-html5-schema-validation_thumb.sflb.ashx (html5-schema-
-validation)
-
-   [20]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-html5-schema-validation.sflb.ashx
-
-   [21]: http://blogs.msdn.com/b/webdevtools/archive/2009/11/18/html-5
--intellisense-and-validation-schema-for-visual-studio-2008-and-visual-web-
-developer.aspx
+   [21]: http://blogs.msdn.com/b/webdevtools/archive/2009/11/18/html-5-intellisense-and-validation-schema-for-visual-studio-2008-and-visual-web-developer.aspx
 
    [22]: http://dalekipsum.com/
 
-   [23]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-lorem-ipsum_thumb.sflb.ashx (lorem-ipsum)
-
-   [24]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-lorem-ipsum.sflb.ashx
-
-   [25]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-f5-no-style_thumb.sflb.ashx (f5-no-style)
-
-   [26]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-f5-no-style.sflb.ashx
-
-   [27]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-browser-mode-ie-7-no-style_thumb.sflb.ashx (browser-mode-ie-7
--no-style)
-
-   [28]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-browser-mode-ie-7-no-style.sflb.ashx
-
-   [29]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-link-stylesheet_thumb.sflb.ashx (link-stylesheet)
-
-   [30]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-link-stylesheet.sflb.ashx
-
    [31]: http://modernizr.com/
-
-   [32]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-modernizr_thumb.sflb.ashx (modernizr)
-
-   [33]: http://www.kendoui.com/Libraries/MetaBlogLib/Windows-Live-Writer-
-Hello-HTML5_B596-modernizr.sflb.ashx
 
    [34]: http://html5rocks.com
 
    [35]: http://html5doctor.com/
-
-   [36]: http://www.kendoui.com/Libraries/Blog_Images/BurkeHolland.sflb.ashx
-
-   [37]: http://twitter.com/burkeholland
-
