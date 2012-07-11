@@ -127,7 +127,51 @@ fetches data from two different end-points (/service/Categories and /service/Pro
 
 ### Binding UI widgets to HierarchicalDataSource
 
-At this time, the only widget that is aware of the HierarchicalDataSource is the TreeView.
+At this time, the only widget that is aware of the datasource hierarchy is the TreeView. However,
+since the HierarchicalDataSource inherits the DataSource component, you can share the root level of
+the hierarchy with any DataSource-enabled component.
+
+#### Sharing a HierarchicalDataSource between a TreeView and a Grid
+
+    var Categories = new kendo.data.HierarchicalDataSource({
+        transport: {
+            read: {
+                url: "http://demos.kendoui.com/service/Categories"
+            }
+        },
+        schema: {
+            model: {
+                hasChildren: "Products",
+                id: "CategoryID",
+                children: {
+                    transport: {
+                        read: {
+                            url: "http://demos.kendoui.com/service/Products"
+                        }
+                    },
+                    schema: {
+                        model: {
+                            id: "ProductID",
+                            hasChildren: false
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    $("#treeview").kendoTreeView({
+        dataSource: Categories,
+        dataTextField: ["CategoryName", "ProductName"]
+    });
+
+    $("#grid").kendoGrid({
+        dataSource: Categories,
+        columns: [
+            { field: "CategoryName", title: "Name" },
+            { field: "Description" }
+        ]
+    });
 
 
 ## Configuration
@@ -144,3 +188,4 @@ See the [DataSource methods](/api/framework/datasource#methods) for all inherite
 
 The **remove** and **getByUid** methods are overridden and work with the hierarchical data
 (they will act on all child datasources that have been read).
+
