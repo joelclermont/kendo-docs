@@ -120,12 +120,12 @@ Category index at which the first value axis crosses this axis.
 ### categoryAxis.axisCrossingValue `Array`*(default: [0])*
 
 Category indicies at which the value axes cross the category axis.
-<p>
+
 **Note:&nbsp;** Specify an index greater than or equal to the number
 of categories to denote the far end of the axis.
 
 #### Example
-
+    <p>
     $("#chart").kendoChart({
          categoryAxis: {
              categories: ["A", "B"]
