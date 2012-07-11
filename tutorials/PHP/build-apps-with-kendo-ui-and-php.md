@@ -61,13 +61,13 @@ The next thing to do is to add in the CSS and JavaScript files to the head of
 the** index.php **page.
 
 
-	<!DOCTYPE html> 
-		<html> 
-			<head> 
-				<link href="css/kendo.metro.min.css" rel="stylesheet"> 
-				<link href="css/kendo.common.min.css" rel="stylesheet">
-				<script src="js/jquery.min.js"></script>
-				<script src="js/kendo.all.min.js"></script> </head>
+    <!DOCTYPE html> 
+        <html> 
+            <head> 
+                <link href="css/kendo.metro.min.css" rel="stylesheet"> 
+                <link href="css/kendo.common.min.css" rel="stylesheet">
+                <script src="js/jquery.min.js"></script>
+                <script src="js/kendo.all.min.js"></script> </head>
 
 
 So far this is probably all very familiar if you have done any PHP development
@@ -85,22 +85,23 @@ This is what the whole page looks like so far.  The grid has no columns and no
 data.  The next step is to create the .php file which will return the data
 from the MySQL database.
 
-	<!DOCTYPE html> 
-	<html> 
-		<head> 
-			<link href="css/kendo.metro.min.css"rel="stylesheet"> 
-			<link href="css/kendo.common.min.css" rel="stylesheet">
-			<script src="js/jquery.min.js"></script>
-	        <script src="js/kendo.all.min.js"></script>
-	    </head>
-	    <body>
-			<div id="grid"></div>
-	        <script>
-	            $(function() {
-	                $("#grid").kendoGrid();
-	        </script> 
-		</body> 
-	</html>
+    <!DOCTYPE html> 
+    <html> 
+        <head> 
+            <link href="css/kendo.metro.min.css"rel="stylesheet"> 
+            <link href="css/kendo.common.min.css" rel="stylesheet">
+            <script src="js/jquery.min.js"></script>
+            <script src="js/kendo.all.min.js"></script>
+        </head>
+        <body>
+            <div id="grid"></div>
+            <script>
+                $(function() {
+                    $("#grid").kendoGrid();
+                });
+            </script> 
+        </body> 
+    </html>
 
 ### Connect To The Database
 
@@ -112,19 +113,19 @@ commands.
 
     1.  <?php
     2.
-	3.     $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
-	4.     mysql_select_db("northwind") or die("Unable To Connect To Northwind");
-	5.
+    3.     $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
+    4.     mysql_select_db("northwind") or die("Unable To Connect To Northwind");
+    5.
     6.      $arr = array();
-	7.
-	8.     $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
-	9.
-	10.    while($obj = mysql_fetch_object($rs)) {
-	11.	       $arr[] = $obj;
-	12.    }
-	13.
-	14.    echo "{\"data\":" .json_encode($arr). "}";
-	15.
+    7.
+    8.     $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
+    9.
+    10.    while($obj = mysql_fetch_object($rs)) {
+    11.           $arr[] = $obj;
+    12.    }
+    13.
+    14.    echo "{\"data\":" .json_encode($arr). "}";
+    15.
     16. ?>
 
 
@@ -160,14 +161,14 @@ provide the data when the grid is loaded.  Additionally, we are defining columns
 for the **LastName** and **FirstName**.
 
 
-	<body> 
-		
-		<div id="grid"></div> 
-	
-		<script>
-			
-			$(function() {
-				$("#grid").kendoGrid({
+    <body> 
+        
+        <div id="grid"></div> 
+
+        <script>
+            
+            $(function() {
+                $("#grid").kendoGrid({
                     dataSource: {
                         transport: {
                             read: "data/employees.php"
@@ -181,13 +182,13 @@ for the **LastName** and **FirstName**.
             });
 
         </script> 
-	
-	</body>
+
+    </body>
 
 Note that since we are not actually defining anything in the column but the
 field, we could have just specified the columns as:
 
-	columns: [ “FirstName”, “LastName” ]
+    columns: [ “FirstName”, “LastName” ]
 
 Also notice that we only have to reference **data/employees.php** as the URL to
 read because the path is relative to the current application page being served
@@ -223,7 +224,7 @@ that the type is JSON.  We do this by adding a header.  The PHP file now looks
 like this…
 
 
-	<?php
+    <?php
 
         $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
 
@@ -267,11 +268,11 @@ much more complex things here like adding in tab controls like we did in the
 detail template example on the [demo’s page][23].
 
 
-	<script type="text/x-kendo-template" id="template">
+    <script type="text/x-kendo-template" id="template">
 
         <div class="subgrid"></div>
 
-	</script>
+    </script>
 
 
 
@@ -305,7 +306,7 @@ The **detailInit** function is fairly straightforward.
 
     function detailInit(e) {
         // get a reference to the current row being initialized 
-		var detailRow = e.detailRow;
+        var detailRow = e.detailRow;
 
         // create a subgrid for the current detail row, getting territory data for this employee
 
@@ -315,7 +316,7 @@ The **detailInit** function is fairly straightforward.
                      read: "data/territories.php"
                 },
                 schema: {
-                	data: "data"
+                    data: "data"
                 },
 
                 serverFiltering: true,
@@ -325,7 +326,7 @@ The **detailInit** function is fairly straightforward.
            columns: [{ title: "Territories", field: "TerritoryDescription" }],
 
         });
-	}
+    }
 
 
 It takes in an argument of **e** which will contain data about the row we
