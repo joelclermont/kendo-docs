@@ -61,13 +61,13 @@ The next thing to do is to add in the CSS and JavaScript files to the head of
 the** index.php **page.
 
 
-	<!DOCTYPE html> 
-		<html> 
-			<head> 
-				<link href="css/kendo.metro.min.css" rel="stylesheet"> 
-				<link href="css/kendo.common.min.css" rel="stylesheet">
-				<script src="js/jquery.min.js"></script>
-				<script src="js/kendo.all.min.js"></script> </head>
+    <!DOCTYPE html> 
+        <html> 
+            <head> 
+                <link href="css/kendo.metro.min.css" rel="stylesheet"> 
+                <link href="css/kendo.common.min.css" rel="stylesheet">
+                <script src="js/jquery.min.js"></script>
+                <script src="js/kendo.all.min.js"></script> </head>
 
 
 So far this is probably all very familiar if you have done any PHP development
@@ -85,23 +85,23 @@ This is what the whole page looks like so far.  The grid has no columns and no
 data.  The next step is to create the .php file which will return the data
 from the MySQL database.
 
-	<!DOCTYPE html> 
-	<html> 
-		<head> 
-			<link href="css/kendo.metro.min.css"rel="stylesheet"> 
-			<link href="css/kendo.common.min.css" rel="stylesheet">
-			<script src="js/jquery.min.js"></script>
-			<script src="js/kendo.all.min.js"></script>
-		</head>
-		<body>
-			<div id="grid"></div>
-			<script>
-				$(function() {
-					$("#grid").kendoGrid();
-				});
-			</script> 
-		</body> 
-	</html>
+    <!DOCTYPE html> 
+    <html> 
+        <head> 
+            <link href="css/kendo.metro.min.css"rel="stylesheet"> 
+            <link href="css/kendo.common.min.css" rel="stylesheet">
+            <script src="js/jquery.min.js"></script>
+            <script src="js/kendo.all.min.js"></script>
+        </head>
+        <body>
+            <div id="grid"></div>
+            <script>
+                $(function() {
+                    $("#grid").kendoGrid();
+                });
+            </script> 
+        </body> 
+    </html>
 
 ### Connect To The Database
 
@@ -113,19 +113,19 @@ commands.
 
     1.  <?php
     2.
-	3.     $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
-	4.     mysql_select_db("northwind") or die("Unable To Connect To Northwind");
-	5.
+    3.     $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
+    4.     mysql_select_db("northwind") or die("Unable To Connect To Northwind");
+    5.
     6.      $arr = array();
-	7.
-	8.     $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
-	9.
-	10.    while($obj = mysql_fetch_object($rs)) {
-	11.	       $arr[] = $obj;
-	12.    }
-	13.
-	14.    echo "{\"data\":" .json_encode($arr). "}";
-	15.
+    7.
+    8.     $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
+    9.
+    10.    while($obj = mysql_fetch_object($rs)) {
+    11.           $arr[] = $obj;
+    12.    }
+    13.
+    14.    echo "{\"data\":" .json_encode($arr). "}";
+    15.
     16. ?>
 
 
@@ -161,34 +161,34 @@ provide the data when the grid is loaded.  Additionally, we are defining columns
 for the **LastName** and **FirstName**.
 
 
-	<body> 
-		
-		<div id="grid"></div> 
-	
-		<script>
-			
-			$(function() {
-				$("#grid").kendoGrid({
-					dataSource: {
-						transport: {
-							read: "data/employees.php"
-						},
-						schema: {
-							data: "data"
-						}
-					},
-					columns: [{ field: "FirstName" }, { field: "LastName" }]
-				});
-			});
+    <body> 
+        
+        <div id="grid"></div> 
 
-		</script> 
-	
-	</body>
+        <script>
+            
+            $(function() {
+                $("#grid").kendoGrid({
+                    dataSource: {
+                        transport: {
+                            read: "data/employees.php"
+                        },
+                        schema: {
+                            data: "data"
+                        }
+                    },
+                    columns: [{ field: "FirstName" }, { field: "LastName" }]
+                });
+            });
+
+        </script> 
+
+    </body>
 
 Note that since we are not actually defining anything in the column but the
 field, we could have just specified the columns as:
 
-	columns: [ “FirstName”, “LastName” ]
+    columns: [ “FirstName”, “LastName” ]
 
 Also notice that we only have to reference **data/employees.php** as the URL to
 read because the path is relative to the current application page being served
@@ -224,28 +224,28 @@ that the type is JSON.  We do this by adding a header.  The PHP file now looks
 like this…
 
 
-	<?php
+    <?php
 
-		$link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
+        $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
 
-		mysql_select_db("northwind") or die("Unable To Connect To Northwind");
+        mysql_select_db("northwind") or die("Unable To Connect To Northwind");
 
-		$arr = array();
+        $arr = array();
 
-		$rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
+        $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
 
-		while($obj = mysql_fetch_object($rs)) {
+        while($obj = mysql_fetch_object($rs)) {
 
-			$arr[] = $obj;
+            $arr[] = $obj;
 
-		}
+        }
 
-		// add the header line to specify that the content type is JSON
-		header("Content-type: application/json");
+        // add the header line to specify that the content type is JSON
+        header("Content-type: application/json");
 
-		echo "{\"data\":" .json_encode($arr). "}";
+        echo "{\"data\":" .json_encode($arr). "}";
 
-	?>
+    ?>
 
 Now we can refresh the page and there will be data in the grid.
 
@@ -268,11 +268,11 @@ much more complex things here like adding in tab controls like we did in the
 detail template example on the [demo’s page][23].
 
 
-	<script type="text/x-kendo-template" id="template">
+    <script type="text/x-kendo-template" id="template">
 
-		<div class="subgrid"></div>
+        <div class="subgrid"></div>
 
-	</script>
+    </script>
 
 
 
@@ -286,47 +286,47 @@ template, and to call the **detailInit()** function when a grid row is
 expanded.
 
 
-	$("#grid").kendoGrid({
-		dataSource: {
-			transport: {
-				read: "data/employees.php"
-			},
-			schema: {
-			   data: "data"
-			}
-		},
-		columns: [{ field: "FirstName" }, { field: "LastName" }],
-		detailTemplate: kendo.template($("#template").html()),
-		detailInit: detailInit
-	});
+    $("#grid").kendoGrid({
+        dataSource: {
+            transport: {
+                read: "data/employees.php"
+            },
+            schema: {
+               data: "data"
+            }
+        },
+        columns: [{ field: "FirstName" }, { field: "LastName" }],
+        detailTemplate: kendo.template($("#template").html()),
+        detailInit: detailInit
+    });
 
 
 The **detailInit** function is fairly straightforward.
 
 
-	function detailInit(e) {
-		// get a reference to the current row being initialized 
-		var detailRow = e.detailRow;
+    function detailInit(e) {
+        // get a reference to the current row being initialized 
+        var detailRow = e.detailRow;
 
-		// create a subgrid for the current detail row, getting territory data for this employee
+        // create a subgrid for the current detail row, getting territory data for this employee
 
-		detailRow.find(".subgrid").kendoGrid({
-			dataSource: {
-				transport: {
-					 read: "data/territories.php"
-				},
-				schema: {
-					data: "data"
-				},
+        detailRow.find(".subgrid").kendoGrid({
+            dataSource: {
+                transport: {
+                     read: "data/territories.php"
+                },
+                schema: {
+                    data: "data"
+                },
 
-				serverFiltering: true,
-				filter: { field: "EmployeeID", operator: "eq", value:e.data.EmployeeID }
-		   },
+                serverFiltering: true,
+                filter: { field: "EmployeeID", operator: "eq", value:e.data.EmployeeID }
+           },
 
-		   columns: [{ title: "Territories", field: "TerritoryDescription" }],
+           columns: [{ title: "Territories", field: "TerritoryDescription" }],
 
-		});
-	}
+        });
+    }
 
 
 It takes in an argument of **e** which will contain data about the row we
