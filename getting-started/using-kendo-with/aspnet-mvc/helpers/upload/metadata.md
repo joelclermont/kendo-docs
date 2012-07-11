@@ -27,23 +27,23 @@ Any metadata that is known during rendering can be forwarded to the save action 
 
 2. Add the message ID to the route values.
     - WebForms
-        <%= Html.Telerik().Upload()
-                .Name("attachments")
-                .Async(async => async
-                    .Save("Save", "Home",
-                          new { messageId = ViewBag.MessageId })
-                )
-        %>
 
+            <%= Html.Telerik().Upload()
+                    .Name("attachments")
+                    .Async(async => async
+                        .Save("Save", "Home",
+                              new { messageId = ViewBag.MessageId })
+                    )
+            %>
     - Razor
-        @(Html.Telerik().Upload()
-                .Name("attachments")
-                .Async(async => async
-                    .Save("Save", "Home",
-                          new { messageId = ViewBag.MessageId })
-                )
-        )
 
+            @(Html.Telerik().Upload()
+                    .Name("attachments")
+                    .Async(async => async
+                        .Save("Save", "Home",
+                              new { messageId = ViewBag.MessageId })
+                    )
+            )
 3. Process the file using the message ID
 
         [HttpPost]
@@ -84,26 +84,26 @@ You can also add metadata directly on the client. This is useful when the data i
 3. Attach the event handler.
     - WebForms
 
-        <%= Html.Telerik().Upload()
-            .Name("attachments")
-            .Async(async => async
-                .Save("Save", "Home" })
-            )
-            .ClientEvents(c => c
-                .OnUpload("onUpload")
-            )
-        %>
-
+            <%= Html.Telerik().Upload()
+                .Name("attachments")
+                .Async(async => async
+                    .Save("Save", "Home" })
+                )
+                .ClientEvents(c => c
+                    .OnUpload("onUpload")
+                )
+            %>
     - Razor
-        @(Html.Telerik().Upload()
-            .Name("attachments")
-            .Async(async => async
-                .Save("Save", "Home" })
+
+            @(Html.Telerik().Upload()
+                .Name("attachments")
+                .Async(async => async
+                    .Save("Save", "Home" })
+                )
+                .ClientEvents(c => c
+                    .OnUpload("onUpload")
+                )
             )
-            .ClientEvents(c => c
-                .OnUpload("onUpload")
-            )
-        )
 
 4. Process the file and the associated description
 
@@ -150,25 +150,27 @@ The Upload requires the response to be in JSON format with Content-Type set to "
 
 3. Attach the event handler
     - WebForms
-        <%= Html.Telerik().Upload()
-            .Name("attachments")
-            .Async(async => async
-                .Save("Save", "Home" })
-            )
-            .ClientEvents(c => c
-                .OnSuccess("onSuccess")
-            )
-        %>
+
+            <%= Html.Telerik().Upload()
+                .Name("attachments")
+                .Async(async => async
+                    .Save("Save", "Home" })
+                )
+                .ClientEvents(c => c
+                    .OnSuccess("onSuccess")
+                )
+            %>
 
     - Razor
-        @(Html.Telerik().Upload()
-            .Name("attachments")
-            .Async(async => async
-                .Save("Save", "Home" })
+
+            @(Html.Telerik().Upload()
+                .Name("attachments")
+                .Async(async => async
+                    .Save("Save", "Home" })
+                )
+                .ClientEvents(c => c
+                    .OnSuccess("onSuccess")
+                )
             )
-            .ClientEvents(c => c
-                .OnSuccess("onSuccess")
-            )
-        )
 
 The same approach is applicable for the remove handler as well.
