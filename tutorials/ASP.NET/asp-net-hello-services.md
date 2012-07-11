@@ -126,7 +126,7 @@ over the word until you get the context menu. This will give you the option to
 include **System.Web.Http**. Optionally, you can achieve the same result by
 click **Alt+Shift+F10**, which will bring up the same context menu.
 
-![Employee Controller Inherits ApiController Class](images/hello-services-employee-contoller-class-inherit.png)
+![Employee Controller Inherits ApiController Class](images/hello-services-employee-controller-class-inherit.png)
 
 This class will contain methods that can be invoked from the web service that
 is being created. This service represents the **Employees** table in the
@@ -161,14 +161,10 @@ the employees from the **Employees** table.
 
     public List<Data.Employee> Get() {
 
-
         var employees = from e in _context.Employees
-
                         select e;
 
-
         return employees.ToList();
-
 
     }
 
@@ -198,20 +194,12 @@ following code.
 
     void Application_Start(object sender, EventArgs e) {
 
-
         // intialize the default routing configuration
 
         RouteTable.Routes.MapHttpRoute(
-
-
             name: “DefaultApi”,
-
-
             routeTemplate: “api/{controller}/{id}”,
-
-
             defaults: new { id = System.Web.Http.RouteParameter.Optional });
-
     }
 
 
@@ -261,13 +249,11 @@ properties. One for the employee id, first name, and last name.
 
     public class Employee {
 
-
         public int Id { get; set; }
 
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
-
 
     }
 
@@ -286,26 +272,17 @@ from the database.
 
     public List<Model.Employees> Get() {
 
-
         // select a new model object for each row in the
-
         // linq query result
 
         var employees = from e in _context.Employees
-
                         select new Models.Employee {
-
                             Id = e.EmployeeID,
-
                             FirstName = e.FirstName,
-
                             LastName = e.LastName
-
                         };
 
-
         return employees.ToList();
-
 
     }
 
