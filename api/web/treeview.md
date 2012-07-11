@@ -393,13 +393,13 @@ The nodes that are to be collapsed.
 
 ### dataItem
 
-Returns the dataItem that corresponds to a TreeView node
+Returns the model dataItem that corresponds to a TreeView node
 
 #### Parameters
 
-##### node ``
+##### node `jQueryObject | DomElement | Selector`
 
-
+The element or selector that specifies a node.
 
 ### detach
 
@@ -523,7 +523,7 @@ TreeView.
 
 #### Parameters
 
-##### nodeData `String|Selector`
+##### nodeData `String | Selector`
 
 A JSON-formatted string or selector that specifies the node to be inserted.
 
@@ -548,7 +548,7 @@ TreeView.
 
 #### Parameters
 
-##### nodeData `String|Selector`
+##### nodeData `String | Selector`
 
 A JSON-formatted string or selector that specifies the node to be inserted.
 
