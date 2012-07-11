@@ -17,16 +17,16 @@ In this mode the upload is executed as part of the form submit (synchronously). 
 1. Add a form declaration and set a controller action. Set the enctype attribute to "multipart/form-data".
     - WebForms
 
-        <% using (Html.BeginForm("ProcessSubmit", "Home",
-                                 FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" })) { %>
+            <% using (Html.BeginForm("ProcessSubmit", "Home",
+                                     FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" })) { %>
 
-        <% } %>
+            <% } %>
     - Razor
 
-        @using (Html.BeginForm("ProcessSubmit", "Home",
-                                 FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" })) {
+            @using (Html.BeginForm("ProcessSubmit", "Home",
+                                     FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" })) {
 
-        }
+            }
 
 2. Add the Upload inside the form. The only required setting is a Name.
     - WebForms
