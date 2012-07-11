@@ -365,12 +365,11 @@ TreeView.
 
 A JSON-formatted string or selector that specifies the node to be appended.
 
-##### parentNode `Node`
-
-_optional, default: _
+##### parentNode `Node` *(optional)*
 
 The node that will contain the newly appended node. If not specified, the new node will be appended to the
 root group of the TreeView.
+
 
 ### collapse
 
@@ -444,9 +443,7 @@ Enables or disables nodes.
 
 The nodes that are to be enabled/disabled.
 
-##### enable `Boolean`
-
-_optional, default: true_
+##### enable `Boolean` *(optional, default: true)*
 
 Whether the nodes should be enabled or disabled.
 
@@ -590,9 +587,7 @@ Gets or sets the selected node of a TreeView.
 
 #### Parameters
 
-##### node `Selector`
-
-_optional, default: _
+##### node `Selector` *(optional)*
 
 If provided, the node of a TreeView that should be selected.
 
