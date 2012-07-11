@@ -160,7 +160,6 @@ The Upload requires the response to be in JSON format with Content-Type set to "
                     .OnSuccess("onSuccess")
                 )
             %>
-
     - Razor
 
             @(Html.Telerik().Upload()
