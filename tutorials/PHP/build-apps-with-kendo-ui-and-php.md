@@ -91,14 +91,15 @@ from the MySQL database.
 			<link href="css/kendo.metro.min.css"rel="stylesheet"> 
 			<link href="css/kendo.common.min.css" rel="stylesheet">
 			<script src="js/jquery.min.js"></script>
-	        <script src="js/kendo.all.min.js"></script>
-	    </head>
-	    <body>
+			<script src="js/kendo.all.min.js"></script>
+		</head>
+		<body>
 			<div id="grid"></div>
-	        <script>
-	            $(function() {
-	                $("#grid").kendoGrid();
-	        </script> 
+			<script>
+				$(function() {
+					$("#grid").kendoGrid();
+				});
+			</script> 
 		</body> 
 	</html>
 
@@ -168,19 +169,19 @@ for the **LastName** and **FirstName**.
 			
 			$(function() {
 				$("#grid").kendoGrid({
-                    dataSource: {
-                        transport: {
-                            read: "data/employees.php"
-                        },
-                        schema: {
-                            data: "data"
-                        }
-                    },
-                    columns: [{ field: "FirstName" }, { field: "LastName" }]
-                });
-            });
+					dataSource: {
+						transport: {
+							read: "data/employees.php"
+						},
+						schema: {
+							data: "data"
+						}
+					},
+					columns: [{ field: "FirstName" }, { field: "LastName" }]
+				});
+			});
 
-        </script> 
+		</script> 
 	
 	</body>
 
@@ -225,26 +226,26 @@ like this…
 
 	<?php
 
-        $link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
+		$link = mysql_pconnect("localhost", "root", "root") or die("Unable To Connect To Database Server");
 
-        mysql_select_db("northwind") or die("Unable To Connect To Northwind");
+		mysql_select_db("northwind") or die("Unable To Connect To Northwind");
 
-        $arr = array();
+		$arr = array();
 
-        $rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
+		$rs = mysql_query("SELECT EmployeeID, LastName, FirstName FROM Employees");
 
-        while($obj = mysql_fetch_object($rs)) {
+		while($obj = mysql_fetch_object($rs)) {
 
-            $arr[] = $obj;
+			$arr[] = $obj;
 
-        }
+		}
 
-        // add the header line to specify that the content type is JSON
-        header("Content-type: application/json");
+		// add the header line to specify that the content type is JSON
+		header("Content-type: application/json");
 
-        echo "{\"data\":" .json_encode($arr). "}";
+		echo "{\"data\":" .json_encode($arr). "}";
 
-    ?>
+	?>
 
 Now we can refresh the page and there will be data in the grid.
 
@@ -269,7 +270,7 @@ detail template example on the [demo’s page][23].
 
 	<script type="text/x-kendo-template" id="template">
 
-        <div class="subgrid"></div>
+		<div class="subgrid"></div>
 
 	</script>
 
@@ -285,46 +286,46 @@ template, and to call the **detailInit()** function when a grid row is
 expanded.
 
 
-    $("#grid").kendoGrid({
-        dataSource: {
-            transport: {
-                read: "data/employees.php"
-            },
-            schema: {
-               data: "data"
-            }
-        },
-        columns: [{ field: "FirstName" }, { field: "LastName" }],
-        detailTemplate: kendo.template($("#template").html()),
-        detailInit: detailInit
-    });
+	$("#grid").kendoGrid({
+		dataSource: {
+			transport: {
+				read: "data/employees.php"
+			},
+			schema: {
+			   data: "data"
+			}
+		},
+		columns: [{ field: "FirstName" }, { field: "LastName" }],
+		detailTemplate: kendo.template($("#template").html()),
+		detailInit: detailInit
+	});
 
 
 The **detailInit** function is fairly straightforward.
 
 
-    function detailInit(e) {
-        // get a reference to the current row being initialized 
+	function detailInit(e) {
+		// get a reference to the current row being initialized 
 		var detailRow = e.detailRow;
 
-        // create a subgrid for the current detail row, getting territory data for this employee
+		// create a subgrid for the current detail row, getting territory data for this employee
 
-        detailRow.find(".subgrid").kendoGrid({
-            dataSource: {
-                transport: {
-                     read: "data/territories.php"
-                },
-                schema: {
-                	data: "data"
-                },
+		detailRow.find(".subgrid").kendoGrid({
+			dataSource: {
+				transport: {
+					 read: "data/territories.php"
+				},
+				schema: {
+					data: "data"
+				},
 
-                serverFiltering: true,
-                filter: { field: "EmployeeID", operator: "eq", value:e.data.EmployeeID }
-           },
+				serverFiltering: true,
+				filter: { field: "EmployeeID", operator: "eq", value:e.data.EmployeeID }
+		   },
 
-           columns: [{ title: "Territories", field: "TerritoryDescription" }],
+		   columns: [{ title: "Territories", field: "TerritoryDescription" }],
 
-        });
+		});
 	}
 
 
