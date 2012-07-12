@@ -304,7 +304,7 @@ Instance of DataSource or Object with DataSource configuration.
          data: [{title: "Star Wars: A New Hope", year: 1977}, {title: "Star Wars: The Empire Strikes Back", year: 1980}],
          pageSize: 1
     });
-    
+
     $("#grid").kendoGrid({
          dataSource: sharedDataSource
      });
@@ -424,7 +424,7 @@ Indicates whether item should be switched to edit mode on click.
          navigatable: true
      });
 
-### pageable `Boolean`*(default: false)*
+### pageable `Boolean | Object`*(default: false)*
 
  Indicates whether paging is enabled/disabled.
 
@@ -448,6 +448,82 @@ Indicates whether item should be switched to edit mode on click.
          pageable: true
      });
 
+### pageable.pageSize `Number`
+
+  Defines the number of records which will be displyed.
+
+### pageable.previousNext `Boolean`*(default: true)*
+
+  Defines if buttons for navigating to the first, last, previous and next pages will be shown.
+
+### pageable.numeric `Boolean`*(default: true)*
+
+  Defines if numeric portion of the pager will be shown.
+
+### pageable.buttonCount `Number`*(default: 10)*
+
+  Defines the number of buttons displayed in the numeric pager.
+
+### pageable.input `Boolean`*(default: false)*
+
+  Defines if an input element which allows the user to navigate to given page will be displayed.
+
+### pageable.pageSizes `Boolean | Array`*(default: false | [5,10,20])*
+
+  Displayes a list with predefined page sizes. An array of values to be displayed can be provided.
+
+### pageable.refresh `Boolean`*(default: false)*
+
+  Defines if a refresh button will be displayed.
+
+### pageable.info `Boolean`*(default: true)*
+
+  Defines if a label showing current paging information will be displayed.
+
+### pageable.messages `Object`
+
+  Defines texts shown within the pager.
+
+### pageable.messages.display `String`*(default: "{0} - {1} of {2} items")*,
+
+  Defines the info text.
+
+### pageable.messages.empty `String`*(default: "No items to display")*,
+
+  Defines the info text shown when there are no records to be displayed.
+
+### pageable.messages.page `String`*(default: "Page")*,
+
+  Defines the first part of the text of the input option.
+
+### pageable.messages.of `String`*(default: "of {0}")*,
+
+  Defines the last part of the text of the input option.
+
+### pageable.messages.itemsPerPage `String`*(default: "items per page")*,
+
+  Defines the text displayed after the select element of the pageSizes mode.
+
+### pageable.messages.first `String`*(default: "Go to the first page")*,
+
+  Defines the text of the first page button tooltip.
+
+### pageable.messages.previous `String`*(default: "Go to the previous page")*,
+
+  Defines the text of the previous page button tooltip.
+
+### pageable.messages.next `String`*(default: "Go to the next page")*,
+
+  Defines the text of the next page button tooltip.
+
+### pageable.messages.last `String`*(default: "Go to the last page")*,
+
+  Defines the text of the last page button tooltip.
+
+### pageable.messages.refresh `String`*(default: "Refresh")*,
+
+  Defines the text of the refresh button tooltip.
+
 ### rowTemplate `Function`
 
 Template to be used for rendering the rows in the grid.
@@ -468,7 +544,7 @@ Template to be used for rendering the rows in the grid.
              </td>
          </tr>
      </script>
-    
+
      //grid intialization
      <script>PO details informaiton
          $("#grid").kendoGrid({
