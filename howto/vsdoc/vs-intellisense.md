@@ -30,4 +30,11 @@ Each bundle package contains a *vsdoc* directory, which contains a vsdoc.js file
 
 ![jquery plugin](widget-method.png)
 
+## Referencing
 
+There are two ways to reference the intellisense.
+
+1. When the script is directly added to a page as shown above 
+1. Using a reference hint from within an external JS file as shown below
+
+![script reference](js-reference.png)
