@@ -23,7 +23,7 @@ Then, to initialize this HTML input and give it the Kendo AutoComplete functiona
 
 To set additional configuration on widgets you can provide a JavaScript object to the widget constructor.
 
-      $("#grid").kendoGrid({
+      $("#customers").kendoGrid({
           columns:[
               {
                   field: "FirstName",
@@ -53,9 +53,9 @@ The specific property names and configuration options for each widget can be fou
 The widget client object is preserved in the jQuery [data store](http://docs.jquery.com/core/data "jQuery data store") for the corresponding element.
 The following code snippet shows how to get the client object of the grid widget.
 
-    var grid = $("#grid").data("kendoGrid");
+    var customers = $("#customers").data("kendoGrid");
 
-> The name of the data key is built by adding "kendo" prefix to the widget's name
+> The name of the data key is built by adding "kendo" prefix to the name of the type of widget being referenced
 
 ## Widget event binding
 
