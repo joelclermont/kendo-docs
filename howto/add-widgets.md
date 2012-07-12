@@ -39,8 +39,8 @@ The first step is to add script and stylesheet references for jQuery and Kendo U
 		<title>My Kendo UI Application</title>
 
 		<!-- CDN-based stylesheet references for Kendo UI Web -->
-		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.704/styles/kendo.common.min.css">
-		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.704/styles/kendo.default.min.css">
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.2.710/styles/kendo.common.min.css">
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.2.710/styles/kendo.default.min.css">
 
 	</head>
 	<body>
@@ -59,7 +59,7 @@ The first step is to add script and stylesheet references for jQuery and Kendo U
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
 		<!-- CDN-based script reference for Kendo UI DataViz; utilizing a local reference if offline -->
-		<script src="http://cdn.kendostatic.com/2012.1.704/js/kendo.web.min.js"></script>
+		<script src="http://cdn.kendostatic.com/2012.2.710/js/kendo.web.min.js"></script>
 		<script>(window.kendo && window.kendo.dataviz) || document.write('<script src="js/kendo.web.min.js"><\/script>')</script>
 
 	</body>
@@ -81,8 +81,8 @@ Here's an example for a pair of [AutoComplete](http://docs.kendoui.com/api/web/a
 		<title>My Kendo UI Application</title>
 
 		<!-- CDN-based stylesheet references for Kendo UI Web -->
-		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.704/styles/kendo.common.min.css">
-		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.704/styles/kendo.default.min.css">
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.2.710/styles/kendo.common.min.css">
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.2.710/styles/kendo.default.min.css">
 
 	</head>
 	<body>
@@ -105,7 +105,7 @@ Here's an example for a pair of [AutoComplete](http://docs.kendoui.com/api/web/a
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
 		<!-- CDN-based script reference for Kendo UI DataViz; utilizing a local reference if offline -->
-		<script src="http://cdn.kendostatic.com/2012.1.704/js/kendo.web.min.js"></script>
+		<script src="http://cdn.kendostatic.com/2012.2.710/js/kendo.web.min.js"></script>
 		<script>(window.kendo && window.kendo.dataviz) || document.write('<script src="js/kendo.web.min.js"><\/script>')</script>
 
 		<script>
