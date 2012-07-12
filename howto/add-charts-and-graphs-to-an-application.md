@@ -39,7 +39,7 @@ The first step is to add script and stylesheet references for jQuery and Kendo U
 		<title>My Kendo UI Application</title>
 
 		<!-- CDN-based stylesheet reference for Kendo UI DataViz -->
-		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.704/styles/kendo.dataviz.min.css">
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.2.710/styles/kendo.dataviz.min.css">
 
 	</head>
 	<body>
@@ -58,7 +58,7 @@ The first step is to add script and stylesheet references for jQuery and Kendo U
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
 		<!-- CDN-based script reference for Kendo UI DataViz; utilizing a local reference if offline -->
-		<script src="http://cdn.kendostatic.com/2012.1.704/js/kendo.dataviz.min.js"></script>
+		<script src="http://cdn.kendostatic.com/2012.2.710/js/kendo.dataviz.min.js"></script>
 		<script>(window.kendo && window.kendo.dataviz) || document.write('<script src="js/kendo.dataviz.min.js"><\/script>')</script>
 
 	</body>
@@ -75,7 +75,7 @@ The next step is to declare a target element for a chart. This will be represent
 		<title>My Kendo UI Application</title>
 
 		<!-- Kendo UI HTTP CDN style reference for DataViz -->
-		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.1.704/styles/kendo.dataviz.min.css">
+		<link rel="stylesheet" href="http://cdn.kendostatic.com/2012.2.710/styles/kendo.dataviz.min.css">
 
 	</head>
 	<body>
@@ -97,7 +97,7 @@ The next step is to declare a target element for a chart. This will be represent
 		<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
 		<!-- Kendo UI HTTP CDN script reference for DataViz; utilizing a local reference if offline -->
-		<script src="http://cdn.kendostatic.com/2012.1.704/js/kendo.dataviz.min.js"></script>
+		<script src="http://cdn.kendostatic.com/2012.2.710/js/kendo.dataviz.min.js"></script>
 		<script>(window.kendo && window.kendo.dataviz) || document.write('<script src="js/kendo.dataviz.min.js"><\/script>')</script>
 
 		<script>
