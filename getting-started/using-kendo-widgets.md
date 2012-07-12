@@ -75,7 +75,7 @@ There are two ways to subscribe to Kendo UI widget events:
 
 ### Subscribing via the `bind` method
 
-    var autoComplete = $("#products").data("kendoAutoComplete");
+    var autoComplete = $("#products");
     autoComplete.bind("change", onChange);
 
 The handler is a callback function, as shown below. Within the handler, the keyword `this` refers to the Kendo widget to which the handler is subscribed.
