@@ -37,9 +37,10 @@ resulting in 2 identical but differently styled input elements at some point.
     * Cyrillic characters can't be entered in Android 2.x
     * Some keyboards can't enter long-click characters in Android 2.x (HTC Desire default keyboard for instance)
     * Swype keyboard doesn't enter characters at all in Android 3.x (maybe in other versions too)
+    * Newer input types fall back to text
 
 Since a number of keyboard features in Android are dependent on the fact that the fake native input rendered on top is visible and on the screen,
-if you encounter such issues and want to work around them, you can disable the workaround by adding this CSS after the Kendo UI Mobile one (or do it for specific input only):
+if you encounter such issues and want to work around them, you can disable the integrated hack by adding this CSS after the Kendo UI Mobile one (or do it for specific input only):
 
     .km-android4 input
     {
