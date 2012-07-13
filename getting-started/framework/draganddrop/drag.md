@@ -55,15 +55,7 @@ To prevent the default effect of the respective DOM events, the event handler ca
 
 ## Drag Event Coordinates and Information
 
-In each event handler, the Drag component passes its data in the event handler parameter. The event information is grouped in two axis object instances — `x` and `y`.
-Each axis instance has the following fields:
-
-*   `location` - the offset of the mouse/touch relative to the _entire document_ (pageX/Y);
-*   `startLocation` - the offset of the mouse/touch relative to the document when the drag started;
-*   `client` - the offset of the mouse/touch relative to the _viewport_ (clientX/Y);
-*   `delta` - the change from the previous event location
-*   `velocity` - the pixels per millisecond speed of the current move.
-For instance, the mobile ScrollView widget considers a drag with velocity below 0.8 a slow one, while velocity above 1.6 is a fast one.
+In each event handler, the Drag component passes its data in the event handler parameter. The event information is grouped in two [DragAxis](/api/framework/dragaxis) object instances — `x` and `y`.
 
 ### Access event coordinates in drag move event
 
