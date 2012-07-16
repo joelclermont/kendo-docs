@@ -16,9 +16,11 @@ Exposes a jQuery plug-in that will handle the widget creation and attach its cli
 
 #### Example
 
-    function TextBox(element, options);
+    function TextBox(element, options) {
+    }
+
     kendo.ui.plugin(TextBox);
-    
+
     // initialize a new TextBox for each input, with the given options object.
     $("input").kendoTextBox({ });
     // get the TextBox object and call the value API method
@@ -30,13 +32,13 @@ Exposes a jQuery plug-in that will handle the widget creation and attach its cli
 
 The widget function.
 
-##### register `Object`
+##### register `Object` **(default: `kendo.ui`)**
 
-<kendo.ui> The object where the reference to the widget is recorded.
+The object where the reference to the widget is recorded.
 
-##### prefix `Object`
+##### prefix `String` **(default: `""`)**
 
-<""> The plugin function prefix, e.g. "Mobile" will register "kendoMobileFoo".
+The plugin function prefix, e.g. "Mobile" will register "kendoMobileFoo".
 
 ### progress
 

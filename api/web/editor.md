@@ -7,68 +7,9 @@ publish: true
 
 # kendo.ui.Editor
 
-## Description
-
-
-
-The Editor allows users to create rich text content by means of a WYSIWYG interfance. The generated widget value is an XHTML markup.
-
-
-### Getting Started
-
-#### Creating an **Editor** from existing HTML element
-
-      <textarea id="editor" rows="10" cols="30"></textarea>
-
-#### Initialize the Kendo Editor
-
-      $(document).ready(function(){
-          $("#editor").kendoEditor();
-      });
-
-### Configuring the Editor
-
-If no specific tools are defined, the Editor will create its default set of tools for text formatting.
-
-#### Specifying a set of Editor tools
-
-       $(document).ready(function(){
-          $("#editor").kendoEditor({
-             tools: [
-                 "bold",
-                 "italic",
-                 "underline",
-                 "foreColor"
-             ]
-          });
-      });
-
-### Specifying custom tools
-
-
-The Editor functionality can be extended through custom tools, defined in the `tools` array.
-
-#### Adding a custom tool button
-
-       $("#editor").kendoEditor({
-           tools: [
-               {
-                   name: "toolName",
-                   tooltip: "Custom editor tool",
-                   exec: function(e) {
-                       var editor = $(this).data("kendoEditor");
-    
-                       // execute command
-                   }
-               }
-           ]
-       });
-
-The custom buttons get a **k-toolName** CSS class to allow styling. (where `toolName` is the name specified in the custom tool configuration)
-
 ## Configuration
 
-### encoded `Boolean`*(default: true)*
+### encoded `Boolean` *(default: true)*
 
  Indicates whether the Editor should submit encoded HTML tags.
 
@@ -100,36 +41,36 @@ as a collection of required properties, while the insertHtml  tool requires a co
 
     $("#editor").kendoEditor({
          tools: [
-         "bold",
-         "italic",
-         "underline",
-         "strikethrough",
-         "fontName",
-         "fontSize",
-         "foreColor",
-         "backColor",
-         "justifyLeft",
-         "justifyCenter",
-         "justifyRight",
-         "justifyFull",
-         "insertUnorderedList",
-         "insertOrderedList",
-         "indent",
-         "outdent",
-         "formatBlock",
-         "createLink",
-         "unlink",
-         "insertImage",
-         "insertHtml",
-         "viewHtml",
-         {
-             name: "customTool",
-             tooltip: "Custom Tool",
-             exec: function(e) {
-                 var editor = $(this).data("kendoEditor");
-                 // ...
+             "bold",
+             "italic",
+             "underline",
+             "strikethrough",
+             "fontName",
+             "fontSize",
+             "foreColor",
+             "backColor",
+             "justifyLeft",
+             "justifyCenter",
+             "justifyRight",
+             "justifyFull",
+             "insertUnorderedList",
+             "insertOrderedList",
+             "indent",
+             "outdent",
+             "formatBlock",
+             "createLink",
+             "unlink",
+             "insertImage",
+             "insertHtml",
+             "viewHtml",
+             {
+                 name: "customTool",
+                 tooltip: "Custom Tool",
+                 exec: function(e) {
+                     var editor = $(this).data("kendoEditor");
+                     // ...
+                 }
              }
-         }
          ],
          insertHtml: [
              { text: "label 1", value: "<p>snippet 1</p>" },
@@ -146,7 +87,7 @@ Creates a W3C-compatible **Range** object.
 #### Example
 
     var editor = $("#editor").data("kendoEditor");
-    
+
     var range = editor.createRange();
 
 #### Parameters
@@ -170,11 +111,11 @@ Executes an editor command on the currently selected text.
 #### Example
 
     var editor = $("#editor").data("kendoEditor");
-    
+
     editor.exec("bold");
-    
+
     editor.exec("undo");
-    
+
     editor.exec("foreColor", { value: "#ff0000" });
 
 #### Parameters
@@ -198,7 +139,7 @@ Gets a **Range** object form the editable area.
 #### Example
 
     var editor = $("#editor").data("kendoEditor");
-    
+
     var range = editor.getRange();
 
 #### Returns
@@ -216,7 +157,7 @@ Pastes HTML into the editable area.
 #### Example
 
     var editor = $("#editor").data("kendoEditor");
-    
+
     editor.paste("<p>new content</p>");
 
 #### Parameters
@@ -241,9 +182,9 @@ Focuses the editable area and selects the range described by the range parameter
 
     var editor = $("#editor").data("kendoEditor"),
         range = editor.createRange();
-    
+
     range.selectNodeContents(editor.body);
-    
+
     editor.selectRange(range);
 
 #### Parameters
@@ -264,10 +205,10 @@ Gets or sets the Editor value.
 #### Example
 
     var editor = $("#editor").data("kendoEditor");
-    
+
     // set value
     editor.value("<p>new content</p>");
-    
+
     // get value
     var htmlValue = editor.value();
 
@@ -308,7 +249,8 @@ Fires when an Editor command is executed.
 
      // get a reference to the Editor
      var editor = $("#editor").data("kendoEditor");
-     // bind to the select event
+
+     // bind to the execute event
      editor.bind("execute", function(e) {
          // handle event
      }
@@ -338,7 +280,8 @@ Fires before when content is pasted in the Editor.
 
      // get a reference to the Editor
      var editor = $("#editor").data("kendoEditor");
-     // bind to the select event
+
+     // bind to the paste event
      editor.bind("paste", function(e) {
          // handle event
      }
@@ -365,6 +308,7 @@ Fires when the Editor selection has changed.
 
      // get a reference to the Editor
      var editor = $("#editor").data("kendoEditor");
+
      // bind to the select event
      editor.bind("select", function(e) {
          // handle event
