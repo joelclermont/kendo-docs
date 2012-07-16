@@ -101,7 +101,33 @@ be availble in your views.
                  </pages>
              </system.web.webPages.razor>
 
-7.  Use any Kendo UI HtmlHelper extension:
+7. In case **ASP.NET MVC 4** is used, a **binding redirect** should be added to the root **web.config** file:
+
+        <configuration>
+          <!--... elements deleted for clarity ...-->
+
+          <runtime>
+            <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+              <dependentAssembly>
+                <assemblyIdentity name="System.Web.Helpers"
+                     publicKeyToken="31bf3856ad364e35" />
+                <bindingRedirect oldVersion="1.0.0.0" newVersion="2.0.0.0"/>
+              </dependentAssembly>
+              <dependentAssembly>
+                <assemblyIdentity name="System.Web.Mvc"
+                     publicKeyToken="31bf3856ad364e35" />
+                <bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="4.0.0.0"/>
+              </dependentAssembly>
+              <dependentAssembly>
+                <assemblyIdentity name="System.Web.WebPages"
+                     publicKeyToken="31bf3856ad364e35" />
+                <bindingRedirect oldVersion="1.0.0.0" newVersion="2.0.0.0"/>
+              </dependentAssembly>
+            </assemblyBinding>
+          </runtime>
+        </configuration>
+
+8.  Use any Kendo UI HtmlHelper extension:
     * WebForms
 
             <%: Html.Kendo().DatePicker().Name("Birthday") %>
