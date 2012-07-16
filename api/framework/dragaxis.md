@@ -9,15 +9,11 @@ publish: true
 
 ## Description
 
-
-
-#### DragAxis
-
 The DragAxis is used internally by the kendo.Drag component to store and calculate event data.
 The Drag component contains two DragAxis instances: `x` for the horizontal coordinates, and `y` for the vertical.
 The two DragAxis instances are available in each Drag event parameter.
 
-#### Access DragAxis information in Drag start event
+## Access DragAxis information in Drag start event
 
     new kendo.Drag($("#foo"), {
      start: function(e) {
