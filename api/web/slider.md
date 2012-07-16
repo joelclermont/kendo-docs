@@ -9,22 +9,11 @@ publish: true
 
 ## Description
 
-
-
 The **Slider** provides a rich input for selecting values or ranges of values. Unlike the HTML5
 range input, the **Slider** presents a consistent experience across browsers and features a rich
 API and event model.
 
-
 ### Getting Started
-
-There are two types of **Slider**:
-
-1.  **Slider**, which presents one thumb and two opposing buttons for selecting a single value
-2.  **RangeSlider**, which present two thumbs for defining a range of values
-
-
-#### Slider
 
 #### Create an input element
 
@@ -39,35 +28,10 @@ initialization the **Slider** occur within a handler is provided to $(document).
         $("#slider").kendoSlider();
     });
 
-#### RangeSlider
-
-#### Create two HTML input elements in a div
-
-    <div id="rangeSlider">
-        <input />
-        <input />
-    </div>
-
-Initialization of a **RangeSlider** should occur after the DOM is fully loaded. It is recommended
-that initialization the **RangeSlider** occur within a handler is provided to $(document).ready().
-
-#### Initialize a RangeSlider using a selector within $(document).ready()
-
-    $(document).ready(function() {
-        $("#rangeSlider").kendoRangeSlider();
-    });
-
-The **RangeSlider** requires two inputs to capture both ends of the value range. This benefits
-scenarios where JavaScript is disabled, in which case users will be presented with two inputs, still allowing
-them to input a valid range.
-
-
 ### Customizing Slider Behaviors
 
-
-Many facets of the **Slider** and **RangeSlider** behavior can be configured through
+Many facets of the **Slider** behavior can be configured through
 properties, including:
-
 
 *   Minimum and/or maximum values
 *   Orientation (horizontal or vertical)
@@ -85,7 +49,6 @@ properties, including:
     });
 
 ### Accessing an Existing Slider
-
 
 You can reference an existing **Slider** instance via
 [jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
@@ -120,7 +83,7 @@ The minimum value of the **Slider**.
 
 ### orientation `String`*(default: "horizontal")*
 
-The orientation of a **Slider**; **"horizontal"** or **"vertical"**.
+The orientation of a **Slider**: **"horizontal"** or **"vertical"**.
 
 ### showButtons `Boolean`*(default: true)*
 
@@ -171,7 +134,7 @@ Format string for the text of the tooltip. Note: The applied
 format will also influence the appearance of the **Slider**
 tick labels.
 
-### value `Number`*(default: 0)*
+### value `Number`
 
 The underlying value of the **Slider**.
 
