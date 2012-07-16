@@ -1,6 +1,6 @@
 ---
-title: Overview
-slug: chart-axes
+title: Chart Overview
+slug: chart-overview
 publish: true
 ---
 
