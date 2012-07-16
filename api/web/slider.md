@@ -9,7 +9,7 @@ publish: true
 
 ## Description
 
-The **Slider** provides a rich input for selecting values or ranges of values. Unlike the HTML5
+The **Slider** provides a rich input for selecting values. Unlike the HTML5
 range input, the **Slider** presents a consistent experience across browsers and features a rich
 API and event model.
 
