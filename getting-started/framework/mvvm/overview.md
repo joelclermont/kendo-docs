@@ -48,6 +48,8 @@ Finally, let's bind the View to the View-Model. This is done by calling the `ken
 
     kendo.bind($("#view"), viewModel);
 
+> **Important:** Kendo UI Mobile is not included in the default list of initialized namespaces. You can initialize it explicitly by
+  running _kendo.bind(element, viewModel, kendo.mobile.ui);_
 
 ## Bindings
 
