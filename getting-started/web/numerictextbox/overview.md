@@ -1,6 +1,6 @@
 ---
 title: NumericTextBox Overview
-slug: getting-started.web.numerictextbox
+slug: numerictextbox-overview
 tags: getting-started,web
 publish: true
 ---

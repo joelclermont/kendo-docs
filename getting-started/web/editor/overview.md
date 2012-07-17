@@ -1,6 +1,6 @@
 ---
 title: Editor Overview
-slug: getting-started.web.editor
+slug: editor-overview
 tags: getting-started,web
 publish: true
 ---

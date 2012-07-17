@@ -1,6 +1,6 @@
 ---
 title: Slider Overview
-slug: getting-started.web.slider
+slug: slider-overview
 tags: getting-started,web
 publish: true
 ---

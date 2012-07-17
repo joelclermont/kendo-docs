@@ -1,6 +1,6 @@
 ---
 title: Splitter Overview
-slug: getting-started.web.splitter
+slug: splitter-overview
 tags: getting-started,web
 publish: true
 ---

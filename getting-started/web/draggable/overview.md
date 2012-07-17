@@ -1,6 +1,6 @@
 ---
 title: Draggable Overview
-slug: getting-started.web.draggable
+slug: draggable-overview
 tags: getting-started,web
 publish: true
 ---

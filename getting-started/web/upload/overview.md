@@ -1,7 +1,6 @@
-
 ---
 title: Upload Overview
-slug: getting-started.web.upload
+slug: upload-overview
 tags: getting-started,web
 publish: true
 ---

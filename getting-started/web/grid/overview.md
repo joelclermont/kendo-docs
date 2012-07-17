@@ -1,6 +1,6 @@
 ---
 title: Grid Overview
-slug: getting-started.web.grid
+slug: grid-overview
 tags: getting-started,web
 publish: true
 ---

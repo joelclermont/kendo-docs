@@ -1,6 +1,6 @@
 ---
 title: DateTimePicker Overview
-slug: getting-started.web.datetimepicker
+slug: datetimepicker-overview
 tags: getting-started,web
 publish: true
 ---
