@@ -1,6 +1,6 @@
 ---
 title: TimePicker Overview
-slug: timepicker-overview
+slug: gs-web-timepicker-overview
 tags: getting-started,web
 publish: true
 ---

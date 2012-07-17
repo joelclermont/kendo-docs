@@ -1,6 +1,6 @@
 ---
 title: ListView Overview
-slug: listview-overview
+slug: gs-web-listview-overview
 tags: getting-started,web
 publish: true
 ---

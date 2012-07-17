@@ -1,6 +1,6 @@
 ---
 title: Editor Overview
-slug: editor-overview
+slug: gs-web-editor-overview
 tags: getting-started,web
 publish: true
 ---

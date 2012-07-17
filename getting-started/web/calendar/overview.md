@@ -1,6 +1,6 @@
 ---
 title: Calendar Overview
-slug: calendar-overview
+slug: gs-web-calendar-overview
 tags: getting-started,web
 publish: true
 ---

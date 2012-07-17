@@ -1,6 +1,6 @@
 ---
 title: DropDownList Overview
-slug: dropdownlist-overview
+slug: gs-web-dropdownlist-overview
 tags: getting-started,web
 publish: true
 ---
