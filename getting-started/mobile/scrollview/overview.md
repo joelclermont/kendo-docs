@@ -1,6 +1,6 @@
 ---
 title: Mobile ScrollView Overview
-slug: getting-started.mobile.scrollview
+slug: gs-mobile-scrollview
 tags: getting-started,mobile
 publish: true
 ---

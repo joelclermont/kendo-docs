@@ -1,6 +1,6 @@
 ---
 title: Mobile View Overview
-slug: getting-started.mobile.view
+slug: gs-mobile-view
 tags: getting-started,mobile
 publish: true
 ---

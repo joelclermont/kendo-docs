@@ -1,6 +1,6 @@
 ---
 title: Mobile NavBar Overview
-slug: getting-started.mobile.navbar
+slug: gs-mobile-navbar
 tags: getting-started,mobile
 publish: true
 ---

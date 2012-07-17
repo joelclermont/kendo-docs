@@ -1,6 +1,6 @@
 ---
 title: Mobile ModalView Overview
-slug: getting-started.mobile.modalview
+slug: gs-mobile-modalview
 tags: getting-started,mobile
 publish: true
 ---

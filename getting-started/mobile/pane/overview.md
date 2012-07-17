@@ -1,6 +1,6 @@
 ---
 title: Mobile Pane Overview
-slug: getting-started.mobile.pane
+slug: gs-mobile-pane
 tags: getting-started,mobile
 publish: true
 ---

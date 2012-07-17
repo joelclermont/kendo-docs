@@ -1,6 +1,6 @@
 ---
 title: Mobile PopOver Overview
-slug: getting-started.mobile.popover
+slug: gs-mobile-popover
 tags: getting-started,mobile
 publish: true
 ---

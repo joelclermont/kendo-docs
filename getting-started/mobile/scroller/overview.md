@@ -1,6 +1,6 @@
 ---
 title: Mobile Scroller Overview
-slug: getting-started.mobile.scroller
+slug: gs-mobile-scroller
 tags: getting-started,mobile
 publish: true
 ---

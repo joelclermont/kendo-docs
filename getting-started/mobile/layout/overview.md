@@ -1,6 +1,6 @@
 ---
 title: Mobile Layout Overview
-slug: getting-started.mobile.layout
+slug: gs-mobile-layout
 tags: getting-started,mobile
 publish: true
 ---

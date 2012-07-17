@@ -1,6 +1,6 @@
 ---
 title: Mobile ButtonGroup overview
-slug: getting-started.mobile.buttongroup
+slug: gs-mobile-buttongroup
 tags: getting-started,mobile
 publish: true
 ---

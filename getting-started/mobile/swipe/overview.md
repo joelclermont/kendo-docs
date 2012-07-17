@@ -1,6 +1,6 @@
 ---
 title: Mobile Swipe overview
-slug: getting-started.mobile.swipe
+slug: gs-mobile-swipe
 tags: getting-started,mobile
 publish: true
 ---

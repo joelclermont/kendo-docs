@@ -1,6 +1,6 @@
 ---
 title: Mobile TabStrip overview
-slug: getting-started.mobile.tabstrip
+slug: gs-mobile-tabstrip
 tags: getting-started,mobile
 publish: true
 ---

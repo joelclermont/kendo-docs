@@ -1,6 +1,6 @@
 ---
 title: Mobile Switch overview
-slug: getting-started.mobile.switch
+slug: gs-mobile-switch
 tags: getting-started,mobile
 publish: true
 ---
