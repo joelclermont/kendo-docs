@@ -32,7 +32,7 @@ This option is mandatory because the Pager is tightly connected with DataSource.
         pageSizes: [10, 25, 50]
     });
 
-If the Pager is used with another widget then we usualy specify this Pager like object of options for given widget. In that case the DataSource is automaticaly inject to the Pager from the widget. See example for a Grid below.
+If the Pager is used with another widget then we usualy specify this Pager like object of options for given widget. In that case the DataSource is automaticaly injected to the Pager from the widget. See example for a Grid below.
     
 #### Example - grid pager
     $("#grid").kendoGrid({
