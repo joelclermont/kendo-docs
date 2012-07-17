@@ -7,17 +7,6 @@ publish: true
 
 # kendo.Drag
 
-## Description
-
-
-
-#### Drag
-The kendo Drag component provides a cross-browser, touch-friendly way to handle mouse and touch drag events.
-
-#### **Drag** initialization
-
-    var drag = new kendo.Drag($("#draggable"));
-
 ## Configuration
 
 ### allowSelection `Boolean`*(default: false)*

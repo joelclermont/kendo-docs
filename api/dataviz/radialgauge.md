@@ -7,42 +7,6 @@ publish: true
 
 # kendo.dataviz.ui.RadialGauge
 
-## Description
-
-
-
-The Radial Gauge widget is used to let users quickly understand where a value lies in a certain range.
-All graphics are rendered on the client using SVG with a fallback to VML for legacy browsers.
-
-
-### 
-Getting Started
-
-#### 1\. Create a simple HTML div (optionally set a height and width with CSS)
-
-    <div id="radial-gauge"></div>
-
-#### 2\. Initialize the Kendo UI RadialGauge with default configuration
-
-       $(document).ready(function() {
-           $("#radial-gauge").kendoRadialGauge();
-       });
-    </p>
-
-### Creating half- and quarter-circle gauges
-
-The `startAngle` and `endAngle` configuration options enable you to create
-gauges that align with your design goals.
-
-#### Create a quarter-gauge, oriented to the top-right
-
-        $("#radial-gauge").kendoRadialGauge({
-            startAngle: 90,
-            endAngle: 180
-        });
-
-For a real-world example for this functionality, see the car dashboard demo.
-
 ## Configuration
 
 ### gaugeArea `Object`
@@ -155,7 +119,7 @@ The width of the range indicators.
 
 Configures the scale.
 
-### scale.endAngle `number`*(default: 210)*
+### scale.endAngle `Number`*(default: 210)*
 
  The end angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
@@ -378,7 +342,7 @@ Any valid CSS color string will work here, including hex and rgb.
 
 Reverses the scale direction - values are increase anticlockwise.
 
-### scale.startAngle `number`*(default: -30)*
+### scale.startAngle `Number`*(default: -30)*
 
  The start angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)

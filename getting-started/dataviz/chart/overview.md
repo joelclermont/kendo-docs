@@ -1,12 +1,14 @@
 ---
-title: Overview
-slug: chart-axes
+title: Chart Overview
+slug: chart-overview
 publish: true
 ---
 
 # Chart Overview
 
 ## Contents
+
+* [Gettimg started](#getting-started)
 
 * [Categorical charts](#categorical-charts)
     * [Category axis](#category-axis)
@@ -24,6 +26,98 @@ publish: true
     * [Axis title](#axis-title)
     * [Plot bands](#plot-bands)
     * [Global settings](#global-settings)
+
+
+## Getting started
+
+The Chart widget uses modern browser technologies to render high-quality data visualizations.
+All graphics are rendered on the client using SVG with a fallback to VML for legacy browsers.
+
+Kendo UI DataViz includes the following chart types:
+
+*   Bar / Column
+*   Line / Vertical Line
+*   Area / Vertical Area
+*   Pie
+*   Scatter
+*   Scatter Line
+
+Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for additional information about
+new Chart types and features.
+
+### Creating a Chart
+
+To create a chart, add an empty div in the HTML and give it an ID.
+
+#### Example
+
+    <div id="chart"></div>
+
+Optionally, set the width and height of the desired chart inline or with CSS.
+
+#### Example
+
+    <div id="chart" style="width: 400px; height: 600px"></div>
+
+The chart is rendered by selecting the div with a jQuery selector and calling the kendoChart() function.
+
+#### Example
+
+    $("#chart").kendoChart();
+
+This will render the chart shown below:
+
+![Empty Chart](http://www.kendoui.com/Libraries/Documentation/chart-empty.sflb.ashx)</img>
+
+The chart can then be given a title by specifying the "text" property of the "title" object in the Kendo Chart.
+
+#### Example
+
+    $("#chart").kendoChart({
+        title: {
+             text: "Kendo Chart Example"
+        }
+    });
+
+### Data Binding
+
+The Charts can visualize series bound to both local and remote data.
+
+Start by creating a series that displays inline data.
+
+#### Example
+
+    $("#chart").kendoChart({
+        title: {
+             text: "Kendo Chart Example"
+        },
+        series: [
+             { name: "Example Series", data: [200, 450, 300, 125] }
+        ]
+    });
+
+This will render a column chart by default.
+
+![Column Chart without categories](http://www.kendoui.com/Libraries/Documentation/chart-column-no-categories.sflb.ashx)</img>
+
+You will notice that the columns have no label across the category axis.
+You specify the labeling for the series in the [`categoryAxis` property](/api/dataviz/chart#categoryAxis).
+
+#### Example
+
+    $("#chart").kendoChart({
+        title: {
+             text: "Kendo Chart Example"
+        },
+        series: [
+             { name: "Example Series", data: [200, 450, 300, 125] }
+        ],
+        categoryAxis:{
+             categories: [ 2000, 2001, 2002, 2003 ]
+        }
+    });
+
+![Column Chart with categories](http://www.kendoui.com/Libraries/Documentation/chart-column-categories.sflb.ashx)</img>
 
 ## Categorical charts
 
@@ -114,7 +208,7 @@ The date category axis supports specifying one format per base unit.
         }
     }
 
-The `labels.format` property takes priority, if specified.
+The [`labels.format` property](/api/dataviz/chart#categoryaxis.labels.format-string) takes priority, if specified.
 
 The global KendoUI culture is used for formatting the dates.
 It can be overriden by setting `labels.culture`.
@@ -175,7 +269,7 @@ Available options are:
 
 The Chart currently supports only Numeric value axes.
 
-Configuration options are accessible through the "valueAxis" object:
+Configuration options are accessible through the [`valueAxis` object](/api/dataviz/chart#valueaxis-object):
 
     $("#chart").kendoChart({
         series: [{
@@ -464,7 +558,7 @@ For example:
 
 ## Global settings
 
-Sometimes you need to apply settings to all axes. In this case it is convenient to use the "axisDefaults" object:
+Sometimes you need to apply settings to all axes. In this case it is convenient to use the [`axisDefaults` object](/api/dataviz/chart#axisdefaults-object):
 
     $("#chart").kendoChart({
         series: [{
