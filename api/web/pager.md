@@ -48,7 +48,7 @@ If the Pager is used with another widget then we usualy specify this Pager like 
     });
 
 ### selectTemplate `String`
-The template for select box with predefined page sizes.
+The template for selectbox with predefined page sizes.
 
 #### Example
     $("#pager").kendoPager({
@@ -143,6 +143,12 @@ Returns the page size - maximum number of items allowed on one page.
 
 ### page
 Set the specified page as a current page. If called without arguments - returns the current page.
+
+#### Example - get current page
+    var currentPage = pager.page();
+    
+#### Example - set current page
+    pager.page(2);
 
 ### refresh
 Updates all values of pager elements so that these values fit the values of DataSource. This method is automaticaly called after DataSource change event is fired. 
