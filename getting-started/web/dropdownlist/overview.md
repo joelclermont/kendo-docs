@@ -1,6 +1,6 @@
 ---
 title: DropDownList Overview
-slug: getting-started.web.dropdownlist
+slug: dropdownlist-overview
 tags: getting-started,web
 publish: true
 ---

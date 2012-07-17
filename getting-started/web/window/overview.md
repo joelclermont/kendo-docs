@@ -1,6 +1,6 @@
 ---
 title: Window Overview
-slug: getting-started.web.window
+slug: window-overview
 tags: getting-started,web
 publish: true
 ---

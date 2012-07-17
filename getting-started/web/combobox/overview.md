@@ -1,6 +1,6 @@
 ---
 title: ComboBox Overview
-slug: getting-started.web.combobox
+slug: combobox-overview
 tags: getting-started,web
 publish: true
 ---

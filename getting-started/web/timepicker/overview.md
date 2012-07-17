@@ -1,6 +1,6 @@
 ---
 title: TimePicker Overview
-slug: getting-started.web.timepicker
+slug: timepicker-overview
 tags: getting-started,web
 publish: true
 ---

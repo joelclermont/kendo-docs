@@ -1,6 +1,6 @@
 ---
 title: PanelBar Overview
-slug: getting-started.web.panelbar
+slug: panelbar-overview
 tags: getting-started,web
 publish: true
 ---
