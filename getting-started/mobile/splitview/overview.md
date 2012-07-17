@@ -1,6 +1,6 @@
 ---
 title: Mobile SplitView overview
-slug: getting-started.mobile.splitview
+slug: gs-mobile-splitview
 tags: getting-started,mobile
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: ActionSheet Overview
-slug: getting-started.mobile.actionsheet
+slug: gs-mobile-actionsheet
 tags: getting-started,mobile
 publish: true
 ---

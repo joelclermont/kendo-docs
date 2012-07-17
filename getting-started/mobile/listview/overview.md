@@ -1,6 +1,6 @@
 ---
 title: kendo.mobile.ui.ListView
-slug: mobile-kendo.mobile.ui.listview
+slug: gs-mobile-listview
 tags: api,mobile
 publish: true
 ---

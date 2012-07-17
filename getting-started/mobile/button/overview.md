@@ -1,6 +1,6 @@
 ---
 title: Mobile Button overview
-slug: getting-started.mobile.button
+slug: gs-mobile-button
 tags: getting-started,mobile
 publish: true
 ---

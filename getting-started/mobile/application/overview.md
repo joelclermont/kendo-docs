@@ -1,6 +1,6 @@
 ---
 title: Application overview
-slug: getting-started.mobile.application
+slug: gs-mobile-application
 tags: getting-started,mobile
 publish: true
 ---
