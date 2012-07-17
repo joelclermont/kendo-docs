@@ -7,26 +7,6 @@ publish: true
 
 # kendo.ui.Draggable
 
-## Description
-
-
-
-#### Draggable
-
-Enable draggable functionality on any DOM element.
-
-#### **Draggable** initialization
-
-    var draggable = $("#draggable").kendoDraggable();
-
-#### DropTarget
-
-Enable any DOM element to be a target for draggable elements.
-
-#### **DropTarget** initialization
-
-    var dropTarget = $("#dropTarget").kendoDropTarget();
-
 ## Configuration
 
 ### axis `String`*(default: null)*

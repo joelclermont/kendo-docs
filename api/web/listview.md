@@ -7,61 +7,6 @@ publish: true
 
 # kendo.ui.ListView
 
-## Description
-
-
-
-The ListView is designed to give your the freedom to specify custom type of layout
-for the items displayed in the control. It can be bound to local JSON data or to
-remote data using the Kendo DataSource component.
-
-
-### Getting Started
-
-#### Creating a **ListView** from existing HTML element
-
-      <ul id="listView"></ul>
-
-#### Initialize the Kendo Grid
-
-      $(document).ready(function(){
-          $("#listView").kendoListView({
-              template: "<li>${FirstName} ${LastName}</li>",
-              dataSource: {
-                  data: [
-                      {
-                          FirstName: "Joe",
-                          LastName: "Smith"
-                      },
-                      {
-                          FirstName: "Jane",
-                          LastName: "Smith"
-                  }]
-              }
-          });
-      });
-
-### Configuring ListView Behavior
-
-Kendo ListView supports paging, selection, navigation, editing. Configuring any of
-these ListView behaviors is done using simple boolean configuration options. For
-example, the follow snippet shows how to enable all of these behaviors.
-
-#### Enabling ListView paging, selection, navigation and editing
-
-       $(document).ready(function(){
-          $("#listView").kendoListView({
-             pageable: true,
-             selectable: true,
-             navigatable: true,
-             editable: true,
-             template: "<li>${FirstName}</li>",
-             editTemplate: '<li><input type="text" data-bind="value:FirstName" name="FirstName" required="required"/></li>'
-          });
-      });
-
-By default, paging, selection, navigation and editing are **disabled**.
-
 ## Configuration
 
 ### autoBind `Boolean`*(default: true)*
@@ -88,7 +33,7 @@ Instance of DataSource or Object with DataSource configuration.
          data: [{title: "Star Wars: A New Hope", year: 1977}, {title: "Star Wars: The Empire Strikes Back", year: 1980}],
          pageSize: 1
     });
-    
+
     $("#listView").kendoListView({
          dataSource: sharedDataSource,
          template: "<li>${title} ${year}</li>"
@@ -117,7 +62,7 @@ Specifies ListView item template in edit mode.
            </dl>
          </div>
      </script>
-    
+
      <script type="text/x-kendo-tmpl" id="editTemplate">
          <div>
            <dl>
@@ -246,7 +191,7 @@ Reloads the data and repaints the list view.
 #### Example
 
     var listView = $("#listView").data("kendoListView");
-    
+
     // refreshes the list view
     listView.refresh();
 
