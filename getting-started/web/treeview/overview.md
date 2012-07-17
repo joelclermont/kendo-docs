@@ -1,6 +1,6 @@
 ---
 title: TreeView Overview
-slug: treeview-overview
+slug: gs-web-treeview-overview
 tags: getting-started,web
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: Menu Overview
-slug: menu-overview
+slug: gs-web-menu-overview
 tags: getting-started,web
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: AutoComplete Overview
-slug: autocomplete-overview
+slug: gs-web-autocomplete-overview
 tags: getting-started,web
 publish: true
 ---

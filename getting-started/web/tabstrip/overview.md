@@ -1,6 +1,6 @@
 ---
 title: TabStrip Overview
-slug: tabstrip-overview
+slug: gs-web-tabstrip-overview
 tags: getting-started,web
 publish: true
 ---

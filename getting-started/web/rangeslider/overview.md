@@ -1,6 +1,6 @@
 ---
 title: RangeSlider Overview
-slug: rangeslider-overview
+slug: gs-web-rangeslider-overview
 tags: getting-started,web
 publish: true
 ---
