@@ -13,14 +13,7 @@ publish: true
 
 Hide the loading animation.
 
-#### Example
-
-    
-
 ### show
 
 Show the loading animation.
 
-#### Example
-
-    
