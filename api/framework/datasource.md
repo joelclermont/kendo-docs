@@ -38,10 +38,19 @@ Specifies the local JavaScript object to use for the data source.
 
     // returns only data where orderId is equal to 10248
     filter: { field: "orderId", operator: "eq", value: 10248 }
-    
+
     // returns only data where orderId is equal to 10248 and customerName starts with Paul
     filter: [ { field: "orderId", operator: "eq", value: 10248 },
               { field: "customerName", operator: "startswith", value: "Paul" } ]
+
+    // returns data where orderId is equal to 10248 or customerName starts with Paul
+    filter: {
+        logic: "or",
+        filters: [
+          { field: "orderId", operator: "eq", value: 10248 },
+          { field: "customerName", operator: "startswith", value: "Paul" }
+        ]
+    }
 
 ### group `Array | Object`*(default: undefined)*
 
@@ -51,7 +60,7 @@ Specifies the local JavaScript object to use for the data source.
 
     // groups data by orderId field
     group: { field: "orderId" }
-    
+
     // groups data by orderId and customerName fields
     group: [ { field: "orderId", dir: "desc" }, { field: "customerName", dir: "asc" } ]
 
@@ -451,7 +460,7 @@ It is possible to modify these parameters by using the **parameterMap** function
 
     // sorts data ascending by orderId field
     sort: { field: "orderId", dir: "asc" }
-    
+
     // sorts data ascending by orderId field and then descending by shipmentDate
     sort: [ { field: "orderId", dir: "asc" }, { field: "shipmentDate", dir: "desc" } ]
 
@@ -529,10 +538,10 @@ Options for remote read data operation, or the URL of the remote service
             read: {
                 // the remote service URL
                 url: "http://search.twitter.com/search.json",
-    
+
                 // JSONP is required for cross-domain AJAX
                 dataType: "jsonp",
-    
+
                 // additional parameters sent to the remote service
                 data: {
                     q: function() {
@@ -542,7 +551,7 @@ Options for remote read data operation, or the URL of the remote service
             }
         }
     });
-    
+
      // consuming odata feed without setting additional options
      var dataSource = new kendo.data.DataSource({
          type: "odata",
@@ -669,7 +678,7 @@ The zero-based index of the data record
 
 #### Returns
 
-`Object` 
+`Object`
 
 ### cancelChanges
 
@@ -773,6 +782,15 @@ _Supported filter operators/aliases are_:
          { field: "orderId", operator: "neq", value: 42 },
          { field: "unitPrice", operator: "ge", value: 3.14 }
     ]);
+
+    // returns data where orderId is equal to 10248 or customerName starts with Paul
+    dataSource.filter({
+        logic: "or",
+        filters: [
+          { field: "orderId", operator: "eq", value: 10248 },
+          { field: "customerName", operator: "startswith", value: "Paul" }
+        ]
+    });
 
 #### Parameters
 
@@ -917,11 +935,11 @@ Otherwise operations are executed over the available data.
 
 #### Example
 
-    
+
     // create a view containing at most 20 records, taken from the
     // 5th page and sorted ascending by orderId field.
     dataSource.query({ page: 5, pageSize: 20, sort: { field: "orderId", dir: "asc" } });
-    
+
     // moves the view to the first page returning at most 20 records
     // but without particular ordering.
     dataSource.query({ page: 1, pageSize: 20 });
