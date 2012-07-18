@@ -2,7 +2,7 @@
 title: kendo.ui.Pager
 slug: web-kendo.ui.pager
 tags: api,web
-publish: false
+publish: true
 ---
 
 # kendo.ui.Pager
@@ -16,7 +16,7 @@ Indicates whether the pager refresh method will be called within its initializat
 Defines the number of buttons displayed in the numeric pager.
 
 ### dataSource `kendo.data.DataSource`
-Instance of kendo DataSource. See the [**kendo.data.DataSource**](http://docs.kendoui.com/api/framework/datasource). 
+Instance of kendo DataSource. See the [**kendo.data.DataSource**](http://docs.kendoui.com/api/framework/datasource).
 
 This option is mandatory because the Pager is tightly connected with DataSource. The pager is UI widget for managing paging over the DataSource. The Pager gets values like page size or total count of items from DataSource.
 
@@ -24,7 +24,7 @@ This option is mandatory because the Pager is tightly connected with DataSource.
     $("#pager").kendoPager({
         dataSource: new kendo.data.DataSource({
             data: [
-                {title: "Star Wars: A New Hope", year: 1977}, 
+                {title: "Star Wars: A New Hope", year: 1977},
                 {title: "Star Wars: The Empire Strikes Back", year: 1980}
             ],
             pageSize: 25
@@ -33,7 +33,7 @@ This option is mandatory because the Pager is tightly connected with DataSource.
     });
 
 If the Pager is used with another widget then we usually specify this Pager like object of options for given widget. In that case the DataSource is automaticaly injected to the Pager from the widget. See example for a Grid below.
-    
+
 #### Example - grid pager
     $("#grid").kendoGrid({
         dataSource: sharedDataSource,
@@ -55,16 +55,16 @@ The template for selectbox with predefined page sizes.
         dataSource: sharedDataSource,
         selectTemplate: '<li><span class="k-state-selected">#=text#</span></li>'
     });
-  
+
 ### linkTemplate `String`
 The template for page number links.
-    
+
 #### Example
     $("#pager").kendoPager({
         dataSource: sharedDataSource,
         linkTemplate: '<li><a href="\\#" class="k-link" data-#=ns#page="#=idx#">#=text#</a></li>'
     });
-  
+
 ### info `Boolean`*(default: true)*
 Defines if a label showing current paging information will be displayed.
 
@@ -75,8 +75,8 @@ Defines if an input element which allows the user to navigate to given page will
 Defines if numeric portion of the pager will be shown.
 
 ### pageSizes `Boolean | Array`*(default: false | [5,10,20])*
-Displays a list with predefined page sizes. An array of values to be displayed can be provided. If pageSize option is provided for DataSource then this pageSize value will be automaticaly selected in created selectbox. 
-  
+Displays a list with predefined page sizes. An array of values to be displayed can be provided. If pageSize option is provided for DataSource then this pageSize value will be automaticaly selected in created selectbox.
+
 ### previousNext `Boolean`*(default: true)*
 Defines if buttons for navigating to the first, last, previous and next pages will be shown.
 
@@ -146,12 +146,12 @@ Set the specified page as a current page. If called without arguments - returns 
 
 #### Example - get current page
     var currentPage = pager.page();
-    
+
 #### Example - set current page
     pager.page(2);
 
 ### refresh
-Updates all values of pager elements so that these values fit the values of DataSource. This method is automaticaly called after DataSource change event is fired. 
+Updates all values of pager elements so that these values fit the values of DataSource. This method is automaticaly called after DataSource change event is fired.
 
 ### destroy
 Unbinds all callbacks created within pager initialization. This method doesn't remove pager element from DOM.
