@@ -101,6 +101,55 @@ Here is how to configure the Kendo AutoComplete for ajax binding to the Northwin
                  })
              )
 
+### Sending parameters to the server
+
+Here is how to configure the Kendo ComboBox to send parameters to the server:
+
+- WebForms
+    
+        <%: Html.Kendo().ComboBox()
+                .Name("productAutoComplete")
+                .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
+                .DataSource(source =>
+                {
+                        source.Read(read =>
+                       {
+                                read.Action("GetProducts", "Home")
+									.Data("onAdditionalData");
+                       });
+                })
+         %>
+         <script>
+    		function onAdditionalData() {
+		        return {
+		            text: $("#productAutoComplete").val() 
+		        };
+		    }
+		</script>
+
+- Razor
+
+		@(Html.Kendo().ComboBox()
+              .Name("productAutoComplete")
+              .DataTextField("ProductName") //Specifies which property of the Product to be used by the autocomplete.
+              .DataSource(source =>
+              {
+                      source.Read(read =>
+                     {
+                              read.Action("GetProducts", "Home")
+				                  .Data("onAdditionalData");
+                     });
+              })
+       	)
+		
+		<script>
+    		function onAdditionalData() {
+		        return {
+		            text: $("#productAutoComplete").val() 
+		        };
+		    }
+		</script>
+
 ## Accessing an Existing AutoComplete
 
 You can reference an existing AutoComplete instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).

@@ -111,6 +111,78 @@ Here is how to configure the Kendo ComboBox for ajax binding to the Northwind Pr
                 .SelectedIndex(0) //Select first item.
             )
 
+### Sending parameters to the server
+
+Here is how to configure the Kendo ComboBox to send parameters to the server:
+
+- WebForms
+    
+        <%: Html.Kendo().ComboBox()
+                .Name("productComboBox") //The name of the combobox is mandatory. It specifies the "id" attribute of the widget.
+                .DataTextField("ProductName") //Specifies which property of the Product to be used by the combobox as a text.
+                .DataValueField("ProductID") //Specifies which property of the Product to be used by the combobox as a value.
+                .DataSource(source =>
+                {
+                        source.Read(read =>
+                       {
+                                read.Action("GetProducts", "Home")
+									.Data("onAdditionalData");
+                       });
+                })
+                .SelectedIndex(0) //Select first item.
+         %>
+         <script>
+    		function onAdditionalData() {
+		        return {
+		            text: $("#productComboBox").val() 
+		        };
+		    }
+		</script>
+
+- Razor
+
+		@(Html.Kendo().ComboBox()
+              .Name("productComboBox") //The name of the combobox is mandatory. It specifies the "id" attribute of the widget.
+              .DataTextField("ProductName") //Specifies which property of the Product to be used by the combobox as a text.
+              .DataValueField("ProductID") //Specifies which property of the Product to be used by the combobox as a value.
+              .DataSource(source =>
+              {
+                     source.Read(read =>
+                     {
+                              read.Action("GetProducts", "Home") //Set the Action and Controller name
+                                  .Data("onAdditionalData");
+                     });
+              })
+              .SelectedIndex(0) //Select first item.
+       	)
+		
+		<script>
+    		function onAdditionalData() {
+		        return {
+		            text: $("#productComboBox").val() 
+		        };
+		    }
+		</script>
+
+> The Kendo ComboBox has default event handler for the DataSource's Data callback. If you do not
+define event handler, it will be used.
+	
+*Default event handler for the DataSource's Data callback*
+
+	function requestData(selector) {
+        var combobox = $(selector).data("kendoComboBox"),
+            filters = combobox.dataSource.filter(),
+            value = combobox.input.val();
+
+        if (!filters) {
+            value = "";
+        }
+
+        return { text: value };
+    }
+
+As you can see the combobox sends the input's value only if the end-user starts to type in it.
+
 ## Accessing an Existing ComboBox
 
 You can reference an existing ComboBox instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
