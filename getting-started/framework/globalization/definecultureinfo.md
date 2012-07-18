@@ -1,7 +1,7 @@
 ---
 title: Define culture information
 slug: define-culture-info
-publish: false
+publish: true
 ---
 # Define culture information
 
