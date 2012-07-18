@@ -113,7 +113,7 @@ shows the decades from the centery
 
 ### format `String`*(default: MM/dd/yyyy h:mm tt)*
 
- Specifies the format, which is used to format the value of the DateTimePicker displayed in the input.
+ Specifies the format, which is used to format the value of the DateTimePicker displayed in the input. The format also will be used to parse the input.
 
 #### Example
 
@@ -198,7 +198,7 @@ the minimum and maximum values.
 
 ### parseFormats `Array`
 
- Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the options.format and options.timeFormat will be used.
+ Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the options.format and options.timeFormat will be used. Note that value of the format option is always used.
 
 #### Example
 

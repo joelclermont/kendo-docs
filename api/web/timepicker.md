@@ -70,7 +70,7 @@ Animation to be used for opening of the popup.
 
 ### format `String`*(default: h:mm tt)*
 
- Specifies the format, which is used to format the value of the TimePicker displayed in the input.
+ Specifies the format, which is used to format the value of the TimePicker displayed in the input. The format also will be used to parse the input.
 
 ### interval `Number`*(default: 30)*
 
@@ -86,7 +86,7 @@ Specifies the start value in the popup list.
 
 ### parseFormats `Array`
 
- Specifies the formats, which are used to parse the value set with the value method or by direct input. If not set the value of the options.format will be used.
+ Specifies the formats, which are used to parse the value set with the value method or by direct input. If not set the value of the options.format will be used. Note that value of the format option is always used.
 
 #### Example
 
