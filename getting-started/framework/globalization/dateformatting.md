@@ -10,35 +10,35 @@ The purpose of date formatting is to convert Date object to a human readable str
 
 ## Standard date formats
 
-- *d* - short date pattern. "M/d/yyyy" for "en-US".
+- *d* - short date pattern ("M/d/yyyy" for en-US)
 	
     `kendo.toString(new Date(2000, 10, 6), "d")` -> 11/6/2000
 
-- "D" - long date pattern. "dddd, MMMM dd, yyyy" for "en-US".
+- "D" - long date pattern (dddd, MMMM dd, yyyy" for en-US)
 
     `kendo.toString(new Date(2000, 10, 6), "D")` -> Monday, November 06, 2000
 
-- *F* - Full date/time pattern. "dddd, MMMM dd, yyyy h:mm:ss tt" for "en-US".
+- *F* - Full date/time pattern ("dddd, MMMM dd, yyyy h:mm:ss tt" for en-US)
 
     kendo.toString(new Date(2000, 10, 6), "D") -> Monday, November 06, 2000 12:00:00 AM
 
-- *g* - General date/time pattern (short time). "M/d/yyyy h:mm tt" for "en-US".
+- *g* - General date/time pattern (short time) ("M/d/yyyy h:mm tt" for en-US)
 
     `kendo.toString(new Date(2000, 10, 6), "g")` -> 11/6/2000 12:00 AM
 
-- *G* - General date/time pattern (long time). "M/d/yyyy h:mm:ss tt" for "en-US".
+- *G* - General date/time pattern (long time) ("M/d/yyyy h:mm:ss tt" for en-US)
 
     `kendo.toString(new Date(2000, 10, 6), "G")` -> 11/6/2000 12:00:00 AM
 
-- *M/m* - Month/day pattern. "MMMM dd" for "en-US".
+- *M/m* - Month/day pattern ("MMMM dd" for en-US)
 
     `kendo.toString(new Date(2000, 10, 6), "m")` -> November 06
 
-- *u* - Universal sortable date/time pattern. "yyyy'-'MM'-'dd HH':'mm':'ss'Z'" for "en-US".
+- *u* - Universal sortable date/time pattern ("yyyy'-'MM'-'dd HH':'mm':'ss'Z'" for en-US)
 
     `kendo.toString(new Date(2000, 10, 6), "u")` -> 2000-11-06 00:00:00Z
 
-- *Y/y* - Year/month pattern. "MMMM, yyyy" for "en-US".
+- *Y/y* - Year/month pattern ("MMMM, yyyy" for en-US)
 
     `kendo.toString(new Date(2000, 10, 6), "y")` -> November, 2000
 
