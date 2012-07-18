@@ -1,7 +1,7 @@
 ---
 title: Number Formatting
 slug: number-formatting
-publish: false
+publish: true
 ---
 
 # Number Formatting
@@ -11,7 +11,7 @@ The purpose of number formatting is to convert a Number object to a human readab
 ## Standard numeric formats
 
 - *n* for number
-    
+
     kendo.culture("en-US");
     kendo.toString(1234.567, "n"); //1,234.57
 

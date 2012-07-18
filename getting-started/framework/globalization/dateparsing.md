@@ -1,7 +1,7 @@
 ---
 title: Date parsing
 slug: date-parsing
-publish: false
+publish: true
 ---
 # Date parsing
 

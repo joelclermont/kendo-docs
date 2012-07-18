@@ -1,7 +1,7 @@
 ---
 title: Number parsing
 slug: number-parsing
-publish: false
+publish: true
 ---
 # Number parsing
 

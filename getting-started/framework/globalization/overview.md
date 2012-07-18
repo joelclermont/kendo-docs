@@ -1,7 +1,7 @@
 ---
 title: Globalization overview
 slug: globalization-overview
-publish: false
+publish: true
 ---
 # Kendo Globalization Overview
 
@@ -35,7 +35,7 @@ The default culture, which Kendo widgets uses is "en-US".
 
 Kendo exposes methods which can format number or date object using specific format string and the current specified culture:
 
-- [kendo.toString(object, format)](http://docs.kendoui.com/api/framework/kendo#toString) - returns a string representation of the current object using specific format. 
+- [kendo.toString(object, format)](http://docs.kendoui.com/api/framework/kendo#toString) - returns a string representation of the current object using specific format.
 - [kendo.format(format, arguments)](http://docs.kendoui.com/api/framework/kendo#format) -  replaces each format item in a specified string with the text equivalent of a corresponding object's value.
 
 For more detail information check [this help topic](http://docs.kendoui.com/getting-started/framework/globalization/formatting).
