@@ -37,7 +37,7 @@ The distribution files contain the following:
 
 Follow these steps:
 
-1.  Create a new ASP.NET MVC application from Visual Studio. ASP.NET MVC 3 and 4 are supported
+1.  Create a new ASP.NET MVC application from Visual Studio. ASP.NET MVC 3 and 4 are supported.
 
 2.  Add a reference to **\wrappers\aspnetmvc\Binaries\Mvc3\Kendo.Mvc.dll**
 
@@ -72,6 +72,15 @@ Follow these steps:
              <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
              <script src="@Url.Content("~/Scripts/kendo.dataviz.min.js")"></script>
              <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
+> You can also include the JavaScript and CSS files from CDN (specify the version e.g. 2012.2.710)
+
+             <link href="http://cdn.kendostatic.com/<version>/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+             <link href="http://cdn.kendostatic.com/<version>/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
+             <!-- jQuery is not hosted on Kendo CDN - include from another location -->
+             <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+             <script src="http://cdn.kendostatic.com/<version>/js/kendo.web.min.js"></script>
+             <script src="http://cdn.kendostatic.com/<version>/js/kendo.aspnetmvc.min.js"></script>
+
 6. Add a reference to the **Kendo.Mvc.UI** namespace to the **web.config**. Then the `Kendo` HtmlHelper extension would
 be availble in your views.
     * If you are using the WebForms view engine open the **web.config** file in the root folder of your application. Add
