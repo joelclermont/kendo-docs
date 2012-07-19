@@ -51,6 +51,18 @@ publish: true
             foo = treeviewObject.append(foo);
             foo.text("bar: foo");
 
+* **DataViz:** Refresh() no longer invokes Read() of the DataSource.
+
+    - Old
+
+            var chart = $("#chart").data("kendoChart");
+            chart.refresh();
+
+    - New
+
+            var chart = $("#chart").data("kendoChart");
+            chart.dataSource.read();
+
 ## KendoUI 2012 Q1 (2012.1.322)
 
 ### Changes from 2011 Q3 SP1 (2011.3.1407)
