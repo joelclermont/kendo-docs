@@ -23,7 +23,7 @@ The maximum value of the **RangeSlider**.
 The minimum value of the **RangeSlider**.
 
 ### orientation `String`*(default: "horizontal")*
-F
+
 The orientation of a **RangeSlider**; **"horizontal"** or
 **"vertical"**.
 
@@ -78,20 +78,6 @@ Format string for the text of the tooltip. Note: The applied format will also in
 the **RangeSlider** tick labels.
 
 ## Methods
-
-### destroy
-
-Prepares the **RangeSlider** for safe removal from the DOM.
-
-Detaches event handlers and removes data entries in order to avoid memory leaks.
-
-#### Example
-
-	// deatach events
-	$("#rangeSlider").data("kendoRangeSlider").destroy();
-	
-	// remove slider html from DOM
-    $("#rangeSlider").closest(".k-slider").remove();
 
 ### enable
 

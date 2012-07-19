@@ -361,10 +361,7 @@ Detaches event handlers and removes data entries in order to avoid memory leaks.
 
 #### Example
 
-	// deatach events
-    $("#radial-gauge").data("kendoRadialGauge").destroy();
-
-	// remove linearGauge html from DOM
+    kendo.destroy($("#radial-gauge"));
     $("#radial-gauge").remove();
 
 ### redraw
