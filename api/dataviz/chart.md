@@ -6015,7 +6015,10 @@ Detaches event handlers and removes data entries in order to avoid memory leaks.
 
 #### Example
 
-    kendo.destroy($("#chart"));
+	// deatach events
+    $("#chart").data("kendoChart").destroy();
+
+	// remove chart html from DOM
     $("#chart").remove();
 
 ### refresh
