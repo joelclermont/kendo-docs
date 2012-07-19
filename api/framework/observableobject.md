@@ -202,6 +202,8 @@ The new value.
 
 A function which may prevent the update of the value. Can be used to perform validation.
 
+#### Perform validation by preventing the `set` event
+
     var observable = new kendo.data.ObservableObject({ name: "John Doe" });
 
     observable.bind("set", function(e) {
