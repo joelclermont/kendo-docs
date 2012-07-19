@@ -483,14 +483,6 @@ Prepares the Gauge for safe removal from the DOM.
 
 Detaches event handlers and removes data entries in order to avoid memory leaks.
 
-#### Example
-
-	// deatach events
-    $("#linear-gauge").data("kendoLinearGauge").destroy();
-
-	// remove linearGauge html from DOM
-    $("#linear-gauge").remove();
-
 #### Example 1
 
     // Destroy widget and detach events
