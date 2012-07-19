@@ -40,7 +40,7 @@ resulting in 2 identical but differently styled input elements at some point.
     * Newer input types fall back to text
 
 Since a number of keyboard features in Android are dependent on the fact that the fake native input rendered on top is visible and on the screen,
-if you encounter such issues and want to work around them, you can disable the integrated hack by adding this CSS after the Kendo UI Mobile one (or do it for specific input only):
+if you encounter such issues and want to work around them, you can disable the integrated workaround by adding this CSS after the Kendo UI Mobile one (or do it for specific input only):
 
     .km-android4 input
     {
