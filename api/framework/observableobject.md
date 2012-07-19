@@ -12,7 +12,7 @@ publish: true
 To create a new `ObservableObject` use its constructor or the `kendo.observable` method.
 ### Creating a new ObservableObject
 
-    var observable = new kendo.data.ObservableObject( { name: "John Doe" });
+    var observable = new kendo.data.ObservableObject({ name: "John Doe" });
 ### Using the kendo.observable method
 
     var observable = kendo.observable({ name: "John Doe" });
@@ -25,7 +25,7 @@ The unique identifier of the `ObservableObject`.
 
 #### Example
     var observable = new kendo.data.ObservableObject({ name: "John Doe" });
-    console.log(observable.uid); // outputs a string in the form "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" where "x" is a number or letter
+    console.log(observable.uid); // outputs "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" where "x" is a number or letter
 
 ## Methods
 
