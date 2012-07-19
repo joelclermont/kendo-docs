@@ -123,13 +123,21 @@ Prepares the Upload for safe removal from the DOM.
 
 Detaches event handlers and removes data entries in order to avoid memory leaks.
 
-#### Example
-	
-	// deatach events
+#### Example 1
+
+    // Destroy widget and detach events
     $("#upload").data("kendoUpload").destroy();
 
-	// remove upload html from DOM
+    // Remove widget element from DOM
     $("#upload").closest(".k-upload").remove();
+
+#### Example 2
+
+    // Destroy all upload widgets
+    kendo.destroy($(".k-upload"));
+
+    // Remove all widgets from DOM
+    $(".k-upload").remove();
 
 ### enable
 

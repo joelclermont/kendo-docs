@@ -6013,13 +6013,21 @@ Prepares the Chart for safe removal from the DOM.
 
 Detaches event handlers and removes data entries in order to avoid memory leaks.
 
-#### Example
+#### Example 1
 
-	// deatach events
+    // Destroy widget and detach events
     $("#chart").data("kendoChart").destroy();
 
-	// remove chart html from DOM
+    // Remove widget element from DOM
     $("#chart").remove();
+
+#### Example 2
+
+    // Destroy all chart widgets
+    kendo.destroy($(".k-chart"));
+
+    // Remove all widgets from DOM
+    $(".k-chart").remove();
 
 ### refresh
 
