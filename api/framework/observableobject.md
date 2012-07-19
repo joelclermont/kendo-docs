@@ -7,6 +7,9 @@ publish: true
 
 # kendo.data.ObservableObject
 
+The `ObservableObject` is a very important piece of the Kendo UI framework. It is the building block of [Kendo MVVM](../getting-started/framework/mvvm/overview). In addition·
+the Kendo [DataSource](../getting-started/framework/datasource/overview) contains instances of the `ObservableObject`.
+
 ## Configuration
 
 To create a new `ObservableObject` use its constructor or the `kendo.observable` method.
@@ -127,7 +130,7 @@ An `Object` which contains only the fields of the `ObservableObject`.
 
 ## Events
 
-### change
+### change event
 
 Raised when a field value is updated via the `set` method.
 
@@ -141,7 +144,7 @@ Raised when a field value is updated via the `set` method.
 
     observable.set("name", "Jane Doe"); // raises the "change" event and the handler outputs "name"
 
-> The `change` event is raised **after** the field value is updated. This means that the `get` method will return the new value.
+> The `change` event is raised **after** the field value is updated. Calling the `get` method from the event handler will return the new value.
 
 #### Event Data
 
@@ -149,7 +152,7 @@ Raised when a field value is updated via the `set` method.
 
 The name of the field which has changed.
 
-### get
+### get event
 
 Raised when the `get` method is invoked.
 
@@ -169,7 +172,7 @@ Raised when the `get` method is invoked.
 
 The name of the field which is retrieved.
 
-### set
+### set event
 
 Raised when the `set` method is invoked.
 
@@ -182,7 +185,7 @@ Raised when the `set` method is invoked.
     });
 
     observable.set("name", "Jane Doe"); // raises the "set" event and the handler outputs "name"
-> The `set` event is raised **before** the field value is updated. This means that the `get` method will return the old value. Calling
+> The `set` event is raised **before** the field value is updated. Calling the `get` method from the event handler will return the old value. Calling
 `e.preventDefault` will prevent the update of the field and the `change` event will not be raised.
 
 #### Event Data
