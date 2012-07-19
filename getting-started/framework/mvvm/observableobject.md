@@ -8,7 +8,7 @@ publish: true
 
 ## Overview
 
-The `kendo.data.ObservableObject` is a very important part of the Kendo MVVM framework - the View-Model.
+The [kendo.data.ObservableObject](/api/framework/observableobject) is an important part of the Kendo MVVM framework - the View-Model.
 It supports change tracking and notifies any subscribers when a change occurs.
 All View-Model objects inherit from `kendo.data.ObservableObject`. From now on ObservableObject and View-Model would be used interchangeably.
 
