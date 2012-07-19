@@ -6007,17 +6007,6 @@ See **xAxis** for list of available options.
 
 ## Methods
 
-### destroy
-
-Prepares the Chart for safe removal from the DOM.
-
-Detaches event handlers and removes data entries in order to avoid memory leaks.
-
-#### Example
-
-    kendo.destroy($("#chart"));
-    $("#chart").remove();
-
 ### refresh
 
 Reloads the data and repaints the chart.

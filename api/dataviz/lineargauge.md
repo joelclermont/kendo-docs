@@ -477,17 +477,6 @@ A value indicating if transition animations should be played.
 
 ## Methods
 
-### destroy
-
-Prepares the Gauge for safe removal from the DOM.
-
-Detaches event handlers and removes data entries in order to avoid memory leaks.
-
-#### Example
-
-    kendo.destroy($("#linear-gauge"));
-    $("#linear-gauge").remove();
-
 ### redraw
 
 Redraws the gauge.
