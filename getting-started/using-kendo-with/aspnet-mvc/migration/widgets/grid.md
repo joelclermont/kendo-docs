@@ -307,3 +307,155 @@ Groups configuration is moved to DataSource:
 ## NoRecordsTemplate
 
 **NoRecordsTemplate** is not available. There will be a no NoRecords item but text will be shown within the pager. This text is configurable through **Pageable.Messages** configuration.
+
+# Client-side API Changes
+
+## Client-side API
+
+#### insertRow
+
+Removed. Use **grid.dataSource.insert(index, model)**
+
+#### updateRow
+
+Renamed. Use **saveRow** instead.
+
+#### hasChanges
+
+Removed.
+
+#### submitChanges
+
+Renamed. Use **saveChanges** instead.
+
+#### cancelCell
+
+Renamed. Use **closeCell** instead.
+
+#### saveCell
+
+Renamed. use **closeCell* instead.
+
+#### insertedDataItems
+
+Removed. Use the following code snippet instead:
+
+    var inserted = $.grep(grid.DataSource.data(), function(model) {
+        return model.isNew();
+    });
+
+#### updatedDataitems
+
+Removed. Use the following code snippet instead:
+
+    var inserted = $.grep(grid.dataSource.data(), function(model) {
+        return model.dirty;
+    });
+
+#### deletedDataItems
+
+Removed. Use the following code snippet instead (utilizing private API):
+
+    var destroyed = grid.dataSource._destroyed
+
+#### ajaxRequest
+
+Removed. Use **grid.dataSource.read()** instead.
+
+#### dataBind(data)
+
+Removed. Use **grid.dataSource.data(data)** instead.
+
+#### filter("Name~eq~'foo'");
+
+Removed. Use the following code snippet instead:
+
+    grid.dataSource.filter( { field: “Name”, operator: “eq”, value: “foo” } )
+
+#### pageTo
+
+Removed. Use **grid.dataSource.page** instead.
+
+#### grid.rebind(params)
+
+Removed. Use **grid.dataSource.read(params)** instead.
+
+#### sort("Name-desc")
+
+Removed. Use **grid.dataSource.sort( { field: “Name”, dir: “desc” } );** instead.
+
+#### serializeData
+
+Removed.
+
+## Client-side Events
+
+All events have removed the "On" prefix.
+
+OnLoad no longer exists, please utilize $(document).ready() instead.
+
+#### OnCommand
+
+Removed. Utilize click event instead:
+
+    command.custom("ViewDetails").Click("showDetails")
+
+#### OnComplete
+
+Removed.
+
+#### OnDetailViewCollapse
+
+Renamed to **DetailCollapse**
+
+#### OnDetailViewExpand
+
+Renamed to **DetailInit**
+
+#### OnDelete
+
+Renamed to **Remove**.
+
+#### OnDataBinding
+
+Removed.
+
+If you want to be notified when an ajax request is being made use the following snippet:
+
+    dataSource => dataSource.Ajax().Events(e => e.RequestStart(“onRequestStart”))
+
+If you need to send custom data to the action method use .Data() on the DataSource:
+
+    dataSource => dataSource.Ajax().Data(“sendData”)
+    
+    function sendData() {
+        return { foo: “bar” };
+    }
+
+#### OnError
+
+Removed. Use the Error event on the DataSource instead:
+
+    dataSource => dataSource.Ajax().Events(e => e.Error(“onError”))
+
+#### OnRowDataBound
+
+Removed. Utilize **DataBound** instead and utilize the following code snippet:
+
+    function onDataBound() {
+        var data = this.view();
+
+        for (var i=0; i< data.length; i++) {
+            var dataItem = data[i];
+            var tr = $(“#grid”).find(“[data-uid=’” + dataItem.uid + “’]”);
+            // use the table row (tr) and data item (dataItem)
+     }
+}
+
+#### OnRowSelect
+
+Renamed to **Change**
+
+#### OnSubmitChanges
+
+Renamed to **SaveChanges**
