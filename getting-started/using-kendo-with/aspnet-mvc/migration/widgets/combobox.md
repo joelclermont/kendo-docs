@@ -143,9 +143,10 @@ Not supported
     
 ## Other Options
 
-Define filter:
+### Filter
  
 ### Old
+
     <%= Html.Telerik().ComboBox()
         .Name("AjaxComboBox")
         .Filterable(filtering =>
@@ -160,7 +161,7 @@ Define filter:
         .Filter(FilterType.StartsWith)
     )
  
-Define Minimum Characters:
+### Minimum Characters
  
 ### Old
 
