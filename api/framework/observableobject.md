@@ -153,7 +153,7 @@ Creates a plain JavaScript object which contains all fields of the `ObservableOb
     var observable = new kendo.data.ObservableObject({ person: { name: "John Doe" } });
     var json = observable.toJSON();
 
-    console.log(JSON.stringify(json)); // outputs '{"person":{"name":"John Doe"}}'
+    console.log(JSON.stringify(json)); // outputs {"person":{"name":"John Doe"}}
 
 #### Returns
 
