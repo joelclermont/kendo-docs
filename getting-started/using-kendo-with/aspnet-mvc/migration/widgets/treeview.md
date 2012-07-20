@@ -30,6 +30,7 @@ publish: true
 	 %>
 
 ## Serializing Data From The Server
+
 Data should be serialized in the following JSON format:
 
 	{ 
