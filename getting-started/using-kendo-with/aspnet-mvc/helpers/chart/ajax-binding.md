@@ -16,25 +16,26 @@ To configure the Kendo Chart for ajax binding follow these steps:
         {
             var data = ChartDataRepository.InternetUsers();
         }
+
 2.  Return the data as JSON:
 
         public ActionResult InternetUsers_Read()
         {
             var data = ChartDataRepository.InternetUsers();
-
             return Json(data);
         }
+
 3.  In the view configure the chart to use the action method created in the previous steps:
     - WebForms
 
             <%: Html.Kendo().Chart<MvcApplication1.Models.InternetUsers>()
-                .Name("internetUsersChart")
-                .DataSource(dataSource => dataSource
-                    .Read(read => read.Action("InternetUsers_Read", "Home")) // Specify the action method and controller name
-                )
+                    .Name("internetUsersChart")
+                    .DataSource(dataSource => dataSource
+                        .Read(read => read.Action("InternetUsers_Read", "Home")) // Specify the action method and controller name
+                    )
                     .Series(series => {
                         series.Bar(d => d.Value)
-                            .Name("United States");
+                              .Name("United States");
                     })
                     .CategoryAxis(axis => axis
                         .Categories(model => model.Year)
@@ -43,17 +44,17 @@ To configure the Kendo Chart for ajax binding follow these steps:
     - Razor
 
             @(Html.Kendo().Chart<MvcApplication1.Models.InternetUsers>()
-                    .Name("internetUsersChart")
-                    .DataSource(dataSource => dataSource
-                        .Read(read => read.Action("InternetUsers_Read", "Home")) // Specify the action method and controller name
-                    )
-                    .Series(series => {
-                        series.Bar(d => d.Value)
+                  .Name("internetUsersChart")
+                  .DataSource(dataSource => dataSource
+                      .Read(read => read.Action("InternetUsers_Read", "Home")) // Specify the action method and controller name
+                  )
+                  .Series(series => {
+                      series.Bar(d => d.Value)
                             .Name("United States");
-                    })
-                    .CategoryAxis(axis => axis
-                        .Categories(model => model.Year)
-                    )
+                  })
+                  .CategoryAxis(axis => axis
+                      .Categories(model => model.Year)
+                  )
             )
 
 ## Pass Additional Data to Action Method
@@ -75,46 +76,48 @@ containing the additional data:
             .Name("internetUsersChart")
             .DataSource(dataSource => dataSource
                 .Read(read => read.Action("InternetUsers_Read", "Home"))
-            .Data("additionalData")
-        )
+                .Data("additionalData")
+            )
             .Series(series => {
                 series.Bar(d => d.Value)
-                    .Name("United States");
+                      .Name("United States");
             })
             .CategoryAxis(axis => axis
                 .Categories(model => model.Year)
             )
     %>
+
     <script>
-    function additionalData() {
-        return {
-            country: "United States"
-        };
-    }
+        function additionalData() {
+            return {
+                country: "United States"
+            };
+        }
     </script>
 
 
 ### Razor - Send additional data
 
     @(Html.Kendo().Chart<MvcApplication1.Models.InternetUsers>()
-            .Name("internetUsersChart")
-            .DataSource(dataSource => dataSource
-                .Read(read => read.Action("InternetUsers_Read", "Home"))
-                .Data("additionalData")
-            )
-            .Series(series => {
-                series.Bar(d => d.Value)
-                    .Name("United States");
-            })
-            .CategoryAxis(axis => axis
-                .Categories(model => model.Year)
-            )
+          .Name("internetUsersChart")
+          .DataSource(dataSource => dataSource
+              .Read(read => read.Action("InternetUsers_Read", "Home"))
+              .Data("additionalData")
+          )
+          .Series(series => {
+              series.Bar(d => d.Value)
+                  .Name("United States");
+          })
+          .CategoryAxis(axis => axis
+              .Categories(model => model.Year)
+          )
     )
+
     <script>
-    function additionalData() {
-        return {
-            country: "United States"
-        };
-    }
+        function additionalData() {
+            return {
+                country: "United States"
+            };
+        }
     </script>
 
