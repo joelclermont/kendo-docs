@@ -52,7 +52,7 @@ Then paste the following for Kendo UI DataViz scripts:
 
 ### Kendo UI Mobile
 
-To start using Kendo UI Web, paste the following into the head of your page:
+To start using Kendo UI Mobile, paste the following into the head of your page:
 
     <link href="styles/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
 
