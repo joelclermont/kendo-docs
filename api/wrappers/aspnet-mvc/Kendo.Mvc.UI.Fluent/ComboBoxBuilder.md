@@ -51,7 +51,7 @@ Use it to enable filtering of items.
 Defines the items in the ComboBox
 
 #### Example
-    <%= Html.Telerik().ComboBox()
+    <%= Html.Kendo().ComboBox()
         .Name("ComboBox")
         .Items(items =>
         {
@@ -119,7 +119,7 @@ A string that appears in the textbox when it has no value.
 Use it to set the Id of the parent ComboBox.
 
 #### Example
-    <%= Html.Telerik().ComboBox()
+    <%= Html.Kendo().ComboBox()
         .Name("ComboBox2")
         .CascadeFrom("ComboBox1")
         %>
@@ -128,7 +128,7 @@ Use it to set the Id of the parent ComboBox.
 Define the text of the widget, when the autoBind is set to false.
 
 #### Example
-    <%= Html.Telerik().ComboBox()
+    <%= Html.Kendo().ComboBox()
         .Name("ComboBox")
         .Text("Chai")
         .AutoBind(false)

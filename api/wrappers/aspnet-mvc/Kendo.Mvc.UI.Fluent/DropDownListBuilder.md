@@ -24,7 +24,7 @@ Sets the field of the data item that provides the value content of the list item
 Defines the items in the DropDownList
 
 #### Example
-    <%= Html.Telerik().DropDownList()
+    <%= Html.Kendo().DropDownList()
         .Name("DropDownList")
         .Items(items =>
         {
@@ -65,7 +65,7 @@ Item index.
 Use it to set the Id of the parent DropDownList.
 
 #### Example
-    <%= Html.Telerik().DropDownList()
+    <%= Html.Kendo().DropDownList()
         .Name("DropDownList2")
         .CascadeFrom("DropDownList1")
         %>
@@ -74,7 +74,7 @@ Use it to set the Id of the parent DropDownList.
 Define the text of the widget, when the autoBind is set to false.
 
 #### Example
-    <%= Html.Telerik().DropDownList()
+    <%= Html.Kendo().DropDownList()
         .Name("DropDownList")
         .Text("Chai")
         .AutoBind(false)

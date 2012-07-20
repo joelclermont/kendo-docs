@@ -14,7 +14,7 @@ Defines the fluent interface for configuring child TreeView items.
 Configures the child items of a TreeViewItem.
 
 #### Example
-    <%= Html.Telerik().TreeView()
+    <%= Html.Kendo().TreeView()
         .Name("TreeView")
         .Items(items =>
         {
@@ -35,7 +35,7 @@ The add action.
 Sets the id of the item.
 
 #### Example
-    <%= Html.Telerik().TreeView()
+    <%= Html.Kendo().TreeView()
         .Name("TreeView")
         .Items(items => items.Add().Id("42"))
         %>
@@ -49,7 +49,7 @@ The id.
 Define when the item will be expanded on intial render.
 
 #### Example
-    <%= Html.Telerik().TreeView()
+    <%= Html.Kendo().TreeView()
         .Name("TreeView")
         .Items(items =>
         {
@@ -71,7 +71,7 @@ If true the item will be expanded.
 Sets the expand mode of the treeview item.
 
 #### Example
-    <%= Html.Telerik().TreeView()
+    <%= Html.Kendo().TreeView()
         .Name("TreeView")
         .Items(items =>
         {

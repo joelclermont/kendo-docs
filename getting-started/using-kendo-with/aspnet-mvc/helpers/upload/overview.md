@@ -24,7 +24,7 @@ The following example shows how to setup an asynchronous upload that saves the u
 3.  Add the upload to the view:
     - WebForms
 
-            <%: Html.Telerik().Upload()
+            <%: Html.Kendo().Upload()
                     .Name("attachments")
                     .Async(async => async
                         .Save("Save", "Home")
@@ -32,7 +32,7 @@ The following example shows how to setup an asynchronous upload that saves the u
             %>
     - Razor
 
-            @(Html.Telerik().Upload()
+            @(Html.Kendo().Upload()
                     .Name("attachments")
                     .Async(async => async
                         .Save("Save", "Home")
