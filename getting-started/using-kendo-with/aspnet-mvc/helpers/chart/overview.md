@@ -25,6 +25,7 @@ Here is how to configure the Kendo Chart for server binding to the list of Inter
         {
             return View(ChartDataRepository.InternetUsers());
         }
+
 3.  Make your view strongly typed:
     - WebForms
 
@@ -37,28 +38,28 @@ Here is how to configure the Kendo Chart for server binding to the list of Inter
     - WebForms
 
             <%: Html.Kendo().Chart(Model) // The chart will be bound to the Model which is the InternetUsers list
-                .Name("internetUsersChart") // The name of the chart is mandatory. It specifies the "id" attribute of the widget.
-                .Title("Internet Users")
-                .Series(series => {
-                    series.Bar(model => model.Value) // Create a bar chart series bound to the "Value" property
-                        .Name("United States");
-                })
-                .CategoryAxis(axis => axis
-                    .Categories(model => model.Year)
-                )
+                    .Name("internetUsersChart") // The name of the chart is mandatory. It specifies the "id" attribute of the widget.
+                    .Title("Internet Users")
+                    .Series(series => {
+                        series.Bar(model => model.Value) // Create a bar chart series bound to the "Value" property
+                              .Name("United States");
+                    })
+                    .CategoryAxis(axis => axis
+                        .Categories(model => model.Year)
+                    )
             %>
     - Razor
 
             @(Html.Kendo().Chart(Model) // The chart will be bound to the Model which is the InternetUsers list
-              .Name("internetUsersChart") // The name of the chart is mandatory. It specifies the "id" attribute of the widget.
-              .Title("Internet Users")
-              .Series(series => {
-                  series.Bar(model => model.Value) // Create a bar chart series bound to the "Value" property
-                      .Name("United States");
-              })
-              .CategoryAxis(axis => axis
-                  .Categories(model => model.Year)
-              )
+                  .Name("internetUsersChart") // The name of the chart is mandatory. It specifies the "id" attribute of the widget.
+                  .Title("Internet Users")
+                  .Series(series => {
+                      series.Bar(model => model.Value) // Create a bar chart series bound to the "Value" property
+                            .Name("United States");
+                  })
+                  .CategoryAxis(axis => axis
+                      .Categories(model => model.Year)
+                  )
             )
 
 ## Accessing an Existing Chart
@@ -70,10 +71,10 @@ Once a reference has been established, you can use the [API](http://docs.kendoui
 
     // Put this after your Kendo Chart for ASP.NET MVC declaration
     <script>
-    $(function() {
-    // Notice that the Name() of the chart is used to get its client-side instance
-    var chart = $("#internetUsersChart").data("kendoChart");
-    });
+        $(function() {
+            // Notice that the Name() of the chart is used to get its client-side instance
+            var chart = $("#internetUsersChart").data("kendoChart");
+        });
     </script>
 
 ## Handling Kendo UI Chart events
@@ -84,58 +85,60 @@ You can subscribe to all [events](http://docs.kendoui.com/api/dataviz/chart#even
 ### WebForms - subscribe by handler name
 
     <%: Html.Kendo().Chart(Model)
-        .Name("internetUsersChart")
-        .Events(e => e
-            .DataBound("internetUsersChart_dataBound")
-            .SeriesClick("internetUsersChart_seriesClick")
-        )
+            .Name("internetUsersChart")
+            .Events(e => e
+                .DataBound("internetUsersChart_dataBound")
+                .SeriesClick("internetUsersChart_seriesClick")
+            )
     %>
-    <script>
-    function internetUsersChart_dataBound() {
-        // Handle the dataBound event
-    }
 
-    function internetUsersChart_seriesClick() {
-        // Handle the series click event
-    }
+    <script>
+        function internetUsersChart_dataBound() {
+            // Handle the dataBound event
+        }
+	    
+        function internetUsersChart_seriesClick() {
+            // Handle the series click event
+        }
     </script>
 
 
 ### Razor - subscribe by handler name
 
     @(Html.Kendo().Chart(Model)
-        .Name("internetUsersChart")
-        .Events(e => e
-            .DataBound("internetUsersChart_dataBound")
-            .SeriesClick("internetUsersChart_seriesClick")
-        )
+          .Name("internetUsersChart")
+          .Events(e => e
+              .DataBound("internetUsersChart_dataBound")
+              .SeriesClick("internetUsersChart_seriesClick")
+          )
     )
-    <script>
-    function internetUsersChart_dataBound() {
-        // Handle the dataBound event
-    }
 
-    function internetUsersChart_seriesClick() {
-        // Handle the seriesClick event
-    }
+    <script>
+        function internetUsersChart_dataBound() {
+            // Handle the dataBound event
+        }
+	    
+        function internetUsersChart_seriesClick() {
+            // Handle the seriesClick event
+        }
     </script>
 
 
 ### Razor - subscribe by template delegate
 
     @(Html.Kendo().Chart(Model)
-      .Name("internetUsersChart")
-      .Events(e => e
-          .DataBound(@<text>
-            function() {
-                // Handle the dataBound event inline
-            }
-          </text>)
-          .SeriesClick(@<text>
-            function() {
-                // Handle the seriesClick event inline
-            }
-            </text>)
-      )
+          .Name("internetUsersChart")
+          .Events(e => e
+              .DataBound(@<text>
+                   function() {
+                       // Handle the dataBound event inline
+                   }
+              </text>)
+              .SeriesClick(@<text>
+                   function() {
+                       // Handle the seriesClick event inline
+                   }
+              </text>)
+          )
     )
 
