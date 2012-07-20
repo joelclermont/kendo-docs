@@ -19,6 +19,22 @@ To create a new `ObservableObject` use its constructor or the `kendo.observable`
 ### Using the kendo.observable method
 
     var observable = kendo.observable({ name: "John Doe" });
+> **Important:** Complex fields are automatically wrapped in `ObservableObject`. Array fields are wrapped in `ObservableArray` objects. The `change` event of the child objects will bubble
+to the parent `ObservableObject`.
+
+### Creating ObservableObject with complex and array fields
+
+    var observable = kendo.observable({
+        // complex object field
+        person: {
+            name: "John Doe"
+        },
+        // array field
+        numbers: [1, 2, 3]
+    });
+
+    console.log(observable.person instanceof kendo.data.ObservableObject); // outputs "true"
+    console.log(observable.numbers instanceof kendo.data.ObservableArray); // outputs "true"
 
 ## Fields
 
@@ -84,6 +100,21 @@ The name of the field whose value is going to be returned.
 #### Returns
 
 The value of the specified field.
+
+### parent
+
+Returns the parent `ObservableObject`. If the current `ObservableObject` is not
+nested returns `undefined`;
+
+#### Example
+
+    var observable = new kendo.data.ObservableObject({ person: { name: "John Doe" } });
+
+    var person = observable.get("person");
+
+    console.log(observable.parent()); // outputs "undefined"
+
+    console.log(person.parent() === observable); // outputs "true"
 
 ### set
 
