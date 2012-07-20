@@ -31,12 +31,12 @@ In this mode the upload is executed as part of the form submit (synchronously). 
 2. Add the Upload inside the form. The only required setting is a Name.
     - WebForms
 
-            <%= Html.Telerik().Upload()
+            <%= Html.Kendo().Upload()
                     .Name("attachments")
             %>
     - Razor
 
-            @(Html.Telerik().Upload()
+            @(Html.Kendo().Upload()
                     .Name("attachments")
             )
 
@@ -51,7 +51,7 @@ In this mode the upload is executed as part of the form submit (synchronously). 
             <% using (Html.BeginForm("ProcessSubmit", "Home",
                                      FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" })) { %>
 
-                <%= Html.Telerik().Upload()
+                <%= Html.Kendo().Upload()
                         .Name("attachments")
                 %>
 
@@ -63,7 +63,7 @@ In this mode the upload is executed as part of the form submit (synchronously). 
             @using (Html.BeginForm("ProcessSubmit", "Home",
                                      FormMethod.Post, new { id = "uploadForm", enctype = "multipart/form-data" })) {
 
-                @(Html.Telerik().Upload()
+                @(Html.Kendo().Upload()
                         .Name("attachments")
                 )
 
@@ -102,7 +102,7 @@ In this mode the files are uploaded to a controller action without interrupting 
 1.  Add the upload to the view:
     - WebForms
 
-            <%: Html.Telerik().Upload()
+            <%: Html.Kendo().Upload()
                     .Name("attachments")
                     .Async(async => async
                         .Save("Save", "Home")
@@ -110,7 +110,7 @@ In this mode the files are uploaded to a controller action without interrupting 
             %>
     - Razor
 
-            @(Html.Telerik().Upload()
+            @(Html.Kendo().Upload()
                     .Name("attachments")
                     .Async(async => async
                         .Save("Save", "Home")
@@ -147,7 +147,7 @@ Users can remove files even after they've been uploaded asynchronously. To enabl
 1. Specify a Remove action
     - WebForms
 
-            <%= Html.Telerik().Upload()
+            <%= Html.Kendo().Upload()
                     .Name("attachments")
                     .Async(async => async
                         .Save("Save", "Home")
@@ -156,7 +156,7 @@ Users can remove files even after they've been uploaded asynchronously. To enabl
             %>
     - Razor
 
-            @(Html.Telerik().Upload()
+            @(Html.Kendo().Upload()
                     .Name("attachments")
                     .Async(async => async
                         .Save("Save", "Home")
@@ -194,7 +194,7 @@ You can change this behavior by setting AutoUpload to false.
 
 - WebForms
 
-        <%= Html.Telerik().Upload()
+        <%= Html.Kendo().Upload()
                 .Name("attachments")
                 .Async(async => async
                     .Save("Save", "Home")
@@ -203,7 +203,7 @@ You can change this behavior by setting AutoUpload to false.
         %>
 - Razor
 
-        @(Html.Telerik().Upload()
+        @(Html.Kendo().Upload()
                 .Name("attachments")
                 .Async(async => async
                     .Save("Save", "Home")
