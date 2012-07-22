@@ -12,24 +12,23 @@ the Kendo [DataSource](/getting-started/framework/datasource/overview).
 
 ## Configuration
 
-To create a new `ObservableArray` use its constructor or the `kendo.observable` method.
-### Creating a new ObservableArray
+To create a new `ObservableArray`, use its constructor or the `kendo.observable` method.
+### Creating a New ObservableArray
 
     var observableArray = new kendo.data.ObservableArray([{ name: "John Doe" }, { name: "Jane Doe" }]);
-### Using the kendo.observable method
+### Using the kendo.observable Method
 
     var observable = kendo.observable({ people: [{ name: "John Doe" }, { name: "Jane Doe" }] });
     console.log(observable.people instanceof kendo.data.ObservableArray); // outputs "true"
 > **Important**: The `ObservableArray` will wrap its items of complex type as `ObservableObject` instances.
 
-### ObservableArray of complex and primitive type
+### ObservableArray of Complex and Primitive Type
     var complex = new kendo.data.ObservableArray([{ name: "John Doe" }, { name: "Jane Doe" }]);
-
     console.log(complex[0] instanceof kendo.data.ObservableObject); // outputs "true"
 
     var primitive = new kendo.data.ObservableArray(["John Doe", "Jane Doe"]);
+    console.log(typeof (primitive[0]) ); // outputs "string"
 
-    console.log(typeof (complex[0]) ); // outputs "string"
 ## Methods
 
 ### bind
