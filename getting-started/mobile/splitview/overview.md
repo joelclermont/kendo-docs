@@ -48,7 +48,7 @@ in a view, but should be put as an immediate child of the mobile application ele
 # Customizing appearance
 
 By default Kendo UI Mobile is configured to show a horizontal SplitView with smaller left and bigger right pane in 1:2 proportion.
-In order to resize one of the panes, use CSS to set its width or adjust the flexibility of the flex boxes (if the width is set, the other pane flexibility should be set to a high numer, like 1000).
+In order to resize one of the panes, use CSS to set its width or adjust the flexibility of the flex boxes (if the width is set, the other pane flexibility should be set to a high number, like 1000).
 
 ## Set pane width to 300px or change the proportions to 1:3
 
