@@ -6,13 +6,13 @@ publish: true
 
 # Server-Side API
 
-## Animations
+### Animations
 
-### Old
+#### Old
 
     Html.Telerik().TabStrip().Name("SampleTabStrip").Effects(effects => effects.Slide())
 
-### New
+#### New
 
     Html.Kendo().TabStrip().Name("SampleTabStrip").Animation(animation => animation.Open(open => open.FadeIn(FadeDirection.Down))
 
@@ -20,14 +20,14 @@ publish: true
 
 ## Events
 
-KendoUI Complete for ASP.NET MVC does not support action syntax i.e. “() => {}”
+### Kendoui Complete for Asp.Net Mvc Does Not Support Action Syntax i.e. “() => {}”
 
-All widgets no longer have the OnLoad event. Please use **$(document).ready()** instead.
+### All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
 
-### Old
+#### Old
 
     Html.Telerik().TabStrip().Name("SampleTabStrip").ClientEvents(events => events.OnChange(“change”))
 
-### New
+#### New
 
     Html.Kendo().TabStrip().Name("SampleTabStrip").Events(events => events.Change(“change”))

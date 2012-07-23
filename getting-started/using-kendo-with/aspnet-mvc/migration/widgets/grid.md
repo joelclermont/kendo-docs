@@ -8,15 +8,15 @@ publish: true
  
 ## DataKeys 
 
-**DataKeys** are moved to the DataSource Model configuration:
+### DataKeys Are Moved to the Datasource Model Configuration
 
-### Old
+#### Old
 
     Html.Telerik().Grid<Order>()
         .Name("Grid")       
         .DataKeys(dataKeys => dataKeys.Add(o => o.OrderID))
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()
         .Name("Grid")
@@ -27,15 +27,15 @@ publish: true
  
 ## DataBinding
 
-**DataBinding** configuration is moved to DataSource:
+### DataBinding Configuration Is Moved to Datasource
  
-### Old
+#### Old
     
     Html.Telerik().Grid<Order>()
         .Name("Grid")      
         .DataBinding(dataBinding => dataBinding.Ajax().Select("_AjaxBinding", "Grid"))
     
-### New    
+#### New    
 
     Html.Kendo().Grid<Order>()   
         .Name("Grid")  
@@ -44,7 +44,7 @@ publish: true
             .Read(read => read.Action("AjaxBinding ", "Grid"))
         )
  
-**DataBinding** “URL” methods are renamed to match the KendoUI DataSource client configuration:
+### Databinding “Url” Methods Are Renamed to Match the KendoUI Datasource Client Configuration
 
 ### Old -> New
                 
@@ -64,15 +64,15 @@ Destroy
 
 Create
  
-**OperationMode** is change to **ServerOperation**:
+### **OperationMode** is change to **ServerOperation**
 
-### Old
+#### Old
 
     Html.Telerik().Grid<Order>()
         .Name("Grid")      
         .DataBinding(dataBinding => dataBinding.Ajax().OperationMode(GridOperationMode.Client))
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()
         .Name("Grid")
@@ -81,13 +81,13 @@ Create
             .ServerOperation(false)
         )
 
-**DataBinding.WebService** is removed.
+### **DataBinding.WebService** Is Removed
  
 ## DetailView
 
-**DetailView.ClientTemplate** changed to **ClientDetailTemplateId**:
+### **DetailView.Clienttemplate** Changed to **ClientDetailTemplateId**
 
-### Old
+#### Old
 
     Html.Telerik().Grid<Order>()
         .Name("Grid")
@@ -97,7 +97,7 @@ Create
             .ToHtmlString()
         ))
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()
         .Name("Grid")
@@ -109,9 +109,9 @@ Create
             .ToClientTemplate())
     </script>
  
-**DetailView.Template** changed to **DetailTemplate**:
+### **DetailView.Template** changed to **DetailTemplate**
  
-### Old
+#### Old
       
     Html.Telerik().Grid(Model)
         .Name("Employees")  
@@ -122,7 +122,7 @@ Create
                     .Render();
         }))
 
-### New
+#### New
 
     Html.Kendo().Grid(Model)
         .Name("Employees")   
@@ -135,15 +135,15 @@ Create
        
 ## Editable 
 
-**InForms** mode is removed.
+### **InForms** Mode Is Removed
 
-**InsertRowPosition** is renamed to **CreateAt**.
+### **InsertRowPosition** is renamed to **CreateAt**
 
-**BeginEdit** and **HtmlFormAttributes** options are not available.
+### **BeginEdit** and **HtmlFormAttributes** options are not available
 
-**DefaultDataItem** is moved to DataSource Model configuration:
+### **DefaultDataItem** is moved to DataSource Model configuration
  
-### Old
+#### Old
 
     Html.Telerik().Grid<Order>()
         .Name("Grid")                           
@@ -151,7 +151,7 @@ Create
             OrderDate = DateTime.Today
         }))
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()    
         .Name("Grid")     
@@ -162,9 +162,9 @@ Create
 
 ## Groupable 
 
-Groups configuration is moved to DataSource:
+### Groups Configuration Is Moved to Datasource
  
-### Old
+#### Old
 
     Html.Telerik().Grid<Order>()
         .Name("Grid")                        
@@ -172,7 +172,7 @@ Groups configuration is moved to DataSource:
             .Groups(groups => groups.Add(o => o.OrderDate))
         )    
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()   
         .Name("Grid")    
@@ -181,19 +181,19 @@ Groups configuration is moved to DataSource:
             .Group(group => group.Add(o => o.OrderDate))
         )     
 
-**Visible** option is removed. Same functionality can be achieved by setting **Groupable.Enabled** to false and Group descriptors through the DataSource.
+### **Visible** option is removed. Same functionality can be achieved by setting **Groupable.Enabled** to false and Group descriptors through the DataSource.
  
 ## Sortable
 
-**OrderBy** is moved to the DataSource configuration:
+#### **OrderBy** Is Moved to The DataSource Configuration
  
-### Old
+#### Old
 
     Html.Telerik().Grid<Order>()
         .Name("Grid")   
         .Sortable(sortable => sortable.OrderBy(order => order.Add(o => o.OrderDate).Ascending()))
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()   
         .Name("Grid")    
@@ -204,15 +204,15 @@ Groups configuration is moved to DataSource:
 
 ## Filterable
 
-**Filters** is moved to the DataSource configuration:
+### **Filters** Is Moved to The DataSource Configuration
  
-### Old
+#### Old
        
     Html.Telerik().Grid<Order>()
         .Name("Grid")   
         .Filterable(filtarable => filtarable.Filters(filters => filters.Add(o => o.OrderDate).IsEqualTo(DateTime.Today))
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()   
         .Name("Grid")        
@@ -223,16 +223,17 @@ Groups configuration is moved to DataSource:
 
 ## Pageable
 
-**Position** is not available.
+### **Position** Is Not Available
 
-**PageSize** and Total is moved to the DataSource configuration:
+### **PageSize** And Total Is Moved to the DataSource Configuration
  
-### Old
+#### Old
+ 
     Html.Telerik().Grid<Order>()
         .Name("Grid")   
         .Pageable(pageable => pageable.PageSize(42).Total(100))
 
-### New
+#### New
      
     Html.Kendo().Grid<Order>()   
     .Name("Grid")        
@@ -242,16 +243,15 @@ Groups configuration is moved to DataSource:
         .Total(100)
     ) 
 
-**PageOnScroll** is removed (use **Scrollable.Virtual** option to enabled virtual scrolling instead).
+### **PageOnScroll** Is Removed (Use **Scrollable.Virtual** Option to Enabled Virtual Scrolling Instead)
 
-**Style** is removed. Pager style can be configured by setting individual properties such as **Input**, **PageSizes**, **Info
-**, **Numeric**, **PreviousNext**.
+### **Style** Is Removed. Pager Style Can Be Configured by Setting Individual Properties Such As **Input**, **PageSizes**, **Info**, **Numeric**, **PreviousNext**
 
 ## Columns 
 
-**Aggregates** are moved to the DataSource configuration:
+### **Aggregates** are moved to the DataSource configuration:
  
-### Old
+#### Old
 
     Html.Telerik().Grid<Order>()
         .Name("Grid")   
@@ -261,7 +261,7 @@ Groups configuration is moved to DataSource:
             .Aggregate(agg => agg.Count());          
         })
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()   
         .Name("Grid"
@@ -274,9 +274,9 @@ Groups configuration is moved to DataSource:
             .Aggregates(agg => agg.Add(o => o.OrderID).Count())
         )
         
-**ReadOnly** in moved to DataSource Model configuration:
+### **ReadOnly** In Moved To DataSource Model Configuration
  
-### Old
+#### Old
 
     Html.Telerik().Grid<Order>()
         .Name("Grid")   
@@ -285,7 +285,7 @@ Groups configuration is moved to DataSource:
             columns.Bound(o => o.OrderID).ReadOnly(true);          
         })
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()   
         .Name("Grid")
@@ -300,43 +300,43 @@ Groups configuration is moved to DataSource:
 
 ## KeyboardNavigation
 
-**KeyboardNavigation** is renamed to **Navigatable**.
+### **KeyboardNavigation** Is Renamed To **Navigatable**
 
-**KeyboardNavigation.EditOnTab** is not available. This is enabled by default.
+### **KeyboardNavigation.EditOnTab** is not available. This is enabled by default.
 
 ## NoRecordsTemplate
 
-**NoRecordsTemplate** is not available. There will be a no NoRecords item but text will be shown within the pager. This text is configurable through **Pageable.Messages** configuration.
+### **NoRecordsTemplate** Is Not Available. There Will Be a No NoRecords Item but Text Will Be Shown Within the Pager. This Text Is Configurable Through **Pageable.Messages** Configuration
 
 # Client-side API Changes
 
 ## Client-side API
 
-#### insertRow
+##### insertRow
 
 Removed. Use **grid.dataSource.insert(index, model)**
 
-#### updateRow
+##### updateRow
 
 Renamed. Use **saveRow** instead.
 
-#### hasChanges
+##### hasChanges
 
 Removed.
 
-#### submitChanges
+##### submitChanges
 
 Renamed. Use **saveChanges** instead.
 
-#### cancelCell
+##### cancelCell
 
 Renamed. Use **closeCell** instead.
 
-#### saveCell
+##### saveCell
 
 Renamed. use **closeCell* instead.
 
-#### insertedDataItems
+##### insertedDataItems
 
 Removed. Use the following code snippet instead:
 
@@ -344,7 +344,7 @@ Removed. Use the following code snippet instead:
         return model.isNew();
     });
 
-#### updatedDataitems
+##### updatedDataitems
 
 Removed. Use the following code snippet instead:
 
@@ -352,71 +352,71 @@ Removed. Use the following code snippet instead:
         return model.dirty;
     });
 
-#### deletedDataItems
+##### deletedDataItems
 
 Removed. Use the following code snippet instead (utilizing private API):
 
     var destroyed = grid.dataSource._destroyed
 
-#### ajaxRequest
+##### ajaxRequest
 
 Removed. Use **grid.dataSource.read()** instead.
 
-#### dataBind(data)
+##### dataBind(data)
 
 Removed. Use **grid.dataSource.data(data)** instead.
 
-#### filter("Name~eq~'foo'");
+##### filter("Name~eq~'foo'");
 
 Removed. Use the following code snippet instead:
 
     grid.dataSource.filter( { field: “Name”, operator: “eq”, value: “foo” } )
 
-#### pageTo
+##### pageTo
 
 Removed. Use **grid.dataSource.page** instead.
 
-#### grid.rebind(params)
+##### grid.rebind(params)
 
 Removed. Use **grid.dataSource.read(params)** instead.
 
-#### sort("Name-desc")
+##### sort("Name-desc")
 
 Removed. Use **grid.dataSource.sort( { field: “Name”, dir: “desc” } );** instead.
 
-#### serializeData
+##### serializeData
 
 Removed.
 
 ## Client-side Events
 
-All events have removed the "On" prefix.
+### All events have removed the "On" prefix.
 
-OnLoad no longer exists, please utilize $(document).ready() instead.
+### OnLoad no longer exists, please utilize **$(document).ready()** instead.
 
-#### OnCommand
+##### OnCommand
 
 Removed. Utilize click event instead:
 
     command.custom("ViewDetails").Click("showDetails")
 
-#### OnComplete
+##### OnComplete
 
 Removed.
 
-#### OnDetailViewCollapse
+##### OnDetailViewCollapse
 
 Renamed to **DetailCollapse**
 
-#### OnDetailViewExpand
+##### OnDetailViewExpand
 
 Renamed to **DetailInit**
 
-#### OnDelete
+##### OnDelete
 
 Renamed to **Remove**.
 
-#### OnDataBinding
+##### OnDataBinding
 
 Removed.
 
@@ -432,13 +432,13 @@ If you need to send custom data to the action method use .Data() on the DataSour
         return { foo: “bar” };
     }
 
-#### OnError
+##### OnError
 
 Removed. Use the Error event on the DataSource instead:
 
     dataSource => dataSource.Ajax().Events(e => e.Error(“onError”))
 
-#### OnRowDataBound
+##### OnRowDataBound
 
 Removed. Utilize **DataBound** instead and utilize the following code snippet:
 
@@ -452,10 +452,10 @@ Removed. Utilize **DataBound** instead and utilize the following code snippet:
      }
 }
 
-#### OnRowSelect
+##### OnRowSelect
 
 Renamed to **Change**
 
-#### OnSubmitChanges
+##### OnSubmitChanges
 
 Renamed to **SaveChanges**

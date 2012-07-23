@@ -6,9 +6,9 @@ publish: true
 
 # Server-side API
 
-## Remote data binding (Load On Demand)
+### Remote data binding (Load On Demand)
 
-### Old
+#### Old
 
 	<%= Html.Telerik().TreeView() 
 	     .Name("TreeView") 
@@ -17,7 +17,7 @@ publish: true
 	     ) 
 	 %>
 
-### New
+#### New
 
 	<%= Html.Telerik().TreeView() 
 	     .Name("TreeView") 
@@ -29,7 +29,7 @@ publish: true
 	     }) 
 	 %>
 
-## Serializing Data From The Server
+### Serializing Data From The Server
 
 Data should be serialized in the following JSON format:
 
@@ -63,7 +63,7 @@ The above code allows the items to be serialized in the following form:
 	    hasChildren: true 
 	}
 
-## Changing The Field That Posts The Item ID
+### Changing The Field That Posts The Item ID
 
 By default, the **id** field will be posted to the server. To change the parameter name, you can use the Data handler: 
 
@@ -83,7 +83,7 @@ By default, the **id** field will be posted to the server. To change the paramet
 	    } 
 	</script>
 
-## Value Field Is Removed
+### Value Field Is Removed
 
 Depending on your use case, you can either:
 
@@ -91,7 +91,7 @@ Depending on your use case, you can either:
 
 -  If the value was used to store arbitrary data, serialize it in a data-* attribute through the item HtmlAttributes, or if a DataSource is used, access the additional data through the **dataItem** client-side method.
 
-## CheckBox Support
+### CheckBox Support
 
 The current checkbox support is limited to the functionality shown in the [templates demo](http://http://demos.kendoui.com/web/treeview/templates.html) (i.e. rendering only). Any data that needs to be passed to the server needs to be added in hidden fields with JavaScript, using the proper naming. The snippet below shows a possible approach for this:
 
@@ -143,7 +143,7 @@ The current checkbox support is limited to the functionality shown in the [templ
 
 Upcoming version of the MVC wrappers will introduce a more convenient way of handling checkboxes.
 
-## Per-Item CheckBoxes
+### Per-Item CheckBoxes
 
 # Client-Side API Changes
 

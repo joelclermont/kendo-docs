@@ -8,11 +8,11 @@ publish: true
 
 ## Events
 
-### Old
+#### Old
 
     Html.Telerik().Calendar().Name("Calendar").ClientEvents( events => events.OnChange(“change”))
  
-### New
+#### New
 
     Html.Kendo().Calendar().Name("Calendar").Events( events => events.Change(“change”))
 

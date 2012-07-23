@@ -6,46 +6,46 @@ publish: true
 
 # Server-Side API
 
-## Defining Min and Max Dates
+### Defining Min and Max Dates
 
-### Old
+#### Old
     
     Html.Telerik().Calendar().Name("Calendar").MinDate(DateTime.Now)
     Html.Telerik().Calendar().Name("Calendar").MaxDate(DateTime.Now)
 
-### New
+#### New
 
     Html.Kendo().Calendar().Name("Calendar").Min(DateTime.Now)
     Html.Kendo().Calendar().Name("Calendar").Max(DateTime.Now)
 
-## Footer
+### Footer
 
-### Old
+#### Old
 
     Html.Telerik().Calendar().Name("Calendar").TodayButton(“d”)
 
-### New
+#### New
     
     Html.Kendo().Calendar().Name("Calendar").Footer(“#= kendo.toString(data, ‘MM/dd/yyyy’)”)
 
-## ShowButton and ButtonTitle
+### ShowButton and ButtonTitle
 
-### Old
+#### Old
     
     Html.Telerik().DatePicker().Name("Calendar").ButtonTitle(“choose date”)
     Html.Telerik().DatePicker().Name("Calendar").ShowButton(false)
 
-### New
+#### New
 
     Not Supported
 
-## OpenOnFocus
+### OpenOnFocus
 
-### Old
+#### Old
 
     Html.Telerik().DatePicker ().Name("Calendar").OpenOnFocus(true)
 
-### New
+#### New
     
     Not Supported
 
@@ -57,14 +57,14 @@ All events no longer have the “On” prefix.
 
 All widgets no longer have the OnLoad event. Please use **$(document).ready()** instead.
 
-## Disable
+### Disable
 
-### Old
+#### Old
 
     var datePicker = $("#DatePicker").data("tDatePicker");
     datePicker.disable();
 
-### New
+#### New
     
     var datePicker = $("#datepicker").data("kendoDatePicker");
     datePicker.enable(false);

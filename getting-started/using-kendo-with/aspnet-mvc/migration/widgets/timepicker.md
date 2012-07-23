@@ -6,25 +6,25 @@ publish: true
 
 # Server-Side API
 
-## Defining Min and Max dates
+### Defining Min and Max dates
 
-### Old
+#### Old
 
     Html.Telerik().Calendar().Name("Calendar").MinDate(DateTime.Now)
     Html.Telerik().Calendar().Name("Calendar").MaxDate(DateTime.Now)
 
-### New
+#### New
     
     Html.Kendo().Calendar().Name("Calendar").Min(DateTime.Now)
     Html.Kendo().Calendar().Name("Calendar").Max(DateTime.Now)
 
-## Footer
+### Footer
 
-### Old
+#### Old
     
     Html.Telerik().Calendar().Name("Calendar").TodayButton(“d”)
 
-### New
+#### New
     
     Html.Kendo().Calendar().Name("Calendar").Footer(“#= kendo.toString(data, ‘MM/dd/yyyy’)”)
 
@@ -32,18 +32,18 @@ publish: true
 
 ## Events
 
-All events no longer have the “On” prefix.
+### All Events No Longer Have the “On” Prefix
 
-All widgets no longer have the OnLoad event. Please use **$(document).ready()** instead.
+### All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
 
-## Disable
+### Disable
 
-### Old
+#### Old
 
     var datePicker = $("#DatePicker").data("tTimePicker");
     datePicker.disable();
 
-### New
+#### New
 
     var datePicker = $("#datepicker").data("kendoTimePicker");
     datePicker.enable(false);

@@ -10,12 +10,12 @@ All changes described in the [ComboBox](combobox) are applicable to the AutoComp
 
 ## Other Options
 
-**Separator**:
+### Separator
 
-### Old
+#### Old
 
 	Html.Telerik().AutoComplete().Name(“AutoComplete”).Multiple(m => m.Separator(“, “))
  
-### New
+#### New
 
 	Html.Kendo ().AutoComplete().Name(“AutoComplete”).Separator(“, “)

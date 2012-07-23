@@ -10,12 +10,12 @@ All changes described in the [ComboBox](combobox) are applicable to the AutoComp
 
 ## Other Options
 
-**OptionLabel**:
+### OptionLabel
 
-### Old
+#### Old
     
     Html.Telerik().DropDownList().Name(“DropDownList”).Placeholder(“Select…”)
  
-### New
+#### New
 
     Html.Kendo().DropDownList().Name(“DropDownList”).OptionLabel(“Select…”)

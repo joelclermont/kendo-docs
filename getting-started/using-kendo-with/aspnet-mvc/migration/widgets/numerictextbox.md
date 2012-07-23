@@ -6,53 +6,53 @@ publish: true
 
 # Server-Side API
 
-## IncrementStep
+### IncrementStep
 
-### Old
+#### Old
 
     Html.Telerik().NumericTextBox().IncrementStep(1)
 
-### New
+#### New
     
     Html.Kendo().NumericTextBox().Step(1)
 
-## Min/Max value
+### Min/Max Value
 
-### Old
+#### Old
 
     Html.Telerik().NumericTextBox().MinValue(1)
     Html.Telerik().NumericTextBox().MaxValue(1)
 
-### New
+#### New
 
     Html.Kendo().NumericTextBox().Min(1)
     Html.Kendo().NumericTextBox().Max(1)
 
-## Empty message
+### Empty Message
 
-### Old
+#### Old
 
     Html.Telerik().NumericTextBox().EmptyMessage(“Enter”)
 
-### New
+#### New
 
     Html.Kendo().NumericTextBox().Placeholder(“Enter”)
 
-## ButtonTitleUp and ButtonTitleDown
+### ButtonTitleUp and ButtonTitleDown
 
 Not implemented.
 
-## DecimalDigits
+### DecimalDigits
 
-### Old
+#### Old
     
     Html.Telerik().NumericTextBox().DecimalDigits(3)
 
-### New
+#### New
 
     Html.Kendo().NumericTextBox().Decimals(3)
     
-## NumberGroupSize, NumberGroupSeparator, NegativePatternIndex, DecimalSeparator, CurrencySymbol
+### NumberGroupSize, NumberGroupSeparator, NegativePatternIndex, DecimalSeparator, CurrencySymbol
 
 Not implemented in Kendo. Can use **Format()** and **Culture()** methods to achieve the same result.
 
@@ -60,18 +60,18 @@ Not implemented in Kendo. Can use **Format()** and **Culture()** methods to achi
 
 ## Events
 
-All events no longer have the “On” prefix.
+### All Events No Longer Have the “On” Prefix
 
-All widgets no longer have the OnLoad event. Please use **$(document).ready()** instead.
+### All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
 
-## Disable and enable
+### Disable and enable
 
-### Old
+#### Old
 
     var datePicker = $("#DatePicker").data("tTextBox");
     datePicker.disable();
 
-### New
+#### New
     
     var datePicker = $("#datepicker").data("kendoNumericTextBox");
     datePicker.enable(false);

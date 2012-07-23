@@ -6,13 +6,13 @@ publish: true
 
 # Server-Side API
 
-## Animations
+### Animations
 
-### Old
+#### Old
 
     Html.Telerik().PanelBar().Name("SamplePanelBar").Effects(effects => effects.Slide())
 
-### New
+#### New
 
     Html.Kendo().PanelBar().Name("SamplePanelBar").Animation(animation => animation.Open(open => open.FadeIn(FadeDirection.Down))
 
@@ -20,14 +20,14 @@ publish: true
 
 ## Events
 
-KendoUI Complete for ASP.NET MVC does not support action syntax i.e. “() => {}”
+### KendoUI Complete for ASP.NET MVC does not support action syntax i.e. “() => {}”
 
-All widgets no longer have the OnLoad event. Please use **$(document).ready()** instead.
+### All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
 
-### Old
+#### Old
 
     Html.Telerik().PanelBar().Name("SamplePanelBar").ClientEvents(events => events.OnChange(“change”))
 
-## New
+#### New
 
     Html.Kendo().PanelBar().Name("SamplePanelBar").Events(events => events.Change(“change”))
