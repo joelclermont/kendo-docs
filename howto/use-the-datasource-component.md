@@ -88,11 +88,11 @@ Operations conducted by the DataSource against this remote endpoint are done so 
 
 ## Working with Grouped Data
 
-Grouping local data is mostly trivial as you can continue to use the same DataSource you are already familiar with. However, generating grouped data on the server can be difficult when unsure of the format DataSource is expecting.
+Grouping local data is mostly trivial--you can continue to use the same DataSource you are already familiar with. However, generating grouped data on the server can be difficult when you are unsure of the format DataSource is expecting.
 
 ### Local Grouping
 
-Local grouping is convenient for small datasets but, for performance reasons, should be avoided with large datasets ([fiddle](http://jsfiddle.net/ryan_nauman/9h6Hm/0)).
+Local grouping is convenient for small datasets but, for performance reasons, should be avoided with large datasets.
 
 Data:
 
@@ -116,7 +116,7 @@ DataSource:
 
 ### Server Grouping
 
-Server grouping is great for large datasets. Be sure to set the `schema` and `group` properties as necessary ([fiddle](http://jsfiddle.net/ryan_nauman/B273E/0)). This example is with local data but the data returned by a `transport` will be evaluated the same.
+Server grouping is an excellent option for large datasets. Be sure to set the `schema` and `group` properties as necessary. This example is with local data but the data returned by a `transport` will be evaluated the same.
 
 Data:
 
