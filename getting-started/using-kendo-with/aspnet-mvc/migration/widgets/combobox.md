@@ -8,7 +8,7 @@ publish: true
 
 ## DataBinding
 
-###Binding to **List<SelectListItem>** collection
+### Binding to **List<SelectListItem>** collection
  
 #### Old
  
@@ -24,15 +24,15 @@ publish: true
         .DataTextField(“Text”)
         .DataValueField(“Value”)
  
-Manually create items:
+### Manually create items
  
-### Old
+#### Old
  
     Html.Telerik().ComboBox()
     .Name(“Combo”)
     . Items( items => items.Add().Text("Item1").Value("1"))
  
-### New
+#### New
  
     Html.Kendo().ComboBox()
         .Name(“Combo”)
@@ -40,15 +40,15 @@ Manually create items:
         .DataTextField(“Text”)
         .DataValueField(“Value”)
  
-Ajax binding:
+### Ajax binding
  
-### Old
+#### Old
 
     Html.Telerik().ComboBox()
         .Name(“Combo”)
         .DataBinding(binding => binding.Ajax().Select(“_Select”, “Combo”))
  
-### New
+#### New
  
     Html.Kendo().ComboBox().Name(“Combo”)
         .DataSource(source => {
@@ -61,27 +61,27 @@ Ajax binding:
         .DataTextField(“Text”)
         .DataValueField(“Value”)
  
-Define **Delay**:
+### Define **Delay**
  
-### Old
+#### Old
  
     Html.Telerik().ComboBox()
         .Name(“Combo”)
         .DataBinding(binding => binding.Ajax().Delay(300))
  
-### New
+#### New
  
     Html.Kendo().ComboBox()
         .Name(“Combo”)
         .Delay(300)
      
-Define **ServerFiltering**:
+### Define **ServerFiltering**
  
-### Old
+#### Old
 
 Not supported
  
-### New
+#### New
  
     Html.Kendo().ComboBox().Name(“Combo”)
         .DataSource(source => {
@@ -93,9 +93,9 @@ Not supported
         .DataTextField(“Text”)
         .DataValueField(“Value”)
      
-Send parameters to the server:
+### Send parameters to the server:
  
-### Old
+#### Old
     <%= Html.Telerik().ComboBox()
         .Name("AjaxComboBox")
         …
@@ -108,7 +108,7 @@ Send parameters to the server:
         }
     </script>
  
-### New
+#### New
  
     Html.Kendo().ComboBox().Name(“Combo”)
         .DataSource(source => {
@@ -127,13 +127,13 @@ Send parameters to the server:
         }
     </script>
     
-Bind to a collection which is not a **List<SelectListItem>**:
+### Bind to a collection which is not a **List<SelectListItem>**:
  
-### Old
+#### Old
 
 Not supported
  
-### New
+#### New
  
     Html.Kendo().ComboBox().Name(“Combo”)
         .DataTextField(“CompanyName”)
@@ -145,7 +145,7 @@ Not supported
 
 ### Filter
  
-### Old
+#### Old
 
     <%= Html.Telerik().ComboBox()
         .Name("AjaxComboBox")
@@ -154,7 +154,7 @@ Not supported
             filtering.FilterMode(AutoCompleteFilterMode.Contains);                             
         })
  
-### New
+#### New
 
     @(Html.Kendo().ComboBox()
         .Name("fabric")
@@ -163,7 +163,7 @@ Not supported
  
 ### Minimum Characters
  
-### Old
+#### Old
 
     <%= Html.Telerik().ComboBox()
         .Name("AjaxComboBox")
@@ -172,127 +172,131 @@ Not supported
             filtering.MinimumChars(2);
         })
  
-### New
+#### New
  
     @(Html.Kendo().ComboBox()
         .Name("fabric")
         .MinLength (2)
     )
     
-Define suggestion (autofill) of the ComboBox:
+### Define suggestion (autofill) of the ComboBox
  
-### Old
+#### Old
  
     Html.Telerik().ComboBox().Name("AjaxComboBox").AutoFill(true)
  
-### New
+#### New
 
     Html.Kendo().ComboBox().Name("AjaxComboBox").Suggest(true)
 
-Set placeholder:
+### Set placeholder
  
-### Old
+#### Old
 
     //Create item with text  “Select…” and value “”
     Html.Telerik().ComboBox().Name("AjaxComboBox").Placeholder(“Select…”)
  
-### New
+#### New
 
     //Html5 placeholder
     Html.Kendo().ComboBox().Name("AjaxComboBox"). Placeholder (“2”)
 
-Define animations:
+### Define animations
  
-### Old
+#### Old
 
     Html.Telerik().ComboBox().Name("AjaxComboBox").Effects(effects => effects.Slide())
  
-### New
+#### New
     Html.Kendo().ComboBox().Name("AjaxComboBox") .Animation(animation => animation.Open(open => open.FadeIn(FadeDirection.Down))
 
-Set **AutoBind**:
+### Set **AutoBind**
 
-### Old
+#### Old
 
 Not supported (when Ajax binding always autoBind: false)
 
-### New
+#### New
 
 Html.Kendo().ComboBox().Name("Combo").AutoBind(false)
 
-Set **SelectedText** when **AutoBind** false:
+### Set **SelectedText** when **AutoBind** false:
 
-### Old
+#### Old
     
     Html.Telerik().ComboBox().Name("Combo")
         .DataBinding(binding => binding.Ajax().Select(“”, “”))
         .InputHtmlAttribute(new { value = “Chai” })
 
-### New
-Html.Kendo().ComboBox().Name("Combo").AutoBind(false).Text(“Chai”)
+#### New
 
-Highlight first item:
+    Html.Kendo().ComboBox().Name("Combo").AutoBind(false).Text(“Chai”)
 
-### Old
+### Highlight first item:
+
+#### Old
     
     HighlightFirstMatch(true)
  
-### New
+#### New
     
     HighlightFirst (true)
 
-Kendo does not support action syntax - “() => {}”.  All widgets does not have **OnLoad** event.
+### Kendo does not support action syntax - “() => {}”.  All widgets does not have **OnLoad** event.
  
-### Old
+#### Old
 
     Html.Telerik().ComboBox().Name("Combo").ClientEvents( events => events.OnChange(“change”))
  
-### New
+#### New
 
     Html.Kendo().ComboBox().Name("Combo").Events( events => events.Change(“change”))
 
-Define Template:
+### Define Template
 
-### Old
+#### Old
 
 Not supported
  
-### New
+#### New
     
     Html.Kendo().ComboBox().Name("Combo").Template(“#= data.CompanyName #”)
 
-Define Height of popup element:
+### Define Height of popup element
 
-### Old
+#### Old
 
     Html.Telerik().ComboBox().Name("Combo").DropDownHtmlAttributes( new style { height = “300px” })
  
-### New
+#### New
     
     Html.Kendo().ComboBox().Name("Combo").Height(300)
 
-Cascading functionality:
+### Cascading functionality
  
-### Old
+#### Old
 
     Html.Telerik().ComboBox().Name("Combo").CascadeTo(“Id of the child ComboBox”)
  
-### New
+#### New
     
     Html.Kendo().ComboBox().Name("Combo").CascadeFrom(“Id of the parent ComboBox”)
 
-Encode:
+### Encode
  
-### Old
+#### Old
 
     Encode(false)
  
-### New
+#### New
+    
     Template(“ #= data.Text #”)
 
 ## Client-Side API
+ 
+##### MVC
 
-### MVC -> Kendo
+Kendo
  
 ##### value
 
@@ -313,6 +317,7 @@ None
 ##### text
 
 text
+
 ##### select
 
 select
