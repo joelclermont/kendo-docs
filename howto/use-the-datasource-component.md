@@ -58,7 +58,7 @@ Here's an example of creating a DataSource for data from a remote endpoint:
 		}
 	});
 
-The variable, `remoteDataSource` is a DataSource that is initialized to represent an in-memory cache of movies titles from the Netflix catalog service, which employs the [OData](http://www.odata.org/). It is only configured to act as a read-only source of data to any widgets to which it is bound.
+The variable, `remoteDataSource` is a DataSource that is initialized to represent an in-memory cache of movies titles from the Netflix catalog service, which employs the [OData](http://www.odata.org/) protocol. It is only configured to act as a read-only source of data to any widgets to which it is bound.
 
 As is the case with creating a DataSource for local data, the data provided by the Netflix catalog service is not loaded until the `.read()` method is called:
 

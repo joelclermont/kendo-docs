@@ -89,6 +89,20 @@ The underlying value of the **Slider**.
 
 ## Methods
 
+### destroy
+
+Prepares the **Slider** for safe removal from the DOM.
+
+Detaches event handlers and removes data entries in order to avoid memory leaks.
+
+#### Example
+
+	// deatach events
+	$("#slider").data("kendoSlider").destroy();
+	
+	// remove slider html from DOM
+    $("#slider").closest(".k-slider").remove();
+
 ### enable
 
 Enable/Disable the **Slider** widget.
