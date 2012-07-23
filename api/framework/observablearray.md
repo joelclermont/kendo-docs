@@ -286,6 +286,7 @@ The items to add to the beginning of the `ObservableArray`.
 > **Important**: The `unshift` method raises the `change` event. The `action` field of the
 event argument is set to `"add"`. The `items` field of the event argument is an array that
 contains the new items.
+
 ## Events
 
 ### change
@@ -298,9 +299,9 @@ Raised when the items of the `ObservableArray` change in some way.
 
 Specifies the type of change. Possible values are:
 
-###### `"add"` - items are added to the `ObservableArray`
-###### `"itemchange"` - a field of an item changed
-###### `"remove"` - items are removed from the `ObservableArray`
+`"add"` - items are added to the `ObservableArray`
+`"itemchange"` - a field of an item changed
+`"remove"` - items are removed from the `ObservableArray`
 
 ##### e.index `Number`
 
