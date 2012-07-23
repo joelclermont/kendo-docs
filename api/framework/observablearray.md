@@ -297,11 +297,7 @@ Raised when the items of the `ObservableArray` change in some way.
 
 ##### e.action `String`
 
-Specifies the type of change. Possible values are:
-
-`"add"` - items are added to the `ObservableArray`
-`"itemchange"` - a field of an item changed
-`"remove"` - items are removed from the `ObservableArray`
+Specifies the type of change. Possible values are: `"add"`- items are added to the `ObservableArray`, `"itemchange"` - a field of an item changed, `"remove"` - items are removed from the `ObservableArray`.
 
 ##### e.index `Number`
 
