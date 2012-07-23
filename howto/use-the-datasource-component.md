@@ -85,3 +85,75 @@ Here's another example of creating a DataSource for data from a remote endpoint:
 In this example, the DataSource is initialized to represent an in-memory cache of tweets from the search service for Twitter. This endpoint employs a [JSON](http://www.json.org/)-based endpoint contact that allows an input parameter, `q` to denote a query string for the search service. Here, its value is provides by a input element on the page.
 
 Operations conducted by the DataSource against this remote endpoint are done so via [jQuery.ajax()](http://api.jquery.com/jQuery.ajax/) and therefore, subject to the same security constraints enforced by the user agent. These security constraints also apply to XHRs made across different domains. Since this is the case with example above, the `dataType` configuration property is set to use [JSONP](http://en.wikipedia.org/wiki/JSONP).
+
+## Working with Grouped Data
+
+Grouping local data is mostly trivial--you can continue to use the same DataSource you are already familiar with. However, generating grouped data on the server can be difficult when you are unsure of the format DataSource is expecting.
+
+### Local Grouping
+
+Local grouping is convenient for small datasets but, for performance reasons, should be avoided with large datasets.
+
+Data:
+
+	var words = {
+	  'count': 4,
+		'input': 'kendo',
+		'items': [
+	    { 'w': 'kendo', 'length': 5 },
+	    { 'w': 'done', 'length': 4 },
+	    { 'w': 'keno', 'length': 4 },
+	    { 'w': 'node', 'length': 4 }
+	  ]
+	};
+
+DataSource:
+
+	var wordsDataSource = new kendo.data.DataSource({
+	    data: words,
+	    group: { field: 'length', dir: 'desc'}
+	});
+
+### Server Grouping
+
+Server grouping is an excellent option for large datasets. Be sure to set the `schema` and `group` properties as necessary. This example is with local data but the data returned by a `transport` will be evaluated the same.
+
+Data:
+
+	var words = {
+	    'count': 4,
+	    'input': 'kendo',
+	    'groups': [
+	        {
+	        'field': 'length',
+	        'value': '5',
+	        'items': [{
+	            'w': 'kendo'}],
+	        'hasSubgroups': false,
+	        'aggregates': {}},
+	    {
+	        'field': 'length',
+	        'value': '4',
+	        'items': [{
+	            'w': 'done'},
+	        {
+	            'w': 'keno'},
+	        {
+	            'w': 'node'}],
+	        'hasSubgroups': false,
+	        'aggregates': {}}
+	    ]
+	};
+    
+DataSource:
+
+	var wordsDataSource = new kendo.data.DataSource({
+	    data: words,
+	    schema: {
+	      groups: 'groups'
+	    },
+	    group: {
+	        field: 'length'
+	    },
+	    serverGrouping: true
+	});
