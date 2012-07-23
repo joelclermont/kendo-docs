@@ -641,9 +641,7 @@ Get current aggregate descriptors or applies aggregates to the data.
 
 ##### val `Object|Array`
 
-_optional, default: _
-
-<undefined> Aggregate(s) to be applied to the data.
+Aggregate(s) to be applied to the data.
 
 #### Returns
 
@@ -695,24 +693,34 @@ will be discarded.
 ##### model ``
 
 
-
 ### data
 
-Get data returned from the transport
+Gets or sets the data of the `DataSource`.
 
-#### Example
-
-    var data = dataSource.data();
 
 #### Parameters
 
-##### value ``
+##### value `Array`
 
-
+An `Array` of items to set as the current data of the `DataSource`. If omitted the current data will be returned.
 
 #### Returns
 
-`Array` Array of items
+An [ObservableArray](/api/framework/observablearray) which contains all items of the `DataSource`
+
+#### Example: Getting the Data of a DataSource
+
+    var data = dataSource.data();
+
+    for (var i = 0; i < data.length; i++) {
+        var dataItem = data[i];
+        // use the dataItem
+    }
+
+#### Example: Setting the Data of a DataSource
+
+    var data = [ { name: "John Doe" } ];
+    dataSource.data(data);
 
 ### fetch
 
