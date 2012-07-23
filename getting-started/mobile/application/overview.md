@@ -1,4 +1,4 @@
----
+﻿---
 title: Application overview
 slug: gs-mobile-application
 tags: getting-started,mobile
@@ -51,7 +51,7 @@ When targeting local views, the `href` attribute of navigation widgets specifies
 
 ## Linking to External Pages
 
-By default, all navigational widgets try to navigate to loacal views when tapped. This behavior can be overridden by setting `data-rel="external"` attribute to the link element.
+By default, all navigational widgets try to navigate to local views when tapped. This behavior can be overridden by setting `data-rel="external"` attribute to the link element.
 
 ### External links
 
