@@ -8,15 +8,15 @@ publish: true
 
 ## DataBinding
 
-Binding to **List<SelectListItem>** collection
+###Binding to **List<SelectListItem>** collection
  
-### Old
+#### Old
  
     Html.Telerik().ComboBox()
         .Name(“Combo”)
         .BindTo(new SelectList(Model.Products, "ProductID", "ProductName"))
  
-### New
+#### New
  
     Html.Kendo().ComboBox()
         .Name(“Combo”)
