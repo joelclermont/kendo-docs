@@ -286,4 +286,49 @@ The items to add to the beginning of the `ObservableArray`.
 > **Important**: The `unshift` method raises the `change` event. The `action` field of the
 event argument is set to `"add"`. The `items` field of the event argument is an array that
 contains the new items.
+## Events
 
+### change
+
+Raised when the items of the `ObservableArray` change in some way.
+
+#### Event Data
+
+##### e.action `String`
+
+Specifies the type of change. Possible values are:
+
+- `"add"` - when items are added to the `ObservableArray`
+- `"itemchange"` - when a field of an item changed
+- `"remove"` - when items are removed from the `ObservableArray`
+
+##### e.index `Number`
+
+The index at which items are removed or added. Set to `undefined` if `e.action` is `"itemchange"`.
+
+##### e.items `Array`
+
+The items which were changed.
+
+##### e.field `String`
+
+The name of the field of an item that changed. Available only when `e.action` is `"itemchange"`.
+
+#### Example
+    var array = new kendo.data.ObservableArray([1, 2, 3]);
+
+    array.bind("change", function(e) {
+        console.log(e.action, e.index, e.items);
+    });
+
+    array.push(4, 5); // outputs "add", 3, [4, 5]
+
+    array.pop(); // outputs "remove", 4, [5]
+
+    var people = new kendo.data.ObservableArray([{ name: "John Doe" }]);
+
+    people.bind("change", function(e) {
+        console.log(e.action, e.field, e.items[0].get("name"));
+    });
+
+    people[0].set("name", "Jane Doe"); // outputs "itemchange", "name", "Jane Doe"
