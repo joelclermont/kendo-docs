@@ -29,6 +29,19 @@ To create a new `ObservableArray`, use its constructor or the `kendo.observable`
     var primitive = new kendo.data.ObservableArray(["John Doe", "Jane Doe"]);
     console.log(typeof (primitive[0]) ); // outputs "string"
 
+## Fields
+
+### length
+
+An unsigned, 32-bit integer that specifies the number of items in an `ObservableArray`.
+
+#### Example: Iterating Over ObservableArray
+    var array = new kendo.data.ObservableArray([1, 2, 3]);
+
+    for (var i = 0; i < array.length; i++) {
+        console.log(array[i]); // outputs the current item
+    }
+
 ## Methods
 
 ### bind
