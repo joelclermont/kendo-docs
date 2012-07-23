@@ -298,9 +298,9 @@ Raised when the items of the `ObservableArray` change in some way.
 
 Specifies the type of change. Possible values are:
 
-- `"add"` - when items are added to the `ObservableArray`
-- `"itemchange"` - when a field of an item changed
-- `"remove"` - when items are removed from the `ObservableArray`
+###### `"add"` - items are added to the `ObservableArray`
+###### `"itemchange"` - a field of an item changed
+###### `"remove"` - items are removed from the `ObservableArray`
 
 ##### e.index `Number`
 
