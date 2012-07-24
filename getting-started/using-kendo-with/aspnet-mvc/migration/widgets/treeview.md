@@ -29,9 +29,9 @@ publish: true
 	     }) 
 	 %>
 
-### Serializing Data From The Server
+### Serializing Data
 
-Data should be serialized in the following JSON format:
+Data from the server should be serialized in the following JSON format:
 
 	{ 
     	id: String, 
@@ -83,9 +83,9 @@ By default, the **id** field will be posted to the server. To change the paramet
 	    } 
 	</script>
 
-### Value Field Is Removed
+### Value Field
 
-Depending on your use case, you can either:
+The value field is removed.  Depending on your use case, you can either:
 
 - If the value was used for load on demand, use the **id** field.  The id will be inferred in the client-side datasource and will be used when making requests for more data.
 
@@ -146,6 +146,8 @@ Upcoming version of the MVC wrappers will introduce a more convenient way of han
 ### Per-Item CheckBoxes
 
 # Client-Side API Changes
+
+#### MVC -> Kendo
 
 ##### ajaxRequest
 
