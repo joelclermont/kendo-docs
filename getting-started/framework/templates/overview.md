@@ -27,7 +27,7 @@ Let's take a closer look at how each of these Kendo UI Template syntaxes can be 
 One of the most basic templating tasks is rendering a value as-is in a template. With Kendo UI templates, this is done with the following code:
 
 
-    	var template = kendo.template("<div id="box"><#= firstName #></div>");
+    	var template = kendo.template("<div id='box'>#= firstName #</div>");
  
 
 This approach will create a "compiled" in-line template that's ready for rendering with data. Consuming the template in an application looks like this:
@@ -36,12 +36,12 @@ This approach will create a "compiled" in-line template that's ready for renderi
     	template(data); //Pass the data to the compiled template
     	 
     	//Resulting HTML Output:
-    	//<div id="box">Todd</div>
+    	//<div id='box'>Todd</div>
 
 #### Rendering HTML-Encoded Values
 If you want to render an encoded HTML value in a template, Kendo UI templates can automatically handle the encoding. To do that, use a slightly different syntax:
 
-		var template = kendo.template("<div id="box">#: firstName #</div>");
+		var template = kendo.template("<div id='box'>#: firstName #</div>");
  
 Now, when the template is consumed, assuming there are HTML characters in the data, the following output will be produced:
 
@@ -49,7 +49,7 @@ Now, when the template is consumed, assuming there are HTML characters in the da
 		template(data); //Pass data to compiled template
 		 
 		//Resulting encoded HTML Output:
-		//<div id="box">&lt;b&gt;Todd&lt;/b&gt;</div>
+		//<div id="box"><b>Todd</b></div>
 
 > HTML encoding is useful when you want to avoid rendering HTML tags in your templates. It will escape the HTML tags in your data and render the tags as a string. You should use HTML encoding when working with data from unknown sources (such as user submitted values) in case users have included HTML markup in the content that could break the layout of your page.
 
