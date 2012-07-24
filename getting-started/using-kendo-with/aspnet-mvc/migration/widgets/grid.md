@@ -8,7 +8,7 @@ publish: true
  
 ## DataKeys 
 
-### DataKeys Are Moved to the Datasource Model Configuration
+DataKeys Are Moved to the Datasource Model Configuration:
 
 #### Old
 
@@ -27,7 +27,7 @@ publish: true
  
 ## DataBinding
 
-### DataBinding Configuration Is Moved to Datasource
+DataBinding Configuration Is Moved to Datasource:
  
 #### Old
     
@@ -44,9 +44,9 @@ publish: true
             .Read(read => read.Action("AjaxBinding ", "Grid"))
         )
  
-### Databinding “Url” Methods Are Renamed to Match the KendoUI Datasource Client Configuration
+Databinding “Url” Methods Are Renamed to Match the KendoUI Datasource Client Configuration.
 
-### Old -> New
+#### Old -> New
                 
 ##### Select 
 
@@ -64,7 +64,7 @@ Destroy
 
 Create
  
-### **OperationMode** is change to **ServerOperation**
+**OperationMode** is change to **ServerOperation**:
 
 #### Old
 
@@ -85,7 +85,7 @@ Create
  
 ## DetailView
 
-### **DetailView.Clienttemplate** Changed to **ClientDetailTemplateId**
+**DetailView.Clienttemplate** Changed to **ClientDetailTemplateId**:
 
 #### Old
 
@@ -109,7 +109,7 @@ Create
             .ToClientTemplate())
     </script>
  
-### **DetailView.Template** changed to **DetailTemplate**
+**DetailView.Template** changed to **DetailTemplate**:
  
 #### Old
       
@@ -135,13 +135,13 @@ Create
        
 ## Editable 
 
-### **InForms** Mode Is Removed
+**InForms** Mode Is Removed.
 
-### **InsertRowPosition** is renamed to **CreateAt**
+**InsertRowPosition** is renamed to **CreateAt**.
 
-### **BeginEdit** and **HtmlFormAttributes** options are not available
+**BeginEdit** and **HtmlFormAttributes** options are not available.
 
-### **DefaultDataItem** is moved to DataSource Model configuration
+**DefaultDataItem** is moved to DataSource Model configuration.
  
 #### Old
 
@@ -162,7 +162,7 @@ Create
 
 ## Groupable 
 
-### Groups Configuration Is Moved to Datasource
+Groups Configuration Is Moved to Datasource:
  
 #### Old
 
@@ -181,11 +181,11 @@ Create
             .Group(group => group.Add(o => o.OrderDate))
         )     
 
-### **Visible** option is removed. Same functionality can be achieved by setting **Groupable.Enabled** to false and Group descriptors through the DataSource.
+**Visible** option is removed. Same functionality can be achieved by setting **Groupable.Enabled** to false and Group descriptors through the DataSource.
  
 ## Sortable
 
-#### **OrderBy** Is Moved to The DataSource Configuration
+**OrderBy** Is Moved to The DataSource Configuration:
  
 #### Old
 
@@ -204,7 +204,7 @@ Create
 
 ## Filterable
 
-### **Filters** Is Moved to The DataSource Configuration
+**Filters** Is Moved to The DataSource Configuration:
  
 #### Old
        
@@ -223,9 +223,9 @@ Create
 
 ## Pageable
 
-### **Position** Is Not Available
+**Position** Is Not Available.
 
-### **PageSize** And Total Is Moved to the DataSource Configuration
+**PageSize** And Total Is Moved to the DataSource Configuration:
  
 #### Old
  
@@ -243,13 +243,13 @@ Create
         .Total(100)
     ) 
 
-### **PageOnScroll** Is Removed (Use **Scrollable.Virtual** Option to Enabled Virtual Scrolling Instead)
+**PageOnScroll** Is Removed (Use **Scrollable.Virtual** Option to Enabled Virtual Scrolling Instead).
 
-### **Style** Is Removed. Pager Style Can Be Configured by Setting Individual Properties Such As **Input**, **PageSizes**, **Info**, **Numeric**, **PreviousNext**
+**Style** Is Removed. Pager Style Can Be Configured by Setting Individual Properties Such As **Input**, **PageSizes**, **Info**, **Numeric**, **PreviousNext**.
 
 ## Columns 
 
-### **Aggregates** are moved to the DataSource configuration:
+**Aggregates** are moved to the DataSource configuration:
  
 #### Old
 
@@ -274,7 +274,7 @@ Create
             .Aggregates(agg => agg.Add(o => o.OrderID).Count())
         )
         
-### **ReadOnly** In Moved To DataSource Model Configuration
+**ReadOnly** In Moved To DataSource Model Configuration:
  
 #### Old
 
@@ -300,17 +300,19 @@ Create
 
 ## KeyboardNavigation
 
-### **KeyboardNavigation** Is Renamed To **Navigatable**
+**KeyboardNavigation** Is Renamed To **Navigatable**.
 
-### **KeyboardNavigation.EditOnTab** is not available. This is enabled by default.
+**KeyboardNavigation.EditOnTab** is not available. This is enabled by default.
 
 ## NoRecordsTemplate
 
-### **NoRecordsTemplate** Is Not Available. There Will Be a No NoRecords Item but Text Will Be Shown Within the Pager. This Text Is Configurable Through **Pageable.Messages** Configuration
+**NoRecordsTemplate** Is Not Available. There Will Be a No NoRecords Item but Text Will Be Shown Within the Pager. This Text Is Configurable Through **Pageable.Messages** Configuration
 
 # Client-side API Changes
 
 ## Client-side API
+
+#### MVC -> Kendo
 
 ##### insertRow
 
@@ -390,9 +392,11 @@ Removed.
 
 ## Client-side Events
 
-### All events have removed the "On" prefix.
+All events have removed the "On" prefix.
 
-### OnLoad no longer exists, please utilize **$(document).ready()** instead.
+OnLoad no longer exists, please utilize **$(document).ready()** instead.
+
+#### MVC -> Kendo
 
 ##### OnCommand
 
