@@ -183,12 +183,12 @@ Refreshes the content of a Window from a remote URL.
 
     var windowObject = $("#window").data("kendoWindow");
     windowObject.refresh("/feedbackForm");
-    
+
     windowObject.refresh({
         url: "/feedbackForm",
         data: { userId: 42 }
     });
-    
+
     windowObject.refresh({
         url: "/userInfo",
         data: { userId: 42 },
@@ -219,6 +219,10 @@ The HTTP request method ("GET", "POST").
 ##### options.template `String`
 
 A template to be used for displaying the requested data.
+
+##### options.iframe `Boolean`
+
+Indicates whether the content should be fetched within an iframe, or with AJAX and rendered in the same page.
 
 #### Returns
 
@@ -298,12 +302,12 @@ Triggered when a Window has finished its opening animation.
     var onActivate = function(e) {
         // ...
     };
-    
+
     // attach activate event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         activate: onActivate
     });
-    
+
     // detach activate event handler via unbind()
     kendoWindow.data("kendoWindow").unbind("activate", onActivate);
 
@@ -313,10 +317,10 @@ Triggered when a Window has finished its opening animation.
     var onActivate = function(e) {
         // ...
     };
-    
+
     // attach activate event handler via bind()
     $("#window").data("kendoWindow").bind("activate", onActivate);
-    
+
     // detach activate event handler via unbind()
     $("#window").data("kendoWindow").unbind("activate", onActivate);
 
@@ -330,12 +334,12 @@ Triggered when a Window is closed (by a user or through the close() method).
     var onClose = function(e) {
         // ...
     };
-    
+
     // attach close event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         close: onClose
     });
-    
+
     // detach close event handler via unbind()
     kendoWindow.data("kendoWindow").unbind("close", onClose);
 
@@ -345,10 +349,10 @@ Triggered when a Window is closed (by a user or through the close() method).
     var onClose = function(e) {
         // ...
     };
-    
+
     // attach close event handler via bind()
     $("#window").data("kendoWindow").bind("close", onClose);
-    
+
     // detach close event handler via unbind()
     $("#window").data("kendoWindow").unbind("close", onClose);
 
@@ -362,12 +366,12 @@ Triggered when a Window has finished its closing animation.
     var onDeactivate = function(e) {
         // ...
     };
-    
+
     // attach deactivate event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         deactivate: onDeactivate
     });
-    
+
     // detach deactivate event handler via unbind()
     kendoWindow.data("kendoWindow").unbind("deactivate", onDeactivate);
 
@@ -377,10 +381,10 @@ Triggered when a Window has finished its closing animation.
     var onDeactivate = function(e) {
         // ...
     };
-    
+
     // attach deactivate event handler via bind()
     $("#window").data("kendoWindow").bind("deactivate", onDeactivate);
-    
+
     // detach deactivate event handler via unbind()
     $("#window").data("kendoWindow").unbind("deactivate", onDeactivate);
 
@@ -394,12 +398,12 @@ Triggered when a Window has been moved by a user.
     var onDragEnd = function(e) {
         // ...
     };
-    
+
     // attach dragEnd event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         dragend: onDragEnd
     });
-    
+
     // detach dragEnd event handler via unbind()
     kendoWindow.data("kendoWindow").unbind("dragend", onDragEnd);
 
@@ -409,10 +413,10 @@ Triggered when a Window has been moved by a user.
     var onDragEnd = function(e) {
         // ...
     };
-    
+
     // attach dragEnd event handler via bind()
     $("#window").data("kendoWindow").bind("dragend", onDragEnd);
-    
+
     // detach dragEnd event handler via unbind()
     $("#window").data("kendoWindow").unbind("dragend", onDragEnd);
 
@@ -430,12 +434,12 @@ Triggered when an AJAX request for content fails.
     var onError = function(e) {
         // ...
     };
-    
+
     // attach dragEnd event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         error: onError
     });
-    
+
     // detach error event handler via unbind()
     kendoWindow.data("kendoWindow").unbind("error", onError);
 
@@ -445,10 +449,10 @@ Triggered when an AJAX request for content fails.
     var onError = function(e) {
         // ...
     };
-    
+
     // attach error event handler via bind()
     $("#window").data("kendoWindow").bind("error", onError);
-    
+
     // detach error event handler via unbind()
     $("#window").data("kendoWindow").unbind("error", onError);
 
@@ -462,12 +466,12 @@ Triggered when a Window is opened (i.e. the open() method is called).
     var onOpen = function(e) {
         // ...
     };
-    
+
     // attach open event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         open: onOpen
     });
-    
+
     // detach expand event handler via unbind()
     kendoWindow.data("kendoWindow").unbind("open", onOpen);
 
@@ -477,10 +481,10 @@ Triggered when a Window is opened (i.e. the open() method is called).
     var onOpen = function(e) {
         // ...
     };
-    
+
     // attach open event handler via bind()
     $("#window").data("kendoWindow").bind("open", onOpen);
-    
+
     // detach open event handler via unbind()
     $("#window").data("kendoWindow").unbind("open", onOpen);
 
@@ -494,12 +498,12 @@ Triggered when the content of a Window have been refreshed via AJAX.
     var onRefresh = function(e) {
         // ...
     };
-    
+
     // attach refresh event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         refresh: onRefresh
     });
-    
+
     // detach refresh event handler via unbind()
     kendoWindow.data("kendoWindow").unbind("refresh", onRefresh);
 
@@ -509,10 +513,10 @@ Triggered when the content of a Window have been refreshed via AJAX.
     var onRefresh = function(e) {
         // ...
     };
-    
+
     // attach refresh event handler via bind()
     $("#window").data("kendoWindow").bind("refresh", onRefresh);
-    
+
     // detach refresh event handler via unbind()
     $("#window").data("kendoWindow").unbind("refresh", onRefresh);
 
@@ -526,12 +530,12 @@ Triggered when a Window has been resized by a user.
     var onResize = function(e) {
         // ...
     };
-    
+
     // attach resize event handler during initialization
     var kendoWindow = $("#window").kendoWindow({
         resize: onResize
     });
-    
+
     // detach resize event handler via unbind()
     kendoWindow.data("kendoWindow").unbind("resize", onResize);
 
@@ -541,9 +545,9 @@ Triggered when a Window has been resized by a user.
     var onResize = function(e) {
         // ...
     };
-    
+
     // attach resize event handler via bind()
     $("#window").data("kendoWindow").bind("resize", onResize);
-    
+
     // detach resize event handler via unbind()
     $("#window").data("kendoWindow").unbind("resize", onResize);
