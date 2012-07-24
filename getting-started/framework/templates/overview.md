@@ -60,11 +60,11 @@ For example, to display a list of items using JavaScript and Kendo UI templates,
 
 		<script id="javascriptTemplate" type="text/x-kendo-template">
 		    <ul>
-		    <# for (var i = 0; i < data.length; i++) { #>
-		        <li><#= data[i] #></li>
-		    <# } #>
+		    # for (var i = 0; i < data.length; i++) { #
+		        <li>#= data[i] #</li>
+		    # } #
 		    <ul>
-		<script>
+		</ script>
  
 
 To then consume this external template with an expression, we simply need to initialize a template that uses this definition and receives an array of values:
