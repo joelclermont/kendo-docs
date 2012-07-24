@@ -6,7 +6,7 @@ publish: true
 
 # Server-side API
 
-### Defining Min and Max Dates
+Defining min and max dates:
 
 #### Old
     
@@ -18,7 +18,7 @@ publish: true
     Html.Kendo().Calendar().Name("Calendar").Min(DateTime.Now)
     Html.Kendo().Calendar().Name("Calendar").Max(DateTime.Now)
 
-### Footer
+Footer:
 
 #### Old
     
@@ -28,7 +28,7 @@ publish: true
     
     Html.Kendo().Calendar().Name("Calendar").Footer(“#= kendo.toString(data, ‘MM/dd/yyyy’)”)
 
-### StartTime and EndTime
+StartTime and EndTime:
 
     Not implemented in Kendo UI
 
@@ -38,7 +38,7 @@ publish: true
 
 All events no longer have the “On” prefix.
 
-All widgets no longer have the OnLoad event. Please use $(document).ready() instead.
+All widgets no longer have the OnLoad event. Please use **$(document).ready()** instead.
 
 ### Disable
 
