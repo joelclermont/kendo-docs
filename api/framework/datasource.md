@@ -295,13 +295,13 @@ Describes the `Model` of the `DataSource`. If set to `Object` the `Model.define`
                }
            }
        }
-   });
+    });
 
-   var dataSource = new kendo.data.DataSource({
+    var dataSource = new kendo.data.DataSource({
         schema: {
             model: Product // Use the existing Product model
         }
-   });
+    });
 
 ### schema.parse `Function`
 
@@ -541,7 +541,7 @@ Options for remote create data operation, or the URL of the remote service.
     var dataSource = new kendo.data.DataSource({
         transport: {
             create: {
-                url: "orders/create.json",
+                url: "/orders/create",
                 data: {
                     orderId: $("#input").val() // sends the value of the input as the orderId
                 }
@@ -620,6 +620,18 @@ Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for 
         }
     }
 
+#### Example: Send Data As JSON
+
+    transport: {
+        create: {
+            contentType: "application/json",
+            data: kendo.strintify({ // convert the data to a string in JSON format
+                id: 42,
+                name: "John Doe"
+            })
+        }
+    }
+
 ### transport.create.dataType `String`
 
 The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
@@ -661,12 +673,12 @@ Options for remote destroy data operation, or the URL of the remote service.
 
 > **Important:** The value of `transport.destroy` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
 
-#### Example: Specify destroy Options
+#### Example: Specify Destroy Options
 
     var dataSource = new kendo.data.DataSource({
         transport: {
             destroy: {
-                url: "orders/destroy.json",
+                url: "/orders/destroy",
                 data: {
                     orderId: $("#input").val() // sends the value of the input as the orderId
                 }
@@ -674,7 +686,7 @@ Options for remote destroy data operation, or the URL of the remote service.
         }
     });
 
-#### Example: Specify destroy As Function
+#### Example: Specify Destroy As Function
 
     var dataSource = new kendo.data.DataSource({
         transport: {
@@ -745,6 +757,18 @@ Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for 
         }
     }
 
+#### Example: Send Data As JSON
+
+    transport: {
+        destroy: {
+            contentType: "application/json",
+            data: kendo.strintify({ // convert the data to a string in JSON format
+                id: 42,
+                name: "John Doe"
+            })
+        }
+    }
+
 ### transport.destroy.dataType `String`
 
 The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
@@ -806,12 +830,12 @@ Options for remote read data operation, or the URL of the remote service.
 
 > **Important:** The value of `transport.read` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
 
-#### Example: Specify read Options
+#### Example: Specify Read Options
 
     var dataSource = new kendo.data.DataSource({
         transport: {
             read: {
-                url: "orders/read.json",
+                url: "/orders/read",
                 data: {
                     orderId: $("#input").val() // sends the value of the input as the orderId
                 }
@@ -819,7 +843,7 @@ Options for remote read data operation, or the URL of the remote service.
         }
     });
 
-#### Example: Specify read As Function
+#### Example: Specify Read As Function
 
     var dataSource = new kendo.data.DataSource({
         transport: {
@@ -890,6 +914,18 @@ Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for 
         }
     }
 
+#### Example: Send Data As JSON
+
+    transport: {
+        read: {
+            contentType: "application/json",
+            data: kendo.strintify({ // convert the data to a string in JSON format
+                id: 42,
+                name: "John Doe"
+            })
+        }
+    }
+
 ### transport.read.dataType `String`
 
 The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
@@ -931,12 +967,12 @@ Options for remote update data operation, or the URL of the remote service.
 
 > **Important:** The value of `transport.update` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
 
-#### Example: Specify update Options
+#### Example: Specify Update Options
 
     var dataSource = new kendo.data.DataSource({
         transport: {
             update: {
-                url: "orders/update.json",
+                url: "/orders/update",
                 data: {
                     orderId: $("#input").val() // sends the value of the input as the orderId
                 }
@@ -944,7 +980,7 @@ Options for remote update data operation, or the URL of the remote service.
         }
     });
 
-#### Example: Specify update As Function
+#### Example: Specify Update As Function
 
     var dataSource = new kendo.data.DataSource({
         transport: {
@@ -963,6 +999,18 @@ Options for remote update data operation, or the URL of the remote service.
             }
         }
     });
+
+#### Example: Send Data As JSON
+
+    transport: {
+        update: {
+            contentType: "application/json",
+            data: kendo.strintify({ // convert the data to a string in JSON format
+                id: 42,
+                name: "John Doe"
+            })
+        }
+    }
 
 ### transport.update.cache `Boolean`
 
