@@ -6,7 +6,7 @@ publish: true
 
 # Server-Side API
 
-### Defining Min and Max Dates
+Defining min and max dates:
 
 #### Old
     
@@ -18,7 +18,7 @@ publish: true
     Html.Kendo().Calendar().Name("Calendar").Min(DateTime.Now)
     Html.Kendo().Calendar().Name("Calendar").Max(DateTime.Now)
 
-### Footer
+Footer:
 
 #### Old
 
@@ -28,7 +28,7 @@ publish: true
     
     Html.Kendo().Calendar().Name("Calendar").Footer(“#= kendo.toString(data, ‘MM/dd/yyyy’)”)
 
-### ShowButton and ButtonTitle
+howButton and ButtonTitle:
 
 #### Old
     
@@ -39,7 +39,7 @@ publish: true
 
     Not Supported
 
-### OpenOnFocus
+**OpenOnFocus**:
 
 #### Old
 
