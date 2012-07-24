@@ -8,7 +8,7 @@ publish: true
 
 ## DataBinding
 
-### Binding to **List<Selectlistitem>** Collection
+Binding to **List<Selectlistitem>** Collection:
  
 #### Old
  
@@ -24,7 +24,7 @@ publish: true
         .DataTextField(“Text”)
         .DataValueField(“Value”)
  
-### Manually Create Items
+Manually creating items:
  
 #### Old
  
@@ -40,7 +40,7 @@ publish: true
         .DataTextField(“Text”)
         .DataValueField(“Value”)
  
-### Ajax Binding
+Ajax binding:
  
 #### Old
 
@@ -61,7 +61,7 @@ publish: true
         .DataTextField(“Text”)
         .DataValueField(“Value”)
  
-### Define **Delay**
+Defining **Delay**:
  
 #### Old
  
@@ -75,7 +75,7 @@ publish: true
         .Name(“Combo”)
         .Delay(300)
      
-### Define **ServerFiltering**
+Defining **ServerFiltering**:
  
 #### Old
 
@@ -93,7 +93,7 @@ Not supported
         .DataTextField(“Text”)
         .DataValueField(“Value”)
      
-### Send Parameters to the Server
+Sending Parameters to the server:
  
 #### Old
 
@@ -128,7 +128,7 @@ Not supported
         }
     </script>
     
-### Bind to a Collection Which Is Not a **List<Selectlistitem>**:
+Binding to a collection which is not a **List<Selectlistitem>**:
  
 #### Old
 
@@ -144,7 +144,7 @@ Not supported
     
 ## Other Options
 
-### Filter
+Filter:
  
 #### Old
 
@@ -162,7 +162,7 @@ Not supported
         .Filter(FilterType.StartsWith)
     )
  
-### Minimum Characters
+Minimum characters:
  
 #### Old
 
@@ -180,7 +180,7 @@ Not supported
         .MinLength (2)
     )
     
-### Define Suggestion (Autofill) of the ComboBox
+Define suggestion (Autofill) of the ComboBox:
  
 #### Old
  
@@ -190,7 +190,7 @@ Not supported
 
     Html.Kendo().ComboBox().Name("AjaxComboBox").Suggest(true)
 
-### Set Placeholder
+Setting the placeholder:
  
 #### Old
 
@@ -202,7 +202,7 @@ Not supported
     //Html5 placeholder
     Html.Kendo().ComboBox().Name("AjaxComboBox"). Placeholder (“2”)
 
-### Define Animations
+Defining the animations:
  
 #### Old
 
@@ -211,7 +211,7 @@ Not supported
 #### New
     Html.Kendo().ComboBox().Name("AjaxComboBox") .Animation(animation => animation.Open(open => open.FadeIn(FadeDirection.Down))
 
-### Set **AutoBind**
+Setting **AutoBind**:
 
 #### Old
 
@@ -221,7 +221,7 @@ Not supported
 
     Html.Kendo().ComboBox().Name("Combo").AutoBind(false)
 
-### Set **SelectedText** When **AutoBind** False
+Setting **SelectedText** when **AutoBind** is false:
 
 #### Old
     
@@ -233,7 +233,7 @@ Not supported
 
     Html.Kendo().ComboBox().Name("Combo").AutoBind(false).Text(“Chai”)
 
-### Highlight First Item
+Highlighting the first item:
 
 #### Old
     
@@ -243,7 +243,7 @@ Not supported
     
     HighlightFirst (true)
 
-### Kendo Does Not Support Action Syntax - “() => {}”.  All Widgets Does Not Have **Onload** Event.
+Kendo does not support action syntax - “() => {}”.  all widgets do not have **Onload** event:
  
 #### Old
 
@@ -253,7 +253,7 @@ Not supported
 
     Html.Kendo().ComboBox().Name("Combo").Events( events => events.Change(“change”))
 
-### Define Template
+Defining templates:
 
 #### Old
 
@@ -263,7 +263,7 @@ Not supported
     
     Html.Kendo().ComboBox().Name("Combo").Template(“#= data.CompanyName #”)
 
-### Define Height of Popup Element
+Defining the height of the popup element:
 
 #### Old
 
@@ -273,7 +273,7 @@ Not supported
     
     Html.Kendo().ComboBox().Name("Combo").Height(300)
 
-### Cascading Functionality
+Cascading functionality:
  
 #### Old
 
@@ -283,7 +283,7 @@ Not supported
     
     Html.Kendo().ComboBox().Name("Combo").CascadeFrom(“Id of the parent ComboBox”)
 
-### Encode
+Encode:
  
 #### Old
 
@@ -295,9 +295,7 @@ Not supported
 
 ## Client-Side API
  
-##### MVC
-
-Kendo
+#### MVC -> Kendo
  
 ##### value
 
