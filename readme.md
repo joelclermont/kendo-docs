@@ -50,12 +50,6 @@ There are two ways you can contribute to the public Kendo UI documentation: eith
 
 	Once you've made your changes, commit, pull, merge, push and [send us a pull request](https://help.github.com/articles/using-pull-requests)! We--and Kendo UI users everywhere--thank you for making our docs the best front-end library documentation on the web! 
 
-## Send us a Pull Request, Win an iPad!
-
-You heard us right! To jump start community contributions to our new documentation repo, we're raffling off a new iPad to one lucky committer. From July 11th-18th, every accepted pull request that **noticeably improves the content** in this repository will be entered into a raffle for a new iPad, to be given away on **Monday, July 23rd**. 
-
-For the fine print, [visit the Kendo UI Docs Wiki Contest Page](https://github.com/telerik/kendo-docs/wiki/Contribute-and-Win-Contest-Details).
-
 ## License
 
 The Kendo UI Documentation is licensed under an MIT license. This license applies to the markdown (.md) files in this site **ONLY**, and does not convey, override or modify any existing licenses covering the runtime source and components of Kendo UI. For information about available licensed for the Kendo UI Library, visit our [license page](http://www.kendoui.com/faq/licensing.aspx) at [KendoUI.com](http://kendoui.com).
