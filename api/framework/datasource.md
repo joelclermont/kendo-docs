@@ -620,18 +620,6 @@ Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for 
         }
     }
 
-#### Example: Send Data As JSON
-
-    transport: {
-        create: {
-            contentType: "application/json",
-            data: kendo.strintify({ // convert the data to a string in JSON format
-                id: 42,
-                name: "John Doe"
-            })
-        }
-    }
-
 ### transport.create.dataType `String`
 
 The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
@@ -754,18 +742,6 @@ Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for 
                     name: "John Doe"
                 };
             }
-        }
-    }
-
-#### Example: Send Data As JSON
-
-    transport: {
-        destroy: {
-            contentType: "application/json",
-            data: kendo.strintify({ // convert the data to a string in JSON format
-                id: 42,
-                name: "John Doe"
-            })
         }
     }
 
@@ -914,18 +890,6 @@ Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for 
         }
     }
 
-#### Example: Send Data As JSON
-
-    transport: {
-        read: {
-            contentType: "application/json",
-            data: kendo.strintify({ // convert the data to a string in JSON format
-                id: 42,
-                name: "John Doe"
-            })
-        }
-    }
-
 ### transport.read.dataType `String`
 
 The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
@@ -1000,17 +964,6 @@ Options for remote update data operation, or the URL of the remote service.
         }
     });
 
-#### Example: Send Data As JSON
-
-    transport: {
-        update: {
-            contentType: "application/json",
-            data: kendo.strintify({ // convert the data to a string in JSON format
-                id: 42,
-                name: "John Doe"
-            })
-        }
-    }
 
 ### transport.update.cache `Boolean`
 
