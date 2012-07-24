@@ -6,7 +6,7 @@ publish: true
 
 # Server-Side API
 
-### Defining Min and Max dates
+Defining Min and Max dates:
 
 #### Old
 
@@ -18,7 +18,7 @@ publish: true
     Html.Kendo().Calendar().Name("Calendar").Min(DateTime.Now)
     Html.Kendo().Calendar().Name("Calendar").Max(DateTime.Now)
 
-### Footer
+Footer:
 
 #### Old
     
@@ -32,11 +32,11 @@ publish: true
 
 ## Events
 
-### All Events No Longer Have the “On” Prefix
+All Events No Longer Have the “On” Prefix.
 
-### All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
+All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
 
-### Disable
+**Disable**:
 
 #### Old
 
