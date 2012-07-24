@@ -6,7 +6,7 @@ publish: true
 
 # Server-Side API
 
-### IncrementStep
+**IncrementStep**:
 
 #### Old
 
@@ -16,7 +16,7 @@ publish: true
     
     Html.Kendo().NumericTextBox().Step(1)
 
-### Min/Max Value
+Min/Max value:
 
 #### Old
 
@@ -28,7 +28,7 @@ publish: true
     Html.Kendo().NumericTextBox().Min(1)
     Html.Kendo().NumericTextBox().Max(1)
 
-### Empty Message
+Empty message:
 
 #### Old
 
@@ -38,11 +38,11 @@ publish: true
 
     Html.Kendo().NumericTextBox().Placeholder(“Enter”)
 
-### ButtonTitleUp and ButtonTitleDown
+ButtonTitleUp and ButtonTitleDown:
 
 Not implemented.
 
-### DecimalDigits
+DecimalDigits:
 
 #### Old
     
@@ -52,7 +52,7 @@ Not implemented.
 
     Html.Kendo().NumericTextBox().Decimals(3)
     
-### NumberGroupSize, NumberGroupSeparator, NegativePatternIndex, DecimalSeparator, CurrencySymbol
+**NumberGroupSize**, **NumberGroupSeparator**, **NegativePatternIndex**, **DecimalSeparator**, **CurrencySymbol**:
 
 Not implemented in Kendo. Can use **Format()** and **Culture()** methods to achieve the same result.
 
@@ -60,11 +60,11 @@ Not implemented in Kendo. Can use **Format()** and **Culture()** methods to achi
 
 ## Events
 
-### All Events No Longer Have the “On” Prefix
+All Events No Longer Have the “On” Prefix.
 
-### All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
+All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
 
-### Disable and enable
+Disable and enable:
 
 #### Old
 
