@@ -6,7 +6,7 @@ publish: true
 
 # Server-Side API
 
-### Animations
+Animations:
 
 #### Old
 
@@ -20,9 +20,9 @@ publish: true
 
 ## Events
 
-### KendoUI Complete for ASP.NET MVC does not support action syntax i.e. “() => {}”
+KendoUI Complete for ASP.NET MVC does not support action syntax i.e. “() => {}”.
 
-### All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
+All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** Instead.
 
 #### Old
 
