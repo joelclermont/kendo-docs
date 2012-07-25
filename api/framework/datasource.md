@@ -1569,6 +1569,25 @@ Fires when an error occurs during data retrieval. The event arguments are the sa
         // handle event
     });
 
+### error
+
+Fires after changes are synced.
+
+#### Example
+
+    var dataSource = new kendo.data.DataSource({
+        sync: function(e) {
+            // handle event
+        }
+    });
+
+#### To set after initialization
+
+    dataSource.bind("sync", function(e) {
+        // handle event
+    });
+
+
 ### requestStart
 
 Fires when data request is to be made
@@ -1592,3 +1611,27 @@ Fires when data request is to be made
 ##### e.sender `DataSource`
 
 Reference to the dataSource object instance.
+
+### requestEnd
+
+Fires when data request is received
+
+#### Example
+
+    var dataSource = new kendo.data.DataSource({
+        requestEnd: function(e) {
+            // handle event
+        }
+    });
+
+#### To set after initialization
+
+    dataSource.bind("requestEnd", function(e) {
+        // handle event
+    });
+
+#### Event Data
+
+##### e.response `Object`
+
+The raw data received from the server.
