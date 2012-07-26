@@ -16,7 +16,7 @@ Model View ViewModel ([MVVM](http://en.wikipedia.org/wiki/Model_View_ViewModel))
 exposing the data objects from the Model in such a way that those objects are easily consumed in the View.
 
 > **Important:** Kendo UI Mobile is not included in the default list of initialized namespaces. You can initialize it explicitly by
-  running _kendo.bind(element, viewModel, kendo.mobile.ui);_
+  running `kendo.bind(element, viewModel, kendo.mobile.ui);`
 
 
 #### Example
@@ -61,8 +61,8 @@ The View-Model which the elements are bound to. Wraped as an instance of `kendo.
 
 ##### namespace `Object`
 
-Optional namespace(s) too look in when instantiating Kendo UI widgets. The valid namespaces are `kendo.ui`, `kendo.dataviz.ui` and `kendo.mobile.ui`. The default
-order is `kendo.ui`, `kendo.dataviz.ui`.
+Optional namespace too look in when instantiating Kendo UI widgets. The valid namespaces are `kendo.ui`, `kendo.dataviz.ui` and `kendo.mobile.ui`. If omitted
+`kendo.ui` will be used.
 
 ### culture
 Sets or gets the current culture. Uses the passed culture name to select a culture from the culture scripts that you have included and then sets the current culture.
