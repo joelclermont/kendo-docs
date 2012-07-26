@@ -1586,7 +1586,7 @@ Fires when an error occurs during data read or sync. The event arguments are the
         // handle event
     });
 
-### error
+### sync
 
 Fires after changes are synced.
 
@@ -1631,7 +1631,7 @@ Reference to the dataSource object instance.
 
 ### requestEnd
 
-Fires when data request is received
+Fires when a data request is received. Raised after a Create, Read, Update or Destroy request is performed.
 
 #### Example
 
@@ -1652,3 +1652,7 @@ Fires when data request is received
 ##### e.response `Object`
 
 The raw data received from the server.
+
+##### e.type `String`
+
+The type of the request. Set to `"create"`, `"read"`, `"update"`or `"destroy"`.
