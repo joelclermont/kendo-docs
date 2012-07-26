@@ -94,6 +94,9 @@ Set the object responsible for describing the raw data format.
              read: "Catalog/Titles",
          },
          schema: {
+             errors: function(response) {
+                return response.errors;
+             },
              aggregates: function(response) {
                 response.aggregates;
              },
@@ -172,6 +175,25 @@ An `Array` which contains the data items from the response.
     schema: {
         data: function(response) {
             return response.items;
+        }
+    }
+
+### schema.errors `Function|String` *(default: "errors")*
+
+Specifies the field from the response which contains any errors. If set to a function - the function will be called to
+return the errors for the current response (if present). If there are any errors the `error` event of the DataSource will be raised.
+
+#### Example: Errors As a String
+
+    schema: {
+        errors: "exceptions" // errors are returned in the "exceptions" field of the response
+    }
+
+#### Example: Errors As a Function
+
+    schema: {
+        errors: function(response) {
+            return response.errors;
         }
     }
 
@@ -1059,7 +1081,7 @@ Loads transport with preconfigured settings. Currently supports only "odata" (Re
 
 ### add
 
-Adds a new Model instance to the DataSource
+Adds a new data item to the DataSource.
 
 #### Example
 
@@ -1077,13 +1099,13 @@ Adds a new Model instance to the DataSource
 
 #### Parameters
 
-##### model `Object`
+##### model `Object|kendo.data.Model`
 
-Either a Model instance or raw object from which the Model will be created
+Either a [kendo.data.Model](/api/framework/model) instance or JavaScript object containing the field values.
 
 #### Returns
 
-`Object` The Model instance which has been added
+The `kendo.data.Model` instance which has been added.
 
 ### aggregate
 
@@ -1117,7 +1139,7 @@ Get result of aggregates calculation
 
 ### at
 
-Returns the raw data record at the specified index
+Returns the data item at the specified index.
 
 #### Example
 
@@ -1128,31 +1150,37 @@ Returns the raw data record at the specified index
 
 ##### index `Number`
 
-The zero-based index of the data record
+The zero-based index of the data item.
 
 #### Returns
 
-`Object`
+`kendo.data.ObservableObject` or `kendo.data.Model` based on the presence of `schema.model`.
 
 ### cancelChanges
 
 Cancel the changes made to the DataSource after the last sync. Any changes currently existing in the model
 will be discarded.
 
-#### Example
+#### Example: Cancel All Changes
 
     // we have updated 2 items and deleted 1. All of those changes will be discarded.
     dataSource.cancelChanges();
 
+#### Example: Cancel Model Changes
+
+    var model = dataSource.at(0);
+
+    dataSource.cancelChanges(model);
+
 #### Parameters
 
-##### model ``
+##### model `kendo.data.Model`
 
+Optional model instance. If specified only the changes of this model will be discarded. If omitted all changes will be discarded.
 
 ### data
 
 Gets or sets the data of the `DataSource`.
-
 
 #### Parameters
 
@@ -1190,15 +1218,13 @@ otherwise operations are executed over the available data.
 
 #### Parameters
 
-##### callback ``
+##### callback `Function`
 
-
+Optional callback which will be executed when the data is ready.
 
 ### filter
 
 Get current filters or filter the data.
-
-
 
 _Supported filter operators/aliases are_:
 
@@ -1258,19 +1284,17 @@ _Supported filter operators/aliases are_:
 
 #### Parameters
 
-##### val `Object|Array`
+##### filters `Object|Array`
 
-_optional, default: _
-
-<undefined> Filter(s) to be applied to the data.
+Filter(s) to be applied to the data.
 
 #### Returns
 
-`Array` Current filter descriptors
+`Array` containing the current filter descriptors.
 
 ### get
 
-Retrieves a Model instance by given id.
+Retrieves a model instance by given id.
 
 #### Example
 
@@ -1278,27 +1302,31 @@ Retrieves a Model instance by given id.
 
 #### Parameters
 
-##### id `Number`
+##### id `Number|String`
 
-The id of the model to be retrieved
+The id of the model to be retrieved. The id of the model is defined via `schema.model.id`.
 
 #### Returns
 
-`Object` Model instance if found
+`kendo.data.Model` the model instance. If not found `undefined` is returned.
 
 ### getByUid
 
-Retrieves a Model instance by its UID.
+Retrieves a data item by its [uid](/api/framework/observableobject#uid) field.
 
+#### Example
+    var uid = $("tr").data("uid");
+
+    var order = dataSource.getByUid(uid);
 #### Parameters
 
 ##### uid `String`
 
-The uid of the record to be retrieved
+The uid of the item to be retrieved
 
 #### Returns
 
-`Object` Model instance if found
+`kendo.data.ObservableObject` or `kendo.data.Model` (if `schema.model` is set). If not found `undefined` is returned.
 
 ### group
 
@@ -1310,46 +1338,35 @@ Get current group descriptors or group the data.
 
 #### Parameters
 
-##### val `Object|Array`
+##### groups `Object|Array`
 
-_optional, default: _
-
-<undefined> Group(s) to be applied to the data.
+Group(s) to be applied to the data.
 
 #### Returns
 
-`Array` Current grouping descriptors
+`Array` containing the current group descriptors.
 
 ### insert
 
-Inserts a new Model instance to the DataSource.
+Inserts a new data item in the DataSource.
 
 #### Example
 
-    var model = kendo.data.Model.extend({
-        id: "orderId",
-        fields: {
-            name: "customerName",
-            description: "orderDescription",
-            address: "customerAddress"
-        }
-    });
-    // insert a new model item at the very front of the collection
-    dataSource.insert(0, { name: "John Smith", description: "Product Description", address: "123 1st Street" });
+    dataSource.insert(0, { name: "John Smith", age: 42 });
 
 #### Parameters
 
 ##### index `Number`
 
-Index at which the Model will be inserted
+The zer-based index at which the data item will be inserted
 
-##### model `Object`
+##### model `Object|kendo.data.Model`
 
-Either a Model instance or raw object from which the Model will be created
+Either a [kendo.data.Model](/api/framework/model) instance or JavaScript object containing the field values.
 
 #### Returns
 
-`Object` The Model instance which has been inserted
+The `kendo.data.Model` instance which has been inserted.
 
 ### page
 
@@ -1361,11 +1378,9 @@ Get current page index or request a page with specified index.
 
 #### Parameters
 
-##### val `Number`
+##### page `Number`
 
-_optional, default: _
-
-<undefined> The index of the page to be retrieved
+The index of the page to be retrieved
 
 #### Returns
 
@@ -1381,11 +1396,9 @@ Get current pageSize or request a page with specified number of records.
 
 #### Parameters
 
-##### val `Number`
+##### size `Number`
 
-_optional, default: _
-
-<undefined> The of number of records to be retrieved.
+The of number of records to be retrieved.
 
 #### Returns
 
@@ -1399,7 +1412,6 @@ Otherwise operations are executed over the available data.
 
 #### Example
 
-
     // create a view containing at most 20 records, taken from the
     // 5th page and sorted ascending by orderId field.
     dataSource.query({ page: 5, pageSize: 20, sort: { field: "orderId", dir: "asc" } });
@@ -1412,13 +1424,11 @@ Otherwise operations are executed over the available data.
 
 ##### options `Object`
 
-_optional, default: _
-
-Contains the settings for the operations. Note: If setting for previous operation is omitted, this operation is not applied to the resulting view
+Contains the settings for the operations.
 
 ### read
 
-Read the data into the DataSource using the transport read definition
+Read data into the DataSource using the `transport.read` setting.
 
 #### Example
 
@@ -1427,31 +1437,32 @@ Read the data into the DataSource using the transport read definition
             read: "orders.json";
         }
     });
-    // the datasource will not contain any data until a read is called
+
+    // the datasource will not contain any data until read is called
+
     dataSource.read();
 
 #### Parameters
 
-##### data ``
+##### data `Object`
 
-
+Optional data to pass to the remote service configured via `transport.read`.
 
 ### remove
 
-Remove given Model instance from the DataSource.
+Remove a given `kendo.data.Model` instance from the DataSource.
 
 #### Example
 
-    // get the model item with an id of 1 from the DataSource
-    var itemToRemove = dataSource.get(1);
-    // remove the item from the DataSource
-    dataSource.remove(itemToRemove);
+    var first = dataSource.get(1);
+
+    dataSource.remove(first);
 
 #### Parameters
 
 ##### model `Object`
 
-Model instance to be removed
+The [kendo.data.Model](/api/framework/model) instance to be removed.
 
 ### sort
 
@@ -1467,34 +1478,36 @@ Get current sort descriptors or sorts the data.
 
 #### Parameters
 
-##### val `Object | Array`
+##### sort `Object | Array`
 
-_optional, default: _
-
-<undefined> Sort options to be applied to the data
+Sort options to be applied to the data
 
 #### Returns
 
-`Array` Current sort descriptors
+`Array` containing the current sort descriptors.
 
 ### sync
 
 Synchronizes changes through the transport. Any pending CRUD operations will be sent to the server.
-<p>If the DataSource is in **batch** mode, only one call will be made for each type of operation.
-Otherwise, the DataSource will send one command per pending item change per change type.
+If the DataSource is in **batch** mode, only one call will be made for each type of operation (Create, Update, Destroy).
+Otherwise, the DataSource will send one request per item change and change type.
 
 #### Example
 
-    // we have deleted 2 items and updated 1. If not in batch mode, this will send three commands to the server
+    // we have deleted 2 items and updated 1. If not in batch mode, this will send three commands to the server - two Destroy and one Update.
     dataSource.sync();
 
 ### total
 
-Get the total number of records
+Get the total number of data items.
 
 #### Example
 
     var total = dataSource.total();
+
+#### Returns
+
+`Number` the number of data items.
 
 ### totalPages
 
@@ -1506,12 +1519,13 @@ Get the number of available pages.
 
 #### Returns
 
-`Number` Number of available pages.
+`Number` the available pages.
 
 ### view
 
-Returns a view of the data with operation such as in-memory sorting, paring, grouping and filtering are applied.
-To ensure that data is available this method should be use from within change event of the dataSource.
+Returns a the current state of the data items - with applied paging, sorting, filtering and grouping.
+
+To ensure that data is available this method should be use from within `change` event of the DataSource.
 
 #### Example
 
@@ -1529,13 +1543,13 @@ To ensure that data is available this method should be use from within change ev
 
 #### Returns
 
-`Array` Array of items
+`kendo.data.ObservableArary` the data items.
 
 ## Events
 
 ### change
 
-Fires when data is changed
+Fires when data is changed or read from the transport.
 
 #### Example
 
@@ -1553,7 +1567,10 @@ Fires when data is changed
 
 ### error
 
-Fires when an error occurs during data retrieval. The event arguments are the same as the ones of the error event of $.ajax().
+Fires when an error occurs during data read or sync. The event arguments are the same as the ones of the error event of $.ajax().
+
+> **Important**: If `schema.errors` is specified and the server response contains that field then the `error` event will be raised. The
+`errors` field of the event argument will contain the errors returned by the server.
 
 #### Example
 
@@ -1571,7 +1588,7 @@ Fires when an error occurs during data retrieval. The event arguments are the sa
 
 ### requestStart
 
-Fires when data request is to be made
+Fires when data request is to be made.
 
 #### Example
 
