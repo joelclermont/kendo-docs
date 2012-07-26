@@ -18,9 +18,9 @@ All graphics are rendered on the client using SVG with a fallback to VML for leg
 
 ### 2\. Initialize the Kendo UI RadialGauge with default configuration
 
-   $(document).ready(function() {
-       $("#radial-gauge").kendoRadialGauge();
-   });
+	$(document).ready(function() {
+    	$("#radial-gauge").kendoRadialGauge();
+   	});
 
 ## Creating half- and quarter-circle gauges
 
