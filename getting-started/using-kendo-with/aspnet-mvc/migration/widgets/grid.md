@@ -44,7 +44,7 @@ DataBinding Configuration Is Moved to Datasource:
             .Read(read => read.Action("AjaxBinding ", "Grid"))
         )
  
-Databinding “Url” Methods Are Renamed to Match the KendoUI Datasource Client Configuration.
+Databinding "Url" Methods Are Renamed to Match the KendoUI Datasource Client Configuration.
 
 #### Old -> New
                 
@@ -133,16 +133,47 @@ Create
             .Render();
         })
        
-## Editable 
+## Editing 
 
-**InForms** Mode Is Removed.
+**InForms** Mode is no longer available.
 
 **InsertRowPosition** is renamed to **CreateAt**.
 
 **BeginEdit** and **HtmlFormAttributes** options are not available.
 
 **DefaultDataItem** is moved to DataSource Model configuration.
- 
+
+Grid editing now uses the Kendo Validator instead of jQuery validate.
+
+During updates the Telerik Extensions for ASP.NET MVC only sent the changed properties during updates. With Kendo IU Complete for ASP.NET MVC the whole model is now sent.
+
+Buttons related to editing now utilize both images and text. There are no text-only or image-only buttons available.
+
+Inline edit forms are immediately closed when the update button is clicked. This means that server validation errors should be handled and displayed in the Error event. For example:
+
+    ...
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Events(events => events.Error("error_handler"))
+    )
+    ...
+
+    <script type="text/javascript">
+        function error_handler(e) {
+            if (e.errors) {
+                var message = "Errors:\n";
+                $.each(e.errors, function (key, value) {
+                    if ('errors' in value) {
+                        $.each(value.errors, function() {
+                            message += this + "\n";
+                            });
+                        }
+                    });
+                alert(message);
+            }
+        }
+    </script>
+
 #### Old
 
     Html.Telerik().Grid<Order>()
@@ -160,7 +191,7 @@ Create
             .Model(model => model.Field(o => o.OrderDate).DefaultValue(DateTime.Today)) 
         )
 
-## Groupable 
+## Grouping 
 
 Groups Configuration Is Moved to Datasource:
  
@@ -183,7 +214,7 @@ Groups Configuration Is Moved to Datasource:
 
 **Visible** option is removed. Same functionality can be achieved by setting **Groupable.Enabled** to false and Group descriptors through the DataSource.
  
-## Sortable
+## Sorting
 
 **OrderBy** Is Moved to The DataSource Configuration:
  
@@ -202,7 +233,7 @@ Groups Configuration Is Moved to Datasource:
             .Sort(sort => sort.Add(o => o.OrderDate).Ascending())
         )
 
-## Filterable
+## Filtering
 
 **Filters** Is Moved to The DataSource Configuration:
  
@@ -308,6 +339,17 @@ Groups Configuration Is Moved to Datasource:
 
 **NoRecordsTemplate** Is Not Available. There Will Be a No NoRecords Item but Text Will Be Shown Within the Pager. This Text Is Configurable Through **Pageable.Messages** Configuration
 
+## Localization
+
+Localization is essentially handled automatically. Changing the current .NET UI culture will load the corresponding localization assembly for the Kendo UI components.
+
+To change the built-in localization strings the following steps need to be taken.
+
+1. Edit the resource files in the source code project and create a custom build of the assembly.
+2. Set corresponding property of the widget. For example:
+
+    grid.Filterable(filter => filter.Messages(msg => msg.IsTrue("is true")));
+
 # Client-side API Changes
 
 ## Client-side API
@@ -372,7 +414,7 @@ Removed. Use **grid.dataSource.data(data)** instead.
 
 Removed. Use the following code snippet instead:
 
-    grid.dataSource.filter( { field: “Name”, operator: “eq”, value: “foo” } )
+    grid.dataSource.filter( { field: "Name", operator: "eq", value: "foo" } )
 
 ##### pageTo
 
@@ -384,7 +426,7 @@ Removed. Use **grid.dataSource.read(params)** instead.
 
 ##### sort("Name-desc")
 
-Removed. Use **grid.dataSource.sort( { field: “Name”, dir: “desc” } );** instead.
+Removed. Use **grid.dataSource.sort( { field: "Name", dir: "desc" } );** instead.
 
 ##### serializeData
 
@@ -426,21 +468,21 @@ Removed.
 
 If you want to be notified when an ajax request is being made use the following snippet:
 
-    dataSource => dataSource.Ajax().Events(e => e.RequestStart(“onRequestStart”))
+    dataSource => dataSource.Ajax().Events(e => e.RequestStart("onRequestStart"))
 
 If you need to send custom data to the action method use .Data() on the DataSource:
 
-    dataSource => dataSource.Ajax().Data(“sendData”)
+    dataSource => dataSource.Ajax().Data("sendData")
     
     function sendData() {
-        return { foo: “bar” };
+        return { foo: "bar" };
     }
 
 ##### OnError
 
 Removed. Use the Error event on the DataSource instead:
 
-    dataSource => dataSource.Ajax().Events(e => e.Error(“onError”))
+    dataSource => dataSource.Ajax().Events(e => e.Error("onError"))
 
 ##### OnRowDataBound
 
@@ -451,7 +493,7 @@ Removed. Utilize **DataBound** instead and utilize the following code snippet:
 
         for (var i=0; i< data.length; i++) {
             var dataItem = data[i];
-            var tr = $(“#grid”).find(“[data-uid=’” + dataItem.uid + “’]”);
+            var tr = $("#grid").find("[data-uid='" + dataItem.uid + "']");
             // use the table row (tr) and data item (dataItem)
      }
 }
