@@ -257,10 +257,10 @@ To do this in Chrome, simply:
 1. Open the Chrome Developer Tools (F12)
 2. Click on the gear icon in the lower right corner
 3. In the Settings window that opens, check the "Override User Agent" box
-4. This will reveal a dropdown of pre-defind browsers and devices. Select the device you want to immitate or define your own.
+4. This will reveal a dropdown of pre-defined browsers and devices. Select the device you want to imitate or define your own.
 5. To undo this effect, simply un-check the Override box
 
-Of course, nothing replaces actual testing on mobile devices. In many cases, the Kendo UI Mobile styles look *better* on devices than in desktop browsers. Be sure to test on an iPhone, Android, BlackBerry, or whatever devices you intend support before deploying your app or when previewing app styles.
+Of course, nothing replaces actual testing on mobile devices. In many cases, the Kendo UI Mobile styles look *better* on devices than in desktop browsers. Be sure to test on an iPhone, Android, BlackBerry, or whatever devices you intend to support before deploying your app or when previewing app styles.
 
 ## Tweaking Apps for Specific Platforms
 Kendo UI Mobile's automatic platform adapting is a huge time saver, but sometimes developers want to customize the presentation of an app for specific platforms. When you want to take more control over the experience different devices see, you should use the `data-platform` attribute. For example:
