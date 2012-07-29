@@ -20,7 +20,7 @@ You may be familiar with the phrase “Single Page Application”, or **SPA.** T
 
 ### The Solution
 
-By and large, developers are dealing with these complex applications with different architecture patterns in their front-ends, like [MVP](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter), [MVC](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) or [MVVM](http://en.wikipedia.org/wiki/Model_View_ViewModel). You may be familiar with [BackboneJS](http://documentcloud.github.com/backbone/), [KnckoutJS](http://knockoutjs.com/) or [EmberJS](http://emberjs.com/). These are all implementations of various patterns which attempt to help you organize and manage your UI while alleviating the need for you to manually keep track of all the changes.
+By and large, developers are dealing with these complex applications with different architecture patterns in their front-ends, like [MVP](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter), [MVC](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) or [MVVM](http://en.wikipedia.org/wiki/Model_View_ViewModel). You may be familiar with [BackboneJS](http://documentcloud.github.com/backbone/), [KnockoutJS](http://knockoutjs.com/) or [EmberJS](http://emberjs.com/). These are all implementations of various patterns which attempt to help you organize and manage your UI while alleviating the need for you to manually keep track of all the changes.
 
 Of the patterns listed above, Model View View-Model, or MVVM, is the most popular. And though there are several great MVVM libraries available to front-end devs, Kendo UI also has a full MVVM framework baked right into its core. Let's take a look at how MVVM works seamlessly with Kendo UI.
 
@@ -95,9 +95,9 @@ You can see from the comments in-line that we have moved some things out of the 
 
 * **merchant:** Bound to the value of the **merchant** input box.
 
-* **amount:** Bound to the value of **amount **input box.
+* **amount:** Bound to the value of **amount** input box.
 
-* **create:** This is the event that will be fired by the **Add **button. Inside the event, we are going to do following:
+* **create:** This is the event that will be fired by the **Add** button. Inside the event, we are going to do following: add the item to the expenses array and reset the form.
 
 * **kendo.bind(document.body.children, viewModel):** The statement that initializes the binding between the view model and the relevant HTML.
 
@@ -123,7 +123,7 @@ The **merchant** input has a new binding. The **data-bind=”value: merchant”*
 		<input data-role="numerictextbox" data-bind="value: amount" id="amount" type="text" />
 	</dd>
 
-The **amount** input has two new bindings:
+The **amount** input has two new bindings: **data-role** sets the input to a [Kendo UI NumericTextBox](/getting-started/web/numerictextbox/overview) and **data-bind** which binds the value to our **amount** variable.
 
 	<button id="create" data-bind="click: create" class="k-button">Add</button>
 
