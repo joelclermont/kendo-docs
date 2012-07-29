@@ -250,7 +250,7 @@ When this code is used, you effectively disable Kendo UI Mobile's adaptive rende
 ### Use Browser Tools
 Kendo UI Mobile relies on the [UserAgent string](http://en.wikipedia.org/wiki/User_agent) to trigger different platform renderings. If a browser reports that it is a specific mobile device, Kendo UI Mobile will respond and provide the correct, device-specific rendering.
 
-Some desktop browsers, like Google's Chrome, allow you to easily modify your UserAgent string, therby allowign you to "trick" Kendo UI Mobile that your browser is different mobile devices. This helps you quickly preview your app styling for different mobile platforms without changing any code.
+Some desktop browsers, like Google's Chrome, allow you to easily modify your UserAgent string, thereby allowign you to "trick" Kendo UI Mobile that your browser is different mobile devices. This helps you quickly preview your app styling for different mobile platforms without changing any code.
 
 To do this in Chrome, simply:
 
