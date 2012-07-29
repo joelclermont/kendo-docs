@@ -39,7 +39,7 @@ beautiful.
 
 ### Inheritance With Kendo UI
 
-You can create a new object with Kendo UI by calling **kendo.Class.extend **to
+You can create a new object with Kendo UI by calling **kendo.Class.extend** to
 define it.
 
 
